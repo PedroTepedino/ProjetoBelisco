@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("_is",["Variable"],[["_isGrounded",,[["PlayerInputManeger",,,,0,"File:Player/PlayerInputManeger.cs:PlayerInputManeger._isGrounded","CSharpClass:PlayerInputManeger:_isGrounded"]]]]);

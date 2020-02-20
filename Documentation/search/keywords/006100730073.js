@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("ass",["Function"],[["AssociatePlayer",,[["PlayerInputManeger",,,,0,"File:Player/PlayerInputManeger.cs:PlayerInputManeger.AssociatePlayer","CSharpClass:PlayerInputManeger:AssociatePlayer"]]]]);

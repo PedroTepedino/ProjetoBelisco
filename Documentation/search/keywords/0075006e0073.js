@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("uns",["Function"],[["UnsubscribeFunctins",,[["PlayerInputManeger",,,,0,"File:Player/PlayerInputManeger.cs:PlayerInputManeger.UnsubscribeFunctins","CSharpClass:PlayerInputManeger:UnsubscribeFunctins"]]]]);
