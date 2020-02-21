@@ -193,8 +193,8 @@ public class PlayerInputManager : MonoBehaviour
         GetPause();
     }
 
-    /* Function : GetMovement
-     * Gets the Horizontal movement from the curent input method.
+    /* Function: GetMovement
+     * Gets the movement action from the curent input method.
      */
     private void GetMovement()
     {
@@ -206,7 +206,8 @@ public class PlayerInputManager : MonoBehaviour
         }
     }
 
-    /* Function: 
+    /* Function: GetPause
+     * Gets the Pause button action from the current input method.
      */
     private void GetPause()
     {
@@ -216,13 +217,20 @@ public class PlayerInputManager : MonoBehaviour
         }
     }
 
+    /* Function: GetJump
+     * Gets the jump action from the curent input method.
+     */
     private void GetJump()
     {
 
     }
 
     // Group: Decision Making
-    // Decides witch comands can or cannot be executed at a given frame
+    // Decides witch comands can or cannot be executed at a given frame.
+
+    /* Function: DecisionMaking
+     *  Runs a series of statements to decide witch actions to call at a given frame.
+     */
     private void DecisionMaking()
     {
         if ((_curentInputs & Inputs.Pause) == Inputs.Pause)
@@ -247,19 +255,32 @@ public class PlayerInputManager : MonoBehaviour
     }
 
     // Group: Calling Functions
-    // Functions that redirect the commads to their specific class
+    // Functions that redirect the commads to their specific class.
+    // About:: 
+    //  These are the functions called at <Decision Making>
+
+    /* Function: Pause
+     * Calls the <event : OnPause> to activate the Puase Scene.
+     */
     private void Pause()
     {
         OnPause?.Invoke();
     }
 
+    /* Function: Move
+     * Calls the movement Function from <PlayerMovement>.
+     */
     private void Move()
     {
         _playerMovement.MovePlayer(MoveDirection);
     }
 
     // Group: Controller LockDown
-    // Decides if the controller can be used or not at a given frame
+    // Decides if the controller can be used or not at a given frame.
+
+    /* Function: IsControllerLocked
+     * Determins if the controller can be used or not at a given moment.
+     */
     private bool IsControllerLocked()
     {
         if (_dashing)
@@ -274,11 +295,24 @@ public class PlayerInputManager : MonoBehaviour
 
     // Group: Listeners
     // Methods that listen to Signals 
+
+    /* Function: ListenDash
+     * Function that Listen to the Action that detirmins if the player is dashing or not.
+     * 
+     * Parameters: 
+     * isDashing - Boolean that recieves the info if the player is dashing or not.
+     */
     private void ListenDash(bool isDashing)
     {
         this._dashing = isDashing;
     }
 
+    /* Function: ListenGrounder
+     * Function that Listen to the Action that detirmins if the player is grounded or not.
+     * 
+     * Parameters: 
+     * isGrounded - Boolean that recieves the info if the player is grounded or not.
+     */
     private void ListenGrounder(bool isGrounded)
     {
         this._isGrounded = isGrounded;
