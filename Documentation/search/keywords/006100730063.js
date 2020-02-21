@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("asc",["Function"],[["Ascend",,[["PlayerJump",,,,0,"File:Player/PlayerJump.cs:PlayerJump.Ascend","CSharpClass:PlayerJump:Ascend"]]]]);

@@ -1,32 +1,50 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Sirenix.OdinInspector;
 
+/* Class: PlayerMovement
+ *  Resolves the Movement of the player
+ */
 public class PlayerMovement : MonoBehaviour
 {
-    //// Parameters
-    [BoxGroup("Parameters")] [SerializeField] [FoldoutGroup("Parameters/Movement")] private float moveSpeed = 10f;
+    // Group: Private Variables
 
-    private Rigidbody2D _rigidbody;
+    /* Floats: 
+     * _moveSpeed - Stores the Movement Speed used by the player.
+     */
+    [BoxGroup("Parameters")] [SerializeField] [FoldoutGroup("Parameters/Movement")] private float _moveSpeed = 10f;
 
-    //// Methods
-    /// Unity Methods
+    /* Variable: _rigidBody
+     *  Stores the RigidBody of the player.
+     */
+    private Rigidbody2D _rigidBody;
+
+    // Group: Unity Methods
+    /* Function: Awake
+     *  Calls the <Setup Methods>.
+     */
     private void Awake()
     {
         GetEssentialComponents();
     }
 
-    /// Inicialization
+    // Group: Setup Methods
+    /* Function: GetEssentialComponents
+     * Setup the essential components necessery to the class.
+     */
     private void GetEssentialComponents()
     {
-        _rigidbody = this.gameObject.GetComponent<Rigidbody2D>();
+        _rigidBody = this.gameObject.GetComponent<Rigidbody2D>();
     }
 
-    /// Movement
+    // Group: Movement Logic
+    /* Function: MovePlayer
+     * Moves the player Left and Right.
+     * Parameters :
+     * direction - the direction in witch the pllayer should go 1 rigth, -1 left.
+     */
     public void MovePlayer(float direction)
     {
-        Vector2 moveDirection = new Vector2(direction * moveSpeed, _rigidbody.velocity.y);
-        _rigidbody.velocity = moveDirection;
+        Vector2 moveDirection = new Vector2(direction * _moveSpeed, _rigidBody.velocity.y);
+        _rigidBody.velocity = moveDirection;
     }
 }

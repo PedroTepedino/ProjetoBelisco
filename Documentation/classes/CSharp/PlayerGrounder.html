@@ -11,44 +11,47 @@
 <a name="Topic11"></a><div class="CTopic TClass LCSharp first">
  <div class="CTitle">PlayerGrounder</div>
  <div class="NDClassPrototype HasParents" id="NDClassPrototype11"><div class="CPEntry Parent TClass"><div class="CPName">MonoBehaviour</div></div><div class="CPEntry TClass Current"><div class="CPModifiers"><span class="SHKeyword">public</span></div><div class="CPName">PlayerGrounder</div></div></div>
- <div class="CBody"><p>Manages if the player is touching the ground or not About:</p></div>
+ <div class="CBody"><p>Manages if the player is touching the ground or not</p></div>
 </div>
 
-<a name="Variables"></a><a name="Topic12"></a><div class="CTopic TGroup LCSharp">
+<a name="Information"></a><a name="Topic12"></a><div class="CTopic TGroup LCSharp">
+ <div class="CTitle">Information</div>
+</div>
+
+<a name="GroundCheck"></a><a name="Topic13"></a><div class="CTopic TInformation LCSharp">
+ <div class="CTitle">GroundCheck</div>
+ <div class="CBody"><p>Sends a Signal and have a Propertie to indicate if the player is touching the ground or not.</p></div>
+</div>
+
+<a name="Variables"></a><a name="Topic14"></a><div class="CTopic TGroup LCSharp">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="_groundeCenter"></a><a name="Topic13"></a><div class="CTopic TVariable LCSharp">
- <div class="CTitle">_groundeCenter</div>
- <div id="NDPrototype13" class="NDPrototype NoParameterForm"><div class="PPrePrototypeLine"><span class="SHMetadata">[FoldoutGroup(&quot;Paremeters&quot;)]</span></div><div class="PPrePrototypeLine"><span class="SHMetadata">[SerializeField]</span></div><span class="SHKeyword">private</span> Vector3 _groundeCenter</div>
+<a name="_grounderCenter"></a><a name="Topic15"></a><div class="CTopic TVariable LCSharp">
+ <div class="CTitle">_grounderCenter</div>
+ <div id="NDPrototype15" class="NDPrototype NoParameterForm"><div class="PPrePrototypeLine"><span class="SHMetadata">[FoldoutGroup(&quot;Paremeters&quot;)]</span></div><div class="PPrePrototypeLine"><span class="SHMetadata">[SerializeField]</span></div><span class="SHKeyword">private</span> Vector3 _grounderCenter</div>
 </div>
 
-<a name="_grounderSizes"></a><a name="Topic14"></a><div class="CTopic TVariable LCSharp">
- <div class="CTitle">_grounderSizes</div>
- <div id="NDPrototype14" class="NDPrototype NoParameterForm"><div class="PPrePrototypeLine"><span class="SHMetadata">[FoldoutGroup(&quot;Paremeters&quot;)]</span></div><div class="PPrePrototypeLine"><span class="SHMetadata">[SerializeField]</span></div><span class="SHKeyword">private</span> Vector2 _grounderSizes</div>
+<a name="_grounderRadius"></a><a name="Topic16"></a><div class="CTopic TVariable LCSharp">
+ <div class="CTitle">_grounderRadius</div>
+ <div id="NDPrototype16" class="NDPrototype NoParameterForm"><div class="PPrePrototypeLine"><span class="SHMetadata">[FoldoutGroup(&quot;Paremeters&quot;)]</span></div><div class="PPrePrototypeLine"><span class="SHMetadata">[SerializeField]</span></div><span class="SHKeyword">private</span> <span class="SHKeyword">float</span> _grounderRadius</div>
 </div>
 
-<a name="_grounderLayerMask"></a><a name="Topic15"></a><div class="CTopic TVariable LCSharp">
+<a name="_grounderLayerMask"></a><a name="Topic17"></a><div class="CTopic TVariable LCSharp">
  <div class="CTitle">_grounderLayerMask</div>
- <div id="NDPrototype15" class="NDPrototype NoParameterForm"><div class="PPrePrototypeLine"><span class="SHMetadata">[FoldoutGroup(&quot;Paremeters&quot;)]</span></div><div class="PPrePrototypeLine"><span class="SHMetadata">[SerializeField]</span></div><div class="PPrePrototypeLine"><span class="SHMetadata">[EnumToggleButtons]</span></div><span class="SHKeyword">private</span> LayerMask _grounderLayerMask</div>
+ <div id="NDPrototype17" class="NDPrototype NoParameterForm"><div class="PPrePrototypeLine"><span class="SHMetadata">[FoldoutGroup(&quot;Paremeters&quot;)]</span></div><div class="PPrePrototypeLine"><span class="SHMetadata">[SerializeField]</span></div><div class="PPrePrototypeLine"><span class="SHMetadata">[EnumToggleButtons]</span></div><span class="SHKeyword">private</span> LayerMask _grounderLayerMask</div>
 </div>
 
-<a name="Properties"></a><a name="Topic16"></a><div class="CTopic TGroup LCSharp">
- <div class="CTitle">Properties</div>
-</div>
-
-<a name="IsGrounded"></a><a name="Topic17"></a><div class="CTopic TProperty LCSharp">
- <div class="CTitle">IsGrounded</div>
- <div id="NDPrototype17" class="NDPrototype NoParameterForm"><span class="SHKeyword">public</span> <span class="SHKeyword">bool</span> IsGrounded { <span class="SHKeyword">get</span>; <span class="SHKeyword">private set</span> }</div>
-</div>
-
-<a name="Variables(2)"></a><a name="Topic18"></a><div class="CTopic TGroup LCSharp">
- <div class="CTitle">Variables</div>
-</div>
-
-<a name="OnGrounded"></a><a name="Topic19"></a><div class="CTopic TVariable LCSharp">
+<a name="OnGrounded"></a><a name="Topic18"></a><div class="CTopic TVariable LCSharp">
  <div class="CTitle">OnGrounded</div>
- <div id="NDPrototype19" class="NDPrototype NoParameterForm"><span class="SHKeyword">public</span> System.Action&lt;<span class="SHKeyword">bool</span>&gt; OnGrounded</div>
+ <div id="NDPrototype18" class="NDPrototype NoParameterForm"><span class="SHKeyword">public</span> System.Action&lt;<span class="SHKeyword">bool</span>&gt; OnGrounded</div>
+ <div class="CBody"><p>Signal that sends info to the subscribed functions.</p></div>
+</div>
+
+<a name="IsGrounded"></a><a name="Topic19"></a><div class="CTopic TVariable LCSharp">
+ <div class="CTitle">IsGrounded</div>
+ <div id="NDPrototype19" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">public</span> <span class="SHKeyword">bool</span> IsGrounded {</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="first"></td><td class="PName last">get;</td></tr><tr><td class="PType first"><span class="SHKeyword">private</span>&nbsp;</td><td class="PName last">set&nbsp;</td></tr></table></td><td class="PAfterParameters">}</td></tr></table></div>
+ <div class="CBody"><p>Propertie, that returns if the player is grounded or not.</p></div>
 </div>
 
 <a name="Functions"></a><a name="Topic20"></a><div class="CTopic TGroup LCSharp">
@@ -58,16 +61,19 @@
 <a name="Update"></a><a name="Topic21"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">Update</div>
  <div id="NDPrototype21" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> Update()</div>
+ <div class="CBody"><p>Unity update function, runs every frame, verifing if the player is touching the ground or not.</p></div>
 </div>
 
-<a name="GroundCheck"></a><a name="Topic22"></a><div class="CTopic TFunction LCSharp">
+<a name="GroundCheck(2)"></a><a name="Topic22"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">GroundCheck</div>
  <div id="NDPrototype22" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">bool</span> GroundCheck()</div>
+ <div class="CBody"><p>Checks if the player is touching the ground or not.&nbsp; Returns: True if the player is touching the ground.</p></div>
 </div>
 
 <a name="OnDrawGizmos"></a><a name="Topic23"></a><div class="CTopic TFunction LCSharp last">
  <div class="CTitle">OnDrawGizmos</div>
  <div id="NDPrototype23" class="NDPrototype NoParameterForm"><span class="SHKeyword">protected</span> <span class="SHKeyword">void</span> OnDrawGizmos()</div>
+ <div class="CBody"><p>Unity function, that draws the gizmos on the Editor screen, to better visualize the grounder.</p></div>
 </div>
 
 </body></html>

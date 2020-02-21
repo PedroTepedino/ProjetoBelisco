@@ -1,1 +1,1 @@
-NDMenu.OnSectionLoaded("classes.js",[[1,"PlayerGrounder"],[1,"PlayerInputManager"],[1,"PlayerJump"],[1,"PlayerMovement"]]);
+NDMenu.OnSectionLoaded("classes.js",[[1,"PlayerGravityManager"],[1,"PlayerGrounder"],[1,"PlayerInputManager"],[1,"PlayerJump"],[1,"PlayerMovement"]]);

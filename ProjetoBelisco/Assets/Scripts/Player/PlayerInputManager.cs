@@ -191,6 +191,7 @@ public class PlayerInputManager : MonoBehaviour
 
         GetMovement();
         GetPause();
+        GetJump();
     }
 
     /* Function: GetMovement
@@ -222,7 +223,10 @@ public class PlayerInputManager : MonoBehaviour
      */
     private void GetJump()
     {
-
+        if (_playerController.GetButtonDown("Jump"))
+        {
+            _curentInputs |= Inputs.Jump;
+        }
     }
 
     // Group: Decision Making
@@ -241,9 +245,9 @@ public class PlayerInputManager : MonoBehaviour
         {
             if (!IsControllerLocked())
             {
-                if ((_curentInputs & Inputs.Jump) == Inputs.Jump)
+                if (((_curentInputs & Inputs.Jump) == Inputs.Jump) && _playerJump.CanJump())
                 {
-
+                    this.Jump();
                 }
 
                 if ((_curentInputs & Inputs.Move) == Inputs.Move)
@@ -273,6 +277,14 @@ public class PlayerInputManager : MonoBehaviour
     private void Move()
     {
         _playerMovement.MovePlayer(MoveDirection);
+    }
+
+    /* Function: Jump
+     * Cals the Jump Function from <PlayerJump>
+     */
+    private void Jump()
+    {
+        _playerJump.Jump();
     }
 
     // Group: Controller LockDown

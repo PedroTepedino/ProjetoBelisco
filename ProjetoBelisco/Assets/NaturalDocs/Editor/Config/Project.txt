@@ -8,7 +8,8 @@
 # Project Information
 # ------------------------------------------------------------------------
 
-Title: ProjetoBelisco
+Title: Projeto Belisco
+Subtitle: MEAU
 
 Copyright: Copyright © DefaultCompany
 
@@ -26,9 +27,6 @@ Timestamp: Updated month day, year
 
 
 # This is where you specify general information about your project.
-#
-# Subtitle: [text]
-#    A subtitle for your project.
 #
 # Style: [style]
 #    The style to apply to the generated documentation.  It can be the name of

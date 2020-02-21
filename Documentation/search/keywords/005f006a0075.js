@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("_ju",["Variable"],[["_jumpInitialVelocity",,[["PlayerJump",,,,0,"File:Player/PlayerJump.cs:PlayerJump._jumpInitialVelocity","CSharpClass:PlayerJump:_jumpInitialVelocity"]]]]);
