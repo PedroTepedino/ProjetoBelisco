@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("_da",["Variable"],[["_dashing",,[["PlayerInputManeger",,,,0,"File:Player/PlayerInputManeger.cs:PlayerInputManeger._dashing","CSharpClass:PlayerInputManeger:_dashing"]]]]);
+NDSearch.OnPrefixDataLoaded("_da",["Variable"],[["_dashing",,[["PlayerInputManager",,,,0,"File:Player/PlayerInputManager.cs:PlayerInputManager._dashing","CSharpClass:PlayerInputManager:_dashing"]]]]);

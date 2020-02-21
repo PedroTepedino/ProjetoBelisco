@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("sub",["Function"],[["SubscribeFunctions",,[["PlayerInputManeger",,,,0,"File:Player/PlayerInputManeger.cs:PlayerInputManeger.SubscribeFunctions","CSharpClass:PlayerInputManeger:SubscribeFunctions"]]]]);
+NDSearch.OnPrefixDataLoaded("sub",["Function"],[["SubscribeFunctions",,[["PlayerInputManager",,,,0,"File:Player/PlayerInputManager.cs:PlayerInputManager.SubscribeFunctions","CSharpClass:PlayerInputManager:SubscribeFunctions"]]]]);

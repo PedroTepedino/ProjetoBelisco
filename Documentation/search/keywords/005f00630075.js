@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("_cu",["Variable"],[["_curentInputs",,[["PlayerInputManeger",,,,0,"File:Player/PlayerInputManeger.cs:PlayerInputManeger._curentInputs","CSharpClass:PlayerInputManeger:_curentInputs"]]]]);
+NDSearch.OnPrefixDataLoaded("_cu",["Variable"],[["_curentInputs",,[["PlayerInputManager",,,,0,"File:Player/PlayerInputManager.cs:PlayerInputManager._curentInputs","CSharpClass:PlayerInputManager:_curentInputs"]]]]);

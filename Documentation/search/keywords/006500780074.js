@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("ext",["Variable"],[["External",,[["PlayerInputManager","External Classes",,,0,"File:Player/PlayerInputManager.cs:PlayerInputManager.External_Classes","CSharpClass:PlayerInputManager:External_Classes"]]]]);

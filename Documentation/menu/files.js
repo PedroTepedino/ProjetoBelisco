@@ -1,1 +1,1 @@
-NDMenu.OnSectionLoaded("files.js",[[1,"PlayerGrounder.cs"],[1,"PlayerInputManeger.cs"],[1,"PlayerJump.cs"],[1,"PlayerJump1.cs"],[1,"PlayerMovement.cs"]]);
+NDMenu.OnSectionLoaded("files.js",[[1,"PlayerGrounder.cs"],[1,"PlayerInputManager.cs"],[1,"PlayerJump.cs"],[1,"PlayerMovement.cs"]]);

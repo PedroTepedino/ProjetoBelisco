@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("isc",["Function"],[["IsControllerLocked",,[["PlayerInputManeger",,,,0,"File:Player/PlayerInputManeger.cs:PlayerInputManeger.IsControllerLocked","CSharpClass:PlayerInputManeger:IsControllerLocked"]]]]);
+NDSearch.OnPrefixDataLoaded("isc",["Function"],[["IsControllerLocked",,[["PlayerInputManager",,,,0,"File:Player/PlayerInputManager.cs:PlayerInputManager.IsControllerLocked","CSharpClass:PlayerInputManager:IsControllerLocked"]]]]);

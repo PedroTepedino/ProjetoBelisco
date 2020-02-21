@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using Sirenix.OdinInspector;
 
+/* Class: PlayerGrounder
+ * Manages if the player is touching the ground or not
+ * About: 
+ */
 public class PlayerGrounder : MonoBehaviour
 {
     [FoldoutGroup("Paremeters")] [SerializeField] private Vector3 _groundeCenter = Vector3.zero;

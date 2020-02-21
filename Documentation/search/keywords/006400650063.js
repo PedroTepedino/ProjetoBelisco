@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("dec",["Function"],[["DecisionMaking",,[["PlayerInputManeger",,,,0,"File:Player/PlayerInputManeger.cs:PlayerInputManeger.DecisionMaking","CSharpClass:PlayerInputManeger:DecisionMaking"]]]]);
+NDSearch.OnPrefixDataLoaded("dec",["Function"],[["DecisionMaking",,[["PlayerInputManager",,,,0,"File:Player/PlayerInputManager.cs:PlayerInputManager.DecisionMaking","CSharpClass:PlayerInputManager:DecisionMaking"]]]]);

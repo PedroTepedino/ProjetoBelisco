@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("_ma",["Variable"],[["_maxTime",,[["PlayerInputManeger",,,,0,"File:Player/PlayerInputManeger.cs:PlayerInputManeger._maxTime","CSharpClass:PlayerInputManeger:_maxTime"]]]]);
+NDSearch.OnPrefixDataLoaded("_ma",["Variable"],[["_maxTime",,[["PlayerInputManager",,,,0,"File:Player/PlayerInputManager.cs:PlayerInputManager._maxTime","CSharpClass:PlayerInputManager:_maxTime"]]]]);

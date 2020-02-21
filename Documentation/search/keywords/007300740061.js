@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("sta",["Function"],[["Start",,[["PlayerJump1",,,,0,"File:Player/PlayerJump1.cs:PlayerJump1.Start","CSharpClass:PlayerJump1:Start"]]]]);

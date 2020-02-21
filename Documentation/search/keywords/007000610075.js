@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("pau",["Function"],[["Pause",,[["PlayerInputManeger",,,,0,"File:Player/PlayerInputManeger.cs:PlayerInputManeger.Pause","CSharpClass:PlayerInputManeger:Pause"]]]]);
+NDSearch.OnPrefixDataLoaded("pau",["Constant","Function"],[["Pause",,[["Inputs",,,,0,"File:Player/PlayerInputManager.cs:Inputs.Pause"],["PlayerInputManager",,,,1,"File:Player/PlayerInputManager.cs:PlayerInputManager.Pause","CSharpClass:PlayerInputManager:Pause"]]]]);

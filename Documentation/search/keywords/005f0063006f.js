@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("_co",["Variable"],[["_controllerDeadZone",,[["PlayerInputManeger",,,,0,"File:Player/PlayerInputManeger.cs:PlayerInputManeger._controllerDeadZone","CSharpClass:PlayerInputManeger:_controllerDeadZone"]]]]);
+NDSearch.OnPrefixDataLoaded("_co",["Variable"],[["_controllerDeadZone",,[["PlayerInputManager",,,,0,"File:Player/PlayerInputManager.cs:PlayerInputManager._controllerDeadZone","CSharpClass:PlayerInputManager:_controllerDeadZone"]]]]);

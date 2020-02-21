@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("the",["Information"],[["the",,[["PlayerInputManager","Handling the player inputs",,,0,"File:Player/PlayerInputManager.cs:PlayerInputManager.Handling_the_player_inputs","CSharpClass:PlayerInputManager:Handling_the_player_inputs"]]]]);

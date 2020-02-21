@@ -1,1 +1,0 @@
-NDFramePage.OnPageTitleLoaded("CSharpClass:PlayerJump1","PlayerJump1");NDSummary.OnSummaryLoaded("CSharpClass:PlayerJump1",[["C#","CSharp"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[1,0,0,"PlayerJump1"],[2,0,2,"Functions","Functions"],[3,0,1,"Start","Start"],[4,0,1,"Update","Update"]]);

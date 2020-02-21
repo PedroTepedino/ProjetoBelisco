@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("_ju",["Variable"],[["_jumpVelocity",,[["PlayerInputManeger",,,,0,"File:Player/PlayerInputManeger.cs:PlayerInputManeger._jumpVelocity","CSharpClass:PlayerInputManeger:_jumpVelocity"]]]]);

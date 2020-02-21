@@ -1,1 +1,1 @@
-NDSearch.OnPrefixIndexLoaded(["_co","_cu","_da","_gr","_is","_ju","_ma","_pl","_ri","asc","ass","awa","dec","des","get","gro","inp","isc","isg","jum","lis","mov","ond","ong","onp","pau","pla","sta","sub","uns","upd"]);
+NDSearch.OnPrefixIndexLoaded(["_co","_cu","_da","_gr","_is","_ma","_pl","_ri","asc","ass","awa","cla","com","con","dec","des","ext","get","gro","han","hel","inp","isc","isg","jum","lis","loc","mov","nul","ond","ong","onp","par","pau","pla","pro","sub","the","uni","uns","upd","var"]);

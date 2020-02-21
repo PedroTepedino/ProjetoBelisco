@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("jum",["Function"],[["Jump",,[["PlayerJump",,,,0,"File:Player/PlayerJump.cs:PlayerJump.Jump","CSharpClass:PlayerJump:Jump"]]]]);
+NDSearch.OnPrefixDataLoaded("jum",["Constant","Function","Variable"],[["Jump",,[["Inputs",,,,0,"File:Player/PlayerInputManager.cs:Inputs.Jump"],["PlayerJump",,,,1,"File:Player/PlayerJump.cs:PlayerJump.Jump","CSharpClass:PlayerJump:Jump"],["PlayerInputManager","Jump Parameters",,,2,"File:Player/PlayerInputManager.cs:PlayerInputManager.Jump_Parameters","CSharpClass:PlayerInputManager:Jump_Parameters"]]]]);
