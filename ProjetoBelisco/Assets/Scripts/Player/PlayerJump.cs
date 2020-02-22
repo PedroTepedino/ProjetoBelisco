@@ -10,22 +10,22 @@ public class PlayerJump : MonoBehaviour
     /* Variables: Parameters
      * _jumpInitialVelocity - The initial jump velocity value.
      * _jumpActionMaxHoldingTime - Maximum time in witch the player can hold the jump button and still ascend.
+     * _permitedArialTime - Time that the player can still jump if falling from a platform.
      */
     [SerializeField] [FoldoutGroup("Parameters")] private float _jumpInitialVelocity = 10f;
     [SerializeField] [FoldoutGroup("Parameters")] private float _jumpActionMaxHoldingTime = 1.5f;
+    [SerializeField] [FoldoutGroup("Parameters")] private float _permitedArialTime = 0.2f;
 
     /* Variables: Essential Components
      * _rigidBody - The RigidBody of the player.
-     * _playerGrounder - Stores the player Grounder component.
      */
     private Rigidbody2D _rigidBody;
-    private PlayerGrounder _playerGrounder;
 
     // Group: Public Variables
     /* Variable: OnJump
      * Sends a signal when start jumping and on stop
      */
-    public System.Action<bool> OnJump;
+    public static System.Action<bool> OnJump;
 
     // Group: Properties
     /* Properties: Helper Properties
@@ -54,7 +54,6 @@ public class PlayerJump : MonoBehaviour
     private void GetEssentialComponents()
     {
         _rigidBody = this.GetComponent<Rigidbody2D>();
-        _playerGrounder = this.GetComponent<PlayerGrounder>();
     }
 
     // Group: Jump Logic
@@ -84,14 +83,21 @@ public class PlayerJump : MonoBehaviour
      */
     public bool CanJump()
     {
-        if(_playerGrounder.IsGrounded)
+        if(PlayerGrounder.IsGrounded)
         {
             EndJump();
         }
 
         if (!IsJumping)
         {
-            return true;
+            if (PlayerGrounder.ArialTime <= _permitedArialTime)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         else
         {

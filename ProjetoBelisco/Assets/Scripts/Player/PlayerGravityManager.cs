@@ -16,11 +16,8 @@ public class PlayerGravityManager : MonoBehaviour
 
     /* Variables: Essential Components
      * _rigidBody - The RigidBody of the player.
-     * _playerGrounder - Stores the player <PlayerGrounder> component.
-     * _playerJump - Stores the player <PlayerJump> component.
      */
     private Rigidbody2D _rigidBody;
-    private PlayerGrounder _playerGrounder;
 
     // Group: Unity Methods
     /* Function: Awake
@@ -36,7 +33,15 @@ public class PlayerGravityManager : MonoBehaviour
      */
     private void Update()
     {
-        GravityDecision(_playerGrounder.IsGrounded); 
+        GravityDecision(PlayerGrounder.IsGrounded); 
+    }
+
+    /* Function: OnDestroy
+     * Handles the class right before the destruction of the GameObject, by calling the <Destruction Methods>
+     */
+    private void OnDestroy()
+    {
+        UnsubscribeFunctins();
     }
 
     // Group: Setup Methods
@@ -46,7 +51,23 @@ public class PlayerGravityManager : MonoBehaviour
     private void GetEssentialComponents()
     {
         _rigidBody = this.GetComponent<Rigidbody2D>();
-        _playerGrounder = this.GetComponent<PlayerGrounder>();
+    }
+
+    /* Function: SubscribeFunctions
+     * Subscribe the <Listeners> Methods to their respective signals
+     */
+    private void SubscribeFunctions()
+    {
+        PlayerJump.OnJump += OnJumpListener;
+    }
+
+    // Group: Destruction Methods
+    /* Function: UnsubscribeFunctins
+     * Remove the subscription of the <Listeners>, subscribed at <SubscribeFunctions>.
+     */
+    private void UnsubscribeFunctins()
+    {
+        PlayerJump.OnJump -= OnJumpListener;
     }
 
     // Group: Gravity Logic
@@ -85,5 +106,12 @@ public class PlayerGravityManager : MonoBehaviour
     private void FallingGravity()
     {
         _rigidBody.gravityScale = _fallingGravityMultiplier;
+    }
+
+    // Group: Listeners
+    // Listens to certein function callings
+    private void OnJumpListener(bool isJump)
+    {
+        ResetGravity();
     }
 }

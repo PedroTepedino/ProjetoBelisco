@@ -55,6 +55,11 @@ public class PlayerInputManager : MonoBehaviour
     [BoxGroup("Player Info")] [ShowInInspector] private Player _playerController;
     [SerializeField] [BoxGroup("Controller Parameters")] private float _controllerDeadZone = 0.25f;
 
+    /* Floats: Movement Parameters
+     * _movementAxisTimeCounter - Counts the time the movement axis have been active or inactive.
+     */
+    private float _movementAxisTimeCounter = 0f;
+
     /* Floats: Jump Parameters
      * 
      * _jumpActionTime - The timestamp in witch the player held the jump button down.
@@ -142,14 +147,20 @@ public class PlayerInputManager : MonoBehaviour
      * Handles the functions that need to be called every frame.
      * 
      * + Get the inputs. (<GetInputs>)
-     * + Decide what to do. (<DecisionMaking>)
+     * + Decide what to do. (<Decision Making>)
      */
-    void Update()
+    private void Update()
     {
         GetInputs();
-        DecisionMaking();
+        DecisionMakingUpdate();
+    }
 
-        Debug.Log(_jumpActionTimer + "   " +_playerController.GetButtonTimePressed("Jump"));
+    /* Function: FixedUpdate
+     * Handles the functions that need to be called every frame.
+     */
+    private void FixedUpdate()
+    {
+        DecisionMakingFixedUpdate();
     }
 
     // Group: Setup Methods
@@ -217,6 +228,11 @@ public class PlayerInputManager : MonoBehaviour
         if (Mathf.Abs(MoveDirection) >= _controllerDeadZone)
         {
             _curentInputs |= Inputs.Move;
+            _movementAxisTimeCounter = _playerController.GetAxisTimeActive("MoveHorizontal");
+        }
+        else
+        {
+            _movementAxisTimeCounter = _playerController.GetAxisTimeInactive("MoveHorizontal");
         }
     }
 
@@ -282,42 +298,50 @@ public class PlayerInputManager : MonoBehaviour
     // Group: Decision Making
     // Decides witch comands can or cannot be executed at a given frame.
 
-    /* Function: DecisionMaking
+    /* Function: DecisionMakingUpdate
      *  Runs a series of statements to decide witch actions to call at a given frame.
      */
-    private void DecisionMaking()
+    private void DecisionMakingUpdate()
     {
         if ((_curentInputs & Inputs.Pause) == Inputs.Pause)
         {
             this.Pause();
         }
-        else
+    }
+
+    /* Function: DecisionMakingFixedUpdate
+     * Decides witch Action the player will make, in every stamp of the fixed update.
+     */
+    private void DecisionMakingFixedUpdate()
+    {
+        if (!IsControllerLocked())
         {
-            if (!IsControllerLocked())
+            if (((_curentInputs & Inputs.JumpStart) == Inputs.JumpStart))
             {
-                if (((_curentInputs & Inputs.JumpStart) == Inputs.JumpStart))
+                if (_playerJump.CanJump())
                 {
-                    if (_playerJump.CanJump())
+                    this.Jump();
+                }
+            }
+
+            if (((_curentInputs & Inputs.JumpFollowUp) == Inputs.JumpFollowUp))
+            {
+                if (_jumpCicle)
+                {
+                    if (_playerJump.CanRaiseJump(_jumpActionTimestamp))
                     {
                         this.Jump();
                     }
                 }
+            }
 
-                if (((_curentInputs & Inputs.JumpFollowUp) == Inputs.JumpFollowUp))
-                {
-                    if (_jumpCicle)
-                    {
-                        if (_playerJump.CanRaiseJump(_jumpActionTimestamp))
-                        {
-                            this.Jump();
-                        }
-                    }
-                }
-
-                if ((_curentInputs & Inputs.Move) == Inputs.Move)
-                {
-                    this.Move();
-                }
+            if ((_curentInputs & Inputs.Move) == Inputs.Move)
+            {
+                this.Move();
+            }
+            else
+            {
+                this.StopMovement();
             }
         }
     }
@@ -340,7 +364,15 @@ public class PlayerInputManager : MonoBehaviour
      */
     private void Move()
     {
-        _playerMovement.MovePlayer(MoveDirection);
+        _playerMovement.MovePlayer(MoveDirection, _movementAxisTimeCounter);
+    }
+
+    /* Function: StopMovement
+     * Calls the stop movement Function from <PlayerMovement>.
+     */
+    private void StopMovement()
+    {
+        _playerMovement.StopMovement(_movementAxisTimeCounter);
     }
 
     /* Function: Jump

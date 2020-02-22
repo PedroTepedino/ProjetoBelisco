@@ -15,7 +15,7 @@ public class PlayerGrounder : MonoBehaviour
      * _grounderLayerMask - Layers that the grounder can interact, aka the ground.
      */
     [FoldoutGroup("Paremeters")] [SerializeField] private Vector3 _grounderCenter = Vector3.zero;
-    [FoldoutGroup("Paremeters")] [SerializeField] private float _grounderRadius;
+    [FoldoutGroup("Paremeters")] [SerializeField] private Vector2 _grounderSizes;
     [FoldoutGroup("Paremeters")] [SerializeField] [EnumToggleButtons] private LayerMask _grounderLayerMask;
 
     /* Variable: OnGrounded
@@ -23,15 +23,26 @@ public class PlayerGrounder : MonoBehaviour
      */
     public System.Action<bool> OnGrounded;
 
-    /* Variable: IsGrounded
-     * Propertie, that returns if the player is grounded or not.
+    /* Variables: Properties
+     * IsGrounded - Propertie, that returns if the player is grounded or not.
+     * ArialTime - Propertie that stores the time is seconds, that the player is not grounded.
      */
-    public bool IsGrounded { get; private set; } = false;
+    public static bool IsGrounded { get; private set; } = false;
+    public static float ArialTime { get; private set; } = 0f;
     
     /* Function: Update
      * Unity update function, runs every frame, verifing if the player is touching the ground or not.
      */
     private void Update()
+    {
+        IsGroundedVerification();
+        ArialTimeCalculation();
+    }
+
+    /* Function: IsGroundedVerification
+     * Calls the logic of the Ground check every frame.
+     */
+    private void IsGroundedVerification()
     {
         bool auxiliarIsGrounded = GroundCheck();
 
@@ -42,6 +53,21 @@ public class PlayerGrounder : MonoBehaviour
         }
     }
 
+    /* Function: ArialTimeCalculation
+     * Calculates the Arial Time of the player every Frame.
+     */
+    private void ArialTimeCalculation()
+    {
+        if (IsGrounded)
+        {
+            ArialTime = 0f;
+        }
+        else
+        {
+            ArialTime += Time.deltaTime;
+        }
+    }
+
     /* Function: GroundCheck
      *  Checks if the player is touching the ground or not.
      * Returns:
@@ -49,7 +75,7 @@ public class PlayerGrounder : MonoBehaviour
      */
     private bool GroundCheck()
     {
-        return Physics2D.OverlapCircle(this.transform.position + _grounderCenter, _grounderRadius, _grounderLayerMask) != null ? true : false;
+        return Physics2D.OverlapBox(this.transform.position + _grounderCenter, _grounderSizes, 0f, _grounderLayerMask) != null ? true : false;
     }
 
     /* Function: OnDrawGizmos
@@ -58,6 +84,6 @@ public class PlayerGrounder : MonoBehaviour
     protected void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(this.transform.position + _grounderCenter, _grounderRadius);
+        Gizmos.DrawWireCube(this.transform.position + _grounderCenter, _grounderSizes);
     }
 }
