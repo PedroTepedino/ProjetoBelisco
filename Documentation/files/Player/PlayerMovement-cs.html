@@ -8,44 +8,55 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="PlayerMovement"></a><a name="Topic80"></a><div class="CTopic TClass LCSharp first">
+<a name="PlayerMovement"></a><a name="Topic1"></a><div class="CTopic TClass LCSharp first">
  <div class="CTitle">PlayerMovement</div>
- <div class="NDClassPrototype HasParents" id="NDClassPrototype80"><div class="CPEntry Parent TClass"><div class="CPName">MonoBehaviour</div></div><div class="CPEntry TClass Current"><div class="CPModifiers"><span class="SHKeyword">public</span></div><div class="CPName">PlayerMovement</div></div></div>
+ <div class="NDClassPrototype HasParents" id="NDClassPrototype1"><div class="CPEntry Parent TClass"><div class="CPName">MonoBehaviour</div></div><div class="CPEntry TClass Current"><div class="CPModifiers"><span class="SHKeyword">public</span></div><div class="CPName">PlayerMovement</div></div></div>
+ <div class="CBody"><p>Resolves the Movement of the player</p></div>
 </div>
 
-<a name="PlayerMovement.Variables"></a><a name="Topic81"></a><div class="CTopic TGroup LCSharp">
- <div class="CTitle">Variables</div>
+<a name="PlayerMovement.Private_Variables"></a><a name="Topic2"></a><div class="CTopic TGroup LCSharp">
+ <div class="CTitle">Private Variables</div>
 </div>
 
-<a name="PlayerMovement.moveSpeed"></a><a name="Topic82"></a><div class="CTopic TVariable LCSharp">
- <div class="CTitle">moveSpeed</div>
- <div id="NDPrototype82" class="NDPrototype NoParameterForm"><div class="PPrePrototypeLine"><span class="SHMetadata">[BoxGroup(&quot;Parameters&quot;)]</span></div><div class="PPrePrototypeLine"><span class="SHMetadata">[SerializeField]</span></div><div class="PPrePrototypeLine"><span class="SHMetadata">[FoldoutGroup(&quot;Parameters/Movement&quot;)]</span></div><span class="SHKeyword">private</span> <span class="SHKeyword">float</span> moveSpeed</div>
+<a name="PlayerMovement._moveSpeed"></a><a name="Topic3"></a><div class="CTopic TVariable LCSharp">
+ <div class="CTitle">_moveSpeed</div>
+ <div id="NDPrototype3" class="NDPrototype NoParameterForm"><div class="PPrePrototypeLine"><span class="SHMetadata">[BoxGroup(&quot;Parameters&quot;)]</span></div><div class="PPrePrototypeLine"><span class="SHMetadata">[SerializeField]</span></div><div class="PPrePrototypeLine"><span class="SHMetadata">[FoldoutGroup(&quot;Parameters/Movement&quot;)]</span></div><span class="SHKeyword">private</span> <span class="SHKeyword">float</span> _moveSpeed</div>
 </div>
 
-<a name="PlayerMovement._rigidbody"></a><a name="Topic83"></a><div class="CTopic TVariable LCSharp">
- <div class="CTitle">_rigidbody</div>
- <div id="NDPrototype83" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> Rigidbody2D _rigidbody</div>
+<a name="PlayerMovement._rigidBody"></a><a name="Topic4"></a><div class="CTopic TVariable LCSharp">
+ <div class="CTitle">_rigidBody</div>
+ <div id="NDPrototype4" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> Rigidbody2D _rigidBody</div>
+ <div class="CBody"><p>Stores the RigidBody of the player.</p></div>
 </div>
 
-<a name="PlayerMovement.Functions"></a><a name="Topic84"></a><div class="CTopic TGroup LCSharp">
- <div class="CTitle">Functions</div>
+<a name="PlayerMovement.Unity_Methods"></a><a name="Topic5"></a><div class="CTopic TGroup LCSharp">
+ <div class="CTitle">Unity Methods</div>
 </div>
 
-<a name="PlayerMovement.Awake"></a><a name="Topic85"></a><div class="CTopic TFunction LCSharp">
+<a name="PlayerMovement.Awake"></a><a name="Topic6"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">Awake</div>
- <div id="NDPrototype85" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> Awake()</div>
+ <div id="NDPrototype6" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> Awake()</div>
+ <div class="CBody"><p>Calls the <a href="../../index.html#File:Player/PlayerMovement.cs:PlayerMovement.Setup_Methods" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,7);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Setup Methods</a>.</p></div>
 </div>
 
-<a name="PlayerMovement.GetEssentialComponents"></a><a name="Topic86"></a><div class="CTopic TFunction LCSharp">
+<a name="PlayerMovement.Setup_Methods"></a><a name="Topic7"></a><div class="CTopic TGroup LCSharp">
+ <div class="CTitle">Setup Methods</div>
+</div>
+
+<a name="PlayerMovement.GetEssentialComponents"></a><a name="Topic8"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">GetEssentialComponents</div>
- <div id="NDPrototype86" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> GetEssentialComponents()</div>
- <div class="CBody"><p>Inicialization</p></div>
+ <div id="NDPrototype8" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> GetEssentialComponents()</div>
+ <div class="CBody"><p>Setup the essential components necessery to the class.</p></div>
 </div>
 
-<a name="PlayerMovement.MovePlayer"></a><a name="Topic87"></a><div class="CTopic TFunction LCSharp last">
+<a name="PlayerMovement.Movement_Logic"></a><a name="Topic9"></a><div class="CTopic TGroup LCSharp">
+ <div class="CTitle">Movement Logic</div>
+</div>
+
+<a name="PlayerMovement.MovePlayer"></a><a name="Topic10"></a><div class="CTopic TFunction LCSharp last">
  <div class="CTitle">MovePlayer</div>
- <div id="NDPrototype87" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">public</span> <span class="SHKeyword">void</span> MovePlayer(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">direction</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Movement</p></div>
+ <div id="NDPrototype10" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">public</span> <span class="SHKeyword">void</span> MovePlayer(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">direction</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Moves the player Left and Right.&nbsp; Parameters : direction - the direction in witch the pllayer should go 1 rigth, -1 left.</p></div>
 </div>
 
 </body></html>

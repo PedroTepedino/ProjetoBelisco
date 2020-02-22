@@ -8,206 +8,212 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic30"></a><div class="CTopic TClass LCSharp first">
+<a name="Topic74"></a><div class="CTopic TClass LCSharp first">
  <div class="CTitle">PlayerInputManager</div>
- <div class="NDClassPrototype HasParents" id="NDClassPrototype30"><div class="CPEntry Parent TClass"><div class="CPName">MonoBehaviour</div></div><div class="CPEntry TClass Current"><div class="CPPrePrototypeLine"><span class="SHMetadata">[RequireComponent(typeof(PlayerMovement))]</span></div><div class="CPModifiers"><span class="SHKeyword">public</span></div><div class="CPName">PlayerInputManager</div></div></div>
+ <div class="NDClassPrototype HasParents" id="NDClassPrototype74"><div class="CPEntry Parent TClass"><div class="CPName">MonoBehaviour</div></div><div class="CPEntry TClass Current"><div class="CPPrePrototypeLine"><span class="SHMetadata">[RequireComponent(typeof(PlayerMovement))]</span></div><div class="CPModifiers"><span class="SHKeyword">public</span></div><div class="CPName">PlayerInputManager</div></div></div>
  <div class="CBody"><p>Manages all the inputs of the player</p></div>
 </div>
 
-<a name="Handling_the_player_inputs"></a><a name="Topic31"></a><div class="CTopic TInformation LCSharp">
+<a name="Handling_the_player_inputs"></a><a name="Topic75"></a><div class="CTopic TInformation LCSharp">
  <div class="CTitle">Handling the player inputs</div>
  <div class="CBody"><p>Handle multiple inputs at the same time, an if the controller or keyboard can be used during gameplay.</p></div>
 </div>
 
-<a name="Unique_combinations"></a><a name="Topic32"></a><div class="CTopic TInformation LCSharp">
+<a name="Unique_combinations"></a><a name="Topic76"></a><div class="CTopic TInformation LCSharp">
  <div class="CTitle">Unique combinations</div>
- <div class="CBody"><p>Every cobination of cammands have a single and unique binary combination, due to the enum <a href="../../index.html#File:Player/PlayerInputManager.cs:Inputs" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,25);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Inputs</a>.</p><div class="CHeading">See Also</div><p><a href="../../index.html#File:Player/PlayerInputManager.cs:Inputs" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,25);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Inputs</a></p></div>
+ <div class="CBody"><p>Every cobination of cammands have a single and unique binary combination, due to the enum <a href="../../index.html#File:Player/PlayerInputManager.cs:Inputs" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,69);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Inputs</a>.</p><div class="CHeading">See Also</div><p><a href="../../index.html#File:Player/PlayerInputManager.cs:Inputs" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,69);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Inputs</a></p></div>
 </div>
 
-<a name="Private_Variables"></a><a name="Topic33"></a><div class="CTopic TGroup LCSharp">
+<a name="Private_Variables"></a><a name="Topic77"></a><div class="CTopic TGroup LCSharp">
  <div class="CTitle">Private Variables</div>
 </div>
 
-<a name="Controller_Variables"></a><a name="Topic34"></a><div class="CTopic TVariable LCSharp">
+<a name="Controller_Variables"></a><a name="Topic78"></a><div class="CTopic TVariable LCSharp">
  <div class="CTitle">Controller Variables</div>
- <div class="CBody"><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="_playerControllerIndex"></a><a name="Topic35"></a>_playerControllerIndex</td><td class="CDLDefinition"><p>Stores the index of the player controller used to identify a player in the Rewired plugin.&nbsp; Value set to 0, since there is only 1 player.</p></td></tr><tr><td class="CDLEntry"><a name="_playerController"></a><a name="Topic36"></a>_playerController</td><td class="CDLDefinition"><p>Stores the Player object witch is used to retrieve the controller inputs from the joystick or keyboard.</p></td></tr><tr><td class="CDLEntry"><a name="_controllerDeadZone"></a><a name="Topic37"></a>_controllerDeadZone</td><td class="CDLDefinition"><p>Analog inputs bellow this number are ignored.</p></td></tr></table></div>
+ <div class="CBody"><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="_playerControllerIndex"></a><a name="Topic79"></a>_playerControllerIndex</td><td class="CDLDefinition"><p>Stores the index of the player controller used to identify a player in the Rewired plugin.&nbsp; Value set to 0, since there is only 1 player.</p></td></tr><tr><td class="CDLEntry"><a name="_playerController"></a><a name="Topic80"></a>_playerController</td><td class="CDLDefinition"><p>Stores the Player object witch is used to retrieve the controller inputs from the joystick or keyboard.</p></td></tr><tr><td class="CDLEntry"><a name="_controllerDeadZone"></a><a name="Topic81"></a>_controllerDeadZone</td><td class="CDLDefinition"><p>Analog inputs bellow this number are ignored.</p></td></tr></table></div>
 </div>
 
-<a name="Jump_Parameters"></a><a name="Topic38"></a><div class="CTopic TVariable LCSharp">
+<a name="Jump_Parameters"></a><a name="Topic82"></a><div class="CTopic TVariable LCSharp">
  <div class="CTitle">Jump Parameters</div>
- <div class="CBody"><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="_maxTime"></a><a name="Topic39"></a>_maxTime</td><td class="CDLDefinition"><p>The maximum time that the player can hold the jump button.&nbsp; After that time, the player will start to fall.</p></td></tr></table></div>
+ <div class="CBody"><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="_maxTime"></a><a name="Topic83"></a>_maxTime</td><td class="CDLDefinition"><p>The maximum time that the player can hold the jump button.&nbsp; After that time, the player will start to fall.</p></td></tr></table></div>
 </div>
 
-<a name="Input_Handler_Variables"></a><a name="Topic40"></a><div class="CTopic TVariable LCSharp">
+<a name="Input_Handler_Variables"></a><a name="Topic84"></a><div class="CTopic TVariable LCSharp">
  <div class="CTitle">Input Handler Variables</div>
- <div class="CBody"><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="_curentInputs"></a><a name="Topic41"></a>_curentInputs</td><td class="CDLDefinition"><p>The inputs of the player during a given frame.</p></td></tr></table></div>
+ <div class="CBody"><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="_curentInputs"></a><a name="Topic85"></a>_curentInputs</td><td class="CDLDefinition"><p>The inputs of the player during a given frame.</p></td></tr></table></div>
 </div>
 
-<a name="External_Classes"></a><a name="Topic42"></a><div class="CTopic TVariable LCSharp">
+<a name="External_Classes"></a><a name="Topic86"></a><div class="CTopic TVariable LCSharp">
  <div class="CTitle">External Classes</div>
- <div class="CBody"><div class="CHeading">About</div><p>Classes that handle the opperations given by the player <b>Inputs</b></p><div class="CHeading">Vars</div><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="_playerMovement"></a><a name="Topic43"></a>_playerMovement</td><td class="CDLDefinition"><p>Controlls the movement of the player (<a href="../../index.html#CSharpClass:PlayerMovement" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,80);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PlayerMovement</a>)</p></td></tr><tr><td class="CDLEntry"><a name="_playerJump"></a><a name="Topic44"></a>_playerJump</td><td class="CDLDefinition"><p>Controlls the jumping action of the player (<a href="../../index.html#CSharpClass:PlayerJump" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PlayerJump</a>)</p></td></tr><tr><td class="CDLEntry"><a name="_playerGrounder"></a><a name="Topic45"></a>_playerGrounder</td><td class="CDLDefinition"><p>Checks if the player is touching the ground (<a href="../../index.html#CSharpClass:PlayerGrounder" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,11);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PlayerGrounder</a>)</p></td></tr></table></div>
+ <div class="CBody"><div class="CHeading">About</div><p>Classes that handle the opperations given by the player <b>Inputs</b></p><div class="CHeading">Vars</div><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="_playerMovement"></a><a name="Topic87"></a>_playerMovement</td><td class="CDLDefinition"><p>Controlls the movement of the player (<a href="../../index.html#CSharpClass:PlayerMovement" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PlayerMovement</a>)</p></td></tr><tr><td class="CDLEntry"><a name="_playerJump"></a><a name="Topic88"></a>_playerJump</td><td class="CDLDefinition"><p>Controlls the jumping action of the player (<a href="../../index.html#CSharpClass:PlayerJump" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,42);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PlayerJump</a>)</p></td></tr><tr><td class="CDLEntry"><a name="_playerGrounder"></a><a name="Topic89"></a>_playerGrounder</td><td class="CDLDefinition"><p>Checks if the player is touching the ground (<a href="../../index.html#CSharpClass:PlayerGrounder" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,11);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PlayerGrounder</a>)</p></td></tr></table></div>
 </div>
 
-<a name="Controller_Lock_Parameters"></a><a name="Topic46"></a><div class="CTopic TVariable LCSharp">
+<a name="Controller_Lock_Parameters"></a><a name="Topic90"></a><div class="CTopic TVariable LCSharp">
  <div class="CTitle">Controller Lock Parameters</div>
- <div class="CBody"><div class="CHeading">About</div><p>Parameters that are used to determin if the controller can be used or not at a given frame.</p><div class="CHeading">Bools</div><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="_dashing"></a><a name="Topic47"></a>_dashing</td><td class="CDLDefinition"><p><b>True</b> if the player is <u>Dashing</u>.</p></td></tr><tr><td class="CDLEntry"><a name="_isGrounded"></a><a name="Topic48"></a>_isGrounded</td><td class="CDLDefinition"><p><b>True</b> if the player is touching the ground.</p></td></tr></table></div>
+ <div class="CBody"><div class="CHeading">About</div><p>Parameters that are used to determin if the controller can be used or not at a given frame.</p><div class="CHeading">Bools</div><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="_dashing"></a><a name="Topic91"></a>_dashing</td><td class="CDLDefinition"><p><b>True</b> if the player is <u>Dashing</u>.</p></td></tr><tr><td class="CDLEntry"><a name="_isGrounded"></a><a name="Topic92"></a>_isGrounded</td><td class="CDLDefinition"><p><b>True</b> if the player is touching the ground.</p></td></tr></table></div>
 </div>
 
-<a name="Public_Variables"></a><a name="Topic49"></a><div class="CTopic TGroup LCSharp">
+<a name="Public_Variables"></a><a name="Topic93"></a><div class="CTopic TGroup LCSharp">
  <div class="CTitle">Public Variables</div>
  <div class="CBody"><p>Variable: OnPause Action that gives a signal when the player pressed the pause button</p></div>
 </div>
 
-<a name="OnPause"></a><a name="Topic50"></a><div class="CTopic TVariable LCSharp">
+<a name="OnPause"></a><a name="Topic94"></a><div class="CTopic TVariable LCSharp">
  <div class="CTitle">OnPause</div>
- <div id="NDPrototype50" class="NDPrototype NoParameterForm"><span class="SHKeyword">public static</span> Action OnPause</div>
+ <div id="NDPrototype94" class="NDPrototype NoParameterForm"><span class="SHKeyword">public static</span> Action OnPause</div>
 </div>
 
-<a name="Properties"></a><a name="Topic51"></a><div class="CTopic TGroup LCSharp">
+<a name="Properties"></a><a name="Topic95"></a><div class="CTopic TGroup LCSharp">
  <div class="CTitle">Properties</div>
 </div>
 
-<a name="Helper_Properties"></a><a name="Topic52"></a><div class="CTopic TProperty LCSharp">
+<a name="Helper_Properties"></a><a name="Topic96"></a><div class="CTopic TProperty LCSharp">
  <div class="CTitle">Helper Properties</div>
- <div class="CBody"><div class="CHeading">About</div><p>Properties that help the player to acess certein informations faster.</p><div class="CHeading">Vars</div><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="MoveDirection"></a><a name="Topic53"></a>MoveDirection</td><td class="CDLDefinition"><p>Value between <b>-1</b> &amp; <b>1</b> that determins if the player is going <b>Left</b> or <b>Right</b>.</p></td></tr><tr><td class="CDLEntry"><a name="PlayerId"></a><a name="Topic54"></a>PlayerId</td><td class="CDLDefinition"><p>Returns the index of the player controller.</p></td></tr></table></div>
+ <div class="CBody"><div class="CHeading">About</div><p>Properties that help the player to acess certein informations faster.</p><div class="CHeading">Vars</div><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="MoveDirection"></a><a name="Topic97"></a>MoveDirection</td><td class="CDLDefinition"><p>Value between <b>-1</b> &amp; <b>1</b> that determins if the player is going <b>Left</b> or <b>Right</b>.</p></td></tr><tr><td class="CDLEntry"><a name="PlayerId"></a><a name="Topic98"></a>PlayerId</td><td class="CDLDefinition"><p>Returns the index of the player controller.</p></td></tr></table></div>
 </div>
 
-<a name="Unity_Methods"></a><a name="Topic55"></a><div class="CTopic TGroup LCSharp">
+<a name="Unity_Methods"></a><a name="Topic99"></a><div class="CTopic TGroup LCSharp">
  <div class="CTitle">Unity Methods</div>
 </div>
 
-<a name="Awake"></a><a name="Topic56"></a><div class="CTopic TFunction LCSharp">
+<a name="Awake"></a><a name="Topic100"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">Awake</div>
- <div id="NDPrototype56" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> Awake()</div>
- <div class="CBody"><p>Handles the initialization of the class, by caling the <a href="../../index.html#CSharpClass:PlayerInputManager:Setup_Methods" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,59);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Setup Methods</a></p></div>
+ <div id="NDPrototype100" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> Awake()</div>
+ <div class="CBody"><p>Handles the initialization of the class, by caling the <a href="../../index.html#CSharpClass:PlayerInputManager:Setup_Methods" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,103);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Setup Methods</a></p></div>
 </div>
 
-<a name="OnDestroy"></a><a name="Topic57"></a><div class="CTopic TFunction LCSharp">
+<a name="OnDestroy"></a><a name="Topic101"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">OnDestroy</div>
- <div id="NDPrototype57" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> OnDestroy()</div>
- <div class="CBody"><p>Handles the class right before the destruction of the GameObject, by calling the <a href="../../index.html#CSharpClass:PlayerInputManager:Destruction_Methods" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,63);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Destruction Methods</a></p></div>
+ <div id="NDPrototype101" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> OnDestroy()</div>
+ <div class="CBody"><p>Handles the class right before the destruction of the GameObject, by calling the <a href="../../index.html#CSharpClass:PlayerInputManager:Destruction_Methods" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,107);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Destruction Methods</a></p></div>
 </div>
 
-<a name="Update"></a><a name="Topic58"></a><div class="CTopic TFunction LCSharp">
+<a name="Update"></a><a name="Topic102"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">Update</div>
- <div id="NDPrototype58" class="NDPrototype NoParameterForm"><span class="SHKeyword">void</span> Update()</div>
- <div class="CBody"><p>Handles the functions that need to be called every frame.</p><ul><li><p>Get the inputs. (<a href="../../index.html#CSharpClass:PlayerInputManager:GetInputs" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,66);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >GetInputs</a>)</p></li><li><p>Decide what to do. (<a href="../../index.html#CSharpClass:PlayerInputManager:DecisionMaking" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,71);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DecisionMaking</a>)</p></li></ul></div>
+ <div id="NDPrototype102" class="NDPrototype NoParameterForm"><span class="SHKeyword">void</span> Update()</div>
+ <div class="CBody"><p>Handles the functions that need to be called every frame.</p><ul><li><p>Get the inputs. (<a href="../../index.html#CSharpClass:PlayerInputManager:GetInputs" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,110);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >GetInputs</a>)</p></li><li><p>Decide what to do. (<a href="../../index.html#CSharpClass:PlayerInputManager:DecisionMaking" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,115);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DecisionMaking</a>)</p></li></ul></div>
 </div>
 
-<a name="Setup_Methods"></a><a name="Topic59"></a><div class="CTopic TGroup LCSharp">
+<a name="Setup_Methods"></a><a name="Topic103"></a><div class="CTopic TGroup LCSharp">
  <div class="CTitle">Setup Methods</div>
 </div>
 
-<a name="SubscribeFunctions"></a><a name="Topic60"></a><div class="CTopic TFunction LCSharp">
+<a name="SubscribeFunctions"></a><a name="Topic104"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">SubscribeFunctions</div>
- <div id="NDPrototype60" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> SubscribeFunctions()</div>
- <div class="CBody"><p>Subscribe the <a href="../../index.html#CSharpClass:PlayerInputManager:Listeners" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,77);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Listeners</a> Methods to their respective signals</p></div>
+ <div id="NDPrototype104" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> SubscribeFunctions()</div>
+ <div class="CBody"><p>Subscribe the <a href="../../index.html#CSharpClass:PlayerInputManager:Listeners" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,122);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Listeners</a> Methods to their respective signals</p></div>
 </div>
 
-<a name="AssociatePlayer"></a><a name="Topic61"></a><div class="CTopic TFunction LCSharp">
+<a name="AssociatePlayer"></a><a name="Topic105"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">AssociatePlayer</div>
- <div id="NDPrototype61" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> AssociatePlayer()</div>
- <div class="CBody"><p>Associates the <a href="../../index.html#CSharpClass:PlayerInputManager:_playerController" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,36);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Player Controller</a> the the right input method, by default is the joystick.</p></div>
+ <div id="NDPrototype105" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> AssociatePlayer()</div>
+ <div class="CBody"><p>Associates the <a href="../../index.html#CSharpClass:PlayerInputManager:_playerController" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,80);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Player Controller</a> the the right input method, by default is the joystick.</p></div>
 </div>
 
-<a name="GetEssentialComponentsComponent"></a><a name="Topic62"></a><div class="CTopic TFunction LCSharp">
+<a name="GetEssentialComponentsComponent"></a><a name="Topic106"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">GetEssentialComponentsComponent</div>
- <div id="NDPrototype62" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> GetEssentialComponentsComponent()</div>
- <div class="CBody"><div class="CHeading">About</div><p>Get the necesserie componentes from the gameObject. (Components found at <a href="../../index.html#CSharpClass:PlayerInputManager:External_Classes" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,42);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >External Classes</a>)</p></div>
+ <div id="NDPrototype106" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> GetEssentialComponentsComponent()</div>
+ <div class="CBody"><div class="CHeading">About</div><p>Get the necesserie componentes from the gameObject. (Components found at <a href="../../index.html#CSharpClass:PlayerInputManager:External_Classes" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,86);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >External Classes</a>)</p></div>
 </div>
 
-<a name="Destruction_Methods"></a><a name="Topic63"></a><div class="CTopic TGroup LCSharp">
+<a name="Destruction_Methods"></a><a name="Topic107"></a><div class="CTopic TGroup LCSharp">
  <div class="CTitle">Destruction Methods</div>
 </div>
 
-<a name="UnsubscribeFunctins"></a><a name="Topic64"></a><div class="CTopic TFunction LCSharp">
+<a name="UnsubscribeFunctins"></a><a name="Topic108"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">UnsubscribeFunctins</div>
- <div id="NDPrototype64" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> UnsubscribeFunctins()</div>
- <div class="CBody"><p>Remove the subscription of the <a href="../../index.html#CSharpClass:PlayerInputManager:Listeners" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,77);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Listeners</a>, subscribed at <a href="../../index.html#CSharpClass:PlayerInputManager:SubscribeFunctions" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,60);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SubscribeFunctions</a>.</p></div>
+ <div id="NDPrototype108" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> UnsubscribeFunctins()</div>
+ <div class="CBody"><p>Remove the subscription of the <a href="../../index.html#CSharpClass:PlayerInputManager:Listeners" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,122);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Listeners</a>, subscribed at <a href="../../index.html#CSharpClass:PlayerInputManager:SubscribeFunctions" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,104);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SubscribeFunctions</a>.</p></div>
 </div>
 
-<a name="Input_Handling"></a><a name="Topic65"></a><div class="CTopic TGroup LCSharp">
+<a name="Input_Handling"></a><a name="Topic109"></a><div class="CTopic TGroup LCSharp">
  <div class="CTitle">Input Handling</div>
  <div class="CBody"><p>Functions that get the inputs from the controller or keyboard</p></div>
 </div>
 
-<a name="GetInputs"></a><a name="Topic66"></a><div class="CTopic TFunction LCSharp">
+<a name="GetInputs"></a><a name="Topic110"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">GetInputs</div>
- <div id="NDPrototype66" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> GetInputs()</div>
- <div class="CBody"><ul><li><p>Resetes the <a href="../../index.html#CSharpClass:PlayerInputManager:_curentInputs" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,41);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >curent inputs</a>.</p></li><li><p>Gather all the <a href="../../index.html#File:Player/PlayerInputManager.cs:Inputs" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,25);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Inputs</a> att the given frame.</p></li></ul></div>
+ <div id="NDPrototype110" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> GetInputs()</div>
+ <div class="CBody"><ul><li><p>Resetes the <a href="../../index.html#CSharpClass:PlayerInputManager:_curentInputs" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,85);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >curent inputs</a>.</p></li><li><p>Gather all the <a href="../../index.html#File:Player/PlayerInputManager.cs:Inputs" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,69);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Inputs</a> att the given frame.</p></li></ul></div>
 </div>
 
-<a name="GetMovement"></a><a name="Topic67"></a><div class="CTopic TFunction LCSharp">
+<a name="GetMovement"></a><a name="Topic111"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">GetMovement</div>
- <div id="NDPrototype67" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> GetMovement()</div>
+ <div id="NDPrototype111" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> GetMovement()</div>
  <div class="CBody"><p>Gets the movement action from the curent input method.</p></div>
 </div>
 
-<a name="GetPause"></a><a name="Topic68"></a><div class="CTopic TFunction LCSharp">
+<a name="GetPause"></a><a name="Topic112"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">GetPause</div>
- <div id="NDPrototype68" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> GetPause()</div>
+ <div id="NDPrototype112" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> GetPause()</div>
  <div class="CBody"><p>Gets the Pause button action from the current input method.</p></div>
 </div>
 
-<a name="GetJump"></a><a name="Topic69"></a><div class="CTopic TFunction LCSharp">
+<a name="GetJump"></a><a name="Topic113"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">GetJump</div>
- <div id="NDPrototype69" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> GetJump()</div>
+ <div id="NDPrototype113" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> GetJump()</div>
  <div class="CBody"><p>Gets the jump action from the curent input method.</p></div>
 </div>
 
-<a name="Decision_Making"></a><a name="Topic70"></a><div class="CTopic TGroup LCSharp">
+<a name="Decision_Making"></a><a name="Topic114"></a><div class="CTopic TGroup LCSharp">
  <div class="CTitle">Decision Making</div>
  <div class="CBody"><p>Decides witch comands can or cannot be executed at a given frame.</p></div>
 </div>
 
-<a name="DecisionMaking"></a><a name="Topic71"></a><div class="CTopic TFunction LCSharp">
+<a name="DecisionMaking"></a><a name="Topic115"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">DecisionMaking</div>
- <div id="NDPrototype71" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> DecisionMaking()</div>
+ <div id="NDPrototype115" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> DecisionMaking()</div>
  <div class="CBody"><p>Runs a series of statements to decide witch actions to call at a given frame.</p></div>
 </div>
 
-<a name="Calling_Functions"></a><a name="Topic72"></a><div class="CTopic TGroup LCSharp">
+<a name="Calling_Functions"></a><a name="Topic116"></a><div class="CTopic TGroup LCSharp">
  <div class="CTitle">Calling Functions</div>
- <div class="CBody"><p>Functions that redirect the commads to their specific class.&nbsp; About:: These are the functions called at <a href="../../index.html#CSharpClass:PlayerInputManager:Decision_Making" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,70);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Decision Making</a></p></div>
+ <div class="CBody"><p>Functions that redirect the commads to their specific class.&nbsp; About:: These are the functions called at <a href="../../index.html#CSharpClass:PlayerInputManager:Decision_Making" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,114);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Decision Making</a></p></div>
 </div>
 
-<a name="Pause"></a><a name="Topic73"></a><div class="CTopic TFunction LCSharp">
+<a name="Pause"></a><a name="Topic117"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">Pause</div>
- <div id="NDPrototype73" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> Pause()</div>
- <div class="CBody"><p>Calls the <a href="../../index.html#CSharpClass:PlayerInputManager:OnPause" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,50);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >event</a> to activate the Puase Scene.</p></div>
+ <div id="NDPrototype117" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> Pause()</div>
+ <div class="CBody"><p>Calls the <a href="../../index.html#CSharpClass:PlayerInputManager:OnPause" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,94);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >event</a> to activate the Puase Scene.</p></div>
 </div>
 
-<a name="Move"></a><a name="Topic74"></a><div class="CTopic TFunction LCSharp">
+<a name="Move"></a><a name="Topic118"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">Move</div>
- <div id="NDPrototype74" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> Move()</div>
- <div class="CBody"><p>Calls the movement Function from <a href="../../index.html#CSharpClass:PlayerMovement" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,80);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PlayerMovement</a>.</p></div>
+ <div id="NDPrototype118" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> Move()</div>
+ <div class="CBody"><p>Calls the movement Function from <a href="../../index.html#CSharpClass:PlayerMovement" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PlayerMovement</a>.</p></div>
 </div>
 
-<a name="Controller_LockDown"></a><a name="Topic75"></a><div class="CTopic TGroup LCSharp">
+<a name="Jump"></a><a name="Topic119"></a><div class="CTopic TFunction LCSharp">
+ <div class="CTitle">Jump</div>
+ <div id="NDPrototype119" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> Jump()</div>
+ <div class="CBody"><p>Cals the Jump Function from <a href="../../index.html#CSharpClass:PlayerJump" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,42);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >PlayerJump</a></p></div>
+</div>
+
+<a name="Controller_LockDown"></a><a name="Topic120"></a><div class="CTopic TGroup LCSharp">
  <div class="CTitle">Controller LockDown</div>
  <div class="CBody"><p>Decides if the controller can be used or not at a given frame.</p></div>
 </div>
 
-<a name="IsControllerLocked"></a><a name="Topic76"></a><div class="CTopic TFunction LCSharp">
+<a name="IsControllerLocked"></a><a name="Topic121"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">IsControllerLocked</div>
- <div id="NDPrototype76" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">bool</span> IsControllerLocked()</div>
+ <div id="NDPrototype121" class="NDPrototype NoParameterForm"><span class="SHKeyword">private</span> <span class="SHKeyword">bool</span> IsControllerLocked()</div>
  <div class="CBody"><p>Determins if the controller can be used or not at a given moment.</p></div>
 </div>
 
-<a name="Listeners"></a><a name="Topic77"></a><div class="CTopic TGroup LCSharp">
+<a name="Listeners"></a><a name="Topic122"></a><div class="CTopic TGroup LCSharp">
  <div class="CTitle">Listeners</div>
  <div class="CBody"><p>Methods that listen to Signals</p></div>
 </div>
 
-<a name="ListenDash"></a><a name="Topic78"></a><div class="CTopic TFunction LCSharp">
+<a name="ListenDash"></a><a name="Topic123"></a><div class="CTopic TFunction LCSharp">
  <div class="CTitle">ListenDash</div>
- <div id="NDPrototype78" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> ListenDash(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName last">isDashing</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype123" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> ListenDash(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName last">isDashing</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Function that Listen to the Action that detirmins if the player is dashing or not.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">isDashing<div class="CDLParameterType"><span class="SHKeyword">bool</span></div></td><td class="CDLDefinition"><p>Boolean that recieves the info if the player is dashing or not.</p></td></tr></table></div>
 </div>
 
-<a name="ListenGrounder"></a><a name="Topic79"></a><div class="CTopic TFunction LCSharp last">
+<a name="ListenGrounder"></a><a name="Topic124"></a><div class="CTopic TFunction LCSharp last">
  <div class="CTitle">ListenGrounder</div>
- <div id="NDPrototype79" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> ListenGrounder(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName last">isGrounded</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype124" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">private</span> <span class="SHKeyword">void</span> ListenGrounder(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName last">isGrounded</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Function that Listen to the Action that detirmins if the player is grounded or not.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">isGrounded<div class="CDLParameterType"><span class="SHKeyword">bool</span></div></td><td class="CDLDefinition"><p>Boolean that recieves the info if the player is grounded or not.</p></td></tr></table></div>
 </div>
 
