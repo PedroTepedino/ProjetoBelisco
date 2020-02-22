@@ -10,7 +10,9 @@ using UnityEngine;
  * Null - No input registered
  * Pause - Pause Button pressed
  * Move - Register the side movement
- * Jump - Jump button pressed or holded
+ * JumpStart - Jump button pressed
+ * JumpFollowUp - Jump button holded
+ * JumpRelease - Jump button has been released
  */
 [Flags]
 public enum Inputs
@@ -18,7 +20,9 @@ public enum Inputs
     Null = 0,
     Pause = 1 << 0,
     Move = 1 << 1,
-    Jump = 1 << 2
+    JumpStart = 1 << 2,
+    JumpFollowUp = 1 << 3,
+    JumpRelease = 1 << 4
 }
 
 /* Class: PlayerInputManager
@@ -53,10 +57,15 @@ public class PlayerInputManager : MonoBehaviour
 
     /* Floats: Jump Parameters
      * 
-     * _maxTime - The maximum time that the player can hold the jump button.
-     *  After that time, the player will start to fall.
+     * _jumpActionTime - The timestamp in witch the player held the jump button down.
+     * _jumpActionStorageTime - Time in seconds that the jump action is stored so that it is executed later.
+     * _jumpActionTimer - Timer to delete the action.
+     * _jumpCicle - Indicates if the player is going throgh a jump cicle.
      */
-    [SerializeField] [BoxGroup("Jump Parameters")] private float _maxTime = 1f;
+    private float _jumpActionTimestamp = 0f;
+    [SerializeField] [BoxGroup("Controller Parameters")] private float _jumpActionStorageTime = 0.2f;
+    private float _jumpActionTimer = 0f;
+    private bool _jumpCicle = false;
     
     /* Variables: Input Handler Variables
      * 
@@ -139,6 +148,8 @@ public class PlayerInputManager : MonoBehaviour
     {
         GetInputs();
         DecisionMaking();
+
+        Debug.Log(_jumpActionTimer + "   " +_playerController.GetButtonTimePressed("Jump"));
     }
 
     // Group: Setup Methods
@@ -192,6 +203,8 @@ public class PlayerInputManager : MonoBehaviour
         GetMovement();
         GetPause();
         GetJump();
+        InputTimerHandler();
+        InputStorageHandler();
     }
 
     /* Function: GetMovement
@@ -225,7 +238,44 @@ public class PlayerInputManager : MonoBehaviour
     {
         if (_playerController.GetButtonDown("Jump"))
         {
-            _curentInputs |= Inputs.Jump;
+            _curentInputs |= Inputs.JumpStart;
+            _jumpActionTimestamp = 0f;
+            _jumpActionTimer = _jumpActionStorageTime;
+            if (_playerJump.CanJump())
+            {
+                _jumpCicle = true;
+            }
+        }
+        else if (_playerController.GetButton("Jump"))
+        {
+            _curentInputs |= Inputs.JumpFollowUp;
+            _jumpActionTimestamp = _playerController.GetButtonTimePressed("Jump");
+        }
+        else if (_playerController.GetButtonUp("Jump"))
+        {
+            _curentInputs |= Inputs.JumpRelease;
+            _jumpCicle = false;
+        }
+    }
+
+    /* Function: InputTimerHandler
+     * Handles the countdown of the input Storage timers
+     * About:: 
+     * Called Every Frame
+     */
+    private void InputTimerHandler()
+    {
+        _jumpActionTimer -= Time.deltaTime;
+    }
+
+    /* Function: InputStorageHandler
+     * Handles the Storage of the inputs
+     */
+    private void InputStorageHandler()
+    {
+        if (_jumpActionTimer >= 0)
+        {
+            _curentInputs |= Inputs.JumpStart;
         }
     }
 
@@ -245,9 +295,23 @@ public class PlayerInputManager : MonoBehaviour
         {
             if (!IsControllerLocked())
             {
-                if (((_curentInputs & Inputs.Jump) == Inputs.Jump) && _playerJump.CanJump())
+                if (((_curentInputs & Inputs.JumpStart) == Inputs.JumpStart))
                 {
-                    this.Jump();
+                    if (_playerJump.CanJump())
+                    {
+                        this.Jump();
+                    }
+                }
+
+                if (((_curentInputs & Inputs.JumpFollowUp) == Inputs.JumpFollowUp))
+                {
+                    if (_jumpCicle)
+                    {
+                        if (_playerJump.CanRaiseJump(_jumpActionTimestamp))
+                        {
+                            this.Jump();
+                        }
+                    }
                 }
 
                 if ((_curentInputs & Inputs.Move) == Inputs.Move)

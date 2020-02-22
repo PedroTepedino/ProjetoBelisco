@@ -688,8 +688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 377cb90260725bc4f8ab11305dee4f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _grounderCenter: {x: 0, y: -0.63, z: 0}
-  _grounderRadius: 0.46
+  _grounderCenter: {x: 0, y: -0.67, z: 0}
+  _grounderRadius: 0.1
   _grounderLayerMask:
     serializedVersion: 2
     m_Bits: 256
@@ -706,7 +706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _controllerDeadZone: 0.25
-  _maxTime: 0.2
+  _jumpActionStorageTime: 0.2
 --- !u!114 &1961446370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -719,7 +719,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6808d2e759f8ed4d9a6a114eb296114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpInitialVelocity: 10
+  _jumpInitialVelocity: 7
+  _jumpActionMaxHoldingTime: 0.2
 --- !u!114 &1961446371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -733,7 +734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _standardGravityMultiplier: 1
-  _fallingGravityMultiplier: 3
+  _fallingGravityMultiplier: 1.5
 --- !u!1 &2066989637
 GameObject:
   m_ObjectHideFlags: 0

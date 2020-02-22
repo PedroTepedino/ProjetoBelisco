@@ -9,8 +9,10 @@ public class PlayerJump : MonoBehaviour
     // Group: Private Variables
     /* Variables: Parameters
      * _jumpInitialVelocity - The initial jump velocity value.
+     * _jumpActionMaxHoldingTime - Maximum time in witch the player can hold the jump button and still ascend.
      */
-    [SerializeField] [FoldoutGroup("Parameters")] private float _jumpInitialVelocity = 10f; 
+    [SerializeField] [FoldoutGroup("Parameters")] private float _jumpInitialVelocity = 10f;
+    [SerializeField] [FoldoutGroup("Parameters")] private float _jumpActionMaxHoldingTime = 1.5f;
 
     /* Variables: Essential Components
      * _rigidBody - The RigidBody of the player.
@@ -43,15 +45,6 @@ public class PlayerJump : MonoBehaviour
     private void Awake()
     {
         GetEssentialComponents();
-        SubscribeFunctions();
-    }
-
-    /* Function: OnDestroy
-    * Handles the class right before the destruction of the GameObject, by calling the <Destruction Methods>
-    */
-    private void OnDestroy()
-    {
-        UnsubscribeFunctins();
     }
 
     // Group: Setup Methods
@@ -64,23 +57,6 @@ public class PlayerJump : MonoBehaviour
         _playerGrounder = this.GetComponent<PlayerGrounder>();
     }
 
-    /* Function: SubscribeFunctions
-     * Subscribe the <Listeners> Methods to their respective signals
-     */
-    private void SubscribeFunctions()
-    {
-        _playerGrounder.OnGrounded += ListenIsGrounded;
-    }
-
-    // Group: Destruction Methods
-    /* Function: UnsubscribeFunctins
-     * Remove the subscription of the <Listeners>, subscribed at <SubscribeFunctions>.
-     */
-    private void UnsubscribeFunctins()
-    {
-        _playerGrounder.OnGrounded -= ListenIsGrounded;
-    }
-
     // Group: Jump Logic
     /* Function: Jump
      * the Jumping Action of the player
@@ -91,7 +67,6 @@ public class PlayerJump : MonoBehaviour
         IsJumping = true;
         OnJump?.Invoke(true);
     }
-
 
     /* Function: EndJump
      * Ends the Jumping Action
@@ -109,7 +84,12 @@ public class PlayerJump : MonoBehaviour
      */
     public bool CanJump()
     {
-        if (!IsJumping && _playerGrounder.IsGrounded)
+        if(_playerGrounder.IsGrounded)
+        {
+            EndJump();
+        }
+
+        if (!IsJumping)
         {
             return true;
         }
@@ -119,18 +99,22 @@ public class PlayerJump : MonoBehaviour
         }
     }
 
-    // Group: Listeners
-    /* Function: ListenIsGrounded
-     *  Listen to the grounder action.
-     * 
-     * Parameters: 
-     *  isGrounded - Boolean that recieves the info if the player is grounded or not.
+    /* Function: CanRaiseJump
+     *  Determins if the player can raise the jump already started.
+     *  Parameters:
+     *  jumpTime - The time in seconds that the player has held down the jump button.
+     *  Returns:
+     *  True if the player can follw the jump.
      */
-    private void ListenIsGrounded(bool isGrounded)
+    public bool CanRaiseJump(float jumpTime)
     {
-        if (IsJumping)
+        if (IsJumping && (jumpTime <= _jumpActionMaxHoldingTime))
         {
-            EndJump();
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }
