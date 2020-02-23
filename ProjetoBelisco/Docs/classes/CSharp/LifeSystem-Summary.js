@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CSharpClass:LifeSystem","LifeSystem");NDSummary.OnSummaryLoaded("CSharpClass:LifeSystem",[["C#","CSharp"]],[["Classes","Class"],["Groups","Group"],["Variables","Variable"]],[[154,0,0,"LifeSystem"],[155,0,1,"Private Variables","Private_Variables"],[156,0,2,"Parameters","Parameters"],[157,0,2,,"_maxHealthPoints"],[158,0,2,,"_curentHealthPoints"]]);

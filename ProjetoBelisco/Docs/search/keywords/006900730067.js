@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("isg",["Variable","Function"],[["IsGrounded",,[["PlayerGrounder",,,,0,"File:Player/PlayerGrounder.cs:PlayerGrounder.IsGrounded","CSharpClass:PlayerGrounder:IsGrounded"]]],["IsGroundedVerification",,[["PlayerGrounder",,,,1,"File:Player/PlayerGrounder.cs:PlayerGrounder.IsGroundedVerification","CSharpClass:PlayerGrounder:IsGroundedVerification"]]]]);

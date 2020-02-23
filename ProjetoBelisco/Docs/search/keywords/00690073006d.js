@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("ism",["Property"],[["IsMoving",,[["PlayerMovement",,,,0,"File:Player/PlayerMovement.cs:PlayerMovement.IsMoving","CSharpClass:PlayerMovement:IsMoving"]]]]);

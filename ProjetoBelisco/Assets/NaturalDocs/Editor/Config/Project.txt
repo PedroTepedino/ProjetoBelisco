@@ -81,7 +81,7 @@ Source Folder: ..\..\..\Scripts
 # Generated Documentation
 # ------------------------------------------------------------------------
 
-HTML Output Folder: ..\..\..\..\..\Documentation
+HTML Output Folder: ..\..\..\..\Docs
 
 
 # This is where you specify what kind of documentation you want Natural Docs

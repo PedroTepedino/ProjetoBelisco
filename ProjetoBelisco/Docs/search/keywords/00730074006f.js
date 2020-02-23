@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("sto",["Function"],[["StopMovement",,[["PlayerInputManager",,,,0,"File:Player/PlayerInputManager.cs:PlayerInputManager.StopMovement","CSharpClass:PlayerInputManager:StopMovement"],["PlayerMovement",,,,0,"File:Player/PlayerMovement.cs:PlayerMovement.StopMovement","CSharpClass:PlayerMovement:StopMovement"]]]]);

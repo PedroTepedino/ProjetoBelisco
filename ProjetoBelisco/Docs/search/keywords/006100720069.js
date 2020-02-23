@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("ari",["Variable","Function"],[["ArialTime",,[["PlayerGrounder",,,,0,"File:Player/PlayerGrounder.cs:PlayerGrounder.ArialTime","CSharpClass:PlayerGrounder:ArialTime"]]],["ArialTimeCalculation",,[["PlayerGrounder",,,,1,"File:Player/PlayerGrounder.cs:PlayerGrounder.ArialTimeCalculation","CSharpClass:PlayerGrounder:ArialTimeCalculation"]]]]);

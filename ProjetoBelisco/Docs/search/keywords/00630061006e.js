@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("can",["Function"],[["CanJump",,[["PlayerJump",,,,0,"File:Player/PlayerJump.cs:PlayerJump.CanJump","CSharpClass:PlayerJump:CanJump"]]],["CanRaiseJump",,[["PlayerJump",,,,0,"File:Player/PlayerJump.cs:PlayerJump.CanRaiseJump","CSharpClass:PlayerJump:CanRaiseJump"]]]]);
