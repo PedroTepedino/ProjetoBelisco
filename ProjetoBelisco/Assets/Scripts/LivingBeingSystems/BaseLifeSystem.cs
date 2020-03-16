@@ -4,7 +4,7 @@ using Sirenix.OdinInspector;
 /* Class: LifeSystemAbstract
  * Abstract Class that describes the essencial components of any Life system.
  */
-public abstract class LifeSystemAbstract : MonoBehaviour
+public abstract class BaseLifeSystem : MonoBehaviour
 {
     // Group: Protected Variables
 
@@ -18,6 +18,16 @@ public abstract class LifeSystemAbstract : MonoBehaviour
     // Group: Properties
     public bool IsDead { get => (_curentHealthPoints <= 0); }
     public bool IsHealthFull { get => (_curentHealthPoints >= _maximumHealth); }
+
+    // Group: Unity Methods
+
+    /* Function: Awake
+     * Just restores the health  of the entitie on awake.
+     */
+    private void Awake()
+    {
+        _curentHealthPoints = _maximumHealth;
+    }
 
     // Group: Health Logic 
 
@@ -49,7 +59,7 @@ public abstract class LifeSystemAbstract : MonoBehaviour
      */
     protected virtual void Damage(int damagePoints = 1)
     {
-        if (damagePoints < 0)
+        if (damagePoints <= 0)
         {
             return;
         }
