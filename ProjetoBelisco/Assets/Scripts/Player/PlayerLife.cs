@@ -13,10 +13,12 @@ public class PlayerLife : BaseLifeSystem
      * OnPlayerDamage - Sends a signal when the player have recived damage.
      * OnPlayerDie - Sends  a signal when the player Dies.
      * OnPlayerHeal - Sends a signal when  the player is healed.
+     * OnPlayerSpawn - Sends a signal when the player spawns.
      */
     public static System.Action<int, int> OnPlayerDamage;
     public static System.Action OnPlayerDie;
     public static System.Action<int, int> OnPlayerHeal;
+    public static System.Action OnPlayerSpawn;
 
     // Group: Health Logic
 
@@ -75,5 +77,11 @@ public class PlayerLife : BaseLifeSystem
     {
         OnPlayerDie?.Invoke();
         this.gameObject.SetActive(false);
+    }
+
+
+    public static void RespawnPlayer()
+    {
+        
     }
 }
