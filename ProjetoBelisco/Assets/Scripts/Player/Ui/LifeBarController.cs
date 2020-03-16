@@ -12,6 +12,9 @@ public class LifeBarController : MonoBehaviour
     [SerializeField] [BoxGroup("Decay")] private float _decaySpeed = 0.5f;
     [SerializeField] [BoxGroup("Decay")] private float _decayDelay = 0.75f;
 
+    [SerializeField] [BoxGroup("Heal Decay")] private float _healDecaySpeed = 1f;
+    [SerializeField] [BoxGroup("Heal Decay")] private float _healDecayDelay = 0.2f;
+
 
     private float _curentFill = 1f;
     private Tween _decayBarAnimation = null;
@@ -19,11 +22,13 @@ public class LifeBarController : MonoBehaviour
     private void Awake()
     {
         PlayerLife.OnPlayerDamage += ListenDamage;
+        PlayerLife.OnPlayerHeal += ListenHeal;
     }
 
     private void OnDestroy()
     {
         PlayerLife.OnPlayerDamage -= ListenDamage;
+        PlayerLife.OnPlayerHeal -= ListenHeal;
     }
 
     private void ListenDamage(int curentHealth, int maxHealth)
@@ -33,6 +38,14 @@ public class LifeBarController : MonoBehaviour
         
         ShakeBar();
         LifeBarDecay();
+    }
+
+    private void ListenHeal(int curentHealth, int maxHealth)
+    {
+        _curentFill = (float)(curentHealth) / (float)(maxHealth);
+        _barFillDecay.fillAmount = _curentFill;
+
+        LifeBarHealDecay();
     }
 
     private void ShakeBar()
@@ -49,5 +62,16 @@ public class LifeBarController : MonoBehaviour
 
         _decayBarAnimation = DOTween.To(() => _barFillDecay.fillAmount, x => _barFillDecay.fillAmount = x, _curentFill, _decaySpeed)
                                         .SetDelay(_decayDelay).SetAutoKill(false).SetSpeedBased(true).SetEase(Ease.Linear);
+    }
+
+    private void LifeBarHealDecay()
+    {
+        if (_decayBarAnimation != null)
+        {
+            _decayBarAnimation.Kill();
+        }
+
+        _decayBarAnimation = DOTween.To(() => _barFillImage.fillAmount, x => _barFillImage.fillAmount = x, _curentFill, _healDecaySpeed)
+                                        .SetDelay(_healDecayDelay).SetAutoKill(false).SetSpeedBased(true).SetEase(Ease.Linear);
     }
 }

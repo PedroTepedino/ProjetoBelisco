@@ -311,6 +311,8 @@ MonoBehaviour:
   _shakeAnimaiton: {fileID: 1385297608}
   _decaySpeed: 0.75
   _decayDelay: 0.75
+  _healDecaySpeed: 1
+  _healDecayDelay: 0.2
 --- !u!1 &1385297604
 GameObject:
   m_ObjectHideFlags: 0

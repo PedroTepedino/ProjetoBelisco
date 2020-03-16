@@ -12,9 +12,11 @@ public class PlayerLife : BaseLifeSystem
     /* Variables: Actions 
      * OnPlayerDamage - Sends a signal when the player have recived damage.
      * OnPlayerDie - Sends  a signal when the player Dies.
+     * OnPlayerHeal - Sends a signal when  the player is healed.
      */
     public static System.Action<int, int> OnPlayerDamage;
     public static System.Action OnPlayerDie;
+    public static System.Action<int, int> OnPlayerHeal;
 
     // Group: Health Logic
 
@@ -38,6 +40,30 @@ public class PlayerLife : BaseLifeSystem
             if (IsDead)
             {
                 Die();
+            }
+        }
+    }
+
+    /* Function: RestoreHealth
+     * Restores a certein amount of the entitie health points, and sends a <signal: OnPlayerHeal>
+     * Parameters: 
+     * healPoints - The number of points to replanish in the entitie's health.
+     */
+    [Sirenix.OdinInspector.Button]
+    protected override void RestoreHealth(int healPoints = 1)
+    {
+        if (healPoints <= 0)
+        {
+            return;
+        }
+        else
+        {
+            _curentHealthPoints += healPoints;
+            OnPlayerHeal?.Invoke(_curentHealthPoints, _maximumHealth);
+
+            if (IsHealthFull)
+            {
+                _curentHealthPoints = _maximumHealth;
             }
         }
     }
