@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("ont",["Function"],[["OnTriggerEnter2D",,[["AuxRespawner",,,,0,"File:DevAuxCode/AuxRespawner.cs:AuxRespawner.OnTriggerEnter2D","CSharpClass:AuxRespawner:OnTriggerEnter2D"]]]]);

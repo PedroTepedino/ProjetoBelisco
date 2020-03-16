@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("_de",["Variable"],[["_decelerationTime",,[["PlayerMovement",,,,0,"File:Player/PlayerMovement.cs:PlayerMovement._decelerationTime","CSharpClass:PlayerMovement:_decelerationTime"]]]]);

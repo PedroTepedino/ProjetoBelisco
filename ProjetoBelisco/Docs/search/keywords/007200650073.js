@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("res",["Function"],[["ResetGravity",,[["PlayerGravityManager",,,,0,"File:Player/PlayerGravityManager.cs:PlayerGravityManager.ResetGravity","CSharpClass:PlayerGravityManager:ResetGravity"]]]]);

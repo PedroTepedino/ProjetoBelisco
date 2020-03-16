@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("hel",["Property"],[["Helper",,[["PlayerInputManager","Helper Properties",,,0,"File:Player/PlayerInputManager.cs:PlayerInputManager.Helper_Properties","CSharpClass:PlayerInputManager:Helper_Properties"],["PlayerJump","Helper Properties",,,0,"File:Player/PlayerJump.cs:PlayerJump.Helper_Properties","CSharpClass:PlayerJump:Helper_Properties"]]]]);

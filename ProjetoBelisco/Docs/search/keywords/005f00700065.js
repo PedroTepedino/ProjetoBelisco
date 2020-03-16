@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("_pe",["Variable"],[["_permitedArialTime",,[["PlayerJump",,,,0,"File:Player/PlayerJump.cs:PlayerJump._permitedArialTime","CSharpClass:PlayerJump:_permitedArialTime"]]]]);

@@ -10,7 +10,9 @@ using UnityEngine;
  * Null - No input registered
  * Pause - Pause Button pressed
  * Move - Register the side movement
- * Jump - Jump button pressed or holded
+ * JumpStart - Jump button pressed
+ * JumpFollowUp - Jump button holded
+ * JumpRelease - Jump button has been released
  */
 [Flags]
 public enum Inputs
@@ -18,7 +20,9 @@ public enum Inputs
     Null = 0,
     Pause = 1 << 0,
     Move = 1 << 1,
-    Jump = 1 << 2
+    JumpStart = 1 << 2,
+    JumpFollowUp = 1 << 3,
+    JumpRelease = 1 << 4
 }
 
 /* Class: PlayerInputManager
@@ -51,12 +55,22 @@ public class PlayerInputManager : MonoBehaviour
     [BoxGroup("Player Info")] [ShowInInspector] private Player _playerController;
     [SerializeField] [BoxGroup("Controller Parameters")] private float _controllerDeadZone = 0.25f;
 
+    /* Floats: Movement Parameters
+     * _movementAxisTimeCounter - Counts the time the movement axis have been active or inactive.
+     */
+    private float _movementAxisTimeCounter = 0f;
+
     /* Floats: Jump Parameters
      * 
-     * _maxTime - The maximum time that the player can hold the jump button.
-     *  After that time, the player will start to fall.
+     * _jumpActionTime - The timestamp in witch the player held the jump button down.
+     * _jumpActionStorageTime - Time in seconds that the jump action is stored so that it is executed later.
+     * _jumpActionTimer - Timer to delete the action.
+     * _jumpCicle - Indicates if the player is going throgh a jump cicle.
      */
-    [SerializeField] [BoxGroup("Jump Parameters")] private float _maxTime = 1f;
+    private float _jumpActionTimestamp = 0f;
+    [SerializeField] [BoxGroup("Controller Parameters")] private float _jumpActionStorageTime = 0.2f;
+    private float _jumpActionTimer = 0f;
+    private bool _jumpCicle = false;
     
     /* Variables: Input Handler Variables
      * 
@@ -133,12 +147,20 @@ public class PlayerInputManager : MonoBehaviour
      * Handles the functions that need to be called every frame.
      * 
      * + Get the inputs. (<GetInputs>)
-     * + Decide what to do. (<DecisionMaking>)
+     * + Decide what to do. (<Decision Making>)
      */
-    void Update()
+    private void Update()
     {
         GetInputs();
-        DecisionMaking();
+        DecisionMakingUpdate();
+    }
+
+    /* Function: FixedUpdate
+     * Handles the functions that need to be called every frame.
+     */
+    private void FixedUpdate()
+    {
+        DecisionMakingFixedUpdate();
     }
 
     // Group: Setup Methods
@@ -191,10 +213,13 @@ public class PlayerInputManager : MonoBehaviour
 
         GetMovement();
         GetPause();
+        GetJump();
+        InputTimerHandler();
+        InputStorageHandler();
     }
 
-    /* Function : GetMovement
-     * Gets the Horizontal movement from the curent input method.
+    /* Function: GetMovement
+     * Gets the movement action from the curent input method.
      */
     private void GetMovement()
     {
@@ -203,10 +228,16 @@ public class PlayerInputManager : MonoBehaviour
         if (Mathf.Abs(MoveDirection) >= _controllerDeadZone)
         {
             _curentInputs |= Inputs.Move;
+            _movementAxisTimeCounter = _playerController.GetAxisTimeActive("MoveHorizontal");
+        }
+        else
+        {
+            _movementAxisTimeCounter = _playerController.GetAxisTimeInactive("MoveHorizontal");
         }
     }
 
-    /* Function: 
+    /* Function: GetPause
+     * Gets the Pause button action from the current input method.
      */
     private void GetPause()
     {
@@ -216,50 +247,148 @@ public class PlayerInputManager : MonoBehaviour
         }
     }
 
+    /* Function: GetJump
+     * Gets the jump action from the curent input method.
+     */
     private void GetJump()
     {
+        if (_playerController.GetButtonDown("Jump"))
+        {
+            _curentInputs |= Inputs.JumpStart;
+            _jumpActionTimestamp = 0f;
+            _jumpActionTimer = _jumpActionStorageTime;
+            if (_playerJump.CanJump())
+            {
+                _jumpCicle = true;
+            }
+        }
+        else if (_playerController.GetButton("Jump"))
+        {
+            _curentInputs |= Inputs.JumpFollowUp;
+            _jumpActionTimestamp = _playerController.GetButtonTimePressed("Jump");
+        }
+        else if (_playerController.GetButtonUp("Jump"))
+        {
+            _curentInputs |= Inputs.JumpRelease;
+            _jumpCicle = false;
+        }
+    }
 
+    /* Function: InputTimerHandler
+     * Handles the countdown of the input Storage timers
+     * About:: 
+     * Called Every Frame
+     */
+    private void InputTimerHandler()
+    {
+        _jumpActionTimer -= Time.deltaTime;
+    }
+
+    /* Function: InputStorageHandler
+     * Handles the Storage of the inputs
+     */
+    private void InputStorageHandler()
+    {
+        if (_jumpActionTimer >= 0)
+        {
+            _curentInputs |= Inputs.JumpStart;
+        }
     }
 
     // Group: Decision Making
-    // Decides witch comands can or cannot be executed at a given frame
-    private void DecisionMaking()
+    // Decides witch comands can or cannot be executed at a given frame.
+
+    /* Function: DecisionMakingUpdate
+     *  Runs a series of statements to decide witch actions to call at a given frame.
+     */
+    private void DecisionMakingUpdate()
     {
         if ((_curentInputs & Inputs.Pause) == Inputs.Pause)
         {
             this.Pause();
         }
-        else
+    }
+
+    /* Function: DecisionMakingFixedUpdate
+     * Decides witch Action the player will make, in every stamp of the fixed update.
+     */
+    private void DecisionMakingFixedUpdate()
+    {
+        if (!IsControllerLocked())
         {
-            if (!IsControllerLocked())
+            if (((_curentInputs & Inputs.JumpStart) == Inputs.JumpStart))
             {
-                if ((_curentInputs & Inputs.Jump) == Inputs.Jump)
+                if (_playerJump.CanJump())
                 {
-
+                    this.Jump();
                 }
+            }
 
-                if ((_curentInputs & Inputs.Move) == Inputs.Move)
+            if (((_curentInputs & Inputs.JumpFollowUp) == Inputs.JumpFollowUp))
+            {
+                if (_jumpCicle)
                 {
-                    this.Move();
+                    if (_playerJump.CanRaiseJump(_jumpActionTimestamp))
+                    {
+                        this.Jump();
+                    }
                 }
+            }
+
+            if ((_curentInputs & Inputs.Move) == Inputs.Move)
+            {
+                this.Move();
+            }
+            else
+            {
+                this.StopMovement();
             }
         }
     }
 
     // Group: Calling Functions
-    // Functions that redirect the commads to their specific class
+    // Functions that redirect the commads to their specific class.
+    // About:: 
+    //  These are the functions called at <Decision Making>
+
+    /* Function: Pause
+     * Calls the <event : OnPause> to activate the Puase Scene.
+     */
     private void Pause()
     {
         OnPause?.Invoke();
     }
 
+    /* Function: Move
+     * Calls the movement Function from <PlayerMovement>.
+     */
     private void Move()
     {
-        _playerMovement.MovePlayer(MoveDirection);
+        _playerMovement.MovePlayer(MoveDirection, _movementAxisTimeCounter);
+    }
+
+    /* Function: StopMovement
+     * Calls the stop movement Function from <PlayerMovement>.
+     */
+    private void StopMovement()
+    {
+        _playerMovement.StopMovement(_movementAxisTimeCounter);
+    }
+
+    /* Function: Jump
+     * Cals the Jump Function from <PlayerJump>
+     */
+    private void Jump()
+    {
+        _playerJump.Jump();
     }
 
     // Group: Controller LockDown
-    // Decides if the controller can be used or not at a given frame
+    // Decides if the controller can be used or not at a given frame.
+
+    /* Function: IsControllerLocked
+     * Determins if the controller can be used or not at a given moment.
+     */
     private bool IsControllerLocked()
     {
         if (_dashing)
@@ -274,11 +403,24 @@ public class PlayerInputManager : MonoBehaviour
 
     // Group: Listeners
     // Methods that listen to Signals 
+
+    /* Function: ListenDash
+     * Function that Listen to the Action that detirmins if the player is dashing or not.
+     * 
+     * Parameters: 
+     * isDashing - Boolean that recieves the info if the player is dashing or not.
+     */
     private void ListenDash(bool isDashing)
     {
         this._dashing = isDashing;
     }
 
+    /* Function: ListenGrounder
+     * Function that Listen to the Action that detirmins if the player is grounded or not.
+     * 
+     * Parameters: 
+     * isGrounded - Boolean that recieves the info if the player is grounded or not.
+     */
     private void ListenGrounder(bool isGrounded)
     {
         this._isGrounded = isGrounded;

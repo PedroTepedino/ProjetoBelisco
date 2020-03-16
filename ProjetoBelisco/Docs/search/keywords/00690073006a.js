@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("isj",["Property"],[["IsJumping",,[["PlayerJump",,,,0,"File:Player/PlayerJump.cs:PlayerJump.IsJumping","CSharpClass:PlayerJump:IsJumping"]]]]);

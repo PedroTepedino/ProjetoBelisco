@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("aux",["Class"],[["AuxRespawner",,[[,,,,0,"File:DevAuxCode/AuxRespawner.cs:AuxRespawner","CSharpClass:AuxRespawner"]]]]);

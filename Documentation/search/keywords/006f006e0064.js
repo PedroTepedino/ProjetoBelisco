@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("ond",["Function"],[["OnDestroy",,[["PlayerInputManager",,,,0,"File:Player/PlayerInputManager.cs:PlayerInputManager.OnDestroy","CSharpClass:PlayerInputManager:OnDestroy"]]],["OnDrawGizmos",,[["PlayerGrounder",,,,0,"File:Player/PlayerGrounder.cs:PlayerGrounder.OnDrawGizmos","CSharpClass:PlayerGrounder:OnDrawGizmos"]]]]);

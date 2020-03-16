@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("upd",["Function"],[["Update",,[["PlayerGrounder",,,,0,"File:Player/PlayerGrounder.cs:PlayerGrounder.Update","CSharpClass:PlayerGrounder:Update"],["PlayerInputManager",,,,0,"File:Player/PlayerInputManager.cs:PlayerInputManager.Update","CSharpClass:PlayerInputManager:Update"]]]]);

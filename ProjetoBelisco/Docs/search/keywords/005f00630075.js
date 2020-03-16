@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("_cu",["Variable"],[["_curentHealthPoints",,[["LifeSystem",,,,0,"File:LivingBeingSystems/LifeSystem.cs:LifeSystem._curentHealthPoints","CSharpClass:LifeSystem:_curentHealthPoints"]]],["_curentInputs",,[["PlayerInputManager",,,,0,"File:Player/PlayerInputManager.cs:PlayerInputManager._curentInputs","CSharpClass:PlayerInputManager:_curentInputs"]]]]);
