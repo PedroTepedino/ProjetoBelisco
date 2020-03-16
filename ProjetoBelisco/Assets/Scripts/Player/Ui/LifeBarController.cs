@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using Sirenix.OdinInspector;
+using DG.Tweening;
 
 public class LifeBarController : MonoBehaviour
 {
     [SerializeField] [Required] private Image _barFillImage;
+    [SerializeField] private DOTweenAnimation _shakeAnimaiton;
 
     private void Awake()
     {
@@ -21,5 +21,14 @@ public class LifeBarController : MonoBehaviour
     private void ListenDamage(int curentHealth, int maxHealth)
     {
         _barFillImage.fillAmount = (float)(curentHealth) / (float)(maxHealth);
+
+        ShakeBar();
     }
+
+    private void ShakeBar()
+    {
+        _shakeAnimaiton?.DORestart();
+    }
+
+
 }

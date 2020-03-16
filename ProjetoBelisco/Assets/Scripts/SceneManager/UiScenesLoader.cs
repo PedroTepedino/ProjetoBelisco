@@ -12,7 +12,14 @@ public class UiScenesLoader : MonoBehaviour
 
     private void Awake()
     {
-        LoadScene();    
+        LoadScene();
+
+        PlayerLife.OnPlayerDie += UnLoadScene;
+    }
+
+    private void OnDestroy()
+    {
+        PlayerLife.OnPlayerDie -= UnLoadScene;
     }
 
     private void LoadScene()
@@ -24,4 +31,11 @@ public class UiScenesLoader : MonoBehaviour
     {
         SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex((int)_uiSceneToLoad));
     }
+
+    private void UnLoadScene()
+    {
+        SceneManager.UnloadSceneAsync((int)_uiSceneToLoad);
+    }
+
+
 }

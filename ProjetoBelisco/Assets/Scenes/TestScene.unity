@@ -1129,8 +1129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6808d2e759f8ed4d9a6a114eb296114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpInitialVelocity: 20
-  _jumpActionMaxHoldingTime: 0.1
+  _jumpInitialVelocity: 15
+  _jumpActionMaxHoldingTime: 0.15
   _permitedArialTime: 0.05
 --- !u!114 &1961446371
 MonoBehaviour:
@@ -1158,7 +1158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1acc4a84a74e245903d0aae93361b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maximumHealth: 3
+  _maximumHealth: 5
 --- !u!1 &2066989637
 GameObject:
   m_ObjectHideFlags: 0
