@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Sirenix.OdinInspector;
 
 /* Class: PlayerLife
  * Manages the life system of the player and fires its events.
@@ -14,7 +13,7 @@ public class PlayerLife : BaseLifeSystem
      * OnPlayerDamage - Sends a signal when the player have recived damage.
      * OnPlayerDie - Sends  a signal when the player Dies.
      */
-    public static System.Action OnPlayerDamage;
+    public static System.Action<int, int> OnPlayerDamage;
     public static System.Action OnPlayerDie;
 
     // Group: Health Logic
@@ -24,6 +23,7 @@ public class PlayerLife : BaseLifeSystem
      * Parameters: 
      * healPoints - The number of points to replanish in the entitie's health.
      */
+    [Sirenix.OdinInspector.Button]
     protected override void Damage(int damagePoints = 1)
     {
         if (damagePoints <= 0)
@@ -33,7 +33,7 @@ public class PlayerLife : BaseLifeSystem
         else
         {
             _curentHealthPoints -= damagePoints;
-            OnPlayerDamage?.Invoke();
+            OnPlayerDamage?.Invoke(_curentHealthPoints, _maximumHealth);
 
             if (IsDead)
             {
