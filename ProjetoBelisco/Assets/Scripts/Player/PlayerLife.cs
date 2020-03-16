@@ -80,8 +80,18 @@ public class PlayerLife : BaseLifeSystem
     }
 
 
-    public static void RespawnPlayer()
+    public static void RespawnPlayer(Vector3 position)
     {
-        
+        PlayerLife life = PlayerSingleton.Instance.GetComponent<PlayerLife>();
+
+        PlayerSingleton.Instance.transform.position = position;
+        life.RestoreHealth(life.MaxHealth);
+        PlayerSingleton.Instance.gameObject.SetActive(true);
+        OnPlayerSpawn?.Invoke();
+    }
+
+    public static void RespawnPlayer(Transform position)
+    {
+        RespawnPlayer(position.position);
     }
 }

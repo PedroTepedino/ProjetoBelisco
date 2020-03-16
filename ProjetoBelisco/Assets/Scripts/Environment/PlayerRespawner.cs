@@ -4,15 +4,39 @@ using UnityEngine;
 
 public class PlayerRespawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float _timeToSpwan = 3f;
+
+    private void Awake()
     {
-        
+        PlayerLife.OnPlayerDie += StartPlayerRespawnProcess;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDestroy()
     {
-        
+        PlayerLife.OnPlayerDie -= StartPlayerRespawnProcess;
+    }
+
+    private void StartPlayerRespawnProcess()
+    {
+        StartCoroutine(TimeToSpawnPlayer());
+    }
+
+    private IEnumerator TimeToSpawnPlayer()
+    {
+        float totalTime = 0f;
+
+        while (totalTime <= _timeToSpwan)
+        {
+            totalTime += Time.deltaTime;
+            Debug.Log(totalTime);
+            yield return null;
+        }
+
+        RespawnPlayer();
+    }
+
+    private void RespawnPlayer()
+    {
+        PlayerLife.RespawnPlayer(this.transform);
     }
 }

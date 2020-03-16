@@ -8,25 +8,18 @@ using System;
 
 public class UiScenesLoader : MonoBehaviour
 {
-    [SerializeField] [EnumToggleButtons] private UiScenes _uiSceneToLoad;
-
-    private void Awake()
+    public static void LoadScene(UiScenes sceneToLoad)
     {
-        LoadScene();
+        SceneManager.LoadSceneAsync((int)sceneToLoad, LoadSceneMode.Additive).completed += ActivateScene;
     }
 
-    private void LoadScene()
+    private static void ActivateScene(AsyncOperation obj)
     {
-        SceneManager.LoadSceneAsync((int)_uiSceneToLoad, LoadSceneMode.Additive).completed += ActivateScene;
+        obj.allowSceneActivation = true;
     }
 
-    private void ActivateScene(AsyncOperation obj)
+    public static void UnLoadScene(UiScenes sceneToUnload)
     {
-        SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex((int)_uiSceneToLoad));
-    }
-
-    private void UnLoadScene()
-    {
-        SceneManager.UnloadSceneAsync((int)_uiSceneToLoad);
+        SceneManager.UnloadSceneAsync((int)sceneToUnload);
     }
 }
