@@ -13,13 +13,6 @@ public class UiScenesLoader : MonoBehaviour
     private void Awake()
     {
         LoadScene();
-
-        PlayerLife.OnPlayerDie += UnLoadScene;
-    }
-
-    private void OnDestroy()
-    {
-        PlayerLife.OnPlayerDie -= UnLoadScene;
     }
 
     private void LoadScene()
@@ -36,6 +29,4 @@ public class UiScenesLoader : MonoBehaviour
     {
         SceneManager.UnloadSceneAsync((int)_uiSceneToLoad);
     }
-
-
 }

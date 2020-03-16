@@ -26,7 +26,7 @@ public class PlayerLife : BaseLifeSystem
      * healPoints - The number of points to replanish in the entitie's health.
      */
     [Sirenix.OdinInspector.Button]
-    protected override void Damage(int damagePoints = 1)
+    public override void Damage(int damagePoints = 1)
     {
         if (damagePoints <= 0)
         {
@@ -50,7 +50,7 @@ public class PlayerLife : BaseLifeSystem
      * healPoints - The number of points to replanish in the entitie's health.
      */
     [Sirenix.OdinInspector.Button]
-    protected override void RestoreHealth(int healPoints = 1)
+    public override void RestoreHealth(int healPoints = 1)
     {
         if (healPoints <= 0)
         {

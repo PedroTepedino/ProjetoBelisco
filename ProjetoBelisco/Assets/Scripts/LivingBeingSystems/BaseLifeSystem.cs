@@ -18,6 +18,8 @@ public abstract class BaseLifeSystem : MonoBehaviour
     // Group: Properties
     public bool IsDead { get => (_curentHealthPoints <= 0); }
     public bool IsHealthFull { get => (_curentHealthPoints >= _maximumHealth); }
+    public int MaxHealth { get => _maximumHealth; }
+    public int CurentHealth { get => _curentHealthPoints; }
 
     // Group: Unity Methods
 
@@ -36,7 +38,7 @@ public abstract class BaseLifeSystem : MonoBehaviour
      * Parameters: 
      * healPoints - The number of points to replanish in the entitie's health.
      */
-    protected virtual void RestoreHealth(int healPoints = 1)
+    public virtual void RestoreHealth(int healPoints = 1)
     {
         if (healPoints <= 0)
         {
@@ -57,7 +59,7 @@ public abstract class BaseLifeSystem : MonoBehaviour
      * Parameters: 
      * damagePoints - The number of points to take from the entitie's health.
      */
-    protected virtual void Damage(int damagePoints = 1)
+    public  virtual void Damage(int damagePoints = 1)
     {
         if (damagePoints <= 0)
         {
