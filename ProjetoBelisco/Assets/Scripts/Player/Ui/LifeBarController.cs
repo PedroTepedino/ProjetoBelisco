@@ -5,8 +5,16 @@ using DG.Tweening;
 
 public class LifeBarController : MonoBehaviour
 {
-    [SerializeField] [Required] private Image _barFillImage;
-    [SerializeField] private DOTweenAnimation _shakeAnimaiton;
+    [SerializeField] [BoxGroup("Components")] [Required] private Image _barFillImage;
+    [SerializeField] [BoxGroup("Components")] [Required] private Image _barFillDecay;
+    [SerializeField] [BoxGroup("Components")] private DOTweenAnimation _shakeAnimaiton;
+
+    [SerializeField] [BoxGroup("Decay")] private float _decaySpeed = 0.5f;
+    [SerializeField] [BoxGroup("Decay")] private float _decayDelay = 0.75f;
+
+
+    private float _curentFill = 1f;
+    private Tween _decayBarAnimation = null;
 
     private void Awake()
     {
@@ -20,9 +28,11 @@ public class LifeBarController : MonoBehaviour
 
     private void ListenDamage(int curentHealth, int maxHealth)
     {
-        _barFillImage.fillAmount = (float)(curentHealth) / (float)(maxHealth);
-
+        _curentFill = (float)(curentHealth) / (float)(maxHealth);
+        _barFillImage.fillAmount = _curentFill;
+        
         ShakeBar();
+        LifeBarDecay();
     }
 
     private void ShakeBar()
@@ -30,5 +40,14 @@ public class LifeBarController : MonoBehaviour
         _shakeAnimaiton?.DORestart();
     }
 
+    private void LifeBarDecay()
+    {
+        if (_decayBarAnimation != null)
+        {
+            _decayBarAnimation.Kill();
+        }
 
+        _decayBarAnimation = DOTween.To(() => _barFillDecay.fillAmount, x => _barFillDecay.fillAmount = x, _curentFill, _decaySpeed)
+                                        .SetDelay(_decayDelay).SetAutoKill(false).SetSpeedBased(true).SetEase(Ease.Linear);
+    }
 }
