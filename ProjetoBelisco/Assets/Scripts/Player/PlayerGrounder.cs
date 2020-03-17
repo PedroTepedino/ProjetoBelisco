@@ -17,6 +17,7 @@ public class PlayerGrounder : MonoBehaviour
     [FoldoutGroup("Paremeters")] [SerializeField] private Vector3 _grounderCenter = Vector3.zero;
     [FoldoutGroup("Paremeters")] [SerializeField] private Vector2 _grounderSizes;
     [FoldoutGroup("Paremeters")] [SerializeField] [EnumToggleButtons] private LayerMask _grounderLayerMask;
+    [FoldoutGroup("Paremeters")] [SerializeField] private float _permitedArialTime = 0.2f;
 
     /* Variable: OnGrounded
      * Signal that sends info to the subscribed functions. 
@@ -29,14 +30,34 @@ public class PlayerGrounder : MonoBehaviour
      */
     public static bool IsGrounded { get; private set; } = false;
     public static float ArialTime { get; private set; } = 0f;
-    
+    public static bool IsTouchingGround { get; private set; } = false;
+
+    private void Awake()
+    {
+        PlayerLife.OnPlayerSpawn += ResetParameters;
+    }
+
+    private void OnDestroy()
+    {
+        PlayerLife.OnPlayerSpawn -= ResetParameters;
+    }
+
+
     /* Function: Update
      * Unity update function, runs every frame, verifing if the player is touching the ground or not.
      */
     private void Update()
     {
-        IsGroundedVerification();
+        IsTouchingGround = GroundCheck();
         ArialTimeCalculation();
+        IsGroundedVerification();
+    }
+
+    private void ResetParameters()
+    {
+        IsGrounded = false;
+        ArialTime = 0f;
+        IsTouchingGround = false;
     }
 
     /* Function: IsGroundedVerification
@@ -44,11 +65,11 @@ public class PlayerGrounder : MonoBehaviour
      */
     private void IsGroundedVerification()
     {
-        bool auxiliarIsGrounded = GroundCheck();
+        bool auxArialTime = ArialTimeCheck();
 
-        if (auxiliarIsGrounded != IsGrounded)
+        if ((IsTouchingGround || auxArialTime) != IsGrounded)
         {
-            IsGrounded = auxiliarIsGrounded;
+            IsGrounded = IsTouchingGround;
             OnGrounded?.Invoke(IsGrounded);
         }
     }
@@ -58,7 +79,7 @@ public class PlayerGrounder : MonoBehaviour
      */
     private void ArialTimeCalculation()
     {
-        if (IsGrounded)
+        if (IsTouchingGround)
         {
             ArialTime = 0f;
         }
@@ -76,6 +97,11 @@ public class PlayerGrounder : MonoBehaviour
     private bool GroundCheck()
     {
         return Physics2D.OverlapBox(this.transform.position + _grounderCenter, _grounderSizes, 0f, _grounderLayerMask) != null ? true : false;
+    }
+
+    private bool ArialTimeCheck()
+    {
+        return ArialTime <= _permitedArialTime;
     }
 
     /* Function: OnDrawGizmos

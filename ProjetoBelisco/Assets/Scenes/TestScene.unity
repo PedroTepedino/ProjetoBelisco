@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccc3af93b67ab64e888d64196db115b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeToSpwan: 2
+  _timeToSpawn: 3
   _respawnUi: 2
 --- !u!1 &200059698
 GameObject:
@@ -1225,6 +1225,7 @@ MonoBehaviour:
   _grounderLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  _permitedArialTime: 0.05
 --- !u!114 &1961446369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1253,7 +1254,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _jumpInitialVelocity: 15
   _jumpActionMaxHoldingTime: 0.15
-  _permitedArialTime: 0.05
 --- !u!114 &1961446371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1268,6 +1268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _standardGravityMultiplier: 2
   _fallingGravityMultiplier: 5
+  _minimumFallingVelocity: -1
 --- !u!114 &1961446372
 MonoBehaviour:
   m_ObjectHideFlags: 0
