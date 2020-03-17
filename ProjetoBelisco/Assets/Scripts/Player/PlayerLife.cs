@@ -13,10 +13,12 @@ public class PlayerLife : BaseLifeSystem
      * OnPlayerDamage - Sends a signal when the player have recived damage.
      * OnPlayerDie - Sends  a signal when the player Dies.
      * OnPlayerHeal - Sends a signal when  the player is healed.
+     * OnPlayerSpawn - Sends a signal when the player spawns.
      */
     public static System.Action<int, int> OnPlayerDamage;
     public static System.Action OnPlayerDie;
     public static System.Action<int, int> OnPlayerHeal;
+    public static System.Action OnPlayerSpawn;
 
     // Group: Health Logic
 
@@ -26,7 +28,7 @@ public class PlayerLife : BaseLifeSystem
      * healPoints - The number of points to replanish in the entitie's health.
      */
     [Sirenix.OdinInspector.Button]
-    protected override void Damage(int damagePoints = 1)
+    public override void Damage(int damagePoints = 1)
     {
         if (damagePoints <= 0)
         {
@@ -50,7 +52,7 @@ public class PlayerLife : BaseLifeSystem
      * healPoints - The number of points to replanish in the entitie's health.
      */
     [Sirenix.OdinInspector.Button]
-    protected override void RestoreHealth(int healPoints = 1)
+    public override void RestoreHealth(int healPoints = 1)
     {
         if (healPoints <= 0)
         {
@@ -75,5 +77,21 @@ public class PlayerLife : BaseLifeSystem
     {
         OnPlayerDie?.Invoke();
         this.gameObject.SetActive(false);
+    }
+
+
+    public static void RespawnPlayer(Vector3 position)
+    {
+        PlayerLife life = PlayerSingleton.Instance.GetComponent<PlayerLife>();
+
+        PlayerSingleton.Instance.transform.position = position;
+        life.RestoreHealth(life.MaxHealth);
+        PlayerSingleton.Instance.gameObject.SetActive(true);
+        OnPlayerSpawn?.Invoke();
+    }
+
+    public static void RespawnPlayer(Transform position)
+    {
+        RespawnPlayer(position.position);
     }
 }
