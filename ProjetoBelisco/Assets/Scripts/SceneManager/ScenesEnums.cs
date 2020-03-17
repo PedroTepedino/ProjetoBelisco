@@ -13,6 +13,7 @@
 
     public enum UiScenes
     {
-        PlayerUi = 1
+        PlayerUi = 1,
+        RespawnUi = 2
     }
 }

@@ -1,34 +1,47 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 public class PlayerRespawner : MonoBehaviour
 {
-    [SerializeField] private float _timeToSpwan = 3f;
+    public static PlayerRespawner Instance = null;
+    [SerializeField] private float _timeToSpawn = 3f;
+    [SerializeField] [EnumToggleButtons] private ScenesIndex.UiScenes _respawnUi = ScenesIndex.UiScenes.RespawnUi;
+
+    public static System.Action<PlayerRespawner> OnStartTimer;
+
+    public float TotalTimeSpam { get; private set; }
+    public float RemainigTime { get => _timeToSpawn - TotalTimeSpam ; }
 
     private void Awake()
     {
-        PlayerLife.OnPlayerDie += StartPlayerRespawnProcess;
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+
+        PlayerLife.OnPlayerDie += ListenPlayerDeath;
     }
 
     private void OnDestroy()
     {
-        PlayerLife.OnPlayerDie -= StartPlayerRespawnProcess;
+        PlayerLife.OnPlayerDie -= ListenPlayerDeath;
     }
 
-    private void StartPlayerRespawnProcess()
+    public void StartPlayerRespawnProcess()
     {
         StartCoroutine(TimeToSpawnPlayer());
     }
 
     private IEnumerator TimeToSpawnPlayer()
     {
-        float totalTime = 0f;
+        TotalTimeSpam = 0f;
+        OnStartTimer?.Invoke(this);
 
-        while (totalTime <= _timeToSpwan)
+        while (TotalTimeSpam <= _timeToSpawn)
         {
-            totalTime += Time.deltaTime;
-            Debug.Log(totalTime);
+            TotalTimeSpam += Time.deltaTime;
             yield return null;
         }
 
@@ -38,5 +51,10 @@ public class PlayerRespawner : MonoBehaviour
     private void RespawnPlayer()
     {
         PlayerLife.RespawnPlayer(this.transform);
+    }
+
+    private void ListenPlayerDeath()
+    {
+        UiScenesLoader.LoadScene(_respawnUi);
     }
 }
