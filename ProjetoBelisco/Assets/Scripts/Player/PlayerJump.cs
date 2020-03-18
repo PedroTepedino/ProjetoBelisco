@@ -10,11 +10,9 @@ public class PlayerJump : MonoBehaviour
     /* Variables: Parameters
      * _jumpInitialVelocity - The initial jump velocity value.
      * _jumpActionMaxHoldingTime - Maximum time in witch the player can hold the jump button and still ascend.
-     * _permitedArialTime - Time that the player can still jump if falling from a platform.
      */
     [SerializeField] [FoldoutGroup("Parameters")] private float _jumpInitialVelocity = 10f;
     [SerializeField] [FoldoutGroup("Parameters")] private float _jumpActionMaxHoldingTime = 1.5f;
-    [SerializeField] [FoldoutGroup("Parameters")] private float _permitedArialTime = 0.2f;
 
     /* Variables: Essential Components
      * _rigidBody - The RigidBody of the player.
@@ -36,7 +34,8 @@ public class PlayerJump : MonoBehaviour
      * Vars::
      * IsJumping - Returns if the player is jumping or not.
      */
-    public bool IsJumping { get; private set; } = false;
+    public static bool IsJumping { get; private set; } = false;
+
 
     // Group: Unity Methods
     /* Function: Awake
@@ -45,6 +44,17 @@ public class PlayerJump : MonoBehaviour
     private void Awake()
     {
         GetEssentialComponents();
+    }
+
+    private void Update()
+    {
+        if (PlayerGrounder.IsTouchingGround)
+        {
+            if (IsJumping == PlayerGrounder.IsTouchingGround)
+            {
+                EndJump();
+            }
+        }
     }
 
     // Group: Setup Methods
@@ -83,21 +93,14 @@ public class PlayerJump : MonoBehaviour
      */
     public bool CanJump()
     {
-        if(PlayerGrounder.IsGrounded)
+        if (PlayerGrounder.IsTouchingGround)
         {
             EndJump();
         }
 
-        if (!IsJumping)
+        if (!IsJumping && PlayerGrounder.IsWithinPermitedArialTime)
         {
-            if (PlayerGrounder.ArialTime <= _permitedArialTime)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return true;
         }
         else
         {

@@ -17,12 +17,13 @@ using UnityEngine;
 [Flags]
 public enum Inputs
 {
-    Null = 0,
-    Pause = 1 << 0,
-    Move = 1 << 1,
-    JumpStart = 1 << 2,
-    JumpFollowUp = 1 << 3,
-    JumpRelease = 1 << 4
+    Null            = 0,
+    Pause           = 1 << 0,
+    Move            = 1 << 1,
+    JumpStart       = 1 << 2,
+    JumpFollowUp    = 1 << 3,
+    JumpRelease     = 1 << 4,
+    Attack          = 1 << 5
 }
 
 /* Class: PlayerInputManager
@@ -92,6 +93,7 @@ public class PlayerInputManager : MonoBehaviour
     private PlayerMovement _playerMovement = null;
     private PlayerJump _playerJump = null;
     private PlayerGrounder _playerGrounder = null;
+    private PlayerAttackSystem _playerAttack = null;
 
     /* Variables: Controller Lock Parameters    
      * About::
@@ -189,6 +191,7 @@ public class PlayerInputManager : MonoBehaviour
         _playerMovement = this.GetComponent<PlayerMovement>();
         _playerGrounder = this.GetComponent<PlayerGrounder>();
         _playerJump = this.GetComponent<PlayerJump>();
+        _playerAttack = this.GetComponent<PlayerAttackSystem>();
     }
 
     // Group: Destruction Methods
@@ -214,6 +217,7 @@ public class PlayerInputManager : MonoBehaviour
         GetMovement();
         GetPause();
         GetJump();
+        GetAttack();
         InputTimerHandler();
         InputStorageHandler();
     }
@@ -274,6 +278,14 @@ public class PlayerInputManager : MonoBehaviour
         }
     }
 
+    private void GetAttack()
+    {
+        if (_playerController.GetButtonDown("Attack"))
+        {
+            _curentInputs |= Inputs.Attack;
+        }
+    }
+
     /* Function: InputTimerHandler
      * Handles the countdown of the input Storage timers
      * About:: 
@@ -303,6 +315,11 @@ public class PlayerInputManager : MonoBehaviour
      */
     private void DecisionMakingUpdate()
     {
+        if ((_curentInputs & Inputs.Attack) == Inputs.Attack)
+        {
+            this.Attack();
+        }
+
         if ((_curentInputs & Inputs.Pause) == Inputs.Pause)
         {
             this.Pause();
@@ -381,6 +398,11 @@ public class PlayerInputManager : MonoBehaviour
     private void Jump()
     {
         _playerJump.Jump();
+    }
+
+    private void Attack()
+    {
+        _playerAttack.Attack();
     }
 
     // Group: Controller LockDown
