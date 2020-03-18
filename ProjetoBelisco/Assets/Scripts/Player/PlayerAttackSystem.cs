@@ -10,6 +10,8 @@ public class PlayerAttackSystem : BaseAttackSystem
     [SerializeField] [EnumToggleButtons] private LayerMask _attackLayers;
     [SerializeField] [EnumToggleButtons] private LayerMask _wallCheckLayers;
 
+    public static System.Action OnDamage;
+
     public override void Attack()
     {
         Collider2D[] enemies = CheckCollision();
@@ -19,6 +21,7 @@ public class PlayerAttackSystem : BaseAttackSystem
             BaseLifeSystem life = CheckWallInBetween(collider);
             if (life != null)
             {
+                OnDamage?.Invoke();
                 life.Damage(_baseAttack);
             }
         }
