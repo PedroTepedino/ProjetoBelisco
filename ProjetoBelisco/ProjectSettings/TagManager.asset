@@ -15,7 +15,7 @@ TagManager:
   - 
   - Ground
   - PostProcess
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Enemy
+    uniqueID: 4252497653
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

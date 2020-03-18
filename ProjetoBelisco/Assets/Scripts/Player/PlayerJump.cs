@@ -98,7 +98,7 @@ public class PlayerJump : MonoBehaviour
             EndJump();
         }
 
-        if (!IsJumping)
+        if (!IsJumping && PlayerGrounder.IsWithinPermitedArialTime)
         {
             return true;
         }

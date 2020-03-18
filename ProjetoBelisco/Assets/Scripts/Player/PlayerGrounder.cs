@@ -29,8 +29,9 @@ public class PlayerGrounder : MonoBehaviour
      * ArialTime - Propertie that stores the time is seconds, that the player is not grounded.
      */
     public static bool IsGrounded { get; private set; } = false;
-    public static float ArialTime { get; private set; } = 0f;
+    public static float TotalArialTime { get; private set; } = 0f;
     public static bool IsTouchingGround { get; private set; } = false;
+    public static bool IsWithinPermitedArialTime { get; private set; } = false;
 
     private void Awake()
     {
@@ -56,8 +57,9 @@ public class PlayerGrounder : MonoBehaviour
     private void ResetParameters()
     {
         IsGrounded = false;
-        ArialTime = 0f;
+        TotalArialTime = 0f;
         IsTouchingGround = false;
+        IsWithinPermitedArialTime = false;
     }
 
     /* Function: IsGroundedVerification
@@ -65,9 +67,10 @@ public class PlayerGrounder : MonoBehaviour
      */
     private void IsGroundedVerification()
     {
-        bool auxArialTime = ArialTimeCheck();
+        IsWithinPermitedArialTime = ArialTimeCheck();
 
-        if ((IsTouchingGround || auxArialTime) != IsGrounded)
+
+        if ((IsTouchingGround || IsWithinPermitedArialTime) != IsGrounded)
         {
             IsGrounded = IsTouchingGround;
             OnGrounded?.Invoke(IsGrounded);
@@ -81,11 +84,11 @@ public class PlayerGrounder : MonoBehaviour
     {
         if (IsTouchingGround)
         {
-            ArialTime = 0f;
+            TotalArialTime = 0f;
         }
         else
         {
-            ArialTime += Time.deltaTime;
+            TotalArialTime += Time.deltaTime;
         }
     }
 
@@ -101,7 +104,7 @@ public class PlayerGrounder : MonoBehaviour
 
     private bool ArialTimeCheck()
     {
-        return ArialTime <= _permitedArialTime;
+        return TotalArialTime < _permitedArialTime;
     }
 
     /* Function: OnDrawGizmos

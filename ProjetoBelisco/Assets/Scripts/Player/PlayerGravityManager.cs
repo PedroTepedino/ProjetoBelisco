@@ -35,7 +35,6 @@ public class PlayerGravityManager : MonoBehaviour
     private void Update()
     {
         GravityDecision(PlayerGrounder.IsGrounded);
-        Debug.Log(_rigidBody.gravityScale);
     }
 
     /* Function: OnDestroy
