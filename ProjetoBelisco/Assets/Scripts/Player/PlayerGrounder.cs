@@ -52,7 +52,6 @@ public class PlayerGrounder : MonoBehaviour
         IsTouchingGround = GroundCheck();
         ArialTimeCalculation();
         IsGroundedVerification();
-        Debug.Log(IsGrounded + " " + IsTouchingGround + " " + TotalArialTime + " " + ArialTimeCheck());
     }
 
     private void ResetParameters()
