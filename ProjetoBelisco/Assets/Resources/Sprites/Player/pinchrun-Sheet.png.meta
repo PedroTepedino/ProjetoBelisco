@@ -1,0 +1,1076 @@
+fileFormatVersion: 2
+guid: 1ab5228502ef8954ba32b6631c250fd4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4127487108521552333
+    second: pinchrun-Sheet_0
+  - first:
+      213: 5355716970676692479
+    second: pinchrun-Sheet_1
+  - first:
+      213: -3515041299260468618
+    second: pinchrun-Sheet_2
+  - first:
+      213: -4285957616918349481
+    second: pinchrun-Sheet_3
+  - first:
+      213: 8168303119893504058
+    second: pinchrun-Sheet_4
+  - first:
+      213: 7164397322517903108
+    second: pinchrun-Sheet_5
+  - first:
+      213: -1965251512816997524
+    second: pinchrun-Sheet_6
+  - first:
+      213: 1710704879998278691
+    second: pinchrun-Sheet_7
+  - first:
+      213: 3542148979986959987
+    second: pinchrun-Sheet_8
+  - first:
+      213: 3276995369946758397
+    second: pinchrun-Sheet_9
+  - first:
+      213: -5484382825904136540
+    second: pinchrun-Sheet_10
+  - first:
+      213: -33654151118410793
+    second: pinchrun-Sheet_11
+  - first:
+      213: 8593817813168775407
+    second: pinchrun-Sheet_12
+  - first:
+      213: -5527613932328068325
+    second: pinchrun-Sheet_13
+  - first:
+      213: -7996021949318869811
+    second: pinchrun-Sheet_14
+  - first:
+      213: -5613297146129927024
+    second: pinchrun-Sheet_15
+  - first:
+      213: -9043961821679037454
+    second: pinchrun-Sheet_16
+  - first:
+      213: -681130379577129816
+    second: pinchrun-Sheet_17
+  - first:
+      213: 5471672100761039686
+    second: pinchrun-Sheet_18
+  - first:
+      213: 1987764801842465730
+    second: pinchrun-Sheet_19
+  - first:
+      213: -3405423279776446396
+    second: pinchrun-Sheet_20
+  - first:
+      213: -7496555656062110212
+    second: pinchrun-Sheet_21
+  - first:
+      213: 3695553463762026040
+    second: pinchrun-Sheet_22
+  - first:
+      213: -1122061610562988302
+    second: pinchrun-Sheet_23
+  - first:
+      213: 4198013646318382775
+    second: pinchrun-Sheet_24
+  - first:
+      213: 967756336707720949
+    second: pinchrun-Sheet_25
+  - first:
+      213: 1558522880510010494
+    second: pinchrun-Sheet_26
+  - first:
+      213: -5276336481799585967
+    second: pinchrun-Sheet_27
+  - first:
+      213: 2719981889954321572
+    second: pinchrun-Sheet_28
+  - first:
+      213: 393756053192231347
+    second: pinchrun-Sheet_29
+  - first:
+      213: -747952118393679386
+    second: pinchrun-Sheet_30
+  - first:
+      213: 1254125462809893566
+    second: pinchrun-Sheet_31
+  - first:
+      213: 5733595799862273641
+    second: pinchrun-Sheet_32
+  - first:
+      213: -4403487248404823033
+    second: pinchrun-Sheet_33
+  - first:
+      213: 8727659726185014578
+    second: pinchrun-Sheet_34
+  - first:
+      213: 4207077010407068300
+    second: pinchrun-Sheet_35
+  - first:
+      213: -8849509695399871458
+    second: pinchrun-Sheet_0
+  - first:
+      213: -730346923103960428
+    second: pinchrun-Sheet_1
+  - first:
+      213: 1810368384856016524
+    second: pinchrun-Sheet_2
+  - first:
+      213: -5719624559370180310
+    second: pinchrun-Sheet_3
+  - first:
+      213: 59699462334913563
+    second: pinchrun-Sheet_4
+  - first:
+      213: 1304732438471197899
+    second: pinchrun-Sheet_5
+  - first:
+      213: -1425938873211151901
+    second: pinchrun-Sheet_6
+  - first:
+      213: -812828206664415972
+    second: pinchrun-Sheet_7
+  - first:
+      213: 6705514363712037947
+    second: pinchrun-Sheet_8
+  - first:
+      213: 2747410543978603153
+    second: pinchrun-Sheet_9
+  - first:
+      213: 6163153350493077078
+    second: pinchrun-Sheet_10
+  - first:
+      213: -4484418715327986992
+    second: pinchrun-Sheet_11
+  - first:
+      213: -6476503543117904153
+    second: pinchrun-Sheet_12
+  - first:
+      213: -5051146752865835012
+    second: pinchrun-Sheet_13
+  - first:
+      213: -9111742638003257481
+    second: pinchrun-Sheet_14
+  - first:
+      213: 8321813677845180972
+    second: pinchrun-Sheet_15
+  - first:
+      213: -7443656315114831114
+    second: pinchrun-Sheet_16
+  - first:
+      213: 8474474481437502838
+    second: pinchrun-Sheet_17
+  - first:
+      213: -4979669065929763527
+    second: pinchrun-Sheet_18
+  - first:
+      213: 832800649496155137
+    second: pinchrun-Sheet_19
+  - first:
+      213: -3871170889003506180
+    second: pinchrun-Sheet_20
+  - first:
+      213: 5275074358197349466
+    second: pinchrun-Sheet_21
+  - first:
+      213: -4122092339321242029
+    second: pinchrun-Sheet_22
+  - first:
+      213: 6044777725361848805
+    second: pinchrun-Sheet_23
+  - first:
+      213: -3742407006876593329
+    second: pinchrun-Sheet_24
+  - first:
+      213: 8101480518739705354
+    second: pinchrun-Sheet_25
+  - first:
+      213: -2363571216542675892
+    second: pinchrun-Sheet_26
+  - first:
+      213: -97207273609012021
+    second: pinchrun-Sheet_27
+  - first:
+      213: -9036333445140610095
+    second: pinchrun-Sheet_28
+  - first:
+      213: 3189975436779754200
+    second: pinchrun-Sheet_29
+  - first:
+      213: 2789688194071861171
+    second: pinchrun-Sheet_30
+  - first:
+      213: -2010725467644163000
+    second: pinchrun-Sheet_31
+  - first:
+      213: 6689767278959237157
+    second: pinchrun-Sheet_32
+  - first:
+      213: 1552201772158751995
+    second: pinchrun-Sheet_33
+  - first:
+      213: 1482013849769606412
+    second: pinchrun-Sheet_34
+  - first:
+      213: -6870890616478469529
+    second: pinchrun-Sheet_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pinchrun-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1cb05991d9303580800000000000000
+      internalID: -8849509695399871458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492c69dc7594dd5f0800000000000000
+      internalID: -730346923103960428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86c0fb4478bf1910800000000000000
+      internalID: 1810368384856016524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29e32264cfcf90b0800000000000000
+      internalID: -5719624559370180310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c11cd385814d000800000000000000
+      internalID: 59699462334913563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc441027d375b1210800000000000000
+      internalID: 1304732438471197899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e914d6562c063ce0800000000000000
+      internalID: -1425938873211151901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1589567d0148b4f0800000000000000
+      internalID: -812828206664415972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34e55559c5ce0d50800000000000000
+      internalID: 6705514363712037947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192e1065553c02620800000000000000
+      internalID: 2747410543978603153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ef568815be78550800000000000000
+      internalID: 6163153350493077078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d203c810f424c1c0800000000000000
+      internalID: -4484418715327986992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e606ed6756de16a0800000000000000
+      internalID: -6476503543117904153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf760175ac8b6e9b0800000000000000
+      internalID: -5051146752865835012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ff809c8569c8180800000000000000
+      internalID: -9111742638003257481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22f2faf2750d7370800000000000000
+      internalID: 8321813677845180972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2cc730502d2b890800000000000000
+      internalID: -7443656315114831114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67de13424a16b9570800000000000000
+      internalID: 8474474481437502838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93551423e59a4eab0800000000000000
+      internalID: -4979669065929763527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104dee147c3be8b00800000000000000
+      internalID: 832800649496155137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5ec183696d64ac0800000000000000
+      internalID: -3871170889003506180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5cef142e24d43940800000000000000
+      internalID: 5275074358197349466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ef56f6bd26bc6c0800000000000000
+      internalID: -4122092339321242029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1036a805d53e350800000000000000
+      internalID: 6044777725361848805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f431036c7ac401cc0800000000000000
+      internalID: -3742407006876593329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e3a3abb9d3e6070800000000000000
+      internalID: 8101480518739705354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4cc2a45088e23fd0800000000000000
+      internalID: -2363571216542675892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc53faef76a6aef0800000000000000
+      internalID: -97207273609012021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d38962bb9e789280800000000000000
+      internalID: -9036333445140610095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d29a7f22c1154c20800000000000000
+      internalID: 3189975436779754200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b711c1d1a6f6b620800000000000000
+      internalID: 2789688194071861171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c0d3827d77814e0800000000000000
+      internalID: -2010725467644163000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528956475e3d6dc50800000000000000
+      internalID: 6689767278959237157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf41141b9478a8510800000000000000
+      internalID: 1552201772158751995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0df9bb8ebb219410800000000000000
+      internalID: 1482013849769606412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchrun-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7627c3a4361b5a0a0800000000000000
+      internalID: -6870890616478469529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
