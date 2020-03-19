@@ -32,13 +32,13 @@ public class AttackState : IState
         timer += Time.deltaTime;
 
         ownerGameObject.transform.LookAt(_target);
-        if (Vector2.Distance(ownerGameObject.transform.position, _target.position) <= controller.attackRange)
+        if (Vector2.Distance(ownerGameObject.transform.position, _target.position) <= controllerOwner.attackRange)
         {
-            if (timer >= controller.attackSpeed)
+            if (timer >= controllerOwner.attackSpeed)
             {
                 if (_target != null)
                 {
-                    _target.GetComponent<LifeManager>().Damage(controller.attackDamage);
+                    _target.Damage(controllerOwner.attackDamage);
                 }
                 timer = 0;
             }
