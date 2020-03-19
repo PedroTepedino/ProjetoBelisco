@@ -7,7 +7,6 @@ using Sirenix.OdinInspector.Editor;
 using Sirenix.Utilities.Editor;
 using System.Linq;
 
-
 public class SceneEssentials : OdinMenuEditorWindow
 {
     private CreateNewSceneEssentials _createNewSceneEssentials;
@@ -49,9 +48,12 @@ public class SceneEssentials : OdinMenuEditorWindow
 
         if (selected.SelectedValue != null)
         {
+            SirenixEditorGUI.BeginHorizontalToolbar();
+
+            GUILayout.Label(this.MenuTree.Selection.FirstOrDefault().Name);
+
             if (selected.SelectedValue.GetType() == typeof(SceneEssentialObjects))
             {
-                SirenixEditorGUI.BeginHorizontalToolbar();
                 {
                     GUILayout.FlexibleSpace();
                     if (SirenixEditorGUI.ToolbarButton("Delete Current"))
@@ -62,8 +64,9 @@ public class SceneEssentials : OdinMenuEditorWindow
                         AssetDatabase.SaveAssets();
                     }
                 }
-                SirenixEditorGUI.EndHorizontalToolbar();
+                
             }
+            SirenixEditorGUI.EndHorizontalToolbar();
         }
     }
 
@@ -76,11 +79,24 @@ public class SceneEssentials : OdinMenuEditorWindow
         {
             if (selected.SelectedValue.GetType() == typeof(SceneEssentialObjects))
             {
+                SceneEssentialObjects asset = selected.SelectedValue as SceneEssentialObjects;
+
                 if (_missingGameObjects != null)
                 {
                     foreach (GameObject obj in _missingGameObjects)
                     {
                         SirenixEditorGUI.WarningMessageBox("Missing -" + obj.name + "- Prefab.");
+                    }
+                }
+                else
+                {
+                    if (asset.HasBeenChecked)
+                    {
+                        SirenixEditorGUI.InfoMessageBox("No missing Objects.");
+                    }
+                    else
+                    {
+                        SirenixEditorGUI.InfoMessageBox("Not Checked Yet.");
                     }
                 }
 
@@ -92,17 +108,32 @@ public class SceneEssentials : OdinMenuEditorWindow
                     {
                         if (SirenixEditorGUI.ToolbarButton("Add Missing Objects"))
                         {
+                            AddMissing();
                         }
                     }
+
                     if (SirenixEditorGUI.ToolbarButton("Check Scene"))
-                    {
-                        SceneEssentialObjects asset = selected.SelectedValue as SceneEssentialObjects;
+                    {       
                         CheckScene(asset);
+                        asset.HasBeenChecked = true;
                     }
                 }
                 SirenixEditorGUI.EndHorizontalToolbar();
             }
         }
+    }
+
+    private void AddMissing()
+    {
+        foreach(GameObject obj in _missingGameObjects)
+        {
+            GameObject aux = PrefabUtility.InstantiatePrefab(obj) as GameObject;
+            aux.transform.position = new Vector3(0f, 0f, -10f);
+            aux.transform.rotation = Quaternion.identity;
+        }
+
+        _missingGameObjects.Clear();
+        _missingGameObjects = null;
     }
 
     private void CheckScene(SceneEssentialObjects asset)
@@ -159,7 +190,7 @@ public class SceneEssentials : OdinMenuEditorWindow
         [InlineEditor(ObjectFieldMode = InlineEditorObjectFieldModes.Hidden)]
         public SceneEssentialObjects EssentialObjects;
 
-        [Button("Save")]
+        [Button("Save", ButtonSizes.Large)]
         private void CreateNewSceneType()
         {
             AssetDatabase.CreateAsset(EssentialObjects, "Assets/Resources/Tools/SceneEssentials/" + EssentialsName + ".asset");
