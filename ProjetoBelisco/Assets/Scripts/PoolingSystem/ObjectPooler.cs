@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using UnityEditor;
 
 /* Class: Pool
  * Class that descriobes a type of objects to be stored in a pool.
@@ -234,5 +235,4 @@ public class ObjectPooler : MonoBehaviour
         
         return aux;
     }
-
 }
