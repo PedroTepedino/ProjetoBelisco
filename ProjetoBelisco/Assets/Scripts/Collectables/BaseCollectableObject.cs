@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
-public abstract class BaseCollectableObject : MonoBehaviour 
+public abstract class BaseCollectableObject : MonoBehaviour
 {
+    [SerializeField] [EnumToggleButtons] private CollectableTypes _type;
+
     public System.Action OnPickUp;
+
+    public CollectableTypes Type { get => _type; set => _type = value; }
 
     public abstract void PickUp();
 

@@ -72,7 +72,6 @@ public class SceneEssentials : OdinMenuEditorWindow
 
     protected override void OnEndDrawEditors()
     {
-        Debug.Log(_missingGameObjects);
         OdinMenuTreeSelection selected = this.MenuTree.Selection;
 
         if (selected.SelectedValue != null)

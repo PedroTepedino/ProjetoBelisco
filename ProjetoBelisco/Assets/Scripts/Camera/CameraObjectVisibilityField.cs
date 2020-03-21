@@ -37,6 +37,12 @@ public class CameraObjectVisibilityField : MonoBehaviour
 
     public static bool IsWithinBounds(Vector2 position)
     {
+#if UNITY_EDITOR
+        main = Camera.main;
+
+        Height = main.orthographicSize * 2f;
+        Width = Height * main.aspect;
+#endif
         return !((position.x >= (main.transform.position.x + w) ||
                     position.x <= (main.transform.position.x - w)) ||
                         (position.y >= (main.transform.position.y + h) ||

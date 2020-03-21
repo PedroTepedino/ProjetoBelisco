@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 
-public enum ColletableTypes
+public enum CollectableTypes
 {
     Paw = 1
 }
 
-public class CollectableSpawner : SerializedMonoBehaviour
+public class CollectableSpawner : MonoBehaviour
 {
     [SerializeField] private bool _repickable = false;
-    [SerializeField] [EnumToggleButtons] private ColletableTypes _colletableType;
+    [SerializeField] [EnumToggleButtons] private CollectableTypes _colletableType;
 
     private GameObject _collectable = null;
 
     public bool HasBeenPicked { get; private set; } = false;
+    public CollectableTypes CollectableType { get => _colletableType; set => _colletableType = value; }
 
     private void Update()
     {
