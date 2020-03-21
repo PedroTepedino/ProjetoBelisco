@@ -4,7 +4,7 @@ public class PlayerColletableInteractions : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        ICollectableObject collectable = collision.gameObject.GetComponent<ICollectableObject>();
+        BaseCollectableObject collectable = collision.gameObject.GetComponent<BaseCollectableObject>();
 
         if (collectable != null)
         {

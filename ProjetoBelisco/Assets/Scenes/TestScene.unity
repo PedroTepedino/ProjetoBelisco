@@ -775,6 +775,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 723678640}
+  - component: {fileID: 723678642}
   - component: {fileID: 723678639}
   - component: {fileID: 723678638}
   - component: {fileID: 723678641}
@@ -844,7 +845,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723678637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -2.03, y: -0.11, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -881,6 +882,19 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &723678642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723678637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d6e88dd12b42a4e994d4bcc1bf81fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _offsets: {x: 1, y: 1}
 --- !u!1 &731628332
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,7 +1699,7 @@ GameObject:
   m_Layer: 0
   m_Name: CollectableSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1701,6 +1715,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2b6011d38695347bf1953a774dba8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _repickable: 0
+  _colletableType: 1
 --- !u!4 &1773244945
 Transform:
   m_ObjectHideFlags: 0
@@ -1709,7 +1734,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773244943}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.94, y: -2.05, z: 0}
+  m_LocalPosition: {x: -8.77, y: -1.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2111,12 +2136,12 @@ PrefabInstance:
     - target: {fileID: 2346514174071448492, guid: a64c804f7ca2fee408b800cbc8ab95e9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.27
+      value: 4.69
       objectReference: {fileID: 0}
     - target: {fileID: 2346514174071448492, guid: a64c804f7ca2fee408b800cbc8ab95e9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.93
+      value: 0.92
       objectReference: {fileID: 0}
     - target: {fileID: 2346514174071448492, guid: a64c804f7ca2fee408b800cbc8ab95e9,
         type: 3}

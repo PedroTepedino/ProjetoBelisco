@@ -1,17 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PawCollectable : MonoBehaviour, ICollectableObject, IPooledObject
+public class PawCollectable : BaseCollectableObject, IPooledObject
 {
     [SerializeField] private int _pawsToAdd = 1;
 
-    public void PickUp()
+    public override void PickUp()
     {
-        Destroy(this.gameObject);
+        OnPickUp?.Invoke();
+        this.gameObject.SetActive(false);
     }
 
-    public void Effect()
+    public override void Effect()
     {
         PlayerPawStorage.AddPaws(_pawsToAdd);
     }

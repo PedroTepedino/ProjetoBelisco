@@ -6,19 +6,15 @@ using UnityEditor;
 [InitializeOnLoad()]
 public class CollectableSpawnerEditor
 {
-    [DrawGizmo(GizmoType.NonSelected | GizmoType.Selected | GizmoType.Pickable)]
+    [DrawGizmo(GizmoType.NonSelected | GizmoType.Selected | GizmoType.Pickable )]
     public static void OnDrawSceneGizmos(CollectableSpawner spawn, GizmoType gizmoType)
     {
+        Color color = Color.white;
         if ((gizmoType & GizmoType.Selected) != 0)
         {
-            Gizmos.color = Color.green;
-        }
-        else
-        {
-            Gizmos.color = Color.green * 0.5f;
+            color = Color.yellow;
         }
 
-        Gizmos.DrawSphere(spawn.transform.position, 0.5f);
+       Gizmos.DrawIcon(spawn.transform.position, "Spawner.png", true, color);
     }
-  
 }
