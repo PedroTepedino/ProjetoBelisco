@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 [ExecuteAlways]
+[InitializeOnLoad]
 public class CameraObjectVisibilityField : MonoBehaviour
 {
     private static Camera main;
@@ -28,6 +30,11 @@ public class CameraObjectVisibilityField : MonoBehaviour
 
     private void Update()
     {
+        if (main == null)
+        {
+            main = Camera.main;
+        }
+
         Height = main.orthographicSize * 2f;
         Width = Height * main.aspect;
 

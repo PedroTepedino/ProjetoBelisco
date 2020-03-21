@@ -9,12 +9,19 @@ public class CollectableSpawnerPlacer : OdinEditorWindow
 {
     [HorizontalGroup("Top")]
 
+    [AssetsOnly]
+    [AssetSelector]
+    [SerializeField]
+    private GameObject _spawnerPrefab;
+
+    [HorizontalGroup("Middle")]
+
     [ShowInInspector]
-    [VerticalGroup("Top/Left")]
+    [VerticalGroup("Middle/Left")]
     private int _collectableCount = 0;
 
     [ShowInInspector]
-    [VerticalGroup("Top/Left")]
+    [VerticalGroup("Middle/Left")]
     private int _spawnersCount = 0;
 
     [MenuItem("Tools/Collectable Spwaner Placer", priority = -10000)]
@@ -25,10 +32,11 @@ public class CollectableSpawnerPlacer : OdinEditorWindow
 
     protected override void Initialize()
     {
+        _spawnerPrefab = Resources.Load("Prefabs/Collectables/Spawner/CollectableSpawner") as GameObject;
         CountCollectablesAndSpawners();
     }
 
-    [HorizontalGroup("Top")]
+    [HorizontalGroup("Middle")]
     [Button(ButtonSizes.Large, Name = "Count")]
     public void CountCollectablesAndSpawners()
     {
@@ -40,5 +48,16 @@ public class CollectableSpawnerPlacer : OdinEditorWindow
     public void ReplaceCollectables()
     {
         BaseCollectableObject[] collectables = FindObjectsOfType<BaseCollectableObject>();
+
+        foreach (BaseCollectableObject obj in collectables)
+        {
+            GameObject aux = PrefabUtility.InstantiatePrefab(_spawnerPrefab) as GameObject;
+            aux.transform.position = obj.transform.position;
+            aux.GetComponent<CollectableSpawner>().CollectableType = obj.Type;
+
+            DestroyImmediate(obj.gameObject);
+        }
+
+        CountCollectablesAndSpawners();
     }
 }

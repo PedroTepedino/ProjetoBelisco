@@ -12,6 +12,7 @@ public class PlayerPawStorage : MonoBehaviour
         {
             PawCount += quantity;
             OnUpdatePawValue?.Invoke(PawCount);
+            Debug.Log(PawCount);
         }
     }
 

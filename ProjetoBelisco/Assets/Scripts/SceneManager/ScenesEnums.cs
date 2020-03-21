@@ -14,6 +14,7 @@
     public enum UiScenes
     {
         PlayerUi = 1,
-        RespawnUi = 2
+        RespawnUi = 2,
+        PawsCounter = 3
     }
 }
