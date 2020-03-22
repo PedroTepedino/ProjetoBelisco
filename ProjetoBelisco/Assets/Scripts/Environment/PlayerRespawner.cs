@@ -42,7 +42,7 @@ public class PlayerRespawner : MonoBehaviour
 
     public void StartPlayerRespawnProcess()
     {
-        StartCoroutine(TimeToSpawnPlayer());
+        StartCoroutine(routine: TimeToSpawnPlayer());
     }
 
     private IEnumerator TimeToSpawnPlayer()

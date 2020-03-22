@@ -8,7 +8,7 @@ public class AttackDummy : BaseLifeSystem
 {
     [SerializeField] private Light2D _light;
 
-    Tween animation;
+    private Tween _animation;
 
     public System.Action<int, int> OnLifeChange;
 
@@ -28,11 +28,11 @@ public class AttackDummy : BaseLifeSystem
 
     private void DamageFeedBack()
     {
-        if (animation == null)
+        if (_animation == null)
         {
-            animation = DOTween.To(() => _light.intensity, x => _light.intensity = x, 1f, 0.1f).SetLoops(2,LoopType.Yoyo).From(0).SetAutoKill(false);
+            _animation = DOTween.To(() => _light.intensity, x => _light.intensity = x, 1f, 0.1f).SetLoops(2,LoopType.Yoyo).From(0).SetAutoKill(false);
         }
 
-        animation.Restart();
+        _animation.Restart();
     }
 }
