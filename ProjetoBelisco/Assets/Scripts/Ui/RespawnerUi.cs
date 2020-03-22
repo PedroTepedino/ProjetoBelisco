@@ -55,7 +55,7 @@ public class RespawnerUi : MonoBehaviour
         Application.Quit();
     }
 
-    private void FadeOutScene()
+    private void FadeOutScene(GameObject obj)
     {
         KillAnimation();
 

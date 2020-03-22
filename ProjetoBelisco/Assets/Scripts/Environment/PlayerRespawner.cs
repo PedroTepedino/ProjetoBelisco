@@ -8,11 +8,14 @@ public class PlayerRespawner : MonoBehaviour
     public static PlayerRespawner Instance = null;
     [SerializeField] private float _timeToSpawn = 3f;
     [SerializeField] [EnumToggleButtons] private ScenesIndex.UiScenes _respawnUi = ScenesIndex.UiScenes.RespawnUi;
+    [SerializeField] bool _firstSpawner = false;
 
     public static System.Action<PlayerRespawner> OnStartTimer;
 
     public float TotalTimeSpam { get; private set; }
     public float RemainigTime { get => _timeToSpawn - TotalTimeSpam ; }
+
+    public bool IsFirstSpawner { get => _firstSpawner; }
 
     private void Awake()
     {
@@ -22,6 +25,14 @@ public class PlayerRespawner : MonoBehaviour
         }
 
         PlayerLife.OnPlayerDie += ListenPlayerDeath;
+    }
+
+    private void Start()
+    {
+        if (ObjectPooler.Instance.CountSpawnedInstances("Player") < 1 && _firstSpawner)
+        {
+            RespawnPlayer();
+        }
     }
 
     private void OnDestroy()
@@ -50,7 +61,7 @@ public class PlayerRespawner : MonoBehaviour
 
     private void RespawnPlayer()
     {
-        PlayerLife.RespawnPlayer(this.transform);
+        ObjectPooler.Instance.SpawnFromPool("Player", this.transform, parent: false);
     }
 
     private void ListenPlayerDeath()
