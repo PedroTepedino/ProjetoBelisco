@@ -18,7 +18,7 @@ public class PlayerLife : BaseLifeSystem
     public static System.Action<int, int> OnPlayerDamage;
     public static System.Action OnPlayerDie;
     public static System.Action<int, int> OnPlayerHeal;
-    public static System.Action OnPlayerSpawn;
+    public static System.Action<GameObject> OnPlayerSpawn;
 
     // Group: Health Logic
 
@@ -80,18 +80,9 @@ public class PlayerLife : BaseLifeSystem
     }
 
 
-    public static void RespawnPlayer(Vector3 position)
+    public void RespawnPlayer()
     {
-        PlayerLife life = PlayerSingleton.Instance.GetComponent<PlayerLife>();
-
-        PlayerSingleton.Instance.transform.position = position;
-        life.RestoreHealth(life.MaxHealth);
-        PlayerSingleton.Instance.gameObject.SetActive(true);
-        OnPlayerSpawn?.Invoke();
-    }
-
-    public static void RespawnPlayer(Transform position)
-    {
-        RespawnPlayer(position.position);
+        this.RestoreHealth(_maximumHealth);
+        OnPlayerSpawn?.Invoke(this.gameObject);
     }
 }

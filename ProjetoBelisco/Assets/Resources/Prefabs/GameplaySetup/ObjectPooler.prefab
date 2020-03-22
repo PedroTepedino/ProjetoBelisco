@@ -44,6 +44,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pools:
+  - prefab: {fileID: 7023604729711152355, guid: b240bcd6ad6eafe448dfac92066ca628,
+      type: 3}
+    tag: Player
+    size: 1
+    fixSize: 1
   - prefab: {fileID: 2346514174071448503, guid: a64c804f7ca2fee408b800cbc8ab95e9,
       type: 3}
     tag: Paw

@@ -79,9 +79,9 @@ public class ObjectPooler : MonoBehaviour
     #endregion
 
     /* Function: Start
-     * Creates the Pools of objects and populate them with the respective objects.
+     * Creates all objects and associates to the relative pools.
      */
-    void Start()
+    private void Start()
     {
         if (poolDictionary == null)
         {
@@ -219,7 +219,6 @@ public class ObjectPooler : MonoBehaviour
             {
                 aux = Instantiate(prefabDictionary[tag]);
                 DontDestroyOnLoad(aux);
-
             }
             else
             {
@@ -233,6 +232,36 @@ public class ObjectPooler : MonoBehaviour
             aux.SetActive(true);
         }
         
+        return aux;
+    }
+
+    public int CountInstaces(string tag)
+    {
+        if (!KeyExists(tag))
+        {
+            return -1;
+        }
+
+        return poolDictionary[tag].Count;
+    }
+
+    public int CountSpawnedInstances(string tag)
+    {
+        if (!KeyExists(tag))
+        {
+            return -1;
+        }
+
+        int aux = 0;
+
+        foreach(GameObject obj in poolDictionary[tag])
+        {
+            if (obj.activeInHierarchy)
+            {
+                aux++;
+            }
+        }
+
         return aux;
     }
 }
