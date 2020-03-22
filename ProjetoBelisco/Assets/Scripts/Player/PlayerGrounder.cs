@@ -54,7 +54,7 @@ public class PlayerGrounder : MonoBehaviour
         IsGroundedVerification();
     }
 
-    private void ResetParameters()
+    private void ResetParameters(GameObject obj)
     {
         IsGrounded = false;
         TotalArialTime = 0f;
