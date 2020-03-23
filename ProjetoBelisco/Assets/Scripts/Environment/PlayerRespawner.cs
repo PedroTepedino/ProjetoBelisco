@@ -29,6 +29,10 @@ public class PlayerRespawner : MonoBehaviour
         {
             Instance = this;
         }
+        else if (_firstSpawner)
+        {
+            Instance = this;
+        }
 
         PlayerLife.OnPlayerDie += ListenPlayerDeath;
     }

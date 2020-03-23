@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using Sirenix.OdinInspector;
+using UnityEngine;
 
-public abstract class BaseAttackSystem : MonoBehaviour
+public abstract class BaseAttackSystem : SerializedMonoBehaviour
 {
-    [SerializeField] [Sirenix.OdinInspector.FoldoutGroup("Parameters")] protected int _baseAttack = 1;
+    [SerializeField] [FoldoutGroup("Parameters")] protected int _baseAttack = 1;
     public abstract void Attack();
 }
