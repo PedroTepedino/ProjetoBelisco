@@ -1,40 +1,95 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using Sirenix.OdinValidator;
 
 public class PlayerAttackSystem : BaseAttackSystem
 {
-    [SerializeField] [FoldoutGroup("Parameters")] private float _attackAreaRadius = 1.0f;
-    [SerializeField] [FoldoutGroup("Parameters")] private Vector3 _attackCenter = new Vector3(1.0f, 0f, 0f);
+    [System.Serializable]
+    private struct AttackDirection
+    {
+        public Vector2 AttackCenter;
+        
+        [MinValue(0f)]
+        public float Radius;
+
+        public AttackDirection(Vector2 attackCenter, float radius = 1f )
+        {
+            AttackCenter = attackCenter;
+            Radius = radius;
+        }
+    }
+    
     [SerializeField] [EnumToggleButtons] private LayerMask _attackLayers;
     [SerializeField] [EnumToggleButtons] private LayerMask _wallCheckLayers;
 
+    [SerializeField] private Dictionary<Directions, AttackDirection> _attackCenterDictionary;
+
+    private Directions _currentAttackDirection = Directions.Null;
+
+    private PlayerJump _playerJump;
+    
     public static System.Action OnDamage;
+
+    private void Awake()
+    {
+        _playerJump = this.GetComponent<PlayerJump>();
+    }
 
     public override void Attack()
     {
-        Collider2D[] enemies = CheckCollision();
+        Attack(Directions.Null);
+    }
 
-        foreach (Collider2D collider in enemies)
+    public void Attack(Directions dir)
+    {
+        Collider2D[] enemies = CheckCollision(dir);
+
+        foreach (Collider2D coll in enemies)
         {
-            BaseLifeSystem life = CheckWallInBetween(collider);
-            if (life != null)
-            {
-                OnDamage?.Invoke();
-                life.Damage(_baseAttack);
-            }
+            BaseLifeSystem life = CheckWallInBetween(coll);
+
+            if (life == null) continue;
+            
+            OnDamage?.Invoke();
+            life.Damage(_baseAttack);
+        }
+
+        if (enemies.Length > 0 && _currentAttackDirection == Directions.Down)
+        {
+            _playerJump.Jump();
+            
         }
     }
 
     private Collider2D[] CheckCollision()
     {
-        Vector3 aux = _attackCenter;
+        _currentAttackDirection = Directions.Right;
+        
         if (!PlayerMovement.IsLookingRight)
         {
-            aux.x = aux.x * -1f;
+            _currentAttackDirection = Directions.Left;
         }
-        return Physics2D.OverlapCircleAll(this.transform.position + aux, _attackAreaRadius, _attackLayers);
+        
+        AttackDirection aux = _attackCenterDictionary[_currentAttackDirection];
+
+        return Physics2D.OverlapCircleAll((Vector2) this.transform.position + aux.AttackCenter, aux.Radius,
+            _attackLayers);
+    }
+
+    private Collider2D[] CheckCollision(Directions dir)
+    {
+        if (dir == Directions.Null) return CheckCollision();
+
+        _currentAttackDirection = dir;    
+        
+        AttackDirection aux = _attackCenterDictionary[_currentAttackDirection];
+        
+        return Physics2D.OverlapCircleAll((Vector2) this.transform.position + aux.AttackCenter, aux.Radius,
+            _attackLayers);
     }
 
     private BaseLifeSystem CheckWallInBetween(Collider2D collider)
@@ -57,14 +112,15 @@ public class PlayerAttackSystem : BaseAttackSystem
         return null;
     }
 
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
-        Vector3 aux = _attackCenter;
-        if (!PlayerMovement.IsLookingRight)
+        foreach (var pair in _attackCenterDictionary)
         {
-            aux.x = aux.x * -1f;
+            Gizmos.color = pair.Key == _currentAttackDirection ? Color.red : Color.black;
+
+            Gizmos.DrawWireSphere((Vector2)this.transform.position + pair.Value.AttackCenter, pair.Value.Radius);
         }
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(this.transform.position + aux, _attackAreaRadius);
     }
+#endif
 }

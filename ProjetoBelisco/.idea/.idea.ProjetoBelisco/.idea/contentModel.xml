@@ -289,6 +289,7 @@
           </e>
           <e p="Tools" t="Include">
             <e p="Editor" t="Include">
+              <e p="CheckFirstSpawner.cs" t="Include" />
               <e p="CollectableSpawnerEditor.cs" t="Include" />
               <e p="CollectableSpawnerPlacer.cs" t="Include" />
               <e p="PlayerSpawnerEditor.cs" t="Include" />
@@ -301,6 +302,7 @@
           <e p="Ui" t="Include">
             <e p="LifeBarController.cs" t="Include" />
             <e p="PawCounterUi.cs" t="Include" />
+            <e p="PixelPerfectCanvasScale.cs" t="Include" />
             <e p="PlayerUiManager.cs" t="Include" />
             <e p="RespawnerUi.cs" t="Include" />
           </e>

@@ -13,13 +13,23 @@ public class PlayerRespawner : MonoBehaviour
     public static System.Action<PlayerRespawner> OnStartTimer;
 
     public float TotalTimeSpam { get; private set; }
-    public float RemainigTime { get => _timeToSpawn - TotalTimeSpam ; }
+    public float RemainigTime => _timeToSpawn - TotalTimeSpam;
 
-    public bool IsFirstSpawner { get => _firstSpawner; }
+#if UNITY_EDITOR
+    public bool IsFirstSpawner
+    {
+        get => _firstSpawner;
+        set => _firstSpawner = value;
+    }
+#endif
 
     private void Awake()
     {
         if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (_firstSpawner)
         {
             Instance = this;
         }
