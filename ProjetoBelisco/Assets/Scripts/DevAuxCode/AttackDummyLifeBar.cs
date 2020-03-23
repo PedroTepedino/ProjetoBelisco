@@ -18,8 +18,8 @@ public class AttackDummyLifeBar : MonoBehaviour
         _attackDummy.OnLifeChange -= UpdateBar;
     }
 
-    private void UpdateBar(int curent, int max)
+    private void UpdateBar(int current, int max)
     {
-        _lifeBar.fillAmount = (float)(curent) / (float)(max);
+        _lifeBar.fillAmount = (float)(current) / (float)(max);
     }
 }

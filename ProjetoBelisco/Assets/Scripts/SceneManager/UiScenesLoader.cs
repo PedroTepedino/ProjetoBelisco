@@ -1,13 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using ScenesIndex;
-using Sirenix.OdinInspector;
-using System;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class UiScenesLoader : MonoBehaviour
 {
+    public static Camera MainCamera { get; set; }
+    public static PixelPerfectCamera PixelPerfectCamera { get; set; }
+
+    private void Awake()
+    {
+        MainCamera = Camera.main;
+        if (MainCamera != null) PixelPerfectCamera = MainCamera.gameObject.GetComponent<PixelPerfectCamera>();
+    }
+
     public static void LoadScene(UiScenes sceneToLoad)
     {
         SceneManager.LoadSceneAsync((int)sceneToLoad, LoadSceneMode.Additive).completed += ActivateScene;

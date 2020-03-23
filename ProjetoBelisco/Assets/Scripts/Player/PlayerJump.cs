@@ -48,12 +48,11 @@ public class PlayerJump : MonoBehaviour
 
     private void Update()
     {
-        if (PlayerGrounder.IsTouchingGround)
+        if (!PlayerGrounder.IsTouchingGround) return;
+        
+        if (IsJumping == PlayerGrounder.IsTouchingGround)
         {
-            if (IsJumping == PlayerGrounder.IsTouchingGround)
-            {
-                EndJump();
-            }
+            EndJump();
         }
     }
 
@@ -98,14 +97,7 @@ public class PlayerJump : MonoBehaviour
             EndJump();
         }
 
-        if (!IsJumping && PlayerGrounder.IsWithinPermitedArialTime)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return !IsJumping && PlayerGrounder.IsWithinPermitedArialTime;
     }
 
     /* Function: CanRaiseJump
@@ -117,13 +109,6 @@ public class PlayerJump : MonoBehaviour
      */
     public bool CanRaiseJump(float jumpTime)
     {
-        if (IsJumping && (jumpTime <= _jumpActionMaxHoldingTime))
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return IsJumping && (jumpTime <= _jumpActionMaxHoldingTime);
     }
 }
