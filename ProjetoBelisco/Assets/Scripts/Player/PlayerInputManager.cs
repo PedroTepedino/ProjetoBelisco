@@ -469,7 +469,7 @@ public class PlayerInputManager : SerializedMonoBehaviour
         foreach (var pair in _directionsAngles)
         {
             var aux = Mathf.Abs(Vector2.SignedAngle(pair.Value.normalized, input.normalized));
-            
+
             if (!(aux <= angle)) continue;
             
             angle = aux;

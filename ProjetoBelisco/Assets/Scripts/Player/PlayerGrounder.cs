@@ -14,10 +14,10 @@ public class PlayerGrounder : MonoBehaviour
      * _grounderSizes - Vector2 that describes the Sizes of the grounder Box.
      * _grounderLayerMask - Layers that the grounder can interact, aka the ground.
      */
-    [FoldoutGroup("Paremeters")] [SerializeField] private Vector3 _grounderCenter = Vector3.zero;
-    [FoldoutGroup("Paremeters")] [SerializeField] private Vector2 _grounderSizes;
-    [FoldoutGroup("Paremeters")] [SerializeField] [EnumToggleButtons] private LayerMask _grounderLayerMask;
-    [FoldoutGroup("Paremeters")] [SerializeField] private float _permitedArialTime = 0.2f;
+    [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _grounderCenter = Vector3.zero;
+    [FoldoutGroup("Parameters")] [SerializeField] private Vector2 _grounderSizes;
+    [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask _grounderLayerMask;
+    [FoldoutGroup("Parameters")] [SerializeField] private float _permitedArialTime = 0.005f;
 
     /* Variable: OnGrounded
      * Signal that sends info to the subscribed functions. 
@@ -69,12 +69,10 @@ public class PlayerGrounder : MonoBehaviour
     {
         IsWithinPermitedArialTime = ArialTimeCheck();
 
-
-        if ((IsTouchingGround || IsWithinPermitedArialTime) != IsGrounded)
-        {
-            IsGrounded = IsTouchingGround;
-            OnGrounded?.Invoke(IsGrounded);
-        }
+        if ((IsTouchingGround || IsWithinPermitedArialTime) == IsGrounded) return;
+        
+        IsGrounded = IsTouchingGround;
+        OnGrounded?.Invoke(IsGrounded);
     }
 
     /* Function: ArialTimeCalculation

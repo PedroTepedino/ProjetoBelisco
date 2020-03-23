@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
@@ -26,22 +27,21 @@ public class PlayerAttackSystem : BaseAttackSystem
     [SerializeField] [EnumToggleButtons] private LayerMask _wallCheckLayers;
 
     [SerializeField] private Dictionary<Directions, AttackDirection> _attackCenterDictionary;
+
+    private Directions _currentAttackDirection = Directions.Null;
+
+    private PlayerJump _playerJump;
     
     public static System.Action OnDamage;
 
+    private void Awake()
+    {
+        _playerJump = this.GetComponent<PlayerJump>();
+    }
+
     public override void Attack()
     {
-        Collider2D[] enemies = CheckCollision();
-
-        foreach (Collider2D coll in enemies)
-        {
-            BaseLifeSystem life = CheckWallInBetween(coll);
-
-            if (life == null) continue;
-            
-            OnDamage?.Invoke();
-            life.Damage(_baseAttack);
-        }
+        Attack(Directions.Null);
     }
 
     public void Attack(Directions dir)
@@ -57,16 +57,25 @@ public class PlayerAttackSystem : BaseAttackSystem
             OnDamage?.Invoke();
             life.Damage(_baseAttack);
         }
+
+        if (enemies.Length > 0 && _currentAttackDirection == Directions.Down)
+        {
+            _playerJump.Jump();
+            
+        }
     }
 
     private Collider2D[] CheckCollision()
     {
-        AttackDirection aux = _attackCenterDictionary[Directions.Right];
+        _currentAttackDirection = Directions.Right;
+        
         if (!PlayerMovement.IsLookingRight)
         {
-            aux = _attackCenterDictionary[Directions.Left];
+            _currentAttackDirection = Directions.Left;
         }
         
+        AttackDirection aux = _attackCenterDictionary[_currentAttackDirection];
+
         return Physics2D.OverlapCircleAll((Vector2) this.transform.position + aux.AttackCenter, aux.Radius,
             _attackLayers);
     }
@@ -75,7 +84,9 @@ public class PlayerAttackSystem : BaseAttackSystem
     {
         if (dir == Directions.Null) return CheckCollision();
 
-        AttackDirection aux = _attackCenterDictionary[dir];
+        _currentAttackDirection = dir;    
+        
+        AttackDirection aux = _attackCenterDictionary[_currentAttackDirection];
         
         return Physics2D.OverlapCircleAll((Vector2) this.transform.position + aux.AttackCenter, aux.Radius,
             _attackLayers);
@@ -101,13 +112,15 @@ public class PlayerAttackSystem : BaseAttackSystem
         return null;
     }
 
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.green;
-
         foreach (var pair in _attackCenterDictionary)
         {
-            Gizmos.DrawWireSphere((Vector2)this.transform.position + pair.Value.AttackCenter, pair.Value.Radius);    
+            Gizmos.color = pair.Key == _currentAttackDirection ? Color.red : Color.black;
+
+            Gizmos.DrawWireSphere((Vector2)this.transform.position + pair.Value.AttackCenter, pair.Value.Radius);
         }
     }
+#endif
 }

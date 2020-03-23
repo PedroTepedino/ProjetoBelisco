@@ -8,12 +8,10 @@ public class PlayerPawStorage : MonoBehaviour
 
     public static void AddPaws(int quantity = 1)
     {
-        if (quantity > 0)
-        {
-            PawCount += quantity;
-            OnUpdatePawValue?.Invoke(PawCount);
-            Debug.Log(PawCount);
-        }
+        if (quantity <= 0) return;
+        
+        PawCount += quantity;
+        OnUpdatePawValue?.Invoke(PawCount);
     }
 
     public static bool RemovePaws(int quantity = 1)

@@ -302,6 +302,7 @@
           <e p="Ui" t="Include">
             <e p="LifeBarController.cs" t="Include" />
             <e p="PawCounterUi.cs" t="Include" />
+            <e p="PixelPerfectCanvasScale.cs" t="Include" />
             <e p="PlayerUiManager.cs" t="Include" />
             <e p="RespawnerUi.cs" t="Include" />
           </e>
