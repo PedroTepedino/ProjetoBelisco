@@ -42,7 +42,7 @@ public class MoveState : IState
      */
     public void EnterState()
     {
-        throw new System.NotImplementedException();
+
     }
 
     /*Function: ExitState
@@ -50,7 +50,7 @@ public class MoveState : IState
      */
     public void ExitState()
     {
-        throw new System.NotImplementedException();
+
     }
 
     /*Function: RunState
@@ -62,7 +62,7 @@ public class MoveState : IState
         wallCheck = Physics2D.Raycast(controllerOwner.groundDetection.position, Vector2.right, 0.1f);
         if (groundCheck && !wallCheck)
         {
-            movement.Set(controllerOwner.speed * Time.deltaTime, controllerOwner.rigidbody.velocity.y);
+            movement.Set(controllerOwner.movingSpeed * Time.deltaTime, controllerOwner.rigidbody.velocity.y);
             controllerOwner.rigidbody.velocity = movement;
         }
         else

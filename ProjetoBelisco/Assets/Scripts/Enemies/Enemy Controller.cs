@@ -9,22 +9,23 @@ using UnityEngine;
 public abstract class EnemyController : LifeSystemAbstract
 {
     public Rigidbody2D rigidbody;
-    public float speed;
+    public float movingSpeed;
     public Transform groundDetection;
     public bool movingRight = true;
+    public StateMachine stateMachine = new StateMachine();
 
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        this.stateMachine.ChangeState(new MoveState(this.gameObject, this.GetComponent<EnemyController>()));
     }
     protected override void Die()
     {
-        throw new System.NotImplementedException();
+        EnemyDie();
     }
 
 
-    void Update()
-    {
-        
-    }
+    public abstract void EnemyDie();
+    public abstract void Update();
+    
 }
