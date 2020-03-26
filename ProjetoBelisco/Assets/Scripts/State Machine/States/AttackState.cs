@@ -8,45 +8,59 @@ public class AttackState : IState
     private Transform _target;
     private EnemyController controllerOwner;
     private float timer;
+    private LifeSystemAbstract targerLifeSystem;
+    private Rigidbody2D ownerRigidbody;
 
-    public AttackState(GameObject owner, Transform target, EnemyController controller)
+    public AttackState(GameObject owner, EnemyController controller, Transform target)
     {
         ownerGameObject = owner;
-        _target = target;
         controllerOwner = controller;
-        timer = 0;
+        _target = target;
+
     }
 
     public void EnterState()
     {
-        
+        controllerOwner.actualState = "attack";
+        ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
+        targerLifeSystem = _target.GetComponentInParent<LifeSystemAbstract>();
+        timer = 0;
     }
 
     public void ExitState()
     {
-        
+
     }
 
     public void RunState()
     {
         timer += Time.deltaTime;
 
-        ownerGameObject.transform.LookAt(_target);
-        if (Vector2.Distance(ownerGameObject.transform.position, _target.position) <= controllerOwner.attackRange)
+        //ownerGameObject.transform.LookAt(_target);
+        if (Vector2.Distance(ownerGameObject.transform.position, _target.position) <= controllerOwner.lookingRange)
         {
-            if (timer >= controllerOwner.attackSpeed)
+            if (Vector2.Distance(ownerGameObject.transform.position, _target.position) <= controllerOwner.attackRange)
             {
-                if (_target != null)
+                if (timer >= controllerOwner.attackSpeed)
                 {
-                    _target.Damage(controllerOwner.attackDamage);
+                    if (_target != null)
+                    {
+                        Debug.Log("dmg");
+                        //targerLifeSystem.Damage(controllerOwner.attackDamage);
+                    }
+                    timer = 0;
                 }
-                timer = 0;
+            }
+            else
+            {
+                Vector2 direction = (_target.position - ownerGameObject.transform.position).normalized;
+                ownerRigidbody.velocity = direction * controllerOwner.movingSpeed;
             }
         }
         else
         {
-            Debug.Log("move");
-            _navMeshAgent.SetDestination(_target.position);
+            controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject, controllerOwner));
+            controllerOwner.actualState = "move";
         }
     }
 }

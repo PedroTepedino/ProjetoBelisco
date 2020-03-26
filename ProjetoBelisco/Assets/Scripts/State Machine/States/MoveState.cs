@@ -42,7 +42,7 @@ public class MoveState : IState
      */
     public void EnterState()
     {
-
+        controllerOwner.actualState = "move";
     }
 
     /*Function: ExitState

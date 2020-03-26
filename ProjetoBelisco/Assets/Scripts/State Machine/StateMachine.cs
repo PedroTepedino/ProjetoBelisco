@@ -14,7 +14,7 @@ public class StateMachine : MonoBehaviour
      * currentState - Hold the current in execution state
      * previousState - Hold the previous executed state
      */
-    private IState currentState { get; set; }
+    private IState currentState;
     private IState previousState;
 
     // Group: State Management Logic
@@ -33,10 +33,25 @@ public class StateMachine : MonoBehaviour
 
         this.previousState = currentState;
         this.currentState = newState;
-        this.previousState.EnterState();
+        this.previousState.ExitState();
         this.currentState.EnterState();
     }
 
+    /* Function: GetCurrentState
+     * Returns the current running state of the state machine.
+     */
+    public IState GetCurrentState()
+    {
+        return currentState;
+    }
+
+    /* Function: GetCurrentState
+     * Returns the state executed before the current state of the state machine.
+     */
+    public IState GetPreviousState()
+    {
+        return currentState;
+    }
     /* Function: SwitchToPreviousState
      * Switch back to the state executed before the current state.
      */
