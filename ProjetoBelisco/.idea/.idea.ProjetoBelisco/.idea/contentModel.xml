@@ -274,6 +274,7 @@
             <e p="PlayerAnimationController.cs" t="Include" />
             <e p="PlayerAttackSystem.cs" t="Include" />
             <e p="PlayerColletableInteractions.cs" t="Include" />
+            <e p="PlayerComboManager.cs" t="Include" />
             <e p="PlayerGravityManager.cs" t="Include" />
             <e p="PlayerGrounder.cs" t="Include" />
             <e p="PlayerInputManager.cs" t="Include" />

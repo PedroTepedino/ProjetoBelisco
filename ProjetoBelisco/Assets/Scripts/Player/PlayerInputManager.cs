@@ -79,7 +79,7 @@ public class PlayerInputManager : SerializedMonoBehaviour
      * _jumpCicle - Indicates if the player is going throgh a jump cicle.
      */
     private float _jumpActionTimestamp = 0f;
-    [SerializeField] [BoxGroup("Controller Parameters")] private float _jumpActionStorageTime = 0.2f;
+    [SerializeField] [BoxGroup("Controller Parameters")] private float _jumpActionStorageTime = 0.05f;
     private float _jumpActionTimer = 0f;
     private bool _jumpCicle = false;
     
@@ -103,7 +103,7 @@ public class PlayerInputManager : SerializedMonoBehaviour
     private PlayerMovement _playerMovement = null;
     private PlayerJump _playerJump = null;
     private PlayerGrounder _playerGrounder = null;
-    private PlayerAttackSystem _playerAttack = null;
+    private PlayerComboManager _playerAttack = null;
 
     /* Variable: _directionsXYDistances
      *    Determins the min and max angles a direction can have <Directions>.
@@ -207,7 +207,7 @@ public class PlayerInputManager : SerializedMonoBehaviour
         _playerMovement = this.GetComponent<PlayerMovement>();
         _playerGrounder = this.GetComponent<PlayerGrounder>();
         _playerJump = this.GetComponent<PlayerJump>();
-        _playerAttack = this.GetComponent<PlayerAttackSystem>();
+        _playerAttack = this.GetComponent<PlayerComboManager>();
     }
 
     // Group: Destruction Methods
@@ -340,6 +340,28 @@ public class PlayerInputManager : SerializedMonoBehaviour
         {
             this.Pause();
         }
+
+        if (!IsControllerLocked())
+        {
+            if (((_curentInputs & Inputs.JumpStart) == Inputs.JumpStart))
+            {
+                if (_playerJump.CanJump())
+                {
+                    this.Jump();
+                }
+            }
+
+            if (((_curentInputs & Inputs.JumpFollowUp) == Inputs.JumpFollowUp))
+            {
+                if (_jumpCicle)
+                {
+                    if (_playerJump.CanRaiseJump(_jumpActionTimestamp))
+                    {
+                        this.Jump();
+                    }
+                }
+            }
+        }
     }
 
     /* Function: DecisionMakingFixedUpdate
@@ -349,25 +371,6 @@ public class PlayerInputManager : SerializedMonoBehaviour
     {
         if (IsControllerLocked()) return;
         
-        if (((_curentInputs & Inputs.JumpStart) == Inputs.JumpStart))
-        {
-            if (_playerJump.CanJump())
-            {
-                this.Jump();
-            }
-        }
-
-        if (((_curentInputs & Inputs.JumpFollowUp) == Inputs.JumpFollowUp))
-        {
-            if (_jumpCicle)
-            {
-                if (_playerJump.CanRaiseJump(_jumpActionTimestamp))
-                {
-                    this.Jump();
-                }
-            }
-        }
-
         if ((_curentInputs & Inputs.Move) == Inputs.Move)
         {
             this.Move();
