@@ -126,7 +126,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7023604728780727484}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0032085846, w: 0.9999949}
+  m_LocalRotation: {x: -0, y: -0, z: -0.002449904, w: 0.999997}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 1
   m_Color: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
-  m_Intensity: 0.9
+  m_Intensity: 0.8
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000f5f677fd
   m_LightCookieSprite: {fileID: 0}
@@ -160,8 +160,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0.9
-  m_PointLightOuterRadius: 4
+  m_PointLightInnerRadius: 0.60491395
+  m_PointLightOuterRadius: 1.1418213
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -202,7 +202,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7023604729711152359
 Transform:
   m_ObjectHideFlags: 0
