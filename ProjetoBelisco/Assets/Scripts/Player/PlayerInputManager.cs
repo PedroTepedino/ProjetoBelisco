@@ -341,7 +341,7 @@ public class PlayerInputManager : SerializedMonoBehaviour
             this.Pause();
         }
 
-        if (!IsControllerLocked())
+        if (!IsControllerLocked() && !IsAttackLocked())
         {
             if (((_curentInputs & Inputs.JumpStart) == Inputs.JumpStart))
             {
@@ -370,14 +370,21 @@ public class PlayerInputManager : SerializedMonoBehaviour
     private void DecisionMakingFixedUpdate()
     {
         if (IsControllerLocked()) return;
-        
-        if ((_curentInputs & Inputs.Move) == Inputs.Move)
+
+        if (IsAttackLocked())
         {
-            this.Move();
+            this.StopMovement();
         }
         else
         {
-            this.StopMovement();
+            if ((_curentInputs & Inputs.Move) == Inputs.Move)
+            {
+                this.Move();
+            }
+            else
+            {
+                this.StopMovement();
+            }
         }
     }
 
@@ -432,6 +439,11 @@ public class PlayerInputManager : SerializedMonoBehaviour
     private bool IsControllerLocked()
     {
         return _dashing;
+    }
+
+    private bool IsAttackLocked()
+    {
+        return !_playerAttack.CanAttackAgain;
     }
 
     // Group: Listeners

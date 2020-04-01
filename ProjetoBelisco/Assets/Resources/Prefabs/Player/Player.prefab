@@ -578,8 +578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxcomboCount: 3
-  _comboResetTime: 0.2
-  _attackComboDamages: 010000000100000008000000
+  _comboResetTime: 0.5
+  _attackComboDamages: 010000000100000002000000
 --- !u!114 &7023604729711152358
 MonoBehaviour:
   m_ObjectHideFlags: 0

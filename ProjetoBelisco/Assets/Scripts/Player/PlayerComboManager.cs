@@ -18,8 +18,7 @@ public class PlayerComboManager : MonoBehaviour
     [SerializeField] private float _comboResetTime = 0.5f;
     private float _comboTimer = 0f;
     
-    private Queue<Directions> _attackBuffer;
-    private bool _canAttackAgain = true;
+    public bool CanAttackAgain { get; private set; } = true;
 
     [SerializeField] private List<int> _attackComboDamages;
 
@@ -30,33 +29,17 @@ public class PlayerComboManager : MonoBehaviour
     private void Awake()
     {
         _playerAttack = this.GetComponent<PlayerAttackSystem>();
-        PlayerAnimationController.OnAttackAnimationEnd += ListenOnAttackAnimationEnd;
-    }
-
-    private void OnDestroy()
-    {
-        PlayerAnimationController.OnAttackAnimationEnd -= ListenOnAttackAnimationEnd;
     }
 
     private void OnEnable()
     {
         _comboTimer = _comboResetTime;
-        _canAttackAgain = true;
-        
-        if (_attackBuffer == null)
-        {
-            _attackBuffer = new Queue<Directions>();   
-        }
-        else
-        {
-            _attackBuffer.Clear();
-        }
+        CanAttackAgain = true;
     }
 
     private void Update()
     {
-        CheckResetCombo();
-        //AttackBufferCheck();       
+        CheckResetCombo();       
     }
 
 
@@ -75,7 +58,13 @@ public class PlayerComboManager : MonoBehaviour
 
     private void Attack(Directions dir)
     {
-        _canAttackAgain = false;
+        CanAttackAgain = false;
+
+        if (CurrentComboCount >= _maxcomboCount)
+        {
+            CheckMaxCombo();
+        }
+        
         if (CurrentComboCount >= 0 && CurrentComboCount < _attackComboDamages.Count)
         {
             _playerAttack.Attack(dir, _attackComboDamages[CurrentComboCount]);
@@ -84,6 +73,7 @@ public class PlayerComboManager : MonoBehaviour
         {
             _playerAttack.Attack(dir);
         }
+        
         StartCoroutine(UpdateCombo());
     }
     
@@ -97,19 +87,9 @@ public class PlayerComboManager : MonoBehaviour
     {
         ResetTimer();
 
-        if (_canAttackAgain)
+        if (CanAttackAgain)
         {       
             this.Attack(dir);
-        }
-    }
-
-    private void AttackBufferCheck()
-    {
-        if (!_canAttackAgain) return;
-        
-        if (_attackBuffer.Count > 0)
-        {
-            this.Attack(_attackBuffer.Dequeue());
         }
     }
 
@@ -132,7 +112,7 @@ public class PlayerComboManager : MonoBehaviour
 
     private void LetAttackAgain()
     {
-        _canAttackAgain = true;
+        CanAttackAgain = true;
     }
 
     private void ListenOnAttackAnimationEnd()
