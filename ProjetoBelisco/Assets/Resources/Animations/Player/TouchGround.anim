@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Player_Jump_frontcontact
+  m_Name: TouchGround
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,16 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 5733595799862273641, guid: 1ab5228502ef8954ba32b6631c250fd4,
-        type: 3}
-    - time: 0.1
-      value: {fileID: -4403487248404823033, guid: 1ab5228502ef8954ba32b6631c250fd4,
-        type: 3}
-    - time: 0.2
-      value: {fileID: 8727659726185014578, guid: 1ab5228502ef8954ba32b6631c250fd4,
-        type: 3}
-    - time: 0.3
-      value: {fileID: 4207077010407068300, guid: 1ab5228502ef8954ba32b6631c250fd4,
+      value: {fileID: -747952118393679386, guid: 312bfb3ab684ed94894b347ba24eacde,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -50,16 +41,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 5733595799862273641, guid: 1ab5228502ef8954ba32b6631c250fd4, type: 3}
-    - {fileID: -4403487248404823033, guid: 1ab5228502ef8954ba32b6631c250fd4, type: 3}
-    - {fileID: 8727659726185014578, guid: 1ab5228502ef8954ba32b6631c250fd4, type: 3}
-    - {fileID: 4207077010407068300, guid: 1ab5228502ef8954ba32b6631c250fd4, type: 3}
+    - {fileID: -747952118393679386, guid: 312bfb3ab684ed94894b347ba24eacde, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.4
+    m_StopTime: 0.1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

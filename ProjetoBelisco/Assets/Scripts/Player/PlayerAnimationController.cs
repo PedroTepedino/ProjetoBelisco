@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using UnityEngine;
 
 public class PlayerAnimationController : MonoBehaviour
@@ -9,12 +11,20 @@ public class PlayerAnimationController : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private PlayerComboManager _comboManager;
 
+    public static Action OnAttackAnimationEnd;
+
     private void Awake()
     {
         _rigidbody = this.GetComponent<Rigidbody2D>();
         _animator = this.GetComponentInChildren<Animator>();
         _spriteRenderer = _animator.gameObject.GetComponent<SpriteRenderer>();
         _comboManager = this.GetComponent<PlayerComboManager>();
+        PlayerAttackSystem.OnAttack += TriggerAttackAnimation;
+    }
+
+    private void OnDestroy()
+    {
+        PlayerAttackSystem.OnAttack -= TriggerAttackAnimation;
     }
 
     private void Update()
@@ -28,5 +38,11 @@ public class PlayerAnimationController : MonoBehaviour
         _animator.SetFloat("SpeedY", _rigidbody.velocity.y);
         _spriteRenderer.flipX = !PlayerMovement.IsLookingRight;
         _animator.SetBool("Jumping", !PlayerGrounder.IsTouchingGround);
+    }
+        
+    private void TriggerAttackAnimation()
+    {
+        _animator.SetTrigger("Attack");
+        _animator.SetInteger("Combo", _comboManager.CurrentComboCount);
     }
 }

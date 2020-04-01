@@ -420,7 +420,7 @@ public class PlayerInputManager : SerializedMonoBehaviour
 
     private void Attack()
     {
-        _playerAttack.Attack(CalculateDirections(MoveDirection));
+        _playerAttack.AttackCommand(CalculateDirections(MoveDirection));
     }
 
     // Group: Controller LockDown
