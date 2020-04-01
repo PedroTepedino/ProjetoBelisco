@@ -58,8 +58,10 @@ public class MoveState : IState
      */
     public void RunState()
     {
-        groundCheck = Physics2D.Raycast(controllerOwner.groundDetection.position, Vector2.down, 1f);
+        groundCheck = Physics2D.Raycast(controllerOwner.groundDetection.position, Vector2.down, 1f, 8);
+        Debug.Log(groundCheck);
         wallCheck = Physics2D.Raycast(controllerOwner.groundDetection.position, Vector2.right, 0.1f);
+        Debug.Log(wallCheck);
         if (groundCheck && !wallCheck)
         {
             movement.Set(controllerOwner.movingSpeed * Time.deltaTime, controllerOwner.rigidbody.velocity.y);

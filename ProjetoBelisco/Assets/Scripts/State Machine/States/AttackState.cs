@@ -23,7 +23,7 @@ public class AttackState : IState
     {
         controllerOwner.actualState = "attack";
         ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
-        targerLifeSystem = _target.GetComponentInParent<LifeSystemAbstract>();
+        targerLifeSystem = _target.GetComponent<LifeSystemAbstract>();
         timer = 0;
     }
 
