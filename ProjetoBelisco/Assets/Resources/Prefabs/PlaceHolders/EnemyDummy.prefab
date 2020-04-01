@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3764525853769010106
 RectTransform:
   m_ObjectHideFlags: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attackDummy: {fileID: 3764525855012286877}
-  _lifeBar: {fileID: 3764525853769010107}
+  _lifeBar: []
 --- !u!223 &3764525854516866248
 Canvas:
   m_ObjectHideFlags: 0
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519ff079eb64683419403270e8c0e4e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maximumHealth: 3
+  _maximumHealth: 5
   _light: {fileID: 3764525853865002255}
 --- !u!212 &3764525855012286876
 SpriteRenderer:

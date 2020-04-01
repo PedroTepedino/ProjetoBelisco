@@ -266,10 +266,16 @@
             <e p="BaseAttackSystem.cs" t="Include" />
             <e p="BaseLifeSystem.cs" t="Include" />
           </e>
+          <e p="Navmesh" t="Include">
+            <e p="Navmesh.cs" t="Include" />
+            <e p="NavmeshBaker.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="PlayerAnimationController.cs" t="Include" />
+            <e p="PlayerAttackAnimationFinishSignal.cs" t="Include" />
             <e p="PlayerAttackSystem.cs" t="Include" />
             <e p="PlayerColletableInteractions.cs" t="Include" />
+            <e p="PlayerComboManager.cs" t="Include" />
             <e p="PlayerGravityManager.cs" t="Include" />
             <e p="PlayerGrounder.cs" t="Include" />
             <e p="PlayerInputManager.cs" t="Include" />
