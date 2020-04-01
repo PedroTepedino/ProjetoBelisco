@@ -20,19 +20,19 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -3369679954116955442, guid: 312bfb3ab684ed94894b347ba24eacde,
+      value: {fileID: 9031475687276514007, guid: 312bfb3ab684ed94894b347ba24eacde,
         type: 3}
-    - time: 0.09090909
-      value: {fileID: 8320325898072811153, guid: 312bfb3ab684ed94894b347ba24eacde,
+    - time: 0.083333336
+      value: {fileID: 1932672063283095470, guid: 312bfb3ab684ed94894b347ba24eacde,
         type: 3}
-    - time: 0.18181819
-      value: {fileID: 2160052417410184208, guid: 312bfb3ab684ed94894b347ba24eacde,
+    - time: 0.16666667
+      value: {fileID: 2099337739467928476, guid: 312bfb3ab684ed94894b347ba24eacde,
         type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 11
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -47,20 +47,20 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -3369679954116955442, guid: 312bfb3ab684ed94894b347ba24eacde, type: 3}
-    - {fileID: 8320325898072811153, guid: 312bfb3ab684ed94894b347ba24eacde, type: 3}
-    - {fileID: 2160052417410184208, guid: 312bfb3ab684ed94894b347ba24eacde, type: 3}
+    - {fileID: 9031475687276514007, guid: 312bfb3ab684ed94894b347ba24eacde, type: 3}
+    - {fileID: 1932672063283095470, guid: 312bfb3ab684ed94894b347ba24eacde, type: 3}
+    - {fileID: 2099337739467928476, guid: 312bfb3ab684ed94894b347ba24eacde, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.27272728
+    m_StopTime: 0.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -74,11 +74,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.18181819
-    functionName: OnAnimationFinish
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []
