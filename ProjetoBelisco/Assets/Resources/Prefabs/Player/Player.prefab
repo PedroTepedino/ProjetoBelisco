@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7023604727784968687}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.67, z: 0}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7023604729711152359}
@@ -187,6 +187,7 @@ GameObject:
   - component: {fileID: 7023604729711152349}
   - component: {fileID: 7023604729711152344}
   - component: {fileID: 7023604729711152351}
+  - component: {fileID: 3342666195368536869}
   - component: {fileID: 7023604729711152358}
   - component: {fileID: 7023604729711152347}
   - component: {fileID: 7023604729711152346}
@@ -551,6 +552,21 @@ MonoBehaviour:
   _wallCheckLayers:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &3342666195368536869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7023604729711152355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f08b23fa31f6049be9abe42445188e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxcomboCount: 3
+  _comboResetTime: 0.5
+  _attackComboDamages: 010000000100000008000000
 --- !u!114 &7023604729711152358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -685,6 +701,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.11}
-  m_Size: {x: 0.44, y: 1.1}
+  m_Offset: {x: 0, y: 0.035}
+  m_Size: {x: 0.44, y: 1.4}
   m_Direction: 0
