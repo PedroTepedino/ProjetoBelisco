@@ -62,14 +62,7 @@ public class PlayerMovement : MonoBehaviour
     {
         direction = (direction > 0 ? 1 : -1);
 
-        if (direction == 1)
-        {
-            IsLookingRight = true;
-        }
-        else
-        {
-            IsLookingRight = false;
-        }
+        IsLookingRight = (int)direction == 1;
         
         if (!IsMoving)
         {
