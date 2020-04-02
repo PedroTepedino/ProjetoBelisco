@@ -16,11 +16,11 @@ public class AttackState : IState
         ownerGameObject = owner;
         controllerOwner = controller;
         _target = target;
-
     }
 
     public void EnterState()
     {
+        Debug.Log(_target);
         controllerOwner.actualState = "attack";
         ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
         targerLifeSystem = _target.GetComponentInParent<BaseLifeSystem>();

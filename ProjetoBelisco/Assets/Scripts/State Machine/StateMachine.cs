@@ -52,6 +52,7 @@ public class StateMachine : MonoBehaviour
     {
         return currentState;
     }
+    
     /* Function: SwitchToPreviousState
      * Switch back to the state executed before the current state.
      */

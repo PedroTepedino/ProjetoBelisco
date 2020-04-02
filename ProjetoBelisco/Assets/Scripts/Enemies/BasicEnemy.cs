@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 public class BasicEnemy : EnemyController
 {
+    [SerializeField] [EnumToggleButtons] private LayerMask _layerMask;
+    
     public override void Update()
     {
-        var hitObjects = Physics2D.Raycast(this.transform.position, Vector2.right, lookingRange, LayerMask.GetMask("Player"));
+        var hitObjects = Physics2D.Raycast(this.transform.position, Vector2.right, lookingRange, _layerMask);
+        
         if (hitObjects != null)
         {
             if(stateMachine.GetCurrentState() != null/*AttackState*/)
@@ -22,5 +26,4 @@ public class BasicEnemy : EnemyController
     {
         Debug.Log("ded");
     }
-
 }
