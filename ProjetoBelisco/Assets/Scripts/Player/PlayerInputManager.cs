@@ -62,8 +62,8 @@ public class PlayerInputManager : SerializedMonoBehaviour
      * 
      * _controllerDeadZone - Analog inputs bellow this number are ignored.
      */
-    [BoxGroup("Player Info")] [ShowInInspector] [ReadOnly] private readonly int _playerControllerIndex = 0;
-    private Player _playerController;
+    [BoxGroup("Player Info")] [ShowInInspector] private readonly int _playerControllerIndex = 0;
+    [BoxGroup("Player Info")] [ShowInInspector] private Player _playerController;
     [SerializeField] [BoxGroup("Controller Parameters")] private float _controllerDeadZone = 0.25f;
 
     /* Floats: Movement Parameters

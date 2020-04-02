@@ -304,13 +304,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1181388681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18e19d4680a1ba5499483461ae980796, type: 3}
+  m_Script: {fileID: 11500000, guid: e66573d98811d954f8358e55b7a0ece3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _barFillImage: {fileID: 1850161056}
   _barFillDecay: {fileID: 865734439}
   _shakeAnimaiton: {fileID: 1385297608}
-  _decaySpeed: 0.75
+  _decaySpeed: 0.5
   _decayDelay: 0.75
   _healDecaySpeed: 1
   _healDecayDelay: 0.2
