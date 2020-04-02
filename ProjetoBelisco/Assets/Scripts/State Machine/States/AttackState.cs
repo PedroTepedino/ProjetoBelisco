@@ -8,7 +8,7 @@ public class AttackState : IState
     private Transform _target;
     private EnemyController controllerOwner;
     private float timer;
-    private LifeSystemAbstract targerLifeSystem;
+    private BaseLifeSystem targerLifeSystem;
     private Rigidbody2D ownerRigidbody;
 
     public AttackState(GameObject owner, EnemyController controller, Transform target)
@@ -23,7 +23,7 @@ public class AttackState : IState
     {
         controllerOwner.actualState = "attack";
         ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
-        targerLifeSystem = _target.GetComponentInParent<LifeSystemAbstract>();
+        targerLifeSystem = _target.GetComponentInParent<BaseLifeSystem>();
         timer = 0;
     }
 
