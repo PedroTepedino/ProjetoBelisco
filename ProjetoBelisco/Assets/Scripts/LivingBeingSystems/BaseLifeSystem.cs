@@ -59,7 +59,7 @@ public abstract class BaseLifeSystem : MonoBehaviour
      * Parameters: 
      * damagePoints - The number of points to take from the entitie's health.
      */
-    protected virtual void Damage(int damagePoints = 1)
+    public virtual void Damage(int damagePoints = 1)
     {
         if (damagePoints <= 0)
         {
