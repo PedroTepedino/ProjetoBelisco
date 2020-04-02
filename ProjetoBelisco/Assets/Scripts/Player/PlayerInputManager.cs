@@ -1,7 +1,6 @@
 ﻿using Rewired;
 using Sirenix.OdinInspector;
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 /* Enum: Inputs
@@ -18,22 +17,12 @@ using UnityEngine;
 [Flags]
 public enum Inputs
 {
-    Null            = 0,
-    Pause           = 1,
-    Move            = 1 << 1,
-    JumpStart       = 1 << 2,
-    JumpFollowUp    = 1 << 3,
-    JumpRelease     = 1 << 4,
-    Attack          = 1 << 5
-}
-
-public enum Directions
-{
-    Null  = 0,
-    Up    = 1,
-    Down  = 1 << 1,
-    Right = 1 << 2,
-    Left  = 1 << 3
+    Null = 0,
+    Pause = 1 << 0,
+    Move = 1 << 1,
+    JumpStart = 1 << 2,
+    JumpFollowUp = 1 << 3,
+    JumpRelease = 1 << 4
 }
 
 /* Class: PlayerInputManager
@@ -49,7 +38,7 @@ public enum Directions
  *  <Inputs>
  */
 [RequireComponent(typeof(PlayerMovement))]
-public class PlayerInputManager : SerializedMonoBehaviour
+public class PlayerInputManager : MonoBehaviour
 {
     // Group: Private Variables
 
@@ -79,7 +68,7 @@ public class PlayerInputManager : SerializedMonoBehaviour
      * _jumpCicle - Indicates if the player is going throgh a jump cicle.
      */
     private float _jumpActionTimestamp = 0f;
-    [SerializeField] [BoxGroup("Controller Parameters")] private float _jumpActionStorageTime = 0.05f;
+    [SerializeField] [BoxGroup("Controller Parameters")] private float _jumpActionStorageTime = 0.2f;
     private float _jumpActionTimer = 0f;
     private bool _jumpCicle = false;
     
@@ -103,13 +92,6 @@ public class PlayerInputManager : SerializedMonoBehaviour
     private PlayerMovement _playerMovement = null;
     private PlayerJump _playerJump = null;
     private PlayerGrounder _playerGrounder = null;
-    private PlayerComboManager _playerAttack = null;
-
-    /* Variable: _directionsXYDistances
-     *    Determins the min and max angles a direction can have <Directions>.
-     */
-    [SerializeField]
-    private Dictionary<Directions, Vector2> _directionsAngles;
 
     /* Variables: Controller Lock Parameters    
      * About::
@@ -139,7 +121,7 @@ public class PlayerInputManager : SerializedMonoBehaviour
      * MoveDirection - Value between *-1* & *1* that determins if the player is going *Left* or *Right*.
      * PlayerId - Returns the index of the player controller.
      */
-    public Vector2 MoveDirection { get; private set; } = Vector2.zero;
+    public float MoveDirection { get; private set; } = 0f;
     public int PlayerId { get => _playerControllerIndex; }
 
     // Group: Unity Methods
@@ -207,7 +189,6 @@ public class PlayerInputManager : SerializedMonoBehaviour
         _playerMovement = this.GetComponent<PlayerMovement>();
         _playerGrounder = this.GetComponent<PlayerGrounder>();
         _playerJump = this.GetComponent<PlayerJump>();
-        _playerAttack = this.GetComponent<PlayerComboManager>();
     }
 
     // Group: Destruction Methods
@@ -233,7 +214,6 @@ public class PlayerInputManager : SerializedMonoBehaviour
         GetMovement();
         GetPause();
         GetJump();
-        GetAttack();
         InputTimerHandler();
         InputStorageHandler();
     }
@@ -243,9 +223,9 @@ public class PlayerInputManager : SerializedMonoBehaviour
      */
     private void GetMovement()
     {
-        MoveDirection = _playerController.GetAxis2DRaw("MoveHorizontal", "MoveVertical");
+        MoveDirection = _playerController.GetAxisRaw("MoveHorizontal");
 
-        if (Mathf.Abs(MoveDirection.x) >= _controllerDeadZone)
+        if (Mathf.Abs(MoveDirection) >= _controllerDeadZone)
         {
             _curentInputs |= Inputs.Move;
             _movementAxisTimeCounter = _playerController.GetAxisTimeActive("MoveHorizontal");
@@ -294,14 +274,6 @@ public class PlayerInputManager : SerializedMonoBehaviour
         }
     }
 
-    private void GetAttack()
-    {
-        if (_playerController.GetButtonDown("Attack"))
-        {
-            _curentInputs |= Inputs.Attack;
-        }
-    }
-
     /* Function: InputTimerHandler
      * Handles the countdown of the input Storage timers
      * About:: 
@@ -324,24 +296,25 @@ public class PlayerInputManager : SerializedMonoBehaviour
     }
 
     // Group: Decision Making
-    // Decides witch commands can or cannot be executed at a given frame.
+    // Decides witch comands can or cannot be executed at a given frame.
 
     /* Function: DecisionMakingUpdate
      *  Runs a series of statements to decide witch actions to call at a given frame.
      */
     private void DecisionMakingUpdate()
     {
-        if ((_curentInputs & Inputs.Attack) == Inputs.Attack)
-        {
-            this.Attack();
-        }
-
         if ((_curentInputs & Inputs.Pause) == Inputs.Pause)
         {
             this.Pause();
         }
+    }
 
-        if (!IsControllerLocked() && !IsAttackLocked())
+    /* Function: DecisionMakingFixedUpdate
+     * Decides witch Action the player will make, in every stamp of the fixed update.
+     */
+    private void DecisionMakingFixedUpdate()
+    {
+        if (!IsControllerLocked())
         {
             if (((_curentInputs & Inputs.JumpStart) == Inputs.JumpStart))
             {
@@ -361,22 +334,7 @@ public class PlayerInputManager : SerializedMonoBehaviour
                     }
                 }
             }
-        }
-    }
 
-    /* Function: DecisionMakingFixedUpdate
-     * Decides witch Action the player will make, in every stamp of the fixed update.
-     */
-    private void DecisionMakingFixedUpdate()
-    {
-        if (IsControllerLocked()) return;
-
-        if (IsAttackLocked())
-        {
-            this.StopMovement();
-        }
-        else
-        {
             if ((_curentInputs & Inputs.Move) == Inputs.Move)
             {
                 this.Move();
@@ -389,12 +347,12 @@ public class PlayerInputManager : SerializedMonoBehaviour
     }
 
     // Group: Calling Functions
-    // Functions that redirect the commands to their specific class.
+    // Functions that redirect the commads to their specific class.
     // About:: 
     //  These are the functions called at <Decision Making>
 
     /* Function: Pause
-     * Calls the <event : OnPause> to activate the Pause Scene.
+     * Calls the <event : OnPause> to activate the Puase Scene.
      */
     private void Pause()
     {
@@ -406,7 +364,7 @@ public class PlayerInputManager : SerializedMonoBehaviour
      */
     private void Move()
     {
-        _playerMovement.MovePlayer(MoveDirection.x, _movementAxisTimeCounter);
+        _playerMovement.MovePlayer(MoveDirection, _movementAxisTimeCounter);
     }
 
     /* Function: StopMovement
@@ -418,42 +376,39 @@ public class PlayerInputManager : SerializedMonoBehaviour
     }
 
     /* Function: Jump
-     * Calls the Jump Function from <PlayerJump>
+     * Cals the Jump Function from <PlayerJump>
      */
     private void Jump()
     {
         _playerJump.Jump();
     }
 
-    private void Attack()
-    {
-        _playerAttack.AttackCommand(CalculateDirections(MoveDirection));
-    }
-
     // Group: Controller LockDown
     // Decides if the controller can be used or not at a given frame.
 
     /* Function: IsControllerLocked
-     * Determines if the controller can be used or not at a given moment.
+     * Determins if the controller can be used or not at a given moment.
      */
     private bool IsControllerLocked()
     {
-        return _dashing;
-    }
-
-    private bool IsAttackLocked()
-    {
-        return !_playerAttack.CanAttackAgain;
+        if (_dashing)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     // Group: Listeners
     // Methods that listen to Signals 
 
     /* Function: ListenDash
-     * Function that Listen to the Action that determines if the player is dashing or not.
+     * Function that Listen to the Action that detirmins if the player is dashing or not.
      * 
      * Parameters: 
-     * isDashing - Boolean that receives the info if the player is dashing or not.
+     * isDashing - Boolean that recieves the info if the player is dashing or not.
      */
     private void ListenDash(bool isDashing)
     {
@@ -461,36 +416,13 @@ public class PlayerInputManager : SerializedMonoBehaviour
     }
 
     /* Function: ListenGrounder
-     * Function that Listen to the Action that determines if the player is grounded or not.
+     * Function that Listen to the Action that detirmins if the player is grounded or not.
      * 
      * Parameters: 
-     * isGrounded - Boolean that receives the info if the player is grounded or not.
+     * isGrounded - Boolean that recieves the info if the player is grounded or not.
      */
     private void ListenGrounder(bool isGrounded)
     {
         this._isGrounded = isGrounded;
-    }
-    
-    private Directions CalculateDirections(Vector2 input)
-    {
-        if (input.magnitude <= _controllerDeadZone)
-        {
-            return Directions.Null;
-        }
-
-        Directions currentDirection = Directions.Null;
-        float angle = 720;
-
-        foreach (var pair in _directionsAngles)
-        {
-            var aux = Mathf.Abs(Vector2.SignedAngle(pair.Value.normalized, input.normalized));
-
-            if (!(aux <= angle)) continue;
-            
-            angle = aux;
-            currentDirection = pair.Key;
-        }
-
-        return currentDirection;
     }
 }

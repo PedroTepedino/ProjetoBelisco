@@ -13,7 +13,6 @@ public class PlayerGravityManager : MonoBehaviour
      */
     [SerializeField] [FoldoutGroup("Parameters")] private float _standardGravityMultiplier = 1f;
     [SerializeField] [FoldoutGroup("Parameters")] private float _fallingGravityMultiplier = 3f;
-    [SerializeField] [FoldoutGroup("Parameters")] private float _minimumFallingVelocity = -1f;
 
     /* Variables: Essential Components
      * _rigidBody - The RigidBody of the player.
@@ -34,7 +33,7 @@ public class PlayerGravityManager : MonoBehaviour
      */
     private void Update()
     {
-        GravityDecision(PlayerGrounder.IsGrounded);
+        GravityDecision(PlayerGrounder.IsGrounded); 
     }
 
     /* Function: OnDestroy
@@ -89,10 +88,6 @@ public class PlayerGravityManager : MonoBehaviour
             if (_rigidBody.velocity.y < 0f)
             {
                 FallingGravity();
-            }
-            else
-            {
-                ResetGravity();
             }
         }
     }

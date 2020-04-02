@@ -21,8 +21,6 @@ public class PlayerMovement : MonoBehaviour
     [BoxGroup("Parameters")] [SerializeField] private float _timeToHalt = 0.2f;
     [BoxGroup("Parameters")] [SerializeField] private float _minimumVelocity = 0.25f;
 
-    public static bool IsLookingRight { get; private set; } = true;
-
     /* Variable: _rigidBody
      *  Stores the RigidBody of the player.
      */
@@ -61,8 +59,6 @@ public class PlayerMovement : MonoBehaviour
     public void MovePlayer(float direction, float movementTime)
     {
         direction = (direction > 0 ? 1 : -1);
-
-        IsLookingRight = (int)direction == 1;
         
         if (!IsMoving)
         {
