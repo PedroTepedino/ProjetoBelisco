@@ -6,7 +6,7 @@ using UnityEngine;
 /*Class: EnemyController
  * Abstract Class that inherits from <LifeSystemAbstract> that describes the essential components of every enemy.
  */
-public abstract class EnemyController : LifeSystemAbstract
+public abstract class EnemyController : BaseLifeSystem
 {
     public Rigidbody2D rigidbody;
     public float movingSpeed;
