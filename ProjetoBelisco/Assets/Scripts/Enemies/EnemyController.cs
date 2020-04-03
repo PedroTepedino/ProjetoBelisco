@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 [RequireComponent(typeof(Rigidbody2D))]
 /*Class: EnemyController
@@ -19,6 +20,8 @@ public abstract class EnemyController : BaseLifeSystem
     public float lookingRange;
     public string actualState;
     public Transform target;
+    [EnumPaging]public LayerMask layerTargeting;
+    [EnumPaging]public LayerMask layerMove;
 
     private void Start()
     {
