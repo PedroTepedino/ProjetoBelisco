@@ -16,7 +16,7 @@ public class PlayerSpawnerEditor : MonoBehaviour
             color = Color.yellow;
         }
 
-        if (PlayerRespawner.Instance == spawn)
+        if (PlayerRespawner.CurrentSpawner == spawn)
         {
             color = Color.red;
         }

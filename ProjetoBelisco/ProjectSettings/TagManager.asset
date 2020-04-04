@@ -17,8 +17,8 @@ TagManager:
   - PostProcess
   - Enemy
   - CameraConfine
-  - 
-  - 
+  - Player
+  - CameraTriggers
   - 
   - 
   - 
