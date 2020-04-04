@@ -10,10 +10,10 @@ EditorBuildSettings:
     guid: ad924d5b51e78244a93e5aa781f0b47b
   - enabled: 1
     path: Assets/Scenes/Ui/PlayerUi.unity
-    guid: 6110a51643990c844b47b647fd757dc8
+    guid: 6e66f27d0d956024c977e6bae1711e21
   - enabled: 1
     path: Assets/Scenes/Ui/RespawnUi.unity
-    guid: 787a774de5dcc4844a4d85d81b19fb44
+    guid: 7164fb94126184145908321b5c3f27a0
   - enabled: 1
     path: Assets/Scenes/Ui/PawCounterUi.unity
     guid: 5692893dc5cc27f40b9b4c9ccfc42f4e

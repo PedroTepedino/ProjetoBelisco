@@ -30,19 +30,14 @@ public class PlayerLife : BaseLifeSystem
     [Sirenix.OdinInspector.Button]
     public override void Damage(int damagePoints = 1)
     {
-        if (damagePoints <= 0)
-        {
-            return;
-        }
-        else
-        {
-            _curentHealthPoints -= damagePoints;
-            OnPlayerDamage?.Invoke(_curentHealthPoints, _maximumHealth);
+        if (damagePoints <= 0) return;
+        
+        _curentHealthPoints -= damagePoints;
+        OnPlayerDamage?.Invoke(_curentHealthPoints, _maximumHealth);
 
-            if (IsDead)
-            {
-                Die();
-            }
+        if (IsDead)
+        {
+            Die();
         }
     }
 
@@ -54,19 +49,14 @@ public class PlayerLife : BaseLifeSystem
     [Sirenix.OdinInspector.Button]
     public override void RestoreHealth(int healPoints = 1)
     {
-        if (healPoints <= 0)
-        {
-            return;
-        }
-        else
-        {
-            _curentHealthPoints += healPoints;
-            OnPlayerHeal?.Invoke(_curentHealthPoints, _maximumHealth);
+        if (healPoints <= 0) return;
+        
+        _curentHealthPoints += healPoints;
+        OnPlayerHeal?.Invoke(_curentHealthPoints, _maximumHealth);
 
-            if (IsHealthFull)
-            {
-                _curentHealthPoints = _maximumHealth;
-            }
+        if (IsHealthFull)
+        {
+            _curentHealthPoints = _maximumHealth;
         }
     }
 

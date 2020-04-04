@@ -6,7 +6,6 @@ public class PlayerAttackAnimationFinishSignal : MonoBehaviour
 {
     public void OnAnimationFinish()
     {
-        Debug.Log("CanAttack");
         SendMessageUpwards("LetAttackAgain");
     }
 }

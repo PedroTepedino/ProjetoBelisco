@@ -207,6 +207,7 @@
           <e p="Camera" t="Include">
             <e p="CameraManager.cs" t="Include" />
             <e p="CameraObjectVisibilityField.cs" t="Include" />
+            <e p="ChangeToSpecialCam.cs" t="Include" />
           </e>
           <e p="Collectables" t="Include">
             <e p="BaseCollectableObject.cs" t="Include" />
@@ -225,6 +226,7 @@
             <e p="EnemyVision.cs" t="Include" />
           </e>
           <e p="Environment" t="Include">
+            <e p="Checkpoint.cs" t="Include" />
             <e p="PlayerRespawner.cs" t="Include" />
             <e p="VoidHole.cs" t="Include" />
           </e>
@@ -252,6 +254,7 @@
             <e p="PlayerLife.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerPawStorage.cs" t="Include" />
+            <e p="PlayerPlatformDown.cs" t="Include" />
             <e p="PlayerPoolableObject.cs" t="Include" />
           </e>
           <e p="PoolingSystem" t="Include">

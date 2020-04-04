@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2869461666780274345
+--- !u!1 &2220021745876141238
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2869461666780274344}
-  - component: {fileID: 2869461666780274351}
+  - component: {fileID: 6448197035051846303}
+  - component: {fileID: 8468788059180705132}
+  - component: {fileID: 8358753055650940787}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: Untagged
@@ -17,32 +18,58 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2869461666780274344
+--- !u!4 &6448197035051846303
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2869461666780274345}
+  m_GameObject: {fileID: 2220021745876141238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.93, y: 2.01, z: 0}
+  m_LocalPosition: {x: 30.46, y: 1.67, z: -17.015625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2869461666780274351
+--- !u!114 &8468788059180705132
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2869461666780274345}
+  m_GameObject: {fileID: 2220021745876141238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40332b41ae3d86b48b504dd92174ce00, type: 3}
+  m_Script: {fileID: 11500000, guid: 3013fffeaff4df544b06ee3a52d6d2ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeToSpawn: 3
+  _timeToSpawn: 0
   _respawnUi: 2
   _firstSpawner: 0
+--- !u!61 &8358753055650940787
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2220021745876141238}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 11.135815, y: 6.912561}
+  m_EdgeRadius: 0
