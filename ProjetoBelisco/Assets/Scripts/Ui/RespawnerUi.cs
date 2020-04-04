@@ -47,7 +47,7 @@ public class RespawnerUi : MonoBehaviour
     public void Continue()
     {
         _menu.SetActive(false);
-        PlayerRespawner.Instance?.StartPlayerRespawnProcess();
+        PlayerRespawner.CurrentSpawner?.StartPlayerRespawnProcess();
     }
 
     public void Quit()
@@ -71,10 +71,7 @@ public class RespawnerUi : MonoBehaviour
 
     private void KillAnimation()
     {
-        if (_animation != null)
-        {
-            _animation.Kill();
-        }
+        _animation?.Kill();
     }
 
     private void ListenOnStartTimer(PlayerRespawner respawner)

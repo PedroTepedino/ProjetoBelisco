@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Sirenix.OdinInspector;
 
 /* Class: PlayerJump
@@ -44,10 +45,16 @@ public class PlayerJump : MonoBehaviour
     private void Awake()
     {
         GetEssentialComponents();
+        PlayerPlatformDown.OnDownfall += PlayerFallThroughPlatform;
+    }
+
+    private void OnDestroy()
+    {
+        PlayerPlatformDown.OnDownfall -= PlayerFallThroughPlatform;
     }
 
     private void Update()
-    {
+    { 
         if (!PlayerGrounder.IsTouchingGround) return;
         
         if (IsJumping == PlayerGrounder.IsTouchingGround)
@@ -69,11 +76,15 @@ public class PlayerJump : MonoBehaviour
     /* Function: Jump
      * the Jumping Action of the player
      */
-    public void Jump()
+    public void Jump(bool jumpDown = false)
     {
-        this._rigidBody.velocity = new Vector2(this._rigidBody.velocity.x, _jumpInitialVelocity);
         IsJumping = true;
         OnJump?.Invoke(true);
+        
+        if (!jumpDown)
+        {
+            this._rigidBody.velocity = new Vector2(this._rigidBody.velocity.x, _jumpInitialVelocity);
+        }
     }
 
     /* Function: EndJump
@@ -110,5 +121,10 @@ public class PlayerJump : MonoBehaviour
     public bool CanRaiseJump(float jumpTime)
     {
         return IsJumping && (jumpTime <= _jumpActionMaxHoldingTime);
+    }
+
+    private void PlayerFallThroughPlatform()
+    {
+        Jump(jumpDown: true);
     }
 }

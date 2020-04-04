@@ -2,6 +2,7 @@
 using Sirenix.OdinInspector;
 using System;
 using System.Collections.Generic;
+using System.Security.Policy;
 using UnityEngine;
 
 /* Enum: Inputs
@@ -24,7 +25,8 @@ public enum Inputs
     JumpStart       = 1 << 2,
     JumpFollowUp    = 1 << 3,
     JumpRelease     = 1 << 4,
-    Attack          = 1 << 5
+    Attack          = 1 << 5,
+    MoveDown        = 1 << 6,
 }
 
 public enum Directions
@@ -65,6 +67,7 @@ public class PlayerInputManager : SerializedMonoBehaviour
     [BoxGroup("Player Info")] [ShowInInspector] private readonly int _playerControllerIndex = 0;
     [BoxGroup("Player Info")] [ShowInInspector] private Player _playerController;
     [SerializeField] [BoxGroup("Controller Parameters")] private float _controllerDeadZone = 0.25f;
+    [SerializeField] [BoxGroup("Controller Parameters")] private float _controllerDownDeadZone= 0.7f;
 
     /* Floats: Movement Parameters
      * _movementAxisTimeCounter - Counts the time the movement axis have been active or inactive.
@@ -104,6 +107,7 @@ public class PlayerInputManager : SerializedMonoBehaviour
     private PlayerJump _playerJump = null;
     private PlayerGrounder _playerGrounder = null;
     private PlayerComboManager _playerAttack = null;
+    private PlayerPlatformDown _playerPlatformDown = null;
 
     /* Variable: _directionsXYDistances
      *    Determins the min and max angles a direction can have <Directions>.
@@ -208,6 +212,7 @@ public class PlayerInputManager : SerializedMonoBehaviour
         _playerGrounder = this.GetComponent<PlayerGrounder>();
         _playerJump = this.GetComponent<PlayerJump>();
         _playerAttack = this.GetComponent<PlayerComboManager>();
+        _playerPlatformDown = this.GetComponent<PlayerPlatformDown>();
     }
 
     // Group: Destruction Methods
@@ -253,6 +258,11 @@ public class PlayerInputManager : SerializedMonoBehaviour
         else
         {
             _movementAxisTimeCounter = _playerController.GetAxisTimeInactive("MoveHorizontal");
+        }
+
+        if (MoveDirection.y <= -_controllerDownDeadZone)
+        {
+            _curentInputs |= Inputs.MoveDown;
         }
     }
 
@@ -343,24 +353,37 @@ public class PlayerInputManager : SerializedMonoBehaviour
 
         if (!IsControllerLocked() && !IsAttackLocked())
         {
-            if (((_curentInputs & Inputs.JumpStart) == Inputs.JumpStart))
+            bool gotDownFromPlatform = false;
+            
+            if (((_curentInputs & (Inputs.JumpStart | Inputs.MoveDown)) == (Inputs.JumpStart | Inputs.MoveDown)) 
+                 || ((_curentInputs & (Inputs.JumpFollowUp | Inputs.MoveDown)) == ((Inputs.JumpFollowUp | Inputs.MoveDown))))
             {
-                if (_playerJump.CanJump())
-                {
-                    this.Jump();
-                }
+                gotDownFromPlatform = GetDownFromPlatform();
             }
-
-            if (((_curentInputs & Inputs.JumpFollowUp) == Inputs.JumpFollowUp))
+            
+            if(!gotDownFromPlatform)
             {
-                if (_jumpCicle)
+                if (((_curentInputs & Inputs.JumpStart) == Inputs.JumpStart))
                 {
-                    if (_playerJump.CanRaiseJump(_jumpActionTimestamp))
+                    if (_playerJump.CanJump())
                     {
                         this.Jump();
                     }
                 }
+
+                if (((_curentInputs & Inputs.JumpFollowUp) == Inputs.JumpFollowUp))
+                {
+                    if (_jumpCicle)
+                    {
+                        if (_playerJump.CanRaiseJump(_jumpActionTimestamp))
+                        {
+                            this.Jump();
+                        }
+                    }
+                }
             }
+
+            
         }
     }
 
@@ -428,6 +451,11 @@ public class PlayerInputManager : SerializedMonoBehaviour
     private void Attack()
     {
         _playerAttack.AttackCommand(CalculateDirections(MoveDirection));
+    }
+
+    private bool GetDownFromPlatform()
+    {
+        return _playerPlatformDown.GetDownFromPlatform();
     }
 
     // Group: Controller LockDown

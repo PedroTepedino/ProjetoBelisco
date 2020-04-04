@@ -5,7 +5,7 @@ using Sirenix.OdinInspector;
 
 public class PlayerRespawner : MonoBehaviour
 {
-    public static PlayerRespawner Instance = null;
+    public static PlayerRespawner CurrentSpawner = null;
     [SerializeField] private float _timeToSpawn = 3f;
     [SerializeField] [EnumToggleButtons] private ScenesIndex.UiScenes _respawnUi = ScenesIndex.UiScenes.RespawnUi;
     [SerializeField] bool _firstSpawner = false;
@@ -25,16 +25,21 @@ public class PlayerRespawner : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
+        if (CurrentSpawner == null)
         {
-            Instance = this;
+            CurrentSpawner = this;
         }
         else if (_firstSpawner)
         {
-            Instance = this;
+            CurrentSpawner = this;
         }
 
         PlayerLife.OnPlayerDie += ListenPlayerDeath;
+    }
+
+    private void OnDestroy()
+    {
+        PlayerLife.OnPlayerDie -= ListenPlayerDeath;
     }
 
     private void Start()
@@ -44,15 +49,10 @@ public class PlayerRespawner : MonoBehaviour
             RespawnPlayer();
         }
     }
-
-    private void OnDestroy()
-    {
-        PlayerLife.OnPlayerDie -= ListenPlayerDeath;
-    }
-
+    
     public void StartPlayerRespawnProcess()
     {
-        StartCoroutine(routine: TimeToSpawnPlayer());
+        StartCoroutine(TimeToSpawnPlayer());
     }
 
     private IEnumerator TimeToSpawnPlayer()
@@ -71,11 +71,28 @@ public class PlayerRespawner : MonoBehaviour
 
     private void RespawnPlayer()
     {
-        ObjectPooler.Instance.SpawnFromPool("Player", this.transform, parent: false);
+        ObjectPooler.Instance.MoveObjectToPoint("Player", this.transform);
+        StartCoroutine(Teste());
     }
+
+    private IEnumerator Teste()
+    {
+        yield return new WaitForEndOfFrame();
+        ObjectPooler.Instance.SpawnFromPool("Player", this.transform);
+    }
+    
 
     private void ListenPlayerDeath()
     {
-        UiScenesLoader.LoadScene(_respawnUi);
+        if (this.gameObject == CurrentSpawner.gameObject)
+        {
+            RespawnPlayer();
+            //UiScenesLoader.LoadScene(_respawnUi);
+        }
+    }
+
+    public void SetToCurrentRespawner()
+    {
+        CurrentSpawner = this;
     }
 }

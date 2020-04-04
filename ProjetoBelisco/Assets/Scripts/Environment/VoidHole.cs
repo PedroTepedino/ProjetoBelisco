@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
@@ -17,11 +18,16 @@ public class VoidHole : MonoBehaviour
 
     private void Kill(Collider2D collision)
     {
+        if (!collision.gameObject.activeInHierarchy) return;
+        
         BaseLifeSystem lifeSystem = collision.gameObject.GetComponentInChildren<BaseLifeSystem>();
 
         if (lifeSystem != null)
         {
-            lifeSystem.Damage(lifeSystem.CurentHealth);
+            if (lifeSystem.CurentHealth > 0)
+            {
+                lifeSystem.Damage(lifeSystem.CurentHealth);
+            }
         }
     }
 }

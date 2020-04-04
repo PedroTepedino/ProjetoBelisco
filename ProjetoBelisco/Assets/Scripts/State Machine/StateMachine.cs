@@ -6,7 +6,7 @@ using System.Linq;
 /*Class: StateMachine
  * Class that describes the behavior of a state machine and handle states
 */
-public class StateMachine : MonoBehaviour
+public class StateMachine
 {
     // Group: Private Variables
 
@@ -30,10 +30,8 @@ public class StateMachine : MonoBehaviour
         {
             this.currentState.ExitState();
         }
-
         this.previousState = currentState;
         this.currentState = newState;
-        this.previousState.ExitState();
         this.currentState.EnterState();
     }
 
@@ -52,6 +50,7 @@ public class StateMachine : MonoBehaviour
     {
         return currentState;
     }
+    
     /* Function: SwitchToPreviousState
      * Switch back to the state executed before the current state.
      */

@@ -29,3 +29,5 @@ public class UiScenesLoader : MonoBehaviour
         SceneManager.UnloadSceneAsync((int)sceneToUnload);
     }
 }
+
+
