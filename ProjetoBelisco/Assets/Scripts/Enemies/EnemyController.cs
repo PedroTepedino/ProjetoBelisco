@@ -7,36 +7,29 @@ using Sirenix.OdinInspector;
 /*Class: EnemyController
  * Abstract Class that inherits from <LifeSystemAbstract> that describes the essential components of every enemy.
  */
-public abstract class EnemyController : BaseLifeSystem
+public abstract class EnemyController : MonoBehaviour
 {
-    public Rigidbody2D rigidbody;
-    public float movingSpeed;
-    public Transform groundDetection;
-    public bool movingRight = true;
     public StateMachine stateMachine;
+    public Rigidbody2D rigidbody;
+    public Transform target;
+    public string actualState;
+    public bool movingRight = true;
+   
+    [EnumPaging]public LayerMask layerTargeting;
+    [EnumPaging]public LayerMask layerMove;
+    public Vector3 groundDetectionOffset;
+    public float movingSpeed;
+    public float lookingRange;
     public float attackRange;
     public float attackDamage;
     public float attackSpeed;
-    public float lookingRange;
-    public string actualState;
-    public Transform target;
-    [EnumPaging]public LayerMask layerTargeting;
-    [EnumPaging]public LayerMask layerMove;
 
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         stateMachine = new StateMachine();
         this.stateMachine.ChangeState(new MoveState(this.gameObject, this.GetComponent<EnemyController>()));
-        actualState = "move";
     }
-    protected override void Die()
-    {
-        EnemyDie();
-    }
-
-
-    public abstract void EnemyDie();
     public abstract void Update();
     
 }

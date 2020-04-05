@@ -18,9 +18,12 @@ public class MoveState : IState
      */
     private GameObject ownerGameObject;
     private EnemyController controllerOwner;
-    private RaycastHit2D groundCheck;
-    private RaycastHit2D wallCheck;
+    private EnemyGrounder grounder;
+    private EnemyWallChecker wallCheck;
     private Vector2 movement;
+    private Vector2 raycastStart;
+    private bool groundCheck;
+     
 
     // Group: Functions
 
@@ -43,6 +46,9 @@ public class MoveState : IState
     public void EnterState()
     {
         controllerOwner.actualState = "move";
+        grounder = ownerGameObject.GetComponent<EnemyGrounder>();
+        wallCheck = ownerGameObject.GetComponent<EnemyWallChecker>();
+        raycastStart = ownerGameObject.transform.position + controllerOwner.groundDetectionOffset;
     }
 
     /*Function: ExitState
@@ -58,45 +64,13 @@ public class MoveState : IState
      */
     public void RunState()
     {
-        groundCheck = Physics2D.Raycast(controllerOwner.groundDetection.position, Vector2.down, 2f, controllerOwner.layerMove);
-        if (groundCheck.collider != null)
+
+        if (grounder.isGrounded && wallCheck.wallAhead)
         {
-            Debug.Log(groundCheck.collider.gameObject);
-        }
-        else
-        {
-            Debug.Log("null ground");
-        }
-        if (controllerOwner.movingRight)
-        {
-            wallCheck = Physics2D.Raycast(controllerOwner.groundDetection.position, Vector2.right, 0.5f, controllerOwner.layerMove);
-        }
-        else
-        {
-            wallCheck = Physics2D.Raycast(controllerOwner.groundDetection.position, Vector2.left, 0.5f, controllerOwner.layerMove);
-        }
-        
-        if (wallCheck.collider != null)
-        {
-            Debug.Log(wallCheck.collider.gameObject);
-        }
-        else
-        {
-            Debug.Log("null wall");
-        }
-        if (groundCheck.collider != null  && wallCheck.collider == null)
-        {
-            if (controllerOwner.movingRight)
-            {
-                movement.Set(controllerOwner.movingSpeed * Time.deltaTime, controllerOwner.rigidbody.velocity.y);
-                controllerOwner.rigidbody.velocity = movement;
-            }
-            else
-            {
-                movement.Set(-controllerOwner.movingSpeed * Time.deltaTime, controllerOwner.rigidbody.velocity.y);
-                controllerOwner.rigidbody.velocity = movement;
-            }
-           
+
+            movement.Set(controllerOwner.movingRight ? controllerOwner.movingSpeed : -controllerOwner.movingSpeed * Time.deltaTime, controllerOwner.rigidbody.velocity.y);
+            controllerOwner.rigidbody.velocity = movement;
+       
         }
         else
         {

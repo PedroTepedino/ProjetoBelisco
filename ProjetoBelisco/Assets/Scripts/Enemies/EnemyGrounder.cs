@@ -8,23 +8,23 @@ public class EnemyGrounder : MonoBehaviour
 {
     [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _grounderCenter = Vector3.zero;
     [FoldoutGroup("Parameters")] [SerializeField] private Vector2 _grounderSizes;
-    [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask _grounderLayerMask;
+    [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask _groundLayerMask;
         
-    public static bool IsGrounded { get; private set; } = false;
+    public bool isGrounded { get; private set; } = false;
 
     private void Update()
     {
-        IsGrounded = GroundCheck();
+        isGrounded = GroundCheck();
     }
     
     private bool GroundCheck()
     {
-        return Physics2D.OverlapBox(this.transform.position + _grounderCenter, _grounderSizes, 0f, _grounderLayerMask) != null ? true : false;
+        return Physics2D.OverlapBox(this.transform.position + _grounderCenter, _grounderSizes, 0f, _groundLayerMask) != null ? true : false;
     }
 
     protected void OnDrawGizmos()
     {
-        Gizmos.color = IsGrounded ? Color.red : Color.green;
+        Gizmos.color = isGrounded ? Color.red : Color.green;
 
         Gizmos.DrawWireCube(this.transform.position + _grounderCenter, _grounderSizes);
     }
