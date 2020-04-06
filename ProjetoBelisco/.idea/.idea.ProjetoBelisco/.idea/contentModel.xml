@@ -238,8 +238,10 @@
             <e p="BaseLifeSystem.cs" t="Include" />
           </e>
           <e p="Navmesh" t="Include">
+            <e p="BakeNavmeshPlatformer.cs" t="Include" />
             <e p="Navmesh.cs" t="Include" />
             <e p="NavmeshBaker.cs" t="Include" />
+            <e p="NavMeshPlatformer.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="PlayerAnimationController.cs" t="Include" />
@@ -282,6 +284,7 @@
               <e p="SceneEssentials.cs" t="Include" />
               <e p="Vector2AttributeSliderDrawer.cs" t="Include" />
             </e>
+            <e p="ExtDebug.cs" t="Include" />
             <e p="SceneEssentialObjects.cs" t="Include" />
             <e p="Vector2SliderAtribute.cs" t="Include" />
           </e>
