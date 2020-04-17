@@ -7,15 +7,17 @@ public class AttackState : IState
     private GameObject ownerGameObject;
     private Transform _target;
     private EnemyController controllerOwner;
-    private float timer;
-    private BaseLifeSystem targerLifeSystem;
     private Rigidbody2D ownerRigidbody;
+    private EnemyGrounder grounder;
+    private EnemyWallChecker wallCheck;
+    private PlayerLife targerLifeSystem;
+    private float timer;
 
     public AttackState(GameObject owner, EnemyController controller, Transform target)
     {
         ownerGameObject = owner;
         controllerOwner = controller;
-        _target = target;
+        _target = target;       
     }
 
     public void EnterState()
@@ -23,7 +25,9 @@ public class AttackState : IState
         Debug.Log(_target);
         controllerOwner.actualState = "attack";
         ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
-        targerLifeSystem = _target.GetComponentInParent<BaseLifeSystem>();
+        targerLifeSystem = _target.GetComponentInParent<PlayerLife>();
+        grounder = ownerGameObject.GetComponent<EnemyGrounder>();
+        wallCheck = ownerGameObject.GetComponent<EnemyWallChecker>();
         timer = 0;
     }
 
@@ -36,31 +40,41 @@ public class AttackState : IState
     {
         timer += Time.deltaTime;
 
-        //ownerGameObject.transform.LookAt(_target);
-        if (Vector2.Distance(ownerGameObject.transform.position, _target.position) <= controllerOwner.lookingRange)
+        if(_target != null)
         {
-            if (Vector2.Distance(ownerGameObject.transform.position, _target.position) <= controllerOwner.attackRange)
+            if (Vector2.Distance(ownerGameObject.transform.position, _target.position) <= controllerOwner.lookingRange)
             {
-                if (timer >= controllerOwner.attackSpeed)
+                if (Vector2.Distance(ownerGameObject.transform.position, _target.position) <= controllerOwner.attackRange)
                 {
-                    if (_target != null)
+                    if (timer >= controllerOwner.attackSpeed)
                     {
                         Debug.Log("dmg");
-                        //targerLifeSystem.Damage(controllerOwner.attackDamage);
+                        targerLifeSystem.Damage(controllerOwner.attackDamage);
+
+                        timer = 0;
                     }
-                    timer = 0;
+                }
+                else
+                {
+                    Vector2 direction = (_target.position - ownerGameObject.transform.position).normalized;
+                    if (grounder.isGrounded && wallCheck.wallAhead)
+                    {
+                        ownerRigidbody.velocity = direction * controllerOwner.movingSpeed;
+                    }
+                    else
+                    {
+                        controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject, controllerOwner));
+                    }
                 }
             }
             else
             {
-                Vector2 direction = (_target.position - ownerGameObject.transform.position).normalized;
-                ownerRigidbody.velocity = direction * controllerOwner.movingSpeed;
+                controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject, controllerOwner));
             }
         }
         else
         {
-            controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject, controllerOwner));
-            controllerOwner.actualState = "move";
+             controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject, controllerOwner));
         }
     }
 }

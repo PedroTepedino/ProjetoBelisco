@@ -21,8 +21,8 @@ public abstract class EnemyController : MonoBehaviour
     public float movingSpeed;
     public float lookingRange;
     public float attackRange;
-    public float attackDamage;
     public float attackSpeed;
+    public int attackDamage;
 
     private void Start()
     {
