@@ -4,6 +4,9 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(EnemyLife))]
+[RequireComponent(typeof(EnemyWallChecker))]
+[RequireComponent(typeof(EnemyGrounder))]
 /*Class: EnemyController
  * Abstract Class that inherits from <LifeSystemAbstract> that describes the essential components of every enemy.
  */
@@ -17,7 +20,7 @@ public abstract class EnemyController : MonoBehaviour
    
     [EnumPaging]public LayerMask layerTargeting;
     [EnumPaging]public LayerMask layerMove;
-    public Vector3 groundDetectionOffset;
+    //public Vector3 groundDetectionOffset;
     public float movingSpeed;
     public float lookingRange;
     public float attackRange;

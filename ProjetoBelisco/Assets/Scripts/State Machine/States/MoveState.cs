@@ -21,7 +21,6 @@ public class MoveState : IState
     private EnemyGrounder grounder;
     private EnemyWallChecker wallCheck;
     private Vector2 movement;
-    private Vector2 raycastStart;
     private bool groundCheck;
      
 
@@ -48,7 +47,6 @@ public class MoveState : IState
         controllerOwner.actualState = "move";
         grounder = ownerGameObject.GetComponent<EnemyGrounder>();
         wallCheck = ownerGameObject.GetComponent<EnemyWallChecker>();
-        raycastStart = ownerGameObject.transform.position + controllerOwner.groundDetectionOffset;
     }
 
     /*Function: ExitState

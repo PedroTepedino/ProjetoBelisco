@@ -6,7 +6,7 @@ using System.Linq;
 /*Class: StateMachine
  * Class that describes the behavior of a state machine and handle states
 */
-public class StateMachine
+public class StateMachine : MonoBehaviour
 {
     // Group: Private Variables
 
