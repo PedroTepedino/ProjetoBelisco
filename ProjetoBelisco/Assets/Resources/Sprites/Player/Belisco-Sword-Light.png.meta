@@ -1,412 +1,250 @@
 fileFormatVersion: 2
-guid: 312bfb3ab684ed94894b347ba24eacde
+guid: 3ec7a8794f707d241b751796dc9c5871
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4127487108521552333
-    second: pinchrun-Sheet_0
+      213: 9038421568251026072
+    second: Belisco-Sword-Light_0
   - first:
-      213: 5355716970676692479
-    second: pinchrun-Sheet_1
+      213: 8910026653031258123
+    second: Belisco-Sword-Light_1
   - first:
-      213: -3515041299260468618
-    second: pinchrun-Sheet_2
+      213: -5148426299673444143
+    second: Belisco-Sword-Light_2
   - first:
-      213: -4285957616918349481
-    second: pinchrun-Sheet_3
+      213: -6553231770634413167
+    second: Belisco-Sword-Light_3
   - first:
-      213: 8168303119893504058
-    second: pinchrun-Sheet_4
+      213: -5611950037899185540
+    second: Belisco-Sword-Light_4
   - first:
-      213: 7164397322517903108
-    second: pinchrun-Sheet_5
+      213: 2531202034241351039
+    second: Belisco-Sword-Light_5
   - first:
-      213: -1965251512816997524
-    second: pinchrun-Sheet_6
+      213: 5675351576301579747
+    second: Belisco-Sword-Light_6
   - first:
-      213: 1710704879998278691
-    second: pinchrun-Sheet_7
+      213: -1244200410288584365
+    second: Belisco-Sword-Light_7
   - first:
-      213: 3542148979986959987
-    second: pinchrun-Sheet_8
+      213: -1430223607803291235
+    second: Belisco-Sword-Light_8
   - first:
-      213: 3276995369946758397
-    second: pinchrun-Sheet_9
+      213: -558932504769988008
+    second: Belisco-Sword-Light_9
   - first:
-      213: -5484382825904136540
-    second: pinchrun-Sheet_10
+      213: -931281666202061409
+    second: Belisco-Sword-Light_10
   - first:
-      213: -33654151118410793
-    second: pinchrun-Sheet_11
+      213: -9038946595506421472
+    second: Belisco-Sword-Light_11
   - first:
-      213: 8593817813168775407
-    second: pinchrun-Sheet_12
+      213: 6569146847478026475
+    second: Belisco-Sword-Light_12
   - first:
-      213: -5527613932328068325
-    second: pinchrun-Sheet_13
+      213: 3463180812851850732
+    second: Belisco-Sword-Light_13
   - first:
-      213: -7996021949318869811
-    second: pinchrun-Sheet_14
+      213: 2228403129834904108
+    second: Belisco-Sword-Light_14
   - first:
-      213: -5613297146129927024
-    second: pinchrun-Sheet_15
+      213: -6671380222426561816
+    second: Belisco-Sword-Light_15
   - first:
-      213: -9043961821679037454
-    second: pinchrun-Sheet_16
+      213: -1389952199059623132
+    second: Belisco-Sword-Light_16
   - first:
-      213: -681130379577129816
-    second: pinchrun-Sheet_17
+      213: -695653299927539900
+    second: Belisco-Sword-Light_17
   - first:
-      213: 5471672100761039686
-    second: pinchrun-Sheet_18
+      213: -5489164229855050971
+    second: Belisco-Sword-Light_18
   - first:
-      213: 1987764801842465730
-    second: pinchrun-Sheet_19
+      213: 38813751759259018
+    second: Belisco-Sword-Light_19
   - first:
-      213: -3405423279776446396
-    second: pinchrun-Sheet_20
+      213: -1239596255126341302
+    second: Belisco-Sword-Light_20
   - first:
-      213: -7496555656062110212
-    second: pinchrun-Sheet_21
+      213: 8708351175378575861
+    second: Belisco-Sword-Light_21
   - first:
-      213: 3695553463762026040
-    second: pinchrun-Sheet_22
+      213: 4640879615607209834
+    second: Belisco-Sword-Light_22
   - first:
-      213: -1122061610562988302
-    second: pinchrun-Sheet_23
+      213: 8545502572892666415
+    second: Belisco-Sword-Light_23
   - first:
-      213: 4198013646318382775
-    second: pinchrun-Sheet_24
+      213: 5325994398127462949
+    second: Belisco-Sword-Light_24
   - first:
-      213: 967756336707720949
-    second: pinchrun-Sheet_25
+      213: -2541561291020944462
+    second: Belisco-Sword-Light_25
   - first:
-      213: 1558522880510010494
-    second: pinchrun-Sheet_26
+      213: -6560487924131871151
+    second: Belisco-Sword-Light_26
   - first:
-      213: -5276336481799585967
-    second: pinchrun-Sheet_27
+      213: -6890401146296688189
+    second: Belisco-Sword-Light_27
   - first:
-      213: 2719981889954321572
-    second: pinchrun-Sheet_28
+      213: -8887735150453586858
+    second: Belisco-Sword-Light_28
   - first:
-      213: 393756053192231347
-    second: pinchrun-Sheet_29
+      213: -4756833642025227889
+    second: Belisco-Sword-Light_29
   - first:
-      213: -747952118393679386
-    second: pinchrun-Sheet_30
+      213: 5932586143778058499
+    second: Belisco-Sword-Light_30
   - first:
-      213: 1254125462809893566
-    second: pinchrun-Sheet_31
+      213: 3029791112226880381
+    second: Belisco-Sword-Light_31
   - first:
-      213: 5733595799862273641
-    second: pinchrun-Sheet_32
+      213: 1464191868779738742
+    second: Belisco-Sword-Light_32
   - first:
-      213: -4403487248404823033
-    second: pinchrun-Sheet_33
+      213: -954466842558930906
+    second: Belisco-Sword-Light_33
   - first:
-      213: 8727659726185014578
-    second: pinchrun-Sheet_34
+      213: -1445933996008284540
+    second: Belisco-Sword-Light_34
   - first:
-      213: 4207077010407068300
-    second: pinchrun-Sheet_35
+      213: -1212754839498256876
+    second: Belisco-Sword-Light_35
   - first:
-      213: -7085589663495144558
-    second: pinchrun-Sheet_36
+      213: 7915972692615846189
+    second: Belisco-Sword-Light_36
   - first:
-      213: -8941012584203971014
-    second: pinchrun-Sheet_37
+      213: 6128436039301334820
+    second: Belisco-Sword-Light_37
   - first:
-      213: 5424085889361762376
-    second: pinchrun-Sheet_38
+      213: 85255150379943607
+    second: Belisco-Sword-Light_38
   - first:
-      213: 913037643735869532
-    second: pinchrun-Sheet_39
+      213: -4671530963527433933
+    second: Belisco-Sword-Light_39
   - first:
-      213: -4675668316149290191
-    second: pinchrun-Sheet_40
+      213: -8217054416410627780
+    second: Belisco-Sword-Light_40
   - first:
-      213: 6547297746588691703
-    second: pinchrun-Sheet_41
+      213: -4933655316071365605
+    second: Belisco-Sword-Light_41
   - first:
-      213: -5362724516933535724
-    second: pinchrun-Sheet_42
+      213: 4365807672148274464
+    second: Belisco-Sword-Light_42
   - first:
-      213: -1179441409275527172
-    second: pinchrun-Sheet_43
+      213: -8803768759779189281
+    second: Belisco-Sword-Light_43
   - first:
-      213: -8758616924242729777
-    second: pinchrun-Sheet_44
+      213: 291793052492034996
+    second: Belisco-Sword-Light_44
   - first:
-      213: -1919737338711731085
-    second: pinchrun-Sheet_45
+      213: 8556872794656841365
+    second: Belisco-Sword-Light_45
   - first:
-      213: 7604417675926099154
-    second: pinchrun-Sheet_46
+      213: 8609054954886957553
+    second: Belisco-Sword-Light_46
   - first:
-      213: 748556566385596090
-    second: pinchrun-Sheet_47
+      213: 8006120821487731393
+    second: Belisco-Sword-Light_47
   - first:
-      213: 1895371887678005606
-    second: pinchrun-Sheet_48
+      213: -8675563370348835767
+    second: Belisco-Sword-Light_48
   - first:
-      213: 3882998205528212526
-    second: pinchrun-Sheet_49
+      213: 919843608592571634
+    second: Belisco-Sword-Light_49
   - first:
-      213: 2151811891158539222
-    second: pinchrun-Sheet_50
+      213: 306912612381827935
+    second: Belisco-Sword-Light_50
   - first:
-      213: 8384885748474451138
-    second: pinchrun-Sheet_51
+      213: -2734403862171768796
+    second: Belisco-Sword-Light_51
   - first:
-      213: -5557123439393860197
-    second: pinchrun-Sheet_52
+      213: 8321570572977480127
+    second: Belisco-Sword-Light_52
   - first:
-      213: 7672418647191238508
-    second: pinchrun-Sheet_53
+      213: 1020145840595318255
+    second: Belisco-Sword-Light_53
   - first:
-      213: -2950301336845729487
-    second: pinchrun-Sheet_54
+      213: -3345632594133752236
+    second: Belisco-Sword-Light_54
   - first:
-      213: -3369679954116955442
-    second: pinchrun-Sheet_55
+      213: -7850810594716552102
+    second: Belisco-Sword-Light_55
   - first:
-      213: 8320325898072811153
-    second: pinchrun-Sheet_56
+      213: 4734335619888168550
+    second: Belisco-Sword-Light_56
   - first:
-      213: 2160052417410184208
-    second: pinchrun-Sheet_57
+      213: -4150231890137249631
+    second: Belisco-Sword-Light_57
   - first:
-      213: 5684313123080495228
-    second: pinchrun-Sheet_58
+      213: 2128763676073537519
+    second: Belisco-Sword-Light_58
   - first:
-      213: 9031475687276514007
-    second: pinchrun-Sheet_59
+      213: 3053605530033034540
+    second: Belisco-Sword-Light_59
   - first:
-      213: 1932672063283095470
-    second: pinchrun-Sheet_60
+      213: 3031999554859488519
+    second: Belisco-Sword-Light_60
   - first:
-      213: 2099337739467928476
-    second: pinchrun-Sheet_61
+      213: -4938340763401798215
+    second: Belisco-Sword-Light_61
   - first:
-      213: -3551652114368230854
-    second: pinchrun-Sheet_62
+      213: 4959812143173326721
+    second: Belisco-Sword-Light_62
   - first:
-      213: 7577549204189294308
-    second: pinchrun-Sheet_63
+      213: 5412462976847216535
+    second: Belisco-Sword-Light_63
   - first:
-      213: -3961791025400679964
-    second: pinchrun-Sheet_64
+      213: 8493225222274675600
+    second: Belisco-Sword-Light_64
   - first:
-      213: -115913862760352389
-    second: pinchrun-Sheet_65
+      213: -237973919359957326
+    second: Belisco-Sword-Light_65
   - first:
-      213: 1836044729789946054
-    second: pinchrun-Sheet_66
+      213: -8163750674651208384
+    second: Belisco-Sword-Light_66
   - first:
-      213: 2969411727379825485
-    second: pinchrun-Sheet_67
+      213: 778550250844853426
+    second: Belisco-Sword-Light_67
   - first:
-      213: 2751382144726145939
-    second: pinchrun-Sheet_68
+      213: -8071611984300359863
+    second: Belisco-Sword-Light_68
   - first:
-      213: -7353418692698431999
-    second: pinchrun-Sheet_69
+      213: -5235350627163022845
+    second: Belisco-Sword-Light_69
   - first:
-      213: -5768931241608179074
-    second: pinchrun-Sheet_70
+      213: -4666276410812113368
+    second: Belisco-Sword-Light_70
   - first:
-      213: 1562949655302523731
-    second: pinchrun-Sheet_71
+      213: -8275867621438640813
+    second: Belisco-Sword-Light_71
   - first:
-      213: 5207022658350161856
-    second: pinchrun-Sheet_72
+      213: 8667082616361392746
+    second: Belisco-Sword-Light_72
   - first:
-      213: 1766482039115574634
-    second: pinchrun-Sheet_73
+      213: 8375218356202028291
+    second: Belisco-Sword-Light_73
   - first:
-      213: 5967631468648189998
-    second: pinchrun-Sheet_74
+      213: 7496832948147080430
+    second: Belisco-Sword-Light_74
   - first:
-      213: 8872357763591469451
-    second: pinchrun-Sheet_75
+      213: -7205828501828619082
+    second: Belisco-Sword-Light_75
   - first:
-      213: -7763447678967013002
-    second: pinchrun-Sheet_76
+      213: -5943644321572249846
+    second: Belisco-Sword-Light_76
   - first:
-      213: -5819350113050988494
-    second: pinchrun-Sheet_77
+      213: 2165859766955207947
+    second: Belisco-Sword-Light_77
   - first:
-      213: 5189197052773791306
-    second: pinchrun-Sheet_78
+      213: -17299537814061159
+    second: Belisco-Sword-Light_78
   - first:
-      213: 1069784292174189387
-    second: pinchrun-Sheet_79
+      213: -4130953802668708732
+    second: Belisco-Sword-Light_79
   - first:
-      213: -6537301084068383865
-    second: pinchrun-Sheet_80
-  - first:
-      213: -8545479849938366577
-    second: pinchrun-Sheet_81
-  - first:
-      213: 1297604125014012987
-    second: pinchrun-Sheet_82
-  - first:
-      213: -4689225639865624330
-    second: pinchrun-Sheet_83
-  - first:
-      213: 5706868200145801279
-    second: pinchrun-Sheet_84
-  - first:
-      213: 5034265853291238749
-    second: pinchrun-Sheet_85
-  - first:
-      213: 8720363932702400672
-    second: pinchrun-Sheet_86
-  - first:
-      213: 3286958205197435397
-    second: pinchrun-Sheet_87
-  - first:
-      213: -290369843103657696
-    second: pinchrun-Sheet_88
-  - first:
-      213: 3733856737146096042
-    second: pinchrun-Sheet_89
-  - first:
-      213: 2230017110610589815
-    second: pinchrun-Sheet_90
-  - first:
-      213: -4943486989460228545
-    second: pinchrun-Sheet_91
-  - first:
-      213: -2166958902896153997
-    second: pinchrun-Sheet_92
-  - first:
-      213: -1913352171910942319
-    second: pinchrun-Sheet_93
-  - first:
-      213: -5145659290126951124
-    second: pinchrun-Sheet_94
-  - first:
-      213: 7900238584650820965
-    second: pinchrun-Sheet_95
-  - first:
-      213: 413607540811492727
-    second: pinchrun-Sheet_96
-  - first:
-      213: -8567363285116441242
-    second: pinchrun-Sheet_97
-  - first:
-      213: 5070220975121071653
-    second: pinchrun-Sheet_98
-  - first:
-      213: 1929383985987907374
-    second: pinchrun-Sheet_99
-  - first:
-      213: -2392697021944048253
-    second: pinchrun-Sheet_100
-  - first:
-      213: 4997895792835236882
-    second: pinchrun-Sheet_101
-  - first:
-      213: 2025843936969275873
-    second: pinchrun-Sheet_102
-  - first:
-      213: 4976065627411348621
-    second: pinchrun-Sheet_103
-  - first:
-      213: 6468145161395260808
-    second: pinchrun-Sheet_104
-  - first:
-      213: 2700074323553116138
-    second: pinchrun-Sheet_105
-  - first:
-      213: 2039266608271846058
-    second: pinchrun-Sheet_106
-  - first:
-      213: 3252850347040802038
-    second: pinchrun-Sheet_107
-  - first:
-      213: -9092245820739958323
-    second: pinchrun-Sheet_108
-  - first:
-      213: -6747775321597260731
-    second: pinchrun-Sheet_109
-  - first:
-      213: 8233499222115880979
-    second: pinchrun-Sheet_110
-  - first:
-      213: 5736859779479958539
-    second: pinchrun-Sheet_111
-  - first:
-      213: -299795809645241864
-    second: pinchrun-Sheet_112
-  - first:
-      213: -6364824659832476029
-    second: pinchrun-Sheet_113
-  - first:
-      213: -4035191591037210612
-    second: pinchrun-Sheet_114
-  - first:
-      213: -3464446605469937186
-    second: pinchrun-Sheet_115
-  - first:
-      213: 132979267916585302
-    second: pinchrun-Sheet_116
-  - first:
-      213: 7631713683261877872
-    second: pinchrun-Sheet_117
-  - first:
-      213: 4068818717882274151
-    second: pinchrun-Sheet_118
-  - first:
-      213: 1101457891169827640
-    second: pinchrun-Sheet_119
-  - first:
-      213: -2642255654814029037
-    second: pinchrun-Sheet_120
-  - first:
-      213: 7942562724487856616
-    second: pinchrun-Sheet_121
-  - first:
-      213: -2211585439019178118
-    second: pinchrun-Sheet_122
-  - first:
-      213: -5885656917563502049
-    second: pinchrun-Sheet_123
-  - first:
-      213: 867605984845573769
-    second: pinchrun-Sheet_124
-  - first:
-      213: -5482885238360798174
-    second: pinchrun-Sheet_125
-  - first:
-      213: 6153541858933420502
-    second: pinchrun-Sheet_126
-  - first:
-      213: -234629932829685526
-    second: pinchrun-Sheet_127
-  - first:
-      213: -970251450481177006
-    second: pinchrun-Sheet_128
-  - first:
-      213: -4190910078777691977
-    second: pinchrun-Sheet_129
-  - first:
-      213: 7229870199005216255
-    second: pinchrun-Sheet_130
-  - first:
-      213: -5969693942426738268
-    second: pinchrun-Sheet_131
-  - first:
-      213: -8082555638488954847
-    second: pinchrun-Sheet_132
-  - first:
-      213: 4443287528955066974
-    second: pinchrun-Sheet_133
-  - first:
-      213: 7692428854000904713
-    second: pinchrun-Sheet_134
+      213: -4305676574948027884
+    second: Belisco-Sword-Light_80
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -492,7 +330,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pinchrun-Sheet_0
+      name: Belisco-Sword-Light_0
       rect:
         serializedVersion: 2
         x: 0
@@ -506,14 +344,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc96e6628a7c74930800000000000000
-      internalID: 4127487108521552333
+      spriteID: 89ad4d9578cee6d70800000000000000
+      internalID: 9038421568251026072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_1
+      name: Belisco-Sword-Light_1
       rect:
         serializedVersion: 2
         x: 96
@@ -527,14 +365,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff527b28534535a40800000000000000
-      internalID: 5355716970676692479
+      spriteID: b08d0399806c6ab70800000000000000
+      internalID: 8910026653031258123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_2
+      name: Belisco-Sword-Light_2
       rect:
         serializedVersion: 2
         x: 192
@@ -548,14 +386,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67290c2df80183fc0800000000000000
-      internalID: -3515041299260468618
+      spriteID: 1d08fa7de8d1d88b0800000000000000
+      internalID: -5148426299673444143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_3
+      name: Belisco-Sword-Light_3
       rect:
         serializedVersion: 2
         x: 288
@@ -569,14 +407,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 759b33161483584c0800000000000000
-      internalID: -4285957616918349481
+      spriteID: 19b1884dc6e3e05a0800000000000000
+      internalID: -6553231770634413167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_4
+      name: Belisco-Sword-Light_4
       rect:
         serializedVersion: 2
         x: 384
@@ -590,14 +428,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a30a7f6f864ab5170800000000000000
-      internalID: 8168303119893504058
+      spriteID: c7277c58c295e12b0800000000000000
+      internalID: -5611950037899185540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_5
+      name: Belisco-Sword-Light_5
       rect:
         serializedVersion: 2
         x: 480
@@ -611,14 +449,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 407707ef76d0d6360800000000000000
-      internalID: 7164397322517903108
+      spriteID: f7da3b9d6d2a02320800000000000000
+      internalID: 2531202034241351039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_6
+      name: Belisco-Sword-Light_6
       rect:
         serializedVersion: 2
         x: 576
@@ -632,14 +470,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6b6e3459260ab4e0800000000000000
-      internalID: -1965251512816997524
+      spriteID: 3eda8e87036e2ce40800000000000000
+      internalID: 5675351576301579747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_7
+      name: Belisco-Sword-Light_7
       rect:
         serializedVersion: 2
         x: 672
@@ -653,14 +491,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32c13df4605adb710800000000000000
-      internalID: 1710704879998278691
+      spriteID: 3598a53a156bbbee0800000000000000
+      internalID: -1244200410288584365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_8
+      name: Belisco-Sword-Light_8
       rect:
         serializedVersion: 2
         x: 768
@@ -674,14 +512,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37e82adeabd382130800000000000000
-      internalID: 3542148979986959987
+      spriteID: d99d183d433d62ce0800000000000000
+      internalID: -1430223607803291235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_9
+      name: Belisco-Sword-Light_9
       rect:
         serializedVersion: 2
         x: 0
@@ -695,14 +533,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfcb64c3de93a7d20800000000000000
-      internalID: 3276995369946758397
+      spriteID: 85af3c729d54e38f0800000000000000
+      internalID: -558932504769988008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_10
+      name: Belisco-Sword-Light_10
       rect:
         serializedVersion: 2
         x: 96
@@ -716,14 +554,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ae1bb990ee83e3b0800000000000000
-      internalID: -5484382825904136540
+      spriteID: f95313c324c6313f0800000000000000
+      internalID: -931281666202061409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_11
+      name: Belisco-Sword-Light_11
       rect:
         serializedVersion: 2
         x: 192
@@ -737,14 +575,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dbae555abf688ff0800000000000000
-      internalID: -33654151118410793
+      spriteID: 0210d1736f53f8280800000000000000
+      internalID: -9038946595506421472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_12
+      name: Belisco-Sword-Light_12
       rect:
         serializedVersion: 2
         x: 288
@@ -758,14 +596,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe06952e4cf534770800000000000000
-      internalID: 8593817813168775407
+      spriteID: be01e41c04c4a2b50800000000000000
+      internalID: 6569146847478026475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_13
+      name: Belisco-Sword-Light_13
       rect:
         serializedVersion: 2
         x: 384
@@ -779,14 +617,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1bd5144a68f943b0800000000000000
-      internalID: -5527613932328068325
+      spriteID: cedabfeb990bf0030800000000000000
+      internalID: 3463180812851850732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_14
+      name: Belisco-Sword-Light_14
       rect:
         serializedVersion: 2
         x: 480
@@ -800,14 +638,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcc4f9ed66c680190800000000000000
-      internalID: -7996021949318869811
+      spriteID: c2a9d2a07d0ecee10800000000000000
+      internalID: 2228403129834904108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_15
+      name: Belisco-Sword-Light_15
       rect:
         serializedVersion: 2
         x: 576
@@ -821,14 +659,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09436327cff8912b0800000000000000
-      internalID: -5613297146129927024
+      spriteID: 8e2c2b0c80f7a63a0800000000000000
+      internalID: -6671380222426561816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_16
+      name: Belisco-Sword-Light_16
       rect:
         serializedVersion: 2
         x: 672
@@ -842,14 +680,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f350a0e3a46d7280800000000000000
-      internalID: -9043961821679037454
+      spriteID: 4233748d6d5e5bce0800000000000000
+      internalID: -1389952199059623132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_17
+      name: Belisco-Sword-Light_17
       rect:
         serializedVersion: 2
         x: 768
@@ -863,14 +701,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a4049f47832c86f0800000000000000
-      internalID: -681130379577129816
+      spriteID: 44f9dfa620b8856f0800000000000000
+      internalID: -695653299927539900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_18
+      name: Belisco-Sword-Light_18
       rect:
         serializedVersion: 2
         x: 0
@@ -884,14 +722,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 643f64519c84feb40800000000000000
-      internalID: 5471672100761039686
+      spriteID: 52385bd373292d3b0800000000000000
+      internalID: -5489164229855050971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_19
+      name: Belisco-Sword-Light_19
       rect:
         serializedVersion: 2
         x: 96
@@ -905,14 +743,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cb48de3e85f59b10800000000000000
-      internalID: 1987764801842465730
+      spriteID: a85c20ec6e4e98000800000000000000
+      internalID: 38813751759259018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_20
+      name: Belisco-Sword-Light_20
       rect:
         serializedVersion: 2
         x: 192
@@ -926,14 +764,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 448441bd1918db0d0800000000000000
-      internalID: -3405423279776446396
+      spriteID: a493a4c06c11ccee0800000000000000
+      internalID: -1239596255126341302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_21
+      name: Belisco-Sword-Light_21
       rect:
         serializedVersion: 2
         x: 288
@@ -947,14 +785,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf5f8796952e6f790800000000000000
-      internalID: -7496555656062110212
+      spriteID: 5f1abc351474ad870800000000000000
+      internalID: 8708351175378575861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_22
+      name: Belisco-Sword-Light_22
       rect:
         serializedVersion: 2
         x: 384
@@ -968,14 +806,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83effff9b4e394330800000000000000
-      internalID: 3695553463762026040
+      spriteID: a6f7e950c67b76040800000000000000
+      internalID: 4640879615607209834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_23
+      name: Belisco-Sword-Light_23
       rect:
         serializedVersion: 2
         x: 480
@@ -989,14 +827,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f65a4ef8e2ad60f0800000000000000
-      internalID: -1122061610562988302
+      spriteID: f2a34746059b79670800000000000000
+      internalID: 8545502572892666415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_24
+      name: Belisco-Sword-Light_24
       rect:
         serializedVersion: 2
         x: 576
@@ -1010,14 +848,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7beac075b27524a30800000000000000
-      internalID: 4198013646318382775
+      spriteID: 52a9b10dfabb9e940800000000000000
+      internalID: 5325994398127462949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_25
+      name: Belisco-Sword-Light_25
       rect:
         serializedVersion: 2
         x: 672
@@ -1031,14 +869,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f6d896c2492e6d00800000000000000
-      internalID: 967756336707720949
+      spriteID: 2bb30d9b87f8abcd0800000000000000
+      internalID: -2541561291020944462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_26
+      name: Belisco-Sword-Light_26
       rect:
         serializedVersion: 2
         x: 768
@@ -1052,14 +890,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e742e1b6d4cf0a510800000000000000
-      internalID: 1558522880510010494
+      spriteID: 15641e0fdf674f4a0800000000000000
+      internalID: -6560487924131871151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_27
+      name: Belisco-Sword-Light_27
       rect:
         serializedVersion: 2
         x: 0
@@ -1073,14 +911,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15fb6eeccefa6c6b0800000000000000
-      internalID: -5276336481799585967
+      spriteID: 3c1aa031aa06060a0800000000000000
+      internalID: -6890401146296688189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_28
+      name: Belisco-Sword-Light_28
       rect:
         serializedVersion: 2
         x: 96
@@ -1094,14 +932,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a4193a2e115fb520800000000000000
-      internalID: 2719981889954321572
+      spriteID: 654067b48fb68a480800000000000000
+      internalID: -8887735150453586858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_29
+      name: Belisco-Sword-Light_29
       rect:
         serializedVersion: 2
         x: 192
@@ -1115,14 +953,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b9ceae4b07e67500800000000000000
-      internalID: 393756053192231347
+      spriteID: f89657f51055cfdb0800000000000000
+      internalID: -4756833642025227889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_30
+      name: Belisco-Sword-Light_30
       rect:
         serializedVersion: 2
         x: 288
@@ -1136,14 +974,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e1d42ad28dbe95f0800000000000000
-      internalID: -747952118393679386
+      spriteID: 301bb436aa7c45250800000000000000
+      internalID: 5932586143778058499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_31
+      name: Belisco-Sword-Light_31
       rect:
         serializedVersion: 2
         x: 384
@@ -1157,14 +995,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eba5e8ab67c876110800000000000000
-      internalID: 1254125462809893566
+      spriteID: d7b3bebc6fafb0a20800000000000000
+      internalID: 3029791112226880381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_32
+      name: Belisco-Sword-Light_32
       rect:
         serializedVersion: 2
         x: 480
@@ -1178,14 +1016,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96666788003d19f40800000000000000
-      internalID: 5733595799862273641
+      spriteID: 676b1ad3fbad15410800000000000000
+      internalID: 1464191868779738742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_33
+      name: Belisco-Sword-Light_33
       rect:
         serializedVersion: 2
         x: 576
@@ -1199,14 +1037,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7044ed1adaba3e2c0800000000000000
-      internalID: -4403487248404823033
+      spriteID: 620e263b67d01c2f0800000000000000
+      internalID: -954466842558930906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_34
+      name: Belisco-Sword-Light_34
       rect:
         serializedVersion: 2
         x: 672
@@ -1220,14 +1058,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 235adb3a740ee1970800000000000000
-      internalID: 8727659726185014578
+      spriteID: 48ed34701b20febe0800000000000000
+      internalID: -1445933996008284540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_35
+      name: Belisco-Sword-Light_35
       rect:
         serializedVersion: 2
         x: 768
@@ -1241,14 +1079,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c82960c304a826a30800000000000000
-      internalID: 4207077010407068300
+      spriteID: 41e021026ed6b2fe0800000000000000
+      internalID: -1212754839498256876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_36
+      name: Belisco-Sword-Light_36
       rect:
         serializedVersion: 2
         x: 0
@@ -1262,14 +1100,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29b313bfdbdeaad90800000000000000
-      internalID: -7085589663495144558
+      spriteID: d295f0b293f2bdd60800000000000000
+      internalID: 7915972692615846189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_37
+      name: Belisco-Sword-Light_37
       rect:
         serializedVersion: 2
         x: 96
@@ -1283,14 +1121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a36993a1d642be380800000000000000
-      internalID: -8941012584203971014
+      spriteID: 427024f9b149c0550800000000000000
+      internalID: 6128436039301334820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_38
+      name: Belisco-Sword-Light_38
       rect:
         serializedVersion: 2
         x: 192
@@ -1304,14 +1142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 848dd9ad069364b40800000000000000
-      internalID: 5424085889361762376
+      spriteID: 7b64ba98b13ee2100800000000000000
+      internalID: 85255150379943607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_39
+      name: Belisco-Sword-Light_39
       rect:
         serializedVersion: 2
         x: 288
@@ -1325,14 +1163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c58af6546e2cbac00800000000000000
-      internalID: 913037643735869532
+      spriteID: 33185b9e6536b2fb0800000000000000
+      internalID: -4671530963527433933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_40
+      name: Belisco-Sword-Light_40
       rect:
         serializedVersion: 2
         x: 384
@@ -1346,14 +1184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13b6f507070bc1fb0800000000000000
-      internalID: -4675668316149290191
+      spriteID: c313ac94b8827fd80800000000000000
+      internalID: -8217054416410627780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_41
+      name: Belisco-Sword-Light_41
       rect:
         serializedVersion: 2
         x: 480
@@ -1367,14 +1205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fc62288c9cacda50800000000000000
-      internalID: 6547297746588691703
+      spriteID: b14495131a2288bb0800000000000000
+      internalID: -4933655316071365605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_42
+      name: Belisco-Sword-Light_42
       rect:
         serializedVersion: 2
         x: 576
@@ -1388,14 +1226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 418f5ebf676c395b0800000000000000
-      internalID: -5362724516933535724
+      spriteID: 02da21062f6769c30800000000000000
+      internalID: 4365807672148274464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_43
+      name: Belisco-Sword-Light_43
       rect:
         serializedVersion: 2
         x: 672
@@ -1409,14 +1247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfffeb68948c1afe0800000000000000
-      internalID: -1179441409275527172
+      spriteID: fdd1ea415fab2d580800000000000000
+      internalID: -8803768759779189281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_44
+      name: Belisco-Sword-Light_44
       rect:
         serializedVersion: 2
         x: 768
@@ -1430,14 +1268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc4a9c20054237680800000000000000
-      internalID: -8758616924242729777
+      spriteID: 4b3f6b93c38ac0400800000000000000
+      internalID: 291793052492034996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_45
+      name: Belisco-Sword-Light_45
       rect:
         serializedVersion: 2
         x: 0
@@ -1451,14 +1289,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3749808cf09bb55e0800000000000000
-      internalID: -1919737338711731085
+      spriteID: 59e99b1787e10c670800000000000000
+      internalID: 8556872794656841365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_46
+      name: Belisco-Sword-Light_46
       rect:
         serializedVersion: 2
         x: 96
@@ -1472,14 +1310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d4d6491691588960800000000000000
-      internalID: 7604417675926099154
+      spriteID: 1f98ad56ed1897770800000000000000
+      internalID: 8609054954886957553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_47
+      name: Belisco-Sword-Light_47
       rect:
         serializedVersion: 2
         x: 192
@@ -1493,14 +1331,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab613b92b38636a00800000000000000
-      internalID: 748556566385596090
+      spriteID: 1c282a908747b1f60800000000000000
+      internalID: 8006120821487731393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_48
+      name: Belisco-Sword-Light_48
       rect:
         serializedVersion: 2
         x: 288
@@ -1514,14 +1352,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6612f4290b6bd4a10800000000000000
-      internalID: 1895371887678005606
+      spriteID: 94c87fb64153a9780800000000000000
+      internalID: -8675563370348835767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_49
+      name: Belisco-Sword-Light_49
       rect:
         serializedVersion: 2
         x: 384
@@ -1535,14 +1373,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e240dff7b4e23e530800000000000000
-      internalID: 3882998205528212526
+      spriteID: 2fcd21373e0f3cc00800000000000000
+      internalID: 919843608592571634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_50
+      name: Belisco-Sword-Light_50
       rect:
         serializedVersion: 2
         x: 480
@@ -1556,14 +1394,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6db57f3a385ccdd10800000000000000
-      internalID: 2151811891158539222
+      spriteID: f532b16156f524400800000000000000
+      internalID: 306912612381827935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_51
+      name: Belisco-Sword-Light_51
       rect:
         serializedVersion: 2
         x: 576
@@ -1577,14 +1415,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c41e08c9291d5470800000000000000
-      internalID: 8384885748474451138
+      spriteID: 428abc2cc227d0ad0800000000000000
+      internalID: -2734403862171768796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_52
+      name: Belisco-Sword-Light_52
       rect:
         serializedVersion: 2
         x: 672
@@ -1598,14 +1436,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b959eedbca121e2b0800000000000000
-      internalID: -5557123439393860197
+      spriteID: fb1aaa7b8582c7370800000000000000
+      internalID: 8321570572977480127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_53
+      name: Belisco-Sword-Light_53
       rect:
         serializedVersion: 2
         x: 768
@@ -1619,14 +1457,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c67bae10c18e97a60800000000000000
-      internalID: 7672418647191238508
+      spriteID: fe5b6cfac39482e00800000000000000
+      internalID: 1020145840595318255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_54
+      name: Belisco-Sword-Light_54
       rect:
         serializedVersion: 2
         x: 0
@@ -1640,14 +1478,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13143f4c09c6e07d0800000000000000
-      internalID: -2950301336845729487
+      spriteID: 45660bda1ece191d0800000000000000
+      internalID: -3345632594133752236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_55
+      name: Belisco-Sword-Light_55
       rect:
         serializedVersion: 2
         x: 96
@@ -1661,14 +1499,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec2ba106fed7c31d0800000000000000
-      internalID: -3369679954116955442
+      spriteID: a54fb070c515c0390800000000000000
+      internalID: -7850810594716552102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_56
+      name: Belisco-Sword-Light_56
       rect:
         serializedVersion: 2
         x: 192
@@ -1682,14 +1520,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 196ec12425cb77370800000000000000
-      internalID: 8320325898072811153
+      spriteID: 66eb9e6a92db3b140800000000000000
+      internalID: 4734335619888168550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_57
+      name: Belisco-Sword-Light_57
       rect:
         serializedVersion: 2
         x: 288
@@ -1703,14 +1541,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01435fbaa3c0afd10800000000000000
-      internalID: 2160052417410184208
+      spriteID: 1a80fd4b51a6766c0800000000000000
+      internalID: -4150231890137249631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_58
+      name: Belisco-Sword-Light_58
       rect:
         serializedVersion: 2
         x: 384
@@ -1724,14 +1562,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c70ed4d2bacb2ee40800000000000000
-      internalID: 5684313123080495228
+      spriteID: fef2e13e843ea8d10800000000000000
+      internalID: 2128763676073537519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_59
+      name: Belisco-Sword-Light_59
       rect:
         serializedVersion: 2
         x: 480
@@ -1745,14 +1583,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7da81b9694f365d70800000000000000
-      internalID: 9031475687276514007
+      spriteID: c2599c50d06906a20800000000000000
+      internalID: 3053605530033034540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_60
+      name: Belisco-Sword-Light_60
       rect:
         serializedVersion: 2
         x: 576
@@ -1766,14 +1604,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea76f47700b32da10800000000000000
-      internalID: 1932672063283095470
+      spriteID: 705da8ae783d31a20800000000000000
+      internalID: 3031999554859488519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_61
+      name: Belisco-Sword-Light_61
       rect:
         serializedVersion: 2
         x: 672
@@ -1787,14 +1625,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c93be802d88522d10800000000000000
-      internalID: 2099337739467928476
+      spriteID: 9bdba997d3d777bb0800000000000000
+      internalID: -4938340763401798215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_62
+      name: Belisco-Sword-Light_62
       rect:
         serializedVersion: 2
         x: 768
@@ -1808,14 +1646,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3a015d283ff5bec0800000000000000
-      internalID: -3551652114368230854
+      spriteID: 187d382bddac4d440800000000000000
+      internalID: 4959812143173326721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_63
+      name: Belisco-Sword-Light_63
       rect:
         serializedVersion: 2
         x: 0
@@ -1829,14 +1667,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ee2fb78adcd82960800000000000000
-      internalID: 7577549204189294308
+      spriteID: 79f7ee6a66eec1b40800000000000000
+      internalID: 5412462976847216535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_64
+      name: Belisco-Sword-Light_64
       rect:
         serializedVersion: 2
         x: 96
@@ -1850,14 +1688,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e179a88d04e409c0800000000000000
-      internalID: -3961791025400679964
+      spriteID: 093f113375ffdd570800000000000000
+      internalID: 8493225222274675600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_65
+      name: Belisco-Sword-Light_65
       rect:
         serializedVersion: 2
         x: 192
@@ -1871,14 +1709,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7530a9b4f0346ef0800000000000000
-      internalID: -115913862760352389
+      spriteID: 2b60ebe2bfb82bcf0800000000000000
+      internalID: -237973919359957326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_66
+      name: Belisco-Sword-Light_66
       rect:
         serializedVersion: 2
         x: 288
@@ -1892,14 +1730,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c89bd634f0fa7910800000000000000
-      internalID: 1836044729789946054
+      spriteID: 0452f8ac30884be80800000000000000
+      internalID: -8163750674651208384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_67
+      name: Belisco-Sword-Light_67
       rect:
         serializedVersion: 2
         x: 384
@@ -1913,14 +1751,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d438a52cb38753920800000000000000
-      internalID: 2969411727379825485
+      spriteID: 2b416650457fdca00800000000000000
+      internalID: 778550250844853426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_68
+      name: Belisco-Sword-Light_68
       rect:
         serializedVersion: 2
         x: 480
@@ -1934,14 +1772,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39b11c1bb7fde2620800000000000000
-      internalID: 2751382144726145939
+      spriteID: 94fbdfe5aafdbff80800000000000000
+      internalID: -8071611984300359863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_69
+      name: Belisco-Sword-Light_69
       rect:
         serializedVersion: 2
         x: 576
@@ -1955,14 +1793,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10e1ef8b8a863f990800000000000000
-      internalID: -7353418692698431999
+      spriteID: 30a5459b75c4857b0800000000000000
+      internalID: -5235350627163022845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_70
+      name: Belisco-Sword-Light_70
       rect:
         serializedVersion: 2
         x: 672
@@ -1976,14 +1814,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e729a42d993a0ffa0800000000000000
-      internalID: -5768931241608179074
+      spriteID: 82e52cdc35e0e3fb0800000000000000
+      internalID: -4666276410812113368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_71
+      name: Belisco-Sword-Light_71
       rect:
         serializedVersion: 2
         x: 768
@@ -1997,14 +1835,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35b402e3e66b0b510800000000000000
-      internalID: 1562949655302523731
+      spriteID: 35d2ef7ee36362d80800000000000000
+      internalID: -8275867621438640813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_72
+      name: Belisco-Sword-Light_72
       rect:
         serializedVersion: 2
         x: 0
@@ -2018,14 +1856,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cf1f50158f034840800000000000000
-      internalID: 5207022658350161856
+      spriteID: a6a1f2b28b9a74870800000000000000
+      internalID: 8667082616361392746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_73
+      name: Belisco-Sword-Light_73
       rect:
         serializedVersion: 2
         x: 96
@@ -2039,14 +1877,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6d679b2e0ec38810800000000000000
-      internalID: 1766482039115574634
+      spriteID: 30db0cd98b0ca3470800000000000000
+      internalID: 8375218356202028291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_74
+      name: Belisco-Sword-Light_74
       rect:
         serializedVersion: 2
         x: 192
@@ -2060,14 +1898,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e20d73fe33941d250800000000000000
-      internalID: 5967631468648189998
+      spriteID: eec40cea8d91a0860800000000000000
+      internalID: 7496832948147080430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_75
+      name: Belisco-Sword-Light_75
       rect:
         serializedVersion: 2
         x: 288
@@ -2081,14 +1919,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b897c03d062f02b70800000000000000
-      internalID: 8872357763591469451
+      spriteID: 6b4be1cd721cffb90800000000000000
+      internalID: -7205828501828619082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_76
+      name: Belisco-Sword-Light_76
       rect:
         serializedVersion: 2
         x: 384
@@ -2102,14 +1940,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67127dee771b24490800000000000000
-      internalID: -7763447678967013002
+      spriteID: a0f1b65fafee38da0800000000000000
+      internalID: -5943644321572249846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_77
+      name: Belisco-Sword-Light_77
       rect:
         serializedVersion: 2
         x: 480
@@ -2123,14 +1961,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23077f787e38d3fa0800000000000000
-      internalID: -5819350113050988494
+      spriteID: b0decaa9bfdae0e10800000000000000
+      internalID: 2165859766955207947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_78
+      name: Belisco-Sword-Light_78
       rect:
         serializedVersion: 2
         x: 576
@@ -2144,14 +1982,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a46f518d93bb30840800000000000000
-      internalID: 5189197052773791306
+      spriteID: 99f70d9792a82cff0800000000000000
+      internalID: -17299537814061159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_79
+      name: Belisco-Sword-Light_79
       rect:
         serializedVersion: 2
         x: 672
@@ -2165,14 +2003,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b43d5515523a8de00800000000000000
-      internalID: 1069784292174189387
+      spriteID: 48ce1683767eba6c0800000000000000
+      internalID: -4130953802668708732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchrun-Sheet_80
+      name: Belisco-Sword-Light_80
       rect:
         serializedVersion: 2
         x: 768
@@ -2186,8 +2024,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 783f356dc47d645a0800000000000000
-      internalID: -6537301084068383865
+      spriteID: 4129080b7f92f34c0800000000000000
+      internalID: -4305676574948027884
       vertices: []
       indices: 
       edges: []
