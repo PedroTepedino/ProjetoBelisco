@@ -8,7 +8,7 @@ using Sirenix.OdinInspector;
 [RequireComponent(typeof(EnemyWallChecker))]
 [RequireComponent(typeof(EnemyGrounder))]
 /*Class: EnemyController
- * Abstract Class that inherits from <LifeSystemAbstract> that describes the essential components of every enemy.
+ * Abstract Class that describes the essential components of every enemy.
  */
 public abstract class EnemyController : MonoBehaviour
 {
@@ -19,20 +19,34 @@ public abstract class EnemyController : MonoBehaviour
     public bool movingRight = true;
    
     [EnumPaging]public LayerMask layerTargeting;
-    [EnumPaging]public LayerMask layerMove;
-    //public Vector3 groundDetectionOffset;
-    public float movingSpeed;
-    public float lookingRange;
-    public float attackRange;
-    public float attackSpeed;
-    public int attackDamage;
+    [EnumPaging]public LayerMask layerTarget;
+    public float movingSpeed = 5;
+    public float lookingRange = 5;
+    public float attackRange = 1;
+    public float attackSpeed = 1;
+    public int attackDamage = 1;
 
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        stateMachine = new StateMachine();
-        this.stateMachine.ChangeState(new MoveState(this.gameObject, this.GetComponent<EnemyController>()));
+        stateMachine = gameObject.AddComponent<StateMachine>();
+        this.stateMachine.ChangeState(new MoveState(this.gameObject));
     }
     public abstract void Update();
+
+    private void OnDrawGizmos() {
+        Gizmos.color = Color.blue;
+
+        if (movingRight)
+        {
+            Gizmos.DrawLine(this.transform.position, this.transform.position + new Vector3(lookingRange,0 , 0));
+            Gizmos.DrawLine(this.transform.position+ new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(attackRange, 0.5f, 0));            
+        }
+        else
+        {
+            Gizmos.DrawLine(this.transform.position, this.transform.position + new Vector3(-lookingRange,0 , 0));
+            Gizmos.DrawLine(this.transform.position+ new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(-attackRange, 0.5f, 0));
+        }
+    }
     
 }

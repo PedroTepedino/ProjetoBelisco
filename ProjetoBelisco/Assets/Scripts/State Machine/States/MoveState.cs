@@ -33,10 +33,10 @@ public class MoveState : IState
      * controller - <EnemyController> or a function that inherits of the enemy controling this state.
      */
 
-    public MoveState(GameObject gameObject, EnemyController controller)
+    public MoveState(GameObject gameObject)
     {
         ownerGameObject = gameObject;
-        controllerOwner = controller;
+        controllerOwner = gameObject.GetComponent<EnemyController>();
     }
 
     /*Function: EnterState
@@ -63,12 +63,11 @@ public class MoveState : IState
     public void RunState()
     {
 
-        if (grounder.isGrounded && wallCheck.wallAhead)
+        if (grounder.isGrounded && !wallCheck.wallAhead)
         {
 
-            movement.Set(controllerOwner.movingRight ? controllerOwner.movingSpeed : -controllerOwner.movingSpeed * Time.deltaTime, controllerOwner.rigidbody.velocity.y);
+            movement.Set(controllerOwner.movingRight ? controllerOwner.movingSpeed * Time.deltaTime : -controllerOwner.movingSpeed * Time.deltaTime, controllerOwner.rigidbody.velocity.y);
             controllerOwner.rigidbody.velocity = movement;
-       
         }
         else
         {

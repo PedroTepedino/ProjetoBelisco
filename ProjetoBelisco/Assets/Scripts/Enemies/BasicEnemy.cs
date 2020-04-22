@@ -7,13 +7,19 @@ public class BasicEnemy : EnemyController
 {    
     public override void Update()
     {
-        var hitObjects = Physics2D.Raycast(this.transform.position, Vector2.right, lookingRange, layerTargeting);
+        var hitObjects = Physics2D.Raycast(this.transform.position, movingRight ? Vector2.right : Vector2.left, lookingRange, layerTargeting);
         
         if (hitObjects.collider != null)
         {
-            if(actualState != "attack")
-            {
-                this.stateMachine.ChangeState(new AttackState(this.gameObject, this.GetComponent<EnemyController>(), hitObjects.transform));
+            Debug.Log("hit");
+            if (hitObjects.collider.gameObject.layer == layerTarget)
+            {   
+                Debug.Log("player");
+                target = hitObjects.transform;
+                if(actualState != "attack")
+                {
+                    this.stateMachine.ChangeState(new AttackState(this.gameObject, target));
+                }               
             }
         }
         this.stateMachine.RunStateUpdate();

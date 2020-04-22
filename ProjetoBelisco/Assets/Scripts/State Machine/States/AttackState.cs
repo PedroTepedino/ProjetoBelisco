@@ -13,10 +13,10 @@ public class AttackState : IState
     private PlayerLife targerLifeSystem;
     private float timer;
 
-    public AttackState(GameObject owner, EnemyController controller, Transform target)
+    public AttackState(GameObject owner, Transform target)
     {
         ownerGameObject = owner;
-        controllerOwner = controller;
+        controllerOwner = owner.GetComponent<EnemyController>();
         _target = target;       
     }
 
@@ -63,18 +63,18 @@ public class AttackState : IState
                     }
                     else
                     {
-                        controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject, controllerOwner));
+                        controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
                     }
                 }
             }
             else
             {
-                controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject, controllerOwner));
+                controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
             }
         }
         else
         {
-             controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject, controllerOwner));
+             controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
         }
     }
 }

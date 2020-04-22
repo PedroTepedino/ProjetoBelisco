@@ -8,16 +8,21 @@ public class EnemyWallChecker : MonoBehaviour
 {
     private EnemyController controller;
 
-    [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _checkerTop = Vector3.zero;
-    [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _checkerCenter = Vector3.zero;
-    [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _checkerBottom = Vector3.zero;
+    [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _wallCheckerTop = Vector3.zero;
+    [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _wallCheckerCenter = Vector3.zero;
+    [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _wallCheckerBottom = Vector3.zero;
     [FoldoutGroup("Parameters")] [SerializeField] private float _checkerSizes;
     [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask _wallLayerMask;
         
+    private Vector3 _checkerTop;
+    private Vector3 _checkerCenter;
+    private Vector3 _checkerBottom;
+
     public bool wallAhead { get; private set; } = false;
     public bool wallTop = false;
     public bool wallCenter = false;
     public bool wallBottom = false;
+    
 
     private void Start() {
         controller = GetComponent<EnemyController>();
@@ -30,18 +35,18 @@ public class EnemyWallChecker : MonoBehaviour
     private bool WallCheck()
     {
         RaycastHit2D raycastHit2DTop;
-        _checkerTop = this.transform.position + new Vector3(controller.movingRight ? _checkerTop.x : -_checkerTop.x , _checkerTop.y, 0);
-        raycastHit2DTop = Physics2D.Raycast(_checkerTop, Vector2.right, _checkerSizes, _wallLayerMask);
+        _checkerTop = this.transform.position + new Vector3(controller.movingRight ? _wallCheckerTop.x : -_wallCheckerTop.x, _wallCheckerTop.y, 0);
+        raycastHit2DTop = Physics2D.Raycast(_checkerTop, controller.movingRight ? Vector2.right : Vector2.left, _checkerSizes, _wallLayerMask);
         wallTop = raycastHit2DTop.collider != null ? true : false;
 
         RaycastHit2D raycastHit2DCenter;
-        _checkerCenter = this.transform.position + new Vector3(controller.movingRight ? _checkerCenter.x : -_checkerCenter.x , _checkerCenter.y, 0);
-        raycastHit2DCenter = Physics2D.Raycast(_checkerCenter, Vector2.right, _checkerSizes, _wallLayerMask);
+        _checkerCenter = this.transform.position + new Vector3(controller.movingRight ? _wallCheckerCenter.x : -_wallCheckerCenter.x, _wallCheckerCenter.y, 0);
+        raycastHit2DCenter = Physics2D.Raycast(_checkerCenter, controller.movingRight ? Vector2.right : Vector2.left, _checkerSizes, _wallLayerMask);
         wallCenter = raycastHit2DCenter.collider != null ? true : false;
 
         RaycastHit2D raycastHit2DBottom;
-        _checkerBottom = this.transform.position + new Vector3(controller.movingRight ? _checkerBottom.x : -_checkerBottom.x , _checkerBottom.y, 0);
-        raycastHit2DBottom = Physics2D.Raycast(_checkerBottom, Vector2.right, _checkerSizes, _wallLayerMask);
+        _checkerBottom = this.transform.position + new Vector3(controller.movingRight ? _wallCheckerBottom.x : -_wallCheckerBottom.x, _wallCheckerBottom.y, 0);
+        raycastHit2DBottom = Physics2D.Raycast(_checkerBottom, controller.movingRight ? Vector2.right : Vector2.left, _checkerSizes, _wallLayerMask);
         wallBottom = raycastHit2DBottom.collider != null ? true : false;
 
         /*if(controller.movingRight){
@@ -59,7 +64,6 @@ public class EnemyWallChecker : MonoBehaviour
         {
             wallAhead = true;
         }
-
         return wallAhead;
 
     }
@@ -68,8 +72,17 @@ public class EnemyWallChecker : MonoBehaviour
     {
         Gizmos.color = wallAhead ? Color.red : Color.green;
 
-        Gizmos.DrawLine(this.transform.position + _checkerTop, this.transform.position + new Vector3(_checkerTop.x + _checkerSizes, _checkerTop.y, 0));
-        Gizmos.DrawLine(this.transform.position + _checkerCenter, this.transform.position + new Vector3(_checkerCenter.x + _checkerSizes, _checkerCenter.y, 0));
-        Gizmos.DrawLine(this.transform.position + _checkerBottom, this.transform.position + new Vector3(_checkerBottom.x + _checkerSizes, _checkerBottom.y, 0));
+        if(controller.movingRight){
+            Gizmos.DrawLine(this.transform.position + _wallCheckerTop, this.transform.position + new Vector3(_wallCheckerTop.x + _checkerSizes, _wallCheckerTop.y, 0));
+            Gizmos.DrawLine(this.transform.position + _wallCheckerCenter, this.transform.position + new Vector3(_wallCheckerCenter.x + _checkerSizes, _wallCheckerCenter.y, 0));
+            Gizmos.DrawLine(this.transform.position + _wallCheckerBottom, this.transform.position + new Vector3(_wallCheckerBottom.x + _checkerSizes, _wallCheckerBottom.y, 0));
+
+        }
+        else
+        {
+            Gizmos.DrawLine(this.transform.position + new Vector3(-_wallCheckerTop.x, _wallCheckerTop.y, 0), this.transform.position + new Vector3(-_wallCheckerTop.x - _checkerSizes, _wallCheckerTop.y, 0));
+            Gizmos.DrawLine(this.transform.position + new Vector3(-_wallCheckerCenter.x, _wallCheckerCenter.y, 0), this.transform.position + new Vector3(-_wallCheckerCenter.x - _checkerSizes, _wallCheckerCenter.y, 0));
+            Gizmos.DrawLine(this.transform.position + new Vector3(-_wallCheckerBottom.x, _wallCheckerBottom.y, 0), this.transform.position + new Vector3(-_wallCheckerBottom.x - _checkerSizes, _wallCheckerBottom.y, 0));  
+        }
     }
 }
