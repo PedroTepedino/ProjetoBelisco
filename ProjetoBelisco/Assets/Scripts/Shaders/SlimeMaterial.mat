@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SwordLightMAT
+  m_Name: SlimeMaterial
   m_Shader: {fileID: -6465566751694194690, guid: f7467e68e02613f43b6c033a477fcc51,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
@@ -20,18 +20,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Emission:
+        m_Texture: {fileID: 2800000, guid: 3ec7a8794f707d241b751796dc9c5871, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: 312bfb3ab684ed94894b347ba24eacde, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SwordTexture:
-        m_Texture: {fileID: 2800000, guid: 7ef027665c1290a419fd751d13b4cd1c, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - _SwordColor: {r: 0.37626222, g: 0.37626222, b: 0.37626222, a: 1}
+    - _Color: {r: 1.6941177, g: 1.6941177, b: 0, a: 1}
