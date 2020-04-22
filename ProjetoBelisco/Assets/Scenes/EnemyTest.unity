@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -701,7 +701,7 @@ PrefabInstance:
     - target: {fileID: 2869461666780274344, guid: 9c6a6524996eac244a2b1175f2662cb7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.22
+      value: -9.49
       objectReference: {fileID: 0}
     - target: {fileID: 2869461666780274344, guid: 9c6a6524996eac244a2b1175f2662cb7,
         type: 3}
@@ -1248,15 +1248,15 @@ MonoBehaviour:
   movingRight: 1
   layerTargeting:
     serializedVersion: 2
-    m_Bits: 0
-  layerMove:
+    m_Bits: 4352
+  layerTarget:
     serializedVersion: 2
-    m_Bits: 0
-  movingSpeed: 0
-  lookingRange: 0
-  attackRange: 0
-  attackSpeed: 0
-  attackDamage: 0
+    m_Bits: 4096
+  movingSpeed: 10
+  lookingRange: 2
+  attackRange: 1
+  attackSpeed: 1
+  attackDamage: 1
 --- !u!4 &429274110
 Transform:
   m_ObjectHideFlags: 0
@@ -1265,7 +1265,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429274106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.48, y: -2.51, z: 0}
+  m_LocalPosition: {x: -7.08, y: -2.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1901180300}
@@ -1351,8 +1351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c74505473f88b324fac5b078615f8bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _grounderCenter: {x: 0, y: 0, z: 0}
-  _grounderSizes: {x: 1, y: 1}
+  _grounderCenter: {x: 0.7, y: -0.5, z: 0}
+  _grounderSize: 0.5
   _groundLayerMask:
     serializedVersion: 2
     m_Bits: 256
@@ -1368,9 +1368,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa87a9c09d01ec4cb0863c7bf98f498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _checkerTop: {x: 0.5, y: 0.45, z: 0}
-  _checkerCenter: {x: 0.5, y: 0, z: 0}
-  _checkerBottom: {x: 0.5, y: -0.45, z: 0}
+  _wallCheckerTop: {x: 0.5, y: 0.45, z: 0}
+  _wallCheckerCenter: {x: 0.5, y: 0, z: 0}
+  _wallCheckerBottom: {x: 0.5, y: -0.45, z: 0}
   _checkerSizes: 0.3
   _wallLayerMask:
     serializedVersion: 2
@@ -2497,7 +2497,7 @@ PrefabInstance:
     - target: {fileID: 3764525855012286874, guid: 75b2e6fae87281f42a3d68bd4f9d4aac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.54
+      value: 11.56
       objectReference: {fileID: 0}
     - target: {fileID: 3764525855012286874, guid: 75b2e6fae87281f42a3d68bd4f9d4aac,
         type: 3}
