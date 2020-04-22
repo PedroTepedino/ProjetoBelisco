@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2263,6 +2263,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7023604728780727486, guid: b240bcd6ad6eafe448dfac92066ca628,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023604728780727486, guid: b240bcd6ad6eafe448dfac92066ca628,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[2]
+      value: -989486243
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023604728780727486, guid: b240bcd6ad6eafe448dfac92066ca628,
+        type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 1.0649492
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023604728780727486, guid: b240bcd6ad6eafe448dfac92066ca628,
+        type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 4.03294
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023604728780727486, guid: b240bcd6ad6eafe448dfac92066ca628,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023604728780727486, guid: b240bcd6ad6eafe448dfac92066ca628,
+        type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.542
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023604728780727487, guid: b240bcd6ad6eafe448dfac92066ca628,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.002075178
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023604728780727487, guid: b240bcd6ad6eafe448dfac92066ca628,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99999785
+      objectReference: {fileID: 0}
     - target: {fileID: 7023604729711152344, guid: b240bcd6ad6eafe448dfac92066ca628,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -2293,7 +2333,7 @@ PrefabInstance:
     - target: {fileID: 7023604729711152359, guid: b240bcd6ad6eafe448dfac92066ca628,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.67
+      value: 1.644
       objectReference: {fileID: 0}
     - target: {fileID: 7023604729711152359, guid: b240bcd6ad6eafe448dfac92066ca628,
         type: 3}
@@ -2486,7 +2526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521442655}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.68, y: -1.5, z: 5}
+  m_LocalPosition: {x: -1.08, y: -0, z: 5}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
