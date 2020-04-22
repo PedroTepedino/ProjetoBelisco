@@ -18,8 +18,8 @@ public class MoveState : IState
      */
     private GameObject ownerGameObject;
     private EnemyController controllerOwner;
-    private bool groundCheck;
-    private bool wallCheck;
+    private RaycastHit2D groundCheck;
+    private RaycastHit2D wallCheck;
     private Vector2 movement;
 
     // Group: Functions
@@ -58,11 +58,45 @@ public class MoveState : IState
      */
     public void RunState()
     {
-        wallCheck = Physics2D.Raycast(controllerOwner.groundDetection.position, Vector2.right, 0.1f);
-        if (groundCheck && !wallCheck)
+        groundCheck = Physics2D.Raycast(controllerOwner.groundDetection.position, Vector2.down, 2f, controllerOwner.layerMove);
+        if (groundCheck.collider != null)
         {
-            movement.Set(controllerOwner.movingSpeed * Time.deltaTime, controllerOwner.rigidbody.velocity.y);
-            controllerOwner.rigidbody.velocity = movement;
+            Debug.Log(groundCheck.collider.gameObject);
+        }
+        else
+        {
+            Debug.Log("null ground");
+        }
+        if (controllerOwner.movingRight)
+        {
+            wallCheck = Physics2D.Raycast(controllerOwner.groundDetection.position, Vector2.right, 0.5f, controllerOwner.layerMove);
+        }
+        else
+        {
+            wallCheck = Physics2D.Raycast(controllerOwner.groundDetection.position, Vector2.left, 0.5f, controllerOwner.layerMove);
+        }
+        
+        if (wallCheck.collider != null)
+        {
+            Debug.Log(wallCheck.collider.gameObject);
+        }
+        else
+        {
+            Debug.Log("null wall");
+        }
+        if (groundCheck.collider != null  && wallCheck.collider == null)
+        {
+            if (controllerOwner.movingRight)
+            {
+                movement.Set(controllerOwner.movingSpeed * Time.deltaTime, controllerOwner.rigidbody.velocity.y);
+                controllerOwner.rigidbody.velocity = movement;
+            }
+            else
+            {
+                movement.Set(-controllerOwner.movingSpeed * Time.deltaTime, controllerOwner.rigidbody.velocity.y);
+                controllerOwner.rigidbody.velocity = movement;
+            }
+           
         }
         else
         {
