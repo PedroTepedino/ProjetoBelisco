@@ -19,7 +19,6 @@ public abstract class EnemyController : MonoBehaviour
     public bool movingRight = true;
    
     [EnumPaging]public LayerMask layerTargeting;
-    [EnumPaging]public LayerMask layerTarget;
     public float movingSpeed = 5;
     public float lookingRange = 5;
     public float attackRange = 1;

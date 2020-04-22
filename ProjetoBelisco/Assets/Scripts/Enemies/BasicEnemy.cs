@@ -12,7 +12,7 @@ public class BasicEnemy : EnemyController
         if (hitObjects.collider != null)
         {
             Debug.Log("hit");
-            if (hitObjects.collider.gameObject.layer == layerTarget)
+            if (hitObjects.transform.gameObject.CompareTag("Player"))
             {   
                 Debug.Log("player");
                 target = hitObjects.transform;

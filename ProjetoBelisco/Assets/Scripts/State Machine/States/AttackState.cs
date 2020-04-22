@@ -63,17 +63,20 @@ public class AttackState : IState
                     }
                     else
                     {
+                        controllerOwner.target = null;
                         controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
                     }
                 }
             }
             else
             {
+                controllerOwner.target = null;
                 controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
             }
         }
         else
         {
+            controllerOwner.target = null;
              controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
         }
     }
