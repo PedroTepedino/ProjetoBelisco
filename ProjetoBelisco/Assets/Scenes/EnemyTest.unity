@@ -1185,6 +1185,7 @@ GameObject:
   - component: {fileID: 429274109}
   - component: {fileID: 429274108}
   - component: {fileID: 429274113}
+  - component: {fileID: 429274115}
   - component: {fileID: 429274114}
   - component: {fileID: 429274107}
   - component: {fileID: 429274112}
@@ -1241,14 +1242,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938c52766c8066d4485eca05643e6bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateMachine: {fileID: 0}
-  rigidbody: {fileID: 429274107}
-  target: {fileID: 0}
-  actualState: 
-  movingRight: 1
   layerTargeting:
     serializedVersion: 2
     m_Bits: 4352
+  stateMachine: {fileID: 0}
+  rigidbody: {fileID: 429274107}
+  targeting: {fileID: 0}
+  actualState: 
+  movingRight: 1
   movingSpeed: 10
   lookingRange: 2
   attackRange: 1
@@ -1375,6 +1376,22 @@ MonoBehaviour:
   wallTop: 0
   wallCenter: 0
   wallBottom: 0
+--- !u!114 &429274115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429274106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f1e2c7b312d7342b47fd7e1ee4de2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetingCenter: {x: 0, y: 0, z: 0}
+  _targetingLayerMask:
+    serializedVersion: 2
+    m_Bits: 4352
 --- !u!1 &490606561
 GameObject:
   m_ObjectHideFlags: 0

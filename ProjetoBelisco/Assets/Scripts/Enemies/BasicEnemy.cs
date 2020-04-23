@@ -7,7 +7,17 @@ public class BasicEnemy : EnemyController
 {    
     public override void Update()
     {
-        var hitObjects = Physics2D.Raycast(this.transform.position, movingRight ? Vector2.right : Vector2.left, lookingRange, layerTargeting);
+        if (targeting.hasTarget)
+        {
+            if (actualState != "chase")
+            {
+                this.stateMachine.ChangeState(new ChaseState(this.gameObject));
+            }
+            
+        }
+
+
+        /*var hitObjects = Physics2D.Raycast(this.transform.position, movingRight ? Vector2.right : Vector2.left, lookingRange, layerTargeting);
         
         if (hitObjects.collider != null)
         {
@@ -21,7 +31,7 @@ public class BasicEnemy : EnemyController
                     this.stateMachine.ChangeState(new AttackState(this.gameObject, target));
                 }               
             }
-        }
+        }*/
         this.stateMachine.RunStateUpdate();
     }
 }
