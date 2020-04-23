@@ -1,151 +1,115 @@
 fileFormatVersion: 2
-guid: 49fa7c10d8de6224f93badf71f49e3b5
+guid: 69c1c4b0e003a014b8a32afed136c080
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -749545512287446883
-    second: pinchSlime_0
+      213: -1953787939810935494
+    second: pinchSlime-Sheet1_0
   - first:
-      213: 7189748470204207827
-    second: pinchSlime_1
+      213: -3271334331930318750
+    second: pinchSlime-Sheet1_1
   - first:
-      213: -6414193802788452513
-    second: pinchSlime_2
+      213: 34466268303142555
+    second: pinchSlime-Sheet1_2
   - first:
-      213: -4483002803050052360
-    second: pinchSlime_3
+      213: -8172649362945224122
+    second: pinchSlime-Sheet1_3
   - first:
-      213: 6757761287112465516
-    second: pinchSlime_4
+      213: -1805505749192915302
+    second: pinchSlime-Sheet1_4
   - first:
-      213: 5550630534810604375
-    second: pinchSlime_5
+      213: 6558889340699376585
+    second: pinchSlime-Sheet1_5
   - first:
-      213: 8098820104890025304
-    second: pinchSlime_6
+      213: 1625702866480960774
+    second: pinchSlime-Sheet1_6
   - first:
-      213: 5528093695758776455
-    second: pinchSlime_7
+      213: -7688633421238288105
+    second: pinchSlime-Sheet1_7
   - first:
-      213: 2380583149946817953
-    second: pinchSlime_8
+      213: 3530570725609160815
+    second: pinchSlime-Sheet1_8
   - first:
-      213: -170709104939244620
-    second: pinchSlime_9
+      213: -1664662210957726119
+    second: pinchSlime-Sheet1_9
   - first:
-      213: 7304390292682500260
-    second: pinchSlime_10
+      213: 4554432863480881498
+    second: pinchSlime-Sheet1_10
   - first:
-      213: 3429851029170122790
-    second: pinchSlime_11
+      213: -6028233128034923326
+    second: pinchSlime-Sheet1_11
   - first:
-      213: -4254335894727056602
-    second: pinchSlime_12
+      213: -1576691855395837868
+    second: pinchSlime-Sheet1_12
   - first:
-      213: -6885995669526305494
-    second: pinchSlime_13
+      213: -523755616708274064
+    second: pinchSlime-Sheet1_13
   - first:
-      213: -2000853762634752720
-    second: pinchSlime_14
+      213: 8682644572773465045
+    second: pinchSlime-Sheet1_14
   - first:
-      213: 8641817280362904639
-    second: pinchSlime_15
+      213: -4145537639922921870
+    second: pinchSlime-Sheet1_15
   - first:
-      213: 1158080424170976760
-    second: pinchSlime_16
+      213: -3612514187517141355
+    second: pinchSlime-Sheet1_16
   - first:
-      213: 5851263503835709305
-    second: pinchSlime_17
+      213: -759891423044135702
+    second: pinchSlime-Sheet1_17
   - first:
-      213: 8277016832983967802
-    second: pinchSlime_18
+      213: -625521498511607661
+    second: pinchSlime-Sheet1_18
   - first:
-      213: 1896656682347217995
-    second: pinchSlime_19
+      213: 3854773062560325469
+    second: pinchSlime-Sheet1_19
   - first:
-      213: -3939427231546659105
-    second: pinchSlime_20
+      213: 1824069461235526910
+    second: pinchSlime-Sheet1_20
   - first:
-      213: -3078011477907332591
-    second: pinchSlime_21
+      213: 9016363382231972391
+    second: pinchSlime-Sheet1_21
   - first:
-      213: 7568726367991180440
-    second: pinchSlime_22
+      213: -8581174067172812119
+    second: pinchSlime-Sheet1_22
   - first:
-      213: -6038894524294735330
-    second: pinchSlime_23
+      213: -8968084601000937144
+    second: pinchSlime-Sheet1_23
   - first:
-      213: 8935684347002028540
-    second: pinchSlime_0
+      213: -9200961278769680901
+    second: pinchSlime-Sheet1_24
   - first:
-      213: 4929921541155444233
-    second: pinchSlime_1
+      213: 4492618646386473965
+    second: pinchSlime-Sheet1_25
   - first:
-      213: 3165342570346682601
-    second: pinchSlime_2
+      213: -6812942256614938442
+    second: pinchSlime-Sheet1_26
   - first:
-      213: -174644804752336902
-    second: pinchSlime_3
+      213: -3872811688827621924
+    second: pinchSlime-Sheet1_27
   - first:
-      213: 6142348125429098020
-    second: pinchSlime_4
+      213: -7688730886207891965
+    second: pinchSlime-Sheet1_28
   - first:
-      213: -740261130780665690
-    second: pinchSlime_5
+      213: 3772361073953489776
+    second: pinchSlime-Sheet1_29
   - first:
-      213: -1359660779132374443
-    second: pinchSlime_6
+      213: -5171731656719039981
+    second: pinchSlime-Sheet1_30
   - first:
-      213: 8895067052485637557
-    second: pinchSlime_7
+      213: 5982646693140757598
+    second: pinchSlime-Sheet1_31
   - first:
-      213: -3439367526953212769
-    second: pinchSlime_8
+      213: 7822356916133647094
+    second: pinchSlime-Sheet1_32
   - first:
-      213: 9110094507750461253
-    second: pinchSlime_9
+      213: 3319497342263591518
+    second: pinchSlime-Sheet1_33
   - first:
-      213: 7381892624994233694
-    second: pinchSlime_10
+      213: 7557230553647438101
+    second: pinchSlime-Sheet1_34
   - first:
-      213: -5232790982468393099
-    second: pinchSlime_11
-  - first:
-      213: -3612021594968899253
-    second: pinchSlime_12
-  - first:
-      213: 8794254559804216761
-    second: pinchSlime_13
-  - first:
-      213: 1590049715087319325
-    second: pinchSlime_14
-  - first:
-      213: 3843739601454347510
-    second: pinchSlime_15
-  - first:
-      213: -2586649373402933595
-    second: pinchSlime_16
-  - first:
-      213: 260077874893128732
-    second: pinchSlime_17
-  - first:
-      213: -5147590767173240002
-    second: pinchSlime_18
-  - first:
-      213: 8721998776201057235
-    second: pinchSlime_19
-  - first:
-      213: -7022158870480547439
-    second: pinchSlime_20
-  - first:
-      213: -6670955942863586237
-    second: pinchSlime_21
-  - first:
-      213: -5938711474973755147
-    second: pinchSlime_22
-  - first:
-      213: -8476703477797870673
-    second: pinchSlime_23
+      213: -5525050768213548204
+    second: pinchSlime-Sheet1_35
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -185,7 +149,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 25
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -231,7 +195,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pinchSlime_0
+      name: pinchSlime-Sheet1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.40625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d70296830c2e4e0800000000000000
+      internalID: -1953787939810935494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchSlime-Sheet1_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.40625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268e0c3e1c2e992d0800000000000000
+      internalID: -3271334331930318750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchSlime-Sheet1_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.40625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e21fe63e27a7000800000000000000
+      internalID: 34466268303142555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchSlime-Sheet1_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.40625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642d3d774bae49e80800000000000000
+      internalID: -8172649362945224122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchSlime-Sheet1_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.40625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a964e6b461e81f6e0800000000000000
+      internalID: -1805505749192915302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchSlime-Sheet1_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.40625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb7b79da1bd50b50800000000000000
+      internalID: 6558889340699376585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchSlime-Sheet1_6
       rect:
         serializedVersion: 2
         x: 0
@@ -245,14 +335,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf10310029de10c70800000000000000
-      internalID: 8935684347002028540
+      spriteID: 6059eeac428af8610800000000000000
+      internalID: 1625702866480960774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_1
+      name: pinchSlime-Sheet1_7
       rect:
         serializedVersion: 2
         x: 96
@@ -266,14 +356,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 906dd1795899a6440800000000000000
-      internalID: 4929921541155444233
+      spriteID: 71145e6b3ac7c4590800000000000000
+      internalID: -7688633421238288105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_2
+      name: pinchSlime-Sheet1_8
       rect:
         serializedVersion: 2
         x: 192
@@ -287,14 +377,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e89fe90c4e8deb20800000000000000
-      internalID: 3165342570346682601
+      spriteID: f60c3528e5b1ff030800000000000000
+      internalID: 3530570725609160815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_3
+      name: pinchSlime-Sheet1_9
       rect:
         serializedVersion: 2
         x: 288
@@ -308,14 +398,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af79ed2b979839df0800000000000000
-      internalID: -174644804752336902
+      spriteID: 95e29d4f98ee5e8e0800000000000000
+      internalID: -1664662210957726119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_4
+      name: pinchSlime-Sheet1_10
       rect:
         serializedVersion: 2
         x: 384
@@ -329,14 +419,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 426ecf693110e3550800000000000000
-      internalID: 6142348125429098020
+      spriteID: a51a4251f88943f30800000000000000
+      internalID: 4554432863480881498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_5
+      name: pinchSlime-Sheet1_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.40625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc8c34b8e9675ca0800000000000000
+      internalID: -6028233128034923326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchSlime-Sheet1_12
       rect:
         serializedVersion: 2
         x: 0
@@ -350,14 +461,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a81ac27c601ab5f0800000000000000
-      internalID: -740261130780665690
+      spriteID: 45821e67c177e1ae0800000000000000
+      internalID: -1576691855395837868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_6
+      name: pinchSlime-Sheet1_13
       rect:
         serializedVersion: 2
         x: 96
@@ -371,14 +482,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 552b8c4a9b3812de0800000000000000
-      internalID: -1359660779132374443
+      spriteID: 078dcf4aa0f3bb8f0800000000000000
+      internalID: -523755616708274064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_7
+      name: pinchSlime-Sheet1_14
       rect:
         serializedVersion: 2
         x: 192
@@ -392,14 +503,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b5ffac2b50a17b70800000000000000
-      internalID: 8895067052485637557
+      spriteID: 5dbb22f7c33fe7870800000000000000
+      internalID: 8682644572773465045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_8
+      name: pinchSlime-Sheet1_15
       rect:
         serializedVersion: 2
         x: 288
@@ -413,14 +524,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f94a0ffe479e440d0800000000000000
-      internalID: -3439367526953212769
+      spriteID: 27e02610b771876c0800000000000000
+      internalID: -4145537639922921870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_9
+      name: pinchSlime-Sheet1_16
       rect:
         serializedVersion: 2
         x: 384
@@ -434,14 +545,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54f04bcffae8d6e70800000000000000
-      internalID: 9110094507750461253
+      spriteID: 59e5bf28c75cdddc0800000000000000
+      internalID: -3612514187517141355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_10
+      name: pinchSlime-Sheet1_17
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.40625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4969dd6c25475f0800000000000000
+      internalID: -759891423044135702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchSlime-Sheet1_18
       rect:
         serializedVersion: 2
         x: 0
@@ -455,14 +587,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5d6bd24b30c17660800000000000000
-      internalID: 7381892624994233694
+      spriteID: 39878d1e283b157f0800000000000000
+      internalID: -625521498511607661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_11
+      name: pinchSlime-Sheet1_19
       rect:
         serializedVersion: 2
         x: 96
@@ -476,17 +608,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 577aa1273546167b0800000000000000
-      internalID: -5232790982468393099
+      spriteID: d5f17ab4da7ee7530800000000000000
+      internalID: 3854773062560325469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_12
+      name: pinchSlime-Sheet1_20
       rect:
         serializedVersion: 2
-        x: 191
+        x: 192
         y: 192
         width: 96
         height: 96
@@ -497,14 +629,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b41c6d62f758fddc0800000000000000
-      internalID: -3612021594968899253
+      spriteID: efce49ab285605910800000000000000
+      internalID: 1824069461235526910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_13
+      name: pinchSlime-Sheet1_21
       rect:
         serializedVersion: 2
         x: 288
@@ -518,14 +650,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b55d7d9de77b0a70800000000000000
-      internalID: 8794254559804216761
+      spriteID: 72ab6c3b9be802d70800000000000000
+      internalID: 9016363382231972391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_14
+      name: pinchSlime-Sheet1_22
       rect:
         serializedVersion: 2
         x: 384
@@ -539,14 +671,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d11adfa9acdf01610800000000000000
-      internalID: 1590049715087319325
+      spriteID: 9aade52a6ab89e880800000000000000
+      internalID: -8581174067172812119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_15
+      name: pinchSlime-Sheet1_23
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.40625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84930b10296fa8380800000000000000
+      internalID: -8968084601000937144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchSlime-Sheet1_24
       rect:
         serializedVersion: 2
         x: 0
@@ -560,14 +713,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f4b9c17dc4b75530800000000000000
-      internalID: 3843739601454347510
+      spriteID: bfd2fca377e9f4080800000000000000
+      internalID: -9200961278769680901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_16
+      name: pinchSlime-Sheet1_25
       rect:
         serializedVersion: 2
         x: 96
@@ -581,14 +734,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a6d4db79106a1cd0800000000000000
-      internalID: -2586649373402933595
+      spriteID: deb79212bdcf85e30800000000000000
+      internalID: 4492618646386473965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_17
+      name: pinchSlime-Sheet1_26
       rect:
         serializedVersion: 2
         x: 192
@@ -602,14 +755,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1481f2037bfb9300800000000000000
-      internalID: 260077874893128732
+      spriteID: 6b8e7373d119371a0800000000000000
+      internalID: -6812942256614938442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_18
+      name: pinchSlime-Sheet1_27
       rect:
         serializedVersion: 2
         x: 288
@@ -623,14 +776,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3bfe8968751098b0800000000000000
-      internalID: -5147590767173240002
+      spriteID: cdde27db942014ac0800000000000000
+      internalID: -3872811688827621924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_19
+      name: pinchSlime-Sheet1_28
       rect:
         serializedVersion: 2
         x: 384
@@ -644,14 +797,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d31bd20da3ca0970800000000000000
-      internalID: 8721998776201057235
+      spriteID: 3061102eef32c4590800000000000000
+      internalID: -7688730886207891965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_20
+      name: pinchSlime-Sheet1_29
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.40625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0734281f86e1a5430800000000000000
+      internalID: 3772361073953489776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchSlime-Sheet1_30
       rect:
         serializedVersion: 2
         x: 0
@@ -665,14 +839,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19116a856b74c8e90800000000000000
-      internalID: -7022158870480547439
+      spriteID: 3128e9f85715a38b0800000000000000
+      internalID: -5171731656719039981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_21
+      name: pinchSlime-Sheet1_31
       rect:
         serializedVersion: 2
         x: 96
@@ -686,14 +860,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34cb5590ae00c63a0800000000000000
-      internalID: -6670955942863586237
+      spriteID: e5cf1515871a60350800000000000000
+      internalID: 5982646693140757598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_22
+      name: pinchSlime-Sheet1_32
       rect:
         serializedVersion: 2
         x: 192
@@ -707,14 +881,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f837aec065759da0800000000000000
-      internalID: -5938711474973755147
+      spriteID: 6f2577cab289e8c60800000000000000
+      internalID: 7822356916133647094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pinchSlime_23
+      name: pinchSlime-Sheet1_33
       rect:
         serializedVersion: 2
         x: 288
@@ -728,8 +902,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa32a833913bc5a80800000000000000
-      internalID: -8476703477797870673
+      spriteID: e52897ece39311e20800000000000000
+      internalID: 3319497342263591518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchSlime-Sheet1_34
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.40625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51952eb062da0e860800000000000000
+      internalID: 7557230553647438101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pinchSlime-Sheet1_35
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.40625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453e1aa69931353b0800000000000000
+      internalID: -5525050768213548204
       vertices: []
       indices: 
       edges: []
@@ -743,9 +959,7 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: 7ef027665c1290a419fd751d13b4cd1c, type: 3}
-      name: _Emission
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
