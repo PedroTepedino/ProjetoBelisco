@@ -34,8 +34,5 @@ public abstract class EnemyController : MonoBehaviour
     }
     public abstract void Update();
 
-    private void OnDrawGizmos() {
-        
-    }
     
 }

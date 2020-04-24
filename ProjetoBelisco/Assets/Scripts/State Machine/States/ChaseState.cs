@@ -32,7 +32,10 @@ public class ChaseState : IState
         {
             if (Vector2.Distance(ownerGameObject.transform.position, target.position) <= controllerOwner.attackRange)
             {
-                controllerOwner.stateMachine.ChangeState(new AttackState(ownerGameObject));
+                if (controllerOwner.actualState != "attack")
+                {
+                    controllerOwner.stateMachine.ChangeState(new AttackState(ownerGameObject));
+                }
             }
             else
             {

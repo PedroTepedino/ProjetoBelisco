@@ -21,9 +21,8 @@ public class AttackState : IState
 
     public void EnterState()
     {
-        target = controllerOwner.targeting.target;
-        Debug.Log(target);
         controllerOwner.actualState = "attack";
+        target = controllerOwner.targeting.target;
         ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
         targerLifeSystem = target.GetComponentInParent<PlayerLife>();
         grounder = ownerGameObject.GetComponent<EnemyGrounder>();
@@ -44,8 +43,10 @@ public class AttackState : IState
 
         if(target != null)
         {
+            Debug.Log("has target");
             if (Vector2.Distance(ownerGameObject.transform.position, target.position) <= controllerOwner.attackRange)
             {
+                Debug.Log("has target");
                 if (timer >= controllerOwner.attackSpeed)
                 {
                     Debug.Log("dmg");
@@ -56,11 +57,13 @@ public class AttackState : IState
             }
             else
             {
+                Debug.Log("chase");
                 controllerOwner.stateMachine.ChangeState(new ChaseState(ownerGameObject));
             }
         }
         else
         {
+            Debug.Log("move");
             controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
         }
     }
