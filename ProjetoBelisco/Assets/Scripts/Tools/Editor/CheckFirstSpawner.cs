@@ -31,6 +31,10 @@ public class CheckFirstSpawner : OdinEditorWindow
     [PropertyOrder(9)]
     private GameObject _checkpointPrefab;
     
+    [SerializeField]
+    [PropertyOrder(9)]
+    private GameObject _playerSpawnerPrefab;
+    
     private bool ToFewPlayerSpawners => _playerSpawnerCount < 1;
     private bool ToManyPlayerSpawners => _playerSpawnerCount > 1;
     private bool ToFewCheckpoints => _totalSpawnerCount < 1;
@@ -44,6 +48,7 @@ public class CheckFirstSpawner : OdinEditorWindow
     protected override void Initialize()
     {    
         _checkpointPrefab = Resources.Load("Prefabs/Player/Checkpoint") as GameObject;
+        _playerSpawnerPrefab = Resources.Load("Prefabs/Player/PlayerSpawner") as GameObject;
         Check();
     }
 
@@ -114,8 +119,6 @@ public class CheckFirstSpawner : OdinEditorWindow
 
         Selection.objects = aux.ToArray();
     }
-    
-    
 
     [ShowIf("ToFewPlayerSpawners")]
     [Button(ButtonSizes.Large)]
@@ -171,7 +174,7 @@ public class CheckFirstSpawner : OdinEditorWindow
     [Button(ButtonSizes.Large)]
     public void CreatePlayerSpawner()
     {
-        ((GameObject) PrefabUtility.InstantiatePrefab(_checkpointPrefab)).GetComponent<PlayerRespawner>()
+        ((GameObject) PrefabUtility.InstantiatePrefab(_playerSpawnerPrefab)).GetComponent<PlayerRespawner>()
             .IsFirstSpawner = true;
         Check();
     }

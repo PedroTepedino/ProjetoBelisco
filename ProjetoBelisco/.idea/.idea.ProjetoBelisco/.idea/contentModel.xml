@@ -71,43 +71,6 @@
                 <e p="VectorIntFormatters.cs" t="Include" />
               </e>
             </e>
-            <e p="Odin Validator" t="Include">
-              <e p="Editor" t="Include">
-                <e p="Scripts" t="Include">
-                  <e p="Automation" t="Include">
-                    <e p="AutomatedValidation.cs" t="Include" />
-                    <e p="AutomatedValidationHook.cs" t="Include" />
-                    <e p="IValidationHook.cs" t="Include" />
-                    <e p="OnBuildValidationHook.cs" t="Include" />
-                    <e p="OnPlayValidationHook.cs" t="Include" />
-                    <e p="OnProjectStartupValidationHook.cs" t="Include" />
-                  </e>
-                  <e p="Editors" t="Include">
-                    <e p="ValidationOverview.cs" t="Include" />
-                    <e p="ValidationProfileEditor.cs" t="Include" />
-                    <e p="ValidationProfileEditorDrawer.cs" t="Include" />
-                    <e p="ValidationProfileManagerOverview.cs" t="Include" />
-                    <e p="ValidationProfileManagerWindow.cs" t="Include" />
-                    <e p="ValidationProfileSOCreator.cs" t="Include" />
-                    <e p="ValidationProfileTree.cs" t="Include" />
-                  </e>
-                  <e p="Misc" t="Include">
-                    <e p="EnsureOdinValidatorDefine.cs" t="Include" />
-                  </e>
-                  <e p="Profiles" t="Include">
-                    <e p="AssetValidationProfile.cs" t="Include" />
-                    <e p="AssetValidationProfileAsset.cs" t="Include" />
-                    <e p="OdinValidationConfig.cs" t="Include" />
-                    <e p="SceneValidationProfile.cs" t="Include" />
-                    <e p="SceneValidationProfileAsset.cs" t="Include" />
-                    <e p="ValidationCollectionProfile.cs" t="Include" />
-                    <e p="ValidationCollectionProfileAsset.cs" t="Include" />
-                    <e p="ValidationProfile.cs" t="Include" />
-                    <e p="ValidationProfileAsset.cs" t="Include" />
-                  </e>
-                </e>
-              </e>
-            </e>
           </e>
         </e>
         <e p="Rewired" t="Include">
@@ -244,6 +207,7 @@
           <e p="Camera" t="Include">
             <e p="CameraManager.cs" t="Include" />
             <e p="CameraObjectVisibilityField.cs" t="Include" />
+            <e p="ChangeToSpecialCam.cs" t="Include" />
           </e>
           <e p="Collectables" t="Include">
             <e p="BaseCollectableObject.cs" t="Include" />
@@ -255,7 +219,17 @@
             <e p="AttackDummyLifeBar.cs" t="Include" />
             <e p="AuxRespawner.cs" t="Include" />
           </e>
+          <e p="Enemies" t="Include">
+            <e p="BasicEnemy.cs" t="Include" />
+            <e p="EnemyController.cs" t="Include" />
+            <e p="EnemyGrounder.cs" t="Include" />
+            <e p="EnemyLife.cs" t="Include" />
+            <e p="EnemyTargeting.cs" t="Include" />
+            <e p="EnemyVision.cs" t="Include" />
+            <e p="EnemyWallChecker.cs" t="Include" />
+          </e>
           <e p="Environment" t="Include">
+            <e p="Checkpoint.cs" t="Include" />
             <e p="PlayerRespawner.cs" t="Include" />
             <e p="VoidHole.cs" t="Include" />
           </e>
@@ -283,6 +257,7 @@
             <e p="PlayerLife.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerPawStorage.cs" t="Include" />
+            <e p="PlayerPlatformDown.cs" t="Include" />
             <e p="PlayerPoolableObject.cs" t="Include" />
           </e>
           <e p="PoolingSystem" t="Include">
@@ -292,6 +267,15 @@
           <e p="SceneManager" t="Include">
             <e p="ScenesEnums.cs" t="Include" />
             <e p="UiScenesLoader.cs" t="Include" />
+          </e>
+          <e p="State Machine" t="Include">
+            <e p="IState.cs" t="Include" />
+            <e p="StateMachine.cs" t="Include" />
+            <e p="States" t="Include">
+              <e p="AttackState.cs" t="Include" />
+              <e p="ChaseState.cs" t="Include" />
+              <e p="MoveState.cs" t="Include" />
+            </e>
           </e>
           <e p="Tools" t="Include">
             <e p="Editor" t="Include">
@@ -347,7 +331,6 @@
       <e p="ProjetoBelisco.sln" t="IncludeFlat" />
       <e p="Sirenix.OdinInspector.CompatibilityLayer.csproj" t="IncludeRecursive" />
       <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj" t="IncludeRecursive" />
-      <e p="Sirenix.OdinValidator.csproj" t="IncludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
   </component>

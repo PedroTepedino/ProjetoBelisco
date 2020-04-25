@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.NetworkInformation;
 using UnityEngine;
 
@@ -30,6 +31,23 @@ public class PlayerAnimationController : MonoBehaviour
     private void Update()
     {
         SetAnimatorValues();
+        //string aux = null;
+        // if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Run"))
+        // {
+        //     Debug.Log( "Run");    
+        // }
+        // if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
+        // {
+        //     Debug.Log( "Jump");    
+        // }
+        // if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Ascending"))
+        // {
+        //     Debug.Log( "Ascend");    
+        // }
+        // if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Contact"))
+        // {
+        //     Debug.Log( "contact");    
+        // }
     }
 
     private void SetAnimatorValues()
@@ -37,7 +55,8 @@ public class PlayerAnimationController : MonoBehaviour
         _animator.SetFloat("SpeedX", Mathf.Abs(_rigidbody.velocity.x));
         _animator.SetFloat("SpeedY", _rigidbody.velocity.y);
         _spriteRenderer.flipX = !PlayerMovement.IsLookingRight;
-        _animator.SetBool("Jumping", !PlayerGrounder.IsTouchingGround);
+        _animator.SetBool("Jumping", PlayerJump.IsJumping);
+        _animator.SetBool("Falling", !PlayerGrounder.IsTouchingGround);
     }
         
     private void TriggerAttackAnimation()

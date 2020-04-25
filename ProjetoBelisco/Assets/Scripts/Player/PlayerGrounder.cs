@@ -97,6 +97,8 @@ public class PlayerGrounder : MonoBehaviour
      */
     private bool GroundCheck()
     {
+        if (PlayerPlatformDown.IsFallingThrough) return false;
+
         return Physics2D.OverlapBox(this.transform.position + _grounderCenter, _grounderSizes, 0f, _grounderLayerMask) != null ? true : false;
     }
 

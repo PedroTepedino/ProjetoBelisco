@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using UnityEditor;
@@ -196,6 +198,21 @@ public class ObjectPooler : MonoBehaviour
         return objectToSpawn;
     }
 
+    public GameObject MoveObjectToPoint(string tag, Transform trans, bool parent = false)
+    {
+        if(!KeyExists(tag))
+        {
+            return null;
+        }
+
+        GameObject obejctToMove = GetNextObject(tag);
+
+        obejctToMove.transform.position = trans.position;
+        obejctToMove.transform.rotation = trans.rotation;
+
+        return null;
+    }
+
     public bool KeyExists(string tag)
     {
         if (!poolDictionary.ContainsKey(tag))
@@ -232,6 +249,31 @@ public class ObjectPooler : MonoBehaviour
             aux.SetActive(true);
         }
         
+        return aux;
+    }
+
+    private GameObject GetNextObject(string tag)
+    {
+        GameObject aux;
+        
+        if ((poolDictionary[tag].Count == 0 || poolDictionary[tag].Peek().activeInHierarchy) && !sizeDictionary[tag]) 
+        {
+            if (prefabDictionary.ContainsKey(tag))
+            {
+                aux = Instantiate(prefabDictionary[tag]);
+                DontDestroyOnLoad(aux);
+            }
+            else
+            {
+                aux = null;
+                Debug.LogError("Prefab Dictionary does not contain tag! - " + tag, this.gameObject);
+            }
+        }
+        else
+        {
+            aux = poolDictionary[tag].Peek();
+        }
+
         return aux;
     }
 

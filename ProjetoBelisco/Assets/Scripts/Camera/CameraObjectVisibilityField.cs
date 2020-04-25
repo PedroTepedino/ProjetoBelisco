@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEditor;
 
 [ExecuteAlways]
-[InitializeOnLoad]
 public class CameraObjectVisibilityField : MonoBehaviour
 {
     private static Camera main;
