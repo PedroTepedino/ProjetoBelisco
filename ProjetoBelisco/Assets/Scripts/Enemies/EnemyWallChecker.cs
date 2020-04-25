@@ -70,6 +70,10 @@ public class EnemyWallChecker : MonoBehaviour
 
     protected void OnDrawGizmos()
     {
+        // Guard sentence
+        if (controller == null)
+            return;
+        
         Gizmos.color = wallAhead ? Color.red : Color.green;
 
         if(controller.movingRight){

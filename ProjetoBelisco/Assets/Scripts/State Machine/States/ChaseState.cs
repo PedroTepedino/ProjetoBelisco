@@ -45,7 +45,7 @@ public class ChaseState : IState
                     if (grounder.isGrounded && wallCheck.wallAhead)
                     {
                         controllerOwner.movingRight = true;
-                        movement.Set(controllerOwner.movingSpeed * Time.deltaTime, controllerOwner.rigidbody.velocity.y);
+                        movement.Set(controllerOwner.movingSpeed, controllerOwner.rigidbody.velocity.y);
                         controllerOwner.rigidbody.velocity = movement;
                     }
                 }
@@ -54,7 +54,7 @@ public class ChaseState : IState
                     if (grounder.isGrounded && wallCheck.wallAhead)
                     {
                         controllerOwner.movingRight = true;
-                        movement.Set(-controllerOwner.movingSpeed * Time.deltaTime, controllerOwner.rigidbody.velocity.y);
+                        movement.Set(-controllerOwner.movingSpeed, controllerOwner.rigidbody.velocity.y);
                         controllerOwner.rigidbody.velocity = movement;
                     }
                 }

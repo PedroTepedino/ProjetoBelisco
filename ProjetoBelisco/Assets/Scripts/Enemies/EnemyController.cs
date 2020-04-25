@@ -33,6 +33,4 @@ public abstract class EnemyController : MonoBehaviour
         targeting = GetComponent<EnemyTargeting>();
     }
     public abstract void Update();
-
-    
 }

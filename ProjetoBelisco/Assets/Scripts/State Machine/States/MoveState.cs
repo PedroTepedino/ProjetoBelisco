@@ -66,7 +66,7 @@ public class MoveState : IState
         if (grounder.isGrounded && !wallCheck.wallAhead)
         {
 
-            movement.Set(controllerOwner.movingRight ? controllerOwner.movingSpeed * Time.deltaTime : -controllerOwner.movingSpeed * Time.deltaTime, controllerOwner.rigidbody.velocity.y);
+            movement.Set(controllerOwner.movingRight ? controllerOwner.movingSpeed : -controllerOwner.movingSpeed , controllerOwner.rigidbody.velocity.y);
             controllerOwner.rigidbody.velocity = movement;
         }
         else

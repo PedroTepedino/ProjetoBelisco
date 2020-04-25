@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+
 public class EnemyTargeting : MonoBehaviour
 {
     [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _targetingCenter;
@@ -27,7 +28,7 @@ public class EnemyTargeting : MonoBehaviour
         var hitObject = Physics2D.Raycast(this.transform.position, controller.movingRight ? Vector2.right : Vector2.left, controller.lookingRange, _targetingLayerMask);
         if (hitObject.collider != null)
         {
-            if (hitObject.transform.gameObject.CompareTag("Player"))
+            if (hitObject.transform.gameObject.GetComponent<PlayerLife>() != null)
             {
                 target = hitObject.transform;
                 return true;
@@ -44,6 +45,10 @@ public class EnemyTargeting : MonoBehaviour
     }
 
     protected void OnDrawGizmos() {
+        // Guard sentence
+        if (controller == null)
+            return;
+        
         Gizmos.color = Color.blue;
 
         if (controller.movingRight)

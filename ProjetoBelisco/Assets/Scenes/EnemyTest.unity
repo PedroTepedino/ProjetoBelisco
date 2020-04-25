@@ -130,7 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 24110392}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -1190,7 +1190,7 @@ GameObject:
   - component: {fileID: 429274107}
   - component: {fileID: 429274112}
   - component: {fileID: 429274111}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1250,7 +1250,7 @@ MonoBehaviour:
   targeting: {fileID: 0}
   actualState: 
   movingRight: 1
-  movingSpeed: 10
+  movingSpeed: 5
   lookingRange: 2
   attackRange: 1
   attackSpeed: 1
@@ -3073,7 +3073,7 @@ PrefabInstance:
     - target: {fileID: 5311663050116025348, guid: 1a19528a79e24a647aa30f6ac323a770,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.46000096
+      value: 0.46000192
       objectReference: {fileID: 0}
     - target: {fileID: 5311663050116025348, guid: 1a19528a79e24a647aa30f6ac323a770,
         type: 3}
@@ -3178,7 +3178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1901180300}
   - component: {fileID: 1901180301}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}

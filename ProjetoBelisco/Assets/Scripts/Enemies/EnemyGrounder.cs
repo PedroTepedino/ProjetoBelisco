@@ -36,6 +36,10 @@ public class EnemyGrounder : MonoBehaviour
 
     protected void OnDrawGizmos()
     {
+        // Guard sentence
+        if (controller == null)
+            return;
+        
         Gizmos.color = isGrounded ? Color.green : Color.red;
         if(controller.movingRight){
             Gizmos.DrawLine(this.transform.position + _grounderCenter, this.transform.position + new Vector3(_grounderCenter.x, _grounderCenter.y - _grounderSize, 0));
