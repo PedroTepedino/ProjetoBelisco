@@ -4,26 +4,34 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 
 public class BasicEnemy : EnemyController
-{
-    [SerializeField] [EnumToggleButtons] private LayerMask _layerMask;
-    
+{    
     public override void Update()
     {
-        var hitObjects = Physics2D.Raycast(this.transform.position, Vector2.right, lookingRange, _layerMask);
-        
-        if (hitObjects != null)
+        if (targeting.hasTarget)
         {
-            if(stateMachine.GetCurrentState() != null/*AttackState*/)
+            if (actualState != "chase" && actualState != "attack")
             {
-                this.stateMachine.ChangeState(new AttackState(this.gameObject, this.GetComponent<EnemyController>(), hitObjects.transform));
-                actualState = "attack";
+                this.stateMachine.ChangeState(new ChaseState(this.gameObject));
             }
+            
         }
+
+
+        /*var hitObjects = Physics2D.Raycast(this.transform.position, movingRight ? Vector2.right : Vector2.left, lookingRange, layerTargeting);
+        
+        if (hitObjects.collider != null)
+        {
+            Debug.Log("hit");
+            if (hitObjects.transform.gameObject.CompareTag("Player"))
+            {   
+                Debug.Log("player");
+                target = hitObjects.transform;
+                if(actualState != "attack")
+                {
+                    this.stateMachine.ChangeState(new AttackState(this.gameObject, target));
+                }               
+            }
+        }*/
         this.stateMachine.RunStateUpdate();
-    }
-    
-    public override void EnemyDie()
-    {
-        Debug.Log("ded");
     }
 }

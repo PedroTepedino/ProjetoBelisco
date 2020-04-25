@@ -4,39 +4,33 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(EnemyLife))]
+[RequireComponent(typeof(EnemyWallChecker))]
+[RequireComponent(typeof(EnemyGrounder))]
+[RequireComponent(typeof(EnemyTargeting))]
 /*Class: EnemyController
- * Abstract Class that inherits from <LifeSystemAbstract> that describes the essential components of every enemy.
+ * Abstract Class that describes the essential components of every enemy.
  */
-public abstract class EnemyController : BaseLifeSystem
+public abstract class EnemyController : MonoBehaviour
 {
-    public Rigidbody2D rigidbody;
-    public float movingSpeed;
-    public Transform groundDetection;
-    public bool movingRight = true;
-    public StateMachine stateMachine;
-    public float attackRange;
-    public float attackDamage;
-    public float attackSpeed;
-    public float lookingRange;
-    public string actualState;
-    public Transform target;
     [EnumPaging]public LayerMask layerTargeting;
-    [EnumPaging]public LayerMask layerMove;
+    public StateMachine stateMachine;
+    public Rigidbody2D rigidbody;
+    public EnemyTargeting targeting;
+    public string actualState;
+    public bool movingRight = true;
+    public float movingSpeed = 5;
+    public float lookingRange = 5;
+    public float attackRange = 1;
+    public float attackSpeed = 1;
+    public int attackDamage = 1;
 
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        stateMachine = new StateMachine();
-        this.stateMachine.ChangeState(new MoveState(this.gameObject, this.GetComponent<EnemyController>()));
-        actualState = "move";
+        stateMachine = gameObject.AddComponent<StateMachine>();
+        this.stateMachine.ChangeState(new MoveState(this.gameObject));
+        targeting = GetComponent<EnemyTargeting>();
     }
-    protected override void Die()
-    {
-        EnemyDie();
-    }
-
-
-    public abstract void EnemyDie();
     public abstract void Update();
-    
 }
