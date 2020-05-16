@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8604371560575273997}
   - component: {fileID: 3493495766662011721}
   m_Layer: 0
-  m_Name: BeliscoHurt 1
+  m_Name: BeliscoHurt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,7 @@ ParticleSystem:
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
