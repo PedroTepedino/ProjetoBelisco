@@ -13,7 +13,6 @@ public class BasicEnemy : EnemyController
             {
                 this.stateMachine.ChangeState(new ChaseState(this.gameObject));
             }
-            
         }
 
 
