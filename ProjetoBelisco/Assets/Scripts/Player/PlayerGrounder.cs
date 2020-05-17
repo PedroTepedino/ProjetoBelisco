@@ -23,6 +23,7 @@ public class PlayerGrounder : MonoBehaviour
      * Signal that sends info to the subscribed functions. 
      */
     public System.Action<bool> OnGrounded;
+    public static System.Action OnTouchGround;
 
     /* Variables: Properties
      * IsGrounded - Propertie, that returns if the player is grounded or not.
@@ -49,7 +50,10 @@ public class PlayerGrounder : MonoBehaviour
      */
     private void Update()
     {
+        bool lastFrameIsTouchingGround = IsTouchingGround;
         IsTouchingGround = GroundCheck();
+        JustTouchGround(lastFrameIsTouchingGround, IsTouchingGround);
+
         ArialTimeCalculation();
         IsGroundedVerification();
     }
@@ -100,6 +104,15 @@ public class PlayerGrounder : MonoBehaviour
         if (PlayerPlatformDown.IsFallingThrough) return false;
 
         return Physics2D.OverlapBox(this.transform.position + _grounderCenter, _grounderSizes, 0f, _grounderLayerMask) != null ? true : false;
+    }
+
+    private void JustTouchGround(bool lastFrame, bool thisFrame)
+    {
+        if (thisFrame && !lastFrame)
+        {
+            OnTouchGround?.Invoke();
+        }
+
     }
 
     private bool ArialTimeCheck()
