@@ -131,12 +131,12 @@ PrefabInstance:
     - target: {fileID: 2869461666780274344, guid: 9c6a6524996eac244a2b1175f2662cb7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.43
+      value: 1.89
       objectReference: {fileID: 0}
     - target: {fileID: 2869461666780274344, guid: 9c6a6524996eac244a2b1175f2662cb7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.28
+      value: -0.79
       objectReference: {fileID: 0}
     - target: {fileID: 2869461666780274344, guid: 9c6a6524996eac244a2b1175f2662cb7,
         type: 3}
@@ -918,7 +918,7 @@ PrefabInstance:
     - target: {fileID: 7023604729711152355, guid: b240bcd6ad6eafe448dfac92066ca628,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7023604729711152359, guid: b240bcd6ad6eafe448dfac92066ca628,
         type: 3}
@@ -1501,6 +1501,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3853,7 +3854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!210 &3764525855530532158
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -3903,23 +3904,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938c52766c8066d4485eca05643e6bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maximumHealth: 3
-  rigidbody: {fileID: 0}
-  movingSpeed: 10
-  groundDetection: {fileID: 144737706}
-  movingRight: 1
-  attackRange: 1
-  attackDamage: 1
-  attackSpeed: 1
-  lookingRange: 5
-  actualState: 
-  target: {fileID: 0}
   layerTargeting:
     serializedVersion: 2
     m_Bits: 4352
-  layerMove:
-    serializedVersion: 2
-    m_Bits: 256
+  stateMachine: {fileID: 0}
+  rigidbody: {fileID: 0}
+  targeting: {fileID: 0}
+  actualState: 
+  movingRight: 1
+  movingSpeed: 10
+  lookingRange: 5
+  attackRange: 1
+  attackSpeed: 1
+  attackDamage: 1
 --- !u!1001 &5311663050835212724
 PrefabInstance:
   m_ObjectHideFlags: 0
