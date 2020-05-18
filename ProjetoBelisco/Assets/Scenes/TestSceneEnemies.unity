@@ -210,12 +210,12 @@ PrefabInstance:
     - target: {fileID: 4700700077151930738, guid: 0bd306ba2d00d6e47a1af9135c931cc4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.36
+      value: 4.51
       objectReference: {fileID: 0}
     - target: {fileID: 4700700077151930738, guid: 0bd306ba2d00d6e47a1af9135c931cc4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.64
+      value: 0.37
       objectReference: {fileID: 0}
     - target: {fileID: 4700700077151930738, guid: 0bd306ba2d00d6e47a1af9135c931cc4,
         type: 3}
@@ -765,160 +765,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7023604729711152344, guid: b240bcd6ad6eafe448dfac92066ca628,
         type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152344, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 7023604729711152344, guid: b240bcd6ad6eafe448dfac92066ca628,
         type: 3}
-    - target: {fileID: 7023604729711152344, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"_directionsAngles","value":{"$id":0,"$type":"UnityEngine.Rendering.SerializedDictionary`2[[Directions,
-        Assembly-CSharp],[UnityEngine.Vector2, UnityEngine.CoreModule]], Unity.RenderPipelines.Core.Runtime","comparer":{"$id":1,"$type":"System.Collections.Generic.EnumEqualityComparer`1[[Directions,
-        Assembly-CSharp]], mscorlib","$rlength":0,"$rcontent":[]},"$rlength":4,"$rcontent":[{"$k":1,"$v":{"$type":"UnityEngine.Vector2,
-        UnityEngine.CoreModule",0,1}},{"$k":2,"$v":{"$type":"UnityEngine.Vector2,
-        UnityEngine.CoreModule",0,-1}},{"$k":4,"$v":{"$type":"UnityEngine.Vector2,
-        UnityEngine.CoreModule",1,0}},{"$k":8,"$v":{"$type":"UnityEngine.Vector2,
-        UnityEngine.CoreModule",-1,0}}]}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152344, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[1]
-      value: '"path":"_directionsAngles.{1es}","value":{"$id":0,"$type":"UnityEngine.Vector2,
-        UnityEngine.CoreModule",0,1}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152344, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[2]
-      value: '"path":"_directionsAngles.{2es}","value":{"$id":0,"$type":"UnityEngine.Vector2,
-        UnityEngine.CoreModule",0,-1}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152344, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[3]
-      value: '"path":"_directionsAngles.{4es}","value":{"$id":0,"$type":"UnityEngine.Vector2,
-        UnityEngine.CoreModule",1,0}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152344, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[4]
-      value: '"path":"_directionsAngles.{8es}","value":{"$id":0,"$type":"UnityEngine.Vector2,
-        UnityEngine.CoreModule",-1,0}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.size
-      value: 14
-      objectReference: {fileID: 0}
     - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
         type: 3}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"_attackCenterDictionary","value":{"$id":0,"$type":"UnityEngine.Rendering.SerializedDictionary`2[[Directions,
-        Assembly-CSharp],[PlayerAttackSystem+AttackDirection, Assembly-CSharp]],
-        Unity.RenderPipelines.Core.Runtime","comparer":{"$id":1,"$type":"System.Collections.Generic.EnumEqualityComparer`1[[Directions,
-        Assembly-CSharp]], mscorlib","$rlength":0,"$rcontent":[]},"$rlength":4,"$rcontent":[{"$k":4,"$v":{"$type":"PlayerAttackSystem+AttackDirection,
-        Assembly-CSharp","AttackCenter":{"$type":"UnityEngine.Vector2, UnityEngine.CoreModule",0.8,0},"Radius":0.67}},{"$k":8,"$v":{"$type":"PlayerAttackSystem+AttackDirection,
-        Assembly-CSharp","AttackCenter":{"$type":"UnityEngine.Vector2, UnityEngine.CoreModule",-0.8,0},"Radius":0.67}},{"$k":1,"$v":{"$type":"PlayerAttackSystem+AttackDirection,
-        Assembly-CSharp","AttackCenter":{"$type":"UnityEngine.Vector2, UnityEngine.CoreModule",0,1},"Radius":0.67}},{"$k":2,"$v":{"$type":"PlayerAttackSystem+AttackDirection,
-        Assembly-CSharp","AttackCenter":{"$type":"UnityEngine.Vector2, UnityEngine.CoreModule",0,-0.6},"Radius":0.67}}]}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[1]
-      value: '"path":"_attackCenterDictionary.{1es}","value":{"$id":0,"$type":"PlayerAttackSystem+AttackDirection,
-        Assembly-CSharp","AttackCenter":{"$type":"UnityEngine.Vector2, UnityEngine.CoreModule",0,0},"Radius":0}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[2]
-      value: '"path":"_attackCenterDictionary.{1es}.AttackCenter.x","value":{"$id":0,"$type":"System.Single,
-        mscorlib",0}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[3]
-      value: '"path":"_attackCenterDictionary.{1es}.AttackCenter.y","value":{"$id":0,"$type":"System.Single,
-        mscorlib",1}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[4]
-      value: '"path":"_attackCenterDictionary.{1es}.Radius","value":{"$id":0,"$type":"System.Single,
-        mscorlib",0.67}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[5]
-      value: '"path":"_attackCenterDictionary.{2es}","value":{"$id":0,"$type":"PlayerAttackSystem+AttackDirection,
-        Assembly-CSharp","AttackCenter":{"$type":"UnityEngine.Vector2, UnityEngine.CoreModule",0,0},"Radius":0}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[6]
-      value: '"path":"_attackCenterDictionary.{2es}.AttackCenter.y","value":{"$id":0,"$type":"System.Single,
-        mscorlib",-0.6}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[7]
-      value: '"path":"_attackCenterDictionary.{2es}.Radius","value":{"$id":0,"$type":"System.Single,
-        mscorlib",0.67}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[8]
-      value: '"path":"_attackCenterDictionary.{4es}","value":{"$id":0,"$type":"PlayerAttackSystem+AttackDirection,
-        Assembly-CSharp","AttackCenter":{"$type":"UnityEngine.Vector2, UnityEngine.CoreModule",0,0},"Radius":0}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[9]
-      value: '"path":"_attackCenterDictionary.{4es}.AttackCenter.x","value":{"$id":0,"$type":"System.Single,
-        mscorlib",0.8}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[10]
-      value: '"path":"_attackCenterDictionary.{4es}.Radius","value":{"$id":0,"$type":"System.Single,
-        mscorlib",0.67}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[11]
-      value: '"path":"_attackCenterDictionary.{8es}","value":{"$id":0,"$type":"PlayerAttackSystem+AttackDirection,
-        Assembly-CSharp","AttackCenter":{"$type":"UnityEngine.Vector2, UnityEngine.CoreModule",0,0},"Radius":0}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[12]
-      value: '"path":"_attackCenterDictionary.{8es}.AttackCenter.x","value":{"$id":0,"$type":"System.Single,
-        mscorlib",-0.8}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152351, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: serializationData.PrefabModifications.Array.data[13]
-      value: '"path":"_attackCenterDictionary.{8es}.Radius","value":{"$id":0,"$type":"System.Single,
-        mscorlib",0.67}'
-      objectReference: {fileID: 0}
     - target: {fileID: 7023604729711152355, guid: b240bcd6ad6eafe448dfac92066ca628,
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7023604729711152355, guid: b240bcd6ad6eafe448dfac92066ca628,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7023604729711152359, guid: b240bcd6ad6eafe448dfac92066ca628,
         type: 3}
@@ -1483,7 +1343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.12000275, y: -0.099998474}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &880096892
@@ -2907,12 +2767,12 @@ PrefabInstance:
     - target: {fileID: 4700700077151930738, guid: 0bd306ba2d00d6e47a1af9135c931cc4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03
+      value: -1.33
       objectReference: {fileID: 0}
     - target: {fileID: 4700700077151930738, guid: 0bd306ba2d00d6e47a1af9135c931cc4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.38
+      value: -0.99
       objectReference: {fileID: 0}
     - target: {fileID: 4700700077151930738, guid: 0bd306ba2d00d6e47a1af9135c931cc4,
         type: 3}

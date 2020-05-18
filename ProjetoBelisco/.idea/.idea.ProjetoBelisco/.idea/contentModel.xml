@@ -259,6 +259,7 @@
             <e p="PlayerPawStorage.cs" t="Include" />
             <e p="PlayerPlatformDown.cs" t="Include" />
             <e p="PlayerPoolableObject.cs" t="Include" />
+            <e p="PlayParticle.cs" t="Include" />
           </e>
           <e p="PoolingSystem" t="Include">
             <e p="IPooledObject.cs" t="Include" />

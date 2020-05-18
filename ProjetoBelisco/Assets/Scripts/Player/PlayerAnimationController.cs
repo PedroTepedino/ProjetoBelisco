@@ -22,11 +22,15 @@ public class PlayerAnimationController : MonoBehaviour
         _spriteRenderer = _animator.gameObject.GetComponent<SpriteRenderer>();
         _comboManager = this.GetComponent<PlayerComboManager>();
         PlayerAttackSystem.OnAttack += TriggerAttackAnimation;
+        PlayerLife.OnPlayerDamage += ListenOnPlayerDamage;
+        PlayerLife.OnPlayerDie += ListenOnPlayerDeath;
     }
 
     private void OnDestroy()
     {
         PlayerAttackSystem.OnAttack -= TriggerAttackAnimation;
+        PlayerLife.OnPlayerDamage -= ListenOnPlayerDamage;
+        PlayerLife.OnPlayerDie -= ListenOnPlayerDeath;
     }
 
     private void Update()
@@ -75,6 +79,15 @@ public class PlayerAnimationController : MonoBehaviour
         {
             _animator.SetTrigger("AttackDown");
         }
-        
+    }
+
+    private void ListenOnPlayerDamage(int damage, int maxHealth)
+    {
+        _animator.SetTrigger("Hit");
+    }
+
+    private void ListenOnPlayerDeath()
+    {
+        _animator.SetTrigger("Death");
     }
 }

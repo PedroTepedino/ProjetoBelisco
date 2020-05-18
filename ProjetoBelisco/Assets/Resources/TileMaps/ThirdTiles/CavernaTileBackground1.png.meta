@@ -212,6 +212,9 @@ TextureImporter:
   - first:
       213: 1642844188543720562
     second: CavernaTileBackground1_69
+  - first:
+      213: -9107803911979884743
+    second: CavernaTileBackground1_70
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
