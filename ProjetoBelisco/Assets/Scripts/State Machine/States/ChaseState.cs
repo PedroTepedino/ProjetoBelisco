@@ -53,7 +53,7 @@ public class ChaseState : IState
                 {
                     if (grounder.isGrounded && wallCheck.wallAhead)
                     {
-                        controllerOwner.movingRight = true;
+                        controllerOwner.movingRight = false;
                         movement.Set(-controllerOwner.movingSpeed, controllerOwner.rigidbody.velocity.y);
                         controllerOwner.rigidbody.velocity = movement;
                     }

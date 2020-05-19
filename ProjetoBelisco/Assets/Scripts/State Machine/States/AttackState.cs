@@ -43,13 +43,10 @@ public class AttackState : IState
 
         if(target != null)
         {
-            Debug.Log("has target");
             if (Vector2.Distance(ownerGameObject.transform.position, target.position) <= controllerOwner.attackRange)
             {
-                Debug.Log("has target");
                 if (timer >= controllerOwner.attackSpeed)
                 {
-                    Debug.Log("dmg");
                     targerLifeSystem.Damage(controllerOwner.attackDamage);
 
                     timer = 0;
@@ -57,13 +54,11 @@ public class AttackState : IState
             }
             else
             {
-                Debug.Log("chase");
                 controllerOwner.stateMachine.ChangeState(new ChaseState(ownerGameObject));
             }
         }
         else
         {
-            Debug.Log("move");
             controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
         }
     }

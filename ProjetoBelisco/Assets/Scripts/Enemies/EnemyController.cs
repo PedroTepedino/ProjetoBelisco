@@ -23,6 +23,7 @@ public abstract class EnemyController : MonoBehaviour
     public float lookingRange = 5;
     public float attackRange = 1;
     public float attackSpeed = 1;
+    public float alertAnimationTime = 0;
     public int attackDamage = 1;
 
     private void Start()
