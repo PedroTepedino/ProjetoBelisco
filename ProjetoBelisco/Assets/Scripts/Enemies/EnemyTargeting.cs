@@ -9,6 +9,7 @@ public class EnemyTargeting : MonoBehaviour
     [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask _targetingLayerMask;
 
     private EnemyController controller;
+    private EnemyAttack enemyAttack;
     private Vector3 _checkerCenter;
 
     public Transform target { get; private set; } = null;
@@ -17,6 +18,7 @@ public class EnemyTargeting : MonoBehaviour
     void Start()
     {
         controller = GetComponent<EnemyController>();
+        enemyAttack = GetComponent<EnemyAttack>();
     }
 
     void Update()
@@ -54,12 +56,12 @@ public class EnemyTargeting : MonoBehaviour
         if (controller.movingRight)
         {
             Gizmos.DrawLine(this.transform.position, this.transform.position + new Vector3(controller.lookingRange,0 , 0));
-            Gizmos.DrawLine(this.transform.position+ new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(controller.attackRange, 0.5f, 0));            
+            Gizmos.DrawLine(this.transform.position+ new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(enemyAttack.attackRange, 0.5f, 0));            
         }
         else
         {
             Gizmos.DrawLine(this.transform.position, this.transform.position + new Vector3(-controller.lookingRange,0 , 0));
-            Gizmos.DrawLine(this.transform.position+ new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(-controller.attackRange, 0.5f, 0));
+            Gizmos.DrawLine(this.transform.position+ new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(-enemyAttack.attackRange, 0.5f, 0));
         }
     }
 }
