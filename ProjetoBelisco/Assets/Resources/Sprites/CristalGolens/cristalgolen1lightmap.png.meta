@@ -1,0 +1,2534 @@
+fileFormatVersion: 2
+guid: 518e94fe0d928d64b873b0479d14f2e1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7008477225460669901
+    second: cristalgolen1lightmap_0
+  - first:
+      213: -4720950957290564569
+    second: cristalgolen1lightmap_1
+  - first:
+      213: -8576028680176185717
+    second: cristalgolen1lightmap_2
+  - first:
+      213: 8187730261933667859
+    second: cristalgolen1lightmap_3
+  - first:
+      213: 4632273373273209223
+    second: cristalgolen1lightmap_4
+  - first:
+      213: -8945328829730052911
+    second: cristalgolen1lightmap_5
+  - first:
+      213: -8861273265472291076
+    second: cristalgolen1lightmap_6
+  - first:
+      213: -1037375391626536079
+    second: cristalgolen1lightmap_7
+  - first:
+      213: 6926464848138553749
+    second: cristalgolen1lightmap_8
+  - first:
+      213: -219570460955017500
+    second: cristalgolen1lightmap_9
+  - first:
+      213: 8153177074490741363
+    second: cristalgolen1lightmap_10
+  - first:
+      213: 4062077048311214327
+    second: cristalgolen1lightmap_11
+  - first:
+      213: 5101474619977140590
+    second: cristalgolen1lightmap_12
+  - first:
+      213: -3773632721850642114
+    second: cristalgolen1lightmap_13
+  - first:
+      213: -2471914685040173138
+    second: cristalgolen1lightmap_14
+  - first:
+      213: -3142279081324750307
+    second: cristalgolen1lightmap_15
+  - first:
+      213: 9124669934026694105
+    second: cristalgolen1lightmap_16
+  - first:
+      213: -8776940356521129543
+    second: cristalgolen1lightmap_17
+  - first:
+      213: -584760060497545565
+    second: cristalgolen1lightmap_18
+  - first:
+      213: -6763654615524957087
+    second: cristalgolen1lightmap_19
+  - first:
+      213: 7508910860580661405
+    second: cristalgolen1lightmap_20
+  - first:
+      213: 3035784821122834534
+    second: cristalgolen1lightmap_21
+  - first:
+      213: -6374978647726554025
+    second: cristalgolen1lightmap_22
+  - first:
+      213: -413707624517929833
+    second: cristalgolen1lightmap_23
+  - first:
+      213: -7139314553069915465
+    second: cristalgolen1lightmap_24
+  - first:
+      213: 2848868840443635871
+    second: cristalgolen1lightmap_25
+  - first:
+      213: 1287236402873291834
+    second: cristalgolen1lightmap_26
+  - first:
+      213: -5552904160178584857
+    second: cristalgolen1lightmap_27
+  - first:
+      213: -7682618281080946368
+    second: cristalgolen1lightmap_28
+  - first:
+      213: 2381755524950792677
+    second: cristalgolen1lightmap_29
+  - first:
+      213: -3625116557198239571
+    second: cristalgolen1lightmap_30
+  - first:
+      213: -2789880316363170686
+    second: cristalgolen1lightmap_31
+  - first:
+      213: 4262217841023720443
+    second: cristalgolen1lightmap_32
+  - first:
+      213: 9068310344252425434
+    second: cristalgolen1lightmap_33
+  - first:
+      213: -6516781028053478957
+    second: cristalgolen1lightmap_34
+  - first:
+      213: -8652268490689925068
+    second: cristalgolen1lightmap_35
+  - first:
+      213: 2173639552854503611
+    second: cristalgolen1lightmap_36
+  - first:
+      213: -9122387104917208070
+    second: cristalgolen1lightmap_37
+  - first:
+      213: -6644463445920935538
+    second: cristalgolen1lightmap_38
+  - first:
+      213: 4210532434304907573
+    second: cristalgolen1lightmap_39
+  - first:
+      213: 2392854530973527445
+    second: cristalgolen1lightmap_40
+  - first:
+      213: 7566923816635699720
+    second: cristalgolen1lightmap_41
+  - first:
+      213: -5807492324089203973
+    second: cristalgolen1lightmap_42
+  - first:
+      213: 6535241894290168951
+    second: cristalgolen1lightmap_43
+  - first:
+      213: -5379504725291965907
+    second: cristalgolen1lightmap_44
+  - first:
+      213: 7025312789924027196
+    second: cristalgolen1lightmap_45
+  - first:
+      213: -3866956104975233125
+    second: cristalgolen1lightmap_46
+  - first:
+      213: -4703089766340937200
+    second: cristalgolen1lightmap_47
+  - first:
+      213: -8272626824520595259
+    second: cristalgolen1lightmap_48
+  - first:
+      213: -486195956731920620
+    second: cristalgolen1lightmap_49
+  - first:
+      213: -4366381411014292621
+    second: cristalgolen1lightmap_50
+  - first:
+      213: -6191568081554575992
+    second: cristalgolen1lightmap_51
+  - first:
+      213: -7842941479164355252
+    second: cristalgolen1lightmap_52
+  - first:
+      213: -6239651717006786209
+    second: cristalgolen1lightmap_53
+  - first:
+      213: 40879558309071445
+    second: cristalgolen1lightmap_54
+  - first:
+      213: 6231391137737086103
+    second: cristalgolen1lightmap_55
+  - first:
+      213: 2416001836811714449
+    second: cristalgolen1lightmap_56
+  - first:
+      213: -5256509765479106085
+    second: cristalgolen1lightmap_57
+  - first:
+      213: -4831642492753413247
+    second: cristalgolen1lightmap_58
+  - first:
+      213: -5555673601707163841
+    second: cristalgolen1lightmap_59
+  - first:
+      213: 5664827411059589171
+    second: cristalgolen1lightmap_60
+  - first:
+      213: -8711797425223817933
+    second: cristalgolen1lightmap_61
+  - first:
+      213: 3235251713600222282
+    second: cristalgolen1lightmap_62
+  - first:
+      213: 5063582974016614288
+    second: cristalgolen1lightmap_63
+  - first:
+      213: -8369120401815168738
+    second: cristalgolen1lightmap_64
+  - first:
+      213: -5703546919631487123
+    second: cristalgolen1lightmap_65
+  - first:
+      213: 2666449409053254791
+    second: cristalgolen1lightmap_66
+  - first:
+      213: 834355350911411706
+    second: cristalgolen1lightmap_67
+  - first:
+      213: 30791044381857706
+    second: cristalgolen1lightmap_68
+  - first:
+      213: -2764655529553061731
+    second: cristalgolen1lightmap_69
+  - first:
+      213: -7676758088356576810
+    second: cristalgolen1lightmap_70
+  - first:
+      213: -4679684171620856975
+    second: cristalgolen1lightmap_71
+  - first:
+      213: 2973503099329398514
+    second: cristalgolen1lightmap_72
+  - first:
+      213: 7140183279627797375
+    second: cristalgolen1lightmap_73
+  - first:
+      213: -5481162799441753838
+    second: cristalgolen1lightmap_74
+  - first:
+      213: -6593228417103835760
+    second: cristalgolen1lightmap_75
+  - first:
+      213: -343151809997326268
+    second: cristalgolen1lightmap_76
+  - first:
+      213: 6573819082496588917
+    second: cristalgolen1lightmap_77
+  - first:
+      213: -9001251262012073649
+    second: cristalgolen1lightmap_78
+  - first:
+      213: 7909124390751077903
+    second: cristalgolen1lightmap_79
+  - first:
+      213: 1332408971888908297
+    second: cristalgolen1lightmap_80
+  - first:
+      213: 29532802676133899
+    second: cristalgolen1lightmap_81
+  - first:
+      213: 5817990514615979308
+    second: cristalgolen1lightmap_82
+  - first:
+      213: -8045522346502987301
+    second: cristalgolen1lightmap_83
+  - first:
+      213: 5938594476690014184
+    second: cristalgolen1lightmap_84
+  - first:
+      213: -542003059326618142
+    second: cristalgolen1lightmap_85
+  - first:
+      213: 4107665791965642862
+    second: cristalgolen1lightmap_86
+  - first:
+      213: 8775478295905975948
+    second: cristalgolen1lightmap_87
+  - first:
+      213: -4002456116688742495
+    second: cristalgolen1lightmap_88
+  - first:
+      213: 4653157508640381441
+    second: cristalgolen1lightmap_89
+  - first:
+      213: 4420689633557402822
+    second: cristalgolen1lightmap_0
+  - first:
+      213: -6667722735882215381
+    second: cristalgolen1lightmap_1
+  - first:
+      213: -4416077887766078426
+    second: cristalgolen1lightmap_2
+  - first:
+      213: -7408812517851020119
+    second: cristalgolen1lightmap_3
+  - first:
+      213: 7992727834170356948
+    second: cristalgolen1lightmap_4
+  - first:
+      213: 512446515075909586
+    second: cristalgolen1lightmap_5
+  - first:
+      213: -5052045599293194019
+    second: cristalgolen1lightmap_6
+  - first:
+      213: -6102993830779425529
+    second: cristalgolen1lightmap_7
+  - first:
+      213: 4554417653080533118
+    second: cristalgolen1lightmap_8
+  - first:
+      213: -4589030623223350487
+    second: cristalgolen1lightmap_9
+  - first:
+      213: -7020483888031309774
+    second: cristalgolen1lightmap_10
+  - first:
+      213: 6102316649776266921
+    second: cristalgolen1lightmap_11
+  - first:
+      213: 6830075181570921042
+    second: cristalgolen1lightmap_12
+  - first:
+      213: 3517050966252920231
+    second: cristalgolen1lightmap_13
+  - first:
+      213: 7756683864209304494
+    second: cristalgolen1lightmap_14
+  - first:
+      213: 8326714246197410576
+    second: cristalgolen1lightmap_15
+  - first:
+      213: -495040141117041893
+    second: cristalgolen1lightmap_16
+  - first:
+      213: -61836586976956760
+    second: cristalgolen1lightmap_17
+  - first:
+      213: -8655191739795454130
+    second: cristalgolen1lightmap_18
+  - first:
+      213: -8017442679094702423
+    second: cristalgolen1lightmap_19
+  - first:
+      213: 169190387698653669
+    second: cristalgolen1lightmap_20
+  - first:
+      213: -6506438858737163320
+    second: cristalgolen1lightmap_21
+  - first:
+      213: -8951710137213384249
+    second: cristalgolen1lightmap_22
+  - first:
+      213: 8346602427665096034
+    second: cristalgolen1lightmap_23
+  - first:
+      213: 1736884297826913794
+    second: cristalgolen1lightmap_24
+  - first:
+      213: 4165350031051620181
+    second: cristalgolen1lightmap_25
+  - first:
+      213: -4851293258266322551
+    second: cristalgolen1lightmap_26
+  - first:
+      213: -2665995576716414832
+    second: cristalgolen1lightmap_27
+  - first:
+      213: -9163811016372500121
+    second: cristalgolen1lightmap_28
+  - first:
+      213: 1033599356680625422
+    second: cristalgolen1lightmap_29
+  - first:
+      213: 8349484749048033505
+    second: cristalgolen1lightmap_30
+  - first:
+      213: 3724793645085883003
+    second: cristalgolen1lightmap_31
+  - first:
+      213: -2473773058924884578
+    second: cristalgolen1lightmap_32
+  - first:
+      213: -7593267725909703313
+    second: cristalgolen1lightmap_33
+  - first:
+      213: 1781820743462982728
+    second: cristalgolen1lightmap_34
+  - first:
+      213: 6964198455549491103
+    second: cristalgolen1lightmap_35
+  - first:
+      213: -6783656564446788752
+    second: cristalgolen1lightmap_36
+  - first:
+      213: 6823528873399837216
+    second: cristalgolen1lightmap_37
+  - first:
+      213: 8955994327651981014
+    second: cristalgolen1lightmap_38
+  - first:
+      213: -8468373402443395302
+    second: cristalgolen1lightmap_39
+  - first:
+      213: -1885704911755333203
+    second: cristalgolen1lightmap_40
+  - first:
+      213: -5186769447458433150
+    second: cristalgolen1lightmap_41
+  - first:
+      213: -2624922669418146722
+    second: cristalgolen1lightmap_42
+  - first:
+      213: 6654074433777610545
+    second: cristalgolen1lightmap_43
+  - first:
+      213: -5130896013200188487
+    second: cristalgolen1lightmap_44
+  - first:
+      213: 6235942978462119006
+    second: cristalgolen1lightmap_45
+  - first:
+      213: 4921101600167093316
+    second: cristalgolen1lightmap_46
+  - first:
+      213: -7069383600128138133
+    second: cristalgolen1lightmap_47
+  - first:
+      213: -6767966403595832478
+    second: cristalgolen1lightmap_48
+  - first:
+      213: -8514531085484247658
+    second: cristalgolen1lightmap_49
+  - first:
+      213: 5344769314890130774
+    second: cristalgolen1lightmap_50
+  - first:
+      213: -6179546027188336275
+    second: cristalgolen1lightmap_51
+  - first:
+      213: 1582120699464255423
+    second: cristalgolen1lightmap_52
+  - first:
+      213: 4924972777488269700
+    second: cristalgolen1lightmap_53
+  - first:
+      213: -7199367601051563476
+    second: cristalgolen1lightmap_54
+  - first:
+      213: 605265117596538332
+    second: cristalgolen1lightmap_55
+  - first:
+      213: 4140405042283226707
+    second: cristalgolen1lightmap_56
+  - first:
+      213: 7114172248127686874
+    second: cristalgolen1lightmap_57
+  - first:
+      213: -579776030567375089
+    second: cristalgolen1lightmap_58
+  - first:
+      213: 3615496410235921330
+    second: cristalgolen1lightmap_59
+  - first:
+      213: 3613288355419013948
+    second: cristalgolen1lightmap_60
+  - first:
+      213: 5658053705602993663
+    second: cristalgolen1lightmap_61
+  - first:
+      213: -7598806838988556122
+    second: cristalgolen1lightmap_62
+  - first:
+      213: -3711772622761256810
+    second: cristalgolen1lightmap_63
+  - first:
+      213: 1088429911871203311
+    second: cristalgolen1lightmap_64
+  - first:
+      213: 7263482207781437264
+    second: cristalgolen1lightmap_65
+  - first:
+      213: 8908717533075872600
+    second: cristalgolen1lightmap_66
+  - first:
+      213: -75648523794123669
+    second: cristalgolen1lightmap_67
+  - first:
+      213: -8557990715515307203
+    second: cristalgolen1lightmap_68
+  - first:
+      213: 2888989356085809177
+    second: cristalgolen1lightmap_69
+  - first:
+      213: -7596481111859742696
+    second: cristalgolen1lightmap_70
+  - first:
+      213: -8092633232527394929
+    second: cristalgolen1lightmap_71
+  - first:
+      213: 7272407660270370331
+    second: cristalgolen1lightmap_72
+  - first:
+      213: 2895699872652860735
+    second: cristalgolen1lightmap_73
+  - first:
+      213: 4834947753384941211
+    second: cristalgolen1lightmap_74
+  - first:
+      213: 8498192360811719636
+    second: cristalgolen1lightmap_75
+  - first:
+      213: 8475823544099735785
+    second: cristalgolen1lightmap_76
+  - first:
+      213: 8037865163654563181
+    second: cristalgolen1lightmap_77
+  - first:
+      213: -8712112459448525068
+    second: cristalgolen1lightmap_78
+  - first:
+      213: 5501898217784931038
+    second: cristalgolen1lightmap_79
+  - first:
+      213: -3914048119135241567
+    second: cristalgolen1lightmap_80
+  - first:
+      213: 8180495870688170554
+    second: cristalgolen1lightmap_81
+  - first:
+      213: -7670321960467774047
+    second: cristalgolen1lightmap_82
+  - first:
+      213: 5691934789958414223
+    second: cristalgolen1lightmap_83
+  - first:
+      213: -4891834259850553436
+    second: cristalgolen1lightmap_84
+  - first:
+      213: 680332054815925892
+    second: cristalgolen1lightmap_85
+  - first:
+      213: -8386635710166219754
+    second: cristalgolen1lightmap_86
+  - first:
+      213: 7245920680339872965
+    second: cristalgolen1lightmap_87
+  - first:
+      213: -4998996305602918085
+    second: cristalgolen1lightmap_88
+  - first:
+      213: -7767931637938982389
+    second: cristalgolen1lightmap_89
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4d076ccc1795d30800000000000000
+      internalID: 4420689633557402822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 768
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20e1f2bf7d7773a0800000000000000
+      internalID: -6667722735882215381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 768
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62cde37fe80f6b2c0800000000000000
+      internalID: -4416077887766078426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 768
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4c502c44c9e2990800000000000000
+      internalID: -7408812517851020119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4f91e2e9fdbee60800000000000000
+      internalID: 7992727834170356948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 768
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d78c71f3639c1700800000000000000
+      internalID: 512446515075909586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 768
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0cd095b4783e9b0800000000000000
+      internalID: -5052045599293194019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_7
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 768
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70dedf9227fcd4ba0800000000000000
+      internalID: -6102993830779425529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_8
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7822a2a9ba843f30800000000000000
+      internalID: 4554417653080533118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_9
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 768
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bf16f36fc7050c0800000000000000
+      internalID: -4589030623223350487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2306a86991b329e90800000000000000
+      internalID: -7020483888031309774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aebdd859a8cfa450800000000000000
+      internalID: 6102316649776266921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2521fbab03d49ce50800000000000000
+      internalID: 6830075181570921042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_13
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad137c38331fc030800000000000000
+      internalID: 3517050966252920231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab2339b0e645ab60800000000000000
+      internalID: 7756683864209304494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bf7c67d7e6e8370800000000000000
+      internalID: 8326714246197410576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_16
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13d82f4d934129f0800000000000000
+      internalID: -495040141117041893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_17
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aead17a3ff442ff0800000000000000
+      internalID: -61836586976956760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_18
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47c89648f492e780800000000000000
+      internalID: -8655191739795454130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_19
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 672
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae01819c525cb090800000000000000
+      internalID: -8017442679094702423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9503ed2c5195200800000000000000
+      internalID: 169190387698653669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c36c20a45c74b5a0800000000000000
+      internalID: -6506438858737163320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c90223fe0325c380800000000000000
+      internalID: -8951710137213384249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_23
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d146e8fa615d370800000000000000
+      internalID: 8346602427665096034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e4de30117aa1810800000000000000
+      internalID: 1736884297826913794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_25
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f7ef5c8cb4ec930800000000000000
+      internalID: 4165350031051620181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_26
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989d9cf1c7ebcacb0800000000000000
+      internalID: -4851293258266322551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_27
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0903e05e52b700bd0800000000000000
+      internalID: -2665995576716414832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_28
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7694e4cbe6a93d080800000000000000
+      internalID: -9163811016372500121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_29
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d550f7325185e00800000000000000
+      internalID: 1033599356680625422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0bc8c44245fd370800000000000000
+      internalID: 8349484749048033505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7af9fcd51021b330800000000000000
+      internalID: 3724793645085883003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9dc9df62846badd0800000000000000
+      internalID: -2473773058924884578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_33
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65c6b0fb3b4f9690800000000000000
+      internalID: -7593267725909703313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_34
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 480
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8449883968c4ab810800000000000000
+      internalID: 1781820743462982728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_35
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97f950f89dc5a060800000000000000
+      internalID: 6964198455549491103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_36
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 480
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07307e5cb4c9bd1a0800000000000000
+      internalID: -6783656564446788752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_37
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 480
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0226e959b5b02be50800000000000000
+      internalID: 6823528873399837216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_38
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 480
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d61c1ed3651a4c70800000000000000
+      internalID: 8955994327651981014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_39
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 480
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1fcef1024b4a7a80800000000000000
+      internalID: -8468373402443395302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da13d97af51a4d5e0800000000000000
+      internalID: -1885704911755333203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_41
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28714601ba4e408b0800000000000000
+      internalID: -5186769447458433150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5416765db6629bd0800000000000000
+      internalID: -2624922669418146722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_43
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13fa2565175085c50800000000000000
+      internalID: 6654074433777610545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_44
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb1cb9b2456bc8b0800000000000000
+      internalID: -5130896013200188487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_45
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5473d679158a8650800000000000000
+      internalID: 6235942978462119006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_46
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444e09d05d34b4440800000000000000
+      internalID: 4921101600167093316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_47
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64e365221184ed90800000000000000
+      internalID: -7069383600128138133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_48
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26374e50a6a5312a0800000000000000
+      internalID: -6767966403595832478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_49
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695b0b4f61f46d980800000000000000
+      internalID: -8514531085484247658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6552f64cf5f6c2a40800000000000000
+      internalID: 5344769314890130774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69434001a7dd3aa0800000000000000
+      internalID: -6179546027188336275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_52
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb70c5bc462d4f510800000000000000
+      internalID: 1582120699464255423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_53
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48148a2c5a4095440800000000000000
+      internalID: 4924972777488269700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a8ddb8f45b61c90800000000000000
+      internalID: -7199367601051563476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_55
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5d649ea65566800800000000000000
+      internalID: 605265117596538332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_56
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356278bf27ca57930800000000000000
+      internalID: 4140405042283226707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_57
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8c79897fd9ab260800000000000000
+      internalID: 7114172248127686874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_58
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fdeb0a5c834f7f0800000000000000
+      internalID: -579776030567375089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_59
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3efc254d2dc2230800000000000000
+      internalID: 3615496410235921330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c334ecf7d9af42230800000000000000
+      internalID: 3613288355419013948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_61
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd8c8a1ed1758e40800000000000000
+      internalID: 5658053705602993663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_62
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8374da07d9b8690800000000000000
+      internalID: -7598806838988556122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_63
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6989b4527722d7cc0800000000000000
+      internalID: -3711772622761256810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_64
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe72ef3fc31ea1f00800000000000000
+      internalID: 1088429911871203311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_65
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fbe2b95921dc460800000000000000
+      internalID: 7263482207781437264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_66
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b184b556f12ab70800000000000000
+      internalID: 8908717533075872600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_67
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64f773811e33fef0800000000000000
+      internalID: -75648523794123669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_68
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b7e9259c8eb3980800000000000000
+      internalID: -8557990715515307203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_69
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91011694380c71820800000000000000
+      internalID: 2888989356085809177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818b2a83da0e39690800000000000000
+      internalID: -7596481111859742696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_71
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87fead93f031bf80800000000000000
+      internalID: -8092633232527394929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_72
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ebe347c38cce460800000000000000
+      internalID: 7272407660270370331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_73
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d1e9d21b79f2820800000000000000
+      internalID: 2895699872652860735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_74
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9615147d5f291340800000000000000
+      internalID: 4834947753384941211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_75
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbee134de4afe570800000000000000
+      internalID: 8498192360811719636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_76
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e805f44b9c20a570800000000000000
+      internalID: 8475823544099735785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_77
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d650e18a7cb3c8f60800000000000000
+      internalID: 8037865163654563181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_78
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fed05b70eb581780800000000000000
+      internalID: -8712112459448525068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_79
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2fc6d574baa5c40800000000000000
+      internalID: 5501898217784931038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa782129f18ea9c0800000000000000
+      internalID: -3914048119135241567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_81
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a321beaf6a5f68170800000000000000
+      internalID: 8180495870688170554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_82
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5c079e0da8d8590800000000000000
+      internalID: -7670321960467774047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_83
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fa828c880ddfe40800000000000000
+      internalID: 5691934789958414223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_84
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a79581a8a6bc1cb0800000000000000
+      internalID: -4891834259850553436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_85
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4866d983666017900800000000000000
+      internalID: 680332054815925892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_86
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614cfe2814fac9b80800000000000000
+      internalID: -8386635710166219754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_87
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc905ed77eae8460800000000000000
+      internalID: 7245920680339872965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_88
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b394c0b885fff9ab0800000000000000
+      internalID: -4998996305602918085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cristalgolen1lightmap_89
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02f021e453c23490800000000000000
+      internalID: -7767931637938982389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
