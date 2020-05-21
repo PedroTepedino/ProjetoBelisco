@@ -9,7 +9,7 @@ public class BasicEnemy : EnemyController
     {
         if (targeting.hasTarget)
         {
-            if (actualState != "alert" && actualState != "attack")
+            if (actualState != "alert" && actualState != "attack" && actualState != "chase")
             {
                 this.stateMachine.ChangeState(new AlertState(this.gameObject));
             }

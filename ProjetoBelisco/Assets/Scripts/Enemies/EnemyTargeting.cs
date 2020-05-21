@@ -51,7 +51,7 @@ public class EnemyTargeting : MonoBehaviour
         if (controller == null)
             return;
         
-        Gizmos.color = Color.blue;
+        Gizmos.color = Color.yellow;
 
         if (controller.movingRight)
         {

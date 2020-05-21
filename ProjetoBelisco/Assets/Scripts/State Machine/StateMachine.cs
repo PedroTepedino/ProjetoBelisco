@@ -33,6 +33,7 @@ public class StateMachine : MonoBehaviour
         this.previousState = currentState;
         this.currentState = newState;
         this.currentState.EnterState();
+        Debug.Log(currentState);
     }
 
     /* Function: GetCurrentState

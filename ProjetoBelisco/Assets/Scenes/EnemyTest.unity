@@ -145,7 +145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24110391}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0.63, y: -0.019, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 429274110}
@@ -1186,6 +1186,7 @@ GameObject:
   - component: {fileID: 429274108}
   - component: {fileID: 429274113}
   - component: {fileID: 429274115}
+  - component: {fileID: 429274116}
   - component: {fileID: 429274114}
   - component: {fileID: 429274107}
   - component: {fileID: 429274112}
@@ -1250,12 +1251,9 @@ MonoBehaviour:
   targeting: {fileID: 0}
   actualState: 
   movingRight: 1
-  movingSpeed: 5
-  lookingRange: 2
-  attackRange: 1
-  attackSpeed: 1
+  movingSpeed: 1
+  lookingRange: 3
   alertAnimationTime: 0
-  attackDamage: 1
 --- !u!4 &429274110
 Transform:
   m_ObjectHideFlags: 0
@@ -1264,7 +1262,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429274106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.67, y: -2.51, z: 0}
+  m_LocalPosition: {x: -1.09, y: -2.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1901180300}
@@ -1393,6 +1391,36 @@ MonoBehaviour:
   _targetingLayerMask:
     serializedVersion: 2
     m_Bits: 4352
+--- !u!114 &429274116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429274106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af54d0fd437a7947a31869b5bbfbd08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPoint: {x: 0.7, y: 0}
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4352
+  attackRange: 1
+  attackSpeed: 2
+  meleeAttack: 1
+  explosionAttack: 1
+  rangedAttack: 0
+  meleeAtttackChance: 1
+  meleeAttackRadius: 0.4
+  meleeAttackDamage: 1
+  explosionAtttackChance: 1
+  explosionAttackRadius: 2
+  explosionAttackDamage: 10
+  rangedAtttackChance: 100
+  rangeAttackDamage: 1
+  rangeAttackProjectile: {fileID: 0}
 --- !u!1 &490606561
 GameObject:
   m_ObjectHideFlags: 0

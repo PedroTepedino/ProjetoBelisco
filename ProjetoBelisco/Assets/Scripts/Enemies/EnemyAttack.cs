@@ -7,39 +7,50 @@ public class EnemyAttack : MonoBehaviour
 {
     [FoldoutGroup("Parameters")] [SerializeField] private Vector2 attackPoint;
     [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask collisionLayerMask;
-    [FoldoutGroup("Parameters")] [SerializeField] public float attackRange { get; private set; } = 1f;
-    [FoldoutGroup("Parameters")] [SerializeField] public float attackSpeed { get; private set; } = 1f;
-    [FoldoutGroup("Parameters")] [SerializeField] private bool meleeAttack = false;
-    [FoldoutGroup("Parameters")] [SerializeField] private bool explosionAttack = false;
-    [FoldoutGroup("Parameters")] [SerializeField] private bool rangedAttack = false;
+    [FoldoutGroup("Parameters")] [SerializeField] public float attackRange = 1f;
+    [FoldoutGroup("Parameters")] [SerializeField] public float attackSpeed = 1f;
 
-    [FoldoutGroup("Melee Attack Parameters")] [SerializeField] [Range(0, 100)] private int meleeAtttackChance = 100;
-    [FoldoutGroup("Melee Attack Parameters")] [SerializeField] private float meleeAttackRadius = 1f;
-    [FoldoutGroup("Melee Attack Parameters")] [SerializeField] private int meleeAttackDamage = 1;
+    [FoldoutGroup("Attacks Parameters")] [SerializeField] private bool meleeAttack = false;
+    [FoldoutGroup("Attacks Parameters")] [SerializeField] private bool explosionAttack = false;
+    [FoldoutGroup("Attacks Parameters")] [SerializeField] private bool rangedAttack = false;
 
-    [FoldoutGroup("Melee Attack Parameters")] [SerializeField] [Range(0, 100)] private int explosionAtttackChance = 100;
-    [FoldoutGroup("Explosion AttackParameters")] [SerializeField] private float explosionAttackRadius = 1f;
-    [FoldoutGroup("Explosion Attack Parameters")] [SerializeField] private int explosionAttackDamage = 1;
+    [FoldoutGroup("Attacks Parameters/Melee Attack Parameters")] [SerializeField] [Range(1, 100)] private int meleeAtttackChance = 0;
+    [FoldoutGroup("Attacks Parameters/Melee Attack Parameters")] [SerializeField] private float meleeAttackRadius = 1f;
+    [FoldoutGroup("Attacks Parameters/Melee Attack Parameters")] [SerializeField] private int meleeAttackDamage = 1;
+    
 
-    [FoldoutGroup("Melee Attack Parameters")] [SerializeField] [Range(0, 100)] private int rangedAtttackChance = 100;
-    [FoldoutGroup("Range Attack Parameters")] [SerializeField] private int rangeAttackDamage = 1;
-    [FoldoutGroup("Range Attack Parameters")] [SerializeField] private GameObject rangeAttackProjectile;
+    [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")] [SerializeField] [Range(1, 100)] private int explosionAtttackChance = 0;
+    [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")] [SerializeField] private float explosionAttackRadius = 1f;
+    [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")] [SerializeField] private int explosionAttackDamage = 1;
 
-    private List<int> attacksChances;
+    [FoldoutGroup("Attacks Parameters/Range Attack Parameters")] [SerializeField] [Range(1, 100)] private int rangedAtttackChance = 0;
+    [FoldoutGroup("Attacks Parameters/Range Attack Parameters")] [SerializeField] private int rangeAttackDamage = 1;
+    [FoldoutGroup("Attacks Parameters/Range Attack Parameters")] [SerializeField] private GameObject rangeAttackProjectile;
+
+    private List<int> attacksChances = new List<int>();
 
     private void Start()
     {
         if (meleeAttack)
         {
-            attacksChances.Add(0);
+            for (int i = 0; i < meleeAtttackChance ; i++)
+            {
+                attacksChances.Add(0);
+            }
         }
         if (explosionAttack)
         {
-            attacksChances.Add(1);
+            for (int i = 0; i < explosionAtttackChance ; i++)
+            {
+                attacksChances.Add(1);
+            }
         }
         if (rangedAttack)
         {
-            attacksChances.Add(2);
+            for (int i = 0; i < rangedAtttackChance ; i++)
+            {
+                attacksChances.Add(2);
+            }
         }
 
     }
@@ -70,7 +81,7 @@ public class EnemyAttack : MonoBehaviour
         Collider2D hit = CheckHit(rayHits);
         if (hit != null)
         {
-            //damage
+            Debug.Log("melee");
             hit.gameObject.GetComponent<PlayerLife>().Damage(meleeAttackDamage);
         }
     }
@@ -81,7 +92,7 @@ public class EnemyAttack : MonoBehaviour
         Collider2D hit = CheckHit(rayHits);
         if (hit != null)
         {
-            //damage
+            Debug.Log("explosion");
             hit.gameObject.GetComponent<PlayerLife>().Damage(explosionAttackDamage);
         }
     }
@@ -109,5 +120,18 @@ public class EnemyAttack : MonoBehaviour
             }
         }
         return null;
+    }
+
+    protected void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        if (meleeAttack)
+        {
+            Gizmos.DrawWireSphere(this.transform.position+new Vector3(attackPoint.x, attackPoint.y, 0), meleeAttackRadius);
+        }
+        if (explosionAttack)
+        {
+            Gizmos.DrawWireSphere(this.transform.position, explosionAttackRadius);
+        }
     }
 }
