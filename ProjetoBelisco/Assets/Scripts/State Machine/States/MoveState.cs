@@ -20,7 +20,7 @@ public class MoveState : IState
     private EnemyController controllerOwner;
     private EnemyGrounder grounder;
     private EnemyWallChecker wallCheck;
-    private Vector2 movement;
+    private Vector2 movement = new Vector2();
     private bool groundCheck;
      
 
@@ -65,7 +65,6 @@ public class MoveState : IState
 
         if (grounder.isGrounded && !wallCheck.wallAhead)
         {
-
             movement.Set(controllerOwner.movingRight ? controllerOwner.movingSpeed : -controllerOwner.movingSpeed , controllerOwner.rigidbody.velocity.y);
             controllerOwner.rigidbody.velocity = movement;
         }

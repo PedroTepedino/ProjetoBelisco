@@ -31,7 +31,7 @@ public class EnemyGrounder : MonoBehaviour
         _checkerCenter = this.transform.position + new Vector3(controller.movingRight ? _grounderCenter.x : -_grounderCenter.x , _grounderCenter.y, 0);
         raycastHit2D = Physics2D.Raycast(_checkerCenter, Vector2.down, _grounderSize, _groundLayerMask);
 
-        return raycastHit2D.collider != null ? true : false;
+        return raycastHit2D.collider != null;
     }
 
     protected void OnDrawGizmos()
