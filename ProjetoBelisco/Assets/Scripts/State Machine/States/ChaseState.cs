@@ -11,6 +11,7 @@ public class ChaseState : IState
     private EnemyGrounder grounder;
     private EnemyWallChecker wallCheck;
     private Vector2 movement;
+    private EnemyAttack enemyAttack;
 
     public ChaseState(GameObject owner){
         ownerGameObject = owner;
@@ -19,6 +20,7 @@ public class ChaseState : IState
     public void EnterState(){
         controllerOwner.actualState = "chase";
         ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
+        enemyAttack = ownerGameObject.GetComponent<EnemyAttack>();
         grounder = ownerGameObject.GetComponent<EnemyGrounder>();
         wallCheck = ownerGameObject.GetComponent<EnemyWallChecker>();
         target = controllerOwner.targeting.target;
@@ -30,10 +32,14 @@ public class ChaseState : IState
 
         if (target != null)
         {
-            if (Vector2.Distance(ownerGameObject.transform.position, target.position) <= controllerOwner.attackRange)
+            Debug.Log(target);
+            Debug.Log(Vector2.Distance(ownerGameObject.transform.position, target.position) <= enemyAttack.attackRange);
+            if (Vector2.Distance(ownerGameObject.transform.position, target.position) <= enemyAttack.attackRange)
             {
+                
                 if (controllerOwner.actualState != "attack")
                 {
+                    Debug.Log("atk");
                     controllerOwner.stateMachine.ChangeState(new AttackState(ownerGameObject));
                 }
             }
@@ -53,7 +59,7 @@ public class ChaseState : IState
                 {
                     if (grounder.isGrounded && wallCheck.wallAhead)
                     {
-                        controllerOwner.movingRight = true;
+                        controllerOwner.movingRight = false;
                         movement.Set(-controllerOwner.movingSpeed, controllerOwner.rigidbody.velocity.y);
                         controllerOwner.rigidbody.velocity = movement;
                     }
