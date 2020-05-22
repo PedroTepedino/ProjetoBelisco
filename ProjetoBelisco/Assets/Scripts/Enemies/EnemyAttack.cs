@@ -1,7 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Security.Cryptography;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using Debug = UnityEngine.Debug;
+using Random = UnityEngine.Random;
 
 public class EnemyAttack : MonoBehaviour
 {
@@ -28,6 +33,15 @@ public class EnemyAttack : MonoBehaviour
     [FoldoutGroup("Attacks Parameters/Range Attack Parameters")] [SerializeField] private GameObject rangeAttackProjectile;
 
     private List<int> attacksChances = new List<int>();
+
+    public Action<int> OnAttack;
+
+    private EnemyController _enemyController;
+
+    private void Awake()
+    {
+        _enemyController = this.GetComponent<EnemyController>();
+    }
 
     private void Start()
     {
@@ -62,11 +76,13 @@ public class EnemyAttack : MonoBehaviour
             int choice = Random.Range(0, attacksChances.Count);
             if (attacksChances[choice] == 0)
             {
-                MeleeAttack();
+                OnAttack?.Invoke(0);
+                //MeleeAttack();
             }
             else if (attacksChances[choice] == 1)
             {
-                ExplosionAttack();
+                OnAttack?.Invoke(1);
+                //ExplosionAttack();
             }
             else if (attacksChances[choice] == 2)
             {
@@ -75,9 +91,21 @@ public class EnemyAttack : MonoBehaviour
         }
     }
 
+    private void ListenAttackFinished(int index)
+    {
+        if (index == 0)
+        {
+            MeleeAttack();
+        }
+        else if (index == 1)
+        {
+            ExplosionAttack();
+        }
+    }
+
     private void MeleeAttack()
     {
-        Collider2D[] rayHits = Physics2D.OverlapCircleAll(attackPoint, meleeAttackRadius, collisionLayerMask);
+        Collider2D[] rayHits = Physics2D.OverlapCircleAll((Vector2)(this.transform.position) + (_enemyController.movingRight? attackPoint : -attackPoint), meleeAttackRadius, collisionLayerMask);
         Collider2D hit = CheckHit(rayHits);
         if (hit != null)
         {
