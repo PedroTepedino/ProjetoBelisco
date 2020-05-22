@@ -23,6 +23,8 @@ public abstract class EnemyController : MonoBehaviour
     public float movingSpeed = 5;
     public float lookingRange = 5;
     public float alertAnimationTime = 0;
+    public float maxStopTime = 0;
+    public float minTimeBetweenStops = 3;
 
 
     private void Start()

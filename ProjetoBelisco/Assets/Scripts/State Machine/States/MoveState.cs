@@ -22,6 +22,11 @@ public class MoveState : IState
     private EnemyWallChecker wallCheck;
     private Vector2 movement;
     private bool groundCheck;
+    private float timer;
+    private float timerBetweeneStops;
+    private float timeToWait;
+    private float maxStopTime;
+    private float minTimeBetweenStops;
      
 
     // Group: Functions
@@ -47,6 +52,10 @@ public class MoveState : IState
         controllerOwner.actualState = "move";
         grounder = ownerGameObject.GetComponent<EnemyGrounder>();
         wallCheck = ownerGameObject.GetComponent<EnemyWallChecker>();
+        maxStopTime = controllerOwner.maxStopTime;
+        minTimeBetweenStops = controllerOwner.minTimeBetweenStops;
+        timeToWait = 0;
+        timer = 0;
     }
 
     /*Function: ExitState
@@ -62,26 +71,50 @@ public class MoveState : IState
      */
     public void RunState()
     {
+        timer += Time.deltaTime;
+        timerBetweeneStops += Time.deltaTime;
+        int chanceToStop;
+        chanceToStop = Random.Range(0,10);
 
         if (grounder.isGrounded && !wallCheck.wallAhead)
         {
-
-            movement.Set(controllerOwner.movingRight ? controllerOwner.movingSpeed : -controllerOwner.movingSpeed , controllerOwner.rigidbody.velocity.y);
-            controllerOwner.rigidbody.velocity = movement;
-        }
-        else
-        {
-            if (controllerOwner.movingRight)
+            if (timer >= timeToWait)
             {
-                ownerGameObject.transform.eulerAngles = new Vector3(0, -180, 0);
-                controllerOwner.movingRight = false;
+                Move();
             }
             else
             {
-                ownerGameObject.transform.eulerAngles = new Vector3(0, 0, 0);
-                controllerOwner.movingRight = true;
+                if (timerBetweeneStops > minTimeBetweenStops)
+                {
+                    Stop();
+                }
             }
         }
+        else
+        {
+            Stop();
+            Flip();
+        }
+    }
+
+    private void Stop()
+    {
+        controllerOwner.rigidbody.velocity = Vector2.zero;
+        timerBetweeneStops = 0;
+    }
+    private void Move()
+    {
+        movement.Set(controllerOwner.movingRight ? controllerOwner.movingSpeed : -controllerOwner.movingSpeed, controllerOwner.rigidbody.velocity.y);
+        controllerOwner.rigidbody.velocity = movement;
+        timeToWait = Random.Range(0, maxStopTime);
+        timer = 0;
+        Debug.Log(timeToWait);
+    }
+
+    private void Flip()
+    {
+        ownerGameObject.transform.eulerAngles = new Vector3(0, controllerOwner.movingRight ? -180 : 0, 0);
+        controllerOwner.movingRight = controllerOwner.movingRight ? false : true;
     }
     /* See Also:
      */
