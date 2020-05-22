@@ -13,7 +13,6 @@ public class BasicEnemy : EnemyController
             {
                 this.stateMachine.ChangeState(new AlertState(this.gameObject));
             }
-            
         }
         this.stateMachine.RunStateUpdate();
     }

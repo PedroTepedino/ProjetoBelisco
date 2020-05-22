@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.NetworkInformation;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class PlayerAnimationController : MonoBehaviour
@@ -21,11 +22,15 @@ public class PlayerAnimationController : MonoBehaviour
         _spriteRenderer = _animator.gameObject.GetComponent<SpriteRenderer>();
         _comboManager = this.GetComponent<PlayerComboManager>();
         PlayerAttackSystem.OnAttack += TriggerAttackAnimation;
+        PlayerLife.OnPlayerDamage += ListenOnPlayerDamage;
+        PlayerLife.OnPlayerDie += ListenOnPlayerDeath;
     }
 
     private void OnDestroy()
     {
         PlayerAttackSystem.OnAttack -= TriggerAttackAnimation;
+        PlayerLife.OnPlayerDamage -= ListenOnPlayerDamage;
+        PlayerLife.OnPlayerDie -= ListenOnPlayerDeath;
     }
 
     private void Update()
@@ -59,9 +64,30 @@ public class PlayerAnimationController : MonoBehaviour
         _animator.SetBool("Falling", !PlayerGrounder.IsTouchingGround);
     }
         
-    private void TriggerAttackAnimation()
+    private void TriggerAttackAnimation(Directions dir)
     {
-        _animator.SetTrigger("Attack");
-        _animator.SetInteger("Combo", _comboManager.CurrentComboCount);
+        if (dir == Directions.Left || dir == Directions.Right || dir == Directions.Null)
+        {
+            _animator.SetTrigger("Attack");
+            _animator.SetInteger("Combo", _comboManager.CurrentComboCount);
+        }
+        else if (dir == Directions.Up)
+        {
+            _animator.SetTrigger("AttackUp");
+        }
+        else if (dir == Directions.Down)
+        {
+            _animator.SetTrigger("AttackDown");
+        }
+    }
+
+    private void ListenOnPlayerDamage(int damage, int maxHealth)
+    {
+        _animator.SetTrigger("Hit");
+    }
+
+    private void ListenOnPlayerDeath()
+    {
+        _animator.SetTrigger("Death");
     }
 }

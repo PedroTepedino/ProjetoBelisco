@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using UnityEngine.Rendering.UI;
 
 public class PlayerAttackSystem : BaseAttackSystem
 {
@@ -32,7 +33,7 @@ public class PlayerAttackSystem : BaseAttackSystem
     private PlayerJump _playerJump;
     
     public static System.Action OnDamage;
-    public static System.Action OnAttack;
+    public static System.Action<Directions> OnAttack;
 
     private void Awake()
     {
@@ -46,7 +47,12 @@ public class PlayerAttackSystem : BaseAttackSystem
 
     public void Attack(Directions dir, int damage = -1)
     {
-        OnAttack?.Invoke();
+        if (dir == Directions.Down && PlayerGrounder.IsTouchingGround)
+        {
+            dir = Directions.Null;
+        }
+
+        OnAttack?.Invoke(dir);
 
         Collider2D[] enemies = CheckCollision(dir);
 
