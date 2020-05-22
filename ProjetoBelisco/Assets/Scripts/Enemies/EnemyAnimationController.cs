@@ -8,6 +8,9 @@ public class EnemyAnimationController : MonoBehaviour
     private EnemyAttack _enemyAttack;
     private EnemyLife _enemyLife;
 
+    [SerializeField] private bool _useVelocity = true;
+    [SerializeField] private bool _useAttackMode = true;
+
     private void Awake()
     {
         _animator = this.GetComponentInChildren<Animator>();
@@ -28,9 +31,17 @@ public class EnemyAnimationController : MonoBehaviour
 
     private void Update()
     {
-        _animator.SetFloat("Velocity", Mathf.Abs(_rigidBody.velocity.x));
-    }
+        if (_useVelocity)
+        {
+            _animator.SetFloat("Velocity", Mathf.Abs(_rigidBody.velocity.x));
+        }
 
+        if (_useAttackMode)
+        {
+            _animator.SetBool("AttackModeOn", _enemyAttack.IsInRange);
+        }
+    }
+    
     private void ListenAttack(int index)
     {
         _animator.SetInteger("AttackIndex", index);

@@ -828,7 +828,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.73
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
@@ -2262,6 +2262,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime
       objectReference: {fileID: 0}
+    - target: {fileID: 2178178212101209647, guid: cdc8806165488fc48a14558c6391b279,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc8806165488fc48a14558c6391b279, type: 3}
 --- !u!1 &1315551134
@@ -2389,6 +2394,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5413079094971185034, guid: a96a3105cf3fa3446b5eaf0a213612d2,
+        type: 3}
+      propertyPath: pools.Array.data[1].size
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5413079094971185035, guid: a96a3105cf3fa3446b5eaf0a213612d2,
         type: 3}
       propertyPath: m_Name
@@ -2965,16 +2975,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5369152952628286250, guid: eb27501c9f2673648871a713b289a254,
-        type: 3}
-      propertyPath: explosionAtttackChance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5369152952628286250, guid: eb27501c9f2673648871a713b289a254,
-        type: 3}
-      propertyPath: rangedAtttackChance
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7856635923548385444, guid: eb27501c9f2673648871a713b289a254,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3034,11 +3034,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MeleeGolem
-      objectReference: {fileID: 0}
-    - target: {fileID: 7856635923548385445, guid: eb27501c9f2673648871a713b289a254,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb27501c9f2673648871a713b289a254, type: 3}

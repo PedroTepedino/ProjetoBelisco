@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 2178178212101208533}
   - component: {fileID: 383634805}
   - component: {fileID: 383634806}
+  - component: {fileID: 383634794}
   m_Layer: 10
   m_Name: Enemy
   m_TagString: Untagged
@@ -266,11 +267,13 @@ MonoBehaviour:
   meleeAttackRadius: 0.39
   meleeAttackDamage: 1
   explosionAtttackChance: 1
+  _explosionCenter: {x: 0, y: 0}
   explosionAttackRadius: 0.84
   explosionAttackDamage: 1
   rangedAtttackChance: 1
   rangeAttackDamage: 1
   rangeAttackProjectile: {fileID: 0}
+  IsInRange: 0
 --- !u!114 &2178178212101208535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,6 +361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b55c7503c85444b8135270ce683659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _useVelocity: 1
+  _useAttackMode: 0
 --- !u!114 &383634806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,6 +376,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particleEmitter: {fileID: 6838482729092408902}
+--- !u!114 &383634794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2178178212101209647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eebf72e6743efa84e934979308caca9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minMaxCoinDrop: {x: 2, y: 12}
+  _pawnTag: Paw
 --- !u!1 &2178178213565315166
 GameObject:
   m_ObjectHideFlags: 0
