@@ -197,6 +197,8 @@ MonoBehaviour:
   movingSpeed: 5
   lookingRange: 2
   alertAnimationTime: 0
+  maxStopTime: 0
+  minTimeBetweenStops: 3
 --- !u!114 &2178178212101209641
 MonoBehaviour:
   m_ObjectHideFlags: 0
