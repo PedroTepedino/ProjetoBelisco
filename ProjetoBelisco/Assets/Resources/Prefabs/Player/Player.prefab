@@ -610,7 +610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458e314330ea8d24c92724821408b97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 10
+  _moveSpeed: 8.5
   _accelerationTime: 0.1
   _decelerationTime: 0.05
   _timeToHalt: 0.05
@@ -641,8 +641,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 026025dd95cada54a9969a03d042f3de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _standardGravityMultiplier: 2
-  _fallingGravityMultiplier: 5
+  _standardGravityMultiplier: 1.5
+  _fallingGravityMultiplier: 3.5
   _minimumFallingVelocity: -1
 --- !u!114 &7023604729711152345
 MonoBehaviour:
@@ -1112,7 +1112,7 @@ PrefabInstance:
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
       propertyPath: ColorModule.gradient.minGradient.atime1
-      value: 19661
+      value: 65535
       objectReference: {fileID: 0}
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
@@ -1122,7 +1122,7 @@ PrefabInstance:
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
       propertyPath: ColorModule.gradient.minGradient.m_NumAlphaKeys
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
@@ -1162,7 +1162,7 @@ PrefabInstance:
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key1.a
-      value: 0.5882353
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
@@ -1172,7 +1172,7 @@ PrefabInstance:
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
       propertyPath: ColorModule.gradient.minGradient.key1.a
-      value: 0.5882353
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66417716cd21cb94784d02f8b4c81622, type: 3}
@@ -1258,6 +1258,11 @@ PrefabInstance:
     - target: {fileID: 8604371560575273997, guid: 4b2f15a3e071b044a91032e08d8d98c6,
         type: 3}
       propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604371560575273997, guid: 4b2f15a3e071b044a91032e08d8d98c6,
+        type: 3}
+      propertyPath: CollisionModule.enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
