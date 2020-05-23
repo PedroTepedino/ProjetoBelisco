@@ -34,5 +34,6 @@ public abstract class EnemyController : MonoBehaviour
         this.stateMachine.ChangeState(new MoveState(this.gameObject));
         targeting = GetComponent<EnemyTargeting>();
     }
+    
     public abstract void Update();
 }

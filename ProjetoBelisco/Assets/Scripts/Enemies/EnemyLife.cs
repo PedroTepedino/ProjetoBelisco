@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EnemyLife : BaseLifeSystem
 {
-    public static System.Action<int, int> OnEnemyDamage;
-    public static System.Action OnEnemyDie;
-    public static System.Action<int, int> OnEnemyHeal;
+    public System.Action<int, int> OnEnemyDamage;
+    public System.Action OnEnemyDie;
+    public System.Action<int, int> OnEnemyHeal;
 
     public override void Damage(int damagePoints = 1)
     {

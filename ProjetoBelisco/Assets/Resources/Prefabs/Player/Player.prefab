@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 4127487108521552333, guid: 312bfb3ab684ed94894b347ba24eacde,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -231,7 +231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7023604729711152359
 Transform:
   m_ObjectHideFlags: 0
@@ -732,9 +732,9 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &7023604729711152354
 CapsuleCollider2D:
@@ -763,6 +763,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RunSmokeBelisco
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467010910947378299, guid: 66417716cd21cb94784d02f8b4c81622,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2467010910947378300, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
@@ -1248,6 +1253,11 @@ PrefabInstance:
     - target: {fileID: 4581004409822133575, guid: 4b2f15a3e071b044a91032e08d8d98c6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604371560575273997, guid: 4b2f15a3e071b044a91032e08d8d98c6,
+        type: 3}
+      propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

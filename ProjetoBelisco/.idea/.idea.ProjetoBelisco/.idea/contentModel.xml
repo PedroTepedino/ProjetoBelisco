@@ -221,11 +221,15 @@
           </e>
           <e p="Enemies" t="Include">
             <e p="BasicEnemy.cs" t="Include" />
+            <e p="EnemyAnimationController.cs" t="Include" />
+            <e p="EnemyAttack.cs" t="Include" />
             <e p="EnemyController.cs" t="Include" />
+            <e p="EnemyDeathLootSpawn.cs" t="Include" />
             <e p="EnemyGrounder.cs" t="Include" />
+            <e p="EnemyHitParticleEmitter.cs" t="Include" />
             <e p="EnemyLife.cs" t="Include" />
+            <e p="EnemySignalAttackAnimation.cs" t="Include" />
             <e p="EnemyTargeting.cs" t="Include" />
-            <e p="EnemyVision.cs" t="Include" />
             <e p="EnemyWallChecker.cs" t="Include" />
           </e>
           <e p="Environment" t="Include">
@@ -273,8 +277,10 @@
             <e p="IState.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
             <e p="States" t="Include">
+              <e p="AlertState.cs" t="Include" />
               <e p="AttackState.cs" t="Include" />
               <e p="ChaseState.cs" t="Include" />
+              <e p="IddleState.cs" t="Include" />
               <e p="MoveState.cs" t="Include" />
             </e>
           </e>

@@ -20,7 +20,7 @@ public class MoveState : IState
     private EnemyController controllerOwner;
     private EnemyGrounder grounder;
     private EnemyWallChecker wallCheck;
-    private Vector2 movement;
+    private Vector2 movement = new Vector2();
     private bool groundCheck;
     private float timer;
     private float timerBetweeneStops;
