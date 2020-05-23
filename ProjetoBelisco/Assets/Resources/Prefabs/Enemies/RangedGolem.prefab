@@ -50,7 +50,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 3cc74a135e3202048bff54918f55e00c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -255,11 +255,13 @@ MonoBehaviour:
   meleeAttackRadius: 1
   meleeAttackDamage: 1
   explosionAtttackChance: 0
+  _explosionCenter: {x: 0, y: 0}
   explosionAttackRadius: 1
   explosionAttackDamage: 1
   rangedAtttackChance: 0
   rangeAttackDamage: 1
   rangeAttackProjectile: {fileID: 0}
+  IsInRange: 0
 --- !u!114 &3119989652046781011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,6 +285,8 @@ MonoBehaviour:
   movingSpeed: 5
   lookingRange: 5
   alertAnimationTime: 0
+  maxStopTime: 0
+  minTimeBetweenStops: 3
 --- !u!70 &6395306567025825285
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
