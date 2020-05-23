@@ -229,6 +229,7 @@
             <e p="EnemyGrounder.cs" t="Include" />
             <e p="EnemyHitParticleEmitter.cs" t="Include" />
             <e p="EnemyLife.cs" t="Include" />
+            <e p="EnemyProjectile.cs" t="Include" />
             <e p="EnemySignalAttackAnimation.cs" t="Include" />
             <e p="EnemySpawnDeadCourpse.cs" t="Include" />
             <e p="EnemyTargeting.cs" t="Include" />
