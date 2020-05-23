@@ -225,13 +225,15 @@ GameObject:
   - component: {fileID: 7023604729711152350}
   - component: {fileID: 7023604729711152357}
   - component: {fileID: 7023604729711152354}
+  - component: {fileID: 6269148084284273748}
+  - component: {fileID: 6022332204807728057}
   m_Layer: 12
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7023604729711152359
 Transform:
   m_ObjectHideFlags: 0
@@ -610,7 +612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458e314330ea8d24c92724821408b97c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 10
+  _moveSpeed: 8
   _accelerationTime: 0.1
   _decelerationTime: 0.05
   _timeToHalt: 0.05
@@ -641,8 +643,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 026025dd95cada54a9969a03d042f3de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _standardGravityMultiplier: 2
-  _fallingGravityMultiplier: 5
+  _standardGravityMultiplier: 1.5
+  _fallingGravityMultiplier: 3.5
   _minimumFallingVelocity: -1
 --- !u!114 &7023604729711152345
 MonoBehaviour:
@@ -752,6 +754,33 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.1}
   m_Size: {x: 0.44, y: 1.4}
   m_Direction: 0
+--- !u!114 &6269148084284273748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7023604729711152355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3608ed6d70eddf34ea4b685219a25ea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialGround: {fileID: 6200000, guid: efcfc53ae5ea62340a2fb4a4663e25d3, type: 2}
+  _materialFall: {fileID: 6200000, guid: cef7f45a347066b49885f9a6dc6f7dec, type: 2}
+--- !u!114 &6022332204807728057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7023604729711152355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 033e9e3ab76fbb84c9c617aa8fc833f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damageParticles: {fileID: 5954538732850317111}
 --- !u!1001 &2301376609411829048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1112,7 +1141,7 @@ PrefabInstance:
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
       propertyPath: ColorModule.gradient.minGradient.atime1
-      value: 19661
+      value: 65535
       objectReference: {fileID: 0}
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
@@ -1122,7 +1151,7 @@ PrefabInstance:
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
       propertyPath: ColorModule.gradient.minGradient.m_NumAlphaKeys
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
@@ -1162,7 +1191,7 @@ PrefabInstance:
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key1.a
-      value: 0.5882353
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
@@ -1172,7 +1201,7 @@ PrefabInstance:
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
       propertyPath: ColorModule.gradient.minGradient.key1.a
-      value: 0.5882353
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66417716cd21cb94784d02f8b4c81622, type: 3}
@@ -1260,11 +1289,22 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8604371560575273997, guid: 4b2f15a3e071b044a91032e08d8d98c6,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b2f15a3e071b044a91032e08d8d98c6, type: 3}
 --- !u!4 &1898517966664447613 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4581004409822133575, guid: 4b2f15a3e071b044a91032e08d8d98c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2723018841214487354}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5954538732850317111 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8604371560575273997, guid: 4b2f15a3e071b044a91032e08d8d98c6,
     type: 3}
   m_PrefabInstance: {fileID: 2723018841214487354}
   m_PrefabAsset: {fileID: 0}

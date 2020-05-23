@@ -30,14 +30,15 @@ public class EnemyAttack : MonoBehaviour
     [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")] [SerializeField] private int explosionAttackDamage = 1;
 
     [FoldoutGroup("Attacks Parameters/Range Attack Parameters")] [SerializeField] [Range(1, 100)] private int rangedAtttackChance = 0;
+    [FoldoutGroup("Attacks Parameters/Range Attack Parameters")] [SerializeField] private Vector2 _rangeAttackCenter;
     [FoldoutGroup("Attacks Parameters/Range Attack Parameters")] [SerializeField] private int rangeAttackDamage = 1;
-    [FoldoutGroup("Attacks Parameters/Range Attack Parameters")] [SerializeField] private GameObject rangeAttackProjectile;
+    [FoldoutGroup("Attacks Parameters/Range Attack Parameters")] [SerializeField] private string _rangeAttackProjectileTag;
 
     private List<int> attacksChances = new List<int>();
 
     public Action<int> OnAttack;
 
-    public bool IsInRange = false;
+    [HideInInspector] public bool IsInRange = false;
 
     private EnemyController _enemyController;
 
@@ -88,7 +89,8 @@ public class EnemyAttack : MonoBehaviour
             }
             else if (attacksChances[choice] == 2)
             {
-                RangedAttack();
+                OnAttack?.Invoke(2);
+                //RangedAttack();
             }
         }
     }
@@ -102,6 +104,10 @@ public class EnemyAttack : MonoBehaviour
         else if (index == 1)
         {
             ExplosionAttack();
+        }
+        else if (index == 2)
+        {
+            RangedAttack();
         }
     }
 
@@ -129,7 +135,7 @@ public class EnemyAttack : MonoBehaviour
 
     private void RangedAttack()
     {
-        Instantiate(rangeAttackProjectile, attackPoint, this.transform.rotation);
+        ObjectPooler.Instance.SpawnFromPool(_rangeAttackProjectileTag, (Vector2)(this.transform.position) + _rangeAttackCenter, this.transform.rotation);
     }
 
     private Collider2D CheckHit(Collider2D[] hits)
@@ -163,5 +169,14 @@ public class EnemyAttack : MonoBehaviour
         {
             Gizmos.DrawWireSphere((Vector2)this.transform.position + _explosionCenter, explosionAttackRadius);
         }
+
+        if (rangedAttack)
+        {
+            Gizmos.DrawLine((Vector2)this.transform.position + _rangeAttackCenter - new Vector2(0.2f, 0.2f), (Vector2)this.transform.position + _rangeAttackCenter + new Vector2(0.2f, 0.2f));
+            Gizmos.DrawLine((Vector2)this.transform.position + _rangeAttackCenter - new Vector2(-0.2f, 0.2f), (Vector2)this.transform.position + _rangeAttackCenter + new Vector2(-0.2f, 0.2f));
+        }
+        
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(this.transform.position - new Vector3(attackRange, 0, 0), this.transform.position + new Vector3(attackRange, 0, 0));
     }
 }

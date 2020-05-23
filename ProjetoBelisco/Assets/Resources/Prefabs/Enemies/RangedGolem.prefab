@@ -1,5 +1,77 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1377535860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1377535861}
+  - component: {fileID: 1377535862}
+  m_Layer: 10
+  m_Name: Point Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1377535861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377535860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.058, y: 0.212, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8355946944252381771}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1377535862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377535860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 0.6132076, g: 0.130162, b: 0.2715056, a: 1}
+  m_Intensity: 0.85
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0.31448114
+  m_PointLightOuterRadius: 0.92238384
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &8355946942804593914
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +83,8 @@ GameObject:
   - component: {fileID: 8355946942804593913}
   - component: {fileID: 8355946942804593895}
   - component: {fileID: 8355946942804593912}
-  m_Layer: 0
+  - component: {fileID: 2115454024}
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +123,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 3cc74a135e3202048bff54918f55e00c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -71,7 +144,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3688134563535344638, guid: 8cb6f6852bc02d04ba2e5971b435c4f6,
+  m_Sprite: {fileID: -689358804662787558, guid: 8cb6f6852bc02d04ba2e5971b435c4f6,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -102,6 +175,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2115454024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355946942804593914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f542577f1e6c5f42bd0234e936b6d8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8355946944252381772
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,7 +204,10 @@ GameObject:
   - component: {fileID: 6230776539719859512}
   - component: {fileID: 3119989652046781011}
   - component: {fileID: 6395306567025825285}
-  m_Layer: 0
+  - component: {fileID: 1666336044}
+  - component: {fileID: 1666336045}
+  - component: {fileID: 1666336046}
+  m_Layer: 10
   m_Name: RangedGolem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,6 +226,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8355946942804593913}
+  - {fileID: 1377535861}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -174,7 +263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a2d23778e22454398c105bb488f053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maximumHealth: 3
+  _maximumHealth: 5
 --- !u!114 &4847718300733759523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,20 +335,23 @@ MonoBehaviour:
   collisionLayerMask:
     serializedVersion: 2
     m_Bits: 4096
-  attackRange: 1
-  attackSpeed: 1
+  attackRange: 8
+  attackSpeed: 2.5
   meleeAttack: 0
   explosionAttack: 0
-  rangedAttack: 0
-  meleeAtttackChance: 0
+  rangedAttack: 1
+  meleeAtttackChance: 1
   meleeAttackRadius: 1
   meleeAttackDamage: 1
-  explosionAtttackChance: 0
+  explosionAtttackChance: 1
+  _explosionCenter: {x: 0, y: 0}
   explosionAttackRadius: 1
   explosionAttackDamage: 1
-  rangedAtttackChance: 0
+  rangedAtttackChance: 1
+  _rangeAttackCenter: {x: 0.74, y: 0.72}
   rangeAttackDamage: 1
-  rangeAttackProjectile: {fileID: 0}
+  _rangeAttackProjectileTag: GolemShot
+  IsInRange: 0
 --- !u!114 &3119989652046781011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,8 +373,10 @@ MonoBehaviour:
   actualState: 
   movingRight: 1
   movingSpeed: 5
-  lookingRange: 5
+  lookingRange: 10
   alertAnimationTime: 0
+  maxStopTime: 0
+  minTimeBetweenStops: 3
 --- !u!70 &6395306567025825285
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -299,3 +393,44 @@ CapsuleCollider2D:
   m_Offset: {x: -0.013395548, y: 0.160797}
   m_Size: {x: 0.8282428, y: 1.9647815}
   m_Direction: 0
+--- !u!114 &1666336044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355946944252381772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3e6c0b08bbeb23459781e218e734a4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deadBodyTag: RangedGolemDeadBody
+--- !u!114 &1666336045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355946944252381772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eebf72e6743efa84e934979308caca9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minMaxCoinDrop: {x: 5, y: 15}
+  _pawnTag: Paw
+--- !u!114 &1666336046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355946944252381772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b55c7503c85444b8135270ce683659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useVelocity: 0
+  _useAttackMode: 1

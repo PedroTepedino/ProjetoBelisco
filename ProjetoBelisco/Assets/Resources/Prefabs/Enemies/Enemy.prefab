@@ -197,6 +197,8 @@ MonoBehaviour:
   movingSpeed: 5
   lookingRange: 2
   alertAnimationTime: 0
+  maxStopTime: 0
+  minTimeBetweenStops: 3
 --- !u!114 &2178178212101209641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,8 +438,8 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.9976405, g: 0.6084906, b: 1, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
+  m_Intensity: 0.5
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
