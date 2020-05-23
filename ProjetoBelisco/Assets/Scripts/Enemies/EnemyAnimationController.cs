@@ -40,6 +40,7 @@ public class EnemyAnimationController : MonoBehaviour
         {
             _animator.SetBool("AttackModeOn", _enemyAttack.IsInRange);
         }
+        Debug.Log(_enemyAttack.IsInRange);
     }
     
     private void ListenAttack(int index)

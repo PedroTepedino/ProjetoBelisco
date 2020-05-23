@@ -224,11 +224,13 @@
             <e p="EnemyAnimationController.cs" t="Include" />
             <e p="EnemyAttack.cs" t="Include" />
             <e p="EnemyController.cs" t="Include" />
+            <e p="EnemyDeadCourpse.cs" t="Include" />
             <e p="EnemyDeathLootSpawn.cs" t="Include" />
             <e p="EnemyGrounder.cs" t="Include" />
             <e p="EnemyHitParticleEmitter.cs" t="Include" />
             <e p="EnemyLife.cs" t="Include" />
             <e p="EnemySignalAttackAnimation.cs" t="Include" />
+            <e p="EnemySpawnDeadCourpse.cs" t="Include" />
             <e p="EnemyTargeting.cs" t="Include" />
             <e p="EnemyWallChecker.cs" t="Include" />
           </e>

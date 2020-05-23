@@ -28,11 +28,12 @@ public class AttackState : IState
         grounder = ownerGameObject.GetComponent<EnemyGrounder>();
         wallCheck = ownerGameObject.GetComponent<EnemyWallChecker>();
         timer = 0;
+        enemyAttack.IsInRange = true;
     }
 
     public void ExitState()
     {
-        
+        enemyAttack.IsInRange = false;
     }
 
     public void RunState()
@@ -44,7 +45,6 @@ public class AttackState : IState
         {
             if (Vector2.Distance(ownerGameObject.transform.position, target.position) <= enemyAttack.attackRange)
             {
-                enemyAttack.IsInRange = true;
                 if (timer >= enemyAttack.attackSpeed)
                 {
                     enemyAttack.Attack(target);
@@ -54,7 +54,6 @@ public class AttackState : IState
             }
             else
             {
-                enemyAttack.IsInRange = false;
                 controllerOwner.stateMachine.ChangeState(new ChaseState(ownerGameObject));
             }
         }
