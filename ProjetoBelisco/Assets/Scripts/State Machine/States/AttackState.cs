@@ -28,12 +28,12 @@ public class AttackState : IState
         grounder = ownerGameObject.GetComponent<EnemyGrounder>();
         wallCheck = ownerGameObject.GetComponent<EnemyWallChecker>();
         timer = 0;
-        
+        enemyAttack.IsInRange = true;
     }
 
     public void ExitState()
     {
-
+        enemyAttack.IsInRange = false;
     }
 
     public void RunState()

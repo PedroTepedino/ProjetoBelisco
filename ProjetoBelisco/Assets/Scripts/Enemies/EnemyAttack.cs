@@ -25,6 +25,7 @@ public class EnemyAttack : MonoBehaviour
     
 
     [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")] [SerializeField] [Range(1, 100)] private int explosionAtttackChance = 0;
+    [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")] [SerializeField] private Vector2 _explosionCenter;
     [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")] [SerializeField] private float explosionAttackRadius = 1f;
     [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")] [SerializeField] private int explosionAttackDamage = 1;
 
@@ -35,6 +36,8 @@ public class EnemyAttack : MonoBehaviour
     private List<int> attacksChances = new List<int>();
 
     public Action<int> OnAttack;
+
+    public bool IsInRange = false;
 
     private EnemyController _enemyController;
 
@@ -66,7 +69,6 @@ public class EnemyAttack : MonoBehaviour
                 attacksChances.Add(2);
             }
         }
-
     }
 
     public void Attack(Transform target)
@@ -116,7 +118,7 @@ public class EnemyAttack : MonoBehaviour
 
     private void ExplosionAttack()
     {
-        Collider2D[] rayHits = Physics2D.OverlapCircleAll(this.transform.position, explosionAttackRadius, collisionLayerMask);
+        Collider2D[] rayHits = Physics2D.OverlapCircleAll((Vector2)this.transform.position + (_enemyController.movingRight? _explosionCenter:-_explosionCenter), explosionAttackRadius, collisionLayerMask);
         Collider2D hit = CheckHit(rayHits);
         if (hit != null)
         {
@@ -159,7 +161,7 @@ public class EnemyAttack : MonoBehaviour
         }
         if (explosionAttack)
         {
-            Gizmos.DrawWireSphere(this.transform.position, explosionAttackRadius);
+            Gizmos.DrawWireSphere((Vector2)this.transform.position + _explosionCenter, explosionAttackRadius);
         }
     }
 }

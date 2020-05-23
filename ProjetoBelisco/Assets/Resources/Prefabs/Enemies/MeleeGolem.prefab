@@ -1,5 +1,77 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &636938980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 636938981}
+  - component: {fileID: 636938982}
+  m_Layer: 10
+  m_Name: Point Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &636938981
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636938980}
+  m_LocalRotation: {x: -0, y: -0, z: 0.99999565, w: -0.0029493629}
+  m_LocalPosition: {x: -0.147, y: 0.323, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7856635923548385444}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &636938982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636938980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 0.6132076, g: 0.130162, b: 0.2715056, a: 1}
+  m_Intensity: 0.85
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0.31448114
+  m_PointLightOuterRadius: 0.92238384
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &7856635923548385445
 GameObject:
   m_ObjectHideFlags: 0
@@ -17,6 +89,9 @@ GameObject:
   - component: {fileID: 4320588175689965059}
   - component: {fileID: 5369152952628286250}
   - component: {fileID: 4847777944796932854}
+  - component: {fileID: 2077096100}
+  - component: {fileID: 678460642}
+  - component: {fileID: 7126115632327285119}
   m_Layer: 10
   m_Name: MeleeGolem
   m_TagString: Untagged
@@ -36,6 +111,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7856635924727966589}
+  - {fileID: 636938981}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -88,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a2d23778e22454398c105bb488f053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maximumHealth: 3
+  _maximumHealth: 5
 --- !u!114 &7528825927415760655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,24 +232,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af54d0fd437a7947a31869b5bbfbd08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPoint: {x: 0, y: 0}
+  attackPoint: {x: 0.83, y: 0.31}
   collisionLayerMask:
     serializedVersion: 2
     m_Bits: 4096
   attackRange: 1
-  attackSpeed: 1
-  meleeAttack: 0
-  explosionAttack: 0
+  attackSpeed: 2.5
+  meleeAttack: 1
+  explosionAttack: 1
   rangedAttack: 0
-  meleeAtttackChance: 1
-  meleeAttackRadius: 1
+  meleeAtttackChance: 2
+  meleeAttackRadius: 0.46
   meleeAttackDamage: 1
-  explosionAtttackChance: 0
-  explosionAttackRadius: 1
-  explosionAttackDamage: 1
-  rangedAtttackChance: 0
+  explosionAtttackChance: 100
+  _explosionCenter: {x: -0.12, y: 0.48}
+  explosionAttackRadius: 1.3
+  explosionAttackDamage: 2
+  rangedAtttackChance: 1
   rangeAttackDamage: 1
   rangeAttackProjectile: {fileID: 0}
+  IsInRange: 0
 --- !u!114 &4847777944796932854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +275,49 @@ MonoBehaviour:
   movingSpeed: 5
   lookingRange: 5
   alertAnimationTime: 0
+  maxStopTime: 0
+  minTimeBetweenStops: 3
+--- !u!114 &2077096100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7856635923548385445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b55c7503c85444b8135270ce683659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useVelocity: 0
+  _useAttackMode: 1
+--- !u!114 &678460642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7856635923548385445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3e6c0b08bbeb23459781e218e734a4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deadBodyTag: MeleeGolemDeadBody
+--- !u!114 &7126115632327285119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7856635923548385445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eebf72e6743efa84e934979308caca9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minMaxCoinDrop: {x: 7, y: 20}
+  _pawnTag: Paw
 --- !u!1 &7856635924727966590
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,6 +329,7 @@ GameObject:
   - component: {fileID: 7856635924727966589}
   - component: {fileID: 7856635924727966588}
   - component: {fileID: 7856635924727966587}
+  - component: {fileID: 1033560901}
   m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
@@ -299,3 +421,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1033560901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7856635924727966590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f542577f1e6c5f42bd0234e936b6d8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
