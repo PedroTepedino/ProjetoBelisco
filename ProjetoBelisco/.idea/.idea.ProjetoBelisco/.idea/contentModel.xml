@@ -257,6 +257,8 @@
             <e p="PlayerAttackSystem.cs" t="Include" />
             <e p="PlayerColletableInteractions.cs" t="Include" />
             <e p="PlayerComboManager.cs" t="Include" />
+            <e p="PlayerDamageParticle.cs" t="Include" />
+            <e p="PlayerFrictionController.cs" t="Include" />
             <e p="PlayerGravityManager.cs" t="Include" />
             <e p="PlayerGrounder.cs" t="Include" />
             <e p="PlayerInputManager.cs" t="Include" />
