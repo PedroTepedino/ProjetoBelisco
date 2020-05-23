@@ -52,5 +52,20 @@ MonoBehaviour:
   - prefab: {fileID: 2346514174071448503, guid: a64c804f7ca2fee408b800cbc8ab95e9,
       type: 3}
     tag: Paw
+    size: 5
+    fixSize: 0
+  - prefab: {fileID: 8426443112491497298, guid: 8363f305ddcd31a44b16b3b90ff5e694,
+      type: 3}
+    tag: MeleeGolemDeadBody
+    size: 1
+    fixSize: 1
+  - prefab: {fileID: 6221063809407533267, guid: 64ef95c1ab8c4954cb7fa8f7c26cc14d,
+      type: 3}
+    tag: RangedGolemDeadBody
+    size: 1
+    fixSize: 1
+  - prefab: {fileID: 7324518097937233665, guid: 1a8a11299c6624f429835d0bf56e1d82,
+      type: 3}
+    tag: GolemShot
     size: 0
     fixSize: 0

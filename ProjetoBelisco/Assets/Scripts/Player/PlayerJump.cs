@@ -37,7 +37,6 @@ public class PlayerJump : MonoBehaviour
      */
     public static bool IsJumping { get; private set; } = false;
 
-
     // Group: Unity Methods
     /* Function: Awake
      * Calls the <Setup Methods>.

@@ -8,6 +8,7 @@ using Sirenix.OdinInspector;
 [RequireComponent(typeof(EnemyWallChecker))]
 [RequireComponent(typeof(EnemyGrounder))]
 [RequireComponent(typeof(EnemyTargeting))]
+[RequireComponent(typeof(EnemyAttack))]
 /*Class: EnemyController
  * Abstract Class that describes the essential components of every enemy.
  */
@@ -21,9 +22,10 @@ public abstract class EnemyController : MonoBehaviour
     public bool movingRight = true;
     public float movingSpeed = 5;
     public float lookingRange = 5;
-    public float attackRange = 1;
-    public float attackSpeed = 1;
-    public int attackDamage = 1;
+    public float alertAnimationTime = 0;
+    public float maxStopTime = 0;
+    public float minTimeBetweenStops = 3;
+
 
     private void Start()
     {
@@ -32,5 +34,6 @@ public abstract class EnemyController : MonoBehaviour
         this.stateMachine.ChangeState(new MoveState(this.gameObject));
         targeting = GetComponent<EnemyTargeting>();
     }
+    
     public abstract void Update();
 }

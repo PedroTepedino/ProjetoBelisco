@@ -10,7 +10,7 @@ public class AttackState : IState
     private Rigidbody2D ownerRigidbody;
     private EnemyGrounder grounder;
     private EnemyWallChecker wallCheck;
-    private PlayerLife targerLifeSystem;
+    private EnemyAttack enemyAttack;
     private float timer;
 
     public AttackState(GameObject owner)
@@ -24,16 +24,16 @@ public class AttackState : IState
         controllerOwner.actualState = "attack";
         target = controllerOwner.targeting.target;
         ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
-        targerLifeSystem = target.GetComponentInParent<PlayerLife>();
+        enemyAttack = ownerGameObject.GetComponent<EnemyAttack>();
         grounder = ownerGameObject.GetComponent<EnemyGrounder>();
         wallCheck = ownerGameObject.GetComponent<EnemyWallChecker>();
         timer = 0;
-        
+        enemyAttack.IsInRange = true;
     }
 
     public void ExitState()
     {
-
+        enemyAttack.IsInRange = false;
     }
 
     public void RunState()
@@ -43,27 +43,22 @@ public class AttackState : IState
 
         if(target != null)
         {
-            Debug.Log("has target");
-            if (Vector2.Distance(ownerGameObject.transform.position, target.position) <= controllerOwner.attackRange)
+            if (Vector2.Distance(ownerGameObject.transform.position, target.position) <= enemyAttack.attackRange)
             {
-                Debug.Log("has target");
-                if (timer >= controllerOwner.attackSpeed)
+                if (timer >= enemyAttack.attackSpeed)
                 {
-                    Debug.Log("dmg");
-                    targerLifeSystem.Damage(controllerOwner.attackDamage);
+                    enemyAttack.Attack(target);
 
                     timer = 0;
                 }
             }
             else
             {
-                Debug.Log("chase");
                 controllerOwner.stateMachine.ChangeState(new ChaseState(ownerGameObject));
             }
         }
         else
         {
-            Debug.Log("move");
             controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
         }
     }

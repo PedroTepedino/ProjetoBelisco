@@ -17,6 +17,13 @@ public class StateMachine : MonoBehaviour
     private IState currentState;
     private IState previousState;
 
+    // Group: Signals
+    
+    /* Variable: OnChangeState
+     *    Sends a signal when the state machine state changes. 
+     */
+    public Action<IState> OnChangeState;
+
     // Group: State Management Logic
 
     /* Function: ChangeState
@@ -33,6 +40,8 @@ public class StateMachine : MonoBehaviour
         this.previousState = currentState;
         this.currentState = newState;
         this.currentState.EnterState();
+        OnChangeState?.Invoke(this.currentState);
+        Debug.Log(currentState);
     }
 
     /* Function: GetCurrentState

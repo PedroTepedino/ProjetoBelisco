@@ -221,11 +221,18 @@
           </e>
           <e p="Enemies" t="Include">
             <e p="BasicEnemy.cs" t="Include" />
+            <e p="EnemyAnimationController.cs" t="Include" />
+            <e p="EnemyAttack.cs" t="Include" />
             <e p="EnemyController.cs" t="Include" />
+            <e p="EnemyDeadCourpse.cs" t="Include" />
+            <e p="EnemyDeathLootSpawn.cs" t="Include" />
             <e p="EnemyGrounder.cs" t="Include" />
+            <e p="EnemyHitParticleEmitter.cs" t="Include" />
             <e p="EnemyLife.cs" t="Include" />
+            <e p="EnemyProjectile.cs" t="Include" />
+            <e p="EnemySignalAttackAnimation.cs" t="Include" />
+            <e p="EnemySpawnDeadCourpse.cs" t="Include" />
             <e p="EnemyTargeting.cs" t="Include" />
-            <e p="EnemyVision.cs" t="Include" />
             <e p="EnemyWallChecker.cs" t="Include" />
           </e>
           <e p="Environment" t="Include">
@@ -250,6 +257,8 @@
             <e p="PlayerAttackSystem.cs" t="Include" />
             <e p="PlayerColletableInteractions.cs" t="Include" />
             <e p="PlayerComboManager.cs" t="Include" />
+            <e p="PlayerDamageParticle.cs" t="Include" />
+            <e p="PlayerFrictionController.cs" t="Include" />
             <e p="PlayerGravityManager.cs" t="Include" />
             <e p="PlayerGrounder.cs" t="Include" />
             <e p="PlayerInputManager.cs" t="Include" />
@@ -259,6 +268,7 @@
             <e p="PlayerPawStorage.cs" t="Include" />
             <e p="PlayerPlatformDown.cs" t="Include" />
             <e p="PlayerPoolableObject.cs" t="Include" />
+            <e p="PlayParticle.cs" t="Include" />
           </e>
           <e p="PoolingSystem" t="Include">
             <e p="IPooledObject.cs" t="Include" />
@@ -272,8 +282,10 @@
             <e p="IState.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
             <e p="States" t="Include">
+              <e p="AlertState.cs" t="Include" />
               <e p="AttackState.cs" t="Include" />
               <e p="ChaseState.cs" t="Include" />
+              <e p="IddleState.cs" t="Include" />
               <e p="MoveState.cs" t="Include" />
             </e>
           </e>
