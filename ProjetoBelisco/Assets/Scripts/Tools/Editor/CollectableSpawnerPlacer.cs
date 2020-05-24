@@ -1,63 +1,65 @@
-﻿using UnityEngine;
-using UnityEditor;
+﻿using GameScripts.Collectables;
 using Sirenix.OdinInspector;
 using Sirenix.OdinInspector.Editor;
-using Sirenix.Utilities.Editor;
-using System.Linq;
+using UnityEditor;
+using UnityEngine;
 
-public class CollectableSpawnerPlacer : OdinEditorWindow
+namespace GameScripts.Tools.Editor
 {
-    [HorizontalGroup("Top")]
-
-    [AssetsOnly]
-    [AssetSelector]
-    [SerializeField]
-    private GameObject _spawnerPrefab;
-
-    [HorizontalGroup("Middle")]
-
-    [ShowInInspector]
-    [VerticalGroup("Middle/Left")]
-    private int _collectableCount = 0;
-
-    [ShowInInspector]
-    [VerticalGroup("Middle/Left")]
-    private int _spawnersCount = 0;
-
-    [MenuItem("Tools/Collectable Spwaner Placer", priority = -10000)]
-    private static void OpenWindow()
+    public class CollectableSpawnerPlacer : OdinEditorWindow
     {
-        GetWindow<CollectableSpawnerPlacer>().Show();
-    }
+        [HorizontalGroup("Top")]
 
-    protected override void Initialize()
-    {
-        _spawnerPrefab = Resources.Load("Prefabs/Collectables/Spawner/CollectableSpawner") as GameObject;
-        CountCollectablesAndSpawners();
-    }
+        [AssetsOnly]
+        [AssetSelector]
+        [SerializeField]
+        private GameObject _spawnerPrefab;
 
-    [HorizontalGroup("Middle")]
-    [Button(ButtonSizes.Large, Name = "Count")]
-    public void CountCollectablesAndSpawners()
-    {
-        _collectableCount = FindObjectsOfType<BaseCollectableObject>().Length;
-        _spawnersCount = FindObjectsOfType<CollectableSpawner>().Length;
-    }
+        [HorizontalGroup("Middle")]
 
-    [Button(ButtonSizes.Large, Name = "Put Spawners")]
-    public void ReplaceCollectables()
-    {
-        BaseCollectableObject[] collectables = FindObjectsOfType<BaseCollectableObject>();
+        [ShowInInspector]
+        [VerticalGroup("Middle/Left")]
+        private int _collectableCount = 0;
 
-        foreach (BaseCollectableObject obj in collectables)
+        [ShowInInspector]
+        [VerticalGroup("Middle/Left")]
+        private int _spawnersCount = 0;
+
+        [MenuItem("Tools/Collectable Spwaner Placer", priority = -10000)]
+        private static void OpenWindow()
         {
-            GameObject aux = PrefabUtility.InstantiatePrefab(_spawnerPrefab) as GameObject;
-            aux.transform.position = obj.transform.position;
-            aux.GetComponent<CollectableSpawner>().CollectableType = obj.Type;
-
-            DestroyImmediate(obj.gameObject);
+            GetWindow<CollectableSpawnerPlacer>().Show();
         }
 
-        CountCollectablesAndSpawners();
+        protected override void Initialize()
+        {
+            _spawnerPrefab = Resources.Load("Prefabs/Collectables/Spawner/CollectableSpawner") as GameObject;
+            CountCollectablesAndSpawners();
+        }
+
+        [HorizontalGroup("Middle")]
+        [Button(ButtonSizes.Large, Name = "Count")]
+        public void CountCollectablesAndSpawners()
+        {
+            _collectableCount = FindObjectsOfType<BaseObject>().Length;
+            _spawnersCount = FindObjectsOfType<Spawner>().Length;
+        }
+
+        [Button(ButtonSizes.Large, Name = "Put Spawners")]
+        public void ReplaceCollectables()
+        {
+            BaseObject[] collectables = FindObjectsOfType<BaseObject>();
+
+            foreach (BaseObject obj in collectables)
+            {
+                GameObject aux = PrefabUtility.InstantiatePrefab(_spawnerPrefab) as GameObject;
+                aux.transform.position = obj.transform.position;
+                aux.GetComponent<Spawner>().CollectableType = obj.Type;
+
+                DestroyImmediate(obj.gameObject);
+            }
+
+            CountCollectablesAndSpawners();
+        }
     }
 }

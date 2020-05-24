@@ -1,27 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Cinemachine;
 using UnityEngine;
-using Cinemachine;
 
-public class ChangeToSpecialCam : MonoBehaviour
+namespace GameScripts.Camera
 {
-    [SerializeField] private CinemachineVirtualCamera _virtualCam = null;
-
-    private void Awake()
+    public class ChangeToSpecialCam : MonoBehaviour
     {
-        if (_virtualCam == null)
+        [SerializeField] private CinemachineVirtualCamera _virtualCam = null;
+
+        private void Awake()
         {
-            _virtualCam = this.GetComponentInChildren<CinemachineVirtualCamera>();
+            if (_virtualCam == null)
+            {
+                _virtualCam = this.GetComponentInChildren<CinemachineVirtualCamera>();
+            }
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        _virtualCam.Priority = 1;
-    }
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            _virtualCam.Priority = 1;
+        }
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        _virtualCam.Priority = -1;
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            _virtualCam.Priority = -1;
+        }
     }
 }

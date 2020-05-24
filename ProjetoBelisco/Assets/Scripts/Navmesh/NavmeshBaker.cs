@@ -1,16 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class NavmeshBaker : MonoBehaviour
+namespace GameScripts.Navmesh
 {
-    void Start()
+    public class NavmeshBaker : MonoBehaviour
     {
+        void Start()
+        {
         
-    }
+        }
 
-    void Update()
-    {
+        void Update()
+        {
 
+        }
     }
 }

@@ -1,23 +1,27 @@
-﻿using UnityEngine;
-using Cinemachine;
+﻿using Cinemachine;
+using GameScripts.Player;
+using UnityEngine;
 
-public class CameraManager : MonoBehaviour
+namespace GameScripts.Camera
 {
-    CinemachineVirtualCamera cam;
-
-    private void Awake()
+    public class CameraManager : MonoBehaviour
     {
-        cam = this.GetComponent<CinemachineVirtualCamera>();
-        PlayerLife.OnPlayerSpawn += SetCameraToPlayer;
-    }
+        CinemachineVirtualCamera cam;
 
-    private void OnDestroy()
-    {
-        PlayerLife.OnPlayerSpawn -= SetCameraToPlayer;
-    }
+        private void Awake()
+        {
+            cam = this.GetComponent<CinemachineVirtualCamera>();
+            Life.OnPlayerSpawn += SetCameraToPlayer;
+        }
 
-    private void SetCameraToPlayer(GameObject player)
-    {
-        cam.Follow = player.transform;
+        private void OnDestroy()
+        {
+            Life.OnPlayerSpawn -= SetCameraToPlayer;
+        }
+
+        private void SetCameraToPlayer(GameObject player)
+        {
+            cam.Follow = player.transform;
+        }
     }
 }

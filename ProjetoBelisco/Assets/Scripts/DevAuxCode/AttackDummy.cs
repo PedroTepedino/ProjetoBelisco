@@ -1,38 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using DG.Tweening;
+using GameScripts.LivingBeingSystems;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
-using DG.Tweening;
 
-public class AttackDummy : BaseLifeSystem
+namespace GameScripts.DevAuxCode
 {
-    [SerializeField] private Light2D _light;
-
-    private Tween _animation;
-
-    public System.Action<int, int> OnLifeChange;
-
-    [Sirenix.OdinInspector.Button]
-    public override void Damage(int damagePoints = 1)
+    public class AttackDummy : BaseLifeSystem
     {
-        DamageFeedBack();
-        base.Damage(damagePoints);
-        OnLifeChange?.Invoke(_curentHealthPoints, _maximumHealth);
-    }
+        [SerializeField] private Light2D _light;
 
-    protected override void Die()
-    {
-        RestoreHealth(_maximumHealth);
-        OnLifeChange?.Invoke(_curentHealthPoints, _maximumHealth);
-    }
+        private Tween _animation;
 
-    private void DamageFeedBack()
-    {
-        if (_animation == null)
+        public System.Action<int, int> OnLifeChange;
+
+        [Sirenix.OdinInspector.Button]
+        public override void Damage(int damagePoints = 1)
         {
-            _animation = DOTween.To(() => _light.intensity, x => _light.intensity = x, 1f, 0.1f).SetLoops(2,LoopType.Yoyo).From(0).SetAutoKill(false);
+            DamageFeedBack();
+            base.Damage(damagePoints);
+            OnLifeChange?.Invoke(_curentHealthPoints, _maximumHealth);
         }
 
-        _animation.Restart();
+        protected override void Die()
+        {
+            RestoreHealth(_maximumHealth);
+            OnLifeChange?.Invoke(_curentHealthPoints, _maximumHealth);
+        }
+
+        private void DamageFeedBack()
+        {
+            if (_animation == null)
+            {
+                _animation = DOTween.To(() => _light.intensity, x => _light.intensity = x, 1f, 0.1f).SetLoops(2,LoopType.Yoyo).From(0).SetAutoKill(false);
+            }
+
+            _animation.Restart();
+        }
     }
 }
