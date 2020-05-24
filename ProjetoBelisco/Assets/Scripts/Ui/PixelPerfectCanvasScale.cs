@@ -1,30 +1,33 @@
-﻿using System;
+﻿using GameScripts.SceneManager;
 using UnityEngine;
 
-public class PixelPerfectCanvasScale : MonoBehaviour
+namespace GameScripts.Ui
 {
-    private void Awake()
+    public class PixelPerfectCanvasScale : MonoBehaviour
     {
-        SetPixelPerfect();
-    }
-
-    private void OnEnable()
-    {
-        SetPixelPerfect();
-    }
-    
-    private void SetPixelPerfect()
-    {
-        if (UiScenesLoader.PixelPerfectCamera.cropFrameX || UiScenesLoader.PixelPerfectCamera.cropFrameY)
+        private void Awake()
         {
-            Canvas canvas = this.GetComponent<Canvas>();
-            canvas.renderMode = RenderMode.ScreenSpaceCamera;
-            canvas.worldCamera = UiScenesLoader.MainCamera;
+            SetPixelPerfect();
         }
-        else
+
+        private void OnEnable()
         {
-            Canvas canvas = this.GetComponent<Canvas>();
-            canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            SetPixelPerfect();
+        }
+    
+        private void SetPixelPerfect()
+        {
+            if (UiScenesLoader.PixelPerfectCamera.cropFrameX || UiScenesLoader.PixelPerfectCamera.cropFrameY)
+            {
+                Canvas canvas = this.GetComponent<Canvas>();
+                canvas.renderMode = RenderMode.ScreenSpaceCamera;
+                canvas.worldCamera = UiScenesLoader.MainCamera;
+            }
+            else
+            {
+                Canvas canvas = this.GetComponent<Canvas>();
+                canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            }
         }
     }
 }

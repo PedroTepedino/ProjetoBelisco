@@ -1,41 +1,43 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using GameScripts.Player;
 using UnityEngine;
-using Sirenix.OdinInspector;
 
-public class HitStop : MonoBehaviour
+namespace GameScripts.GameFeel
 {
-    [SerializeField] private float _timeStoped = 0.05f;
-
-    private static bool _wating;
-
-    private void Awake()
+    public class HitStop : MonoBehaviour
     {
-        PlayerAttackSystem.OnDamage += Stop;
-    }
+        [SerializeField] private float _timeStoped = 0.05f;
 
-    private void OnDestroy()
-    {
-        PlayerAttackSystem.OnDamage -= Stop;
-    }
+        private static bool _wating;
 
-    public void Stop()
-    {
-        if (!_wating)
+        private void Awake()
         {
-            Time.timeScale = 0f;
-            StartCoroutine(WaitStopEnd(_timeStoped));
+            AttackSystem.OnDamage += Stop;
         }
-    }
 
-    private IEnumerator WaitStopEnd(float time)
-    {
-        _wating = true;
+        private void OnDestroy()
+        {
+            AttackSystem.OnDamage -= Stop;
+        }
 
-        yield return new WaitForSecondsRealtime(time);
+        public void Stop()
+        {
+            if (!_wating)
+            {
+                Time.timeScale = 0f;
+                StartCoroutine(WaitStopEnd(_timeStoped));
+            }
+        }
 
-        Time.timeScale = 1.0f;
+        private IEnumerator WaitStopEnd(float time)
+        {
+            _wating = true;
 
-        _wating = false;
+            yield return new WaitForSecondsRealtime(time);
+
+            Time.timeScale = 1.0f;
+
+            _wating = false;
+        }
     }
 }

@@ -1,16 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
+﻿using System;
 
-public class Vector2SliderAttribute : Attribute
+namespace GameScripts.Tools
 {
-    public float minValue;
-    public float maxValue;
-
-    public Vector2SliderAttribute(float min, float max)
+    public class Vector2SliderAttribute : Attribute
     {
-        this.minValue = min;
-        this.maxValue = max;
+        public float minValue;
+        public float maxValue;
+
+        public Vector2SliderAttribute(float min, float max)
+        {
+            this.minValue = min;
+            this.maxValue = max;
+        }
     }
 }

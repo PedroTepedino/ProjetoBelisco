@@ -1,32 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using GameScripts.Environment;
 using UnityEditor;
+using UnityEngine;
 
-[InitializeOnLoad()]
-
-public class PlayerSpawnerEditor : MonoBehaviour
+namespace GameScripts.Tools.Editor
 {
-    [DrawGizmo(GizmoType.NonSelected | GizmoType.Selected | GizmoType.Pickable)]
-    public static void OnDrawSceneGizmos(PlayerRespawner spawn, GizmoType gizmoType)
+    [InitializeOnLoad()]
+
+    public class PlayerSpawnerEditor : MonoBehaviour
     {
-        Color color = Color.white;
-        if ((gizmoType & GizmoType.Selected) != 0)
+        [DrawGizmo(GizmoType.NonSelected | GizmoType.Selected | GizmoType.Pickable)]
+        public static void OnDrawSceneGizmos(PlayerRespawner spawn, GizmoType gizmoType)
         {
-            color = Color.yellow;
-        }
+            Color color = Color.white;
+            if ((gizmoType & GizmoType.Selected) != 0)
+            {
+                color = Color.yellow;
+            }
 
-        if (PlayerRespawner.CurrentSpawner == spawn)
-        {
-            color = Color.red;
-        }
+            if (PlayerRespawner.CurrentSpawner == spawn)
+            {
+                color = Color.red;
+            }
 
-        string gizmo = "CheckPoint.png";
-        if (spawn.IsFirstSpawner)
-        {
-            gizmo = "PlayerSpawner.png";
-        }
+            string gizmo = "CheckPoint.png";
+            if (spawn.IsFirstSpawner)
+            {
+                gizmo = "PlayerSpawner.png";
+            }
 
-        Gizmos.DrawIcon(spawn.transform.position, gizmo, true, color);
+            Gizmos.DrawIcon(spawn.transform.position, gizmo, true, color);
+        }
     }
 }

@@ -1,37 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using DG.Tweening;
+using GameScripts.Player;
 using UnityEngine;
-using DG.Tweening;
 
-public class PawCounterUi : MonoBehaviour
+namespace GameScripts.Ui
 {
-    private int _currentCount = 0;
-    [SerializeField] private string _countFormat;
-    [SerializeField] private TMPro.TextMeshProUGUI _text;
-    [SerializeField] private DOTweenAnimation _shakeAnimaiton;
-
-    private void Awake()
+    public class PawCounterUi : MonoBehaviour
     {
-        PlayerPawStorage.OnUpdatePawValue += UpdateValue;
-        _currentCount = PlayerPawStorage.PawCount;
-        UpdateValue(_currentCount);
-    }
+        private int _currentCount = 0;
+        [SerializeField] private string _countFormat;
+        [SerializeField] private TMPro.TextMeshProUGUI _text;
+        [SerializeField] private DOTweenAnimation _shakeAnimaiton;
 
-    private void OnDestroy()
-    {
-        PlayerPawStorage.OnUpdatePawValue -= UpdateValue;
-    }
+        private void Awake()
+        {
+            PawStorage.OnUpdatePawValue += UpdateValue;
+            _currentCount = PawStorage.PawCount;
+            UpdateValue(_currentCount);
+        }
 
-    private void OnEnable()
-    {
-        _currentCount = PlayerPawStorage.PawCount;
-        UpdateValue(_currentCount);
-    }
+        private void OnDestroy()
+        {
+            PawStorage.OnUpdatePawValue -= UpdateValue;
+        }
 
-    private void UpdateValue(int value)
-    {
-        _currentCount = value;
-        _text.SetText(_countFormat, _currentCount);
-        _shakeAnimaiton?.DORestart();
+        private void OnEnable()
+        {
+            _currentCount = PawStorage.PawCount;
+            UpdateValue(_currentCount);
+        }
+
+        private void UpdateValue(int value)
+        {
+            _currentCount = value;
+            _text.SetText(_countFormat, _currentCount);
+            _shakeAnimaiton?.DORestart();
+        }
     }
 }

@@ -1,11 +1,14 @@
-﻿using UnityEngine;
-using ScenesIndex;
+﻿using GameScripts.SceneManager;
+using UnityEngine;
 
-public class PlayerUiManager : MonoBehaviour
+namespace GameScripts.Ui
 {
-    private void Awake()
+    public class PlayerUiManager : MonoBehaviour
     {
-        UiScenesLoader.LoadScene(UiScenes.PlayerUi);
-        UiScenesLoader.LoadScene(UiScenes.PawsCounter);
+        private void Awake()
+        {
+            UiScenesLoader.LoadScene(UiScenes.PlayerUi);
+            UiScenesLoader.LoadScene(UiScenes.PawsCounter);
+        }
     }
 }
