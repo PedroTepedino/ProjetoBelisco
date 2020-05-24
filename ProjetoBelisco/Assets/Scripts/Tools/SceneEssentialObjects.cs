@@ -1,12 +1,15 @@
 ﻿using System.Collections.Generic;
-using UnityEngine;
 using Sirenix.OdinInspector;
+using UnityEngine;
 
-[CreateAssetMenu(fileName = "SceneEssentials", menuName = "Tools/SceneEssentials", order = 1)]
-public class SceneEssentialObjects : ScriptableObject
+namespace GameScripts.Tools
 {
-    public bool HasBeenChecked { get; set; } = false;
+    [CreateAssetMenu(fileName = "SceneEssentials", menuName = "Tools/SceneEssentials", order = 1)]
+    public class SceneEssentialObjects : ScriptableObject
+    {
+        public bool HasBeenChecked { get; set; } = false;
 
-    [AssetsOnly]
-    public List<GameObject> Prefabs;
+        [AssetsOnly]
+        public List<GameObject> Prefabs;
+    }
 }

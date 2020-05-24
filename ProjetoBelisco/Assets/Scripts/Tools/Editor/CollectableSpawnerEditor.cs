@@ -1,18 +1,22 @@
-﻿using UnityEngine;
+﻿using GameScripts.Collectables;
 using UnityEditor;
+using UnityEngine;
 
-[InitializeOnLoad()]
-public class CollectableSpawnerEditor
+namespace GameScripts.Tools.Editor
 {
-    [DrawGizmo(GizmoType.NonSelected | GizmoType.Selected | GizmoType.Pickable )]
-    public static void OnDrawSceneGizmos(CollectableSpawner spawn, GizmoType gizmoType)
+    [InitializeOnLoad()]
+    public class CollectableSpawnerEditor
     {
-        Color color = Color.white;
-        if ((gizmoType & GizmoType.Selected) != 0)
+        [DrawGizmo(GizmoType.NonSelected | GizmoType.Selected | GizmoType.Pickable )]
+        public static void OnDrawSceneGizmos(Spawner spawn, GizmoType gizmoType)
         {
-            color = Color.yellow;
-        }
+            Color color = Color.white;
+            if ((gizmoType & GizmoType.Selected) != 0)
+            {
+                color = Color.yellow;
+            }
 
-       Gizmos.DrawIcon(spawn.transform.position, "Spawner.png", true, color);
+            Gizmos.DrawIcon(spawn.transform.position, "Spawner.png", true, color);
+        }
     }
 }

@@ -1,32 +1,34 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
-using ScenesIndex;
 using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
-public class UiScenesLoader : MonoBehaviour
+namespace GameScripts.SceneManager
 {
-    public static Camera MainCamera { get; set; }
-    public static PixelPerfectCamera PixelPerfectCamera { get; set; }
-
-    private void Awake()
+    public class UiScenesLoader : MonoBehaviour
     {
-        MainCamera = Camera.main;
-        if (MainCamera != null) PixelPerfectCamera = MainCamera.gameObject.GetComponent<PixelPerfectCamera>();
-    }
+        public static UnityEngine.Camera MainCamera { get; set; }
+        public static PixelPerfectCamera PixelPerfectCamera { get; set; }
 
-    public static void LoadScene(UiScenes sceneToLoad)
-    {
-        SceneManager.LoadSceneAsync((int)sceneToLoad, LoadSceneMode.Additive).completed += ActivateScene;
-    }
+        private void Awake()
+        {
+            MainCamera = UnityEngine.Camera.main;
+            if (MainCamera != null) PixelPerfectCamera = MainCamera.gameObject.GetComponent<PixelPerfectCamera>();
+        }
 
-    private static void ActivateScene(AsyncOperation obj)
-    {
-        obj.allowSceneActivation = true;
-    }
+        public static void LoadScene(UiScenes sceneToLoad)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadSceneAsync((int)sceneToLoad, LoadSceneMode.Additive).completed += ActivateScene;
+        }
 
-    public static void UnLoadScene(UiScenes sceneToUnload)
-    {
-        SceneManager.UnloadSceneAsync((int)sceneToUnload);
+        private static void ActivateScene(AsyncOperation obj)
+        {
+            obj.allowSceneActivation = true;
+        }
+
+        public static void UnLoadScene(UiScenes sceneToUnload)
+        {
+            UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync((int)sceneToUnload);
+        }
     }
 }
 

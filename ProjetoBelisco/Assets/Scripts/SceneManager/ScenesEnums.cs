@@ -1,4 +1,4 @@
-﻿namespace ScenesIndex
+﻿namespace GameScripts.SceneManager
 {
     public enum GamePlayScenes
     {
