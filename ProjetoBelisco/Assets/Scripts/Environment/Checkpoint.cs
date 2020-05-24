@@ -1,17 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
-public class Checkpoint : PlayerRespawner
+namespace GameScripts.Environment
 {
-    private bool _hasBeenChecked = false;
-
-    private void OnTriggerEnter2D(Collider2D other)
+    [RequireComponent(typeof(Collider2D))]
+    public class Checkpoint : PlayerRespawner
     {
-        if (_hasBeenChecked) return;
+        private bool _hasBeenChecked = false;
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (_hasBeenChecked) return;
         
-        base.SetToCurrentRespawner();
-        _hasBeenChecked = true;
+            base.SetToCurrentRespawner();
+            _hasBeenChecked = true;
+        }
     }
 }

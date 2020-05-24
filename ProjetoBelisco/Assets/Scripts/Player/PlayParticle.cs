@@ -1,25 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayParticle : MonoBehaviour
+namespace GameScripts.Player
 {
-    [SerializeField] private ParticleSystem _particleSystem;
-
-
-
-    private void Awake()
+    public class PlayParticle : MonoBehaviour
     {
-        PlayerGrounder.OnTouchGround += EmitParticle;
-    }
+        [SerializeField] private ParticleSystem _particleSystem;
 
-    private void OnDestroy()
-    {
-        PlayerGrounder.OnTouchGround -= EmitParticle;
-    }
 
-    public void EmitParticle()
-    {
-        _particleSystem.Play();
+
+        private void Awake()
+        {
+            Grounder.OnTouchGround += EmitParticle;
+        }
+
+        private void OnDestroy()
+        {
+            Grounder.OnTouchGround -= EmitParticle;
+        }
+
+        public void EmitParticle()
+        {
+            _particleSystem.Play();
+        }
     }
 }

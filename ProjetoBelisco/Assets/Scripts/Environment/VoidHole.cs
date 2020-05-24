@@ -1,32 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using GameScripts.LivingBeingSystems;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
-public class VoidHole : MonoBehaviour
+namespace GameScripts.Environment
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    [RequireComponent(typeof(Collider2D))]
+    public class VoidHole : MonoBehaviour
     {
-        Kill(collision);
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        Kill(collision);
-    }
-
-    private void Kill(Collider2D collision)
-    {
-        if (!collision.gameObject.activeInHierarchy) return;
-        
-        BaseLifeSystem lifeSystem = collision.gameObject.GetComponentInChildren<BaseLifeSystem>();
-
-        if (lifeSystem != null)
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (lifeSystem.CurentHealth > 0)
+            Kill(collision);
+        }
+
+        private void OnTriggerStay2D(Collider2D collision)
+        {
+            Kill(collision);
+        }
+
+        private void Kill(Collider2D collision)
+        {
+            if (!collision.gameObject.activeInHierarchy) return;
+        
+            BaseLifeSystem lifeSystem = collision.gameObject.GetComponentInChildren<BaseLifeSystem>();
+
+            if (lifeSystem != null)
             {
-                lifeSystem.Damage(lifeSystem.CurentHealth);
+                if (lifeSystem.CurentHealth > 0)
+                {
+                    lifeSystem.Damage(lifeSystem.CurentHealth);
+                }
             }
         }
     }

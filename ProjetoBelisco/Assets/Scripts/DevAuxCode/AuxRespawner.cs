@@ -1,17 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /* Class: AuxRespawner
  * Class to help the development.
  */
-[RequireComponent(typeof(Collider2D))]
-public class AuxRespawner : MonoBehaviour
+namespace GameScripts.DevAuxCode
 {
-    [SerializeField] private Transform _respawn;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    [RequireComponent(typeof(Collider2D))]
+    public class AuxRespawner : MonoBehaviour
     {
-        collision.gameObject.transform.position = _respawn.transform.position;
+        [SerializeField] private Transform _respawn;
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            collision.gameObject.transform.position = _respawn.transform.position;
+        }
     }
 }
