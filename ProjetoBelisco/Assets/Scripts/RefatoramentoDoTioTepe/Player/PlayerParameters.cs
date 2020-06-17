@@ -1,7 +1,7 @@
 ﻿using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Player.NewPlayer
+namespace RefatoramentoDoTioTepe
 {
     [CreateAssetMenu(menuName = "Player Parameters")]
     public class PlayerParameters : ScriptableObject

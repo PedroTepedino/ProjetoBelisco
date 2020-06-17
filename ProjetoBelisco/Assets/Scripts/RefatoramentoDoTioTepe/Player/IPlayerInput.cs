@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 
-namespace Player.NewPlayer
+namespace RefatoramentoDoTioTepe
 {
     public interface IPlayerInput
     {
         float Horizontal { get; }
+        bool PausePressed { get; }
     }
 }
