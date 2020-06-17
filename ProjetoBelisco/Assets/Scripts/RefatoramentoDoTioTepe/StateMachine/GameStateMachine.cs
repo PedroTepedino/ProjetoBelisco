@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
@@ -33,6 +34,7 @@ namespace RefatoramentoDoTioTepe
             var loading = new LoadLevel();
             var play = new Play();
             var pause = new Pause();
+            var options = new Options();
             
             _stateMachine.SetState(menu);
             
@@ -41,12 +43,16 @@ namespace RefatoramentoDoTioTepe
             _stateMachine.AddTransition(play, pause, () => RewiredPlayerInput.Instance.PausePressed);
             _stateMachine.AddTransition(pause, play, () => RewiredPlayerInput.Instance.PausePressed);
             _stateMachine.AddTransition(pause, menu, () => RestartButton.Pressed);
+            
+            _stateMachine.AddTransition(pause, options, () => OptionsButton.Pressed);
+            _stateMachine.AddTransition(options, pause, () => OptionsButton.Pressed && _stateMachine.LastState is Pause);
+            _stateMachine.AddTransition(menu,  options, () => OptionsButton.Pressed);
+            _stateMachine.AddTransition(options,  menu, () => OptionsButton.Pressed && _stateMachine.LastState is Menu);
         }
 
         private void Update()
         {
             _stateMachine.Tick();
-            Debug.Log(PlayButton.LevelToLoad);
         }
     }
 
@@ -69,21 +75,17 @@ namespace RefatoramentoDoTioTepe
     
     public class Pause : IState
     {
-        public static bool Active { get; private set; }
-        
         public void Tick()
         {
         }
 
         public void OnEnter()
         {
-            Active = true;
             Time.timeScale = 0f;
         }
 
         public void OnExit()
         {
-            Active = false;
             Time.timeScale = 1f;
         }
     }
@@ -126,6 +128,24 @@ namespace RefatoramentoDoTioTepe
         public void OnExit()
         {
             
+        }
+    }
+
+    public class Options : IState
+    {
+        public void Tick()
+        {
+            
+        }
+
+        public void OnEnter()
+        {
+            SaveOptions.LoadAllOptions();
+        }
+
+        public void OnExit()
+        {
+            SaveOptions.SaveAllOptions();
         }
     }
 }

@@ -319,13 +319,21 @@
             <e p="StateMachine" t="Include">
               <e p="GameStateMachine.cs" t="Include" />
               <e p="IState.cs" t="Include" />
+              <e p="OptionsButton.cs" t="Include" />
               <e p="RestartButton.cs" t="Include" />
               <e p="StateMachine.cs" t="Include" />
               <e p="StateTransition.cs" t="Include" />
             </e>
             <e p="Ui" t="Include">
+              <e p="AbstractPanel.cs" t="Include" />
+              <e p="GamePlayOptions.cs" t="Include" />
+              <e p="MainMenuPanel.cs" t="Include" />
+              <e p="OptionsPanel.cs" t="Include" />
+              <e p="OptionsParameter.cs" t="Include" />
               <e p="PausePanel.cs" t="Include" />
               <e p="PlayButton.cs" t="Include" />
+              <e p="SaveOptions.cs" t="Include" />
+              <e p="ToggleFullScreen.cs" t="Include" />
             </e>
           </e>
           <e p="SceneManager" t="Include">

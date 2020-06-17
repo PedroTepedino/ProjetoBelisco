@@ -6,12 +6,14 @@ namespace RefatoramentoDoTioTepe
 {
     public class StateMachine
     { 
+        public event Action<IState> OnStateChanged;
+        
         private List<StateTransition> _anyStateTransitions = new List<StateTransition>();
-        private List<StateTransition> _stateTransitions = new List<StateTransition>(); 
+        private Dictionary<IState, List<StateTransition>> _stateTransitions = new Dictionary<IState, List<StateTransition>>(); 
 
         private IState _currentState;
 
-        public event Action<IState> OnStateChanged;
+        public IState LastState { get; private set; } = null;
 
         public void AddAnyTransition(IState to, Func<bool> condition)
         {
@@ -21,8 +23,11 @@ namespace RefatoramentoDoTioTepe
 
         public void AddTransition(IState from, IState to, Func<bool> condition)
         {
+            if (_stateTransitions.ContainsKey(from) == false)
+                _stateTransitions[from] = new List<StateTransition>();
+            
             var stateTransition = new StateTransition(from, to, condition);
-            _stateTransitions.Add(stateTransition);
+            _stateTransitions[from].Add(stateTransition);
         }
 
         public void SetState(IState state)
@@ -32,6 +37,7 @@ namespace RefatoramentoDoTioTepe
             
             _currentState?.OnExit();
 
+            LastState = _currentState;
             _currentState = state;
             Debug.Log($"Change to {state}");
             _currentState.OnEnter();
@@ -59,10 +65,13 @@ namespace RefatoramentoDoTioTepe
                     return transition;
             }
 
-            foreach (var transition in _stateTransitions)
+            if (_stateTransitions.ContainsKey(_currentState))
             {
-                if (transition.From == _currentState && transition.Condition())
-                    return transition;
+                foreach (var transition in _stateTransitions[_currentState])
+                {
+                    if (transition.From == _currentState && transition.Condition())
+                        return transition;
+                }
             }
 
             return null;
