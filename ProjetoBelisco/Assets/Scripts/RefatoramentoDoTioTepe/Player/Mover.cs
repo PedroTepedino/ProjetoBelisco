@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Player.NewPlayer
+namespace RefatoramentoDoTioTepe
 {
     public class Mover : IMover
     {
@@ -15,7 +15,7 @@ namespace Player.NewPlayer
 
         public void Tick()
         {
-            Vector2 movement = new Vector2(_player.PlayerInput.Horizontal, _rigidbody2D.velocity.y);
+            Vector2 movement = new Vector2(RewiredPlayerInput.Instance.Horizontal, _rigidbody2D.velocity.y);
             _rigidbody2D.velocity = movement * _player.PlayerParameters.MovementSpeed;
         }
     }

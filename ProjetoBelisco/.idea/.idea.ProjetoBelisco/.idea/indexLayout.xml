@@ -3,6 +3,7 @@
   <component name="ContentModelUserStore">
     <attachedFolders />
     <explicitIncludes>
+      <Path>Library/PackageCache/com.unity.addressables@1.8.4</Path>
       <Path>Library/PackageCache/com.unity.cinemachine@2.5.0</Path>
       <Path>Library/PackageCache/com.unity.collab-proxy@1.2.16</Path>
       <Path>Library/PackageCache/com.unity.ext.nunit@1.0.0</Path>
@@ -10,6 +11,7 @@
       <Path>Library/PackageCache/com.unity.ide.vscode@1.2.0</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.core@7.3.1</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.universal@7.3.1</Path>
+      <Path>Library/PackageCache/com.unity.scriptablebuildpipeline@1.7.3</Path>
       <Path>Library/PackageCache/com.unity.shadergraph@7.3.1</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.14</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@2.0.1</Path>
