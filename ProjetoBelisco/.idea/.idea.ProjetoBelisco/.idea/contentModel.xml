@@ -315,7 +315,6 @@
               <e p="Player.cs" t="Include" />
               <e p="PlayerParameters.cs" t="Include" />
               <e p="RewiredPlayerInput.cs" t="Include" />
-              <e p="RewiredPlayerInputInitializer.cs" t="Include" />
             </e>
             <e p="StateMachine" t="Include">
               <e p="GameStateMachine.cs" t="Include" />

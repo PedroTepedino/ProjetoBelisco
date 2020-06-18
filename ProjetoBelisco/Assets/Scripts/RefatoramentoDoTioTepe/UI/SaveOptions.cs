@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Diagnostics;
+using UnityEngine;
 using Debug = UnityEngine.Debug;
 
 namespace RefatoramentoDoTioTepe
@@ -7,9 +9,22 @@ namespace RefatoramentoDoTioTepe
     {
         private static SaveOptions _instance;
 
+        private void Awake()
+        {
+            if (_instance == null)
+                _instance = this;
+        }
+
+        private void OnDestroy()
+        {
+            if (_instance == this)
+                _instance = null;
+        }
+
         protected virtual void OnEnable()
         {
             _instance = this;
+            LoadAllOptions();
         }
 
         public static void LoadAllOptions()

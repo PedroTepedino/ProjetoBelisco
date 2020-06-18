@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Debug = UnityEngine.Debug;
 
 namespace RefatoramentoDoTioTepe
 {
@@ -147,7 +149,7 @@ namespace RefatoramentoDoTioTepe
 
         public void OnEnter()
         {
-            SaveOptions.LoadAllOptions();
+            
         }
 
         public void OnExit()

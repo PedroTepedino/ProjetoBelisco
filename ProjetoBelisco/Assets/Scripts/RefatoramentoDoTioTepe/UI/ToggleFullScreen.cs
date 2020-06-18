@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-using UnityEngine;
-using UnityEngine.Events;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace RefatoramentoDoTioTepe
@@ -26,6 +24,7 @@ namespace RefatoramentoDoTioTepe
 
         public void Load()
         {
+            Debug.LogError("Has Key " + PlayerPrefs.HasKey("FullScreen"));
             if (PlayerPrefs.HasKey("FullScreen"))
             {
                 this.isOn = (PlayerPrefs.GetInt("FullScreen") == 1);
@@ -35,6 +34,7 @@ namespace RefatoramentoDoTioTepe
         public void Save()
         {
             PlayerPrefs.SetInt("FullScreen", this.isOn ? 1 : 0);
+            Debug.LogError("Has Key " + PlayerPrefs.HasKey("FullScreen"));
         }
     }
 }
