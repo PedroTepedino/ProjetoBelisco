@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace RefatoramentoDoTioTepe
 {
     public class RewiredPlayerInput : MonoBehaviour, IPlayerInput
     {
         private Rewired.Player _rewiredPlayer;
-        public static IPlayerInput Instance { get; set; }
+        public static IPlayerInput Instance { get; private set; }
 
         public float Horizontal => _rewiredPlayer.GetAxis("MoveHorizontal");
 
@@ -17,7 +18,7 @@ namespace RefatoramentoDoTioTepe
             Instance = this;
             StartCoroutine(GetPlayer());
         }
-
+        
         private IEnumerator GetPlayer()
         {
             while (_rewiredPlayer == null)

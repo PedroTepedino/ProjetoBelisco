@@ -33,20 +33,39 @@ namespace RefatoramentoDoTioTepe
             var loading = new LoadLevel();
             var play = new Play();
             var pause = new Pause();
+            var options = new Options();
+            var quit = new Quit();
+            var win = new WinState();
             
             _stateMachine.SetState(menu);
-            
+
             _stateMachine.AddTransition(menu, loading, () => PlayButton.LevelToLoad != null);
+            
             _stateMachine.AddTransition(loading, play, loading.Finish);
+            
             _stateMachine.AddTransition(play, pause, () => RewiredPlayerInput.Instance.PausePressed);
             _stateMachine.AddTransition(pause, play, () => RewiredPlayerInput.Instance.PausePressed);
+            _stateMachine.AddTransition(pause, play, () => PauseButton.Pressed);
+            
             _stateMachine.AddTransition(pause, menu, () => RestartButton.Pressed);
+            
+            _stateMachine.AddTransition(pause, options, () => OptionsButton.Pressed);
+            _stateMachine.AddTransition(options, pause, () => OptionsButton.Pressed && _stateMachine.LastState is Pause);
+            _stateMachine.AddTransition(options,  pause, () => RewiredPlayerInput.Instance.PausePressed && _stateMachine.LastState is Pause);
+            
+            _stateMachine.AddTransition(menu,  options, () => OptionsButton.Pressed);
+            _stateMachine.AddTransition(options,  menu, () => OptionsButton.Pressed && _stateMachine.LastState is Menu);
+            _stateMachine.AddTransition(options, menu, () => RewiredPlayerInput.Instance.PausePressed && _stateMachine.LastState is Menu);
+            
+            _stateMachine.AddTransition(menu, quit, () => QuitButton.Pressed);
+            
+            _stateMachine.AddTransition(play, win, () => WinArea.HasWon);
+            _stateMachine.AddTransition(win, menu, () => RestartButton.Pressed);
         }
 
         private void Update()
         {
             _stateMachine.Tick();
-            Debug.Log(PlayButton.LevelToLoad);
         }
     }
 
@@ -69,21 +88,17 @@ namespace RefatoramentoDoTioTepe
     
     public class Pause : IState
     {
-        public static bool Active { get; private set; }
-        
         public void Tick()
         {
         }
 
         public void OnEnter()
         {
-            Active = true;
             Time.timeScale = 0f;
         }
 
         public void OnExit()
         {
-            Active = false;
             Time.timeScale = 1f;
         }
     }
@@ -126,6 +141,57 @@ namespace RefatoramentoDoTioTepe
         public void OnExit()
         {
             
+        }
+    }
+
+    public class Options : IState
+    {
+        public void Tick()
+        {
+            
+        }
+
+        public void OnEnter()
+        {
+            
+        }
+
+        public void OnExit()
+        {
+            SaveOptions.SaveAllOptions();
+        }
+    }
+
+    public class Quit : IState
+    {
+        public void Tick()
+        {
+        }
+
+        public void OnEnter()
+        {
+            Application.Quit();
+        }
+
+        public void OnExit()
+        {
+        }
+    }
+
+    public class WinState : IState
+    {
+        public void Tick()
+        {
+        }
+
+        public void OnEnter()
+        {
+            Time.timeScale = 0f;
+        }
+
+        public void OnExit()
+        {
+            Time.timeScale = 1f;
         }
     }
 }

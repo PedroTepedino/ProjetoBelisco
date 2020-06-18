@@ -16,13 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: c6a696f68faa8e34c8db76e0c02e4554
-  m_SerializeEntries:
-  - m_GUID: 3e98cd3885530194e9c626f288399db7
-    m_Address: Rewired Input Manager.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3198d8bf5ba12bd48846f5d1f6027b85, type: 2}
   m_SchemaSet:

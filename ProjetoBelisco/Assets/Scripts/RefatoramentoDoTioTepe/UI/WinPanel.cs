@@ -1,10 +1,10 @@
 ﻿namespace RefatoramentoDoTioTepe
 {
-    public class PausePanel : AbstractPanel
+    public class WinPanel : AbstractPanel
     {
         protected override void HandleGameStateChanged(IState state)
         {
-            _panel.SetActive(state is Pause);
+            _panel.SetActive(state is WinState);
         }
     }
 }
