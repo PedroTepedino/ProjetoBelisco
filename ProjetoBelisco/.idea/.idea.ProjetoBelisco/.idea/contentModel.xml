@@ -315,23 +315,27 @@
               <e p="Player.cs" t="Include" />
               <e p="PlayerParameters.cs" t="Include" />
               <e p="RewiredPlayerInput.cs" t="Include" />
+              <e p="RewiredPlayerInputInitializer.cs" t="Include" />
             </e>
             <e p="StateMachine" t="Include">
               <e p="GameStateMachine.cs" t="Include" />
               <e p="IState.cs" t="Include" />
-              <e p="OptionsButton.cs" t="Include" />
-              <e p="RestartButton.cs" t="Include" />
               <e p="StateMachine.cs" t="Include" />
               <e p="StateTransition.cs" t="Include" />
             </e>
             <e p="Ui" t="Include">
+              <e p="AbstractButton.cs" t="Include" />
               <e p="AbstractPanel.cs" t="Include" />
-              <e p="GamePlayOptions.cs" t="Include" />
+              <e p="GamePlayTimescalePause.cs" t="Include" />
               <e p="MainMenuPanel.cs" t="Include" />
+              <e p="OptionsButton.cs" t="Include" />
               <e p="OptionsPanel.cs" t="Include" />
               <e p="OptionsParameter.cs" t="Include" />
+              <e p="PauseButton.cs" t="Include" />
               <e p="PausePanel.cs" t="Include" />
               <e p="PlayButton.cs" t="Include" />
+              <e p="QuitButton.cs" t="Include" />
+              <e p="RestartButton.cs" t="Include" />
               <e p="SaveOptions.cs" t="Include" />
               <e p="ToggleFullScreen.cs" t="Include" />
             </e>

@@ -7,11 +7,6 @@ namespace RefatoramentoDoTioTepe
     {
         private static SaveOptions _instance;
 
-        private void Update()
-        {
-            Debug.Log(_instance, _instance);
-        }
-
         protected virtual void OnEnable()
         {
             _instance = this;

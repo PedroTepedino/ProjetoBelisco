@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Debug = UnityEngine.Debug;
 
 namespace RefatoramentoDoTioTepe
 {
@@ -35,19 +32,29 @@ namespace RefatoramentoDoTioTepe
             var play = new Play();
             var pause = new Pause();
             var options = new Options();
+            var quit = new Quit();
             
             _stateMachine.SetState(menu);
-            
+
             _stateMachine.AddTransition(menu, loading, () => PlayButton.LevelToLoad != null);
+            
             _stateMachine.AddTransition(loading, play, loading.Finish);
+            
             _stateMachine.AddTransition(play, pause, () => RewiredPlayerInput.Instance.PausePressed);
             _stateMachine.AddTransition(pause, play, () => RewiredPlayerInput.Instance.PausePressed);
+            _stateMachine.AddTransition(pause, play, () => PauseButton.Pressed);
+            
             _stateMachine.AddTransition(pause, menu, () => RestartButton.Pressed);
             
             _stateMachine.AddTransition(pause, options, () => OptionsButton.Pressed);
             _stateMachine.AddTransition(options, pause, () => OptionsButton.Pressed && _stateMachine.LastState is Pause);
+            _stateMachine.AddTransition(options,  pause, () => RewiredPlayerInput.Instance.PausePressed && _stateMachine.LastState is Pause);
+            
             _stateMachine.AddTransition(menu,  options, () => OptionsButton.Pressed);
             _stateMachine.AddTransition(options,  menu, () => OptionsButton.Pressed && _stateMachine.LastState is Menu);
+            _stateMachine.AddTransition(options, menu, () => RewiredPlayerInput.Instance.PausePressed && _stateMachine.LastState is Menu);
+            
+            _stateMachine.AddTransition(menu, quit, () => QuitButton.Pressed);
         }
 
         private void Update()
@@ -146,6 +153,22 @@ namespace RefatoramentoDoTioTepe
         public void OnExit()
         {
             SaveOptions.SaveAllOptions();
+        }
+    }
+
+    public class Quit : IState
+    {
+        public void Tick()
+        {
+        }
+
+        public void OnEnter()
+        {
+            Application.Quit();
+        }
+
+        public void OnExit()
+        {
         }
     }
 }
