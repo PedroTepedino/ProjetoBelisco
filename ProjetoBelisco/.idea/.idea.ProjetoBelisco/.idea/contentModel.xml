@@ -294,7 +294,21 @@
             <e p="Jump.cs" t="Include" />
             <e p="Life.cs" t="Include" />
             <e p="Movement.cs" t="Include" />
-            <e p="NewPlayer" t="Include">
+            <e p="PawStorage.cs" t="Include" />
+            <e p="PlatformDown.cs" t="Include" />
+            <e p="PlayParticle.cs" t="Include" />
+            <e p="PoolableObject.cs" t="Include" />
+          </e>
+          <e p="PlayTests" t="Include">
+            <e p="NewTestScript.cs" t="Include" />
+          </e>
+          <e p="PoolingSystem" t="Include">
+            <e p="IPooledObject.cs" t="Include" />
+            <e p="Pooler.cs" t="Include" />
+          </e>
+          <e p="RefatoramentoDoTioTepe" t="Include">
+            <e p="Bootstrapper.cs" t="Include" />
+            <e p="Player" t="Include">
               <e p="IMover.cs" t="Include" />
               <e p="IPlayerInput.cs" t="Include" />
               <e p="Mover.cs" t="Include" />
@@ -302,14 +316,30 @@
               <e p="PlayerParameters.cs" t="Include" />
               <e p="RewiredPlayerInput.cs" t="Include" />
             </e>
-            <e p="PawStorage.cs" t="Include" />
-            <e p="PlatformDown.cs" t="Include" />
-            <e p="PlayParticle.cs" t="Include" />
-            <e p="PoolableObject.cs" t="Include" />
-          </e>
-          <e p="PoolingSystem" t="Include">
-            <e p="IPooledObject.cs" t="Include" />
-            <e p="Pooler.cs" t="Include" />
+            <e p="StateMachine" t="Include">
+              <e p="GameStateMachine.cs" t="Include" />
+              <e p="IState.cs" t="Include" />
+              <e p="StateMachine.cs" t="Include" />
+              <e p="StateTransition.cs" t="Include" />
+            </e>
+            <e p="Ui" t="Include">
+              <e p="AbstractButton.cs" t="Include" />
+              <e p="AbstractPanel.cs" t="Include" />
+              <e p="GamePlayTimescalePause.cs" t="Include" />
+              <e p="MainMenuPanel.cs" t="Include" />
+              <e p="OptionsButton.cs" t="Include" />
+              <e p="OptionsPanel.cs" t="Include" />
+              <e p="OptionsParameter.cs" t="Include" />
+              <e p="PauseButton.cs" t="Include" />
+              <e p="PausePanel.cs" t="Include" />
+              <e p="PlayButton.cs" t="Include" />
+              <e p="QuitButton.cs" t="Include" />
+              <e p="RestartButton.cs" t="Include" />
+              <e p="SaveOptions.cs" t="Include" />
+              <e p="ToggleFullScreen.cs" t="Include" />
+              <e p="WinArea.cs" t="Include" />
+              <e p="WinPanel.cs" t="Include" />
+            </e>
           </e>
           <e p="SceneManager" t="Include">
             <e p="ScenesEnums.cs" t="Include" />
@@ -325,6 +355,9 @@
               <e p="IddleState.cs" t="Include" />
               <e p="MoveState.cs" t="Include" />
             </e>
+          </e>
+          <e p="Tests" t="Include">
+            <e p="NewTestScript.cs" t="Include" />
           </e>
           <e p="Tools" t="Include">
             <e p="Editor" t="Include">
@@ -377,10 +410,12 @@
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
+      <e p="PlayTests.csproj" t="IncludeRecursive" />
       <e p="ProjetoBelisco.sln" t="IncludeFlat" />
       <e p="Sirenix.OdinInspector.CompatibilityLayer.csproj" t="IncludeRecursive" />
       <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj" t="IncludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Tests.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

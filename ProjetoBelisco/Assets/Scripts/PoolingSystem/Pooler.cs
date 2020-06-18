@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using RefatoramentoDoTioTepe;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -50,9 +51,7 @@ namespace GameScripts.PoolingSystem
         public Dictionary<string, Queue<GameObject>> poolDictionary;
         public Dictionary<string, GameObject> prefabDictionary;
         public Dictionary<string, bool> sizeDictionary;
-
-
-        #region Singleton
+        
         /* Variable: Instance
     * The instance of the Singleton.
     */
@@ -76,8 +75,29 @@ namespace GameScripts.PoolingSystem
             {
                 Destroy(this.gameObject);
             }
+
+            GameStateMachine.OnGameStateChanged += HandleStateChanged;
         }
-        #endregion
+
+
+        private void OnDestroy()
+        {
+            GameStateMachine.OnGameStateChanged -= HandleStateChanged;
+        }
+        
+        private void HandleStateChanged(IState state)
+        {
+            if (state is Menu || state is LoadLevel)
+            {
+                foreach (var keyValuePair in poolDictionary)
+                {
+                    foreach (var gameObject in keyValuePair.Value)
+                    {
+                        gameObject.SetActive(false);
+                    }
+                }
+            }
+        }
 
         /* Function: Start
      * Creates all objects and associates to the relative pools.
