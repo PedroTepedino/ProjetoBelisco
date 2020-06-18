@@ -2,12 +2,8 @@
 
 namespace RefatoramentoDoTioTepe
 {
-    public class RestartButton : Button
+    public class RestartButton : AbstractButton<RestartButton>
     {
-        private static RestartButton _instance;
-
-        public static bool Pressed => _instance != null && _instance.IsPressed();
-
         protected override void OnEnable()
         {
             _instance = this;

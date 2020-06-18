@@ -337,6 +337,8 @@
               <e p="RestartButton.cs" t="Include" />
               <e p="SaveOptions.cs" t="Include" />
               <e p="ToggleFullScreen.cs" t="Include" />
+              <e p="WinArea.cs" t="Include" />
+              <e p="WinPanel.cs" t="Include" />
             </e>
           </e>
           <e p="SceneManager" t="Include">

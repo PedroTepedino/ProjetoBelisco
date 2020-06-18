@@ -35,6 +35,7 @@ namespace RefatoramentoDoTioTepe
             var pause = new Pause();
             var options = new Options();
             var quit = new Quit();
+            var win = new WinState();
             
             _stateMachine.SetState(menu);
 
@@ -57,6 +58,9 @@ namespace RefatoramentoDoTioTepe
             _stateMachine.AddTransition(options, menu, () => RewiredPlayerInput.Instance.PausePressed && _stateMachine.LastState is Menu);
             
             _stateMachine.AddTransition(menu, quit, () => QuitButton.Pressed);
+            
+            _stateMachine.AddTransition(play, win, () => WinArea.HasWon);
+            _stateMachine.AddTransition(win, menu, () => RestartButton.Pressed);
         }
 
         private void Update()
@@ -171,6 +175,23 @@ namespace RefatoramentoDoTioTepe
 
         public void OnExit()
         {
+        }
+    }
+
+    public class WinState : IState
+    {
+        public void Tick()
+        {
+        }
+
+        public void OnEnter()
+        {
+            Time.timeScale = 0f;
+        }
+
+        public void OnExit()
+        {
+            Time.timeScale = 1f;
         }
     }
 }

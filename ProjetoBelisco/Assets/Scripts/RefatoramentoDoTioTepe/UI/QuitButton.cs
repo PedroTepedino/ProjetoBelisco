@@ -1,13 +1,7 @@
-﻿using UnityEngine.UI;
- 
- namespace RefatoramentoDoTioTepe
+﻿ namespace RefatoramentoDoTioTepe
  {
-     public class QuitButton : Button
+     public class QuitButton : AbstractButton<QuitButton>
      {
-         private static QuitButton _instance;
-
-         public static bool Pressed => _instance != null && _instance.IsPressed();
-
          protected override void OnEnable()
          {
              _instance = this;
