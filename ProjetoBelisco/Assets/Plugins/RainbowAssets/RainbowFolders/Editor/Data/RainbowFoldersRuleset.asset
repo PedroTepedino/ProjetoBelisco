@@ -349,3 +349,39 @@ MonoBehaviour:
     BackgroundTexture: {fileID: 0}
     IsBackgroundRecursive: 0
     IsHidden: 0
+  - Type: 1
+    Key: Assets/Scripts/Tests
+    Ordinal: 28
+    Priority: 100
+    IconType: 1
+    SmallIcon: {fileID: 2800000, guid: a03361c1c09fe6f4ead4c0533c7c23a1, type: 3}
+    LargeIcon: {fileID: 2800000, guid: a03361c1c09fe6f4ead4c0533c7c23a1, type: 3}
+    IsIconRecursive: 0
+    BackgroundType: 10
+    BackgroundTexture: {fileID: 0}
+    IsBackgroundRecursive: 0
+    IsHidden: 0
+  - Type: 1
+    Key: Assets/Scripts/PlayTests
+    Ordinal: 29
+    Priority: 200
+    IconType: 1
+    SmallIcon: {fileID: 2800000, guid: d98f5f3daf944cb458fbfb805702de43, type: 3}
+    LargeIcon: {fileID: 2800000, guid: d98f5f3daf944cb458fbfb805702de43, type: 3}
+    IsIconRecursive: 0
+    BackgroundType: 10
+    BackgroundTexture: {fileID: 0}
+    IsBackgroundRecursive: 0
+    IsHidden: 0
+  - Type: 1
+    Key: Assets/Scenes/TestScenes
+    Ordinal: 30
+    Priority: 0
+    IconType: 1
+    SmallIcon: {fileID: 2800000, guid: 539a5abb3de144c40b8a15b22b53734f, type: 3}
+    LargeIcon: {fileID: 2800000, guid: 539a5abb3de144c40b8a15b22b53734f, type: 3}
+    IsIconRecursive: 1
+    BackgroundType: 10
+    BackgroundTexture: {fileID: 0}
+    IsBackgroundRecursive: 1
+    IsHidden: 0
