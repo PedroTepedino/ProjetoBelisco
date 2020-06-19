@@ -52,8 +52,8 @@ namespace GameScripts.StateMachine.States
                         if (grounder.isGrounded && wallCheck.wallAhead)
                         {
                             controllerOwner.movingRight = true;
-                            movement.Set(controllerOwner.movingSpeed, ownerRigidbody.velocity.y);
-                            ownerRigidbody.velocity = movement;
+                            movement.Set(controllerOwner.movingSpeed, controllerOwner.rigidbody.velocity.y);
+                            controllerOwner.rigidbody.velocity = movement;
                         }
                     }
                     else if (direction.x > 0)
@@ -61,8 +61,8 @@ namespace GameScripts.StateMachine.States
                         if (grounder.isGrounded && wallCheck.wallAhead)
                         {
                             controllerOwner.movingRight = false;
-                            movement.Set(-controllerOwner.movingSpeed, ownerRigidbody.velocity.y);
-                            ownerRigidbody.velocity = movement;
+                            movement.Set(-controllerOwner.movingSpeed, controllerOwner.rigidbody.velocity.y);
+                            controllerOwner.rigidbody.velocity = movement;
                         }
                     }
                 }
