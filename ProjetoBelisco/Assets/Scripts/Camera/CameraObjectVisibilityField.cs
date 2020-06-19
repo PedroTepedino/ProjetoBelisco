@@ -1,5 +1,4 @@
-﻿using GameScripts.Tools;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace GameScripts.Camera
 {
@@ -8,7 +7,7 @@ namespace GameScripts.Camera
     {
         private static UnityEngine.Camera main;
 
-        [SerializeField] [Vector2Slider(0,10)] private Vector2 _offsets;
+        [SerializeField] private Vector2 _offsets;
 
         public static float Height { get; private set; } = 0;
         public static float Width { get; private set; } = 0;

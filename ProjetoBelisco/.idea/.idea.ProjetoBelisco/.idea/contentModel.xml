@@ -373,6 +373,14 @@
             <e p="RespawnerUi.cs" t="Include" />
           </e>
         </e>
+        <e p="Tests" t="Include">
+          <e p="PlayTests" t="Include">
+            <e p="a_player.cs" t="Include" />
+          </e>
+          <e p="Tests" t="Include">
+            <e p="NewTestScript.cs" t="Include" />
+          </e>
+        </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
@@ -402,13 +410,19 @@
           </e>
         </e>
       </e>
+      <e p="DOTween.Modules.csproj" t="IncludeRecursive" />
+      <e p="DOTweenPro.EditorScripts.csproj" t="IncludeRecursive" />
+      <e p="DOTweenPro.Scripts.csproj" t="IncludeRecursive" />
       <e p="GameAssemblyDefinition.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
+      <e p="PlayTests.csproj" t="IncludeRecursive" />
       <e p="ProjetoBelisco.sln" t="IncludeFlat" />
       <e p="Sirenix.OdinInspector.CompatibilityLayer.csproj" t="IncludeRecursive" />
       <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj" t="IncludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Tests.csproj" t="IncludeRecursive" />
+      <e p="Tools.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

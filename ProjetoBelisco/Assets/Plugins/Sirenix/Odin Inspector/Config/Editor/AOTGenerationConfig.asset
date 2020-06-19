@@ -12,9 +12,38 @@ MonoBehaviour:
   m_Script: {fileID: 1726182683, guid: a4865f1ab4504ed8a368670db22f409c, type: 3}
   m_Name: AOTGenerationConfig
   m_EditorClassIdentifier: 
-  automateBeforeBuilds: 0
+  automateBeforeBuilds: 1
   deleteDllAfterBuilds: 1
   AutomateForAllAOTPlatforms: 1
   automateForPlatforms: 0900000014000000
-  lastScan: 0
-  supportSerializedTypes: []
+  lastScan: 637281239240383827
+  supportSerializedTypes:
+  - TypeName: GameScripts.Player.AttackSystem+AttackDirection, GameAssemblyDefinition
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[GameScripts.Player.Directions,
+      GameAssemblyDefinition],[GameScripts.Player.AttackSystem+AttackDirection, GameAssemblyDefinition]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[GameScripts.Player.Directions,
+      GameAssemblyDefinition],[UnityEngine.Vector2, UnityEngine.CoreModule]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: GameScripts.Player.Directions, GameAssemblyDefinition
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[GameScripts.Player.Directions,
+      GameAssemblyDefinition]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Single, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[GameScripts.Player.Directions,
+      GameAssemblyDefinition]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Vector2, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1

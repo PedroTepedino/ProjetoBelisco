@@ -1,7 +1,5 @@
-﻿using System;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEngine;
-using Rewired;
 
 namespace RefatoramentoDoTioTepe
 {
