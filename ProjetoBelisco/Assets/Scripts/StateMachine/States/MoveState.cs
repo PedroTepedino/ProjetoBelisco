@@ -20,6 +20,7 @@ namespace GameScripts.StateMachine.States
      */
         private GameObject ownerGameObject;
         private Controller controllerOwner;
+        private Rigidbody2D ownerRigidbody;
         private Grounder grounder;
         private WallChecker wallCheck;
         private Vector2 movement = new Vector2();
@@ -44,6 +45,7 @@ namespace GameScripts.StateMachine.States
         {
             ownerGameObject = gameObject;
             controllerOwner = gameObject.GetComponent<Controller>();
+            ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
         }
 
         /*Function: EnterState
@@ -106,8 +108,8 @@ namespace GameScripts.StateMachine.States
         }
         private void Move()
         {
-            movement.Set(controllerOwner.movingRight ? controllerOwner.movingSpeed : -controllerOwner.movingSpeed, controllerOwner.rigidbody.velocity.y);
-            controllerOwner.rigidbody.velocity = movement;
+            movement.Set(controllerOwner.movingRight ? controllerOwner.movingSpeed : -controllerOwner.movingSpeed, ownerRigidbody.velocity.y);
+            ownerRigidbody.velocity = movement;
             timeToWait = Random.Range(0, maxStopTime);
             timer = 0;
             Debug.Log(timeToWait);
