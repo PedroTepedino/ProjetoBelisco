@@ -6,5 +6,6 @@ namespace RefatoramentoDoTioTepe
     {
         float Horizontal { get; }
         bool PausePressed { get; }
+        bool Jump { get; }
     }
 }

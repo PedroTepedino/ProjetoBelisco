@@ -306,8 +306,12 @@
           <e p="RefatoramentoDoTioTepe" t="Include">
             <e p="Bootstrapper.cs" t="Include" />
             <e p="Player" t="Include">
+              <e p="Grounder.cs" t="Include" />
+              <e p="IJumper.cs" t="Include" />
               <e p="IMover.cs" t="Include" />
               <e p="IPlayerInput.cs" t="Include" />
+              <e p="Jumper.cs" t="Include" />
+              <e p="LifeSystem.cs" t="Include" />
               <e p="Mover.cs" t="Include" />
               <e p="Player.cs" t="Include" />
               <e p="PlayerParameters.cs" t="Include" />

@@ -1,19 +1,21 @@
 ﻿using System;
+using UnityEditor.PackageManager.Requests;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace RefatoramentoDoTioTepe
 {
     public class Bootstrapper
     {
-        //[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        //[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         public static void Initialize()
         {
-            if (RewiredPlayerInput.Instance != null)
+            var inputSystem = GameObject.FindObjectOfType<RewiredPlayerInput>();
+            if (inputSystem != null)
                 return;
-            
-            var inputGameObject = new GameObject("[INPUT SYSTEM]");
-            inputGameObject.AddComponent<RewiredPlayerInput>();
-            GameObject.DontDestroyOnLoad(inputGameObject);
+
+            Addressables.InstantiateAsync("[INPUT SYSTEM].prefab");
         }
     }
 }

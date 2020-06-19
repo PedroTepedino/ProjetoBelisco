@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/UI.unity
     guid: 9fe83059a5f47824792717b1045d8992
   - enabled: 1
-    path: Assets/Scenes/TestScenes/MovementTests.unity
+    path: Assets/Scenes/TestScenes/PlayerTests.unity
     guid: 2ce88eaeb91afbd49991c0f5c90d7c27
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: df6654dc09b831341bb6100f9072d0e9,
