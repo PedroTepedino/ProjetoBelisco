@@ -8,6 +8,9 @@ namespace RefatoramentoDoTioTepe
     {
         [BoxGroup("Movement")] [SerializeField] private float _movementSpeed = 5f;
         
+        [BoxGroup("Jump")] [SerializeField] private float _jumpVelocity = 5f;
+        [BoxGroup("Jump")] [SerializeField] private float _maxJumpButtonHoldTime = 1f;
+
         [BoxGroup("Life System")] [SerializeField] private int _maxHealth = 10;
 
         [BoxGroup("Grounder")] [SerializeField] private Vector3 _grounderPosition;
@@ -20,5 +23,7 @@ namespace RefatoramentoDoTioTepe
         public int MaxHealth => _maxHealth;
         public Vector2 GrounderSizes => _grounderSizes;
         public LayerMask GrounderLayerMask => _grounderLayerMask;
+        public float JumpVelocity => _jumpVelocity;
+        public float MaxJumpHoldTime => _maxJumpButtonHoldTime;
     }
 }

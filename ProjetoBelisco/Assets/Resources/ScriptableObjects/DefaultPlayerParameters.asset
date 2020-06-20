@@ -15,4 +15,7 @@ MonoBehaviour:
   _movementSpeed: 10
   _maxHealth: 10
   _grounderPosition: {x: 0, y: 0, z: 0}
-  _grounderSizes: {x: 0.3, y: 0.05}
+  _grounderSizes: {x: 0.3, y: 0.1}
+  _grounderLayerMask:
+    serializedVersion: 2
+    m_Bits: 256

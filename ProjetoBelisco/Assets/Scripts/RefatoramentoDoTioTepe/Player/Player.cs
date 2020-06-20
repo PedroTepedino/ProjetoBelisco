@@ -18,6 +18,7 @@ namespace RefatoramentoDoTioTepe
         public PlayerParameters PlayerParameters => _playerParameters;
         public LifeSystem LifeSystem => _lifeSystem;
         public Grounder Grounder => _grounder;
+        public bool Jumping => _jumper.Jumping;
 
         private void Awake()
         {
