@@ -13,6 +13,13 @@ namespace GameScripts.Enemies
                     this.stateMachine.ChangeState(new AlertState(this.gameObject));
                 }
             }
+            else
+            {
+                if(actualState != "move"){
+                    this.stateMachine.ChangeState(new MoveState(this.gameObject));
+                }
+            }
+
             this.stateMachine.RunStateUpdate();
         }
     }

@@ -11,6 +11,7 @@ namespace GameScripts.Enemies
         private Controller controller;
         private Attack _attack;
         private Vector3 _checkerCenter;
+        private bool bossEnemy;
 
         public Transform target { get; private set; } = null;
         public bool hasTarget { get; private set; } = false;
@@ -19,11 +20,19 @@ namespace GameScripts.Enemies
         {
             controller = GetComponent<Controller>();
             _attack = GetComponent<Attack>();
+            bossEnemy = controller.bossEnemy;
+            if (bossEnemy){
+                hasTarget = true;
+                target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+            }
         }
 
         void Update()
         {
-            hasTarget = TargetingAction();
+            if (!bossEnemy)
+            {
+                hasTarget = TargetingAction();
+            }
         }
 
         private bool TargetingAction(){

@@ -51,6 +51,10 @@ namespace GameScripts.StateMachine.States
                         _attack.AttackAction(target);
 
                         timer = 0;
+                        if (controllerOwner.bossEnemy)
+                        {
+                            controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
+                        }
                     }
                 }
                 else
