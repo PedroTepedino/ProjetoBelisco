@@ -33,50 +33,95 @@ namespace GameScripts.StateMachine.States
 
             if (target != null)
             {
-                Debug.Log(target);
-                Debug.Log(Vector2.Distance(ownerGameObject.transform.position, target.position) <= _attack.attackRange);
+                Debug.Log("target");
                 if (Vector2.Distance(ownerGameObject.transform.position, target.position) <= _attack.attackRange)
                 {
-                
+                    Debug.Log("atttackrange");
                     if (controllerOwner.actualState != "attack")
                     {
-                        Debug.Log("atk");
+                        Debug.Log("atttack");
                         controllerOwner.stateMachine.ChangeState(new AttackState(ownerGameObject));
                     }
                 }
                 else
                 {
+                    Debug.Log("direction");
                     Vector2 direction = (target.position - ownerGameObject.transform.position).normalized;
                     if (direction.x < 0)//direita
                     {
-                        if (grounder.isGrounded && wallCheck.wallAhead)
-                        {
-                            controllerOwner.movingRight = true;
-                            movement.Set(controllerOwner.movingSpeed, controllerOwner.rigidbody.velocity.y);
-                            controllerOwner.rigidbody.velocity = movement;
+                        if(controllerOwner.movingRight){
+                            Move();
                         }
+                        else
+                        {
+                            Flip();
+                        }
+                        Debug.Log("direita");
+                        // if (grounder.isGrounded && wallCheck.wallAhead)
+                        // {
+                        //     Debug.Log("anda direita");
+                        //     controllerOwner.movingRight = true;
+                        //     movement.Set(controllerOwner.movingSpeed, ownerRigidbody.velocity.y);
+                        //     ownerRigidbody.velocity = movement;
+                        // }
+
                     }
                     else if (direction.x > 0)
                     {
-                        if (grounder.isGrounded && wallCheck.wallAhead)
-                        {
-                            controllerOwner.movingRight = false;
-                            movement.Set(-controllerOwner.movingSpeed, controllerOwner.rigidbody.velocity.y);
-                            controllerOwner.rigidbody.velocity = movement;
+                        if(!controllerOwner.movingRight){
+                            Move();
                         }
+                        else
+                        {
+                            Flip();
+                        }
+                        Debug.Log("esquerad");
+                        // if (grounder.isGrounded && wallCheck.wallAhead)
+                        // {
+                        //     Debug.Log("anda esquerda");
+                        //     controllerOwner.movingRight = false;
+                        //     movement.Set(-controllerOwner.movingSpeed, ownerRigidbody.velocity.y);
+                        //     ownerRigidbody.velocity = movement;
+                        // }
                     }
                 }
-            
+
+                 if (Vector2.Distance(ownerGameObject.transform.position, target.position) >= controllerOwner.lookingRange)
+                {
+                    Debug.Log("lookingrange");
+                    if (controllerOwner.actualState != "move")
+                    {
+                        Debug.Log("move");
+                        controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
+                    }
+                }
             }
             else
             {
-                controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
+                Debug.Log("no target");
+                if (controllerOwner.actualState != "move")
+                {
+                    Debug.Log("move no target");
+                    controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
+                }
             }
         }
 
         public void ExitState()
         {
         
+        }
+
+        private void Move()
+        {
+            movement.Set(controllerOwner.movingRight ? controllerOwner.movingSpeed : -controllerOwner.movingSpeed, ownerRigidbody.velocity.y);
+            ownerRigidbody.velocity = movement;
+        }
+
+        private void Flip()
+        {
+            ownerGameObject.transform.eulerAngles = new Vector3(0, controllerOwner.movingRight ? -180 : 0, 0);
+            controllerOwner.movingRight = controllerOwner.movingRight ? false : true;
         }
     }
 }

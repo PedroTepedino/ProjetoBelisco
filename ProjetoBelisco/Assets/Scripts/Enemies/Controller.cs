@@ -19,8 +19,10 @@ namespace GameScripts.Enemies
         public StateMachine.StateMachine stateMachine;
         public Rigidbody2D rigidbody;
         public Targeting targeting;
+        public Attack attack;
         public string actualState;
         public bool movingRight = true;
+        public bool bossEnemy = false;
         public float movingSpeed = 5;
         public float lookingRange = 5;
         public float alertAnimationTime = 0;
@@ -31,9 +33,10 @@ namespace GameScripts.Enemies
         private void Start()
         {
             rigidbody = GetComponent<Rigidbody2D>();
-            stateMachine = gameObject.AddComponent<StateMachine.StateMachine>();
-            this.stateMachine.ChangeState(new MoveState(this.gameObject));
+            stateMachine = gameObject.AddComponent<StateMachine.StateMachine>();            
+            this.stateMachine.ChangeState(new IddleState(this.gameObject));
             targeting = GetComponent<Targeting>();
+            attack = GetComponent<Attack>();
         }
     
         public abstract void Update();

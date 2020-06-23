@@ -51,16 +51,29 @@ namespace GameScripts.StateMachine.States
                         _attack.AttackAction(target);
 
                         timer = 0;
+                        if (controllerOwner.bossEnemy)
+                        {
+                            if (controllerOwner.actualState != "move")
+                            {
+                                controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
+                            }
+                        }
                     }
                 }
                 else
                 {
-                    controllerOwner.stateMachine.ChangeState(new ChaseState(ownerGameObject));
+                    if (controllerOwner.actualState != "chase")
+                    {
+                        controllerOwner.stateMachine.ChangeState(new ChaseState(ownerGameObject));
+                    }
                 }
             }
             else
             {
+                if (controllerOwner.actualState != "move")
+                {
                 controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
+                }
             }
         }
     }

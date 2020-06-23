@@ -39,12 +39,18 @@ namespace GameScripts.StateMachine.States
             {
                 if (timer >= alertAnimationTime)
                 {
-                    controllerOwner.stateMachine.ChangeState(new ChaseState(ownerGameObject));
+                    if (controllerOwner.actualState != "chase")
+                    {
+                        controllerOwner.stateMachine.ChangeState(new ChaseState(ownerGameObject));
+                    }
                 }
             }
             else
             {
-                controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
+                if (controllerOwner.actualState != "move")
+                {
+                    controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
+                }
             }
         }
     }
