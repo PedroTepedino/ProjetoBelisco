@@ -5,7 +5,8 @@ namespace RefatoramentoDoTioTepe
 {
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(Grounder))]
-    public class Player : MonoBehaviour
+    [RequireComponent(typeof(Collider2D))]
+    public class Player : MonoBehaviour, IHittable
     {
         [SerializeField] [AssetsOnly] [InlineEditor(InlineEditorObjectFieldModes.Hidden)] private PlayerParameters _playerParameters;
         private IMover _mover;
@@ -13,7 +14,6 @@ namespace RefatoramentoDoTioTepe
         private IAttacker _attacker;
         private LifeSystem _lifeSystem;
         private Grounder _grounder;
-        private PawnInventory _pawnInventory;
 
         public PlayerParameters PlayerParameters => _playerParameters;
         public LifeSystem LifeSystem => _lifeSystem;
@@ -27,7 +27,11 @@ namespace RefatoramentoDoTioTepe
             _mover = new Mover(this);
             _jumper = new Jumper(this);
             _attacker = new Attacker(this);
-            _pawnInventory = new PawnInventory();
+        }
+
+        public void Hit(int damage)
+        {
+            _lifeSystem.Damage(damage);
         }
 
         private void Update()

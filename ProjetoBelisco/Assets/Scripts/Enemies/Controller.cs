@@ -26,8 +26,7 @@ namespace GameScripts.Enemies
         public float alertAnimationTime = 0;
         public float maxStopTime = 0;
         public float minTimeBetweenStops = 3;
-
-
+        
         private void Start()
         {
             rigidbody = GetComponent<Rigidbody2D>();

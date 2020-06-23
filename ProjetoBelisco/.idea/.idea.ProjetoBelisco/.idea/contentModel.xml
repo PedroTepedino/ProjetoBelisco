@@ -305,18 +305,21 @@
           </e>
           <e p="RefatoramentoDoTioTepe" t="Include">
             <e p="Bootstrapper.cs" t="Include" />
+            <e p="Inventory" t="Include">
+              <e p="Paw.cs" t="Include" />
+              <e p="PawInventory.cs" t="Include" />
+            </e>
             <e p="Player" t="Include">
               <e p="Attacker.cs" t="Include" />
               <e p="Grounder.cs" t="Include" />
               <e p="IAttacker.cs" t="Include" />
+              <e p="IHittable.cs" t="Include" />
               <e p="IJumper.cs" t="Include" />
               <e p="IMover.cs" t="Include" />
-              <e p="Inventory.cs" t="Include" />
               <e p="IPlayerInput.cs" t="Include" />
               <e p="Jumper.cs" t="Include" />
               <e p="LifeSystem.cs" t="Include" />
               <e p="Mover.cs" t="Include" />
-              <e p="Pawn.cs" t="Include" />
               <e p="Player.cs" t="Include" />
               <e p="PlayerParameters.cs" t="Include" />
               <e p="RewiredPlayerInput.cs" t="Include" />
@@ -384,6 +387,9 @@
         <e p="Tests" t="Include">
           <e p="PlayTests" t="Include">
             <e p="a_player.cs" t="Include" />
+            <e p="Helpers.cs" t="Include" />
+            <e p="with_a_life_system.cs" t="Include" />
+            <e p="with_an_empty_pawn_inventory.cs" t="Include" />
           </e>
           <e p="Tests" t="Include">
             <e p="NewTestScript.cs" t="Include" />

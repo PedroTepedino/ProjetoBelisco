@@ -4,31 +4,9 @@ using NUnit.Framework;
 using UnityEngine.TestTools;
 using RefatoramentoDoTioTepe;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace a_player
 {
-    public class Helpers
-    {
-        public static Player GetPlayer()
-        {
-            Player player = GameObject.FindObjectOfType<Player>();
-            return player;
-        }
-
-        public static IEnumerator LoadPlayerScene()
-        {
-            var operation = SceneManager.LoadSceneAsync("PlayerTests");
-            while (!operation.isDone)
-                yield return null;
-        }
-
-        public static void SetupInputSystem()
-        {
-            RewiredPlayerInput.Instance = Substitute.For<IPlayerInput>();
-        }
-    }
-
     public class input_destroy
     {
         [TearDown]
