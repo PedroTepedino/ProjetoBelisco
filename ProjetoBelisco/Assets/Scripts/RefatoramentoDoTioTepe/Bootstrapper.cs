@@ -1,8 +1,5 @@
-﻿using System;
-using UnityEditor.PackageManager.Requests;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace RefatoramentoDoTioTepe
 {

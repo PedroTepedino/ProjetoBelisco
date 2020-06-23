@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 8233227987494813058}
   - component: {fileID: 2178178212101208535}
   - component: {fileID: 2178178212101209646}
-  - component: {fileID: 2178178212101209642}
   - component: {fileID: 2178178212101208533}
   - component: {fileID: 383634805}
   - component: {fileID: 383634806}
@@ -273,8 +272,9 @@ MonoBehaviour:
   explosionAttackRadius: 0.84
   explosionAttackDamage: 1
   rangedAtttackChance: 1
+  _rangeAttackCenter: {x: 0, y: 0}
   rangeAttackDamage: 1
-  rangeAttackProjectile: {fileID: 0}
+  _rangeAttackProjectileTag: 
   IsInRange: 0
 --- !u!114 &2178178212101208535
 MonoBehaviour:
@@ -319,22 +319,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &2178178212101209642
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2178178212101209647}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!70 &2178178212101208533
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

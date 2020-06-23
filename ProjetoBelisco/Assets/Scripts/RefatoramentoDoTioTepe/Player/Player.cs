@@ -1,6 +1,4 @@
-﻿using System;
-using Sirenix.OdinInspector;
-using UnityEditor;
+﻿using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
@@ -9,11 +7,13 @@ namespace RefatoramentoDoTioTepe
     [RequireComponent(typeof(Grounder))]
     public class Player : MonoBehaviour
     {
-        [SerializeField][AssetsOnly][InlineEditor(InlineEditorObjectFieldModes.Hidden)] private PlayerParameters _playerParameters;
+        [SerializeField] [AssetsOnly] [InlineEditor(InlineEditorObjectFieldModes.Hidden)] private PlayerParameters _playerParameters;
         private IMover _mover;
         private IJumper _jumper;
+        private IAttacker _attacker;
         private LifeSystem _lifeSystem;
         private Grounder _grounder;
+        private PawnInventory _pawnInventory;
 
         public PlayerParameters PlayerParameters => _playerParameters;
         public LifeSystem LifeSystem => _lifeSystem;
@@ -26,6 +26,8 @@ namespace RefatoramentoDoTioTepe
             _lifeSystem = new LifeSystem(this);
             _mover = new Mover(this);
             _jumper = new Jumper(this);
+            _attacker = new Attacker(this);
+            _pawnInventory = new PawnInventory();
         }
 
         private void Update()

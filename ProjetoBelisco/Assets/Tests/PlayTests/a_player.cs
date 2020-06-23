@@ -3,9 +3,7 @@ using NSubstitute;
 using NUnit.Framework;
 using UnityEngine.TestTools;
 using RefatoramentoDoTioTepe;
-using UnityEditor.SceneManagement;
 using UnityEngine;
-using UnityEngine.Experimental.AI;
 using UnityEngine.SceneManagement;
 
 namespace a_player
