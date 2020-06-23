@@ -112,7 +112,6 @@ namespace GameScripts.StateMachine.States
             ownerRigidbody.velocity = movement;
             timeToWait = Random.Range(0, maxStopTime);
             timer = 0;
-            Debug.Log(timeToWait);
         }
 
         private void Flip()

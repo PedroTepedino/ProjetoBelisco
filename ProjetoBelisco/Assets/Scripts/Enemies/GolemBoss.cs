@@ -10,23 +10,38 @@ namespace GameScripts.Enemies
         private float timer = 0f;
 
         public override void Update() {
-            timer += Time.deltaTime;
-            if (timer > attack.attackSpeed)
+            if (targeting.hasTarget)
             {
-                if (actualState != "alert" && actualState != "attack" && actualState != "chase")
+                timer += Time.deltaTime;
+                if (timer > attack.attackSpeed)
                 {
-                    this.stateMachine.ChangeState(new AlertState(this.gameObject));
-                }    
+                    if (actualState != "alert" && actualState != "attack" && actualState != "chase")
+                    {
+                        this.stateMachine.ChangeState(new ChaseState(this.gameObject));
+                    }
+                    timer = 0;
+                }
+                else
+                {
+                    if (actualState != "move" && actualState != "attack" && actualState != "chase" && actualState != "alert")
+                    {
+                        this.stateMachine.ChangeState(new MoveState(this.gameObject));
+                    }
+                }
             }
             else
             {
-                if(actualState != "move" && actualState != "attack" && actualState != "chase" && actualState != "alert")
-                {
-                    this.stateMachine.ChangeState(new MoveState(this.gameObject));
-                }
+                ResetBoss();
             }
 
             this.stateMachine.RunStateUpdate();
+        }
+
+        private void ResetBoss(){
+            if (actualState != "iddle")
+            {
+                this.stateMachine.ChangeState(new IddleState(this.gameObject));
+            }
         }
     }
 }

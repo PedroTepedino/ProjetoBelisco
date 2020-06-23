@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using GameScripts.PoolingSystem;
 using Sirenix.OdinInspector;
@@ -158,7 +159,7 @@ namespace GameScripts.Enemies
             }
             else if (index == 3)
             {
-                DashAttack();
+               StartCoroutine(DashAttack());
             }
             else if (index == 4)
             {
@@ -195,7 +196,7 @@ namespace GameScripts.Enemies
             Pooler.Instance.SpawnFromPool(_rangeAttackProjectileTag, (Vector2)(this.transform.position) + _rangeAttackCenter, this.transform.rotation);
         }
 
-        private void DashAttack()
+        private IEnumerator DashAttack()
         {
             Collider2D hit = null;
             while (grounder.isGrounded && !wallCheck.wallAhead && hit == null)
@@ -210,6 +211,7 @@ namespace GameScripts.Enemies
                     hit.gameObject.GetComponent<Player.Life>().Damage(dashAttackDamage);
                     hit = null;
                 }
+                yield return null;
             }
         }
 
