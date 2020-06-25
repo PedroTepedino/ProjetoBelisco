@@ -1182,7 +1182,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 429274110}
-  - component: {fileID: 429274109}
   - component: {fileID: 429274108}
   - component: {fileID: 429274113}
   - component: {fileID: 429274115}
@@ -1231,33 +1230,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1336e93993bb034baeac82c2fcccfd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &429274109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429274106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 938c52766c8066d4485eca05643e6bfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  layerTargeting:
-    serializedVersion: 2
-    m_Bits: 4352
-  stateMachine: {fileID: 0}
-  rigidbody: {fileID: 429274107}
-  targeting: {fileID: 0}
-  attack: {fileID: 0}
-  actualState: 
-  movingRight: 1
-  bossEnemy: 0
-  movingSpeed: 1
-  lookingRange: 3
-  alertAnimationTime: 0
-  maxStopTime: 2
-  minTimeBetweenStops: 3
 --- !u!4 &429274110
 Transform:
   m_ObjectHideFlags: 0

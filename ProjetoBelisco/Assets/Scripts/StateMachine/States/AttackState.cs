@@ -41,40 +41,49 @@ namespace GameScripts.StateMachine.States
         {
             target = controllerOwner.targeting.target;
             timer += Time.deltaTime;
-
+            
             if(target != null)
             {
-                if (Vector2.Distance(ownerGameObject.transform.position, target.position) <= _attack.attackRange)
+                if (timer >= _attack.attackSpeed)
                 {
-                    if (timer >= _attack.attackSpeed)
-                    {
-                        _attack.AttackAction(target);
+                    _attack.AttackAction(target);
+                    timer = 0;                       
+                }
+            }
 
-                        timer = 0;
-                        if (controllerOwner.bossEnemy)
-                        {
-                            if (controllerOwner.actualState != "move")
-                            {
-                                controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
-                            }
-                        }
-                    }
-                }
-                else
-                {
-                    if (controllerOwner.actualState != "chase")
-                    {
-                        controllerOwner.stateMachine.ChangeState(new ChaseState(ownerGameObject));
-                    }
-                }
-            }
-            else
-            {
-                if (controllerOwner.actualState != "move")
-                {
-                controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
-                }
-            }
+            // if(target != null)
+            // {
+            //     if (Vector2.Distance(ownerGameObject.transform.position, target.position) <= _attack.attackRange)
+            //     {
+            //         if (timer >= _attack.attackSpeed)
+            //         {
+            //             _attack.AttackAction(target);
+
+            //             timer = 0;
+            //             if (controllerOwner.bossEnemy)
+            //             {
+            //                 if (controllerOwner.actualState != "move")
+            //                 {
+            //                     controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
+            //                 }
+            //             }
+            //         }
+            //     }
+            //     else
+            //     {
+            //         if (controllerOwner.actualState != "chase")
+            //         {
+            //             controllerOwner.stateMachine.ChangeState(new ChaseState(ownerGameObject));
+            //         }
+            //     }
+            // }
+            // else
+            // {
+            //     if (controllerOwner.actualState != "move")
+            //     {
+            //     controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
+            //     }
+            // }
         }
     }
 }
