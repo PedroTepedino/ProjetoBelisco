@@ -143,6 +143,14 @@ namespace GameScripts.Enemies
             }
         }
 
+        public void SelectedAttack(Transform target, int attackID)
+        {
+            if (target != null)
+            {
+                OnAttack?.Invoke(attackID);
+            }
+        }
+
         private void ListenAttackFinished(int index)
         {
             if (index == 0)

@@ -14,7 +14,6 @@ namespace GameScripts.Enemies
                     if(actualState != "move")
                     {
                         this.stateMachine.ChangeState(new MoveState(this.gameObject));
-                        Debug.Log(actualState + " >lookingRange");
                     }
                 }              
                 else if(Vector2.Distance(this.transform.position, targeting.target.position) > attack.attackRange)
@@ -22,7 +21,6 @@ namespace GameScripts.Enemies
                     if (actualState != "alert" && actualState != "attack" && actualState != "chase")
                     {
                         this.stateMachine.ChangeState(new AlertState(this.gameObject));
-                        Debug.Log(actualState);
                     }
                 }
                 else
@@ -30,7 +28,6 @@ namespace GameScripts.Enemies
                     if (actualState != "attack")
                     {
                         this.stateMachine.ChangeState(new AttackState(this.gameObject));
-                        Debug.Log(actualState);
                     }
                 }
             }
@@ -38,7 +35,6 @@ namespace GameScripts.Enemies
             {
                 if(actualState != "move"){
                     this.stateMachine.ChangeState(new MoveState(this.gameObject));
-                    Debug.Log(actualState + " no target");
                 }
             }
 
