@@ -1,6 +1,4 @@
-﻿using UnityEngine.UI;
-
-namespace RefatoramentoDoTioTepe
+﻿namespace RefatoramentoDoTioTepe
 {
     public class RestartButton : AbstractButton<RestartButton>
     {

@@ -15,8 +15,9 @@ namespace RefatoramentoDoTioTepe
 
         public void Tick()
         {
-            Vector2 movement = new Vector2(RewiredPlayerInput.Instance.Horizontal, _rigidbody2D.velocity.y);
-            _rigidbody2D.velocity = movement * _player.PlayerParameters.MovementSpeed;
+            float horizontalMovement = RewiredPlayerInput.Instance.Horizontal * _player.PlayerParameters.MovementSpeed;
+            Vector2 movement = new Vector2( horizontalMovement, _rigidbody2D.velocity.y);
+            _rigidbody2D.velocity = movement;
         }
     }
 }

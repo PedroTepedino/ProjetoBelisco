@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Debug = UnityEngine.Debug;
 
 namespace RefatoramentoDoTioTepe
 {
@@ -37,7 +35,7 @@ namespace RefatoramentoDoTioTepe
             var quit = new Quit();
             var win = new WinState();
             
-            _stateMachine.SetState(menu);
+            _stateMachine.SetState(play);
 
             _stateMachine.AddTransition(menu, loading, () => PlayButton.LevelToLoad != null);
             

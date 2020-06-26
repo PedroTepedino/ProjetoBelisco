@@ -1,20 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace RefatoramentoDoTioTepe
 {
     public class Bootstrapper
     {
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+        //[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         public static void Initialize()
         {
-            if (GameObject.FindObjectOfType<RewiredPlayerInput>() != null)
+            var inputSystem = GameObject.FindObjectOfType<RewiredPlayerInput>();
+            if (inputSystem != null)
                 return;
-            
-            var inputGameObject = new GameObject("[INPUT SYSTEM]");
-            inputGameObject.AddComponent<RewiredPlayerInput>();
-            GameObject.DontDestroyOnLoad(inputGameObject);
+
+            Addressables.InstantiateAsync("[INPUT SYSTEM].prefab");
         }
     }
 }

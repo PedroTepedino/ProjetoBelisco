@@ -26,6 +26,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UI.unity
     guid: 9fe83059a5f47824792717b1045d8992
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/PlayerTests.unity
+    guid: 2ce88eaeb91afbd49991c0f5c90d7c27
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/ItemTests.unity
+    guid: 199d3c547d56c784e9fe89bf38ec2de4
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/EnemyTests.unity
+    guid: 96fe4d56a205dba47a31311e78271924
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: df6654dc09b831341bb6100f9072d0e9,
       type: 2}

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Pedro\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Pedro\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ProjetoBelisco.-1485978191.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Pedro\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Pedro\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_ProjetoBelisco.-1485978191.00" t="ExcludeRecursive" />
     <e p="D:\Repos\ProjetoBelisco\ProjetoBelisco" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -299,18 +299,26 @@
             <e p="PlayParticle.cs" t="Include" />
             <e p="PoolableObject.cs" t="Include" />
           </e>
-          <e p="PlayTests" t="Include">
-            <e p="NewTestScript.cs" t="Include" />
-          </e>
           <e p="PoolingSystem" t="Include">
             <e p="IPooledObject.cs" t="Include" />
             <e p="Pooler.cs" t="Include" />
           </e>
           <e p="RefatoramentoDoTioTepe" t="Include">
             <e p="Bootstrapper.cs" t="Include" />
+            <e p="Inventory" t="Include">
+              <e p="Paw.cs" t="Include" />
+              <e p="PawInventory.cs" t="Include" />
+            </e>
             <e p="Player" t="Include">
+              <e p="Attacker.cs" t="Include" />
+              <e p="Grounder.cs" t="Include" />
+              <e p="IAttacker.cs" t="Include" />
+              <e p="IHittable.cs" t="Include" />
+              <e p="IJumper.cs" t="Include" />
               <e p="IMover.cs" t="Include" />
               <e p="IPlayerInput.cs" t="Include" />
+              <e p="Jumper.cs" t="Include" />
+              <e p="LifeSystem.cs" t="Include" />
               <e p="Mover.cs" t="Include" />
               <e p="Player.cs" t="Include" />
               <e p="PlayerParameters.cs" t="Include" />
@@ -356,9 +364,6 @@
               <e p="MoveState.cs" t="Include" />
             </e>
           </e>
-          <e p="Tests" t="Include">
-            <e p="NewTestScript.cs" t="Include" />
-          </e>
           <e p="Tools" t="Include">
             <e p="Editor" t="Include">
               <e p="CheckFirstSpawner.cs" t="Include" />
@@ -377,6 +382,17 @@
             <e p="PixelPerfectCanvasScale.cs" t="Include" />
             <e p="PlayerUiManager.cs" t="Include" />
             <e p="RespawnerUi.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Tests" t="Include">
+          <e p="PlayTests" t="Include">
+            <e p="a_player.cs" t="Include" />
+            <e p="Helpers.cs" t="Include" />
+            <e p="with_a_life_system.cs" t="Include" />
+            <e p="with_an_empty_pawn_inventory.cs" t="Include" />
+          </e>
+          <e p="Tests" t="Include">
+            <e p="NewTestScript.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
@@ -408,6 +424,10 @@
           </e>
         </e>
       </e>
+      <e p="DOTween.Modules.csproj" t="IncludeRecursive" />
+      <e p="DOTweenPro.EditorScripts.csproj" t="IncludeRecursive" />
+      <e p="DOTweenPro.Scripts.csproj" t="IncludeRecursive" />
+      <e p="GameAssemblyDefinition.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="PlayTests.csproj" t="IncludeRecursive" />
@@ -416,6 +436,7 @@
       <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj" t="IncludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="Tests.csproj" t="IncludeRecursive" />
+      <e p="Tools.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

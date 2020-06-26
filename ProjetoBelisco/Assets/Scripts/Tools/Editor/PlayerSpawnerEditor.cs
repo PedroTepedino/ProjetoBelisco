@@ -1,4 +1,5 @@
-﻿using GameScripts.Environment;
+﻿#if UNITY_EDITOR
+using GameScripts.Environment;
 using UnityEditor;
 using UnityEngine;
 
@@ -32,3 +33,4 @@ namespace GameScripts.Tools.Editor
         }
     }
 }
+#endif

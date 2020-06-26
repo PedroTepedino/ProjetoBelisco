@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿#if UNITY_EDITOR
+
+using System.Collections.Generic;
 using System.Linq;
 using GameScripts.Environment;
 using Sirenix.OdinInspector;
@@ -187,3 +189,5 @@ namespace GameScripts.Tools.Editor
         }
     }
 }
+
+#endif

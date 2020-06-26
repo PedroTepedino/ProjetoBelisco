@@ -1,31 +1,40 @@
-﻿using System.Collections;
-using UnityEngine;
-using UnityEngine.Rendering;
+﻿using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
 {
     public class RewiredPlayerInput : MonoBehaviour, IPlayerInput
     {
         private Rewired.Player _rewiredPlayer;
-        public static IPlayerInput Instance { get; private set; }
 
+        public static IPlayerInput Instance { get; set; } 
+        
         public float Horizontal => _rewiredPlayer.GetAxis("MoveHorizontal");
 
         public bool PausePressed => _rewiredPlayer.GetButtonDown("Pause");
+        public bool Jump => _rewiredPlayer.GetButton("Jump");
 
         private void Awake()
         {
-            Instance = this;
-            StartCoroutine(GetPlayer());
-        }
-        
-        private IEnumerator GetPlayer()
-        {
-            while (_rewiredPlayer == null)
+            if (Instance == null)
             {
-                yield return null;
-                if (Rewired.ReInput.isReady)
-                    _rewiredPlayer = Rewired.ReInput.players.GetPlayer(0);
+                Instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);   
+            }
+            
+            _rewiredPlayer = Rewired.ReInput.players.GetPlayer(0);
+
+            transform.parent = null;
+            DontDestroyOnLoad(gameObject);
+        }
+
+        private void OnDestroy()
+        {
+            if (ReferenceEquals(Instance, this))
+            {
+                Instance = null;
             }
         }
     }
