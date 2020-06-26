@@ -41,7 +41,9 @@ namespace GameScripts.StateMachine.States
                 {
                     if (controllerOwner.actualState != "chase")
                     {
+                        Debug.Log("chase");
                         controllerOwner.stateMachine.ChangeState(new ChaseState(ownerGameObject));
+                        
                     }
                 }
             }
@@ -49,6 +51,7 @@ namespace GameScripts.StateMachine.States
             {
                 if (controllerOwner.actualState != "move")
                 {
+                    Debug.Log("move lose target");
                     controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
                 }
             }

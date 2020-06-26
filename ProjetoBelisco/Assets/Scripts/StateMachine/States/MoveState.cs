@@ -75,6 +75,7 @@ namespace GameScripts.StateMachine.States
      */
         public void RunState()
         {
+            Debug.Log("!");
             timer += Time.deltaTime;
             timerBetweeneStops += Time.deltaTime;
             int chanceToStop;

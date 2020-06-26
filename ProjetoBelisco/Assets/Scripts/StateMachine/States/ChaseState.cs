@@ -33,90 +33,33 @@ namespace GameScripts.StateMachine.States
 
             if (target != null)
             {
-                Vector2 direction = (target.position - ownerGameObject.transform.position).normalized;
-                if (direction.x < 0)//direita
+                Vector2 direction = (target.position - ownerGameObject.transform.position);
+
+                if (direction.x > 0)//direita
                 {
-                    if(controllerOwner.movingRight){
-                        Move();
-                    }
-                    else
+                    if (grounder.isGrounded && !wallCheck.wallAhead)
                     {
-                        Flip();
-                    }                       
+                        Debug.Log(controllerOwner.movingRight);
+                        Debug.Log("anda direita");
+                        controllerOwner.movingRight = true;
+                        movement.Set(controllerOwner.movingSpeed, ownerRigidbody.velocity.y);
+                        ownerRigidbody.velocity = movement;
+                    }
+
                 }
-                else if (direction.x > 0)
+                else if (direction.x < 0)
                 {
-                    if(!controllerOwner.movingRight){
-                        Move();
-                    }
-                    else
+
+                    if (grounder.isGrounded && !wallCheck.wallAhead)
                     {
-                        Flip();
+                        Debug.Log(controllerOwner.movingRight);
+                        Debug.Log("anda esquerda");
+                        controllerOwner.movingRight = false;
+                        movement.Set(-controllerOwner.movingSpeed, ownerRigidbody.velocity.y);
+                        ownerRigidbody.velocity = movement;
                     }
                 }
-
-                // if (Vector2.Distance(ownerGameObject.transform.position, target.position) <= _attack.attackRange)
-                // {
-                //     if (controllerOwner.actualState != "attack")
-                //     {
-                //         controllerOwner.stateMachine.ChangeState(new AttackState(ownerGameObject));
-                //     }
-                // }
-                // else
-                // {
-                //     Vector2 direction = (target.position - ownerGameObject.transform.position).normalized;
-                //     if (direction.x < 0)//direita
-                //     {
-                //         if(controllerOwner.movingRight){
-                //             Move();
-                //         }
-                //         else
-                //         {
-                //             Flip();
-                //         }
-                //         // if (grounder.isGrounded && wallCheck.wallAhead)
-                //         // {
-                //         //     Debug.Log("anda direita");
-                //         //     controllerOwner.movingRight = true;
-                //         //     movement.Set(controllerOwner.movingSpeed, ownerRigidbody.velocity.y);
-                //         //     ownerRigidbody.velocity = movement;
-                //         // }
-
-                //     }
-                //     else if (direction.x > 0)
-                //     {
-                //         if(!controllerOwner.movingRight){
-                //             Move();
-                //         }
-                //         else
-                //         {
-                //             Flip();
-                //         }
-                //         // if (grounder.isGrounded && wallCheck.wallAhead)
-                //         // {
-                //         //     Debug.Log("anda esquerda");
-                //         //     controllerOwner.movingRight = false;
-                //         //     movement.Set(-controllerOwner.movingSpeed, ownerRigidbody.velocity.y);
-                //         //     ownerRigidbody.velocity = movement;
-                //         // }
-                //     }
-                // }
-
-                //  if (Vector2.Distance(ownerGameObject.transform.position, target.position) > controllerOwner.lookingRange)
-                // {
-                //     if (controllerOwner.actualState != "move")
-                //     {
-                //         controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
-                //     }
-                // }
             }
-            // else
-            // {
-            //     if (controllerOwner.actualState != "move")
-            //     {
-            //         controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
-            //     }
-            // }
         }
 
         public void ExitState()
@@ -126,8 +69,11 @@ namespace GameScripts.StateMachine.States
 
         private void Move()
         {
-            movement.Set(controllerOwner.movingRight ? controllerOwner.movingSpeed : -controllerOwner.movingSpeed, ownerRigidbody.velocity.y);
-            ownerRigidbody.velocity = movement;
+            if (grounder.isGrounded && !wallCheck.wallAhead)
+            {
+                movement.Set(controllerOwner.movingRight ? controllerOwner.movingSpeed : -controllerOwner.movingSpeed, ownerRigidbody.velocity.y);
+                ownerRigidbody.velocity = movement;
+            }
         }
 
         private void Flip()

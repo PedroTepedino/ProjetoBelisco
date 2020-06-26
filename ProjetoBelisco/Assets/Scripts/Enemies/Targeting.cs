@@ -14,7 +14,7 @@ namespace GameScripts.Enemies
         private Controller controller;
         private Attack _attack;
         private Vector3 _checkerCenter;
-        private bool bossEnemy;
+        private bool bossEnemy = false;
 
         public Transform target { get; private set; } = null;
         public bool hasTarget { get; private set; } = false;

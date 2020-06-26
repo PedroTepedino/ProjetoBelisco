@@ -50,40 +50,6 @@ namespace GameScripts.StateMachine.States
                     timer = 0;                       
                 }
             }
-
-            // if(target != null)
-            // {
-            //     if (Vector2.Distance(ownerGameObject.transform.position, target.position) <= _attack.attackRange)
-            //     {
-            //         if (timer >= _attack.attackSpeed)
-            //         {
-            //             _attack.AttackAction(target);
-
-            //             timer = 0;
-            //             if (controllerOwner.bossEnemy)
-            //             {
-            //                 if (controllerOwner.actualState != "move")
-            //                 {
-            //                     controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
-            //                 }
-            //             }
-            //         }
-            //     }
-            //     else
-            //     {
-            //         if (controllerOwner.actualState != "chase")
-            //         {
-            //             controllerOwner.stateMachine.ChangeState(new ChaseState(ownerGameObject));
-            //         }
-            //     }
-            // }
-            // else
-            // {
-            //     if (controllerOwner.actualState != "move")
-            //     {
-            //     controllerOwner.stateMachine.ChangeState(new MoveState(ownerGameObject));
-            //     }
-            // }
         }
     }
 }
