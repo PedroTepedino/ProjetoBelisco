@@ -35,7 +35,7 @@ namespace RefatoramentoDoTioTepe
             var quit = new Quit();
             var win = new WinState();
             
-            _stateMachine.SetState(play);
+            _stateMachine.SetState(menu);
 
             _stateMachine.AddTransition(menu, loading, () => PlayButton.LevelToLoad != null);
             
