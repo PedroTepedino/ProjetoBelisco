@@ -11,7 +11,6 @@ namespace GameScripts.Environment
     {
         public static PlayerRespawner CurrentSpawner = null;
         [SerializeField] private float _timeToSpawn = 3f;
-        [SerializeField] [EnumToggleButtons] private UiScenes _respawnUi = UiScenes.RespawnUi;
         [SerializeField] bool _firstSpawner = false;
 
         public static System.Action<PlayerRespawner> OnStartTimer;

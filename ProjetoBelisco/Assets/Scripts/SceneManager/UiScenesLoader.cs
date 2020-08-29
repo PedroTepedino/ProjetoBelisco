@@ -15,19 +15,9 @@ namespace GameScripts.SceneManager
             if (MainCamera != null) PixelPerfectCamera = MainCamera.gameObject.GetComponent<PixelPerfectCamera>();
         }
 
-        public static void LoadScene(UiScenes sceneToLoad)
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadSceneAsync((int)sceneToLoad, LoadSceneMode.Additive).completed += ActivateScene;
-        }
-
         private static void ActivateScene(AsyncOperation obj)
         {
             obj.allowSceneActivation = true;
-        }
-
-        public static void UnLoadScene(UiScenes sceneToUnload)
-        {
-            UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync((int)sceneToUnload);
         }
     }
 }

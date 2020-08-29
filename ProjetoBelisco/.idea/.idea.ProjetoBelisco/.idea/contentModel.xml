@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Pedro\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Pedro\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_ProjetoBelisco.-1485978191.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Pedro\AppData\local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Pedro\AppData\local\JetBrains\Rider2020.2\resharper-host\local\Transient\Rider\v202\SolutionCaches\_ProjetoBelisco.-1485978191.00" t="ExcludeRecursive" />
     <e p="D:\Repos\ProjetoBelisco\ProjetoBelisco" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AsepriteAnimationWorkflow" t="Include">
+          <e p="Editor" t="Include">
+            <e p="Aseprite.cs" t="Include" />
+            <e p="AsepriteAssets.cs" t="Include" />
+            <e p="AsepriteEnums.cs" t="Include" />
+            <e p="AsepriteImporter.cs" t="Include" />
+            <e p="AsepriteImporterEditor.cs" t="Include" />
+            <e p="AsepriteImporterSettings.cs" t="Include" />
+            <e p="AsepriteLoader.cs" t="Include" />
+            <e p="BlendFunc.cs" t="Include" />
+            <e p="Cel.cs" t="Include" />
+            <e p="ColorExtensions.cs" t="Include" />
+            <e p="Frame.cs" t="Include" />
+            <e p="FrameTag.cs" t="Include" />
+            <e p="Header.cs" t="Include" />
+            <e p="IndexedPalette.cs" t="Include" />
+            <e p="Layer.cs" t="Include" />
+            <e p="StreamExtensions.cs" t="Include" />
+            <e p="Texture2DExtensions.cs" t="Include" />
+          </e>
+        </e>
         <e p="ConsolePro" t="Include">
           <e p="ConsoleProDebug.cs" t="Include" />
           <e p="Remote" t="Include">
@@ -305,6 +326,10 @@
           </e>
           <e p="RefatoramentoDoTioTepe" t="Include">
             <e p="Bootstrapper.cs" t="Include" />
+            <e p="Enemies" t="Include">
+              <e p="Enemy.cs" t="Include" />
+              <e p="EnemyParameters.cs" t="Include" />
+            </e>
             <e p="Inventory" t="Include">
               <e p="Paw.cs" t="Include" />
               <e p="PawInventory.cs" t="Include" />

@@ -7,8 +7,7 @@ namespace GameScripts.Ui
     {
         private void Awake()
         {
-            UiScenesLoader.LoadScene(UiScenes.PlayerUi);
-            UiScenesLoader.LoadScene(UiScenes.PawsCounter);
+
         }
     }
 }

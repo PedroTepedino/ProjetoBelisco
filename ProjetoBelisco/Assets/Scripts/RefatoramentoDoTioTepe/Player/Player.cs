@@ -51,5 +51,10 @@ namespace RefatoramentoDoTioTepe
             Gizmos.color = Color.green;
             Gizmos.DrawWireCube(this.transform.position + _playerParameters.GrounderPosition, _playerParameters.GrounderSizes);
         }
+
+        public void OnObjectSpawn()
+        {
+            
+        }
     }
 }
