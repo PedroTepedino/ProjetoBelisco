@@ -3046,8 +3046,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1434242978136043340, guid: 50bda1634a0ac974eb4d3135fbe1013e,
         type: 3}
-      propertyPath: VelocityModule.x.scalar
-      value: -1
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5366140802195632289, guid: 50bda1634a0ac974eb4d3135fbe1013e,
         type: 3}
