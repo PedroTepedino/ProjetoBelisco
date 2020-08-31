@@ -1,4 +1,5 @@
-﻿using Sirenix.OdinInspector;
+﻿using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
@@ -11,9 +12,16 @@ namespace RefatoramentoDoTioTepe
         [SerializeField] [AssetsOnly] [InlineEditor(InlineEditorObjectFieldModes.Hidden)] private PlayerParameters _playerParameters;
         private IMover _mover;
         private IJumper _jumper;
-        private IAttacker _attacker;
+        private IAttacker _basicAttacker;
         private LifeSystem _lifeSystem;
         private Grounder _grounder;
+        
+        [SerializeField] 
+        private PlayerAnimatorController _playerAnimatorController;
+
+        private bool _lastFrameJumpState = false;
+
+        public event Action OnJump;
 
         public PlayerParameters PlayerParameters => _playerParameters;
         public LifeSystem LifeSystem => _lifeSystem;
@@ -26,7 +34,8 @@ namespace RefatoramentoDoTioTepe
             _lifeSystem = new LifeSystem(this);
             _mover = new Mover(this);
             _jumper = new Jumper(this);
-            _attacker = new Attacker(this);
+            _basicAttacker = new BasicAttacker(this);
+            
         }
 
         public void Hit(int damage)
@@ -38,23 +47,37 @@ namespace RefatoramentoDoTioTepe
         {
             _mover.Tick();
             _jumper.Tick();
+            _basicAttacker.Tick();
+            
+            CheckJumping();
+            _playerAnimatorController.UpdateParameters(_grounder.IsGrounded);
         }
 
         private void OnValidate()
         {
             if (_playerParameters == null)
-                _playerParameters = Resources.Load<PlayerParameters>("ScriptableObjects/DefaultPlayerParameters"); 
+                _playerParameters = Resources.Load<PlayerParameters>("ScriptableObjects/DefaultPlayerParameters");
+
+            if (_playerAnimatorController == null)
+                _playerAnimatorController = this.GetComponent<PlayerAnimatorController>();
         }
 
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.green;
             Gizmos.DrawWireCube(this.transform.position + _playerParameters.GrounderPosition, _playerParameters.GrounderSizes);
+            
+            
         }
 
-        public void OnObjectSpawn()
+        private void CheckJumping()
         {
-            
+            if (!_lastFrameJumpState && _jumper.Jumping)
+            {
+                OnJump?.Invoke();
+            }
+
+            _lastFrameJumpState = _jumper.Jumping;
         }
     }
 }

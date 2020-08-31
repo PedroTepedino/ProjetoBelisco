@@ -335,7 +335,7 @@
               <e p="PawInventory.cs" t="Include" />
             </e>
             <e p="Player" t="Include">
-              <e p="Attacker.cs" t="Include" />
+              <e p="BasicAttacker.cs" t="Include" />
               <e p="Grounder.cs" t="Include" />
               <e p="IAttacker.cs" t="Include" />
               <e p="IHittable.cs" t="Include" />
@@ -346,8 +346,11 @@
               <e p="LifeSystem.cs" t="Include" />
               <e p="Mover.cs" t="Include" />
               <e p="Player.cs" t="Include" />
+              <e p="PlayerAnimatorController.cs" t="Include" />
               <e p="PlayerParameters.cs" t="Include" />
+              <e p="RangedAttacker.cs" t="Include" />
               <e p="RewiredPlayerInput.cs" t="Include" />
+              <e p="StrongAttacker.cs" t="Include" />
             </e>
             <e p="StateMachine" t="Include">
               <e p="GameStateMachine.cs" t="Include" />

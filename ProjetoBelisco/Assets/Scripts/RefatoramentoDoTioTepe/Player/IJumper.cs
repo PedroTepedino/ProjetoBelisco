@@ -1,4 +1,6 @@
-﻿namespace RefatoramentoDoTioTepe
+﻿using System;
+
+namespace RefatoramentoDoTioTepe
 {
     public interface IJumper
     {

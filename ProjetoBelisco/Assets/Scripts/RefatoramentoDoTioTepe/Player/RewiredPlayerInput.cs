@@ -13,6 +13,10 @@ namespace RefatoramentoDoTioTepe
         public bool PausePressed => _rewiredPlayer.GetButtonDown("Pause");
         public bool Jump => _rewiredPlayer.GetButton("Jump");
 
+        public bool Attack => _rewiredPlayer.GetButtonDown("BasicAttack");
+        public bool StrongAttack => _rewiredPlayer.GetButtonDown("StrongAttack");
+        public bool RangedAttack => _rewiredPlayer.GetButtonDown("RangedAttack");
+
         private void Awake()
         {
             if (Instance == null)

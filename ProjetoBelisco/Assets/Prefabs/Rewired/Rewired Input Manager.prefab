@@ -292,9 +292,9 @@ MonoBehaviour:
       _userAssignable: 1
       _categoryId: 0
     - _id: 16
-      _name: Attack
+      _name: BasicAttack
       _type: 1
-      _descriptiveName: Attack
+      _descriptiveName: BasicAttack
       _positiveDescriptiveName: 
       _negativeDescriptiveName: 
       _behaviorId: 0
@@ -310,9 +310,18 @@ MonoBehaviour:
       _userAssignable: 1
       _categoryId: 0
     - _id: 18
-      _name: Ranged
+      _name: RangedAttack
       _type: 1
-      _descriptiveName: Ranged
+      _descriptiveName: RangedAttack
+      _positiveDescriptiveName: 
+      _negativeDescriptiveName: 
+      _behaviorId: 0
+      _userAssignable: 1
+      _categoryId: 0
+    - _id: 20
+      _name: StrongAttack
+      _type: 1
+      _descriptiveName: StrongAttack
       _positiveDescriptiveName: 
       _negativeDescriptiveName: 
       _behaviorId: 0
@@ -332,7 +341,7 @@ MonoBehaviour:
     actionCategoryMap:
       list:
       - categoryId: 0
-        actionIds: 08000000090000000a0000000f000000100000001100000012000000
+        actionIds: 08000000090000000a0000000f00000010000000110000001200000014000000
       - categoryId: 1
         actionIds: 04000000050000000600000007000000
     inputBehaviors:
@@ -432,7 +441,7 @@ MonoBehaviour:
         _modifierKey2: 0
         _modifierKey3: 0
       - _actionCategoryId: 0
-        _actionId: 15
+        _actionId: 18
         _elementType: 1
         _elementIdentifierId: 5
         _axisRange: 0
@@ -454,7 +463,7 @@ MonoBehaviour:
         _modifierKey2: 0
         _modifierKey3: 0
       - _actionCategoryId: 0
-        _actionId: 18
+        _actionId: 20
         _elementType: 1
         _elementIdentifierId: 8
         _axisRange: 0
@@ -699,6 +708,28 @@ MonoBehaviour:
         _modifierKey1: 0
         _modifierKey2: 0
         _modifierKey3: 0
+      - _actionCategoryId: 0
+        _actionId: 20
+        _elementType: 1
+        _elementIdentifierId: -1
+        _axisRange: 0
+        _invert: 0
+        _axisContribution: 0
+        _keyboardKeyCode: 104
+        _modifierKey1: 0
+        _modifierKey2: 0
+        _modifierKey3: 0
+      - _actionCategoryId: 0
+        _actionId: 18
+        _elementType: 1
+        _elementIdentifierId: -1
+        _axisRange: 0
+        _invert: 0
+        _axisContribution: 0
+        _keyboardKeyCode: 106
+        _modifierKey1: 0
+        _modifierKey2: 0
+        _modifierKey3: 0
     - id: 1
       categoryId: 1
       layoutId: 0
@@ -712,7 +743,7 @@ MonoBehaviour:
     controllerMapLayoutManagerRuleSets: []
     controllerMapEnablerRuleSets: []
     playerIdCounter: 2
-    actionIdCounter: 20
+    actionIdCounter: 21
     actionCategoryIdCounter: 2
     inputBehaviorIdCounter: 2
     mapCategoryIdCounter: 2
