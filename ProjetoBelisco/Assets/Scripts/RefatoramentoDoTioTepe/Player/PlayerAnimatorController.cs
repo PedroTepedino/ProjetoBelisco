@@ -50,20 +50,30 @@ namespace RefatoramentoDoTioTepe
 
         private void SetFloat(string floatName, float value)
         {
-            _animatorLeft.SetFloat(floatName, value);
             _animatorRight.SetFloat(floatName, value);
+            _animatorLeft.SetFloat(floatName, value);
         }
 
         private void SetBool(string boolName, bool value)
         {
-           _animatorLeft.SetBool(boolName, value);
-           _animatorRight.SetBool(boolName, value);
+            _animatorRight.SetBool(boolName, value);
+            _animatorLeft.SetBool(boolName, value);
+        }
+
+        private void SetTrigger(string triggerName)
+        {
+            _animatorRight.SetTrigger(triggerName);
+            _animatorLeft.SetTrigger(triggerName);
         }
 
         private void Jump()
         {
-            _animatorRight.SetTrigger("Jump");
-            _animatorLeft.SetTrigger("Jump");
+            SetTrigger("Jump");
+        }
+
+        public void StrongAttack()
+        {
+            SetTrigger("StrongAttack");
         }
 
         private void LookDirection(bool lookRight)

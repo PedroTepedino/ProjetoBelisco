@@ -13,6 +13,7 @@ namespace RefatoramentoDoTioTepe
         private IMover _mover;
         private IJumper _jumper;
         private IAttacker _basicAttacker;
+        private IAttacker _strongAttacker;
         private LifeSystem _lifeSystem;
         private Grounder _grounder;
         
@@ -35,7 +36,7 @@ namespace RefatoramentoDoTioTepe
             _mover = new Mover(this);
             _jumper = new Jumper(this);
             _basicAttacker = new BasicAttacker(this);
-            
+            _strongAttacker = new StrongAttacker(this);
         }
 
         public void Hit(int damage)
@@ -64,10 +65,16 @@ namespace RefatoramentoDoTioTepe
 
         private void OnDrawGizmos()
         {
+            var position = this.transform.position;
+            
             Gizmos.color = Color.green;
-            Gizmos.DrawWireCube(this.transform.position + _playerParameters.GrounderPosition, _playerParameters.GrounderSizes);
+            Gizmos.DrawWireCube(position + _playerParameters.GrounderPosition, _playerParameters.GrounderSizes);
             
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.StrongAttackCenter, _playerParameters.StrongAttackRadius);
             
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.StrongAttackExplosionCenter, _playerParameters.StrongAttackExplosionRadius);
         }
 
         private void CheckJumping()
