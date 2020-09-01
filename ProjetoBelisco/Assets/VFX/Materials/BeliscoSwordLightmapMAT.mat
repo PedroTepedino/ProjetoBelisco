@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BeliscoSwordLightmapMAT
-  m_Shader: {fileID: -6465566751694194690, guid: f7467e68e02613f43b6c033a477fcc51,
+  m_Shader: {fileID: -6465566751694194690, guid: 54b9ff156484dd84481b3fbeb0f3374f,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -20,6 +20,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Emission:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 312bfb3ab684ed94894b347ba24eacde, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -34,4 +38,5 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
+    - _Color: {r: 0.3448725, g: 2, b: 0, a: 1}
     - _SwordColor: {r: 0, g: 0.28284273, b: 0.09982684, a: 1}
