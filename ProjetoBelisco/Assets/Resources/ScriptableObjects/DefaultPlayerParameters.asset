@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b1f67f922b41a194c03178ec5b292a, type: 3}
   m_Name: DefaultPlayerParameters
   m_EditorClassIdentifier: 
-  _movementSpeed: 10
+  _movementSpeed: 5.5
+  _jumpVelocity: 3
+  _maxJumpButtonHoldTime: 1
   _maxHealth: 10
   _grounderPosition: {x: 0, y: 0, z: 0}
   _grounderSizes: {x: 0.3, y: 0.1}

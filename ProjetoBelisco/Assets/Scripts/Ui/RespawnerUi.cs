@@ -12,7 +12,6 @@ namespace GameScripts.Ui
     {
         private Tween _animation = null;
         [SerializeField] private Volume _postProcessingVolume;
-        [SerializeField] [EnumToggleButtons] private UiScenes _sceneIndex;
 
         [SerializeField] private GameObject _menu;
         [SerializeField] private TMPro.TextMeshProUGUI _timerText;
@@ -70,7 +69,6 @@ namespace GameScripts.Ui
         private void UnloadScene()
         {
             _curentPlayerRespawner = null;
-            UiScenesLoader.UnLoadScene(_sceneIndex);
         }
 
         private void KillAnimation()

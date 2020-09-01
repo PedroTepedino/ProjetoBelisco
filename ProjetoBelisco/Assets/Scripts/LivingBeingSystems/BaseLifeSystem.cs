@@ -18,10 +18,10 @@ namespace GameScripts.LivingBeingSystems
         [ShowInInspector] [BoxGroup("HealthParameters")] protected int _curentHealthPoints = 0;
 
         // Group: Properties
-        public bool IsDead { get => (_curentHealthPoints <= 0); }
-        public bool IsHealthFull { get => (_curentHealthPoints >= _maximumHealth); }
-        public int MaxHealth { get => _maximumHealth; }
-        public int CurentHealth { get => _curentHealthPoints; }
+        public bool IsDead  => (_curentHealthPoints <= 0); 
+        public bool IsHealthFull => (_curentHealthPoints >= _maximumHealth); 
+        public int MaxHealth => _maximumHealth; 
+        public int CurentHealth => _curentHealthPoints; 
 
         // Group: Unity Methods
 

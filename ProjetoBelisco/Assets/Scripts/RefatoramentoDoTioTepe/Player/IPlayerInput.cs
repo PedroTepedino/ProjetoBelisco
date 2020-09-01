@@ -7,5 +7,8 @@ namespace RefatoramentoDoTioTepe
         float Horizontal { get; }
         bool PausePressed { get; }
         bool Jump { get; }
+        bool Attack { get; }
+        bool StrongAttack { get; }
+        bool RangedAttack { get; }
     }
 }

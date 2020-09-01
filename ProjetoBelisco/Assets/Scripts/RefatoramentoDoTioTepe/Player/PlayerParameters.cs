@@ -17,6 +17,12 @@ namespace RefatoramentoDoTioTepe
         [BoxGroup("Grounder")] [SerializeField] private Vector2 _grounderSizes;
         [BoxGroup("Grounder")] [SerializeField] [EnumToggleButtons] private LayerMask _grounderLayerMask;
 
+        [BoxGroup("Attack")]
+        [BoxGroup("Attack/StrongAttack")] [SerializeField] private Vector2 _strongAttackCenter;
+        [BoxGroup("Attack/StrongAttack")] [SerializeField] private float _strongAttackRadius;
+        [BoxGroup("Attack/StrongAttack")] [SerializeField] private Vector2 _strongAttackExplosionCenter;
+        [BoxGroup("Attack/StrongAttack")] [SerializeField] private float _strongAttackExplosionRadius;
+
 
         public Vector3 GrounderPosition => _grounderPosition;
         public float MovementSpeed => _movementSpeed;
@@ -25,5 +31,9 @@ namespace RefatoramentoDoTioTepe
         public LayerMask GrounderLayerMask => _grounderLayerMask;
         public float JumpVelocity => _jumpVelocity;
         public float MaxJumpHoldTime => _maxJumpButtonHoldTime;
+        public Vector2 StrongAttackCenter => _strongAttackCenter;
+        public float StrongAttackRadius => _strongAttackRadius;
+        public Vector2 StrongAttackExplosionCenter => _strongAttackExplosionCenter;
+        public float StrongAttackExplosionRadius => _strongAttackExplosionRadius;
     }
 }

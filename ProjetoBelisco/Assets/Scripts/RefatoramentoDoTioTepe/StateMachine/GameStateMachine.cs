@@ -127,7 +127,6 @@ namespace RefatoramentoDoTioTepe
 
         public void Tick()
         {
-            
         }
 
         public void OnEnter()

@@ -75,7 +75,7 @@ namespace GameScripts.PoolingSystem
             {
                 Destroy(this.gameObject);
             }
-
+            
             GameStateMachine.OnGameStateChanged += HandleStateChanged;
         }
 

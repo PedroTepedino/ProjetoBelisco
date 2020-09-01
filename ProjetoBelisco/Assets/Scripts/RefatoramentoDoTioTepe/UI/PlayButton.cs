@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace RefatoramentoDoTioTepe
@@ -13,6 +14,11 @@ namespace RefatoramentoDoTioTepe
         private void Awake()
         {
             this.GetComponent<Button>().onClick.AddListener(() => LevelToLoad = _levelName);
+        }
+
+        public void Update()
+        {
+            Debug.Log(_levelName);
         }
     }
 }

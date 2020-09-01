@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1956,7 +1956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e94ff1830f54afb906e15305eb9a4b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelName: GamePlay
+  _levelName: _NovoMapa
 --- !u!114 &1664460682
 MonoBehaviour:
   m_ObjectHideFlags: 0
