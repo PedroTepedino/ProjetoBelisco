@@ -300,12 +300,12 @@ MonoBehaviour:
     SerializationNodes:
     - Name: _directionsAngles
       Entry: 7
-      Data: 0|UnityEngine.Rendering.SerializedDictionary`2[[Directions, Assembly-CSharp],[UnityEngine.Vector2,
-        UnityEngine.CoreModule]], Unity.RenderPipelines.Core.Runtime
+      Data: 0|System.Collections.Generic.Dictionary`2[[GameScripts.Player.Directions,
+        GameAssemblyDefinition],[UnityEngine.Vector2, UnityEngine.CoreModule]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[Directions, Assembly-CSharp]],
-        mscorlib
+      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[GameScripts.Player.Directions,
+        GameAssemblyDefinition]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -434,12 +434,13 @@ MonoBehaviour:
     SerializationNodes:
     - Name: _attackCenterDictionary
       Entry: 7
-      Data: 0|UnityEngine.Rendering.SerializedDictionary`2[[Directions, Assembly-CSharp],[PlayerAttackSystem+AttackDirection,
-        Assembly-CSharp]], Unity.RenderPipelines.Core.Runtime
+      Data: 0|System.Collections.Generic.Dictionary`2[[GameScripts.Player.Directions,
+        GameAssemblyDefinition],[GameScripts.Player.AttackSystem+AttackDirection,
+        GameAssemblyDefinition]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[Directions, Assembly-CSharp]],
-        mscorlib
+      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[GameScripts.Player.Directions,
+        GameAssemblyDefinition]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -460,13 +461,13 @@ MonoBehaviour:
       Data: 4
     - Name: $v
       Entry: 7
-      Data: PlayerAttackSystem+AttackDirection, Assembly-CSharp
+      Data: GameScripts.Player.AttackSystem+AttackDirection, GameAssemblyDefinition
     - Name: AttackCenter
       Entry: 7
       Data: UnityEngine.Vector2, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0.8
+      Data: 0
     - Name: 
       Entry: 4
       Data: 0
@@ -475,7 +476,7 @@ MonoBehaviour:
       Data: 
     - Name: Radius
       Entry: 4
-      Data: 0.67
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -490,13 +491,13 @@ MonoBehaviour:
       Data: 8
     - Name: $v
       Entry: 7
-      Data: PlayerAttackSystem+AttackDirection, Assembly-CSharp
+      Data: GameScripts.Player.AttackSystem+AttackDirection, GameAssemblyDefinition
     - Name: AttackCenter
       Entry: 7
       Data: UnityEngine.Vector2, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: -0.8
+      Data: 0
     - Name: 
       Entry: 4
       Data: 0
@@ -505,7 +506,7 @@ MonoBehaviour:
       Data: 
     - Name: Radius
       Entry: 4
-      Data: 0.67
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -520,7 +521,7 @@ MonoBehaviour:
       Data: 1
     - Name: $v
       Entry: 7
-      Data: PlayerAttackSystem+AttackDirection, Assembly-CSharp
+      Data: GameScripts.Player.AttackSystem+AttackDirection, GameAssemblyDefinition
     - Name: AttackCenter
       Entry: 7
       Data: UnityEngine.Vector2, UnityEngine.CoreModule
@@ -529,13 +530,13 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: 1
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: Radius
       Entry: 4
-      Data: 0.67
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -550,7 +551,7 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 7
-      Data: PlayerAttackSystem+AttackDirection, Assembly-CSharp
+      Data: GameScripts.Player.AttackSystem+AttackDirection, GameAssemblyDefinition
     - Name: AttackCenter
       Entry: 7
       Data: UnityEngine.Vector2, UnityEngine.CoreModule
@@ -559,13 +560,13 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 4
-      Data: -0.6
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: Radius
       Entry: 4
-      Data: 0.67
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
