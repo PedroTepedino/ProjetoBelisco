@@ -50,7 +50,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: d30280d3b69cecc4d8f1ffbf4ceafbe9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_Size: {x: 6, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &495487755
@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 1418781182}
   - component: {fileID: 1418781181}
   - component: {fileID: 1418781180}
+  - component: {fileID: 1965442232}
   m_Layer: 0
   m_Name: PlayerAnimatorRight
   m_TagString: Untagged
@@ -152,7 +153,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: d30280d3b69cecc4d8f1ffbf4ceafbe9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -173,7 +174,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8893161535412964697, guid: 08d4390e37ba8794c9611a0146ee2b00,
+  m_Sprite: {fileID: -8893161535412964697, guid: 6f94737a09bcfa644acf2d993f68edd7,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -182,7 +183,7 @@ SpriteRenderer:
   m_Size: {x: 6, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1418781180
@@ -204,6 +205,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1965442232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418781179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdbb2ea387b0cbc489760d5bca42a3e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particleSystem: {fileID: 1434242978136043340}
 --- !u!1 &5366140802195632289
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +661,7 @@ PrefabInstance:
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
       propertyPath: looping
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
@@ -669,6 +683,11 @@ PrefabInstance:
       propertyPath: VelocityModule.radial.scalar
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8514634335709135116, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}
       propertyPath: prewarm
@@ -679,6 +698,12 @@ PrefabInstance:
 --- !u!4 &1434242978136043342 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2467010910947378300, guid: 66417716cd21cb94784d02f8b4c81622,
+    type: 3}
+  m_PrefabInstance: {fileID: 3592712765060262706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1434242978136043340 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2467010910947378302, guid: 66417716cd21cb94784d02f8b4c81622,
     type: 3}
   m_PrefabInstance: {fileID: 3592712765060262706}
   m_PrefabAsset: {fileID: 0}

@@ -8,16 +8,6 @@ namespace GameScripts.Player
 
 
 
-        private void Awake()
-        {
-            Grounder.OnTouchGround += EmitParticle;
-        }
-
-        private void OnDestroy()
-        {
-            Grounder.OnTouchGround -= EmitParticle;
-        }
-
         public void EmitParticle()
         {
             _particleSystem.Play();

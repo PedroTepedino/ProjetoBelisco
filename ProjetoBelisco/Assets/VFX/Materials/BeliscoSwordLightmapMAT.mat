@@ -33,10 +33,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SwordTexture:
-        m_Texture: {fileID: 2800000, guid: 8929b2fd57f563b499b81802195c61a6, type: 3}
+        m_Texture: {fileID: 2800000, guid: 424879d0c86c6174c98177452d8890e0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
     - _Color: {r: 0.3448725, g: 2, b: 0, a: 1}
-    - _SwordColor: {r: 5.908723e-31, g: 5.908723e-31, b: 5.908723e-31, a: 1}
+    - _SwordColor: {r: 0.16637807, g: 0.16637807, b: 0.16637807, a: 1}
