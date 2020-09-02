@@ -23,26 +23,26 @@ namespace RefatoramentoDoTioTepe
 
             stateMachine = new StateMachine();
 
-            var move = new MoveState(this.gameObject);
-            var iddle = new IddleState(this.gameObject);
-            var chase = new ChaseState(this.gameObject);
-            var attack = new AttackState(this.gameObject);
+            var moveState = new MoveState(this.gameObject);
+            var iddleState = new IddleState(this.gameObject);
+            var chaseState = new ChaseState(this.gameObject);
+            var attackState = new AttackState(this.gameObject);
 
-            stateMachine.SetState(iddle);
+            stateMachine.SetState(iddleState);
 
-            stateMachine.AddTransition(iddle, move, iddle.TimeEnded);
+            stateMachine.AddTransition(iddleState, moveState, iddleState.TimeEnded);
 
-            stateMachine.AddTransition(move, chase, () => targeting.hasTarget);      
+            stateMachine.AddTransition(moveState, chaseState, () => targeting.hasTarget);      
 
-            stateMachine.AddTransition(chase, attack, () => attack.isInRange);
-            stateMachine.AddTransition(chase, move, () => !targeting.hasTarget);
+            stateMachine.AddTransition(chaseState, attackState, () => attack.isInRange);
+            stateMachine.AddTransition(chaseState, moveState, () => !targeting.hasTarget);
 
-            stateMachine.AddTransition(attack, move, () => !targeting.hasTarget);
-            stateMachine.AddTransition(attack, chase, () => (!attack.isInRange && targeting.hasTarget));
+            stateMachine.AddTransition(attackState, moveState, () => !targeting.hasTarget);
+            stateMachine.AddTransition(attackState, chaseState, () => (!attack.isInRange && targeting.hasTarget));
         }
 
         private void Update() {
-            _stateMachine.Tick();
+            stateMachine.Tick();
         }
 
     }

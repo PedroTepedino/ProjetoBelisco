@@ -103,13 +103,13 @@ namespace RefatoramentoDoTioTepe
             
             if (controller.movingRight)
             {
-                Gizmos.DrawLine(this.transform.position, this.transform.position + new Vector3(controller.lookingRange,0 , 0));
-                Gizmos.DrawLine(this.transform.position+ new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(_attack.attackRange, 0.5f, 0));            
+                Gizmos.DrawLine(this.transform.position, this.transform.position + new Vector3(lookingRange,0 , 0));
+                Gizmos.DrawLine(this.transform.position+ new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(attack.attackRange, 0.5f, 0));            
             }
             else
             {
-                Gizmos.DrawLine(this.transform.position, this.transform.position + new Vector3(-controller.lookingRange,0 , 0));
-                Gizmos.DrawLine(this.transform.position+ new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(-_attack.attackRange, 0.5f, 0));
+                Gizmos.DrawLine(this.transform.position, this.transform.position + new Vector3(-lookingRange,0 , 0));
+                Gizmos.DrawLine(this.transform.position+ new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(-attack.attackRange, 0.5f, 0));
             }
         }
     }
