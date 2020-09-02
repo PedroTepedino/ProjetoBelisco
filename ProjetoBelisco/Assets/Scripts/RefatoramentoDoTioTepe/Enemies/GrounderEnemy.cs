@@ -1,22 +1,22 @@
 ﻿using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace GameScripts.Enemies
+namespace RefatoramentoDoTioTepe
 {
-    public class Grounder : MonoBehaviour
+    public class GrounderEnemy : MonoBehaviour
     {
         [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _grounderCenter;
         [FoldoutGroup("Parameters")] [SerializeField] private float _grounderSize;
         [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask _groundLayerMask;
    
-        private Controller controller;
+        private EnemyStateMachine controller;
         private Vector3 _checkerCenter;
         
         public bool isGrounded { get; private set; } = false;
 
 
         private void Start() {
-            controller = GetComponent<Controller>();
+            controller = GetComponent<EnemyStateMachine>();
         }
 
         private void Update()
