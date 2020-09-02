@@ -276,6 +276,7 @@
             <e p="Controller.cs" t="Include" />
             <e p="DeadCourpse.cs" t="Include" />
             <e p="DeathLootSpawn.cs" t="Include" />
+            <e p="GolemBoss.cs" t="Include" />
             <e p="Grounder.cs" t="Include" />
             <e p="HitParticleEmitter.cs" t="Include" />
             <e p="Life.cs" t="Include" />
@@ -326,7 +327,11 @@
           </e>
           <e p="RefatoramentoDoTioTepe" t="Include">
             <e p="AnimationTool" t="Include">
+              <e p="AnimationChooser.cs" t="Include" />
+              <e p="AnimationEventInfo.cs" t="Include" />
+              <e p="AnimationEventInfoScriptableObject.cs" t="Include" />
               <e p="AnimationEventInserter.cs" t="Include" />
+              <e p="Testezera.cs" t="Include" />
             </e>
             <e p="Bootstrapper.cs" t="Include" />
             <e p="Enemies" t="Include">
