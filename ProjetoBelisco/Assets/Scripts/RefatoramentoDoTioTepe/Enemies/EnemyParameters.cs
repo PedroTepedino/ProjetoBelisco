@@ -8,7 +8,11 @@ namespace RefatoramentoDoTioTepe
     {
         [SerializeField] private bool isBoss;
         [SerializeField] private float lookingRange = 5f;
-        [SerializeField] private float maxIddleTime = 1f;
+        
+        private float alertAnimationTime = 1f;
+
+        [BoxGroup("Iddle")][SerializeField] private float maxIddleTime = 1f;
+        [BoxGroup("Iddle")][SerializeField] private float minIddleTime = 0f;
 
         [BoxGroup("Movement")] [SerializeField] private float movingSpeed = 5f;
         [BoxGroup("Movement")] [SerializeField] private float maxStopTime = 0f;
@@ -24,7 +28,11 @@ namespace RefatoramentoDoTioTepe
 
         public bool IsBoss => isBoss;
         public float LookingRange => lookingRange;
+
+        public float AlertAnimationTime => alertAnimationTime;
+        
         public float MaxIddleTime => maxIddleTime;
+        public float MinIddleTime => minIddleTime;
 
         public float MovingSpeed => movingSpeed;
         public float MaxStopTime => maxStopTime;
