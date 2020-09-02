@@ -1,0 +1,2421 @@
+{ "frames": [
+   {
+    "filename": "beliscoLow 0.aseprite",
+    "frame": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 1.aseprite",
+    "frame": { "x": 96, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 2.aseprite",
+    "frame": { "x": 192, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 3.aseprite",
+    "frame": { "x": 288, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 4.aseprite",
+    "frame": { "x": 384, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 5.aseprite",
+    "frame": { "x": 480, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 6.aseprite",
+    "frame": { "x": 576, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 7.aseprite",
+    "frame": { "x": 672, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 8.aseprite",
+    "frame": { "x": 768, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 9.aseprite",
+    "frame": { "x": 864, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 10.aseprite",
+    "frame": { "x": 960, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 11.aseprite",
+    "frame": { "x": 1056, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 12.aseprite",
+    "frame": { "x": 1152, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 13.aseprite",
+    "frame": { "x": 1248, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 14.aseprite",
+    "frame": { "x": 1344, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 15.aseprite",
+    "frame": { "x": 1440, "y": 0, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 16.aseprite",
+    "frame": { "x": 0, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "beliscoLow 17.aseprite",
+    "frame": { "x": 96, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 18.aseprite",
+    "frame": { "x": 192, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 19.aseprite",
+    "frame": { "x": 288, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 20.aseprite",
+    "frame": { "x": 384, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 21.aseprite",
+    "frame": { "x": 480, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 22.aseprite",
+    "frame": { "x": 576, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "beliscoLow 23.aseprite",
+    "frame": { "x": 672, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 24.aseprite",
+    "frame": { "x": 768, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 25.aseprite",
+    "frame": { "x": 864, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 26.aseprite",
+    "frame": { "x": 960, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 27.aseprite",
+    "frame": { "x": 1056, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 28.aseprite",
+    "frame": { "x": 1152, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 29.aseprite",
+    "frame": { "x": 1248, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 30.aseprite",
+    "frame": { "x": 1344, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 31.aseprite",
+    "frame": { "x": 1440, "y": 96, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 32.aseprite",
+    "frame": { "x": 0, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 33.aseprite",
+    "frame": { "x": 96, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 34.aseprite",
+    "frame": { "x": 192, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 35.aseprite",
+    "frame": { "x": 288, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 36.aseprite",
+    "frame": { "x": 384, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 37.aseprite",
+    "frame": { "x": 480, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 38.aseprite",
+    "frame": { "x": 576, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 39.aseprite",
+    "frame": { "x": 672, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 40.aseprite",
+    "frame": { "x": 768, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 41.aseprite",
+    "frame": { "x": 864, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 42.aseprite",
+    "frame": { "x": 960, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 43.aseprite",
+    "frame": { "x": 1056, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 44.aseprite",
+    "frame": { "x": 1152, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 45.aseprite",
+    "frame": { "x": 1248, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 46.aseprite",
+    "frame": { "x": 1344, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 47.aseprite",
+    "frame": { "x": 1440, "y": 192, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 48.aseprite",
+    "frame": { "x": 0, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 49.aseprite",
+    "frame": { "x": 96, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 50.aseprite",
+    "frame": { "x": 192, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 51.aseprite",
+    "frame": { "x": 288, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 52.aseprite",
+    "frame": { "x": 384, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 53.aseprite",
+    "frame": { "x": 480, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 54.aseprite",
+    "frame": { "x": 576, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "beliscoLow 55.aseprite",
+    "frame": { "x": 672, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 56.aseprite",
+    "frame": { "x": 768, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 57.aseprite",
+    "frame": { "x": 864, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 58.aseprite",
+    "frame": { "x": 960, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 59.aseprite",
+    "frame": { "x": 1056, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 60.aseprite",
+    "frame": { "x": 1152, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "beliscoLow 61.aseprite",
+    "frame": { "x": 1248, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 62.aseprite",
+    "frame": { "x": 1344, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 63.aseprite",
+    "frame": { "x": 1440, "y": 288, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 64.aseprite",
+    "frame": { "x": 0, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 65.aseprite",
+    "frame": { "x": 96, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 66.aseprite",
+    "frame": { "x": 192, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "beliscoLow 67.aseprite",
+    "frame": { "x": 288, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 68.aseprite",
+    "frame": { "x": 384, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 69.aseprite",
+    "frame": { "x": 480, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 70.aseprite",
+    "frame": { "x": 576, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 71.aseprite",
+    "frame": { "x": 672, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 72.aseprite",
+    "frame": { "x": 768, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "beliscoLow 73.aseprite",
+    "frame": { "x": 864, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 74.aseprite",
+    "frame": { "x": 960, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 75.aseprite",
+    "frame": { "x": 1056, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 76.aseprite",
+    "frame": { "x": 1152, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 77.aseprite",
+    "frame": { "x": 1248, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 78.aseprite",
+    "frame": { "x": 1344, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 79.aseprite",
+    "frame": { "x": 1440, "y": 384, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 80.aseprite",
+    "frame": { "x": 0, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 81.aseprite",
+    "frame": { "x": 96, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 82.aseprite",
+    "frame": { "x": 192, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 83.aseprite",
+    "frame": { "x": 288, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 84.aseprite",
+    "frame": { "x": 384, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 85.aseprite",
+    "frame": { "x": 480, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 86.aseprite",
+    "frame": { "x": 576, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 87.aseprite",
+    "frame": { "x": 672, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 88.aseprite",
+    "frame": { "x": 768, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 89.aseprite",
+    "frame": { "x": 864, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 90.aseprite",
+    "frame": { "x": 960, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 91.aseprite",
+    "frame": { "x": 1056, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 92.aseprite",
+    "frame": { "x": 1152, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 93.aseprite",
+    "frame": { "x": 1248, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 94.aseprite",
+    "frame": { "x": 1344, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 95.aseprite",
+    "frame": { "x": 1440, "y": 480, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 96.aseprite",
+    "frame": { "x": 0, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 97.aseprite",
+    "frame": { "x": 96, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 98.aseprite",
+    "frame": { "x": 192, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 99.aseprite",
+    "frame": { "x": 288, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 100.aseprite",
+    "frame": { "x": 384, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 101.aseprite",
+    "frame": { "x": 480, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 102.aseprite",
+    "frame": { "x": 576, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 103.aseprite",
+    "frame": { "x": 672, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 104.aseprite",
+    "frame": { "x": 768, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 105.aseprite",
+    "frame": { "x": 864, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 106.aseprite",
+    "frame": { "x": 960, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 107.aseprite",
+    "frame": { "x": 1056, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 108.aseprite",
+    "frame": { "x": 1152, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 109.aseprite",
+    "frame": { "x": 1248, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 110.aseprite",
+    "frame": { "x": 1344, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 111.aseprite",
+    "frame": { "x": 1440, "y": 576, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 112.aseprite",
+    "frame": { "x": 0, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 113.aseprite",
+    "frame": { "x": 96, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 114.aseprite",
+    "frame": { "x": 192, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 115.aseprite",
+    "frame": { "x": 288, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 116.aseprite",
+    "frame": { "x": 384, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 117.aseprite",
+    "frame": { "x": 480, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 118.aseprite",
+    "frame": { "x": 576, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 119.aseprite",
+    "frame": { "x": 672, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 120.aseprite",
+    "frame": { "x": 768, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 121.aseprite",
+    "frame": { "x": 864, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 122.aseprite",
+    "frame": { "x": 960, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 123.aseprite",
+    "frame": { "x": 1056, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 124.aseprite",
+    "frame": { "x": 1152, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "beliscoLow 125.aseprite",
+    "frame": { "x": 1248, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 126.aseprite",
+    "frame": { "x": 1344, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 127.aseprite",
+    "frame": { "x": 1440, "y": 672, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 128.aseprite",
+    "frame": { "x": 0, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "beliscoLow 129.aseprite",
+    "frame": { "x": 96, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 130.aseprite",
+    "frame": { "x": 192, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 131.aseprite",
+    "frame": { "x": 288, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 132.aseprite",
+    "frame": { "x": 384, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "beliscoLow 133.aseprite",
+    "frame": { "x": 480, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 134.aseprite",
+    "frame": { "x": 576, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 135.aseprite",
+    "frame": { "x": 672, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 136.aseprite",
+    "frame": { "x": 768, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 137.aseprite",
+    "frame": { "x": 864, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 138.aseprite",
+    "frame": { "x": 960, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "beliscoLow 139.aseprite",
+    "frame": { "x": 1056, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 140.aseprite",
+    "frame": { "x": 1152, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 141.aseprite",
+    "frame": { "x": 1248, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 142.aseprite",
+    "frame": { "x": 1344, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 143.aseprite",
+    "frame": { "x": 1440, "y": 768, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 144.aseprite",
+    "frame": { "x": 0, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 120
+   },
+   {
+    "filename": "beliscoLow 145.aseprite",
+    "frame": { "x": 96, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 146.aseprite",
+    "frame": { "x": 192, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 147.aseprite",
+    "frame": { "x": 288, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 148.aseprite",
+    "frame": { "x": 384, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 120
+   },
+   {
+    "filename": "beliscoLow 149.aseprite",
+    "frame": { "x": 480, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 150.aseprite",
+    "frame": { "x": 576, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 151.aseprite",
+    "frame": { "x": 672, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 152.aseprite",
+    "frame": { "x": 768, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 120
+   },
+   {
+    "filename": "beliscoLow 153.aseprite",
+    "frame": { "x": 864, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 154.aseprite",
+    "frame": { "x": 960, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 155.aseprite",
+    "frame": { "x": 1056, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 156.aseprite",
+    "frame": { "x": 1152, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 120
+   },
+   {
+    "filename": "beliscoLow 157.aseprite",
+    "frame": { "x": 1248, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 158.aseprite",
+    "frame": { "x": 1344, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 120
+   },
+   {
+    "filename": "beliscoLow 159.aseprite",
+    "frame": { "x": 1440, "y": 864, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 160.aseprite",
+    "frame": { "x": 0, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 161.aseprite",
+    "frame": { "x": 96, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 162.aseprite",
+    "frame": { "x": 192, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 163.aseprite",
+    "frame": { "x": 288, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 120
+   },
+   {
+    "filename": "beliscoLow 164.aseprite",
+    "frame": { "x": 384, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 165.aseprite",
+    "frame": { "x": 480, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 166.aseprite",
+    "frame": { "x": 576, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 120
+   },
+   {
+    "filename": "beliscoLow 167.aseprite",
+    "frame": { "x": 672, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 168.aseprite",
+    "frame": { "x": 768, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 169.aseprite",
+    "frame": { "x": 864, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 170.aseprite",
+    "frame": { "x": 960, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 171.aseprite",
+    "frame": { "x": 1056, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 120
+   },
+   {
+    "filename": "beliscoLow 172.aseprite",
+    "frame": { "x": 1152, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 173.aseprite",
+    "frame": { "x": 1248, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 174.aseprite",
+    "frame": { "x": 1344, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 175.aseprite",
+    "frame": { "x": 1440, "y": 960, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 176.aseprite",
+    "frame": { "x": 0, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 177.aseprite",
+    "frame": { "x": 96, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 178.aseprite",
+    "frame": { "x": 192, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 179.aseprite",
+    "frame": { "x": 288, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 180.aseprite",
+    "frame": { "x": 384, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 181.aseprite",
+    "frame": { "x": 480, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 182.aseprite",
+    "frame": { "x": 576, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 183.aseprite",
+    "frame": { "x": 672, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 184.aseprite",
+    "frame": { "x": 768, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 185.aseprite",
+    "frame": { "x": 864, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 186.aseprite",
+    "frame": { "x": 960, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 187.aseprite",
+    "frame": { "x": 1056, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 188.aseprite",
+    "frame": { "x": 1152, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 189.aseprite",
+    "frame": { "x": 1248, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 190.aseprite",
+    "frame": { "x": 1344, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 50
+   },
+   {
+    "filename": "beliscoLow 191.aseprite",
+    "frame": { "x": 1440, "y": 1056, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 192.aseprite",
+    "frame": { "x": 0, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 193.aseprite",
+    "frame": { "x": 96, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 194.aseprite",
+    "frame": { "x": 192, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 195.aseprite",
+    "frame": { "x": 288, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 196.aseprite",
+    "frame": { "x": 384, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 197.aseprite",
+    "frame": { "x": 480, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 198.aseprite",
+    "frame": { "x": 576, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 300
+   },
+   {
+    "filename": "beliscoLow 199.aseprite",
+    "frame": { "x": 672, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 200.aseprite",
+    "frame": { "x": 768, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 201.aseprite",
+    "frame": { "x": 864, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 202.aseprite",
+    "frame": { "x": 960, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 203.aseprite",
+    "frame": { "x": 1056, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 204.aseprite",
+    "frame": { "x": 1152, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 205.aseprite",
+    "frame": { "x": 1248, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 300
+   },
+   {
+    "filename": "beliscoLow 206.aseprite",
+    "frame": { "x": 1344, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 207.aseprite",
+    "frame": { "x": 1440, "y": 1152, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 208.aseprite",
+    "frame": { "x": 0, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 209.aseprite",
+    "frame": { "x": 96, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 210.aseprite",
+    "frame": { "x": 192, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 211.aseprite",
+    "frame": { "x": 288, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 212.aseprite",
+    "frame": { "x": 384, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 300
+   },
+   {
+    "filename": "beliscoLow 213.aseprite",
+    "frame": { "x": 480, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 214.aseprite",
+    "frame": { "x": 576, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 215.aseprite",
+    "frame": { "x": 672, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 216.aseprite",
+    "frame": { "x": 768, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 217.aseprite",
+    "frame": { "x": 864, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 218.aseprite",
+    "frame": { "x": 960, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 219.aseprite",
+    "frame": { "x": 1056, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 300
+   },
+   {
+    "filename": "beliscoLow 220.aseprite",
+    "frame": { "x": 1152, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 221.aseprite",
+    "frame": { "x": 1248, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 222.aseprite",
+    "frame": { "x": 1344, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 223.aseprite",
+    "frame": { "x": 1440, "y": 1248, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 224.aseprite",
+    "frame": { "x": 0, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 225.aseprite",
+    "frame": { "x": 96, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 226.aseprite",
+    "frame": { "x": 192, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 227.aseprite",
+    "frame": { "x": 288, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 228.aseprite",
+    "frame": { "x": 384, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 229.aseprite",
+    "frame": { "x": 480, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 230.aseprite",
+    "frame": { "x": 576, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 231.aseprite",
+    "frame": { "x": 672, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 232.aseprite",
+    "frame": { "x": 768, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 233.aseprite",
+    "frame": { "x": 864, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 234.aseprite",
+    "frame": { "x": 960, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 235.aseprite",
+    "frame": { "x": 1056, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 236.aseprite",
+    "frame": { "x": 1152, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 250
+   },
+   {
+    "filename": "beliscoLow 237.aseprite",
+    "frame": { "x": 1248, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 238.aseprite",
+    "frame": { "x": 1344, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 239.aseprite",
+    "frame": { "x": 1440, "y": 1344, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 240.aseprite",
+    "frame": { "x": 0, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 241.aseprite",
+    "frame": { "x": 96, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 242.aseprite",
+    "frame": { "x": 192, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 243.aseprite",
+    "frame": { "x": 288, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 250
+   },
+   {
+    "filename": "beliscoLow 244.aseprite",
+    "frame": { "x": 384, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 245.aseprite",
+    "frame": { "x": 480, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 246.aseprite",
+    "frame": { "x": 576, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 247.aseprite",
+    "frame": { "x": 672, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 248.aseprite",
+    "frame": { "x": 768, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 249.aseprite",
+    "frame": { "x": 864, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 250.aseprite",
+    "frame": { "x": 960, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 200
+   },
+   {
+    "filename": "beliscoLow 251.aseprite",
+    "frame": { "x": 1056, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 252.aseprite",
+    "frame": { "x": 1152, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 253.aseprite",
+    "frame": { "x": 1248, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 254.aseprite",
+    "frame": { "x": 1344, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 255.aseprite",
+    "frame": { "x": 1440, "y": 1440, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 80
+   },
+   {
+    "filename": "beliscoLow 256.aseprite",
+    "frame": { "x": 0, "y": 1536, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 257.aseprite",
+    "frame": { "x": 96, "y": 1536, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 200
+   },
+   {
+    "filename": "beliscoLow 258.aseprite",
+    "frame": { "x": 192, "y": 1536, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "beliscoLow 259.aseprite",
+    "frame": { "x": 288, "y": 1536, "w": 96, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 96, "h": 96 },
+    "sourceSize": { "w": 96, "h": 96 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.25-x64",
+  "image": "beliscoLow.png",
+  "format": "RGBA8888",
+  "size": { "w": 1536, "h": 1632 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "afterAtackBlue", "from": 0, "to": 5, "direction": "forward" },
+   { "name": "afterAtackYellow", "from": 6, "to": 11, "direction": "forward" },
+   { "name": "keepSwordBlue", "from": 12, "to": 17, "direction": "forward" },
+   { "name": "keepSwordYellow", "from": 18, "to": 23, "direction": "forward" },
+   { "name": "iddleBlue", "from": 24, "to": 29, "direction": "forward" },
+   { "name": "iddleYellow", "from": 30, "to": 35, "direction": "forward" },
+   { "name": "runCycleBlue", "from": 36, "to": 43, "direction": "forward" },
+   { "name": "runCycleYellow", "from": 44, "to": 51, "direction": "forward" },
+   { "name": "atack1Blue", "from": 52, "to": 57, "direction": "forward" },
+   { "name": "atack1Yellow", "from": 58, "to": 63, "direction": "forward" },
+   { "name": "atack2Blue", "from": 64, "to": 69, "direction": "forward" },
+   { "name": "atack2Yellow", "from": 70, "to": 75, "direction": "forward" },
+   { "name": "hitFloorBlue", "from": 76, "to": 76, "direction": "forward" },
+   { "name": "hitFloorYellow", "from": 77, "to": 77, "direction": "forward" },
+   { "name": "hitAirBlue", "from": 78, "to": 78, "direction": "forward" },
+   { "name": "hitAirYellow", "from": 79, "to": 79, "direction": "forward" },
+   { "name": "jumpAntecipationBlue", "from": 80, "to": 81, "direction": "forward" },
+   { "name": "jumpUpLoopB", "from": 82, "to": 85, "direction": "forward" },
+   { "name": "jumpTransitionBlue", "from": 86, "to": 87, "direction": "forward" },
+   { "name": "jumpFallLoopB", "from": 88, "to": 91, "direction": "forward" },
+   { "name": "jumpContactBlue", "from": 92, "to": 94, "direction": "forward" },
+   { "name": "jumpAntecipationYellow", "from": 95, "to": 96, "direction": "forward" },
+   { "name": "jumpUpLoopY", "from": 97, "to": 100, "direction": "forward" },
+   { "name": "jumpTransitionYellow", "from": 101, "to": 102, "direction": "forward" },
+   { "name": "jumpFallLoopY", "from": 103, "to": 106, "direction": "forward" },
+   { "name": "jumpContactYellow", "from": 107, "to": 109, "direction": "forward" },
+   { "name": "glydeAntecipationB", "from": 110, "to": 111, "direction": "forward" },
+   { "name": "glydeLoopB", "from": 112, "to": 115, "direction": "forward" },
+   { "name": "glydeAntecipationY", "from": 116, "to": 117, "direction": "forward" },
+   { "name": "glydeLoopY", "from": 118, "to": 121, "direction": "forward" },
+   { "name": "atackJumpSideBlue", "from": 122, "to": 125, "direction": "forward" },
+   { "name": "atackJumpSideYellow", "from": 126, "to": 129, "direction": "forward" },
+   { "name": "atackUpBlue", "from": 130, "to": 135, "direction": "forward" },
+   { "name": "atackUpYellow", "from": 136, "to": 141, "direction": "forward" },
+   { "name": "atackJumpUpBlue", "from": 142, "to": 145, "direction": "forward" },
+   { "name": "atackJumpUpYellow", "from": 146, "to": 149, "direction": "forward" },
+   { "name": "atackDown1", "from": 150, "to": 153, "direction": "forward" },
+   { "name": "atackDown2", "from": 154, "to": 157, "direction": "forward" },
+   { "name": "deathBlue", "from": 158, "to": 165, "direction": "forward" },
+   { "name": "deathYellow", "from": 166, "to": 173, "direction": "forward" },
+   { "name": "dashSideBlue", "from": 174, "to": 178, "direction": "forward" },
+   { "name": "dashSideYellow", "from": 179, "to": 183, "direction": "forward" },
+   { "name": "dashUpBlue", "from": 184, "to": 189, "direction": "forward" },
+   { "name": "dashUpYellow", "from": 190, "to": 195, "direction": "forward" },
+   { "name": "RangedAtackBlue", "from": 196, "to": 202, "direction": "forward" },
+   { "name": "RangedAtackRangedYellow", "from": 203, "to": 209, "direction": "forward" },
+   { "name": "RangedAtackJumpBlue", "from": 210, "to": 216, "direction": "forward" },
+   { "name": "RangedAtackRangedJumpYellow", "from": 217, "to": 223, "direction": "forward" },
+   { "name": "WallJumpBlue", "from": 224, "to": 227, "direction": "forward" },
+   { "name": "WallContactYellow", "from": 228, "to": 231, "direction": "forward" },
+   { "name": "StrongAtackBlue", "from": 232, "to": 238, "direction": "forward" },
+   { "name": "StrongAtackYellow", "from": 239, "to": 245, "direction": "forward" },
+   { "name": "StrongAtackJumpBlue", "from": 246, "to": 252, "direction": "forward" },
+   { "name": "StrongAtackJumpYellow", "from": 253, "to": 259, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "trailAtras", "opacity": 255, "blendMode": "normal" },
+   { "name": "cauda", "opacity": 255, "blendMode": "normal" },
+   { "name": "espada", "opacity": 255, "blendMode": "normal" },
+   { "name": "corpo", "opacity": 255, "blendMode": "normal" },
+   { "name": "cinto", "opacity": 255, "blendMode": "normal" },
+   { "name": "cachecol", "opacity": 255, "blendMode": "normal" },
+   { "name": "bracoFrente", "opacity": 255, "blendMode": "normal" },
+   { "name": "ombreira", "opacity": 255, "blendMode": "normal" },
+   { "name": "espadaFrente", "opacity": 255, "blendMode": "normal" },
+   { "name": "blur", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}
