@@ -4,7 +4,7 @@ using UnityEngine;
 /* Class: MoveState
  * Handle movement of the owner of this state.
  */
-namespace GameScripts.StateMachine.States
+namespace RefatoramentoDoTioTepe
 {
     public class MoveState : IState
     {
@@ -19,9 +19,9 @@ namespace GameScripts.StateMachine.States
      * movement - Vector2 that controls the magnitude of the movement
      */
         private GameObject ownerGameObject;
-        private Controller controllerOwner;
+        private EnemyStateMachine ownerController;
         private Rigidbody2D ownerRigidbody;
-        private Grounder grounder;
+        private GrounderEnemy grounder;
         private WallChecker wallCheck;
         private Vector2 movement = new Vector2();
         private bool groundCheck;
@@ -30,7 +30,7 @@ namespace GameScripts.StateMachine.States
         private float timeToWait;
         private float maxStopTime;
         private float minTimeBetweenStops;
-     
+        private float movingSpeed;
 
         // Group: Functions
 
@@ -44,20 +44,20 @@ namespace GameScripts.StateMachine.States
         public MoveState(GameObject gameObject)
         {
             ownerGameObject = gameObject;
-            controllerOwner = gameObject.GetComponent<Controller>();
+            ownerController = gameObject.GetComponent<EnemyStateMachine>();
             ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
+            grounder = ownerGameObject.GetComponent<GrounderEnemy>();
+            wallCheck = ownerGameObject.GetComponent<WallChecker>();
+            maxStopTime = ownerController.EnemyParameters.MaxStopTime;
+            minTimeBetweenStops = ownerController.EnemyParameters.MinTimeBetweenStops;
+            movingSpeed = ownerController.EnemyParameters.MovingSpeed;
         }
 
         /*Function: EnterState
      * Commands executed when enter the state.
      */
-        public void EnterState()
+        public void OnEnter()
         {
-            controllerOwner.actualState = "move";
-            grounder = ownerGameObject.GetComponent<Grounder>();
-            wallCheck = ownerGameObject.GetComponent<WallChecker>();
-            maxStopTime = controllerOwner.maxStopTime;
-            minTimeBetweenStops = controllerOwner.minTimeBetweenStops;
             timeToWait = 0;
             timer = 0;
         }
@@ -65,7 +65,7 @@ namespace GameScripts.StateMachine.States
         /*Function: ExitState
      * Commands executed before exit the state.
      */
-        public void ExitState()
+        public void OnExit()
         {
 
         }
@@ -73,9 +73,8 @@ namespace GameScripts.StateMachine.States
         /*Function: RunState
      * Moves the owner to the same direction until he finds an obstacle or the floor ends, when one of those happen he start to go the opposite direction.
      */
-        public void RunState()
+        public void Tick()
         {
-            Debug.Log("!");
             timer += Time.deltaTime;
             timerBetweeneStops += Time.deltaTime;
             int chanceToStop;
@@ -104,12 +103,12 @@ namespace GameScripts.StateMachine.States
 
         private void Stop()
         {
-            controllerOwner.rigidbody.velocity = Vector2.zero;
+            ownerController.rigidbody.velocity = Vector2.zero;
             timerBetweeneStops = 0;
         }
         private void Move()
         {
-            movement.Set(controllerOwner.movingRight ? controllerOwner.movingSpeed : -controllerOwner.movingSpeed, ownerRigidbody.velocity.y);
+            movement.Set(ownerController.movingRight ? movingSpeed : -movingSpeed, ownerRigidbody.velocity.y);
             ownerRigidbody.velocity = movement;
             timeToWait = Random.Range(0, maxStopTime);
             timer = 0;
@@ -117,8 +116,8 @@ namespace GameScripts.StateMachine.States
 
         private void Flip()
         {
-            ownerGameObject.transform.eulerAngles = new Vector3(0, controllerOwner.movingRight ? -180 : 0, 0);
-            controllerOwner.movingRight = controllerOwner.movingRight ? false : true;
+            ownerGameObject.transform.eulerAngles = new Vector3(0, ownerController.movingRight ? -180 : 0, 0);
+            ownerController.movingRight = ownerController.movingRight ? false : true;
         }
         /* See Also:
      */

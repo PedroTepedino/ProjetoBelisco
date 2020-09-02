@@ -7,7 +7,7 @@ using UnityEngine;
 using Debug = UnityEngine.Debug;
 using Random = UnityEngine.Random;
 
-namespace GameScripts.Enemies
+namespace RefatoramentoDoTioTepe
 {
     public class Attack : MonoBehaviour
     {
@@ -55,18 +55,18 @@ namespace GameScripts.Enemies
 
         public Action<int> OnAttack;
 
-        [HideInInspector] public bool IsInRange = false;
+        [HideInInspector] public bool isInRange = false;
 
-        private Controller _controller;
-        private Grounder grounder;
+        private EnemyStateMachine _controller;
+        private GrounderEnemy grounder;
         private WallChecker wallCheck;
         private Vector2 movement = new Vector2();
         private Rigidbody2D ownerRigidbody;
 
         private void Awake()
         {
-            _controller = this.GetComponent<Controller>();
-            grounder = GetComponent<Grounder>();
+            _controller = this.GetComponent<EnemyStateMachine>();
+            grounder = GetComponent<GrounderEnemy>();
             wallCheck = GetComponent<WallChecker>();
             ownerRigidbody = GetComponent<Rigidbody2D>();
         }
@@ -175,6 +175,15 @@ namespace GameScripts.Enemies
             }
         }
 
+        private void Damage(int value, Collider2D hit)
+        {
+            var hitable = hit.gameObject.GetComponent<IHittable>();
+            if (hitable != null)
+            {
+                hitable.Hit(value);
+            }
+        }
+
         private void MeleeAttack()
         {
             Collider2D[] rayHits = Physics2D.OverlapCircleAll((Vector2)(this.transform.position) + (_controller.movingRight ? _meleeAttackCenter : -_meleeAttackCenter), meleeAttackRadius, collisionLayerMask);
@@ -182,8 +191,7 @@ namespace GameScripts.Enemies
             if (hit != null)
             {
                 Debug.Log("melee");
-                hit.gameObject.GetComponent<Player.Life>().Damage(meleeAttackDamage);
-                hit = null;
+                Damage(meleeAttackDamage, hit);
             }
         }
 
@@ -194,8 +202,7 @@ namespace GameScripts.Enemies
             if (hit != null)
             {
                 Debug.Log("explosion");
-                hit.gameObject.GetComponent<Player.Life>().Damage(explosionAttackDamage);
-                hit = null;
+                Damage(explosionAttackDamage, hit);
             }
         }
 
@@ -216,8 +223,8 @@ namespace GameScripts.Enemies
                 if (hit != null)
                 {
                     Debug.Log("dash");
-                    hit.gameObject.GetComponent<Player.Life>().Damage(dashAttackDamage);
-                    hit = null;
+                    
+                    Damage(dashAttackDamage, hit);
                 }
                 yield return null;
             }
@@ -232,8 +239,7 @@ namespace GameScripts.Enemies
             if (hit != null)
             {
                 Debug.Log("explosion");
-                hit.gameObject.GetComponent<Player.Life>().Damage(shootAndExplosionAttackExplosionDamage);
-                hit = null;
+                Damage(shootAndExplosionAttackExplosionDamage, hit);
             }
         }
 

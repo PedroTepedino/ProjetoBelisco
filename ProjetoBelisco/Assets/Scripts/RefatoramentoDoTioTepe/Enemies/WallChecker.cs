@@ -1,11 +1,11 @@
 ﻿ using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace GameScripts.Enemies
+namespace RefatoramentoDoTioTepe
 {
     public class WallChecker : MonoBehaviour
     {
-        private Controller controller;
+        private EnemyStateMachine controller;
 
         [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _wallCheckerTop = Vector3.zero;
         [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _wallCheckerCenter = Vector3.zero;
@@ -24,7 +24,7 @@ namespace GameScripts.Enemies
     
 
         private void Start() {
-            controller = GetComponent<Controller>();
+            controller = GetComponent<EnemyStateMachine>();
         }
         private void Update()
         {

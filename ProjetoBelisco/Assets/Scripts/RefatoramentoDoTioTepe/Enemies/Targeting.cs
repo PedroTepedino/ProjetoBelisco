@@ -1,7 +1,7 @@
 ﻿using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace GameScripts.Enemies
+namespace RefatoramentoDoTioTepe
 {
     public class Targeting : MonoBehaviour
     {
@@ -11,19 +11,22 @@ namespace GameScripts.Enemies
         [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask _targetingLayerMask;
         
 
-        private Controller controller;
-        private Attack _attack;
+        private EnemyStateMachine controller;
+        private Attack attack;
         private Vector3 _checkerCenter;
         private bool bossEnemy = false;
+        private float lookingRange;
 
         public Transform target { get; private set; } = null;
         public bool hasTarget { get; private set; } = false;
+        
 
         void Start()
         {
-            controller = GetComponent<Controller>();
-            _attack = GetComponent<Attack>();
-            bossEnemy = controller.bossEnemy;
+            controller = GetComponent<EnemyStateMachine>();
+            attack = GetComponent<Attack>();
+            bossEnemy = controller.EnemyParameters.IsBoss;
+            lookingRange = controller.EnemyParameters.LookingRange;
             // if (bossEnemy){
             //     hasTarget = true;
             //     target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -42,6 +45,10 @@ namespace GameScripts.Enemies
             //     hasTarget = true;
             //     target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
             // }
+            if (hasTarget)
+            {
+                attack.isInRange = ((Vector2.Distance(this.transform.position, target.position) > attack.attackRange) ? false : true);
+            }
         }
 
         private bool TargetingAction(){
@@ -53,10 +60,10 @@ namespace GameScripts.Enemies
             }
             else
             {
-                var hitObject = Physics2D.Raycast(this.transform.position, controller.movingRight ? Vector2.right : Vector2.left, controller.lookingRange, _targetingLayerMask);
+                var hitObject = Physics2D.Raycast(this.transform.position, controller.movingRight ? Vector2.right : Vector2.left, lookingRange, _targetingLayerMask);
                 if (hitObject.collider != null)
                 {
-                    if (hitObject.transform.gameObject.GetComponent<Player.Life>() != null)
+                    if (hitObject.transform.gameObject.GetComponent<IHittable>() != null)
                     {
                         target = hitObject.transform;
                         return true;
