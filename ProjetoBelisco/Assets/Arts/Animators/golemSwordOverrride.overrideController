@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: golemSwordOverrride
+  m_Controller: {fileID: 9100000, guid: d707daad43899864584ee947af764e68, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ea4c58fdd4713964a9154e7067f78837, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9034d4bf746ec054ea0a76991056dde6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b38fc3329da228145a7ecbd875fe2caa, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a4f035f5bfa062a44b05a50f0e896c29, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3678f0999692c674faf477b3a8f8ae2b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e8c09f3c3f154ab4d8a264628908a09e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 229580f902ae0d64b9fc37da72c81b98, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6be85a92629400d459cef00fa4450e95, type: 2}

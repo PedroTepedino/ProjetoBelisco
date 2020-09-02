@@ -202,6 +202,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 495487756, guid: 50bda1634a0ac974eb4d3135fbe1013e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3716180343374127348, guid: 6f94737a09bcfa644acf2d993f68edd7,
+        type: 3}
+    - target: {fileID: 495487756, guid: 50bda1634a0ac974eb4d3135fbe1013e, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418781181, guid: 50bda1634a0ac974eb4d3135fbe1013e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6848813760565248667, guid: 6f94737a09bcfa644acf2d993f68edd7,
+        type: 3}
+    - target: {fileID: 1418781181, guid: 50bda1634a0ac974eb4d3135fbe1013e, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5366140802195632289, guid: 50bda1634a0ac974eb4d3135fbe1013e,
         type: 3}
       propertyPath: m_Name
@@ -783,32 +801,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1132299484 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1418781179, guid: 50bda1634a0ac974eb4d3135fbe1013e,
-    type: 3}
-  m_PrefabInstance: {fileID: 130205763}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1132299485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132299484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 771f6af7153557c4d8d6321dff18c65b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 1132299486}
-  _eventInfos: {fileID: 11400000, guid: 1ccd1dd6663686946a7460104dc95a4e, type: 2}
---- !u!95 &1132299486 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1418781180, guid: 50bda1634a0ac974eb4d3135fbe1013e,
-    type: 3}
-  m_PrefabInstance: {fileID: 130205763}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1304664161
 PrefabInstance:
   m_ObjectHideFlags: 0
