@@ -6,7 +6,15 @@ namespace RefatoramentoDoTioTepe
     [CreateAssetMenu(menuName = "Enemy Parameters")]
     public class EnemyParameters : ScriptableObject
     {
-        [BoxGroup("Movement")] [SerializeField] private float _speed = 5f;
+        [SerializeField] private bool isBoss;
+        [SerializeField] private float lookingRange = 5f;
+        [SerializeField] private float maxIddleTime = 1f;
+
+        [BoxGroup("Movement")] [SerializeField] private float movingSpeed = 5f;
+        [BoxGroup("Movement")] [SerializeField] private float maxStopTime = 0f;
+        [BoxGroup("Movement")] [SerializeField] private float minTimeBetweenStops = 3f;
+        
+        
         [BoxGroup("Movement/EdgeDetection")] [SerializeField] private Vector2 _edgeCheckerCenter;
         [BoxGroup("Movement/EdgeDetection")] [SerializeField] private float _edgeCheckerDistance;
         [BoxGroup("Movement/EdgeDetection")] [SerializeField] private LayerMask _edgeCheckerLayerMask;
@@ -14,7 +22,13 @@ namespace RefatoramentoDoTioTepe
         [BoxGroup("Movement/WallDetection")] [SerializeField] private float _wallCheckerDistance;
         [BoxGroup("Movement/WallDetection")] [SerializeField] private LayerMask _wallCheckerLayerMask;
 
-        public float Speed => _speed;
+        public bool IsBoss => isBoss;
+        public float LookingRange => lookingRange;
+        public float MaxIddleTime => maxIddleTime;
+
+        public float MovingSpeed => movingSpeed;
+        public float MaxStopTime => maxStopTime;
+        public float MinTimeBetweenStops => minTimeBetweenStops;
 
         public Vector2 EdgeCheckerCenter => _edgeCheckerCenter;
         public float EdgeCheckerDistance => _edgeCheckerDistance;
