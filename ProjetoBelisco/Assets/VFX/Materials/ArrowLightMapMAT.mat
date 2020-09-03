@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BeliscoSwordLightmapMAT
+  m_Name: ArrowLightMapMAT
   m_Shader: {fileID: -6465566751694194690, guid: 54b9ff156484dd84481b3fbeb0f3374f,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
@@ -25,7 +25,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6f94737a09bcfa644acf2d993f68edd7, type: 3}
+        m_Texture: {fileID: 2800000, guid: a94c286c3862be641929abafe67391c5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:
@@ -33,10 +33,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SwordTexture:
-        m_Texture: {fileID: 2800000, guid: 424879d0c86c6174c98177452d8890e0, type: 3}
+        m_Texture: {fileID: 2800000, guid: d804e26e5a03dd7409ecab44c94b0c35, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
     - _Color: {r: 0.3448725, g: 2, b: 0, a: 1}
-    - _SwordColor: {r: 0.16637807, g: 0.16637807, b: 0.16637807, a: 1}
+    - _SwordColor: {r: 0.116464645, g: 0.116464645, b: 0.116464645, a: 1}
