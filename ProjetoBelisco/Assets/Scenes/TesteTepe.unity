@@ -202,24 +202,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 495487756, guid: 50bda1634a0ac974eb4d3135fbe1013e, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -3716180343374127348, guid: 6f94737a09bcfa644acf2d993f68edd7,
+    - target: {fileID: 1256773894132576049, guid: 50bda1634a0ac974eb4d3135fbe1013e,
         type: 3}
-    - target: {fileID: 495487756, guid: 50bda1634a0ac974eb4d3135fbe1013e, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1418781181, guid: 50bda1634a0ac974eb4d3135fbe1013e, type: 3}
-      propertyPath: m_Sprite
+      propertyPath: _player
       value: 
-      objectReference: {fileID: 6848813760565248667, guid: 6f94737a09bcfa644acf2d993f68edd7,
-        type: 3}
-    - target: {fileID: 1418781181, guid: 50bda1634a0ac974eb4d3135fbe1013e, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1035528432}
     - target: {fileID: 5366140802195632289, guid: 50bda1634a0ac974eb4d3135fbe1013e,
         type: 3}
       propertyPath: m_Name
@@ -423,32 +410,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &547034034 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 495487753, guid: 50bda1634a0ac974eb4d3135fbe1013e,
-    type: 3}
-  m_PrefabInstance: {fileID: 130205763}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &547034037 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 495487755, guid: 50bda1634a0ac974eb4d3135fbe1013e,
-    type: 3}
-  m_PrefabInstance: {fileID: 130205763}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &547034038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547034034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 771f6af7153557c4d8d6321dff18c65b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 547034037}
-  _eventInfos: {fileID: 11400000, guid: 48fd882bfbfea534b8ead26ee257f1f3, type: 2}
 --- !u!1001 &565106311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -671,6 +632,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa9847027f88e3641a282d75f16878c0, type: 3}
+--- !u!114 &1035528432 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5366140802195632290, guid: 50bda1634a0ac974eb4d3135fbe1013e,
+    type: 3}
+  m_PrefabInstance: {fileID: 130205763}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e65c2455cdb8947b2b5320b7238e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1111248831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,7 +1019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1500446662
 ParticleSystemRenderer:
   serializedVersion: 6

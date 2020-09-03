@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DefaultPlayerParameters
   m_EditorClassIdentifier: 
   _movementSpeed: 5.5
-  _jumpVelocity: 3
+  _jumpVelocity: 10
   _maxJumpButtonHoldTime: 1
   _maxHealth: 10
   _grounderPosition: {x: 0, y: 0, z: 0}
@@ -21,3 +21,7 @@ MonoBehaviour:
   _grounderLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  _strongAttackCenter: {x: 0, y: 0}
+  _strongAttackRadius: 0
+  _strongAttackExplosionCenter: {x: 0, y: 0}
+  _strongAttackExplosionRadius: 0

@@ -25,10 +25,12 @@ namespace RefatoramentoDoTioTepe
         public void Tick()
         {
             Vector2 velocity = _rigidbody.velocity;
+            
+            float timerFactor = 1 - (_jumpTimer / _maxButtonHoldTime);
 
             if (RewiredPlayerInput.Instance.Jump && (_playerGrounder.IsGrounded || Jumping) && (_jumpTimer <= _maxButtonHoldTime))
             {
-                velocity.y = _jumpVelocity;
+                velocity.y = _jumpVelocity * timerFactor;
                 Jumping = true;
                 _jumpTimer += Time.deltaTime;
             }

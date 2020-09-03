@@ -9,6 +9,7 @@ namespace RefatoramentoDoTioTepe
         public static IPlayerInput Instance { get; set; } 
         
         public float Horizontal => _rewiredPlayer.GetAxis("MoveHorizontal");
+        public float Vertical => _rewiredPlayer.GetAxis("MoveVertical");
 
         public bool PausePressed => _rewiredPlayer.GetButtonDown("Pause");
         public bool Jump => _rewiredPlayer.GetButton("Jump");
