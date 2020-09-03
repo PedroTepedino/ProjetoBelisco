@@ -6,21 +6,29 @@ namespace GameScripts.Player
     {
         [SerializeField] private ParticleSystem _particleSystem;
 
-
+        private RefatoramentoDoTioTepe.Player _player;
 
         private void Awake()
         {
-            Grounder.OnTouchGround += EmitParticle;
+            _player.OnTouchedGround += EmitParticle;
         }
 
         private void OnDestroy()
         {
-            Grounder.OnTouchGround -= EmitParticle;
+            _player.OnTouchedGround -= EmitParticle;
         }
 
         public void EmitParticle()
         {
             _particleSystem.Play();
+        }
+
+        private void OnValidate()
+        {
+            if (_player == null)
+            {
+                _player = this.GetComponentInParent<RefatoramentoDoTioTepe.Player>();
+            }
         }
     }
 }

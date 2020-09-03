@@ -25,7 +25,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 312bfb3ab684ed94894b347ba24eacde, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6f94737a09bcfa644acf2d993f68edd7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:
@@ -33,10 +33,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SwordTexture:
-        m_Texture: {fileID: 2800000, guid: 3ec7a8794f707d241b751796dc9c5871, type: 3}
+        m_Texture: {fileID: 2800000, guid: 424879d0c86c6174c98177452d8890e0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
     - _Color: {r: 0.3448725, g: 2, b: 0, a: 1}
-    - _SwordColor: {r: 0, g: 0.28284273, b: 0.09982684, a: 1}
+    - _SwordColor: {r: 0.16637807, g: 0.16637807, b: 0.16637807, a: 1}

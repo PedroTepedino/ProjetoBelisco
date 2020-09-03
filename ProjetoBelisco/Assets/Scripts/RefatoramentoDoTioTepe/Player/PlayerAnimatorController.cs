@@ -16,32 +16,32 @@ namespace RefatoramentoDoTioTepe
         private Rigidbody2D _rigidbody;
         private Player _player;
 
+        private bool _isLookingRight = true;
+
+        public bool IsLookingRight => _isLookingRight;
+
         private void Awake()
         {
             _rigidbody = this.GetComponent<Rigidbody2D>();
             _spriteRendererRight.enabled = true;
             _spriteRendererLeft.enabled = false;
             _player = this.GetComponent<Player>();
-            _player.OnJump += Jump;
         }
-
-        private void OnDestroy()
-        {
-            _player.OnJump -= Jump;
-        }
-
+        
         public void UpdateParameters(bool touchingGround)
         {
             float horizontalVelocity = _rigidbody.velocity.x;
             
-            if (horizontalVelocity > 0f)
+            if (horizontalVelocity > 0.1f)
             {
-                LookDirection(lookRight: true);
+                _isLookingRight = true;
             }
-            else if (horizontalVelocity < 0f)
+            else if (horizontalVelocity < -0.1f)
             {
-                LookDirection(lookRight: false);
+                _isLookingRight = false;
             }
+            
+            LookDirection(lookRight: _isLookingRight);
             
             SetFloat("HorizontalVelocity", Mathf.Abs(horizontalVelocity));
             SetFloat("VerticalVelocity", _rigidbody.velocity.y);
@@ -66,11 +66,6 @@ namespace RefatoramentoDoTioTepe
             _animatorLeft.SetTrigger(triggerName);
         }
 
-        private void Jump()
-        {
-            SetTrigger("Jump");
-        }
-
         public void StrongAttack()
         {
             SetTrigger("StrongAttack");
@@ -80,6 +75,23 @@ namespace RefatoramentoDoTioTepe
         {
             _spriteRendererRight.enabled = lookRight;
             _spriteRendererLeft.enabled = !lookRight;
+        }
+
+        public void Attack(Directions attackDirection)
+        {
+            switch (attackDirection)
+            {
+                case Directions.Left:
+                case Directions.Right:
+                    SetTrigger("Attack");
+                    break;
+                case Directions.Up:
+                    SetTrigger("AttackUp");
+                    break;
+                case Directions.Down:
+                    SetTrigger("AttackDown");
+                    break;
+            }
         }
     }
 }

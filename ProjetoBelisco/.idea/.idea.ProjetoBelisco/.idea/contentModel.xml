@@ -7,27 +7,6 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="AsepriteAnimationWorkflow" t="Include">
-          <e p="Editor" t="Include">
-            <e p="Aseprite.cs" t="Include" />
-            <e p="AsepriteAssets.cs" t="Include" />
-            <e p="AsepriteEnums.cs" t="Include" />
-            <e p="AsepriteImporter.cs" t="Include" />
-            <e p="AsepriteImporterEditor.cs" t="Include" />
-            <e p="AsepriteImporterSettings.cs" t="Include" />
-            <e p="AsepriteLoader.cs" t="Include" />
-            <e p="BlendFunc.cs" t="Include" />
-            <e p="Cel.cs" t="Include" />
-            <e p="ColorExtensions.cs" t="Include" />
-            <e p="Frame.cs" t="Include" />
-            <e p="FrameTag.cs" t="Include" />
-            <e p="Header.cs" t="Include" />
-            <e p="IndexedPalette.cs" t="Include" />
-            <e p="Layer.cs" t="Include" />
-            <e p="StreamExtensions.cs" t="Include" />
-            <e p="Texture2DExtensions.cs" t="Include" />
-          </e>
-        </e>
         <e p="ConsolePro" t="Include">
           <e p="ConsoleProDebug.cs" t="Include" />
           <e p="Remote" t="Include">
@@ -271,20 +250,16 @@
           </e>
           <e p="Enemies" t="Include">
             <e p="AnimationController.cs" t="Include" />
-            <e p="Attack.cs" t="Include" />
             <e p="Basic.cs" t="Include" />
             <e p="Controller.cs" t="Include" />
             <e p="DeadCourpse.cs" t="Include" />
             <e p="DeathLootSpawn.cs" t="Include" />
             <e p="GolemBoss.cs" t="Include" />
-            <e p="Grounder.cs" t="Include" />
             <e p="HitParticleEmitter.cs" t="Include" />
             <e p="Life.cs" t="Include" />
             <e p="Projectile.cs" t="Include" />
             <e p="SignalAttackAnimation.cs" t="Include" />
             <e p="SpawnDeadCourpse.cs" t="Include" />
-            <e p="Targeting.cs" t="Include" />
-            <e p="WallChecker.cs" t="Include" />
           </e>
           <e p="Environment" t="Include">
             <e p="Checkpoint.cs" t="Include" />
@@ -335,14 +310,26 @@
             </e>
             <e p="Bootstrapper.cs" t="Include" />
             <e p="Enemies" t="Include">
+              <e p="Attack.cs" t="Include" />
               <e p="Enemy.cs" t="Include" />
               <e p="EnemyParameters.cs" t="Include" />
+              <e p="GrounderEnemy.cs" t="Include" />
+              <e p="States" t="Include">
+                <e p="AlertState.cs" t="Include" />
+                <e p="AttackState.cs" t="Include" />
+                <e p="ChaseState.cs" t="Include" />
+                <e p="IddleState.cs" t="Include" />
+                <e p="MoveState.cs" t="Include" />
+              </e>
+              <e p="Targeting.cs" t="Include" />
+              <e p="WallChecker.cs" t="Include" />
             </e>
             <e p="Inventory" t="Include">
               <e p="Paw.cs" t="Include" />
               <e p="PawInventory.cs" t="Include" />
             </e>
             <e p="Player" t="Include">
+              <e p="AttackEventsEmitter.cs" t="Include" />
               <e p="BasicAttacker.cs" t="Include" />
               <e p="Grounder.cs" t="Include" />
               <e p="IAttacker.cs" t="Include" />
@@ -355,12 +342,14 @@
               <e p="Mover.cs" t="Include" />
               <e p="Player.cs" t="Include" />
               <e p="PlayerAnimatorController.cs" t="Include" />
+              <e p="PlayerLocker.cs" t="Include" />
               <e p="PlayerParameters.cs" t="Include" />
               <e p="RangedAttacker.cs" t="Include" />
               <e p="RewiredPlayerInput.cs" t="Include" />
               <e p="StrongAttacker.cs" t="Include" />
             </e>
             <e p="StateMachine" t="Include">
+              <e p="EnemyStateMachine.cs" t="Include" />
               <e p="GameStateMachine.cs" t="Include" />
               <e p="IState.cs" t="Include" />
               <e p="StateMachine.cs" t="Include" />
@@ -392,13 +381,6 @@
           <e p="StateMachine" t="Include">
             <e p="IState.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
-            <e p="States" t="Include">
-              <e p="AlertState.cs" t="Include" />
-              <e p="AttackState.cs" t="Include" />
-              <e p="ChaseState.cs" t="Include" />
-              <e p="IddleState.cs" t="Include" />
-              <e p="MoveState.cs" t="Include" />
-            </e>
           </e>
           <e p="Tools" t="Include">
             <e p="Editor" t="Include">
@@ -418,6 +400,23 @@
             <e p="PixelPerfectCanvasScale.cs" t="Include" />
             <e p="PlayerUiManager.cs" t="Include" />
             <e p="RespawnerUi.cs" t="Include" />
+          </e>
+        </e>
+        <e p="SpriteAnimationImporter" t="Include">
+          <e p="Editor" t="Include">
+            <e p="SpriteAnimationImporter" t="Include">
+              <e p="AnimationImporter.cs" t="Include" />
+              <e p="Importers" t="Include">
+                <e p="AsepriteImporter.cs" t="Include" />
+              </e>
+              <e p="ImporterSettings" t="Include">
+                <e p="ImporterSettings0.cs" t="Include" />
+              </e>
+              <e p="ImporterSettingsManager.cs" t="Include" />
+              <e p="SpriteAnimation.cs" t="Include" />
+              <e p="SpriteFrame.cs" t="Include" />
+              <e p="SpriteWindow.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Tests" t="Include">

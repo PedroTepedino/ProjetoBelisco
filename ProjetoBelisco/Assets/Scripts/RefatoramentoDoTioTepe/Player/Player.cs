@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
 {
+    [RequireComponent(typeof(PlayerAnimatorController))]
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(Grounder))]
     [RequireComponent(typeof(Collider2D))]
@@ -12,22 +14,27 @@ namespace RefatoramentoDoTioTepe
         [SerializeField] [AssetsOnly] [InlineEditor(InlineEditorObjectFieldModes.Hidden)] private PlayerParameters _playerParameters;
         private IMover _mover;
         private IJumper _jumper;
-        private IAttacker _basicAttacker;
-        private IAttacker _strongAttacker;
+        private List<IAttacker> _attackerList;
         private LifeSystem _lifeSystem;
         private Grounder _grounder;
-        
+        private PlayerLocker _playerLocker;
+
         [SerializeField] 
         private PlayerAnimatorController _playerAnimatorController;
 
         private bool _lastFrameJumpState = false;
+        private bool _justTouchedGround = false;
+        private bool _attacking = false;
 
         public event Action OnJump;
+        public event Action OnTouchedGround;
 
         public PlayerParameters PlayerParameters => _playerParameters;
         public LifeSystem LifeSystem => _lifeSystem;
         public Grounder Grounder => _grounder;
         public bool Jumping => _jumper.Jumping;
+        public PlayerAnimatorController AnimatorController => _playerAnimatorController;
+
 
         private void Awake()
         {
@@ -35,8 +42,11 @@ namespace RefatoramentoDoTioTepe
             _lifeSystem = new LifeSystem(this);
             _mover = new Mover(this);
             _jumper = new Jumper(this);
-            _basicAttacker = new BasicAttacker(this);
-            _strongAttacker = new StrongAttacker(this);
+            _playerLocker = new PlayerLocker(this);
+            
+            _attackerList = new List<IAttacker>();
+            _attackerList.Add(new BasicAttacker(this));
+            _attackerList.Add(new StrongAttacker(this));
         }
 
         public void Hit(int damage)
@@ -46,12 +56,87 @@ namespace RefatoramentoDoTioTepe
 
         private void Update()
         {
-            _mover.Tick();
-            _jumper.Tick();
-            _basicAttacker.Tick();
+            if (!_attacking)
+            {
+                _mover.Tick();
+                _jumper.Tick();
+            }
+
+            _attackerList.ForEach(attacker => attacker.Tick());
             
             CheckJumping();
-            _playerAnimatorController.UpdateParameters(_grounder.IsGrounded);
+
+            var isGrounded = _grounder.IsGrounded;
+            AnimatorController.UpdateParameters(isGrounded);
+
+            JustTouchedGround(isGrounded);
+        }
+
+        public void CallAttack<T>() where T : IAttacker
+        {
+            _attackerList.Find(item => item is StrongAttacker)?.Attack();
+        }
+
+        public void StartAttack()
+        {
+            _attacking = true;
+            _playerLocker.LockPlayer();
+        }
+
+        public void EndAttack()
+        {
+            _attacking = false;
+            _playerLocker.UnlockPlayer();
+        }
+
+        public Directions GetAttackDirection()
+        {
+            float vertical = RewiredPlayerInput.Instance.Vertical;
+            Directions direction;
+
+            if (vertical > 0.25f)
+            {
+                direction = Directions.Up;
+            }
+            else if (vertical < -0.25f && !_grounder.IsGrounded)
+            {
+                direction = Directions.Down;
+            }
+            else
+            {
+                if (_playerAnimatorController.IsLookingRight)
+                {
+                    direction = Directions.Right;
+                }
+                else
+                {
+                    direction = Directions.Left;
+                }
+            }
+
+            return direction;
+        }
+        
+        public Directions GetAttackDirectionHorizontal() => _playerAnimatorController.IsLookingRight ? Directions.Right : Directions.Left;
+
+        private void CheckJumping()
+        {
+            if (!_lastFrameJumpState && _jumper.Jumping)
+            {
+                OnJump?.Invoke();
+            }
+
+            _lastFrameJumpState = _jumper.Jumping;
+        }
+
+        private void JustTouchedGround(bool isGrounded)
+        {
+            if (!_justTouchedGround && isGrounded)
+            {
+                OnTouchedGround?.Invoke();
+            }
+
+            _justTouchedGround = isGrounded;
         }
 
         private void OnValidate()
@@ -59,7 +144,7 @@ namespace RefatoramentoDoTioTepe
             if (_playerParameters == null)
                 _playerParameters = Resources.Load<PlayerParameters>("ScriptableObjects/DefaultPlayerParameters");
 
-            if (_playerAnimatorController == null)
+            if (AnimatorController == null)
                 _playerAnimatorController = this.GetComponent<PlayerAnimatorController>();
         }
 
@@ -76,15 +161,13 @@ namespace RefatoramentoDoTioTepe
             Gizmos.color = Color.magenta;
             Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.StrongAttackExplosionCenter, _playerParameters.StrongAttackExplosionRadius);
         }
+    }
 
-        private void CheckJumping()
-        {
-            if (!_lastFrameJumpState && _jumper.Jumping)
-            {
-                OnJump?.Invoke();
-            }
-
-            _lastFrameJumpState = _jumper.Jumping;
-        }
+    public enum Directions
+    {
+        Right = 1,
+        Up,
+        Left,
+        Down,
     }
 }

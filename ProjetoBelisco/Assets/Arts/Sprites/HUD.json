@@ -1,0 +1,64 @@
+{ "frames": [
+   {
+    "filename": "HUD 0.ase",
+    "frame": { "x": 0, "y": 0, "w": 144, "h": 64 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 144, "h": 64 },
+    "sourceSize": { "w": 144, "h": 64 },
+    "duration": 100
+   },
+   {
+    "filename": "HUD 1.ase",
+    "frame": { "x": 144, "y": 0, "w": 144, "h": 64 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 144, "h": 64 },
+    "sourceSize": { "w": 144, "h": 64 },
+    "duration": 100
+   },
+   {
+    "filename": "HUD 2.ase",
+    "frame": { "x": 0, "y": 64, "w": 144, "h": 64 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 144, "h": 64 },
+    "sourceSize": { "w": 144, "h": 64 },
+    "duration": 100
+   },
+   {
+    "filename": "HUD 3.ase",
+    "frame": { "x": 144, "y": 64, "w": 144, "h": 64 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 144, "h": 64 },
+    "sourceSize": { "w": 144, "h": 64 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.25-x64",
+  "image": "HUD.png",
+  "format": "RGBA8888",
+  "size": { "w": 288, "h": 128 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Tag", "from": 2, "to": 3, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "cursor", "opacity": 255, "blendMode": "normal" },
+   { "name": "button", "opacity": 255, "blendMode": "normal" },
+   { "name": "LifeBar", "opacity": 255, "blendMode": "normal" },
+   { "name": "LifeBG", "opacity": 255, "blendMode": "normal" },
+   { "name": "Potrait", "opacity": 255, "blendMode": "normal" },
+   { "name": "Face", "opacity": 255, "blendMode": "normal" },
+   { "name": "Light", "opacity": 255, "blendMode": "normal" },
+   { "name": "FireFlies", "opacity": 255, "blendMode": "normal" },
+   { "name": "MagicBarBG", "opacity": 255, "blendMode": "normal" },
+   { "name": "MagicBarLight", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}
