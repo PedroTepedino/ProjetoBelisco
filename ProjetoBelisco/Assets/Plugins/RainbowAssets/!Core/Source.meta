@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:ProjetoBelisco/Assets/Plugins/RainbowAssets/!Core/Source.meta
 guid: 0d28baef8771a1c48a39a15f154bc11c
+=======
+guid: 43efbd40cbb4c724cbbefb7ec5b83f76
+>>>>>>> ff2b55e4975215064805ca4b9f86c46004b1c860:ProjetoBelisco/Assets/Arts/Animations/belisco.meta
+=======
+guid: 0d28baef8771a1c48a39a15f154bc11c
+>>>>>>> ff2b55e4975215064805ca4b9f86c46004b1c860
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
