@@ -15,6 +15,8 @@ namespace RefatoramentoDoTioTepe
 
         public IState LastState { get; private set; } = null;
 
+        public IState CurrentState => _currentState;
+
         public void AddAnyTransition(IState to, Func<bool> condition)
         {
             var stateTransition = new StateTransition(null, to, condition);

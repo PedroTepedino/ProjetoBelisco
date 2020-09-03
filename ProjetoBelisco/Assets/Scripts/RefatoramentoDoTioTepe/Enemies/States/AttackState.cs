@@ -9,13 +9,15 @@ namespace RefatoramentoDoTioTepe
         private Transform target;
         private Attack attack;
         private Targeting targeting;
+        private AnimationController animationController;
         private float timer;
 
         public AttackState(GameObject owner)
         {
             ownerGameObject = owner; 
             attack = ownerGameObject.GetComponent<Attack>();
-            targeting = ownerGameObject.GetComponent<Targeting>();    
+            targeting = ownerGameObject.GetComponent<Targeting>(); 
+            animationController = ownerGameObject.GetComponent<AnimationController>(); 
         }
 
         public void OnEnter()
@@ -39,6 +41,7 @@ namespace RefatoramentoDoTioTepe
                 if (timer >= attack.attackSpeed)
                 {
                     attack.AttackAction(target);
+                    animationController.TriggerAnimationAttack();
                     timer = 0f;                       
                 }
             }
