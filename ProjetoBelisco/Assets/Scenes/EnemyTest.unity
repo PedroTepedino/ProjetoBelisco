@@ -1173,6 +1173,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &403426087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 403426088}
+  m_Layer: 0
+  m_Name: enemyObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &403426088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403426087}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.29261717, y: -1.9945471, z: -0.36035156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &429274106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,6 +1220,7 @@ GameObject:
   - component: {fileID: 429274107}
   - component: {fileID: 429274112}
   - component: {fileID: 429274111}
+  - component: {fileID: 429274109}
   m_Layer: 10
   m_Name: Enemy
   m_TagString: Untagged
@@ -1230,6 +1261,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1336e93993bb034baeac82c2fcccfd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &429274109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429274106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e328e513499fc4d9c66c0124cdcf67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyParameters: {fileID: 11400000, guid: 755453ad9cc7a514387c76dac1ba5eb8, type: 2}
+  rigidbody: {fileID: 0}
+  targeting: {fileID: 0}
+  attack: {fileID: 0}
+  movingRight: 1
 --- !u!4 &429274110
 Transform:
   m_ObjectHideFlags: 0
@@ -1414,7 +1462,7 @@ MonoBehaviour:
   shootAndExplosionAttackRangedCenter: {x: 0, y: 0}
   shootAndExplosionAttackRangedDamage: 1
   shootAndExplosionAttackProjectileTag: 
-  IsInRange: 0
+  isInRange: 0
 --- !u!1 &490606561
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,7 +2122,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1018428813}
-  - component: {fileID: 1018428812}
   - component: {fileID: 1018428811}
   - component: {fileID: 1018428810}
   - component: {fileID: 1018428809}
@@ -2100,24 +2147,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1018428802}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bee3dc3eac485aa42bbeefc1ff221ce0, type: 3}
+  m_Script: {fileID: 11500000, guid: d3e328e513499fc4d9c66c0124cdcf67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layerTargeting:
-    serializedVersion: 2
-    m_Bits: 0
-  stateMachine: {fileID: 0}
+  _enemyParameters: {fileID: 0}
   rigidbody: {fileID: 0}
   targeting: {fileID: 0}
   attack: {fileID: 0}
-  actualState: 
   movingRight: 1
-  bossEnemy: 1
-  movingSpeed: 5
-  lookingRange: 5
-  alertAnimationTime: 0
-  maxStopTime: 0
-  minTimeBetweenStops: 3
 --- !u!114 &1018428804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2286,7 +2323,7 @@ MonoBehaviour:
   shootAndExplosionAttackRangedCenter: {x: 0.6, y: 0}
   shootAndExplosionAttackRangedDamage: 1
   shootAndExplosionAttackProjectileTag: 
-  IsInRange: 0
+  isInRange: 0
 --- !u!114 &1018428810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2322,18 +2359,6 @@ MonoBehaviour:
   _groundLayerMask:
     serializedVersion: 2
     m_Bits: 256
---- !u!114 &1018428812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1018428802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1336e93993bb034baeac82c2fcccfd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1018428813
 Transform:
   m_ObjectHideFlags: 0
@@ -3471,7 +3496,7 @@ PrefabInstance:
     - target: {fileID: 5311663050116025348, guid: 1a19528a79e24a647aa30f6ac323a770,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.46000096
+      value: 0.45999905
       objectReference: {fileID: 0}
     - target: {fileID: 5311663050116025348, guid: 1a19528a79e24a647aa30f6ac323a770,
         type: 3}

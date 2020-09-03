@@ -7,15 +7,16 @@ namespace RefatoramentoDoTioTepe
     {
         private EnemyStateMachine controller;
 
-        [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _wallCheckerTop = Vector3.zero;
-        [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _wallCheckerCenter = Vector3.zero;
-        [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _wallCheckerBottom = Vector3.zero;
-        [FoldoutGroup("Parameters")] [SerializeField] private float _checkerSizes;
-        [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask _wallLayerMask;
         
-        private Vector3 _checkerTop;
-        private Vector3 _checkerCenter;
-        private Vector3 _checkerBottom;
+        private Vector3 wallCheckerTop = Vector3.zero;    
+        private Vector3 wallCheckerCenter = Vector3.zero;
+        private Vector3 wallCheckerBottom = Vector3.zero;
+        private float checkerDistance;
+        private LayerMask wallLayerMask;
+        
+        private Vector3 checkerTop;
+        private Vector3 checkerCenter;
+        private Vector3 checkerBottom;
 
         public bool wallAhead { get; private set; } = false;
         public bool wallTop = false;
@@ -23,8 +24,15 @@ namespace RefatoramentoDoTioTepe
         public bool wallBottom = false;
     
 
-        private void Start() {
+        private void Awake() {
             controller = GetComponent<EnemyStateMachine>();
+            wallCheckerTop = controller.EnemyParameters.WallCheckerTop;
+            wallCheckerCenter = controller.EnemyParameters.WallCheckerCenter;
+            wallCheckerTop = controller.EnemyParameters.WallCheckerBottom;
+            checkerDistance = controller.EnemyParameters.WallCheckerDistance;
+            wallLayerMask = controller.EnemyParameters.WallCheckerLayerMask;
+
+
         }
         private void Update()
         {
@@ -34,27 +42,19 @@ namespace RefatoramentoDoTioTepe
         private bool WallCheck()
         {
             RaycastHit2D raycastHit2DTop;
-            _checkerTop = this.transform.position + new Vector3(controller.movingRight ? _wallCheckerTop.x : -_wallCheckerTop.x, _wallCheckerTop.y, 0);
-            raycastHit2DTop = Physics2D.Raycast(_checkerTop, controller.movingRight ? Vector2.right : Vector2.left, _checkerSizes, _wallLayerMask);
+            checkerTop = this.transform.position + new Vector3(controller.movingRight ? wallCheckerTop.x : -wallCheckerTop.x, wallCheckerTop.y, 0);
+            raycastHit2DTop = Physics2D.Raycast(checkerTop, controller.movingRight ? Vector2.right : Vector2.left, checkerDistance, wallLayerMask);
             wallTop = raycastHit2DTop.collider != null ? true : false;
 
             RaycastHit2D raycastHit2DCenter;
-            _checkerCenter = this.transform.position + new Vector3(controller.movingRight ? _wallCheckerCenter.x : -_wallCheckerCenter.x, _wallCheckerCenter.y, 0);
-            raycastHit2DCenter = Physics2D.Raycast(_checkerCenter, controller.movingRight ? Vector2.right : Vector2.left, _checkerSizes, _wallLayerMask);
+            checkerCenter = this.transform.position + new Vector3(controller.movingRight ? wallCheckerCenter.x : -wallCheckerCenter.x, wallCheckerCenter.y, 0);
+            raycastHit2DCenter = Physics2D.Raycast(checkerCenter, controller.movingRight ? Vector2.right : Vector2.left, checkerDistance, wallLayerMask);
             wallCenter = raycastHit2DCenter.collider != null ? true : false;
 
             RaycastHit2D raycastHit2DBottom;
-            _checkerBottom = this.transform.position + new Vector3(controller.movingRight ? _wallCheckerBottom.x : -_wallCheckerBottom.x, _wallCheckerBottom.y, 0);
-            raycastHit2DBottom = Physics2D.Raycast(_checkerBottom, controller.movingRight ? Vector2.right : Vector2.left, _checkerSizes, _wallLayerMask);
+            checkerBottom = this.transform.position + new Vector3(controller.movingRight ? wallCheckerBottom.x : -wallCheckerBottom.x, wallCheckerBottom.y, 0);
+            raycastHit2DBottom = Physics2D.Raycast(checkerBottom, controller.movingRight ? Vector2.right : Vector2.left, checkerDistance, wallLayerMask);
             wallBottom = raycastHit2DBottom.collider != null ? true : false;
-
-            /*if(controller.movingRight){
-            _checkerCenter = this.transform.position + new Vector3(controller.groundDetectionOffset.x, controller.groundDetectionOffset.y, controller.groundDetectionOffset.z);
-            raycastHit2D = Physics2D.Raycast(_checkerCenter, Vector2.right, _checkerSizes, _wallLayerMask);
-        }else{
-            _checkerCenter = this.transform.position + new Vector3(-controller.groundDetectionOffset.x, controller.groundDetectionOffset.y, controller.groundDetectionOffset.z);
-            raycastHit2D = Physics2D.Raycast(_checkerCenter, Vector2.left, _checkerSizes, _wallLayerMask);
-        }*/
         
             if(!wallTop && !wallCenter && !wallBottom){
                 wallAhead = false;
@@ -76,16 +76,16 @@ namespace RefatoramentoDoTioTepe
             Gizmos.color = wallAhead ? Color.red : Color.green;
 
             if(controller.movingRight){
-                Gizmos.DrawLine(this.transform.position + _wallCheckerTop, this.transform.position + new Vector3(_wallCheckerTop.x + _checkerSizes, _wallCheckerTop.y, 0));
-                Gizmos.DrawLine(this.transform.position + _wallCheckerCenter, this.transform.position + new Vector3(_wallCheckerCenter.x + _checkerSizes, _wallCheckerCenter.y, 0));
-                Gizmos.DrawLine(this.transform.position + _wallCheckerBottom, this.transform.position + new Vector3(_wallCheckerBottom.x + _checkerSizes, _wallCheckerBottom.y, 0));
+                Gizmos.DrawLine(this.transform.position + wallCheckerTop, this.transform.position + new Vector3(wallCheckerTop.x + checkerDistance, wallCheckerTop.y, 0));
+                Gizmos.DrawLine(this.transform.position + wallCheckerCenter, this.transform.position + new Vector3(wallCheckerCenter.x + checkerDistance, wallCheckerCenter.y, 0));
+                Gizmos.DrawLine(this.transform.position + wallCheckerBottom, this.transform.position + new Vector3(wallCheckerBottom.x + checkerDistance, wallCheckerBottom.y, 0));
 
             }
             else
             {
-                Gizmos.DrawLine(this.transform.position + new Vector3(-_wallCheckerTop.x, _wallCheckerTop.y, 0), this.transform.position + new Vector3(-_wallCheckerTop.x - _checkerSizes, _wallCheckerTop.y, 0));
-                Gizmos.DrawLine(this.transform.position + new Vector3(-_wallCheckerCenter.x, _wallCheckerCenter.y, 0), this.transform.position + new Vector3(-_wallCheckerCenter.x - _checkerSizes, _wallCheckerCenter.y, 0));
-                Gizmos.DrawLine(this.transform.position + new Vector3(-_wallCheckerBottom.x, _wallCheckerBottom.y, 0), this.transform.position + new Vector3(-_wallCheckerBottom.x - _checkerSizes, _wallCheckerBottom.y, 0));  
+                Gizmos.DrawLine(this.transform.position + new Vector3(-wallCheckerTop.x, wallCheckerTop.y, 0), this.transform.position + new Vector3(-wallCheckerTop.x - checkerDistance, wallCheckerTop.y, 0));
+                Gizmos.DrawLine(this.transform.position + new Vector3(-wallCheckerCenter.x, wallCheckerCenter.y, 0), this.transform.position + new Vector3(-wallCheckerCenter.x - checkerDistance, wallCheckerCenter.y, 0));
+                Gizmos.DrawLine(this.transform.position + new Vector3(-wallCheckerBottom.x, wallCheckerBottom.y, 0), this.transform.position + new Vector3(-wallCheckerBottom.x - checkerDistance, wallCheckerBottom.y, 0));  
             }
         }
     }

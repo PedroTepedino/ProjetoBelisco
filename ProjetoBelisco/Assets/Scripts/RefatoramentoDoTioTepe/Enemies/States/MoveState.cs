@@ -103,7 +103,7 @@ namespace RefatoramentoDoTioTepe
 
         private void Stop()
         {
-            ownerController.rigidbody.velocity = Vector2.zero;
+            ownerController.GetComponent<Rigidbody>().velocity = Vector2.zero;
             timerBetweeneStops = 0;
         }
         private void Move()
