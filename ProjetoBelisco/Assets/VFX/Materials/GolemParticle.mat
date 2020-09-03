@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CristalGolensLightmap
+  m_Name: GolemParticle
   m_Shader: {fileID: -6465566751694194690, guid: 54b9ff156484dd84481b3fbeb0f3374f,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
@@ -25,7 +25,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 8cb6f6852bc02d04ba2e5971b435c4f6, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2423047f07362e4499aad460c8f00b06, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex:
@@ -37,7 +37,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SwordTexture:
-        m_Texture: {fileID: 2800000, guid: 518e94fe0d928d64b873b0479d14f2e1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1c84acfea72e39c479571265e42c2bc2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -46,4 +46,4 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SwordColor: {r: 1.2862746, g: 0, b: 1.6, a: 1}
+    - _SwordColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.39215687}
