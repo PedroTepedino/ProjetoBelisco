@@ -263,6 +263,7 @@
           </e>
           <e p="Environment" t="Include">
             <e p="Checkpoint.cs" t="Include" />
+            <e p="Parallax.cs" t="Include" />
             <e p="PlayerRespawner.cs" t="Include" />
             <e p="VoidHole.cs" t="Include" />
           </e>
@@ -310,6 +311,7 @@
             </e>
             <e p="Bootstrapper.cs" t="Include" />
             <e p="Enemies" t="Include">
+              <e p="AnimationController.cs" t="Include" />
               <e p="Attack.cs" t="Include" />
               <e p="Enemy.cs" t="Include" />
               <e p="EnemyParameters.cs" t="Include" />
@@ -331,6 +333,7 @@
             <e p="Player" t="Include">
               <e p="AttackEventsEmitter.cs" t="Include" />
               <e p="BasicAttacker.cs" t="Include" />
+              <e p="Glider.cs" t="Include" />
               <e p="Grounder.cs" t="Include" />
               <e p="IAttacker.cs" t="Include" />
               <e p="IHittable.cs" t="Include" />

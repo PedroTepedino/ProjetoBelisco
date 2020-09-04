@@ -20,6 +20,7 @@ namespace RefatoramentoDoTioTepe
         private LifeSystem _lifeSystem;
         private Grounder _grounder;
         private PlayerLocker _playerLocker;
+        private Glider _glider;
 
         [SerializeField] 
         private PlayerAnimatorController _playerAnimatorController;
@@ -45,6 +46,7 @@ namespace RefatoramentoDoTioTepe
             _mover = new Mover(this);
             _jumper = new Jumper(this);
             _playerLocker = new PlayerLocker(this);
+            _glider = new Glider(this);
             
             _attackerList = new List<IAttacker>();
             _attackerList.Add(new BasicAttacker(this));
