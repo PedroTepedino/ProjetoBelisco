@@ -4,14 +4,12 @@ using UnityEngine;
 namespace RefatoramentoDoTioTepe
 {
     [CreateAssetMenu(menuName = "Enemy Parameters")]
-    public class EnemyParameters : ScriptableObject, IEnemyParameters
+    public class GolemSimpleParameters : ScriptableObject
     {
-        [SerializeField] private bool isBoss;
+        [SerializeField] private bool isBoss = false;
         [SerializeField] private float lookingRange = 5f;
         [SerializeField] private int maxHealthPoints = 1;
-        
-        
-        private float alertAnimationTime = 1f;
+        [SerializeField] private float alertAnimationTime = 1f;
 
         [BoxGroup("Iddle")][SerializeField] private float maxIddleTime = 1f;
         [BoxGroup("Iddle")][SerializeField] private float minIddleTime = 0f;

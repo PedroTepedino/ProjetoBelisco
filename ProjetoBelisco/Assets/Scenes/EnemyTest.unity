@@ -1273,11 +1273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3e328e513499fc4d9c66c0124cdcf67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyParameters: {fileID: 11400000, guid: 755453ad9cc7a514387c76dac1ba5eb8, type: 2}
-  rigidbody: {fileID: 0}
-  targeting: {fileID: 0}
-  attack: {fileID: 0}
   movingRight: 1
+  alive: 1
+  _enemyParameters: {fileID: 11400000, guid: 755453ad9cc7a514387c76dac1ba5eb8, type: 2}
 --- !u!4 &429274110
 Transform:
   m_ObjectHideFlags: 0
@@ -1371,11 +1369,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c74505473f88b324fac5b078615f8bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _grounderCenter: {x: 0.7, y: -0.5, z: 0}
-  _grounderSize: 0.5
-  _groundLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!114 &429274114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1388,13 +1381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa87a9c09d01ec4cb0863c7bf98f498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wallCheckerTop: {x: 0.5, y: 0.45, z: 0}
-  _wallCheckerCenter: {x: 0.5, y: 0, z: 0}
-  _wallCheckerBottom: {x: 0.5, y: -0.45, z: 0}
-  _checkerSizes: 0.3
-  _wallLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
   wallTop: 0
   wallCenter: 0
   wallBottom: 0
@@ -2150,11 +2136,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3e328e513499fc4d9c66c0124cdcf67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyParameters: {fileID: 0}
-  rigidbody: {fileID: 0}
-  targeting: {fileID: 0}
-  attack: {fileID: 0}
   movingRight: 1
+  alive: 1
+  _enemyParameters: {fileID: 0}
 --- !u!114 &1018428804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2267,13 +2251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa87a9c09d01ec4cb0863c7bf98f498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wallCheckerTop: {x: 0.5, y: 0.45, z: 0}
-  _wallCheckerCenter: {x: 0.5, y: 0, z: 0}
-  _wallCheckerBottom: {x: 0.5, y: -0.45, z: 0}
-  _checkerSizes: 0.3
-  _wallLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
   wallTop: 0
   wallCenter: 0
   wallBottom: 0
@@ -2354,11 +2331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c74505473f88b324fac5b078615f8bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _grounderCenter: {x: 0.7, y: -0.5, z: 0}
-  _grounderSize: 0.5
-  _groundLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!4 &1018428813
 Transform:
   m_ObjectHideFlags: 0
@@ -2743,6 +2715,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1138412761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1138412762}
+  m_Layer: 0
+  m_Name: GolemSword
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1138412762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138412761}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.29261717, y: -1.9945471, z: -0.36035156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1186878739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1186878740}
+  m_Layer: 0
+  m_Name: GolemTriple
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1186878740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186878739}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.29261717, y: -1.9945471, z: -0.36035156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1187792768
 GameObject:
   m_ObjectHideFlags: 0
@@ -2772,6 +2804,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1263685523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1263685524}
+  m_Layer: 0
+  m_Name: GolemSimple
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1263685524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263685523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.29261717, y: -1.9945471, z: -0.36035156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1268636639
 PrefabInstance:
@@ -3591,6 +3653,36 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 1712442011}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1994545044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1994545045}
+  m_Layer: 0
+  m_Name: GolemRanged
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1994545045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994545044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.29261717, y: -1.9945471, z: -0.36035156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2037770276
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@
 
 namespace RefatoramentoDoTioTepe
 {
-    public class AnimationController : MonoBehaviour
+    public class GolemSimpleAnimation : MonoBehaviour, IAnimationController
     {
         private Animator animator;
         private IEnemyStateMachine controller;
@@ -13,17 +13,8 @@ namespace RefatoramentoDoTioTepe
         private void Awake()
         {
             animator = this.GetComponentInChildren<Animator>();
-            controller = this.GetComponent<IEnemyStateMachine>();
+            controller = this.GetComponent<EnemyStateMachine>();
             stateMachine = controller.stateMachine;
-
-            // _attack.OnAttack += ListenAttack;
-            // _life.OnEnemyDamage += ListenDamage;
-        }
-
-        private void OnDestroy()
-        {
-            // _attack.OnAttack -= ListenAttack;
-            // _life.OnEnemyDamage -= ListenDamage;
         }
 
         private void Update()
@@ -56,28 +47,13 @@ namespace RefatoramentoDoTioTepe
                 animator.SetBool("Chase", false);
             }
         }
-    
-        public void TriggerAnimationAttack()
-        {
-            animator.SetTrigger("Attack");
-        }
 
         public void TriggerAnimationHit()
         {
             animator.SetTrigger("Hit");
         }
-        
-        // private void ListenAttack(int index)
-        // {
-        //     _animator.SetInteger("AttackIndex", index);
-        //     _animator.SetTrigger("Attack");
-        // }
-
-        // private void ListenDamage(int damage, int maxHealth)
-        // {
-        //     _animator.SetTrigger("Hit");
-        // }
 
         public void Interfacinha(){}
+        
     }
 }
