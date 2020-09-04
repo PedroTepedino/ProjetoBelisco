@@ -5,7 +5,7 @@ using Sirenix.OdinInspector;
 
 namespace RefatoramentoDoTioTepe
 {
-    public class GolemSimple : MonoBehaviour , IHittable , IEnemyStateMachine
+    public class GolemSword : MonoBehaviour , IHittable, IEnemyStateMachine
     {
         private Rigidbody2D rigidbody;
         private Targeting targeting;
@@ -13,7 +13,7 @@ namespace RefatoramentoDoTioTepe
         private Attack attack;
         private int healthPoints;
 
-        public StateMachine stateMachine{get;set;}
+        public StateMachine stateMachine {get;set;}
         public bool movingRight {get;set;} = true;
         public bool alive {get;set;} = true;
 
@@ -32,6 +32,7 @@ namespace RefatoramentoDoTioTepe
             var moveState = new MoveState(this.gameObject);
             var iddleState = new IddleState(this.gameObject);
             var chaseState = new ChaseState(this.gameObject);
+            var attackState = new AttackState(this.gameObject);
             var alertState = new AlertState(this.gameObject);
 
             stateMachine.SetState(iddleState);
@@ -42,10 +43,15 @@ namespace RefatoramentoDoTioTepe
             stateMachine.AddTransition(moveState, chaseState, () => targeting.hasTarget);
             stateMachine.AddTransition(moveState, alertState, () => targeting.hasTarget);       
 
+            stateMachine.AddTransition(chaseState, attackState, () => attack.isInRange);
             stateMachine.AddTransition(chaseState, moveState, () => !targeting.hasTarget);
 
+            stateMachine.AddTransition(attackState, moveState, () => !targeting.hasTarget);
+            stateMachine.AddTransition(attackState, chaseState, () => (!attack.isInRange && targeting.hasTarget));
+
             stateMachine.AddTransition(alertState, moveState, () => !targeting.hasTarget);
-            stateMachine.AddTransition(alertState, chaseState, () => (alertState.TimeEnded() && targeting.hasTarget));
+            stateMachine.AddTransition(alertState, chaseState, () => (alertState.TimeEnded() && targeting.hasTarget && !attack.isInRange));
+            stateMachine.AddTransition(alertState, attackState, () => (alertState.TimeEnded() && targeting.hasTarget && attack.isInRange));
         }
 
         private void Update() {

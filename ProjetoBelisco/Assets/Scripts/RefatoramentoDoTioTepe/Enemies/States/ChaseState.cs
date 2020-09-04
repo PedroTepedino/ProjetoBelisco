@@ -6,7 +6,7 @@ namespace RefatoramentoDoTioTepe
     public class ChaseState : IState
     {
         private GameObject ownerGameObject;
-        private EnemyStateMachine ownerController;
+        private IEnemyStateMachine ownerController;
         private Targeting targeting;
         private Rigidbody2D ownerRigidbody;
         private GrounderEnemy grounder;
@@ -17,7 +17,7 @@ namespace RefatoramentoDoTioTepe
 
         public ChaseState(GameObject owner){
             ownerGameObject = owner;
-            ownerController = owner.GetComponent<EnemyStateMachine>();
+            ownerController = owner.GetComponent<IEnemyStateMachine>();
             ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
             grounder = ownerGameObject.GetComponent<GrounderEnemy>();
             wallCheck = ownerGameObject.GetComponent<WallChecker>();

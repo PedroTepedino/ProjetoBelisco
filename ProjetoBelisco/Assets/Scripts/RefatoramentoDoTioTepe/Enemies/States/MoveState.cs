@@ -19,7 +19,7 @@ namespace RefatoramentoDoTioTepe
      * movement - Vector2 that controls the magnitude of the movement
      */
         private GameObject ownerGameObject;
-        private EnemyStateMachine ownerController;
+        private IEnemyStateMachine ownerController;
         private Rigidbody2D ownerRigidbody;
         private GrounderEnemy grounder;
         private WallChecker wallCheck;
@@ -44,7 +44,7 @@ namespace RefatoramentoDoTioTepe
         public MoveState(GameObject gameObject)
         {
             ownerGameObject = gameObject;
-            ownerController = gameObject.GetComponent<EnemyStateMachine>();
+            ownerController = gameObject.GetComponent<IEnemyStateMachine>();
             ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
             grounder = ownerGameObject.GetComponent<GrounderEnemy>();
             wallCheck = ownerGameObject.GetComponent<WallChecker>();

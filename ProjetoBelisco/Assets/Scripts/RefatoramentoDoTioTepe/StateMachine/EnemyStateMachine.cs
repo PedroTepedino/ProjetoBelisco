@@ -9,19 +9,19 @@ namespace RefatoramentoDoTioTepe
     {
         private Rigidbody2D rigidbody;
         private Targeting targeting;
-        private AnimationController animationController;
+        private IAnimationController animationController;
         private Attack attack;
         private int healthPoints;
 
         public StateMachine stateMachine {get;set;}
-        public bool movingRight = true;
+        public bool movingRight {get;set;} = true;
         public bool alive {get;set;} = true;
 
-        [SerializeField] [AssetsOnly] [InlineEditor] private IEnemyParameters _enemyParameters;
-        public IEnemyParameters EnemyParameters => _enemyParameters;
+        [SerializeField] [AssetsOnly] [InlineEditor] private EnemyParameters _enemyParameters;
+        public EnemyParameters EnemyParameters => _enemyParameters;
 
         private void Awake() {
-            animationController = this.GetComponentInChildren<AnimationController>();
+            animationController = this.GetComponentInChildren<IAnimationController>();
             rigidbody = this.GetComponent<Rigidbody2D>();
             targeting = this.GetComponent<Targeting>();
             attack = this.GetComponent<Attack>();

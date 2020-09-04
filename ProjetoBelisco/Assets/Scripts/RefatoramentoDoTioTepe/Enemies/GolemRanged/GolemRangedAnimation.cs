@@ -2,7 +2,7 @@
 
 namespace RefatoramentoDoTioTepe
 {
-    public class GolemTripleAnimation : MonoBehaviour
+    public class GolemRangedAnimation : MonoBehaviour
     {
         private Animator animator;
         private IEnemyStateMachine controller;
@@ -15,6 +15,7 @@ namespace RefatoramentoDoTioTepe
             animator = this.GetComponentInChildren<Animator>();
             controller = this.GetComponent<IEnemyStateMachine>();
             stateMachine = controller.stateMachine;
+
         }
 
         private void Update()
@@ -47,6 +48,11 @@ namespace RefatoramentoDoTioTepe
                 animator.SetBool("Chase", false);
             }
         }
+    
+        public void TriggerAnimationAttack()
+        {
+            animator.SetTrigger("Attack");
+        }
 
         public void TriggerAnimationHit()
         {
@@ -54,7 +60,5 @@ namespace RefatoramentoDoTioTepe
         }
 
         public void Interfacinha(){}
-        public void TriggerAnimationAttack(){}
-
     }
 }

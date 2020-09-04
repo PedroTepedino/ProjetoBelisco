@@ -6,7 +6,7 @@ namespace RefatoramentoDoTioTepe
     public class IddleState : IState
     {
         private GameObject ownerGameObject;
-        private EnemyStateMachine ownerController;
+        private IEnemyStateMachine ownerController;
         private float maxIddleTime;
         private float minIddleTime;
         private float iddleTime;
@@ -15,7 +15,7 @@ namespace RefatoramentoDoTioTepe
         public IddleState(GameObject owner)
         {
             ownerGameObject = owner;
-            ownerController = owner.GetComponent<EnemyStateMachine>();
+            ownerController = owner.GetComponent<IEnemyStateMachine>();
             maxIddleTime = ownerController.EnemyParameters.MaxIddleTime; 
             maxIddleTime = ownerController.EnemyParameters.MinIddleTime; 
         }

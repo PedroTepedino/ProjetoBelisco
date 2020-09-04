@@ -8,14 +8,14 @@ namespace RefatoramentoDoTioTepe
 
         private GameObject ownerGameObject;
         private Transform target;
-        private EnemyStateMachine ownerController;
+        private IEnemyStateMachine ownerController;
         private float timer;
         private float alertAnimationTime;
 
         public AlertState(GameObject owner)
         {
             ownerGameObject = owner;
-            ownerController = owner.GetComponent<EnemyStateMachine>();        
+            ownerController = owner.GetComponent<IEnemyStateMachine>();        
         }
 
         public void OnEnter()

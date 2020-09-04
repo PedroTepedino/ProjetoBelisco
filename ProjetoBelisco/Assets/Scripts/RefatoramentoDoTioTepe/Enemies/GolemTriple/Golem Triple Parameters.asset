@@ -9,23 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b433dc42ed3943ad899cd4169449d057, type: 3}
-  m_Name: New Enemy Parameters
-  m_EditorClassIdentifier: 
+  m_Script: {fileID: 0}
+  m_Name: Golem Triple Parameters
+  m_EditorClassIdentifier: GameAssemblyDefinition:RefatoramentoDoTioTepe:GolemTripleParameters
   isBoss: 0
   lookingRange: 5
+  maxHealthPoints: 1
+  alertAnimationTime: 1
   maxIddleTime: 1
   minIddleTime: 0
   movingSpeed: 5
   maxStopTime: 0
   minTimeBetweenStops: 3
-  _edgeCheckerCenter: {x: 0, y: 0}
-  _edgeCheckerDistance: 0
-  _edgeCheckerLayerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  _wallCheckerCenter: {x: 0, y: 0}
-  _wallCheckerDistance: 0
-  _wallCheckerLayerMask:
+  grounderCenter: {x: 0, y: 0}
+  grounderDistance: 0
+  grounderLayerMask:
     serializedVersion: 2
     m_Bits: 0

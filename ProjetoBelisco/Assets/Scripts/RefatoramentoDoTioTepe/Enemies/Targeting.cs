@@ -11,7 +11,7 @@ namespace RefatoramentoDoTioTepe
         [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask _targetingLayerMask;
         
 
-        private EnemyStateMachine controller;
+        private IEnemyStateMachine controller;
         private Attack attack;
         private Vector3 _checkerCenter;
         private bool bossEnemy = false;
@@ -23,7 +23,7 @@ namespace RefatoramentoDoTioTepe
 
         void Start()
         {
-            controller = GetComponent<EnemyStateMachine>();
+            controller = GetComponent<IEnemyStateMachine>();
             attack = GetComponent<Attack>();
             bossEnemy = controller.EnemyParameters.IsBoss;
             lookingRange = controller.EnemyParameters.LookingRange;

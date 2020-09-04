@@ -1273,9 +1273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3e328e513499fc4d9c66c0124cdcf67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingRight: 1
-  alive: 1
-  _enemyParameters: {fileID: 11400000, guid: 755453ad9cc7a514387c76dac1ba5eb8, type: 2}
+  _enemyParameters: {fileID: 0}
 --- !u!4 &429274110
 Transform:
   m_ObjectHideFlags: 0
@@ -2136,8 +2134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3e328e513499fc4d9c66c0124cdcf67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingRight: 1
-  alive: 1
   _enemyParameters: {fileID: 0}
 --- !u!114 &1018428804
 MonoBehaviour:
@@ -2724,6 +2720,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1138412762}
+  - component: {fileID: 1138412768}
+  - component: {fileID: 1138412767}
+  - component: {fileID: 1138412766}
+  - component: {fileID: 1138412765}
+  - component: {fileID: 1138412764}
+  - component: {fileID: 1138412763}
   m_Layer: 0
   m_Name: GolemSword
   m_TagString: Untagged
@@ -2745,6 +2747,123 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1138412763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138412761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa87a9c09d01ec4cb0863c7bf98f498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallTop: 0
+  wallCenter: 0
+  wallBottom: 0
+--- !u!114 &1138412764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138412761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f1e2c7b312d7342b47fd7e1ee4de2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetingCenter: {x: 0, y: 0, z: 0}
+  bossZoneCornerA: {x: 0, y: 0, z: 0}
+  bossZoneCornerB: {x: 0, y: 0, z: 0}
+  _targetingLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &1138412765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138412761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74505473f88b324fac5b078615f8bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1138412766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138412761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af54d0fd437a7947a31869b5bbfbd08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  attackRange: 1
+  attackSpeed: 1
+  meleeAttack: 0
+  explosionAttack: 0
+  rangedAttack: 0
+  dashAttack: 0
+  shootAndExplosionAttack: 0
+  meleeAtttackChance: 0
+  _meleeAttackCenter: {x: 0, y: 0}
+  meleeAttackRadius: 1
+  meleeAttackDamage: 1
+  explosionAtttackChance: 0
+  _explosionAttackCenter: {x: 0, y: 0}
+  explosionAttackRadius: 1
+  explosionAttackDamage: 1
+  rangedAtttackChance: 0
+  _rangeAttackCenter: {x: 0, y: 0}
+  rangeAttackDamage: 1
+  _rangeAttackProjectileTag: 
+  dashAtttackChance: 0
+  _dashAttackCenter: {x: 0, y: 0}
+  dashAttackRadius: 1
+  dashAttackDamage: 1
+  dashSpeed: 0
+  shootAndExplosionAtttackChance: 0
+  shootAndExplosionAttackExplosionCenter: {x: 0, y: 0}
+  shootAndExplosionAttackExplosionRadius: 1
+  shootAndExplosionAttackExplosionDamage: 1
+  shootAndExplosionAttackRangedCenter: {x: 0, y: 0}
+  shootAndExplosionAttackRangedDamage: 1
+  shootAndExplosionAttackProjectileTag: 
+  isInRange: 0
+--- !u!114 &1138412767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138412761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a38cd7aad3f38f4ba8023056b7010e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1138412768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138412761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42786b728fd5f2e479d89360ac5f502b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyParameters: {fileID: 11400000, guid: 887d79b2b3f843147b91204a11b86459, type: 2}
 --- !u!1 &1186878739
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,6 +2873,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1186878740}
+  - component: {fileID: 1186878746}
+  - component: {fileID: 1186878745}
+  - component: {fileID: 1186878744}
+  - component: {fileID: 1186878743}
+  - component: {fileID: 1186878742}
+  - component: {fileID: 1186878741}
   m_Layer: 0
   m_Name: GolemTriple
   m_TagString: Untagged
@@ -2775,6 +2900,123 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1186878741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186878739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa87a9c09d01ec4cb0863c7bf98f498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallTop: 0
+  wallCenter: 0
+  wallBottom: 0
+--- !u!114 &1186878742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186878739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f1e2c7b312d7342b47fd7e1ee4de2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetingCenter: {x: 0, y: 0, z: 0}
+  bossZoneCornerA: {x: 0, y: 0, z: 0}
+  bossZoneCornerB: {x: 0, y: 0, z: 0}
+  _targetingLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &1186878743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186878739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74505473f88b324fac5b078615f8bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1186878744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186878739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af54d0fd437a7947a31869b5bbfbd08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  attackRange: 1
+  attackSpeed: 1
+  meleeAttack: 0
+  explosionAttack: 0
+  rangedAttack: 0
+  dashAttack: 0
+  shootAndExplosionAttack: 0
+  meleeAtttackChance: 0
+  _meleeAttackCenter: {x: 0, y: 0}
+  meleeAttackRadius: 1
+  meleeAttackDamage: 1
+  explosionAtttackChance: 0
+  _explosionAttackCenter: {x: 0, y: 0}
+  explosionAttackRadius: 1
+  explosionAttackDamage: 1
+  rangedAtttackChance: 0
+  _rangeAttackCenter: {x: 0, y: 0}
+  rangeAttackDamage: 1
+  _rangeAttackProjectileTag: 
+  dashAtttackChance: 0
+  _dashAttackCenter: {x: 0, y: 0}
+  dashAttackRadius: 1
+  dashAttackDamage: 1
+  dashSpeed: 0
+  shootAndExplosionAtttackChance: 0
+  shootAndExplosionAttackExplosionCenter: {x: 0, y: 0}
+  shootAndExplosionAttackExplosionRadius: 1
+  shootAndExplosionAttackExplosionDamage: 1
+  shootAndExplosionAttackRangedCenter: {x: 0, y: 0}
+  shootAndExplosionAttackRangedDamage: 1
+  shootAndExplosionAttackProjectileTag: 
+  isInRange: 0
+--- !u!114 &1186878745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186878739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01c20a45dd904c6429e63f4000c7f334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1186878746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186878739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a297d7056d9044190cf35c58d38696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyParameters: {fileID: 11400000, guid: 9aafcc654fac124439e919b93c56979c, type: 2}
 --- !u!1 &1187792768
 GameObject:
   m_ObjectHideFlags: 0
@@ -2814,6 +3056,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1263685524}
+  - component: {fileID: 1263685530}
+  - component: {fileID: 1263685529}
+  - component: {fileID: 1263685528}
+  - component: {fileID: 1263685527}
+  - component: {fileID: 1263685526}
+  - component: {fileID: 1263685525}
   m_Layer: 0
   m_Name: GolemSimple
   m_TagString: Untagged
@@ -2835,6 +3083,123 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1263685525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263685523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa87a9c09d01ec4cb0863c7bf98f498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallTop: 0
+  wallCenter: 0
+  wallBottom: 0
+--- !u!114 &1263685526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263685523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f1e2c7b312d7342b47fd7e1ee4de2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetingCenter: {x: 0, y: 0, z: 0}
+  bossZoneCornerA: {x: 0, y: 0, z: 0}
+  bossZoneCornerB: {x: 0, y: 0, z: 0}
+  _targetingLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &1263685527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263685523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74505473f88b324fac5b078615f8bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1263685528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263685523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af54d0fd437a7947a31869b5bbfbd08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  attackRange: 1
+  attackSpeed: 1
+  meleeAttack: 0
+  explosionAttack: 0
+  rangedAttack: 0
+  dashAttack: 0
+  shootAndExplosionAttack: 0
+  meleeAtttackChance: 0
+  _meleeAttackCenter: {x: 0, y: 0}
+  meleeAttackRadius: 1
+  meleeAttackDamage: 1
+  explosionAtttackChance: 0
+  _explosionAttackCenter: {x: 0, y: 0}
+  explosionAttackRadius: 1
+  explosionAttackDamage: 1
+  rangedAtttackChance: 0
+  _rangeAttackCenter: {x: 0, y: 0}
+  rangeAttackDamage: 1
+  _rangeAttackProjectileTag: 
+  dashAtttackChance: 0
+  _dashAttackCenter: {x: 0, y: 0}
+  dashAttackRadius: 1
+  dashAttackDamage: 1
+  dashSpeed: 0
+  shootAndExplosionAtttackChance: 0
+  shootAndExplosionAttackExplosionCenter: {x: 0, y: 0}
+  shootAndExplosionAttackExplosionRadius: 1
+  shootAndExplosionAttackExplosionDamage: 1
+  shootAndExplosionAttackRangedCenter: {x: 0, y: 0}
+  shootAndExplosionAttackRangedDamage: 1
+  shootAndExplosionAttackProjectileTag: 
+  isInRange: 0
+--- !u!114 &1263685529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263685523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b4e7d48e6507d4e985634c11bebc6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1263685530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263685523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267836e51bbf32c4a9919b5da0e808dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyParameters: {fileID: 11400000, guid: 4b06c543d42e15840bcba3a9d7e4cfb0, type: 2}
 --- !u!1001 &1268636639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3662,6 +4027,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1994545045}
+  - component: {fileID: 1994545051}
+  - component: {fileID: 1994545050}
+  - component: {fileID: 1994545049}
+  - component: {fileID: 1994545048}
+  - component: {fileID: 1994545047}
+  - component: {fileID: 1994545046}
   m_Layer: 0
   m_Name: GolemRanged
   m_TagString: Untagged
@@ -3683,6 +4054,123 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1994545046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994545044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa87a9c09d01ec4cb0863c7bf98f498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallTop: 0
+  wallCenter: 0
+  wallBottom: 0
+--- !u!114 &1994545047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994545044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f1e2c7b312d7342b47fd7e1ee4de2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetingCenter: {x: 0, y: 0, z: 0}
+  bossZoneCornerA: {x: 0, y: 0, z: 0}
+  bossZoneCornerB: {x: 0, y: 0, z: 0}
+  _targetingLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &1994545048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994545044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74505473f88b324fac5b078615f8bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1994545049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994545044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af54d0fd437a7947a31869b5bbfbd08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  attackRange: 1
+  attackSpeed: 1
+  meleeAttack: 0
+  explosionAttack: 0
+  rangedAttack: 0
+  dashAttack: 0
+  shootAndExplosionAttack: 0
+  meleeAtttackChance: 0
+  _meleeAttackCenter: {x: 0, y: 0}
+  meleeAttackRadius: 1
+  meleeAttackDamage: 1
+  explosionAtttackChance: 0
+  _explosionAttackCenter: {x: 0, y: 0}
+  explosionAttackRadius: 1
+  explosionAttackDamage: 1
+  rangedAtttackChance: 0
+  _rangeAttackCenter: {x: 0, y: 0}
+  rangeAttackDamage: 1
+  _rangeAttackProjectileTag: 
+  dashAtttackChance: 0
+  _dashAttackCenter: {x: 0, y: 0}
+  dashAttackRadius: 1
+  dashAttackDamage: 1
+  dashSpeed: 0
+  shootAndExplosionAtttackChance: 0
+  shootAndExplosionAttackExplosionCenter: {x: 0, y: 0}
+  shootAndExplosionAttackExplosionRadius: 1
+  shootAndExplosionAttackExplosionDamage: 1
+  shootAndExplosionAttackRangedCenter: {x: 0, y: 0}
+  shootAndExplosionAttackRangedDamage: 1
+  shootAndExplosionAttackProjectileTag: 
+  isInRange: 0
+--- !u!114 &1994545050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994545044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e8d42fd8f24b748aac7b990ed841a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1994545051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994545044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a20ce0a1abcf14abe10e64e9159840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyParameters: {fileID: 11400000, guid: ecfc24d773bde46448fa81f5bc0b961b, type: 2}
 --- !u!1 &2037770276
 GameObject:
   m_ObjectHideFlags: 0

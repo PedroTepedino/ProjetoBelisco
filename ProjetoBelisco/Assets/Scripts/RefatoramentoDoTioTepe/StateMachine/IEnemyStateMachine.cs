@@ -6,10 +6,12 @@ namespace RefatoramentoDoTioTepe
 {
     public interface IEnemyStateMachine 
     {    
-        void Interfacinha();
 
-        StateMachine stateMachine{get;set;}
-
+        StateMachine stateMachine{get;}
+        EnemyParameters EnemyParameters {get;}
+        bool movingRight {get;}
         bool alive {get;set;}
+        
+        void Interfacinha();
     }
 }

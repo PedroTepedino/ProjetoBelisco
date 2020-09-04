@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3865196440227540620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4950405592837482996}
+  - component: {fileID: 3268258910529327744}
+  - component: {fileID: 1912723299261477336}
+  - component: {fileID: 1313167950142427294}
+  - component: {fileID: 5673545987595754810}
+  m_Layer: 0
+  m_Name: EnemyShell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4950405592837482996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3865196440227540620}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.29261717, y: -1.9945471, z: -0.36035156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3268258910529327744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3865196440227540620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af54d0fd437a7947a31869b5bbfbd08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  attackRange: 1
+  attackSpeed: 1
+  meleeAttack: 0
+  explosionAttack: 0
+  rangedAttack: 0
+  dashAttack: 0
+  shootAndExplosionAttack: 0
+  meleeAtttackChance: 0
+  _meleeAttackCenter: {x: 0, y: 0}
+  meleeAttackRadius: 1
+  meleeAttackDamage: 1
+  explosionAtttackChance: 0
+  _explosionAttackCenter: {x: 0, y: 0}
+  explosionAttackRadius: 1
+  explosionAttackDamage: 1
+  rangedAtttackChance: 0
+  _rangeAttackCenter: {x: 0, y: 0}
+  rangeAttackDamage: 1
+  _rangeAttackProjectileTag: 
+  dashAtttackChance: 0
+  _dashAttackCenter: {x: 0, y: 0}
+  dashAttackRadius: 1
+  dashAttackDamage: 1
+  dashSpeed: 0
+  shootAndExplosionAtttackChance: 0
+  shootAndExplosionAttackExplosionCenter: {x: 0, y: 0}
+  shootAndExplosionAttackExplosionRadius: 1
+  shootAndExplosionAttackExplosionDamage: 1
+  shootAndExplosionAttackRangedCenter: {x: 0, y: 0}
+  shootAndExplosionAttackRangedDamage: 1
+  shootAndExplosionAttackProjectileTag: 
+  isInRange: 0
+--- !u!114 &1912723299261477336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3865196440227540620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74505473f88b324fac5b078615f8bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1313167950142427294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3865196440227540620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28f1e2c7b312d7342b47fd7e1ee4de2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetingCenter: {x: 0, y: 0, z: 0}
+  bossZoneCornerA: {x: 0, y: 0, z: 0}
+  bossZoneCornerB: {x: 0, y: 0, z: 0}
+  _targetingLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &5673545987595754810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3865196440227540620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa87a9c09d01ec4cb0863c7bf98f498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallTop: 0
+  wallCenter: 0
+  wallBottom: 0

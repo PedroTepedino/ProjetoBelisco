@@ -54,6 +54,7 @@ namespace RefatoramentoDoTioTepe
         }
 
         public void Interfacinha(){}
+        public void TriggerAnimationAttack(){}
         
     }
 }

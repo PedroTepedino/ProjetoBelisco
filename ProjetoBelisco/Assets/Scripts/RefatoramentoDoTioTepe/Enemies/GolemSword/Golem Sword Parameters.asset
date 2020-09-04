@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31c6e630b787bb479cdd65c7f2ccacd, type: 3}
+  m_Name: Golem Sword Parameters
+  m_EditorClassIdentifier: 
+  isBoss: 0
+  lookingRange: 5
+  maxHealthPoints: 1
+  alertAnimationTime: 1
+  maxIddleTime: 1
+  minIddleTime: 0
+  movingSpeed: 5
+  maxStopTime: 0
+  minTimeBetweenStops: 3
+  grounderCenter: {x: 0, y: 0}
+  grounderDistance: 0
+  grounderLayerMask:
+    serializedVersion: 2
+    m_Bits: 0

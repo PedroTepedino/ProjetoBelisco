@@ -14,11 +14,11 @@ namespace RefatoramentoDoTioTepe
         private int healthPoints;
 
         public StateMachine stateMachine{get;set;}
-        public bool movingRight = true;
+        public bool movingRight {get;set;} = true;
         public bool alive {get;set;} = true;
 
-        [SerializeField] [AssetsOnly] [InlineEditor] private IEnemyParameters _enemyParameters;
-        public IEnemyParameters EnemyParameters => _enemyParameters;
+        [SerializeField] [AssetsOnly] [InlineEditor] private EnemyParameters _enemyParameters;
+        public EnemyParameters EnemyParameters => _enemyParameters;
 
         private void Awake() {
             animationController = this.GetComponentInChildren<IAnimationController>();
