@@ -29,17 +29,11 @@ public class Parallax : MonoBehaviour
 
     private void LateUpdate()
     {
-        Vector2 deltaSize = new Vector2();
-        if(this.transform.position.x < pInicio.position.x)
-        {
-            deltaSize.x = backgroundWidth / 2f;
-        }
+        Vector2 deltaSize = Vector2.Lerp(new Vector2(((1920f - backgroundWidth) / 2f), 0f),
+            new Vector2(((backgroundWidth - 1920f) / 2f), 0f),
+            (pFim.position.x - this.transform.position.x) / (pFim.position.x - pInicio.position.x));
 
         background.anchoredPosition = deltaSize;
-
-
-
-
 
         //Vector3 deltaMovement = this.transform.position - lastCameraPosition;
 
