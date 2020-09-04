@@ -8,18 +8,22 @@ namespace RefatoramentoDoTioTepe
         private GameObject ownerGameObject;
         private EnemyStateMachine ownerController;
         private float maxIddleTime;
+        private float minIddleTime;
+        private float iddleTime;
         private float timer;
 
         public IddleState(GameObject owner)
         {
             ownerGameObject = owner;
             ownerController = owner.GetComponent<EnemyStateMachine>();
-            maxIddleTime = ownerController.EnemyParameters.MaxIddleTime;  
+            maxIddleTime = ownerController.EnemyParameters.MaxIddleTime; 
+            maxIddleTime = ownerController.EnemyParameters.MinIddleTime; 
         }
 
         public void OnEnter()
         {
             timer = 0f;
+            iddleTime = Random.Range(minIddleTime, maxIddleTime);
         }
 
         public void OnExit()

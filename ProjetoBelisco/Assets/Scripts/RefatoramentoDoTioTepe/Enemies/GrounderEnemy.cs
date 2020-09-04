@@ -5,18 +5,21 @@ namespace RefatoramentoDoTioTepe
 {
     public class GrounderEnemy : MonoBehaviour
     {
-        [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _grounderCenter;
-        [FoldoutGroup("Parameters")] [SerializeField] private float _grounderSize;
-        [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask _groundLayerMask;
+        private Vector3 grounderCenter;
+        private float grounderDistance;
+        private LayerMask groundLayerMask;
    
         private EnemyStateMachine controller;
-        private Vector3 _checkerCenter;
+        private Vector3 checkerCenter;
         
         public bool isGrounded { get; private set; } = false;
 
 
-        private void Start() {
+        private void Awake() {
             controller = GetComponent<EnemyStateMachine>();
+            grounderCenter = controller.EnemyParameters.GrounderCenter;
+            grounderDistance = controller.EnemyParameters.GrounderDistance;
+            groundLayerMask = controller.EnemyParameters.GrounderLayerMask;
         }
 
         private void Update()
@@ -27,8 +30,8 @@ namespace RefatoramentoDoTioTepe
         private bool GroundCheck()
         {
             RaycastHit2D raycastHit2D;
-            _checkerCenter = this.transform.position + new Vector3(controller.movingRight ? _grounderCenter.x : -_grounderCenter.x , _grounderCenter.y, 0);
-            raycastHit2D = Physics2D.Raycast(_checkerCenter, Vector2.down, _grounderSize, _groundLayerMask);
+            checkerCenter = this.transform.position + new Vector3(controller.movingRight ? grounderCenter.x : -grounderCenter.x , grounderCenter.y, 0);
+            raycastHit2D = Physics2D.Raycast(checkerCenter, Vector2.down, grounderDistance, groundLayerMask);
 
             return raycastHit2D.collider != null;
         }
@@ -41,9 +44,9 @@ namespace RefatoramentoDoTioTepe
         
             Gizmos.color = isGrounded ? Color.green : Color.red;
             if(controller.movingRight){
-                Gizmos.DrawLine(this.transform.position + _grounderCenter, this.transform.position + new Vector3(_grounderCenter.x, _grounderCenter.y - _grounderSize, 0));
+                Gizmos.DrawLine(this.transform.position + grounderCenter, this.transform.position + new Vector3(grounderCenter.x, grounderCenter.y - grounderDistance, 0));
             }else{
-                Gizmos.DrawLine(this.transform.position + new Vector3(-_grounderCenter.x, _grounderCenter.y , 0), this.transform.position + new Vector3(-_grounderCenter.x, _grounderCenter.y - _grounderSize, 0));
+                Gizmos.DrawLine(this.transform.position + new Vector3(-grounderCenter.x, grounderCenter.y , 0), this.transform.position + new Vector3(-grounderCenter.x, grounderCenter.y - grounderDistance, 0));
             }
         }
     }
