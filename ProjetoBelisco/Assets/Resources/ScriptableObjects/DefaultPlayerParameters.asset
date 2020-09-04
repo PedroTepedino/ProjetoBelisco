@@ -17,7 +17,7 @@ MonoBehaviour:
   _dashMaxTimer: 0
   _jumpVelocity: 20
   _maxJumpButtonHoldTime: 0.5
-  _gravityFallMultiplayer: 2
+  _gravityFallMultiplayer: 1
   _velocityWhenTerminateJump: 2
   _maxHealth: 10
   _grounderPosition: {x: 0, y: 0, z: 0}
