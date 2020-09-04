@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using GameScripts.Player;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace RefatoramentoDoTioTepe
 {
@@ -59,7 +61,16 @@ namespace RefatoramentoDoTioTepe
             if (!_attacking)
             {
                 _mover.Tick();
-                _jumper.Tick();
+
+                if (!(_mover is Dasher))
+                {
+                    _jumper.Tick();
+                }
+            }
+
+            if (Dasher.CheckDashInput())
+            {
+                StartDash();
             }
 
             _attackerList.ForEach(attacker => attacker.Tick());
@@ -70,6 +81,25 @@ namespace RefatoramentoDoTioTepe
             AnimatorController.UpdateParameters(isGrounded);
 
             JustTouchedGround(isGrounded);
+        }
+
+        private void StartDash()
+        {
+            _mover = new Dasher(this);
+            _playerAnimatorController.Dash();
+        }
+
+        public void StopDashing()
+        {
+            if (_mover is Dasher dasher)
+            {
+                dasher?.StopDashing();
+            }
+        }
+
+        public void EndDash()
+        {
+            _mover = new Mover(this);
         }
 
         public void CallAttack<T>() where T : IAttacker
@@ -116,8 +146,8 @@ namespace RefatoramentoDoTioTepe
 
             return direction;
         }
-        
-        public Directions GetAttackDirectionHorizontal() => _playerAnimatorController.IsLookingRight ? Directions.Right : Directions.Left;
+
+        public Directions GetDirectionHorizontal() => _playerAnimatorController.IsLookingRight ? Directions.Right : Directions.Left;
 
         private void CheckJumping()
         {

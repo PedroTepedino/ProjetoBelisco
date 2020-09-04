@@ -71,6 +71,11 @@ namespace RefatoramentoDoTioTepe
             SetTrigger("StrongAttack");
         }
 
+        public void Dash()
+        {
+            SetTrigger("Dash");
+        }
+
         private void LookDirection(bool lookRight)
         {
             _spriteRendererRight.enabled = lookRight;

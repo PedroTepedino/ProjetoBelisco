@@ -8,8 +8,10 @@ namespace RefatoramentoDoTioTepe
         float Vertical { get; }
         bool PausePressed { get; }
         bool Jump { get; }
+        bool TerminateJump { get; }
         bool Attack { get; }
         bool StrongAttack { get; }
         bool RangedAttack { get; }
+        bool Dash { get; }
     }
 }

@@ -22,7 +22,7 @@ namespace RefatoramentoDoTioTepe
         {
             if (RewiredPlayerInput.Instance.StrongAttack)
             {
-                _attackDirection = _player.GetAttackDirectionHorizontal();
+                _attackDirection = _player.GetDirectionHorizontal();
                 _animatorController.StrongAttack();
                 _player.StartAttack();
             }

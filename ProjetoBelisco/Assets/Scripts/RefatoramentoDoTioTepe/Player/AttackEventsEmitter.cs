@@ -22,6 +22,16 @@ namespace RefatoramentoDoTioTepe
             _player.EndAttack();
         }
 
+        public void StopDashing()
+        {
+            _player.StopDashing();
+        }
+
+        public void EndDash()
+        {
+            _player.EndDash();
+        }
+
         private void OnValidate()
         {
             if (_player == null)
