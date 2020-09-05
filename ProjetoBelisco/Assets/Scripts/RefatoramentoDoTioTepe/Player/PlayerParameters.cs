@@ -15,14 +15,21 @@ namespace RefatoramentoDoTioTepe
         [BoxGroup("Jump")] [SerializeField] private float _maxJumpButtonHoldTime = 1f;
         [BoxGroup("Jump")] [SerializeField] private float _gravityFallMultiplayer = 2f;
         [BoxGroup("Jump")] [SerializeField] private float _velocityWhenTerminateJump = 3f;
+        
+        [BoxGroup("Glide")] [SerializeField] private float _glideFallVelocity = 0.5f;
 
         [BoxGroup("Life System")] [SerializeField] private int _maxHealth = 10;
 
-        [BoxGroup("Grounder")] [SerializeField] private Vector3 _grounderPosition;
-        [BoxGroup("Grounder")] [SerializeField] private Vector2 _grounderSizes;
-        [BoxGroup("Grounder")] [SerializeField] [EnumToggleButtons] private LayerMask _grounderLayerMask;
+        [BoxGroup("Grounder")]
+        [BoxGroup("Grounder/Grounder")] [SerializeField] private Vector3 _grounderPosition;
+        [BoxGroup("Grounder/Grounder")] [SerializeField] private Vector2 _grounderSizes;
+        [BoxGroup("Grounder/LayerMask")] [SerializeField] [EnumToggleButtons] private LayerMask _grounderLayerMask;
+        [BoxGroup("Grounder/NearGroundPreview")] [SerializeField] private Vector3 _nearGroundGrounderPosition;
+        [BoxGroup("Grounder/NearGroundPreview")] [SerializeField] private Vector2 _nearGroundGrounderSizes;
 
         [BoxGroup("Attack")]
+        [BoxGroup("Attack/Timer")] [SerializeField]private float _timeBetweenAttacks = 0.5f;
+        
         [BoxGroup("Attack/StrongAttack")] [SerializeField] private Vector2 _strongAttackCenter;
         [BoxGroup("Attack/StrongAttack")] [SerializeField] private float _strongAttackRadius;
         [BoxGroup("Attack/StrongAttack")] [SerializeField] private Vector2 _strongAttackExplosionCenter;
@@ -44,5 +51,9 @@ namespace RefatoramentoDoTioTepe
         public float DashVelocity => _dashVelocity;
         public float DashMaxTimer => _dashMaxTimer;
         public float VelocityWhenTerminateJump => _velocityWhenTerminateJump;
+        public Vector3 NearGroundGrounderPosition => _nearGroundGrounderPosition;
+        public Vector2 NearGroundGrounderSizes => _nearGroundGrounderSizes;
+        public float GlideFallVelocity => _glideFallVelocity;
+        public float TimeBetweenAttacks => _timeBetweenAttacks;
     }
 }

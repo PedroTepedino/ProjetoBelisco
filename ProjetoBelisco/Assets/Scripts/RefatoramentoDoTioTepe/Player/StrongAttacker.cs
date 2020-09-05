@@ -20,7 +20,7 @@ namespace RefatoramentoDoTioTepe
 
         public void Tick()
         {
-            if (RewiredPlayerInput.Instance.StrongAttack)
+            if (RewiredPlayerInput.Instance.StrongAttack && AttackerTimer.TimerEnded)
             {
                 _attackDirection = _player.GetDirectionHorizontal();
                 _animatorController.StrongAttack();

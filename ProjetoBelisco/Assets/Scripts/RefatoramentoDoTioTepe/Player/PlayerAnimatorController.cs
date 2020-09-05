@@ -76,6 +76,11 @@ namespace RefatoramentoDoTioTepe
             SetTrigger("Dash");
         }
 
+        public void Glide(bool glide)
+        {
+            SetBool("Gliding", glide);
+        }
+
         private void LookDirection(bool lookRight)
         {
             _spriteRendererRight.enabled = lookRight;

@@ -331,6 +331,7 @@
               <e p="PawInventory.cs" t="Include" />
             </e>
             <e p="Player" t="Include">
+              <e p="AttackerTimer.cs" t="Include" />
               <e p="AttackEventsEmitter.cs" t="Include" />
               <e p="BasicAttacker.cs" t="Include" />
               <e p="Glider.cs" t="Include" />
@@ -350,6 +351,7 @@
               <e p="RangedAttacker.cs" t="Include" />
               <e p="RewiredPlayerInput.cs" t="Include" />
               <e p="StrongAttacker.cs" t="Include" />
+              <e p="WallJumper.cs" t="Include" />
             </e>
             <e p="StateMachine" t="Include">
               <e p="EnemyStateMachine.cs" t="Include" />

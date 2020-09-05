@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using GameScripts.Player;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace RefatoramentoDoTioTepe
 {
@@ -36,11 +34,14 @@ namespace RefatoramentoDoTioTepe
         public LifeSystem LifeSystem => _lifeSystem;
         public Grounder Grounder => _grounder;
         public bool Jumping => _jumper.Jumping;
+        public bool Gliding => _glider.Gliding;
         public PlayerAnimatorController AnimatorController => _playerAnimatorController;
 
 
         private void Awake()
         {
+            AttackerTimer.SetTimer(_playerParameters.TimeBetweenAttacks);
+            
             _grounder = new Grounder(this);
             _lifeSystem = new LifeSystem(this);
             _mover = new Mover(this);
@@ -60,19 +61,23 @@ namespace RefatoramentoDoTioTepe
 
         private void Update()
         {
+            AttackerTimer.SubtractTimer();
+            
             if (!_attacking)
             {
                 _mover.Tick();
 
                 if (!(_mover is Dasher))
                 {
+                    _glider.Tick();
+                    
                     _jumper.Tick();
                 }
-            }
-
-            if (Dasher.CheckDashInput())
-            {
-                StartDash();
+                
+                if (Dasher.CheckDashInput())
+                {
+                    StartDash();
+                }
             }
 
             _attackerList.ForEach(attacker => attacker.Tick());
@@ -119,6 +124,7 @@ namespace RefatoramentoDoTioTepe
         {
             _attacking = false;
             _playerLocker.UnlockPlayer();
+            AttackerTimer.ResetTimer();
         }
 
         public Directions GetAttackDirection()
@@ -186,6 +192,9 @@ namespace RefatoramentoDoTioTepe
             
             Gizmos.color = Color.green;
             Gizmos.DrawWireCube(position + _playerParameters.GrounderPosition, _playerParameters.GrounderSizes);
+
+            Gizmos.color = new Color(0f, 0.5f, 0f, 1f);
+            Gizmos.DrawWireCube(position + _playerParameters.NearGroundGrounderPosition, _playerParameters.NearGroundGrounderSizes);
             
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.StrongAttackCenter, _playerParameters.StrongAttackRadius);

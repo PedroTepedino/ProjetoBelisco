@@ -1,4 +1,6 @@
-﻿namespace RefatoramentoDoTioTepe
+﻿using UnityEngine;
+
+namespace RefatoramentoDoTioTepe
 {
     public interface IAttacker
     {

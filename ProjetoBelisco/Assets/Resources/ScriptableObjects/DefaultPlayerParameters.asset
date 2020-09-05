@@ -18,13 +18,16 @@ MonoBehaviour:
   _jumpVelocity: 20
   _maxJumpButtonHoldTime: 0.5
   _gravityFallMultiplayer: 2
-  _velocityWhenTerminateJump: 2
+  _velocityWhenTerminateJump: 1
+  _glideFallVelocity: -1.5
   _maxHealth: 10
   _grounderPosition: {x: 0, y: 0, z: 0}
   _grounderSizes: {x: 0.3, y: 0.1}
   _grounderLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  _nearGroundGrounderPosition: {x: 0, y: -0.2, z: 0}
+  _nearGroundGrounderSizes: {x: 0.3, y: 0.4}
   _strongAttackCenter: {x: 0, y: 0}
   _strongAttackRadius: 0
   _strongAttackExplosionCenter: {x: 0, y: 0}

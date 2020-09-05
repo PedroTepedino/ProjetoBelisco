@@ -6,6 +6,7 @@ namespace RefatoramentoDoTioTepe
 {
     public class Jumper : IJumper
     {
+        private readonly Player _player;
         private Rigidbody2D _rigidbody;
         private readonly Grounder _playerGrounder;
         private readonly float _jumpVelocity;
@@ -20,6 +21,7 @@ namespace RefatoramentoDoTioTepe
 
         public Jumper(Player player)
         {
+            _player = player;
             _rigidbody = player.gameObject.GetComponent<Rigidbody2D>();
             _playerGrounder = player.Grounder;
             _jumpVelocity = player.PlayerParameters.JumpVelocity;
@@ -57,12 +59,19 @@ namespace RefatoramentoDoTioTepe
 
             if (RewiredPlayerInput.Instance.TerminateJump)
             {
-                if (_rigidbody.velocity.y > _velocityWhenTerminateJump.x * 2)
+                if (_rigidbody.velocity.y > _jumpVelocity / 2f)
                 {
                     _velocityWhenTerminateJump.x = _rigidbody.velocity.x;
                     velocity = _velocityWhenTerminateJump;
                 }
+                
                 _canJumpAgain = true;
+            }
+
+            if (RewiredPlayerInput.Instance.InitiateJump)
+            {
+                // If near ground Can jump, otherwise can't
+                _canJumpAgain = _playerGrounder.NearGround;
             }
             
             _rigidbody.velocity = velocity;

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ImporterSettings
   m_EditorClassIdentifier: 
   spritesheets:
-  - spritesheetPath: Assets/Arts/Aseprites/beliscoLow.png
-    animationInfo: Assets/Arts/Aseprites/beliscoLow.json
+  - spritesheetPath: Assets/Arts/Sprites/beliscoLow.png
+    animationInfo: Assets/Arts/Sprites/beliscoLow.json
     importerType: Aseprite
     trimWidth: 0
     trimHeight: 0

@@ -41,6 +41,8 @@ namespace RefatoramentoDoTioTepe
         private float _timer;
         private readonly float _dashDirectionMultiplier;
 
+        public bool Dashing => _dashing;
+
         public Dasher(Player player)
         {
             _dashing = true;
@@ -69,7 +71,6 @@ namespace RefatoramentoDoTioTepe
         public void StopDashing()
         {
             _dashing = false;
-            
         }
     }
 }
