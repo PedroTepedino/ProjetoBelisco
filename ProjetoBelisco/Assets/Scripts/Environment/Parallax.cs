@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
-
+    public Transform pInicio, pFim;
+    public RectTransform background;
+    private float backgroundWidth;
     private Vector3 lastCameraPosition;
 
+    [System.Serializable]
     struct Background
     {
         public GameObject backgroundGameObject;
@@ -14,23 +17,35 @@ public class Parallax : MonoBehaviour
     }
     [SerializeField] private List<Background> backgrounds;
 
-    void Start()
+    private void Awake()
     {
-        lastCameraPosition = this.transform.position;
+        backgroundWidth = background.sizeDelta.x;
     }
 
-    private void LateUpdate() {
-        Vector3 deltaMovement = this.transform.position - lastCameraPosition;
+    void Start()
+    {
+        //lastCameraPosition = this.transform.position;
+    }
 
-        foreach (var background in backgrounds)
-        {
-            background.backgroundGameObject.transform.position += new Vector3(deltaMovement.x * background.parallaxFactors.x, deltaMovement.y * background.parallaxFactors.y, background.backgroundGameObject.transform.position.z);
-        }
-        // for (int i = 0; i < backgrounds.Count; i++)
-        // {
-        //     backgrounds[i].backgroundGameObject.transform.position += new Vector3(deltaMovement.x * backgrounds[i].parallaxFactors.x, deltaMovement.y * backgrounds[i].parallaxFactors.y, backgrounds[i].backgroundGameObject.transform.position.z);
-        // }
+    private void LateUpdate()
+    {
+        Vector2 deltaSize = Vector2.Lerp(new Vector2(((1920f - backgroundWidth) / 2f), 0f),
+            new Vector2(((backgroundWidth - 1920f) / 2f), 0f),
+            (pFim.position.x - this.transform.position.x) / (pFim.position.x - pInicio.position.x));
 
-        lastCameraPosition = this.transform.position;
+        background.anchoredPosition = deltaSize;
+
+        //Vector3 deltaMovement = this.transform.position - lastCameraPosition;
+
+        //foreach (var background in backgrounds)
+        //{
+        //    background.backgroundGameObject.transform.position += new Vector3(deltaMovement.x * background.parallaxFactors.x, deltaMovement.y * background.parallaxFactors.y, background.backgroundGameObject.transform.position.z);
+        //}
+        //// for (int i = 0; i < backgrounds.Count; i++)
+        //// {
+        ////     backgrounds[i].backgroundGameObject.transform.position += new Vector3(deltaMovement.x * backgrounds[i].parallaxFactors.x, deltaMovement.y * backgrounds[i].parallaxFactors.y, backgrounds[i].backgroundGameObject.transform.position.z);
+        //// }
+
+        //lastCameraPosition = this.transform.position;
     }
 }

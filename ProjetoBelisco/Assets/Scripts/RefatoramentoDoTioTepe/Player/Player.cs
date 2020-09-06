@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using GameScripts.PoolingSystem;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -9,15 +9,17 @@ namespace RefatoramentoDoTioTepe
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(Grounder))]
     [RequireComponent(typeof(Collider2D))]
-    public class Player : MonoBehaviour, IHittable
+    public class Player : MonoBehaviour, IHittable , IPooledObject
     {
         [SerializeField] [AssetsOnly] [InlineEditor(InlineEditorObjectFieldModes.Hidden)] private PlayerParameters _playerParameters;
         private IMover _mover;
         private IJumper _jumper;
-        private List<IAttacker> _attackerList;
+        private IAttacker _attacker;
+        //private List<IAttacker> _attackerList;
         private LifeSystem _lifeSystem;
         private Grounder _grounder;
         private PlayerLocker _playerLocker;
+        private Glider _glider;
 
         [SerializeField] 
         private PlayerAnimatorController _playerAnimatorController;
@@ -33,20 +35,25 @@ namespace RefatoramentoDoTioTepe
         public LifeSystem LifeSystem => _lifeSystem;
         public Grounder Grounder => _grounder;
         public bool Jumping => _jumper.Jumping;
+        public bool Gliding => _glider.Gliding;
         public PlayerAnimatorController AnimatorController => _playerAnimatorController;
 
 
         private void Awake()
         {
+            AttackerTimer.SetTimer(_playerParameters.TimeBetweenAttacks);
+            
             _grounder = new Grounder(this);
             _lifeSystem = new LifeSystem(this);
             _mover = new Mover(this);
             _jumper = new Jumper(this);
             _playerLocker = new PlayerLocker(this);
+            _glider = new Glider(this);
+            _attacker = new BasicAttacker(this);
             
-            _attackerList = new List<IAttacker>();
-            _attackerList.Add(new BasicAttacker(this));
-            _attackerList.Add(new StrongAttacker(this));
+            // _attackerList = new List<IAttacker>();
+            // _attackerList.Add(new BasicAttacker(this));
+            // _attackerList.Add(new StrongAttacker(this));
         }
 
         public void Hit(int damage)
@@ -56,13 +63,27 @@ namespace RefatoramentoDoTioTepe
 
         private void Update()
         {
+            AttackerTimer.SubtractTimer();
+            
             if (!_attacking)
             {
                 _mover.Tick();
-                _jumper.Tick();
-            }
 
-            _attackerList.ForEach(attacker => attacker.Tick());
+                if (!(_mover is Dasher))
+                {
+                    _glider.Tick();
+                    
+                    _jumper.Tick();
+                }
+                
+                if (Dasher.CheckDashInput())
+                {
+                    StartDash();
+                }
+            }
+            
+            _attacker.Tick();
+            //_attackerList.ForEach(attacker => attacker.Tick());
             
             CheckJumping();
 
@@ -72,9 +93,30 @@ namespace RefatoramentoDoTioTepe
             JustTouchedGround(isGrounded);
         }
 
-        public void CallAttack<T>() where T : IAttacker
+        private void StartDash()
         {
-            _attackerList.Find(item => item is StrongAttacker)?.Attack();
+            _mover = new Dasher(this);
+            _playerAnimatorController.Dash();
+        }
+
+        public void StopDashing()
+        {
+            if (_mover is Dasher dasher)
+            {
+                dasher?.StopDashing();
+            }
+        }
+
+        public void EndDash()
+        {
+            _mover = new Mover(this);
+        }
+
+        //public void CallAttack<T>() where T : IAttacker
+        public void CallAttack()
+        {
+            _attacker.Attack();
+            //_attackerList.Find(item => item is T)?.Attack();
         }
 
         public void StartAttack()
@@ -87,6 +129,7 @@ namespace RefatoramentoDoTioTepe
         {
             _attacking = false;
             _playerLocker.UnlockPlayer();
+            AttackerTimer.ResetTimer();
         }
 
         public Directions GetAttackDirection()
@@ -116,8 +159,8 @@ namespace RefatoramentoDoTioTepe
 
             return direction;
         }
-        
-        public Directions GetAttackDirectionHorizontal() => _playerAnimatorController.IsLookingRight ? Directions.Right : Directions.Left;
+
+        public Directions GetDirectionHorizontal() => _playerAnimatorController.IsLookingRight ? Directions.Right : Directions.Left;
 
         private void CheckJumping()
         {
@@ -154,12 +197,33 @@ namespace RefatoramentoDoTioTepe
             
             Gizmos.color = Color.green;
             Gizmos.DrawWireCube(position + _playerParameters.GrounderPosition, _playerParameters.GrounderSizes);
+
+            Gizmos.color = new Color(0f, 0.5f, 0f, 1f);
+            Gizmos.DrawWireCube(position + _playerParameters.NearGroundGrounderPosition, _playerParameters.NearGroundGrounderSizes);
             
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.StrongAttackCenter, _playerParameters.StrongAttackRadius);
+            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.BasicAttackCenter, _playerParameters.BasicAttackRadius);
+            var leftAttackCenter = (Vector3) _playerParameters.BasicAttackCenter;
+            leftAttackCenter.x *= -1;
+            Gizmos.DrawWireSphere(position + leftAttackCenter, _playerParameters.BasicAttackRadius);
             
             Gizmos.color = Color.magenta;
-            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.StrongAttackExplosionCenter, _playerParameters.StrongAttackExplosionRadius);
+            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.BasicUpAttackCenter, _playerParameters.BasicUpAttackRadius);
+            
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.BasicDownAttackCenter, _playerParameters.BasicDownAttackRadius);
+            
+            // Gizmos.color = new Color(1f, 0.5f, 0f, 1f);
+            // Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.StrongAttackCenter, _playerParameters.StrongAttackRadius);
+            // leftAttackCenter = (Vector3) _playerParameters.StrongAttackCenter;
+            // leftAttackCenter.x *= -1;
+            // Gizmos.DrawWireSphere(position + leftAttackCenter, _playerParameters.StrongAttackRadius);
+        }
+
+        public void OnObjectSpawn()
+        {
+            this._lifeSystem = new LifeSystem(this);
+            this.gameObject.SetActive(true);
         }
     }
 

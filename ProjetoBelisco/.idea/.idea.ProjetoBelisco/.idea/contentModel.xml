@@ -7,6 +7,11 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Arts" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="license.txt" t="Include" />
+          </e>
+        </e>
         <e p="ConsolePro" t="Include">
           <e p="ConsoleProDebug.cs" t="Include" />
           <e p="Remote" t="Include">
@@ -263,6 +268,7 @@
           </e>
           <e p="Environment" t="Include">
             <e p="Checkpoint.cs" t="Include" />
+            <e p="Parallax.cs" t="Include" />
             <e p="PlayerRespawner.cs" t="Include" />
             <e p="VoidHole.cs" t="Include" />
           </e>
@@ -293,6 +299,7 @@
             <e p="Movement.cs" t="Include" />
             <e p="PawStorage.cs" t="Include" />
             <e p="PlatformDown.cs" t="Include" />
+            <e p="PlayDashParticles.cs" t="Include" />
             <e p="PlayParticle.cs" t="Include" />
             <e p="PoolableObject.cs" t="Include" />
           </e>
@@ -301,19 +308,14 @@
             <e p="Pooler.cs" t="Include" />
           </e>
           <e p="RefatoramentoDoTioTepe" t="Include">
-            <e p="AnimationTool" t="Include">
-              <e p="AnimationChooser.cs" t="Include" />
-              <e p="AnimationEventInfo.cs" t="Include" />
-              <e p="AnimationEventInfoScriptableObject.cs" t="Include" />
-              <e p="AnimationEventInserter.cs" t="Include" />
-              <e p="Testezera.cs" t="Include" />
-            </e>
             <e p="Bootstrapper.cs" t="Include" />
             <e p="Enemies" t="Include">
+              <e p="AnimationController.cs" t="Include" />
               <e p="Attack.cs" t="Include" />
               <e p="Enemy.cs" t="Include" />
               <e p="EnemyParameters.cs" t="Include" />
               <e p="GrounderEnemy.cs" t="Include" />
+              <e p="HitDummie.cs" t="Include" />
               <e p="States" t="Include">
                 <e p="AlertState.cs" t="Include" />
                 <e p="AttackState.cs" t="Include" />
@@ -324,13 +326,16 @@
               <e p="Targeting.cs" t="Include" />
               <e p="WallChecker.cs" t="Include" />
             </e>
+            <e p="FadeInOutSceneTransition.cs" t="Include" />
             <e p="Inventory" t="Include">
               <e p="Paw.cs" t="Include" />
               <e p="PawInventory.cs" t="Include" />
             </e>
             <e p="Player" t="Include">
+              <e p="AttackerTimer.cs" t="Include" />
               <e p="AttackEventsEmitter.cs" t="Include" />
               <e p="BasicAttacker.cs" t="Include" />
+              <e p="Glider.cs" t="Include" />
               <e p="Grounder.cs" t="Include" />
               <e p="IAttacker.cs" t="Include" />
               <e p="IHittable.cs" t="Include" />
@@ -347,7 +352,9 @@
               <e p="RangedAttacker.cs" t="Include" />
               <e p="RewiredPlayerInput.cs" t="Include" />
               <e p="StrongAttacker.cs" t="Include" />
+              <e p="WallJumper.cs" t="Include" />
             </e>
+            <e p="RoomTransition.cs" t="Include" />
             <e p="StateMachine" t="Include">
               <e p="EnemyStateMachine.cs" t="Include" />
               <e p="GameStateMachine.cs" t="Include" />

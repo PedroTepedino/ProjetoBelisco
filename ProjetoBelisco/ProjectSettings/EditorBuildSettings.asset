@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: ad924d5b51e78244a93e5aa781f0b47b
   - enabled: 1
@@ -30,6 +30,15 @@ EditorBuildSettings:
     path: Assets/Scenes/UI.unity
     guid: 9fe83059a5f47824792717b1045d8992
   - enabled: 1
+    path: Assets/Scenes/FadeInOutScene.unity
+    guid: e668e24f1589b4d4594f870780d14d08
+  - enabled: 1
+    path: Assets/Scenes/TesteTepe 1.unity
+    guid: 72c10a32216e1804dae2d56519e3cf13
+  - enabled: 1
+    path: Assets/Scenes/TesteTepe.unity
+    guid: 44570d1b9c393df4399581877d483b42
+  - enabled: 1
     path: Assets/Scenes/TestScenes/PlayerTests.unity
     guid: 2ce88eaeb91afbd49991c0f5c90d7c27
   - enabled: 1
@@ -38,6 +47,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScenes/EnemyTests.unity
     guid: 96fe4d56a205dba47a31311e78271924
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: f9222ec8f0cec2a4385d67de82c48c50
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: df6654dc09b831341bb6100f9072d0e9,
       type: 2}
