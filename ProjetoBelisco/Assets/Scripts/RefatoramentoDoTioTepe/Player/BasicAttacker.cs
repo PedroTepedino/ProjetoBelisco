@@ -51,7 +51,7 @@ namespace RefatoramentoDoTioTepe
                 var hittable = collider.gameObject.GetComponent<IHittable>();
                 if (hittable != null)
                 {
-                    //if (!HasWallBetween(collider.transform.position))
+                    if (!HasWallBetween(collider.transform.position))
                     {
                         hittable.Hit(_attackDamage);
                     }
@@ -65,7 +65,7 @@ namespace RefatoramentoDoTioTepe
             var direction = position - playerPosition;
             var distance = direction.magnitude;
             direction = direction.normalized;
-            
+
             return Physics2D.Raycast(playerPosition, direction, distance, LayerMask.GetMask("Ground")).collider != null;
         }
 
