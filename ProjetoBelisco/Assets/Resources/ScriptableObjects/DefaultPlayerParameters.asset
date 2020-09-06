@@ -39,7 +39,5 @@ MonoBehaviour:
   _basicUpAttackRadius: 1.48
   _basicDownAttackCenter: {x: 0, y: 0}
   _basicDownAttackRadius: 1.37
-  _strongAttackCenter: {x: 0, y: 0}
-  _strongAttackRadius: 0
-  _strongAttackExplosionCenter: {x: 0, y: 0}
-  _strongAttackExplosionRadius: 0
+  _strongAttackCenter: {x: 0.34, y: 0.76}
+  _strongAttackRadius: 2.5

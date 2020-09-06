@@ -68,18 +68,17 @@ namespace RefatoramentoDoTioTepe
         public Vector2 BasicDownAttackCenter => _basicDownAttackCenter;
         public float BasicDownAttackRadius => _basicDownAttackRadius;
 
-        private Vector2 GetLeftAttackCenter
+        private Vector2 GetLeftAttackCenter(Vector2 center)
         {
-            get
-            {
-                var center = _basicAttackCenter;
-                center.x *= -1;
-                return center;
-            }
+            center.x *= -1;
+            return center;
         }
         public AttackParameter BasicRightAttackParameter => new AttackParameter(_basicAttackCenter, _basicAttackRadius);
-        public AttackParameter BasicLeftAttackParameter => new AttackParameter(GetLeftAttackCenter, _basicAttackRadius);
+        public AttackParameter BasicLeftAttackParameter => new AttackParameter(GetLeftAttackCenter(_basicAttackCenter), _basicAttackRadius);
         public AttackParameter BasicUpAttackParameter => new AttackParameter(_basicUpAttackCenter, _basicUpAttackRadius);
-        public AttackParameter BasicDownAttackParameter => new AttackParameter(_basicDownAttackCenter, _basicDownAttackRadius);
+        public AttackParameter BasicDownAttackParameter => new AttackParameter(_basicDownAttackCenter, _basicDownAttackRadius); 
+        
+        public AttackParameter StrongAttackGroundRight => new AttackParameter(_strongAttackCenter, _strongAttackRadius);
+        public AttackParameter StrongAttackGroundLeft => new AttackParameter(GetLeftAttackCenter(_strongAttackCenter), _strongAttackRadius);
     }
 }

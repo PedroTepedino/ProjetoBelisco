@@ -208,7 +208,11 @@ namespace RefatoramentoDoTioTepe
             Gizmos.color = Color.cyan;
             Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.BasicDownAttackCenter, _playerParameters.BasicDownAttackRadius);
             
-            Gizmos.color = new Color();
+            Gizmos.color = new Color(1f, 0.5f, 0f, 1f);
+            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.StrongAttackCenter, _playerParameters.StrongAttackRadius);
+            leftAttackCenter = (Vector3) _playerParameters.StrongAttackCenter;
+            leftAttackCenter.x *= -1;
+            Gizmos.DrawWireSphere(position + leftAttackCenter, _playerParameters.StrongAttackRadius);
         }
     }
 
