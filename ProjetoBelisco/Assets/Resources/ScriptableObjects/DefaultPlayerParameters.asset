@@ -28,6 +28,17 @@ MonoBehaviour:
     m_Bits: 256
   _nearGroundGrounderPosition: {x: 0, y: -0.2, z: 0}
   _nearGroundGrounderSizes: {x: 0.3, y: 0.4}
+  _timeBetweenAttacks: 0.5
+  _attackLayers:
+    serializedVersion: 2
+    m_Bits: 1280
+  _basicAttackDamage: 1
+  _basicAttackCenter: {x: 0.8, y: 0.81}
+  _basicAttackRadius: 1.25
+  _basicUpAttackCenter: {x: 0, y: 2.04}
+  _basicUpAttackRadius: 1.48
+  _basicDownAttackCenter: {x: 0, y: 0}
+  _basicDownAttackRadius: 1.37
   _strongAttackCenter: {x: 0, y: 0}
   _strongAttackRadius: 0
   _strongAttackExplosionCenter: {x: 0, y: 0}

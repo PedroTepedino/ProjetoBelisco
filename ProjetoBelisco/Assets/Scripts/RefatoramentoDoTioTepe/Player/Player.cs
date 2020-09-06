@@ -111,7 +111,7 @@ namespace RefatoramentoDoTioTepe
 
         public void CallAttack<T>() where T : IAttacker
         {
-            _attackerList.Find(item => item is StrongAttacker)?.Attack();
+            _attackerList.Find(item => item is T)?.Attack();
         }
 
         public void StartAttack()
@@ -197,10 +197,18 @@ namespace RefatoramentoDoTioTepe
             Gizmos.DrawWireCube(position + _playerParameters.NearGroundGrounderPosition, _playerParameters.NearGroundGrounderSizes);
             
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.StrongAttackCenter, _playerParameters.StrongAttackRadius);
+            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.BasicAttackCenter, _playerParameters.BasicAttackRadius);
+            var leftAttackCenter = (Vector3) _playerParameters.BasicAttackCenter;
+            leftAttackCenter.x *= -1;
+            Gizmos.DrawWireSphere(position + leftAttackCenter, _playerParameters.BasicAttackRadius);
             
             Gizmos.color = Color.magenta;
-            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.StrongAttackExplosionCenter, _playerParameters.StrongAttackExplosionRadius);
+            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.BasicUpAttackCenter, _playerParameters.BasicUpAttackRadius);
+
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.BasicDownAttackCenter, _playerParameters.BasicDownAttackRadius);
+            
+            Gizmos.color = new Color();
         }
     }
 
