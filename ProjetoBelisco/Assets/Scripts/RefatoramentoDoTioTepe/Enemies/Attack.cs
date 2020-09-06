@@ -57,7 +57,7 @@ namespace RefatoramentoDoTioTepe
 
         [HideInInspector] public bool isInRange = false;
 
-        private EnemyStateMachine _controller;
+        private IEnemyStateMachine _controller;
         private GrounderEnemy grounder;
         private WallChecker wallCheck;
         private Vector2 movement = new Vector2();
@@ -65,7 +65,7 @@ namespace RefatoramentoDoTioTepe
 
         private void Awake()
         {
-            _controller = this.GetComponent<EnemyStateMachine>();
+            _controller = this.GetComponent<IEnemyStateMachine>();
             grounder = GetComponent<GrounderEnemy>();
             wallCheck = GetComponent<WallChecker>();
             ownerRigidbody = GetComponent<Rigidbody2D>();

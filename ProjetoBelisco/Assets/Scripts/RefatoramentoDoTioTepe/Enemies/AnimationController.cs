@@ -5,7 +5,7 @@ namespace RefatoramentoDoTioTepe
     public class AnimationController : MonoBehaviour
     {
         private Animator animator;
-        private EnemyStateMachine controller;
+        private IEnemyStateMachine controller;
         private StateMachine stateMachine;
 
         private IState currentState;
@@ -13,7 +13,7 @@ namespace RefatoramentoDoTioTepe
         private void Awake()
         {
             animator = this.GetComponentInChildren<Animator>();
-            controller = this.GetComponent<EnemyStateMachine>();
+            controller = this.GetComponent<IEnemyStateMachine>();
             stateMachine = controller.stateMachine;
 
             // _attack.OnAttack += ListenAttack;
@@ -77,5 +77,7 @@ namespace RefatoramentoDoTioTepe
         // {
         //     _animator.SetTrigger("Hit");
         // }
+
+        public void Interfacinha(){}
     }
 }

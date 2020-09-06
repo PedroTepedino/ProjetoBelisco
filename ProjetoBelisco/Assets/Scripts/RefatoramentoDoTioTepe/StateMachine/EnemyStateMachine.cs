@@ -5,23 +5,23 @@ using Sirenix.OdinInspector;
 
 namespace RefatoramentoDoTioTepe
 {
-    public class EnemyStateMachine : MonoBehaviour , IHittable
+    public class EnemyStateMachine : MonoBehaviour , IHittable, IEnemyStateMachine
     {
         private Rigidbody2D rigidbody;
         private Targeting targeting;
-        private AnimationController animationController;
+        private IAnimationController animationController;
         private Attack attack;
         private int healthPoints;
 
-        public StateMachine stateMachine;
-        public bool movingRight = true;
-        public bool alive = true;
+        public StateMachine stateMachine {get;set;}
+        public bool movingRight {get;set;} = true;
+        public bool alive {get;set;} = true;
 
         [SerializeField] [AssetsOnly] [InlineEditor] private EnemyParameters _enemyParameters;
         public EnemyParameters EnemyParameters => _enemyParameters;
 
         private void Awake() {
-            animationController = this.GetComponentInChildren<AnimationController>();
+            animationController = this.GetComponentInChildren<IAnimationController>();
             rigidbody = this.GetComponent<Rigidbody2D>();
             targeting = this.GetComponent<Targeting>();
             attack = this.GetComponent<Attack>();
@@ -70,6 +70,8 @@ namespace RefatoramentoDoTioTepe
             }
 
         }
+
+        public void Interfacinha(){}
 
     }
 }

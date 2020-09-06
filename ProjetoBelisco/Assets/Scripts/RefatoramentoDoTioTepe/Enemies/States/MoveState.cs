@@ -19,18 +19,16 @@ namespace RefatoramentoDoTioTepe
      * movement - Vector2 that controls the magnitude of the movement
      */
         private GameObject ownerGameObject;
-        private EnemyStateMachine ownerController;
+        private IEnemyStateMachine ownerController;
         private Rigidbody2D ownerRigidbody;
         private GrounderEnemy grounder;
         private WallChecker wallCheck;
         private Vector2 movement = new Vector2();
-        private bool groundCheck;
-        private float timer;
-        private float timerBetweeneStops;
-        private float timeToWait;
-        private float maxStopTime;
-        private float minTimeBetweenStops;
+        private float minTimeBetweenIddles;
+        private float maxTimeBetweenIddles;
         private float movingSpeed;
+        private float timerToIddle;
+        private float timer;
 
         // Group: Functions
 
@@ -44,12 +42,12 @@ namespace RefatoramentoDoTioTepe
         public MoveState(GameObject gameObject)
         {
             ownerGameObject = gameObject;
-            ownerController = gameObject.GetComponent<EnemyStateMachine>();
+            ownerController = gameObject.GetComponent<IEnemyStateMachine>();
             ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
             grounder = ownerGameObject.GetComponent<GrounderEnemy>();
             wallCheck = ownerGameObject.GetComponent<WallChecker>();
-            maxStopTime = ownerController.EnemyParameters.MaxStopTime;
-            minTimeBetweenStops = ownerController.EnemyParameters.MinTimeBetweenStops;
+            minTimeBetweenIddles = ownerController.EnemyParameters.MinTimeBetweenIddles;
+            maxTimeBetweenIddles = ownerController.EnemyParameters.MaxTimeBetweenIddles;
             movingSpeed = ownerController.EnemyParameters.MovingSpeed;
         }
 
@@ -58,7 +56,7 @@ namespace RefatoramentoDoTioTepe
      */
         public void OnEnter()
         {
-            timeToWait = 0;
+            timerToIddle = Random.Range(minTimeBetweenIddles, maxTimeBetweenIddles);
             timer = 0;
         }
 
@@ -76,48 +74,34 @@ namespace RefatoramentoDoTioTepe
         public void Tick()
         {
             timer += Time.deltaTime;
-            timerBetweeneStops += Time.deltaTime;
-            int chanceToStop;
-            chanceToStop = Random.Range(0,10);
 
             if (grounder.isGrounded && !wallCheck.wallAhead)
             {
-                if (timer >= timeToWait)
-                {
-                    Move();
-                }
-                else
-                {
-                    if (timerBetweeneStops > minTimeBetweenStops)
-                    {
-                        Stop();
-                    }
-                }
+                Move();
             }
             else
             {
-                Stop();
                 Flip();
             }
         }
 
-        private void Stop()
-        {
-            ownerController.GetComponent<Rigidbody>().velocity = Vector2.zero;
-            timerBetweeneStops = 0;
-        }
+
         private void Move()
         {
             movement.Set(ownerController.movingRight ? movingSpeed : -movingSpeed, ownerRigidbody.velocity.y);
             ownerRigidbody.velocity = movement;
-            timeToWait = Random.Range(0, maxStopTime);
-            timer = 0;
         }
 
         private void Flip()
         {
             ownerGameObject.transform.eulerAngles = new Vector3(0, ownerController.movingRight ? -180 : 0, 0);
             ownerController.movingRight = ownerController.movingRight ? false : true;
+            timer = timerToIddle + 1f;
+        }
+
+        public bool TimeEnded()
+        {
+            return (timer > timerToIddle);
         }
         /* See Also:
      */

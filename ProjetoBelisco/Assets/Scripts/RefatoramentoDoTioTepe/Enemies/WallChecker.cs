@@ -5,7 +5,7 @@ namespace RefatoramentoDoTioTepe
 {
     public class WallChecker : MonoBehaviour
     {
-        private EnemyStateMachine controller;
+        private IEnemyStateMachine controller;
 
         
         private Vector3 wallCheckerTop = Vector3.zero;    
@@ -19,13 +19,13 @@ namespace RefatoramentoDoTioTepe
         private Vector3 checkerBottom;
 
         public bool wallAhead { get; private set; } = false;
-        public bool wallTop = false;
-        public bool wallCenter = false;
-        public bool wallBottom = false;
+        public bool wallTop { get; private set; } = false;
+        public bool wallCenter { get; private set; } = false;
+        public bool wallBottom { get; private set; } = false;
     
 
         private void Awake() {
-            controller = GetComponent<EnemyStateMachine>();
+            controller = GetComponent<IEnemyStateMachine>();
             wallCheckerTop = controller.EnemyParameters.WallCheckerTop;
             wallCheckerCenter = controller.EnemyParameters.WallCheckerCenter;
             wallCheckerTop = controller.EnemyParameters.WallCheckerBottom;
