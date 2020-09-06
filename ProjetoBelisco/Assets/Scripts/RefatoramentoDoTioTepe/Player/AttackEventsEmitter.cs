@@ -9,12 +9,12 @@ namespace RefatoramentoDoTioTepe
         
         public void StrongAttack()
         {
-            _player.CallAttack<StrongAttacker>();
+            _player.CallAttack();
         }
 
         public void BasicAttack()
         {
-            _player.CallAttack<BasicAttacker>();
+            _player.CallAttack();
         }
 
         public void EndAttack()
