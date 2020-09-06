@@ -16,13 +16,26 @@ MonoBehaviour:
   lookingRange: 5
   maxHealthPoints: 1
   alertAnimationTime: 1
-  maxIddleTime: 1
-  minIddleTime: 0
-  movingSpeed: 5
-  maxStopTime: 0
-  minTimeBetweenStops: 3
-  grounderCenter: {x: 0, y: 0}
-  grounderDistance: 0
+  movingSpeed: 3
+  minTimeBetweenIddles: 1
+  maxTimeBetweenIddles: 2
+  minIddleTime: 4
+  maxIddleTime: 6
+  grounderCenter: {x: 0.5, y: -0.5}
+  grounderDistance: 1
   grounderLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
+  wallCheckerTop: {x: 2.3, y: 0.5, z: 0}
+  wallCheckerCenter: {x: 2.3, y: 0, z: 0}
+  wallCheckerBottom: {x: 2.3, y: -0.5, z: 0}
+  wallCheckerDistance: 0.2
+  wallCheckerLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  targetingLayerMask:
+    serializedVersion: 2
+    m_Bits: 4352
+  targetingCenter: {x: 0.7, y: 0.3, z: 0}
+  bossZoneCornerA: {x: 0, y: 0, z: 0}
+  bossZoneCornerB: {x: 0, y: 0, z: 0}

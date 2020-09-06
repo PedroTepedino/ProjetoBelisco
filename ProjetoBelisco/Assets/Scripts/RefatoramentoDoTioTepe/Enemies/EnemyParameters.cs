@@ -11,23 +11,27 @@ namespace RefatoramentoDoTioTepe
         [SerializeField] protected int maxHealthPoints = 1;
         [SerializeField] protected float alertAnimationTime = 1f;
 
-        [BoxGroup("Iddle")][SerializeField] protected float maxIddleTime = 1f;
-        [BoxGroup("Iddle")][SerializeField] protected float minIddleTime = 0f;
-
         [BoxGroup("Movement")] [SerializeField] protected float movingSpeed = 5f;
-        [BoxGroup("Movement")] [SerializeField] protected float maxStopTime = 0f;
-        [BoxGroup("Movement")] [SerializeField] protected float minTimeBetweenStops = 3f;
+        [BoxGroup("Movement")] [SerializeField] protected float minTimeBetweenIddles = 2f;
+        [BoxGroup("Movement")] [SerializeField] protected float maxTimeBetweenIddles = 4f;
         
+        [BoxGroup("Movement/Iddle")][SerializeField] protected float minIddleTime = 0f;
+        [BoxGroup("Movement/Iddle")][SerializeField] protected float maxIddleTime = 1f;
         
-        [BoxGroup("Movement/Grounder")] [SerializeField] protected Vector2 grounderCenter;
-        [BoxGroup("Movement/Grounder")] [SerializeField] protected float grounderDistance;
+        [BoxGroup("Movement/Grounder")] [SerializeField] protected Vector2 grounderCenter = Vector3.zero;
+        [BoxGroup("Movement/Grounder")] [SerializeField] protected float grounderDistance = 1f;
         [BoxGroup("Movement/Grounder")] [SerializeField] protected LayerMask grounderLayerMask;
 
-        [BoxGroup("Movement/WallDetection")] protected Vector3 wallCheckerTop = Vector3.zero;    
-        [BoxGroup("Movement/WallDetection")] protected Vector3 wallCheckerCenter = Vector3.zero;
-        [BoxGroup("Movement/WallDetection")] protected Vector3 wallCheckerBottom = Vector3.zero;
-        [BoxGroup("Movement/WallDetection")] protected float wallCheckerDistance = 1f;
-        [BoxGroup("Movement/WallDetection")] protected LayerMask wallCheckerLayerMask;
+        [BoxGroup("Movement/WallDetection")] [SerializeField] protected Vector3 wallCheckerTop = Vector3.zero;    
+        [BoxGroup("Movement/WallDetection")] [SerializeField] protected Vector3 wallCheckerCenter = Vector3.zero;
+        [BoxGroup("Movement/WallDetection")] [SerializeField] protected Vector3 wallCheckerBottom = Vector3.zero;
+        [BoxGroup("Movement/WallDetection")] [SerializeField] protected float wallCheckerDistance = 1f;
+        [BoxGroup("Movement/WallDetection")] [SerializeField] protected LayerMask wallCheckerLayerMask;
+
+        [BoxGroup("Targeting")] [SerializeField] [EnumToggleButtons] private LayerMask targetingLayerMask;
+        [BoxGroup("Targeting")] [SerializeField] private Vector3 targetingCenter;
+        [BoxGroup("Targeting/Boss")] [SerializeField] private Vector3 bossZoneCornerA;
+        [BoxGroup("Targeting/Boss")] [SerializeField] private Vector3 bossZoneCornerB;
 
         public bool IsBoss => isBoss;
         public float LookingRange => lookingRange;
@@ -39,8 +43,8 @@ namespace RefatoramentoDoTioTepe
         public float MinIddleTime => minIddleTime;
 
         public float MovingSpeed => movingSpeed;
-        public float MaxStopTime => maxStopTime;
-        public float MinTimeBetweenStops => minTimeBetweenStops;
+        public float MinTimeBetweenIddles => minTimeBetweenIddles;
+        public float MaxTimeBetweenIddles => maxTimeBetweenIddles;
 
         public Vector2 GrounderCenter => grounderCenter;
         public float GrounderDistance => grounderDistance;
@@ -51,6 +55,11 @@ namespace RefatoramentoDoTioTepe
         public Vector2 WallCheckerBottom => wallCheckerBottom;
         public float WallCheckerDistance => wallCheckerDistance;
         public LayerMask WallCheckerLayerMask => wallCheckerLayerMask;
+        
+        public LayerMask TargetingLayerMask => targetingLayerMask;
+        public Vector3 TargetingCenter => targetingCenter;
+        public Vector3 BossZoneCornerA => bossZoneCornerA;
+        public Vector3 BossZoneCornerB => bossZoneCornerB;
 
     }
 }

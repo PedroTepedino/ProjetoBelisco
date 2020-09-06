@@ -9,7 +9,7 @@ namespace RefatoramentoDoTioTepe
 
         StateMachine stateMachine{get;}
         EnemyParameters EnemyParameters {get;}
-        bool movingRight {get;}
+        bool movingRight {get;set;}
         bool alive {get;set;}
         
         void Interfacinha();

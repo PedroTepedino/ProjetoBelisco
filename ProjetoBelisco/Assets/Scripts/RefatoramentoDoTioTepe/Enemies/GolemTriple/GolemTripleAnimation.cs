@@ -14,6 +14,9 @@ namespace RefatoramentoDoTioTepe
         {
             animator = this.GetComponentInChildren<Animator>();
             controller = this.GetComponent<IEnemyStateMachine>();
+        }
+
+        private void Start() {
             stateMachine = controller.stateMachine;
         }
 

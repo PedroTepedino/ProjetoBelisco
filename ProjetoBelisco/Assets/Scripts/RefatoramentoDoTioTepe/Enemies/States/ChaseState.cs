@@ -37,26 +37,7 @@ namespace RefatoramentoDoTioTepe
                 Vector2 direction = (target.position - ownerGameObject.transform.position);
 
                 Move(direction);
-                /*if (direction.x > 0)//direita
-                {
-                    if (grounder.isGrounded && !wallCheck.wallAhead)
-                    {
-                        ownerController.movingRight = true;
-                        movement.Set(movingSpeed, ownerRigidbody.velocity.y);
-                        ownerRigidbody.velocity = movement;
-                    }
-
-                }
-                else if (direction.x < 0)
-                {
-
-                    if (grounder.isGrounded && !wallCheck.wallAhead)
-                    {
-                        ownerController.movingRight = false;
-                        movement.Set(-movingSpeed, ownerRigidbody.velocity.y);
-                        ownerRigidbody.velocity = movement;
-                    }
-                }*/
+                
             }
         }
 
@@ -72,6 +53,10 @@ namespace RefatoramentoDoTioTepe
                 ownerController.movingRight = ((direction.x > 0f) ? true : false);
                 movement.Set(ownerController.movingRight ? movingSpeed : -movingSpeed, ownerRigidbody.velocity.y);
                 ownerRigidbody.velocity = movement;
+            }
+            else
+            {
+                Flip();
             }
         }
 

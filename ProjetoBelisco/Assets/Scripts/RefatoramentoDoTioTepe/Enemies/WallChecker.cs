@@ -19,9 +19,9 @@ namespace RefatoramentoDoTioTepe
         private Vector3 checkerBottom;
 
         public bool wallAhead { get; private set; } = false;
-        public bool wallTop = false;
-        public bool wallCenter = false;
-        public bool wallBottom = false;
+        public bool wallTop { get; private set; } = false;
+        public bool wallCenter { get; private set; } = false;
+        public bool wallBottom { get; private set; } = false;
     
 
         private void Awake() {

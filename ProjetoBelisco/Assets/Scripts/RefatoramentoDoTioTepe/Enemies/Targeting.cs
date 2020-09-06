@@ -5,15 +5,15 @@ namespace RefatoramentoDoTioTepe
 {
     public class Targeting : MonoBehaviour
     {
-        [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _targetingCenter;
-        [FoldoutGroup("Parameters")] [SerializeField] private Vector3 bossZoneCornerA;
-        [FoldoutGroup("Parameters")] [SerializeField] private Vector3 bossZoneCornerB;
-        [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask _targetingLayerMask;
+
+        private Vector3 targetingCenter;
+        private Vector3 bossZoneCornerA;
+        private Vector3 bossZoneCornerB;
+        private LayerMask targetingLayerMask;
         
 
         private IEnemyStateMachine controller;
         private Attack attack;
-        private Vector3 _checkerCenter;
         private bool bossEnemy = false;
         private float lookingRange;
 
@@ -27,6 +27,10 @@ namespace RefatoramentoDoTioTepe
             attack = GetComponent<Attack>();
             bossEnemy = controller.EnemyParameters.IsBoss;
             lookingRange = controller.EnemyParameters.LookingRange;
+            targetingCenter = controller.EnemyParameters.TargetingCenter;
+            bossZoneCornerA = controller.EnemyParameters.BossZoneCornerA;
+            bossZoneCornerB = controller.EnemyParameters.BossZoneCornerB;
+            targetingLayerMask = controller.EnemyParameters.TargetingLayerMask;
             // if (bossEnemy){
             //     hasTarget = true;
             //     target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -54,41 +58,37 @@ namespace RefatoramentoDoTioTepe
         private bool TargetingAction(){
             if (bossEnemy)
             {
-                var hitObjects = Physics2D.OverlapAreaAll(bossZoneCornerA, bossZoneCornerB, _targetingLayerMask);
-                target = ((CheckHit(hitObjects) != null) ? CheckHit(hitObjects).transform : null);
-                return (target != null)/* ? true : false*/;
+                var hitObjects = Physics2D.OverlapAreaAll(bossZoneCornerA, bossZoneCornerB, targetingLayerMask);
+                target = CheckHit(hitObjects);
+                return (target != null);
             }
             else
             {
-                var hitObject = Physics2D.Raycast(this.transform.position, controller.movingRight ? Vector2.right : Vector2.left, lookingRange, _targetingLayerMask);
-                if (hitObject.collider != null)
-                {
-                    if (hitObject.transform.gameObject.GetComponent<IHittable>() != null)
-                    {
-                        target = hitObject.transform;
-                        return true;
-                    }
-                    else
-                    {
-                        target = null;
-                        return false;
-                    }
-                }
-                else
-                {
-                    target = null;
-                    return false;
-                }
+                var hitObject = Physics2D.Raycast(this.transform.position + targetingCenter, controller.movingRight ? Vector2.right : Vector2.left, lookingRange, targetingLayerMask);
+                target = CheckHit(hitObject);
+                return (target != null);
             }
         }
 
-        private Collider2D CheckHit(Collider2D[] hits)
+        private Transform CheckHit(Collider2D[] hits)
         {
             foreach (Collider2D hit in hits)
             {
-                if (hit.CompareTag("Player"))
+                if (hit.gameObject.layer == LayerMask.GetMask("Player"))
                 {
-                    return hit;
+                    return hit.transform;
+                }
+            }
+            return null;
+        }
+
+        private Transform CheckHit(RaycastHit2D hit)
+        {
+            if(hit.transform != null)
+            {
+                if (hit.transform.gameObject.GetComponent<Player>() != null)
+                {
+                    return hit.transform;
                 }
             }
             return null;

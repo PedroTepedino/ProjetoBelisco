@@ -7,7 +7,7 @@ namespace RefatoramentoDoTioTepe
 {
     public class GolemRanged : MonoBehaviour , IHittable, IEnemyStateMachine
     {
-        private Rigidbody2D rigidbody;
+        private Rigidbody2D ownerRigidbody;
         private Targeting targeting;
         private IAnimationController animationController;
         private Attack attack;
@@ -22,7 +22,7 @@ namespace RefatoramentoDoTioTepe
 
         private void Awake() {
             animationController = this.GetComponentInChildren<IAnimationController>();
-            rigidbody = this.GetComponent<Rigidbody2D>();
+            ownerRigidbody = this.GetComponent<Rigidbody2D>();
             targeting = this.GetComponent<Targeting>();
             attack = this.GetComponent<Attack>();
             healthPoints = EnemyParameters.MaxHealthPoints;
@@ -37,19 +37,19 @@ namespace RefatoramentoDoTioTepe
 
             stateMachine.SetState(iddleState);
 
-            stateMachine.AddTransition(iddleState, moveState, iddleState.TimeEnded);
-            stateMachine.AddTransition(iddleState, alertState, iddleState.TimeEnded);
+            stateMachine.AddTransition(iddleState, moveState, () => (iddleState.TimeEnded() && !targeting.hasTarget));
+            stateMachine.AddTransition(iddleState, alertState, () => (iddleState.TimeEnded() && targeting.hasTarget));
 
-            stateMachine.AddTransition(moveState, chaseState, () => targeting.hasTarget);
+            stateMachine.AddTransition(moveState, iddleState, moveState.TimeEnded);
             stateMachine.AddTransition(moveState, alertState, () => targeting.hasTarget);       
 
             stateMachine.AddTransition(chaseState, attackState, () => attack.isInRange);
-            stateMachine.AddTransition(chaseState, moveState, () => !targeting.hasTarget);
+            stateMachine.AddTransition(chaseState, iddleState, () => !targeting.hasTarget);
 
-            stateMachine.AddTransition(attackState, moveState, () => !targeting.hasTarget);
+            stateMachine.AddTransition(attackState, iddleState, () => !targeting.hasTarget);
             stateMachine.AddTransition(attackState, chaseState, () => (!attack.isInRange && targeting.hasTarget));
 
-            stateMachine.AddTransition(alertState, moveState, () => !targeting.hasTarget);
+            stateMachine.AddTransition(alertState, iddleState, () => !targeting.hasTarget);
             stateMachine.AddTransition(alertState, chaseState, () => (alertState.TimeEnded() && targeting.hasTarget && !attack.isInRange));
             stateMachine.AddTransition(alertState, attackState, () => (alertState.TimeEnded() && targeting.hasTarget && attack.isInRange));
         }
@@ -69,6 +69,15 @@ namespace RefatoramentoDoTioTepe
                 animationController.TriggerAnimationHit();
             }
 
+        }
+
+        private void OnCollisionEnter2D(Collision2D hit) {
+            var player = hit.gameObject.GetComponent<Player>();
+            if (player != null)
+            {
+                player.Hit(1);
+                ownerRigidbody.velocity = Vector2.zero;
+            }
         }
 
         public void Interfacinha(){}
