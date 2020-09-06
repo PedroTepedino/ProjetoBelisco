@@ -294,6 +294,7 @@
             <e p="Movement.cs" t="Include" />
             <e p="PawStorage.cs" t="Include" />
             <e p="PlatformDown.cs" t="Include" />
+            <e p="PlayDashParticles.cs" t="Include" />
             <e p="PlayParticle.cs" t="Include" />
             <e p="PoolableObject.cs" t="Include" />
           </e>
@@ -316,6 +317,7 @@
               <e p="Enemy.cs" t="Include" />
               <e p="EnemyParameters.cs" t="Include" />
               <e p="GrounderEnemy.cs" t="Include" />
+              <e p="HitDummie.cs" t="Include" />
               <e p="States" t="Include">
                 <e p="AlertState.cs" t="Include" />
                 <e p="AttackState.cs" t="Include" />
