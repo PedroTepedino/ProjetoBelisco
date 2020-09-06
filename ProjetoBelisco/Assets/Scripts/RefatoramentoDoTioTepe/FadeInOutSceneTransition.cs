@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using DG.Tweening;
+﻿using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
@@ -16,6 +14,7 @@ namespace RefatoramentoDoTioTepe
         [SerializeField] private Volume _volume;
 
         private Tween FadeAnimation;
+        public bool FadeInCompleted { get; private set; }
 
         private void Awake()
         {
@@ -28,6 +27,8 @@ namespace RefatoramentoDoTioTepe
                 Destroy(this.gameObject);
             }
 
+            FadeInCompleted = false;
+
             DontDestroyOnLoad(this.gameObject);
         }
 
@@ -36,6 +37,7 @@ namespace RefatoramentoDoTioTepe
             FadeAnimation = DOTween.To(() => _volume.weight, value => _volume.weight = value, 1f, _fadeInOutTime)
                 .SetAutoKill(false).SetEase(_ease).From(0f);
             FadeAnimation.Rewind();
+            FadeAnimation.onComplete += () => FadeInCompleted = true;
         }
 
         public static void LoadFadeScene()
@@ -46,6 +48,7 @@ namespace RefatoramentoDoTioTepe
         public void FadeIn()
         {
             FadeAnimation.Restart();
+            FadeInCompleted = false;
         }
 
         public void FadeOut()

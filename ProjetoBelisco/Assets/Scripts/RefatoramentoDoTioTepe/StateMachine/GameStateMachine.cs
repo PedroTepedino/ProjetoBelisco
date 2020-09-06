@@ -35,7 +35,7 @@ namespace RefatoramentoDoTioTepe
             var quit = new Quit();
             var win = new WinState();
             
-            _stateMachine.SetState(play);
+            _stateMachine.SetState(menu);
 
             _stateMachine.AddTransition(menu, loading, () => PlayButton.LevelToLoad != null);
             
@@ -76,7 +76,7 @@ namespace RefatoramentoDoTioTepe
         public void OnEnter()
         {
             PlayButton.LevelToLoad = null;
-            SceneManager.LoadSceneAsync("MainMenu");
+            SceneManager.LoadSceneAsync("Menu");
         }
 
         public void OnExit()
@@ -110,7 +110,7 @@ namespace RefatoramentoDoTioTepe
 
         public void OnEnter()
         {
-            
+            FadeInOutSceneTransition.Instance.FadeOut();
         }
 
         public void OnExit()
@@ -121,18 +121,24 @@ namespace RefatoramentoDoTioTepe
     
     public class LoadLevel : IState
     {
-        public bool Finish() => _operations.TrueForAll(t => t.isDone);
+        public bool Finish() => _operations.TrueForAll(t => t.isDone && t.allowSceneActivation == true);
         
         private List<AsyncOperation> _operations = new List<AsyncOperation>();
 
         public void Tick()
         {
+            if (FadeInOutSceneTransition.Instance.FadeInCompleted)
+            {
+                
+            }
         }
 
         public void OnEnter()
         {
+            FadeInOutSceneTransition.Instance.FadeIn();
             _operations.Add(SceneManager.LoadSceneAsync(PlayButton.LevelToLoad));
             _operations.Add(SceneManager.LoadSceneAsync("UI", LoadSceneMode.Additive));
+            _operations.ForEach(t => t.allowSceneActivation = false);
         }
 
         public void OnExit()
