@@ -1684,12 +1684,12 @@ PrefabInstance:
     - target: {fileID: 5366140802195632291, guid: 50bda1634a0ac974eb4d3135fbe1013e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.63
+      value: -0.97
       objectReference: {fileID: 0}
     - target: {fileID: 5366140802195632291, guid: 50bda1634a0ac974eb4d3135fbe1013e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1
+      value: -0.84
       objectReference: {fileID: 0}
     - target: {fileID: 5366140802195632291, guid: 50bda1634a0ac974eb4d3135fbe1013e,
         type: 3}
@@ -3378,6 +3378,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GolemSword
       objectReference: {fileID: 0}
+    - target: {fileID: 252572107396000550, guid: 8cefdc6cbc01b164db2b68063b0d3204,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8255626955562429534, guid: 8cefdc6cbc01b164db2b68063b0d3204,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3447,6 +3452,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GolemRanged
       objectReference: {fileID: 0}
+    - target: {fileID: 478754372547255591, guid: d22c1108cb54abd4aa44d3c8b8130f36,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8625607796725553759, guid: d22c1108cb54abd4aa44d3c8b8130f36,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3504,6 +3514,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d22c1108cb54abd4aa44d3c8b8130f36, type: 3}
+--- !u!1001 &4390797393625057019
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2089003965836958949, guid: 0cb6872e8fbf77748bc25ce58ec808bb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089003965836958949, guid: 0cb6872e8fbf77748bc25ce58ec808bb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.940019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089003965836958949, guid: 0cb6872e8fbf77748bc25ce58ec808bb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.36035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089003965836958949, guid: 0cb6872e8fbf77748bc25ce58ec808bb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089003965836958949, guid: 0cb6872e8fbf77748bc25ce58ec808bb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089003965836958949, guid: 0cb6872e8fbf77748bc25ce58ec808bb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089003965836958949, guid: 0cb6872e8fbf77748bc25ce58ec808bb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089003965836958949, guid: 0cb6872e8fbf77748bc25ce58ec808bb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089003965836958949, guid: 0cb6872e8fbf77748bc25ce58ec808bb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089003965836958949, guid: 0cb6872e8fbf77748bc25ce58ec808bb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089003965836958949, guid: 0cb6872e8fbf77748bc25ce58ec808bb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7921007172965276573, guid: 0cb6872e8fbf77748bc25ce58ec808bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Slime
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0cb6872e8fbf77748bc25ce58ec808bb, type: 3}
 --- !u!1001 &5728143343006222651
 PrefabInstance:
   m_ObjectHideFlags: 0
