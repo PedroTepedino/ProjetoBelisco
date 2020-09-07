@@ -312,10 +312,35 @@
             <e p="Enemies" t="Include">
               <e p="AnimationController.cs" t="Include" />
               <e p="Attack.cs" t="Include" />
-              <e p="Enemy.cs" t="Include" />
               <e p="EnemyParameters.cs" t="Include" />
+              <e p="GolemRanged" t="Include">
+                <e p="GolemRanged.cs" t="Include" />
+                <e p="GolemRangedAnimation.cs" t="Include" />
+                <e p="GolemRangedParameters.cs" t="Include" />
+              </e>
+              <e p="GolemSimple" t="Include">
+                <e p="GolemSimple.cs" t="Include" />
+                <e p="GolemSimpleAnimation.cs" t="Include" />
+                <e p="GolemSimpleParameters.cs" t="Include" />
+              </e>
+              <e p="GolemSword" t="Include">
+                <e p="GolemSword.cs" t="Include" />
+                <e p="GolemSwordAnimation.cs" t="Include" />
+                <e p="GolemSwordParameters.cs" t="Include" />
+              </e>
+              <e p="GolemTriple" t="Include">
+                <e p="GolemTripeParameters.cs" t="Include" />
+                <e p="GolemTriple.cs" t="Include" />
+                <e p="GolemTripleAnimation.cs" t="Include" />
+              </e>
               <e p="GrounderEnemy.cs" t="Include" />
               <e p="HitDummie.cs" t="Include" />
+              <e p="IAnimationController.cs" t="Include" />
+              <e p="Slime" t="Include">
+                <e p="Slime.cs" t="Include" />
+                <e p="SlimeAnimation.cs" t="Include" />
+                <e p="SlimeParameters.cs" t="Include" />
+              </e>
               <e p="States" t="Include">
                 <e p="AlertState.cs" t="Include" />
                 <e p="AttackState.cs" t="Include" />
@@ -358,6 +383,7 @@
             <e p="StateMachine" t="Include">
               <e p="EnemyStateMachine.cs" t="Include" />
               <e p="GameStateMachine.cs" t="Include" />
+              <e p="IEnemyStateMachine.cs" t="Include" />
               <e p="IState.cs" t="Include" />
               <e p="StateMachine.cs" t="Include" />
               <e p="StateTransition.cs" t="Include" />
@@ -377,6 +403,7 @@
               <e p="RestartButton.cs" t="Include" />
               <e p="SaveOptions.cs" t="Include" />
               <e p="ToggleFullScreen.cs" t="Include" />
+              <e p="TurnOfUiOnLoad.cs" t="Include" />
               <e p="WinArea.cs" t="Include" />
               <e p="WinPanel.cs" t="Include" />
             </e>

@@ -6,6 +6,8 @@ namespace RefatoramentoDoTioTepe
     [CreateAssetMenu(menuName = "Player Parameters")]
     public class PlayerParameters : ScriptableObject
     {
+        [BoxGroup("Life System")] [SerializeField] private int _maxHealth = 10;
+        
         [BoxGroup("Movement")] [SerializeField] private float _movementSpeed = 5f;
         
         [BoxGroup("Dash")] [SerializeField]private float _dashVelocity = 10f;
@@ -17,8 +19,6 @@ namespace RefatoramentoDoTioTepe
         [BoxGroup("Jump")] [SerializeField] private float _velocityWhenTerminateJump = 3f;
         
         [BoxGroup("Glide")] [SerializeField] private float _glideFallVelocity = 0.5f;
-
-        [BoxGroup("Life System")] [SerializeField] private int _maxHealth = 10;
 
         [BoxGroup("Grounder")]
         [BoxGroup("Grounder/Grounder")] [SerializeField] private Vector3 _grounderPosition;

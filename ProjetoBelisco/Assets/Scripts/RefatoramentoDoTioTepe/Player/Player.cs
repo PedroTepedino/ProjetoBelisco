@@ -40,6 +40,9 @@ namespace RefatoramentoDoTioTepe
         
         public static event Action<GameObject> OnPlayerSpawn;
         public static event Action OnPlayerDeath;
+        public static event Action<int, int> OnPlayerDamage;
+        
+        public static event Action<int, int> OnPlayerHeal;
 
 
         private void Awake()
@@ -53,7 +56,7 @@ namespace RefatoramentoDoTioTepe
             _playerLocker = new PlayerLocker(this);
             _glider = new Glider(this);
             _attacker = new BasicAttacker(this);
-            
+
             // _attackerList = new List<IAttacker>();
             // _attackerList.Add(new BasicAttacker(this));
             // _attackerList.Add(new StrongAttacker(this));
@@ -194,6 +197,33 @@ namespace RefatoramentoDoTioTepe
                 _playerAnimatorController = this.GetComponent<PlayerAnimatorController>();
         }
 
+        public void OnObjectSpawn()
+        {
+            if (!_lifeSystem.StillAlive)
+                this._lifeSystem = new LifeSystem(this);
+            
+            OnPlayerHeal?.Invoke(_lifeSystem.CurrentLife, _lifeSystem.MaxHealth);
+            
+            OnPlayerSpawn?.Invoke(this.gameObject); 
+            this.gameObject.SetActive(true);
+        }
+
+        public void Died()
+        {
+            OnPlayerDeath?.Invoke();
+        }
+
+        public void DamageDealt(int currentLife, int maxLife)
+        {
+            OnPlayerDamage?.Invoke(currentLife, maxLife);
+        }
+
+        [Button]
+        public void Damage()
+        {
+            this.Hit(1);
+        }
+
         private void OnDrawGizmos()
         {
             var position = this.transform.position;
@@ -221,18 +251,6 @@ namespace RefatoramentoDoTioTepe
             // leftAttackCenter = (Vector3) _playerParameters.StrongAttackCenter;
             // leftAttackCenter.x *= -1;
             // Gizmos.DrawWireSphere(position + leftAttackCenter, _playerParameters.StrongAttackRadius);
-        }
-
-        public void OnObjectSpawn()
-        {
-            this._lifeSystem = new LifeSystem(this);
-            OnPlayerSpawn?.Invoke(this.gameObject);
-            this.gameObject.SetActive(true);
-        }
-
-        public void Died()
-        {
-            OnPlayerDeath?.Invoke();
         }
     }
 

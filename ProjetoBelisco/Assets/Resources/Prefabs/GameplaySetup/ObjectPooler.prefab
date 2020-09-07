@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pools:
-  - prefab: {fileID: 7023604729711152355, guid: b240bcd6ad6eafe448dfac92066ca628,
+  - prefab: {fileID: 5366140802195632289, guid: 50bda1634a0ac974eb4d3135fbe1013e,
       type: 3}
     tag: Player
     size: 1

@@ -37,10 +37,11 @@ namespace RefatoramentoDoTioTepe
             
             _stateMachine.SetState(menu);
 
-            _stateMachine.AddTransition(menu, loading, () => PlayButton.LevelToLoad != null);
+            _stateMachine.AddTransition(menu, loading, () => LoadLevel.LevelToLoad != null);
             
+            _stateMachine.AddTransition(play, loading, () => LoadLevel.LevelToLoad != null);
             _stateMachine.AddTransition(loading, play, loading.Finish);
-            
+
             _stateMachine.AddTransition(play, pause, () => RewiredPlayerInput.Instance.PausePressed);
             _stateMachine.AddTransition(pause, play, () => RewiredPlayerInput.Instance.PausePressed);
             _stateMachine.AddTransition(pause, play, () => PauseButton.Pressed);
@@ -75,7 +76,7 @@ namespace RefatoramentoDoTioTepe
 
         public void OnEnter()
         {
-            PlayButton.LevelToLoad = null;
+            LoadLevel.LevelToLoad = null;
             SceneManager.LoadSceneAsync("Menu");
         }
 
@@ -121,6 +122,7 @@ namespace RefatoramentoDoTioTepe
     
     public class LoadLevel : IState
     {
+        public static string LevelToLoad;
         public bool Finish() => _operations.TrueForAll(t => t.isDone && t.allowSceneActivation == true);
         
         private List<AsyncOperation> _operations = new List<AsyncOperation>();
@@ -136,14 +138,14 @@ namespace RefatoramentoDoTioTepe
         public void OnEnter()
         {
             FadeInOutSceneTransition.Instance.FadeIn();
-            _operations.Add(SceneManager.LoadSceneAsync(PlayButton.LevelToLoad));
+            _operations.Add(SceneManager.LoadSceneAsync(LevelToLoad));
             _operations.Add(SceneManager.LoadSceneAsync("UI", LoadSceneMode.Additive));
             _operations.ForEach(t => t.allowSceneActivation = false);
         }
 
         public void OnExit()
         {
-            
+            LevelToLoad = null;
         }
     }
 

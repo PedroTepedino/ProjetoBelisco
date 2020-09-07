@@ -4,13 +4,13 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace GameScripts.Ui
+namespace RefatoramentoDoTioTepe
 {
     public class LifeBarController : MonoBehaviour
     {
         [SerializeField] [BoxGroup("Components")] [Required] private Image _barFillImage;
         [SerializeField] [BoxGroup("Components")] [Required] private Image _barFillDecay;
-        [SerializeField] [BoxGroup("Components")] private DOTweenAnimation _shakeAnimaiton;
+        [SerializeField] [BoxGroup("Components")] private DOTweenAnimation _shakeAnimation;
 
         [SerializeField] [BoxGroup("Decay")] private float _decaySpeed = 0.5f;
         [SerializeField] [BoxGroup("Decay")] private float _decayDelay = 0.75f;
@@ -24,21 +24,21 @@ namespace GameScripts.Ui
 
         private void Awake()
         {
-            Life.OnPlayerDamage += ListenDamage;
-            Life.OnPlayerHeal += ListenHeal;
+            Player.OnPlayerDamage += ListenDamage;
+            Player.OnPlayerHeal += ListenHeal;
         }
 
         private void OnDestroy()
         {
-            Life.OnPlayerDamage -= ListenDamage;
-            Life.OnPlayerHeal -= ListenHeal;
+            Player.OnPlayerDamage -= ListenDamage;
+            Player.OnPlayerHeal -= ListenHeal;
         }
 
         private void ListenDamage(int curentHealth, int maxHealth)
         {
             _curentFill = (float)(curentHealth) / (float)(maxHealth);
             _barFillImage.fillAmount = _curentFill;
-        
+
             ShakeBar();
             LifeBarDecay();
         }
@@ -53,7 +53,7 @@ namespace GameScripts.Ui
 
         private void ShakeBar()
         {
-            _shakeAnimaiton?.DORestart();
+            _shakeAnimation?.DORestart();
         }
 
         private void LifeBarDecay()
@@ -62,7 +62,7 @@ namespace GameScripts.Ui
             {
                 _decayBarAnimation.Kill();
             }
-
+            
             _decayBarAnimation = DOTween.To(() => _barFillDecay.fillAmount, x => _barFillDecay.fillAmount = x, _curentFill, _decaySpeed)
                 .SetDelay(_decayDelay).SetAutoKill(false).SetSpeedBased(true).SetEase(Ease.Linear);
         }

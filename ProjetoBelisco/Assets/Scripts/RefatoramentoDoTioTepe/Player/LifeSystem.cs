@@ -8,7 +8,8 @@
 
         public bool StillAlive => _currentLife > 0;
         public int MaxHealth => _maxLife;
-    
+        public int CurrentLife => _currentLife;
+
         public LifeSystem(Player player)
         {
             _player = player;
@@ -20,6 +21,8 @@
         {
             _currentLife -= damage;
 
+            _player.DamageDealt(_currentLife, _maxLife);
+            
             if (!StillAlive)
             {
                 Die();
