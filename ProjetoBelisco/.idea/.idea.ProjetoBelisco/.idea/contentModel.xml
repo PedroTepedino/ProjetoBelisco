@@ -407,6 +407,7 @@
               <e p="QuitButton.cs" t="Include" />
               <e p="RestartButton.cs" t="Include" />
               <e p="SaveOptions.cs" t="Include" />
+              <e p="Spikes.cs" t="Include" />
               <e p="ToggleFullScreen.cs" t="Include" />
               <e p="TurnOfUiOnLoad.cs" t="Include" />
               <e p="WinArea.cs" t="Include" />
