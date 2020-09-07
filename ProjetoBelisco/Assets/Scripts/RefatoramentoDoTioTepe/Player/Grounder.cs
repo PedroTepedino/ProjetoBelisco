@@ -1,4 +1,5 @@
-﻿using UnityEditor.U2D;
+﻿using System.Security.Policy;
+using UnityEditor.U2D;
 using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
@@ -10,6 +11,7 @@ namespace RefatoramentoDoTioTepe
         private readonly Vector3 _grounderPosition;
         private readonly Vector2 _grounderSizes;
         private readonly LayerMask _layerMask;
+        private readonly Collider2D _playerCollider;
 
         private readonly Vector3 _nearGroundPosition;
         private readonly Vector2 _nearGroundSizes;
@@ -24,6 +26,8 @@ namespace RefatoramentoDoTioTepe
             _playerTransform = player.transform;
             _grounderPosition = player.PlayerParameters.GrounderPosition;
             _grounderSizes = player.PlayerParameters.GrounderSizes;
+
+            _playerCollider = player.GetComponent<Collider2D>();
 
             _nearGroundPosition = player.PlayerParameters.NearGroundGrounderPosition;
             _nearGroundSizes = player.PlayerParameters.NearGroundGrounderSizes;

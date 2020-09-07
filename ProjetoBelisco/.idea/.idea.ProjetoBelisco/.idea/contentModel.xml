@@ -379,6 +379,7 @@
               <e p="StrongAttacker.cs" t="Include" />
               <e p="WallJumper.cs" t="Include" />
             </e>
+            <e p="PlayParticlesGeneral.cs" t="Include" />
             <e p="RoomTransition.cs" t="Include" />
             <e p="StateMachine" t="Include">
               <e p="EnemyStateMachine.cs" t="Include" />
@@ -388,6 +389,7 @@
               <e p="StateMachine.cs" t="Include" />
               <e p="StateTransition.cs" t="Include" />
             </e>
+            <e p="Switch.cs" t="Include" />
             <e p="Ui" t="Include">
               <e p="AbstractButton.cs" t="Include" />
               <e p="AbstractPanel.cs" t="Include" />
