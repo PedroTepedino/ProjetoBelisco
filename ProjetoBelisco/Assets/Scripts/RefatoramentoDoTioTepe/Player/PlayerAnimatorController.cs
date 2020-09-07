@@ -103,5 +103,10 @@ namespace RefatoramentoDoTioTepe
                     break;
             }
         }
+
+        public void Hurt()
+        {
+            SetTrigger("Hit");    
+        }
     }
 }

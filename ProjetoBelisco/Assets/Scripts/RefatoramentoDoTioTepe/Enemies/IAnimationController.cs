@@ -8,6 +8,7 @@ namespace RefatoramentoDoTioTepe
        
         void TriggerAnimationHit();
         void TriggerAnimationAttack();
+        
        
         void Interfacinha();
     }

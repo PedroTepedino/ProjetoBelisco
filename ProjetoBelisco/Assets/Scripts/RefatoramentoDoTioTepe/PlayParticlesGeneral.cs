@@ -8,8 +8,6 @@ namespace RefatoramentoDoTioTepe
     {
         [SerializeField] ParticleSystem _particleSystem;
 
-
-        
         public void EmitParticle()
         {
             _particleSystem.Play();

@@ -54,6 +54,8 @@ namespace RefatoramentoDoTioTepe
 
         public void Hit(int damage)
         {
+            healthPoints -= damage;
+            
             if (healthPoints <= 0)
             {
                 this.gameObject.SetActive(false);
@@ -62,7 +64,6 @@ namespace RefatoramentoDoTioTepe
             {
                 animationController.TriggerAnimationHit();
             }
-
         }
 
         private void OnCollisionEnter2D(Collision2D hit) {

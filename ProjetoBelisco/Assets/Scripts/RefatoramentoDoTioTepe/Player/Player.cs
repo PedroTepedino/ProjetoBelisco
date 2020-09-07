@@ -1,4 +1,5 @@
 ﻿using System;
+using DG.Tweening;
 using GameScripts.PoolingSystem;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -11,6 +12,7 @@ namespace RefatoramentoDoTioTepe
     [RequireComponent(typeof(Collider2D))]
     public class Player : MonoBehaviour, IHittable , IPooledObject
     {
+        [SerializeField] private PlayParticlesGeneral _hurtParticles;
         [SerializeField] [AssetsOnly] [InlineEditor(InlineEditorObjectFieldModes.Hidden)] private PlayerParameters _playerParameters;
         private IMover _mover;
         private IJumper _jumper;
@@ -64,6 +66,8 @@ namespace RefatoramentoDoTioTepe
 
         public void Hit(int damage)
         {
+            _hurtParticles.EmitParticle();
+            _playerAnimatorController.Hurt();
             _lifeSystem.Damage(damage);
         }
 
