@@ -2,7 +2,6 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Tilemaps;
 
 namespace RefatoramentoDoTioTepe
 {
@@ -39,21 +38,6 @@ namespace RefatoramentoDoTioTepe
             _activated = true;
             _spriteRenderer.sprite = _enabledSprite;
             _activationEvent?.Invoke();
-        }
-    }
-
-    [RequireComponent(typeof(PlatformEffector2D))]
-    public class FallingGround : MonoBehaviour
-    {
-        [SerializeField] private PlatformEffector2D _effector;
-        [SerializeField] private TilemapCollider2D _collider;
-        
-        private void OnCollisionEnter2D(Collision2D other)
-        {
-            var player = other.gameObject.GetComponent<Player>();
-            if (player != null)
-            {
-            }
         }
     }
 }

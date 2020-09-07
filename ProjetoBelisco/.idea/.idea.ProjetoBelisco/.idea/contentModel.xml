@@ -352,6 +352,7 @@
               <e p="WallChecker.cs" t="Include" />
             </e>
             <e p="FadeInOutSceneTransition.cs" t="Include" />
+            <e p="FallingGround.cs" t="Include" />
             <e p="Inventory" t="Include">
               <e p="Paw.cs" t="Include" />
               <e p="PawInventory.cs" t="Include" />
@@ -381,6 +382,7 @@
             </e>
             <e p="PlayParticlesGeneral.cs" t="Include" />
             <e p="RoomTransition.cs" t="Include" />
+            <e p="SignScript.cs" t="Include" />
             <e p="StateMachine" t="Include">
               <e p="EnemyStateMachine.cs" t="Include" />
               <e p="GameStateMachine.cs" t="Include" />
