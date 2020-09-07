@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using UnityEngine.Playables;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace RefatoramentoDoTioTepe
@@ -9,6 +9,14 @@ namespace RefatoramentoDoTioTepe
         public void Load()
         {
             SceneManager.LoadScene("Menu");
+        }
+
+        private void Update()
+        {
+            if (Input.anyKey)
+            {
+                Load();
+            }
         }
     }
 }

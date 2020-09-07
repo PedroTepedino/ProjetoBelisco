@@ -53,6 +53,10 @@ namespace RefatoramentoDoTioTepe
                     {
                         hittable.Hit(_attackDamage);
                     }
+                    else if (hittable is Switch)
+                    {
+                        hittable.Hit(_attackDamage);
+                    }
                 }
             }
         }

@@ -1,6 +1,4 @@
-﻿using System.Security.Policy;
-using UnityEditor.U2D;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
 {

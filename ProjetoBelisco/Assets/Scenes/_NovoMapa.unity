@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &33562944 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3951719152618213532, guid: 5149ad8e7f633b14282a787087333cc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 866937781}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0390bd8b8ffd640b34fe25065ff1df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &241120233
 GameObject:
   m_ObjectHideFlags: 0
@@ -25873,6 +25885,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1270578776 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6131338911102288937, guid: ec9fc38f1548e614eac5aaa49ad5d546,
+    type: 3}
+  m_PrefabInstance: {fileID: 6131338910642842064}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0390bd8b8ffd640b34fe25065ff1df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1270596632
 GameObject:
   m_ObjectHideFlags: 0
@@ -26424,20 +26448,60 @@ PrefabInstance:
       propertyPath: m_Name
       value: Switch
       objectReference: {fileID: 0}
+    - target: {fileID: 4641654009451657096, guid: 95ec63027230a144081f9132f58fa3ea,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4641654009451657098, guid: 95ec63027230a144081f9132f58fa3ea,
         type: 3}
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 4641654009451657099, guid: 95ec63027230a144081f9132f58fa3ea,
+        type: 3}
+      propertyPath: _activationEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 33562944}
+    - target: {fileID: 4641654009451657099, guid: 95ec63027230a144081f9132f58fa3ea,
+        type: 3}
+      propertyPath: _activationEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DOPlay
+      objectReference: {fileID: 0}
+    - target: {fileID: 4641654009451657099, guid: 95ec63027230a144081f9132f58fa3ea,
+        type: 3}
+      propertyPath: _activationEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1270578776}
+    - target: {fileID: 4641654009451657099, guid: 95ec63027230a144081f9132f58fa3ea,
+        type: 3}
+      propertyPath: _activationEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DOPlay
+      objectReference: {fileID: 0}
+    - target: {fileID: 4641654009451657100, guid: 95ec63027230a144081f9132f58fa3ea,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4641654009451657101, guid: 95ec63027230a144081f9132f58fa3ea,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4641654009451657101, guid: 95ec63027230a144081f9132f58fa3ea,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4641654009451657103, guid: 95ec63027230a144081f9132f58fa3ea,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 165.06262
+      value: 167.36
       objectReference: {fileID: 0}
     - target: {fileID: 4641654009451657103, guid: 95ec63027230a144081f9132f58fa3ea,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0244105
+      value: -2.03
       objectReference: {fileID: 0}
     - target: {fileID: 4641654009451657103, guid: 95ec63027230a144081f9132f58fa3ea,
         type: 3}
@@ -26483,6 +26547,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011579194375434621, guid: 95ec63027230a144081f9132f58fa3ea,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95ec63027230a144081f9132f58fa3ea, type: 3}

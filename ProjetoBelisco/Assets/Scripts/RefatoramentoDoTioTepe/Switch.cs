@@ -29,12 +29,12 @@ namespace RefatoramentoDoTioTepe
         
         public void Hit(int damage)
         {
+            Debug.LogError("Switch");
             ActivateSwitch();
         }
 
         private void ActivateSwitch()
         {
-            if (_activated) return;
             _activated = true;
             _spriteRenderer.sprite = _enabledSprite;
             _activationEvent?.Invoke();

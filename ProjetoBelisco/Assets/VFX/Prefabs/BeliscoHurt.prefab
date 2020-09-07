@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4581004409822133575}
   - component: {fileID: 8604371560575273997}
   - component: {fileID: 3493495766662011721}
+  - component: {fileID: 8692572604974597623}
   m_Layer: 0
   m_Name: BeliscoHurt
   m_TagString: Untagged
@@ -4830,3 +4831,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &8692572604974597623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4144741965067167887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6608a183e49f09949b14a3ef3cb3a841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particleSystem: {fileID: 8604371560575273997}
