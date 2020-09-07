@@ -37,6 +37,9 @@ namespace RefatoramentoDoTioTepe
         public bool Jumping => _jumper.Jumping;
         public bool Gliding => _glider.Gliding;
         public PlayerAnimatorController AnimatorController => _playerAnimatorController;
+        
+        public static event Action<GameObject> OnPlayerSpawn;
+        public static event Action OnPlayerDeath;
 
 
         private void Awake()
@@ -223,7 +226,13 @@ namespace RefatoramentoDoTioTepe
         public void OnObjectSpawn()
         {
             this._lifeSystem = new LifeSystem(this);
+            OnPlayerSpawn?.Invoke(this.gameObject);
             this.gameObject.SetActive(true);
+        }
+
+        public void Died()
+        {
+            OnPlayerDeath?.Invoke();
         }
     }
 

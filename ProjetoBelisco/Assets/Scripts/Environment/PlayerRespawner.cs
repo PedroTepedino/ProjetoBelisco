@@ -5,7 +5,7 @@ using GameScripts.SceneManager;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace GameScripts.Environment
+namespace RefatoramentoDoTioTepe
 {
     public class PlayerRespawner : MonoBehaviour
     {
@@ -37,12 +37,12 @@ namespace GameScripts.Environment
                 CurrentSpawner = this;
             }
 
-            Life.OnPlayerDie += ListenPlayerDeath;
+            Player.OnPlayerDeath += ListenPlayerDeath;
         }
 
         private void OnDestroy()
         {
-            Life.OnPlayerDie -= ListenPlayerDeath;
+            Player.OnPlayerDeath -= ListenPlayerDeath;
         }
 
         private void Start()

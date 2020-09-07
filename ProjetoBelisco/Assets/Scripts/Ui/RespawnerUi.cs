@@ -1,8 +1,6 @@
 ﻿using DG.Tweening;
-using GameScripts.Environment;
+using RefatoramentoDoTioTepe;
 using GameScripts.Player;
-using GameScripts.SceneManager;
-using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Rendering;
 

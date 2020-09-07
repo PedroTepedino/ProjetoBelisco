@@ -129,7 +129,7 @@ namespace RefatoramentoDoTioTepe
         {
             if (FadeInOutSceneTransition.Instance.FadeInCompleted)
             {
-                
+                _operations.ForEach(t => t.allowSceneActivation = true);
             }
         }
 

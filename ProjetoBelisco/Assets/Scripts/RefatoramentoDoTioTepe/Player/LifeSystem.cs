@@ -28,6 +28,7 @@
 
         private void Die()
         {
+            _player.Died();
             _player.gameObject.SetActive(false);
         }
     }
