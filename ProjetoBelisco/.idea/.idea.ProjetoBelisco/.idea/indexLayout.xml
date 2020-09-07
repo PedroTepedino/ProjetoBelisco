@@ -29,6 +29,7 @@
       <Path>Library</Path>
       <Path>Logs</Path>
       <Path>RewiredBackup</Path>
+      <Path>Temp</Path>
       <Path>obj</Path>
     </explicitExcludes>
   </component>
