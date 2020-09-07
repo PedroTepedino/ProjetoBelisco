@@ -9,14 +9,14 @@ namespace RefatoramentoDoTioTepe
         private float grounderDistance;
         private LayerMask groundLayerMask;
    
-        private EnemyStateMachine controller;
+        private IEnemyStateMachine controller;
         private Vector3 checkerCenter;
         
         public bool isGrounded { get; private set; } = false;
 
 
         private void Awake() {
-            controller = GetComponent<EnemyStateMachine>();
+            controller = GetComponent<IEnemyStateMachine>();
             grounderCenter = controller.EnemyParameters.GrounderCenter;
             grounderDistance = controller.EnemyParameters.GrounderDistance;
             groundLayerMask = controller.EnemyParameters.GrounderLayerMask;

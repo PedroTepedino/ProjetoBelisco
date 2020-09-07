@@ -6,7 +6,8 @@ namespace RefatoramentoDoTioTepe
     public class IddleState : IState
     {
         private GameObject ownerGameObject;
-        private EnemyStateMachine ownerController;
+        private Rigidbody2D ownerRigidbody;
+        private IEnemyStateMachine ownerController;
         private float maxIddleTime;
         private float minIddleTime;
         private float iddleTime;
@@ -15,13 +16,15 @@ namespace RefatoramentoDoTioTepe
         public IddleState(GameObject owner)
         {
             ownerGameObject = owner;
-            ownerController = owner.GetComponent<EnemyStateMachine>();
+            ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
+            ownerController = owner.GetComponent<IEnemyStateMachine>();
             maxIddleTime = ownerController.EnemyParameters.MaxIddleTime; 
             maxIddleTime = ownerController.EnemyParameters.MinIddleTime; 
         }
 
         public void OnEnter()
         {
+            ownerRigidbody.velocity = Vector2.zero;
             timer = 0f;
             iddleTime = Random.Range(minIddleTime, maxIddleTime);
         }
@@ -38,7 +41,7 @@ namespace RefatoramentoDoTioTepe
 
         public bool TimeEnded()
         {
-            return (timer > maxIddleTime);
+            return (timer > iddleTime);
         }
     }
 }
