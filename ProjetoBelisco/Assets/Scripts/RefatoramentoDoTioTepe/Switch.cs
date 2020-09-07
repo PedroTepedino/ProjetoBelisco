@@ -29,7 +29,6 @@ namespace RefatoramentoDoTioTepe
         
         public void Hit(int damage)
         {
-            Debug.LogError("Switch");
             ActivateSwitch();
         }
 
