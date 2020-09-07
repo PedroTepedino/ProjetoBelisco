@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3596612063107378166}
   - component: {fileID: 9213631037925978640}
   - component: {fileID: 4848835868497500117}
+  - component: {fileID: 7862771239633467350}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -102,6 +103,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7862771239633467350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947240655861651032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6608a183e49f09949b14a3ef3cb3a841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particleSystem: {fileID: 2822295800427788839}
 --- !u!1 &4946951878778823883
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,6 +408,12 @@ PrefabInstance:
 --- !u!4 &2822295800427788838 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8397081069434338327, guid: 7d361dbb6572f594d812f0bd5cf8aab9,
+    type: 3}
+  m_PrefabInstance: {fileID: 6026559219067078193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2822295800427788839 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8397081069434338326, guid: 7d361dbb6572f594d812f0bd5cf8aab9,
     type: 3}
   m_PrefabInstance: {fileID: 6026559219067078193}
   m_PrefabAsset: {fileID: 0}
