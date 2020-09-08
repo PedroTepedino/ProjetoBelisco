@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using GameScripts.Player;
 using GameScripts.PoolingSystem;
 using GameScripts.SceneManager;
@@ -38,6 +39,14 @@ namespace RefatoramentoDoTioTepe
             }
 
             Player.OnPlayerDeath += ListenPlayerDeath;
+        }
+
+        private void OnEnable()
+        {
+            if (_firstSpawner)
+            {
+                CurrentSpawner = this;
+            }
         }
 
         private void OnDestroy()

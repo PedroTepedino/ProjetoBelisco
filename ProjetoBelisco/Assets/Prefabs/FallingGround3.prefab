@@ -345,8 +345,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shakeAnimation: {fileID: 8071032270814766606}
   _platform: {fileID: 8071032270814766607}
-  _timeToFall: 2.5
-  _timeToRespawn: 3
+  _timeToFall: 0.5
+  _timeToRespawn: 1
 --- !u!1 &8071032272368954726
 GameObject:
   m_ObjectHideFlags: 0
