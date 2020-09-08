@@ -76,6 +76,7 @@ namespace RefatoramentoDoTioTepe
 
         public void OnEnter()
         {
+            Time.timeScale = 1f;
             LoadLevel.LevelToLoad = null;
             SceneManager.LoadSceneAsync("Menu");
         }
@@ -111,12 +112,13 @@ namespace RefatoramentoDoTioTepe
 
         public void OnEnter()
         {
+            Time.timeScale = 1f;
             FadeInOutSceneTransition.Instance.FadeOut();
         }
 
         public void OnExit()
         {
-            
+            PlayerRespawner.CurrentSpawner = null;
         }
     }
     

@@ -64,6 +64,16 @@ namespace RefatoramentoDoTioTepe
             // _attackerList.Add(new StrongAttacker(this));
         }
 
+        private void OnEnable()
+        {
+            _grounder = new Grounder(this);
+            _mover = new Mover(this);
+            _jumper = new Jumper(this);
+            _playerLocker = new PlayerLocker(this);
+            _glider = new Glider(this);
+            _attacker = new BasicAttacker(this);
+        }
+
         public void Hit(int damage)
         {
             _hurtParticles.EmitParticle();
