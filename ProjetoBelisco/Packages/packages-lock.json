@@ -23,7 +23,7 @@
       "hash": "c051b95afaf1a099a0369b70fdea19bde5d8d100"
     },
     "com.unity.addressables": {
-      "version": "1.8.4",
+      "version": "1.8.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -138,7 +138,8 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {
-        "com.unity.modules.ui": "1.0.0"
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0"
       }
     },
     "com.unity.modules.ai": {
