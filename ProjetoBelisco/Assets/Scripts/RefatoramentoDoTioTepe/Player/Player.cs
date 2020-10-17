@@ -30,6 +30,7 @@ namespace RefatoramentoDoTioTepe
         private Grounder _grounder;
         private PlayerLocker _playerLocker;
         private Glider _glider;
+        private WallJumper _wallJumper;
 
         [SerializeField] 
         private PlayerAnimatorController _playerAnimatorController;
@@ -66,6 +67,7 @@ namespace RefatoramentoDoTioTepe
             _playerLocker = new PlayerLocker(this);
             _glider = new Glider(this);
             _attacker = new BasicAttacker(this);
+            _wallJumper = new WallJumper(this);
 
             // _attackerList = new List<IAttacker>();
             // _attackerList.Add(new BasicAttacker(this));
@@ -251,44 +253,51 @@ namespace RefatoramentoDoTioTepe
         private void OnDrawGizmos()
         {
             var position = this.transform.position;
-            //if (_gizmosToShow & GizmosType.Grounder > 0)
+            
+            foreach (GizmosType gizmo in Enum.GetValues(typeof(GizmosType)))
             {
-                Gizmos.color = Color.green;
-                Gizmos.DrawWireCube(position + _playerParameters.GrounderPosition, _playerParameters.GrounderSizes);
+                if ((_gizmosToShow & gizmo) == gizmo)
+                {
+                    switch (gizmo)
+                    {
+                        case GizmosType.Grounder:
+                            Gizmos.color = Color.green;
+                            Gizmos.DrawWireCube(position + _playerParameters.GrounderPosition, _playerParameters.GrounderSizes);
+                            break;  
+                        case GizmosType.NearGround:
+                            Gizmos.color = new Color(0f, 0.5f, 0f, 1f);
+                            Gizmos.DrawWireCube(position + _playerParameters.NearGroundGrounderPosition,
+                                _playerParameters.NearGroundGrounderSizes);
+                            break;
+                        case GizmosType.BasicAttack:
+                            Gizmos.color = Color.red;
+                            Gizmos.DrawWireSphere(position + (Vector3) _playerParameters.BasicAttackCenter,
+                                _playerParameters.BasicAttackRadius);
+                            var leftAttackCenter = (Vector3) _playerParameters.BasicAttackCenter;
+                            leftAttackCenter.x *= -1;
+                            Gizmos.DrawWireSphere(position + leftAttackCenter, _playerParameters.BasicAttackRadius);
+                            break;
+                        case GizmosType.BasicAttackUp:
+                            Gizmos.color = Color.magenta;
+                            Gizmos.DrawWireSphere(position + (Vector3) _playerParameters.BasicUpAttackCenter,
+                                _playerParameters.BasicUpAttackRadius);
+                            break;
+                        case GizmosType.BasicAttackDown:
+                            Gizmos.color = Color.cyan;
+                            Gizmos.DrawWireSphere(position + (Vector3) _playerParameters.BasicDownAttackCenter,
+                                _playerParameters.BasicDownAttackRadius);
+                            break;
+                    }  
+                }
             }
-
-            //if (_gizmosToShow & GizmosType.NearGround > 0)
-            {
-                Gizmos.color = new Color(0f, 0.5f, 0f, 1f);
-                Gizmos.DrawWireCube(position + _playerParameters.NearGroundGrounderPosition,
-                    _playerParameters.NearGroundGrounderSizes);
-            }
-
-            //if (_gizmosToShow & GizmosType.BasicAttack > 0)
-            {
-                Gizmos.color = Color.red;
-                Gizmos.DrawWireSphere(position + (Vector3) _playerParameters.BasicAttackCenter,
-                    _playerParameters.BasicAttackRadius);
-                var leftAttackCenter = (Vector3) _playerParameters.BasicAttackCenter;
-                leftAttackCenter.x *= -1;
-                Gizmos.DrawWireSphere(position + leftAttackCenter, _playerParameters.BasicAttackRadius);
-            }
-
-            //if ()
-            {
-                Gizmos.color = Color.magenta;
-                Gizmos.DrawWireSphere(position + (Vector3) _playerParameters.BasicUpAttackCenter,
-                    _playerParameters.BasicUpAttackRadius);
-            }
-
-            Gizmos.color = Color.cyan;
-            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.BasicDownAttackCenter, _playerParameters.BasicDownAttackRadius);
         }
-        
-        
         [Flags] public enum GizmosType
         {
-                           
+            Grounder = 1 << 0,
+            NearGround = 1 << 1,
+            BasicAttack = 1 << 2,
+            BasicAttackUp = 1 << 3,
+            BasicAttackDown = 1 << 4,
         }
 #endif //UNITY_EDITOR
     }
