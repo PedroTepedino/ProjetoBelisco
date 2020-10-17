@@ -10,10 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1750318575450954870}
   - component: {fileID: 1750318575450954871}
-  - component: {fileID: 1750318575450954864}
+  - component: {fileID: 8548755275257414214}
   - component: {fileID: 1750318575450954869}
+  - component: {fileID: 3640226118976454618}
+  - component: {fileID: 2427249144715952057}
   m_Layer: 17
-  m_Name: Espinho
+  m_Name: Spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 38fbf57dfe5fcc84f8682218fed35fd7, type: 3}
+  m_Sprite: {fileID: 6978103950877710803, guid: fe4e4bcb94abbdb4a99dc90cd8de4f53,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -83,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1750318575450954864
-BoxCollider2D:
+--- !u!58 &8548755275257414214
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,19 +99,9 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.02442503, y: -0.028496027}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.375, y: 1.125}
-    newSize: {x: 0.54, y: 0.18}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 3.1795974, y: 0.69348764}
-  m_EdgeRadius: 0
+  m_Radius: 0.5
 --- !u!114 &1750318575450954869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,3 +114,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10dc943cbf0e4d9ab1f933081a5fe4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _damage: 10
+--- !u!114 &3640226118976454618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750318575450954865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa43dba92ec69a479abffd6f0ef8a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteList:
+  - {fileID: -5172674944758137005, guid: fe4e4bcb94abbdb4a99dc90cd8de4f53, type: 3}
+  - {fileID: 6271643267959146407, guid: fe4e4bcb94abbdb4a99dc90cd8de4f53, type: 3}
+  - {fileID: -9085015562506481544, guid: fe4e4bcb94abbdb4a99dc90cd8de4f53, type: 3}
+  - {fileID: 6978103950877710803, guid: fe4e4bcb94abbdb4a99dc90cd8de4f53, type: 3}
+  _isRandom: 1
+  _spriteIndex: 0
+  _spriteRenderer: {fileID: 1750318575450954871}
+--- !u!114 &2427249144715952057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750318575450954865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4dde3614359483d89cdb9dd47f620a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _facingDirection: 2
