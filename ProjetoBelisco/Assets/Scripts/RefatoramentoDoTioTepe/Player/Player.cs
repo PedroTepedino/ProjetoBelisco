@@ -1,11 +1,18 @@
 ﻿using System;
-using DG.Tweening;
 using GameScripts.PoolingSystem;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
 {
+    public enum Directions
+    {
+        Right = 1,
+        Up,
+        Left,
+        Down,
+    }
+
     [RequireComponent(typeof(PlayerAnimatorController))]
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(Grounder))]
@@ -13,8 +20,9 @@ namespace RefatoramentoDoTioTepe
     public class Player : MonoBehaviour, IHittable , IPooledObject
     {
         [SerializeField] private PlayParticlesGeneral _hurtParticles;
-        [SerializeField] [AssetsOnly] [InlineEditor(InlineEditorObjectFieldModes.Hidden)] private PlayerParameters _playerParameters;
+        [SerializeField] [AssetsOnly] [FoldoutGroup("Player Parameters")] [InlineEditor(InlineEditorObjectFieldModes.Hidden)] private PlayerParameters _playerParameters;
         private IMover _mover;
+
         private IJumper _jumper;
         private IAttacker _attacker;
         //private List<IAttacker> _attackerList;
@@ -237,42 +245,51 @@ namespace RefatoramentoDoTioTepe
         {
             this.Hit(1);
         }
-
+        
+#if UNITY_EDITOR
+        [SerializeField] [EnumToggleButtons] private GizmosType _gizmosToShow = 0;
         private void OnDrawGizmos()
         {
             var position = this.transform.position;
-            
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireCube(position + _playerParameters.GrounderPosition, _playerParameters.GrounderSizes);
+            //if (_gizmosToShow & GizmosType.Grounder > 0)
+            {
+                Gizmos.color = Color.green;
+                Gizmos.DrawWireCube(position + _playerParameters.GrounderPosition, _playerParameters.GrounderSizes);
+            }
 
-            Gizmos.color = new Color(0f, 0.5f, 0f, 1f);
-            Gizmos.DrawWireCube(position + _playerParameters.NearGroundGrounderPosition, _playerParameters.NearGroundGrounderSizes);
-            
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.BasicAttackCenter, _playerParameters.BasicAttackRadius);
-            var leftAttackCenter = (Vector3) _playerParameters.BasicAttackCenter;
-            leftAttackCenter.x *= -1;
-            Gizmos.DrawWireSphere(position + leftAttackCenter, _playerParameters.BasicAttackRadius);
-            
-            Gizmos.color = Color.magenta;
-            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.BasicUpAttackCenter, _playerParameters.BasicUpAttackRadius);
-            
+            //if (_gizmosToShow & GizmosType.NearGround > 0)
+            {
+                Gizmos.color = new Color(0f, 0.5f, 0f, 1f);
+                Gizmos.DrawWireCube(position + _playerParameters.NearGroundGrounderPosition,
+                    _playerParameters.NearGroundGrounderSizes);
+            }
+
+            //if (_gizmosToShow & GizmosType.BasicAttack > 0)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawWireSphere(position + (Vector3) _playerParameters.BasicAttackCenter,
+                    _playerParameters.BasicAttackRadius);
+                var leftAttackCenter = (Vector3) _playerParameters.BasicAttackCenter;
+                leftAttackCenter.x *= -1;
+                Gizmos.DrawWireSphere(position + leftAttackCenter, _playerParameters.BasicAttackRadius);
+            }
+
+            //if ()
+            {
+                Gizmos.color = Color.magenta;
+                Gizmos.DrawWireSphere(position + (Vector3) _playerParameters.BasicUpAttackCenter,
+                    _playerParameters.BasicUpAttackRadius);
+            }
+
             Gizmos.color = Color.cyan;
             Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.BasicDownAttackCenter, _playerParameters.BasicDownAttackRadius);
-            
-            // Gizmos.color = new Color(1f, 0.5f, 0f, 1f);
-            // Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.StrongAttackCenter, _playerParameters.StrongAttackRadius);
-            // leftAttackCenter = (Vector3) _playerParameters.StrongAttackCenter;
-            // leftAttackCenter.x *= -1;
-            // Gizmos.DrawWireSphere(position + leftAttackCenter, _playerParameters.StrongAttackRadius);
         }
-    }
-
-    public enum Directions
-    {
-        Right = 1,
-        Up,
-        Left,
-        Down,
+        
+        
+        [Flags] public enum GizmosType
+        {
+                           
+        }
+#endif //UNITY_EDITOR
     }
 }
