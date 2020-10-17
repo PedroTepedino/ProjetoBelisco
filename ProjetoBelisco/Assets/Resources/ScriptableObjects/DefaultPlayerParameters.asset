@@ -16,7 +16,7 @@ MonoBehaviour:
   _movementSpeed: 5.5
   _dashVelocity: 20
   _dashMaxTimer: 0
-  _jumpVelocity: 20
+  _jumpVelocity: 15
   _maxJumpButtonHoldTime: 0.5
   _gravityFallMultiplayer: 2
   _velocityWhenTerminateJump: 1
