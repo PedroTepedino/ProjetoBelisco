@@ -26,7 +26,7 @@ namespace RefatoramentoDoTioTepe
             
             _animation.SmoothRewind();
         }
-        
+       
         
         public void OnObjectSpawn()
         {

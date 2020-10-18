@@ -308,6 +308,7 @@
             <e p="Pooler.cs" t="Include" />
           </e>
           <e p="RefatoramentoDoTioTepe" t="Include">
+            <e p="AbstractLockable.cs" t="Include" />
             <e p="Bootstrapper.cs" t="Include" />
             <e p="Enemies" t="Include">
               <e p="AnimationController.cs" t="Include" />
@@ -353,7 +354,6 @@
             </e>
             <e p="FadeInOutSceneTransition.cs" t="Include" />
             <e p="FallingGround.cs" t="Include" />
-            <e p="ILockable.cs" t="Include" />
             <e p="Inventory" t="Include">
               <e p="Paw.cs" t="Include" />
               <e p="PawInventory.cs" t="Include" />
@@ -405,9 +405,8 @@
               <e p="HelperFunctions.cs" t="Include" />
               <e p="MovingPlatform.cs" t="Include" />
               <e p="MovingPlatformController.cs" t="Include" />
-              <e p="MovingPlatformLever.cs" t="Include" />
               <e p="Spikes.cs" t="Include" />
-              <e p="Testezera.cs" t="Include" />
+              <e p="UnLockerLever.cs" t="Include" />
             </e>
             <e p="Ui" t="Include">
               <e p="AbstractButton.cs" t="Include" />
