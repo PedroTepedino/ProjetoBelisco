@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
 {
-    public class MovingPlatformController : MonoBehaviour
+    public class MovingPlatformController : AbstractLockable
     {
         [SerializeField] private Transform _actualPlatform;
         [SerializeField] private Transform _finalDestination;
@@ -24,17 +24,12 @@ namespace RefatoramentoDoTioTepe
             _moveAnimation.Rewind();
         }
 
-        private void OnEnable()
-        {
-            UnlockPlatform();   
-        }
-
-        public void UnlockPlatform()
+        public override void Unlock()
         {
             _moveAnimation.Play();
         }
 
-        public void LockPlatform()
+        public override void Lock()
         {
             _moveAnimation.Pause();
         }
