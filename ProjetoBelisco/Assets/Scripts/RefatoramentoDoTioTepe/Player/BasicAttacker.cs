@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
-using GameScripts.Environment;
 using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
@@ -52,6 +50,10 @@ namespace RefatoramentoDoTioTepe
                 if (hittable != null)
                 {
                     if (!HasWallBetween(collider.transform.position))
+                    {
+                        hittable.Hit(_attackDamage);
+                    }
+                    else if (hittable is Switch)
                     {
                         hittable.Hit(_attackDamage);
                     }

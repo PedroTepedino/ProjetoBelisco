@@ -4,7 +4,7 @@
     <attachedFolders />
     <explicitIncludes>
       <Path>Library/PackageCache/com.unity.2d.tilemap.extras@c051b95afa</Path>
-      <Path>Library/PackageCache/com.unity.addressables@1.8.4</Path>
+      <Path>Library/PackageCache/com.unity.addressables@1.8.5</Path>
       <Path>Library/PackageCache/com.unity.cinemachine@2.5.0</Path>
       <Path>Library/PackageCache/com.unity.collab-proxy@1.2.16</Path>
       <Path>Library/PackageCache/com.unity.ext.nunit@1.0.0</Path>
@@ -25,6 +25,7 @@
     <explicitExcludes>
       <Path>.idea</Path>
       <Path>.vs</Path>
+      <Path>Build</Path>
       <Path>Docs</Path>
       <Path>Library</Path>
       <Path>Logs</Path>

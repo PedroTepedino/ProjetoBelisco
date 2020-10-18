@@ -1,7 +1,6 @@
-﻿using GameScripts.LivingBeingSystems;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace GameScripts.Environment
+namespace RefatoramentoDoTioTepe
 {
     [RequireComponent(typeof(Collider2D))]
     public class VoidHole : MonoBehaviour
@@ -19,15 +18,11 @@ namespace GameScripts.Environment
         private void Kill(Collider2D collision)
         {
             if (!collision.gameObject.activeInHierarchy) return;
-        
-            BaseLifeSystem lifeSystem = collision.gameObject.GetComponentInChildren<BaseLifeSystem>();
 
-            if (lifeSystem != null)
+            var player = collision.gameObject.GetComponent<Player>();
+            if (player)
             {
-                if (lifeSystem.CurentHealth > 0)
-                {
-                    lifeSystem.Damage(lifeSystem.CurentHealth);
-                }
+                player.Hit(10000);
             }
         }
     }

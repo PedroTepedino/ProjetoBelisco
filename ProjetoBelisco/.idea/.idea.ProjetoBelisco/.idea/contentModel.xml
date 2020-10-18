@@ -312,10 +312,35 @@
             <e p="Enemies" t="Include">
               <e p="AnimationController.cs" t="Include" />
               <e p="Attack.cs" t="Include" />
-              <e p="Enemy.cs" t="Include" />
               <e p="EnemyParameters.cs" t="Include" />
+              <e p="GolemRanged" t="Include">
+                <e p="GolemRanged.cs" t="Include" />
+                <e p="GolemRangedAnimation.cs" t="Include" />
+                <e p="GolemRangedParameters.cs" t="Include" />
+              </e>
+              <e p="GolemSimple" t="Include">
+                <e p="GolemSimple.cs" t="Include" />
+                <e p="GolemSimpleAnimation.cs" t="Include" />
+                <e p="GolemSimpleParameters.cs" t="Include" />
+              </e>
+              <e p="GolemSword" t="Include">
+                <e p="GolemSword.cs" t="Include" />
+                <e p="GolemSwordAnimation.cs" t="Include" />
+                <e p="GolemSwordParameters.cs" t="Include" />
+              </e>
+              <e p="GolemTriple" t="Include">
+                <e p="GolemTripeParameters.cs" t="Include" />
+                <e p="GolemTriple.cs" t="Include" />
+                <e p="GolemTripleAnimation.cs" t="Include" />
+              </e>
               <e p="GrounderEnemy.cs" t="Include" />
               <e p="HitDummie.cs" t="Include" />
+              <e p="IAnimationController.cs" t="Include" />
+              <e p="Slime" t="Include">
+                <e p="Slime.cs" t="Include" />
+                <e p="SlimeAnimation.cs" t="Include" />
+                <e p="SlimeParameters.cs" t="Include" />
+              </e>
               <e p="States" t="Include">
                 <e p="AlertState.cs" t="Include" />
                 <e p="AttackState.cs" t="Include" />
@@ -327,6 +352,7 @@
               <e p="WallChecker.cs" t="Include" />
             </e>
             <e p="FadeInOutSceneTransition.cs" t="Include" />
+            <e p="FallingGround.cs" t="Include" />
             <e p="Inventory" t="Include">
               <e p="Paw.cs" t="Include" />
               <e p="PawInventory.cs" t="Include" />
@@ -354,18 +380,36 @@
               <e p="StrongAttacker.cs" t="Include" />
               <e p="WallJumper.cs" t="Include" />
             </e>
+            <e p="PlayParticlesGeneral.cs" t="Include" />
             <e p="RoomTransition.cs" t="Include" />
+            <e p="SignScript.cs" t="Include" />
             <e p="StateMachine" t="Include">
               <e p="EnemyStateMachine.cs" t="Include" />
               <e p="GameStateMachine.cs" t="Include" />
+              <e p="IEnemyStateMachine.cs" t="Include" />
               <e p="IState.cs" t="Include" />
               <e p="StateMachine.cs" t="Include" />
               <e p="StateTransition.cs" t="Include" />
+            </e>
+            <e p="Switch.cs" t="Include" />
+            <e p="Tools" t="Include">
+              <e p="ObjectTileRotator.cs" t="Include" />
+              <e p="SpriteRandomizer.cs" t="Include" />
+            </e>
+            <e p="Traps" t="Include">
+              <e p="Arrow.cs" t="Include" />
+              <e p="ArrowShooter.cs" t="Include" />
+              <e p="BreakableWall.cs" t="Include" />
+              <e p="FallingPlatform.cs" t="Include" />
+              <e p="HelperFunctions.cs" t="Include" />
+              <e p="Spikes.cs" t="Include" />
+              <e p="Testezera.cs" t="Include" />
             </e>
             <e p="Ui" t="Include">
               <e p="AbstractButton.cs" t="Include" />
               <e p="AbstractPanel.cs" t="Include" />
               <e p="GamePlayTimescalePause.cs" t="Include" />
+              <e p="LoadMenu.cs" t="Include" />
               <e p="MainMenuPanel.cs" t="Include" />
               <e p="OptionsButton.cs" t="Include" />
               <e p="OptionsPanel.cs" t="Include" />
@@ -377,6 +421,7 @@
               <e p="RestartButton.cs" t="Include" />
               <e p="SaveOptions.cs" t="Include" />
               <e p="ToggleFullScreen.cs" t="Include" />
+              <e p="TurnOfUiOnLoad.cs" t="Include" />
               <e p="WinArea.cs" t="Include" />
               <e p="WinPanel.cs" t="Include" />
             </e>

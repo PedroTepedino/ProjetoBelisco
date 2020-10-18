@@ -1,6 +1,4 @@
-﻿using System;
-using Cinemachine;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
 {

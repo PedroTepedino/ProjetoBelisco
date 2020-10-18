@@ -1565,6 +1565,18 @@ TextureImporter:
   - first:
       213: -5318283322892042376
     second: beliscoLow_259
+  - first:
+      213: 5021297306012882398
+    second: beliscoLowWallContactBlue_0
+  - first:
+      213: 303146628428106309
+    second: beliscoLowWallContactBlue_1
+  - first:
+      213: 493085842207214141
+    second: beliscoLowWallJumpYellow_0
+  - first:
+      213: -8940475051263187948
+    second: beliscoLowWallJumpYellow_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -3404,7 +3416,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5416667, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3425,7 +3437,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5416667, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3446,7 +3458,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5416667, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3467,7 +3479,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5416667, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3488,7 +3500,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5520834, y: 0.6145834}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3509,7 +3521,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5520833, y: 0.6145833}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3530,7 +3542,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5520834, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3551,7 +3563,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5520833, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3572,7 +3584,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5520833, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3593,7 +3605,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5520833, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3719,7 +3731,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.46875, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3740,7 +3752,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.46875, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3761,7 +3773,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.46875, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3782,7 +3794,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.46875, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3803,7 +3815,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.45833334, y: 0.6145834}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3824,7 +3836,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.45833334, y: 0.59375}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3845,7 +3857,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.45833334, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3866,7 +3878,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.45833334, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3887,7 +3899,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.45833334, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3908,7 +3920,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.45833334, y: 0.5729167}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3987,8 +3999,8 @@ TextureImporter:
       name: beliscoLowGlydeAntecipationB_0
       rect:
         serializedVersion: 2
-        x: 1344
-        y: 960
+        x: 576
+        y: 1056
         width: 96
         height: 96
       alignment: 9
@@ -4008,7 +4020,7 @@ TextureImporter:
       name: beliscoLowGlydeAntecipationB_1
       rect:
         serializedVersion: 2
-        x: 1440
+        x: 1344
         y: 960
         width: 96
         height: 96
@@ -4029,8 +4041,8 @@ TextureImporter:
       name: beliscoLowGlydeLoopB_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 864
+        x: 1440
+        y: 960
         width: 96
         height: 96
       alignment: 9
@@ -4050,7 +4062,7 @@ TextureImporter:
       name: beliscoLowGlydeLoopB_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 864
         width: 96
         height: 96
@@ -4071,7 +4083,7 @@ TextureImporter:
       name: beliscoLowGlydeLoopB_2
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 864
         width: 96
         height: 96
@@ -4092,7 +4104,7 @@ TextureImporter:
       name: beliscoLowGlydeLoopB_3
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 864
         width: 96
         height: 96
@@ -4113,7 +4125,7 @@ TextureImporter:
       name: beliscoLowGlydeAntecipationY_0
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 864
         width: 96
         height: 96
@@ -4134,7 +4146,7 @@ TextureImporter:
       name: beliscoLowGlydeAntecipationY_1
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 864
         width: 96
         height: 96
@@ -4155,7 +4167,7 @@ TextureImporter:
       name: beliscoLowGlydeLoopY_0
       rect:
         serializedVersion: 2
-        x: 576
+        x: 480
         y: 864
         width: 96
         height: 96
@@ -4176,7 +4188,7 @@ TextureImporter:
       name: beliscoLowGlydeLoopY_1
       rect:
         serializedVersion: 2
-        x: 672
+        x: 576
         y: 864
         width: 96
         height: 96
@@ -4197,7 +4209,7 @@ TextureImporter:
       name: beliscoLowGlydeLoopY_2
       rect:
         serializedVersion: 2
-        x: 768
+        x: 672
         y: 864
         width: 96
         height: 96
@@ -4218,7 +4230,7 @@ TextureImporter:
       name: beliscoLowGlydeLoopY_3
       rect:
         serializedVersion: 2
-        x: 864
+        x: 768
         y: 864
         width: 96
         height: 96
@@ -4239,7 +4251,7 @@ TextureImporter:
       name: beliscoLowAtackJumpSideBlue_0
       rect:
         serializedVersion: 2
-        x: 960
+        x: 864
         y: 864
         width: 96
         height: 96
@@ -4260,7 +4272,7 @@ TextureImporter:
       name: beliscoLowAtackJumpSideBlue_1
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 960
         y: 864
         width: 96
         height: 96
@@ -4281,7 +4293,7 @@ TextureImporter:
       name: beliscoLowAtackJumpSideBlue_2
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1056
         y: 864
         width: 96
         height: 96
@@ -4302,7 +4314,7 @@ TextureImporter:
       name: beliscoLowAtackJumpSideBlue_3
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1152
         y: 864
         width: 96
         height: 96
@@ -4323,7 +4335,7 @@ TextureImporter:
       name: beliscoLowAtackJumpSideYellow_0
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1248
         y: 864
         width: 96
         height: 96
@@ -4344,7 +4356,7 @@ TextureImporter:
       name: beliscoLowAtackJumpSideYellow_1
       rect:
         serializedVersion: 2
-        x: 1440
+        x: 1344
         y: 864
         width: 96
         height: 96
@@ -4365,8 +4377,8 @@ TextureImporter:
       name: beliscoLowAtackJumpSideYellow_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
+        x: 1440
+        y: 864
         width: 96
         height: 96
       alignment: 9
@@ -4386,7 +4398,7 @@ TextureImporter:
       name: beliscoLowAtackJumpSideYellow_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 768
         width: 96
         height: 96
@@ -4407,7 +4419,7 @@ TextureImporter:
       name: beliscoLowAtackUpBlue_0
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 768
         width: 96
         height: 96
@@ -4428,7 +4440,7 @@ TextureImporter:
       name: beliscoLowAtackUpBlue_1
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 768
         width: 96
         height: 96
@@ -4449,7 +4461,7 @@ TextureImporter:
       name: beliscoLowAtackUpBlue_2
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 768
         width: 96
         height: 96
@@ -4470,7 +4482,7 @@ TextureImporter:
       name: beliscoLowAtackUpBlue_3
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 768
         width: 96
         height: 96
@@ -4491,7 +4503,7 @@ TextureImporter:
       name: beliscoLowAtackUpBlue_4
       rect:
         serializedVersion: 2
-        x: 576
+        x: 480
         y: 768
         width: 96
         height: 96
@@ -4512,7 +4524,7 @@ TextureImporter:
       name: beliscoLowAtackUpBlue_5
       rect:
         serializedVersion: 2
-        x: 672
+        x: 576
         y: 768
         width: 96
         height: 96
@@ -4533,7 +4545,7 @@ TextureImporter:
       name: beliscoLowAtackUpYellow_0
       rect:
         serializedVersion: 2
-        x: 768
+        x: 672
         y: 768
         width: 96
         height: 96
@@ -4554,7 +4566,7 @@ TextureImporter:
       name: beliscoLowAtackUpYellow_1
       rect:
         serializedVersion: 2
-        x: 864
+        x: 768
         y: 768
         width: 96
         height: 96
@@ -4575,7 +4587,7 @@ TextureImporter:
       name: beliscoLowAtackUpYellow_2
       rect:
         serializedVersion: 2
-        x: 960
+        x: 864
         y: 768
         width: 96
         height: 96
@@ -4596,7 +4608,7 @@ TextureImporter:
       name: beliscoLowAtackUpYellow_3
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 960
         y: 768
         width: 96
         height: 96
@@ -4617,7 +4629,7 @@ TextureImporter:
       name: beliscoLowAtackUpYellow_4
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1056
         y: 768
         width: 96
         height: 96
@@ -4638,7 +4650,7 @@ TextureImporter:
       name: beliscoLowAtackUpYellow_5
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1152
         y: 768
         width: 96
         height: 96
@@ -4659,7 +4671,7 @@ TextureImporter:
       name: beliscoLowAtackJumpUpBlue_0
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1248
         y: 768
         width: 96
         height: 96
@@ -4680,7 +4692,7 @@ TextureImporter:
       name: beliscoLowAtackJumpUpBlue_1
       rect:
         serializedVersion: 2
-        x: 1440
+        x: 1344
         y: 768
         width: 96
         height: 96
@@ -4701,8 +4713,8 @@ TextureImporter:
       name: beliscoLowAtackJumpUpBlue_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 672
+        x: 1440
+        y: 768
         width: 96
         height: 96
       alignment: 9
@@ -4722,7 +4734,7 @@ TextureImporter:
       name: beliscoLowAtackJumpUpBlue_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 672
         width: 96
         height: 96
@@ -4743,7 +4755,7 @@ TextureImporter:
       name: beliscoLowAtackJumpUpYellow_0
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 672
         width: 96
         height: 96
@@ -4764,7 +4776,7 @@ TextureImporter:
       name: beliscoLowAtackJumpUpYellow_1
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 672
         width: 96
         height: 96
@@ -4785,7 +4797,7 @@ TextureImporter:
       name: beliscoLowAtackJumpUpYellow_2
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 672
         width: 96
         height: 96
@@ -4806,7 +4818,7 @@ TextureImporter:
       name: beliscoLowAtackJumpUpYellow_3
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 672
         width: 96
         height: 96
@@ -4827,7 +4839,7 @@ TextureImporter:
       name: beliscoLowAtackDown1_0
       rect:
         serializedVersion: 2
-        x: 576
+        x: 480
         y: 672
         width: 96
         height: 96
@@ -4848,7 +4860,7 @@ TextureImporter:
       name: beliscoLowAtackDown1_1
       rect:
         serializedVersion: 2
-        x: 672
+        x: 576
         y: 672
         width: 96
         height: 96
@@ -4869,7 +4881,7 @@ TextureImporter:
       name: beliscoLowAtackDown1_2
       rect:
         serializedVersion: 2
-        x: 768
+        x: 672
         y: 672
         width: 96
         height: 96
@@ -4890,7 +4902,7 @@ TextureImporter:
       name: beliscoLowAtackDown1_3
       rect:
         serializedVersion: 2
-        x: 864
+        x: 768
         y: 672
         width: 96
         height: 96
@@ -4911,7 +4923,7 @@ TextureImporter:
       name: beliscoLowAtackDown2_0
       rect:
         serializedVersion: 2
-        x: 960
+        x: 864
         y: 672
         width: 96
         height: 96
@@ -4932,7 +4944,7 @@ TextureImporter:
       name: beliscoLowAtackDown2_1
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 960
         y: 672
         width: 96
         height: 96
@@ -4953,7 +4965,7 @@ TextureImporter:
       name: beliscoLowAtackDown2_2
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1056
         y: 672
         width: 96
         height: 96
@@ -4974,7 +4986,7 @@ TextureImporter:
       name: beliscoLowAtackDown2_3
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1152
         y: 672
         width: 96
         height: 96
@@ -4995,7 +5007,7 @@ TextureImporter:
       name: beliscoLowDeathBlue_0
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1248
         y: 672
         width: 96
         height: 96
@@ -5016,7 +5028,7 @@ TextureImporter:
       name: beliscoLowDeathBlue_1
       rect:
         serializedVersion: 2
-        x: 1440
+        x: 1344
         y: 672
         width: 96
         height: 96
@@ -5037,8 +5049,8 @@ TextureImporter:
       name: beliscoLowDeathBlue_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 576
+        x: 1440
+        y: 672
         width: 96
         height: 96
       alignment: 9
@@ -5058,7 +5070,7 @@ TextureImporter:
       name: beliscoLowDeathBlue_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 576
         width: 96
         height: 96
@@ -5079,7 +5091,7 @@ TextureImporter:
       name: beliscoLowDeathBlue_4
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 576
         width: 96
         height: 96
@@ -5100,7 +5112,7 @@ TextureImporter:
       name: beliscoLowDeathBlue_5
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 576
         width: 96
         height: 96
@@ -5121,7 +5133,7 @@ TextureImporter:
       name: beliscoLowDeathBlue_6
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 576
         width: 96
         height: 96
@@ -5142,7 +5154,7 @@ TextureImporter:
       name: beliscoLowDeathBlue_7
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 576
         width: 96
         height: 96
@@ -5163,7 +5175,7 @@ TextureImporter:
       name: beliscoLowDeathYellow_0
       rect:
         serializedVersion: 2
-        x: 576
+        x: 480
         y: 576
         width: 96
         height: 96
@@ -5184,7 +5196,7 @@ TextureImporter:
       name: beliscoLowDeathYellow_1
       rect:
         serializedVersion: 2
-        x: 672
+        x: 576
         y: 576
         width: 96
         height: 96
@@ -5205,7 +5217,7 @@ TextureImporter:
       name: beliscoLowDeathYellow_2
       rect:
         serializedVersion: 2
-        x: 768
+        x: 672
         y: 576
         width: 96
         height: 96
@@ -5226,7 +5238,7 @@ TextureImporter:
       name: beliscoLowDeathYellow_3
       rect:
         serializedVersion: 2
-        x: 864
+        x: 768
         y: 576
         width: 96
         height: 96
@@ -5247,7 +5259,7 @@ TextureImporter:
       name: beliscoLowDeathYellow_4
       rect:
         serializedVersion: 2
-        x: 960
+        x: 864
         y: 576
         width: 96
         height: 96
@@ -5268,7 +5280,7 @@ TextureImporter:
       name: beliscoLowDeathYellow_5
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 960
         y: 576
         width: 96
         height: 96
@@ -5289,7 +5301,7 @@ TextureImporter:
       name: beliscoLowDeathYellow_6
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1056
         y: 576
         width: 96
         height: 96
@@ -5310,7 +5322,7 @@ TextureImporter:
       name: beliscoLowDeathYellow_7
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1152
         y: 576
         width: 96
         height: 96
@@ -5331,7 +5343,7 @@ TextureImporter:
       name: beliscoLowDashSideBlue_0
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1248
         y: 576
         width: 96
         height: 96
@@ -5352,7 +5364,7 @@ TextureImporter:
       name: beliscoLowDashSideBlue_1
       rect:
         serializedVersion: 2
-        x: 1440
+        x: 1344
         y: 576
         width: 96
         height: 96
@@ -5373,8 +5385,8 @@ TextureImporter:
       name: beliscoLowDashSideBlue_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 480
+        x: 1440
+        y: 576
         width: 96
         height: 96
       alignment: 9
@@ -5394,7 +5406,7 @@ TextureImporter:
       name: beliscoLowDashSideBlue_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 480
         width: 96
         height: 96
@@ -5415,7 +5427,7 @@ TextureImporter:
       name: beliscoLowDashSideBlue_4
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 480
         width: 96
         height: 96
@@ -5436,7 +5448,7 @@ TextureImporter:
       name: beliscoLowDashSideYellow_0
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 480
         width: 96
         height: 96
@@ -5457,7 +5469,7 @@ TextureImporter:
       name: beliscoLowDashSideYellow_1
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 480
         width: 96
         height: 96
@@ -5478,7 +5490,7 @@ TextureImporter:
       name: beliscoLowDashSideYellow_2
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 480
         width: 96
         height: 96
@@ -5499,7 +5511,7 @@ TextureImporter:
       name: beliscoLowDashSideYellow_3
       rect:
         serializedVersion: 2
-        x: 576
+        x: 480
         y: 480
         width: 96
         height: 96
@@ -5520,7 +5532,7 @@ TextureImporter:
       name: beliscoLowDashSideYellow_4
       rect:
         serializedVersion: 2
-        x: 672
+        x: 576
         y: 480
         width: 96
         height: 96
@@ -5541,7 +5553,7 @@ TextureImporter:
       name: beliscoLowDashUpBlue_0
       rect:
         serializedVersion: 2
-        x: 768
+        x: 672
         y: 480
         width: 96
         height: 96
@@ -5562,7 +5574,7 @@ TextureImporter:
       name: beliscoLowDashUpBlue_1
       rect:
         serializedVersion: 2
-        x: 864
+        x: 768
         y: 480
         width: 96
         height: 96
@@ -5583,7 +5595,7 @@ TextureImporter:
       name: beliscoLowDashUpBlue_2
       rect:
         serializedVersion: 2
-        x: 960
+        x: 864
         y: 480
         width: 96
         height: 96
@@ -5604,7 +5616,7 @@ TextureImporter:
       name: beliscoLowDashUpBlue_3
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 960
         y: 480
         width: 96
         height: 96
@@ -5625,7 +5637,7 @@ TextureImporter:
       name: beliscoLowDashUpBlue_4
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1056
         y: 480
         width: 96
         height: 96
@@ -5646,7 +5658,7 @@ TextureImporter:
       name: beliscoLowDashUpBlue_5
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1152
         y: 480
         width: 96
         height: 96
@@ -5667,7 +5679,7 @@ TextureImporter:
       name: beliscoLowDashUpYellow_0
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1248
         y: 480
         width: 96
         height: 96
@@ -5688,7 +5700,7 @@ TextureImporter:
       name: beliscoLowDashUpYellow_1
       rect:
         serializedVersion: 2
-        x: 1440
+        x: 1344
         y: 480
         width: 96
         height: 96
@@ -5709,8 +5721,8 @@ TextureImporter:
       name: beliscoLowDashUpYellow_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
+        x: 1440
+        y: 480
         width: 96
         height: 96
       alignment: 9
@@ -5730,7 +5742,7 @@ TextureImporter:
       name: beliscoLowDashUpYellow_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 384
         width: 96
         height: 96
@@ -5751,7 +5763,7 @@ TextureImporter:
       name: beliscoLowDashUpYellow_4
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 384
         width: 96
         height: 96
@@ -5772,7 +5784,7 @@ TextureImporter:
       name: beliscoLowDashUpYellow_5
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 384
         width: 96
         height: 96
@@ -5793,7 +5805,7 @@ TextureImporter:
       name: beliscoLowRangedAtackBlue_0
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 384
         width: 96
         height: 96
@@ -5814,7 +5826,7 @@ TextureImporter:
       name: beliscoLowRangedAtackBlue_1
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 384
         width: 96
         height: 96
@@ -5835,7 +5847,7 @@ TextureImporter:
       name: beliscoLowRangedAtackBlue_2
       rect:
         serializedVersion: 2
-        x: 576
+        x: 480
         y: 384
         width: 96
         height: 96
@@ -5856,7 +5868,7 @@ TextureImporter:
       name: beliscoLowRangedAtackBlue_3
       rect:
         serializedVersion: 2
-        x: 672
+        x: 576
         y: 384
         width: 96
         height: 96
@@ -5877,7 +5889,7 @@ TextureImporter:
       name: beliscoLowRangedAtackBlue_4
       rect:
         serializedVersion: 2
-        x: 768
+        x: 672
         y: 384
         width: 96
         height: 96
@@ -5898,7 +5910,7 @@ TextureImporter:
       name: beliscoLowRangedAtackBlue_5
       rect:
         serializedVersion: 2
-        x: 864
+        x: 768
         y: 384
         width: 96
         height: 96
@@ -5919,7 +5931,7 @@ TextureImporter:
       name: beliscoLowRangedAtackBlue_6
       rect:
         serializedVersion: 2
-        x: 960
+        x: 864
         y: 384
         width: 96
         height: 96
@@ -5940,7 +5952,7 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedYellow_0
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 960
         y: 384
         width: 96
         height: 96
@@ -5961,7 +5973,7 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedYellow_1
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1056
         y: 384
         width: 96
         height: 96
@@ -5982,7 +5994,7 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedYellow_2
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1152
         y: 384
         width: 96
         height: 96
@@ -6003,7 +6015,7 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedYellow_3
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1248
         y: 384
         width: 96
         height: 96
@@ -6024,7 +6036,7 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedYellow_4
       rect:
         serializedVersion: 2
-        x: 1440
+        x: 1344
         y: 384
         width: 96
         height: 96
@@ -6045,8 +6057,8 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedYellow_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 288
+        x: 1440
+        y: 384
         width: 96
         height: 96
       alignment: 9
@@ -6066,7 +6078,7 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedYellow_6
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 288
         width: 96
         height: 96
@@ -6087,7 +6099,7 @@ TextureImporter:
       name: beliscoLowRangedAtackJumpBlue_0
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 288
         width: 96
         height: 96
@@ -6108,7 +6120,7 @@ TextureImporter:
       name: beliscoLowRangedAtackJumpBlue_1
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 288
         width: 96
         height: 96
@@ -6129,7 +6141,7 @@ TextureImporter:
       name: beliscoLowRangedAtackJumpBlue_2
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 288
         width: 96
         height: 96
@@ -6150,7 +6162,7 @@ TextureImporter:
       name: beliscoLowRangedAtackJumpBlue_3
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 288
         width: 96
         height: 96
@@ -6171,7 +6183,7 @@ TextureImporter:
       name: beliscoLowRangedAtackJumpBlue_4
       rect:
         serializedVersion: 2
-        x: 576
+        x: 480
         y: 288
         width: 96
         height: 96
@@ -6192,7 +6204,7 @@ TextureImporter:
       name: beliscoLowRangedAtackJumpBlue_5
       rect:
         serializedVersion: 2
-        x: 672
+        x: 576
         y: 288
         width: 96
         height: 96
@@ -6213,7 +6225,7 @@ TextureImporter:
       name: beliscoLowRangedAtackJumpBlue_6
       rect:
         serializedVersion: 2
-        x: 768
+        x: 672
         y: 288
         width: 96
         height: 96
@@ -6234,7 +6246,7 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedJumpYellow_0
       rect:
         serializedVersion: 2
-        x: 864
+        x: 768
         y: 288
         width: 96
         height: 96
@@ -6255,7 +6267,7 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedJumpYellow_1
       rect:
         serializedVersion: 2
-        x: 960
+        x: 864
         y: 288
         width: 96
         height: 96
@@ -6276,7 +6288,7 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedJumpYellow_2
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 960
         y: 288
         width: 96
         height: 96
@@ -6297,7 +6309,7 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedJumpYellow_3
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1056
         y: 288
         width: 96
         height: 96
@@ -6318,7 +6330,7 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedJumpYellow_4
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1152
         y: 288
         width: 96
         height: 96
@@ -6339,7 +6351,7 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedJumpYellow_5
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1248
         y: 288
         width: 96
         height: 96
@@ -6360,7 +6372,7 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedJumpYellow_6
       rect:
         serializedVersion: 2
-        x: 1440
+        x: 1344
         y: 288
         width: 96
         height: 96
@@ -6378,10 +6390,52 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beliscoLowWallJumpBlue_0
+      name: beliscoLowWallContactBlue_0
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed5168cbb4b3fa540800000000000000
+      internalID: 5021297306012882398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowWallContactBlue_1
       rect:
         serializedVersion: 2
         x: 0
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a805e904ef43400800000000000000
+      internalID: 303146628428106309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowWallJumpBlue_0
+      rect:
+        serializedVersion: 2
+        x: 96
         y: 192
         width: 96
         height: 96
@@ -6402,7 +6456,7 @@ TextureImporter:
       name: beliscoLowWallJumpBlue_1
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 192
         width: 96
         height: 96
@@ -6420,52 +6474,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beliscoLowWallJumpBlue_2
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 192
-        width: 96
-        height: 96
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 76442b0e66ca3b0c0800000000000000
-      internalID: -4561112439739759513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beliscoLowWallJumpBlue_3
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 192
-        width: 96
-        height: 96
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3373595d829e10940800000000000000
-      internalID: 5260742201336739635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: beliscoLowWallContactYellow_0
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 192
         width: 96
         height: 96
@@ -6486,7 +6498,7 @@ TextureImporter:
       name: beliscoLowWallContactYellow_1
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 192
         width: 96
         height: 96
@@ -6504,7 +6516,28 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beliscoLowWallContactYellow_2
+      name: beliscoLowWallJumpYellow_0
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a098406fac7d600800000000000000
+      internalID: 493085842207214141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowWallJumpYellow_1
       rect:
         serializedVersion: 2
         x: 576
@@ -6518,29 +6551,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: beb17e297ce4a56d0800000000000000
-      internalID: -3000999582618936341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beliscoLowWallContactYellow_3
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 192
-        width: 96
-        height: 96
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5425d2c0017ec7450800000000000000
-      internalID: 6087994852407857733
+      spriteID: 414273e3f4d0de380800000000000000
+      internalID: -8940475051263187948
       vertices: []
       indices: 
       edges: []
@@ -6549,7 +6561,7 @@ TextureImporter:
       name: beliscoLowStrongAtackBlue_0
       rect:
         serializedVersion: 2
-        x: 768
+        x: 672
         y: 192
         width: 96
         height: 96
@@ -6570,7 +6582,7 @@ TextureImporter:
       name: beliscoLowStrongAtackBlue_1
       rect:
         serializedVersion: 2
-        x: 864
+        x: 768
         y: 192
         width: 96
         height: 96
@@ -6591,7 +6603,7 @@ TextureImporter:
       name: beliscoLowStrongAtackBlue_2
       rect:
         serializedVersion: 2
-        x: 960
+        x: 864
         y: 192
         width: 96
         height: 96
@@ -6612,7 +6624,7 @@ TextureImporter:
       name: beliscoLowStrongAtackBlue_3
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 960
         y: 192
         width: 96
         height: 96
@@ -6633,7 +6645,7 @@ TextureImporter:
       name: beliscoLowStrongAtackBlue_4
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1056
         y: 192
         width: 96
         height: 96
@@ -6654,7 +6666,7 @@ TextureImporter:
       name: beliscoLowStrongAtackBlue_5
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1152
         y: 192
         width: 96
         height: 96
@@ -6675,7 +6687,7 @@ TextureImporter:
       name: beliscoLowStrongAtackBlue_6
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1248
         y: 192
         width: 96
         height: 96
@@ -6696,7 +6708,7 @@ TextureImporter:
       name: beliscoLowStrongAtackYellow_0
       rect:
         serializedVersion: 2
-        x: 1440
+        x: 1344
         y: 192
         width: 96
         height: 96
@@ -6717,8 +6729,8 @@ TextureImporter:
       name: beliscoLowStrongAtackYellow_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 1440
+        y: 192
         width: 96
         height: 96
       alignment: 9
@@ -6738,7 +6750,7 @@ TextureImporter:
       name: beliscoLowStrongAtackYellow_2
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 96
         width: 96
         height: 96
@@ -6759,7 +6771,7 @@ TextureImporter:
       name: beliscoLowStrongAtackYellow_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 96
         width: 96
         height: 96
@@ -6780,7 +6792,7 @@ TextureImporter:
       name: beliscoLowStrongAtackYellow_4
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 96
         width: 96
         height: 96
@@ -6801,7 +6813,7 @@ TextureImporter:
       name: beliscoLowStrongAtackYellow_5
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 96
         width: 96
         height: 96
@@ -6822,7 +6834,7 @@ TextureImporter:
       name: beliscoLowStrongAtackYellow_6
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 96
         width: 96
         height: 96
@@ -6843,7 +6855,7 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpBlue_0
       rect:
         serializedVersion: 2
-        x: 576
+        x: 480
         y: 96
         width: 96
         height: 96
@@ -6864,7 +6876,7 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpBlue_1
       rect:
         serializedVersion: 2
-        x: 672
+        x: 576
         y: 96
         width: 96
         height: 96
@@ -6885,7 +6897,7 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpBlue_2
       rect:
         serializedVersion: 2
-        x: 768
+        x: 672
         y: 96
         width: 96
         height: 96
@@ -6906,7 +6918,7 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpBlue_3
       rect:
         serializedVersion: 2
-        x: 864
+        x: 768
         y: 96
         width: 96
         height: 96
@@ -6927,7 +6939,7 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpBlue_4
       rect:
         serializedVersion: 2
-        x: 960
+        x: 864
         y: 96
         width: 96
         height: 96
@@ -6948,7 +6960,7 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpBlue_5
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 960
         y: 96
         width: 96
         height: 96
@@ -6969,7 +6981,7 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpBlue_6
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1056
         y: 96
         width: 96
         height: 96
@@ -6990,7 +7002,7 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpYellow_0
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1152
         y: 96
         width: 96
         height: 96
@@ -7011,7 +7023,7 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpYellow_1
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1248
         y: 96
         width: 96
         height: 96
@@ -7032,7 +7044,7 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpYellow_2
       rect:
         serializedVersion: 2
-        x: 1440
+        x: 1344
         y: 96
         width: 96
         height: 96
@@ -7053,8 +7065,8 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpYellow_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1440
+        y: 96
         width: 96
         height: 96
       alignment: 9
@@ -7074,7 +7086,7 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpYellow_4
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 0
         width: 96
         height: 96
@@ -7095,7 +7107,7 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpYellow_5
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 0
         width: 96
         height: 96
@@ -7116,7 +7128,7 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpYellow_6
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 0
         width: 96
         height: 96

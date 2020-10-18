@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GameScripts.Environment
+namespace RefatoramentoDoTioTepe
 {
     [RequireComponent(typeof(Collider2D))]
     public class Checkpoint : PlayerRespawner

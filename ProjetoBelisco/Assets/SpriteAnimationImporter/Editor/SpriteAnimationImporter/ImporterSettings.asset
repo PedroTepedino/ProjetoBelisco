@@ -267,12 +267,22 @@ MonoBehaviour:
       sampleRate: 60
       loop: 0
       generateClip: 1
+    - tagName: WallContactBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
     - tagName: WallJumpBlue
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 0
       generateClip: 1
     - tagName: WallContactYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: WallJumpYellow
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 0

@@ -5,14 +5,24 @@ using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
 {
+    public enum Directions
+    {
+        Right = 1,
+        Up,
+        Left,
+        Down,
+    }
+
     [RequireComponent(typeof(PlayerAnimatorController))]
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(Grounder))]
     [RequireComponent(typeof(Collider2D))]
     public class Player : MonoBehaviour, IHittable , IPooledObject
     {
-        [SerializeField] [AssetsOnly] [InlineEditor(InlineEditorObjectFieldModes.Hidden)] private PlayerParameters _playerParameters;
+        [SerializeField] private PlayParticlesGeneral _hurtParticles;
+        [SerializeField] [AssetsOnly] [FoldoutGroup("Player Parameters")] [InlineEditor(InlineEditorObjectFieldModes.Hidden)] private PlayerParameters _playerParameters;
         private IMover _mover;
+
         private IJumper _jumper;
         private IAttacker _attacker;
         //private List<IAttacker> _attackerList;
@@ -20,6 +30,7 @@ namespace RefatoramentoDoTioTepe
         private Grounder _grounder;
         private PlayerLocker _playerLocker;
         private Glider _glider;
+        private WallJumper _wallJumper;
 
         [SerializeField] 
         private PlayerAnimatorController _playerAnimatorController;
@@ -37,6 +48,12 @@ namespace RefatoramentoDoTioTepe
         public bool Jumping => _jumper.Jumping;
         public bool Gliding => _glider.Gliding;
         public PlayerAnimatorController AnimatorController => _playerAnimatorController;
+        
+        public static event Action<GameObject> OnPlayerSpawn;
+        public static event Action OnPlayerDeath;
+        public static event Action<int, int> OnPlayerDamage;
+        
+        public static event Action<int, int> OnPlayerHeal;
 
 
         private void Awake()
@@ -50,14 +67,27 @@ namespace RefatoramentoDoTioTepe
             _playerLocker = new PlayerLocker(this);
             _glider = new Glider(this);
             _attacker = new BasicAttacker(this);
-            
+            _wallJumper = new WallJumper(this);
+
             // _attackerList = new List<IAttacker>();
             // _attackerList.Add(new BasicAttacker(this));
             // _attackerList.Add(new StrongAttacker(this));
         }
 
+        private void OnEnable()
+        {
+            _grounder = new Grounder(this);
+            _mover = new Mover(this);
+            _jumper = new Jumper(this);
+            _playerLocker = new PlayerLocker(this);
+            _glider = new Glider(this);
+            _attacker = new BasicAttacker(this);
+        }
+
         public void Hit(int damage)
         {
+            _hurtParticles.EmitParticle();
+            _playerAnimatorController.Hurt();
             _lifeSystem.Damage(damage);
         }
 
@@ -191,47 +221,84 @@ namespace RefatoramentoDoTioTepe
                 _playerAnimatorController = this.GetComponent<PlayerAnimatorController>();
         }
 
+        public void OnObjectSpawn()
+        {
+            if (!_lifeSystem.StillAlive)
+                this._lifeSystem = new LifeSystem(this);
+            
+            OnPlayerHeal?.Invoke(_lifeSystem.CurrentLife, _lifeSystem.MaxHealth);
+            
+            OnPlayerSpawn?.Invoke(this.gameObject); 
+            this.gameObject.SetActive(true);
+        }
+
+        public void Died()
+        {
+            OnPlayerDeath?.Invoke();
+        }
+
+        public void DamageDealt(int currentLife, int maxLife)
+        {
+            OnPlayerDamage?.Invoke(currentLife, maxLife);
+        }
+
+        [Button]
+        public void Damage()
+        {
+            this.Hit(1);
+        }
+        
+#if UNITY_EDITOR
+        [SerializeField] [EnumToggleButtons] private GizmosType _gizmosToShow = 0;
         private void OnDrawGizmos()
         {
             var position = this.transform.position;
             
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireCube(position + _playerParameters.GrounderPosition, _playerParameters.GrounderSizes);
-
-            Gizmos.color = new Color(0f, 0.5f, 0f, 1f);
-            Gizmos.DrawWireCube(position + _playerParameters.NearGroundGrounderPosition, _playerParameters.NearGroundGrounderSizes);
-            
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.BasicAttackCenter, _playerParameters.BasicAttackRadius);
-            var leftAttackCenter = (Vector3) _playerParameters.BasicAttackCenter;
-            leftAttackCenter.x *= -1;
-            Gizmos.DrawWireSphere(position + leftAttackCenter, _playerParameters.BasicAttackRadius);
-            
-            Gizmos.color = Color.magenta;
-            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.BasicUpAttackCenter, _playerParameters.BasicUpAttackRadius);
-            
-            Gizmos.color = Color.cyan;
-            Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.BasicDownAttackCenter, _playerParameters.BasicDownAttackRadius);
-            
-            // Gizmos.color = new Color(1f, 0.5f, 0f, 1f);
-            // Gizmos.DrawWireSphere(position + (Vector3)_playerParameters.StrongAttackCenter, _playerParameters.StrongAttackRadius);
-            // leftAttackCenter = (Vector3) _playerParameters.StrongAttackCenter;
-            // leftAttackCenter.x *= -1;
-            // Gizmos.DrawWireSphere(position + leftAttackCenter, _playerParameters.StrongAttackRadius);
+            foreach (GizmosType gizmo in Enum.GetValues(typeof(GizmosType)))
+            {
+                if ((_gizmosToShow & gizmo) == gizmo)
+                {
+                    switch (gizmo)
+                    {
+                        case GizmosType.Grounder:
+                            Gizmos.color = Color.green;
+                            Gizmos.DrawWireCube(position + _playerParameters.GrounderPosition, _playerParameters.GrounderSizes);
+                            break;  
+                        case GizmosType.NearGround:
+                            Gizmos.color = new Color(0f, 0.5f, 0f, 1f);
+                            Gizmos.DrawWireCube(position + _playerParameters.NearGroundGrounderPosition,
+                                _playerParameters.NearGroundGrounderSizes);
+                            break;
+                        case GizmosType.BasicAttack:
+                            Gizmos.color = Color.red;
+                            Gizmos.DrawWireSphere(position + (Vector3) _playerParameters.BasicAttackCenter,
+                                _playerParameters.BasicAttackRadius);
+                            var leftAttackCenter = (Vector3) _playerParameters.BasicAttackCenter;
+                            leftAttackCenter.x *= -1;
+                            Gizmos.DrawWireSphere(position + leftAttackCenter, _playerParameters.BasicAttackRadius);
+                            break;
+                        case GizmosType.BasicAttackUp:
+                            Gizmos.color = Color.magenta;
+                            Gizmos.DrawWireSphere(position + (Vector3) _playerParameters.BasicUpAttackCenter,
+                                _playerParameters.BasicUpAttackRadius);
+                            break;
+                        case GizmosType.BasicAttackDown:
+                            Gizmos.color = Color.cyan;
+                            Gizmos.DrawWireSphere(position + (Vector3) _playerParameters.BasicDownAttackCenter,
+                                _playerParameters.BasicDownAttackRadius);
+                            break;
+                    }  
+                }
+            }
         }
-
-        public void OnObjectSpawn()
+        [Flags] public enum GizmosType
         {
-            this._lifeSystem = new LifeSystem(this);
-            this.gameObject.SetActive(true);
+            Grounder = 1 << 0,
+            NearGround = 1 << 1,
+            BasicAttack = 1 << 2,
+            BasicAttackUp = 1 << 3,
+            BasicAttackDown = 1 << 4,
         }
-    }
-
-    public enum Directions
-    {
-        Right = 1,
-        Up,
-        Left,
-        Down,
+#endif //UNITY_EDITOR
     }
 }

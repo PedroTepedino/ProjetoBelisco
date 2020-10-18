@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 100794437}
   m_Layer: 12
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -335,8 +335,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91e65c2455cdb8947b2b5320b7238e12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _hurtParticles: {fileID: 8746849657427413635}
   _playerParameters: {fileID: 11400000, guid: 3bf0776cec540054f881fe73e8470327, type: 2}
   _playerAnimatorController: {fileID: 100794437}
+  _gizmosToShow: 0
 --- !u!114 &472042481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -510,6 +512,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 126441437137522548}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8746849657427413635 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8692572604974597623, guid: 4b2f15a3e071b044a91032e08d8d98c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 126441437137522548}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6608a183e49f09949b14a3ef3cb3a841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1406306688474532168
 PrefabInstance:
   m_ObjectHideFlags: 0

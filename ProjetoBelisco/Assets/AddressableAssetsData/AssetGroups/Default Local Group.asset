@@ -27,10 +27,8 @@ MonoBehaviour:
     m_Address: '[INPUT SYSTEM].prefab'
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 7590394847958520831, guid: e66c5016ad110c64cbc67bc5db35c855,
-      type: 3}
-    m_TargetAsset: {fileID: 7590394847958520831, guid: e66c5016ad110c64cbc67bc5db35c855,
-      type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3198d8bf5ba12bd48846f5d1f6027b85, type: 2}
   m_SchemaSet:

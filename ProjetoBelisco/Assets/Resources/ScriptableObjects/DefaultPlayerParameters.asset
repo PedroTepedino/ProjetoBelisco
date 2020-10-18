@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b1f67f922b41a194c03178ec5b292a, type: 3}
   m_Name: DefaultPlayerParameters
   m_EditorClassIdentifier: 
+  _maxHealth: 10
   _movementSpeed: 5.5
   _dashVelocity: 20
   _dashMaxTimer: 0
-  _jumpVelocity: 20
+  _jumpVelocity: 15
   _maxJumpButtonHoldTime: 0.5
   _gravityFallMultiplayer: 2
   _velocityWhenTerminateJump: 1
   _glideFallVelocity: -1.5
-  _maxHealth: 10
   _grounderPosition: {x: 0, y: 0, z: 0}
   _grounderSizes: {x: 0.3, y: 0.1}
   _grounderLayerMask:
@@ -31,7 +31,7 @@ MonoBehaviour:
   _timeBetweenAttacks: 0.5
   _attackLayers:
     serializedVersion: 2
-    m_Bits: 1280
+    m_Bits: 132352
   _basicAttackDamage: 1
   _basicAttackCenter: {x: 0.8, y: 0.81}
   _basicAttackRadius: 1.25

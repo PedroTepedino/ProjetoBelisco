@@ -1,7 +1,7 @@
 ﻿#if UNITY_EDITOR
-using GameScripts.Environment;
 using UnityEditor;
 using UnityEngine;
+using RefatoramentoDoTioTepe;
 
 namespace GameScripts.Tools.Editor
 {

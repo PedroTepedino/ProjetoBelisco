@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pools:
-  - prefab: {fileID: 7023604729711152355, guid: b240bcd6ad6eafe448dfac92066ca628,
+  - prefab: {fileID: 5366140802195632289, guid: 50bda1634a0ac974eb4d3135fbe1013e,
       type: 3}
     tag: Player
     size: 1
@@ -67,5 +67,10 @@ MonoBehaviour:
   - prefab: {fileID: 7324518097937233665, guid: 1a8a11299c6624f429835d0bf56e1d82,
       type: 3}
     tag: GolemShot
+    size: 0
+    fixSize: 0
+  - prefab: {fileID: 1918368214204772663, guid: 3331af553c8a9834eb105be3246a6408,
+      type: 3}
+    tag: Arrow
     size: 0
     fixSize: 0

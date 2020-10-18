@@ -1,19 +1,24 @@
 ﻿using UnityEngine;
 
-namespace GameScripts.Player
+namespace RefatoramentoDoTioTepe
 {
     public class PlayParticle : MonoBehaviour
     {
         [SerializeField] private ParticleSystem _particleSystem;
 
-        private RefatoramentoDoTioTepe.Player _player;
+        private Player _player;
 
         private void Awake()
+        {
+            _player = this.GetComponentInParent<Player>();
+        }
+
+        private void OnEnable()
         {
             _player.OnTouchedGround += EmitParticle;
         }
 
-        private void OnDestroy()
+        private void OnDisable()
         {
             _player.OnTouchedGround -= EmitParticle;
         }
@@ -21,14 +26,6 @@ namespace GameScripts.Player
         public void EmitParticle()
         {
             _particleSystem.Play();
-        }
-
-        private void OnValidate()
-        {
-            if (_player == null)
-            {
-                _player = this.GetComponentInParent<RefatoramentoDoTioTepe.Player>();
-            }
         }
     }
 }

@@ -2,7 +2,7 @@
 using GameScripts.Player;
 using UnityEngine;
 
-namespace GameScripts.Camera
+namespace RefatoramentoDoTioTepe
 {
     public class CameraManager : MonoBehaviour
     {
@@ -11,12 +11,12 @@ namespace GameScripts.Camera
         private void Awake()
         {
             cam = this.GetComponent<CinemachineVirtualCamera>();
-            Life.OnPlayerSpawn += SetCameraToPlayer;
+            Player.OnPlayerSpawn += SetCameraToPlayer;
         }
 
         private void OnDestroy()
         {
-            Life.OnPlayerSpawn -= SetCameraToPlayer;
+            Player.OnPlayerSpawn -= SetCameraToPlayer;
         }
 
         private void SetCameraToPlayer(GameObject player)

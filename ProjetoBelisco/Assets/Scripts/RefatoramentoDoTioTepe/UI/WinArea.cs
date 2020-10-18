@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿using System;
+using UnityEditor;
 using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
@@ -10,7 +11,7 @@ namespace RefatoramentoDoTioTepe
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.GetComponent<GameScripts.Player.Life>())
+            if (other.GetComponent<Player>())
                 HasWon = true;
         }
     }
