@@ -69,3 +69,8 @@ MonoBehaviour:
     tag: GolemShot
     size: 0
     fixSize: 0
+  - prefab: {fileID: 1918368214204772663, guid: 3331af553c8a9834eb105be3246a6408,
+      type: 3}
+    tag: Arrow
+    size: 0
+    fixSize: 0

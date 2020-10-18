@@ -397,9 +397,13 @@
               <e p="SpriteRandomizer.cs" t="Include" />
             </e>
             <e p="Traps" t="Include">
+              <e p="Arrow.cs" t="Include" />
+              <e p="ArrowShooter.cs" t="Include" />
               <e p="BreakableWall.cs" t="Include" />
               <e p="FallingPlatform.cs" t="Include" />
+              <e p="HelperFunctions.cs" t="Include" />
               <e p="Spikes.cs" t="Include" />
+              <e p="Testezera.cs" t="Include" />
             </e>
             <e p="Ui" t="Include">
               <e p="AbstractButton.cs" t="Include" />
