@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
 {
@@ -7,14 +8,21 @@ namespace RefatoramentoDoTioTepe
     {
         private Rigidbody2D _rigidbody;
 
+        [SerializeField] private float _forceMultiplier = 0f;
+
         private void Awake()
         {
             _rigidbody = this.GetComponent<Rigidbody2D>();
         }
 
+        private void Update()
+        {
+            Debug.Log(Math.Round(_rigidbody.velocity.magnitude, 2));
+        }
+
         private void FixedUpdate()
         {
-            _rigidbody.AddForce(-Physics2D.gravity);
+            _rigidbody.AddForce(Vector2.right * _forceMultiplier);
         }
     }
 }
