@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 100794437}
   m_Layer: 12
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -338,6 +338,7 @@ MonoBehaviour:
   _hurtParticles: {fileID: 8746849657427413635}
   _playerParameters: {fileID: 11400000, guid: 3bf0776cec540054f881fe73e8470327, type: 2}
   _playerAnimatorController: {fileID: 100794437}
+  _gizmosToShow: 0
 --- !u!114 &472042481
 MonoBehaviour:
   m_ObjectHideFlags: 0
