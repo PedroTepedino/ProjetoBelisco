@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1450290001300290766}
   - component: {fileID: 909568603667792505}
   - component: {fileID: 7492005721760880703}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Charging
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4770,7 +4770,7 @@ GameObject:
   - component: {fileID: 1234867163615173091}
   - component: {fileID: 2447546345986132998}
   - component: {fileID: 6920534603300967969}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: GolemRangedProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5080,7 +5080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 6920534603300967969}
-  _velocity: 0
+  _velocity: 5
   _damage: 1
 --- !u!58 &2447546345986132998
 CircleCollider2D:
@@ -5113,7 +5113,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

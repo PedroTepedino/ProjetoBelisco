@@ -2,7 +2,7 @@
 
 namespace RefatoramentoDoTioTepe
 {
-    public class GolemSwordAnimation : MonoBehaviour
+    public class GolemSwordAnimation : MonoBehaviour, IAnimationController
     {
         private Animator animator;
         private IEnemyStateMachine controller;

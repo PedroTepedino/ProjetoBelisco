@@ -23,7 +23,7 @@ namespace RefatoramentoDoTioTepe
         public void OnEnter()
         {
             target = targeting.target;
-            timer = 0f;
+            timer = attack.attackSpeed;
         }
 
         public void OnExit()

@@ -2,7 +2,7 @@
 
 namespace RefatoramentoDoTioTepe
 {
-    public class GolemTripleAnimation : MonoBehaviour
+    public class GolemTripleAnimation : MonoBehaviour, IAnimationController
     {
         private Animator animator;
         private IEnemyStateMachine controller;

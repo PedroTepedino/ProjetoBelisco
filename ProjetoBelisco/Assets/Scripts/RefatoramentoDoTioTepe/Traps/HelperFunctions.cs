@@ -38,5 +38,11 @@ namespace RefatoramentoDoTioTepe
                     return Quaternion.identity;
             }
         }
+
+        public static Vector2 ReflectXAxis(this Vector2 vector)
+        {
+            vector.x = -vector.x;
+            return vector;
+        }
     }
 }

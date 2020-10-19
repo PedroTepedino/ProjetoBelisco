@@ -2,6 +2,7 @@
 using GameScripts.PoolingSystem;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace RefatoramentoDoTioTepe
 {
@@ -38,6 +39,8 @@ namespace RefatoramentoDoTioTepe
         private bool _lastFrameJumpState = false;
         private bool _justTouchedGround = false;
         private bool _attacking = false;
+
+        public bool CanMove = true;
 
         public event Action OnJump;
         public event Action OnTouchedGround;
@@ -95,15 +98,14 @@ namespace RefatoramentoDoTioTepe
         {
             AttackerTimer.SubtractTimer();
             
-            if (!_attacking)
-            {
+            if (!_attacking && CanMove)
+            { 
                 _mover.Tick();
 
                 if (!(_mover is Dasher))
                 {
-                    _glider.Tick();
-                    
                     _jumper.Tick();
+                    _wallJumper.Tick();
                 }
                 
                 if (Dasher.CheckDashInput())
@@ -287,6 +289,12 @@ namespace RefatoramentoDoTioTepe
                             Gizmos.DrawWireSphere(position + (Vector3) _playerParameters.BasicDownAttackCenter,
                                 _playerParameters.BasicDownAttackRadius);
                             break;
+                        case GizmosType.WallChecker:
+                            Gizmos.color = Color.green;
+                            Gizmos.DrawWireCube(position + (Vector3)_playerParameters.WallJumpBoxOffsetRight, (Vector3)_playerParameters.WallJumpBoxSizes);
+                            Gizmos.DrawWireCube(position + (Vector3)_playerParameters.WallJumpBoxOffsetLeft, (Vector3)_playerParameters.WallJumpBoxSizes);
+                            
+                            break;
                     }  
                 }
             }
@@ -298,7 +306,10 @@ namespace RefatoramentoDoTioTepe
             BasicAttack = 1 << 2,
             BasicAttackUp = 1 << 3,
             BasicAttackDown = 1 << 4,
+            WallChecker = 1 << 5,
         }
 #endif //UNITY_EDITOR
     }
+    
+    
 }

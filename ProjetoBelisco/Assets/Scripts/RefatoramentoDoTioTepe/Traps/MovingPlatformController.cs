@@ -40,7 +40,9 @@ namespace RefatoramentoDoTioTepe
             {
                 var aux = this.GetComponentInChildren<MovingPlatform>();
                 if (aux != null)
+                {
                     _actualPlatform = aux.transform;
+                }
                 else
                 {
                     var obj = new GameObject("ActualMovingPlatform");

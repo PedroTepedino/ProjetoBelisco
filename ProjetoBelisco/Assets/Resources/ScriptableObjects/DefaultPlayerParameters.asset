@@ -28,6 +28,16 @@ MonoBehaviour:
     m_Bits: 256
   _nearGroundGrounderPosition: {x: 0, y: -0.2, z: 0}
   _nearGroundGrounderSizes: {x: 0.3, y: 0.4}
+  _wallJumpBoxOffsetRight: {x: 0.22, y: 1.2}
+  _wallJumpBoxOffsetLeft: {x: -0.27, y: 1.2}
+  _wallJumpBoxSizes: {x: 0.12, y: 0.23}
+  _wallJumpLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  _wallJumpBoxAngle: 0
+  _wallPressFallingVelocity: -1
+  _wallJumpForce: {x: -10, y: 12}
+  _wallJumpMoverTimeOff: 0.2
   _timeBetweenAttacks: 0.5
   _attackLayers:
     serializedVersion: 2

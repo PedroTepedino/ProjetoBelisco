@@ -14,5 +14,7 @@ namespace RefatoramentoDoTioTepe
         bool StrongAttack { get; }
         bool RangedAttack { get; }
         bool Dash { get; }
+        bool MovingRight { get; }
+        bool MovingLeft { get; }
     }
 }

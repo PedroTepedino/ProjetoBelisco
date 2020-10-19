@@ -26,6 +26,16 @@ namespace RefatoramentoDoTioTepe
         [BoxGroup("Grounder/LayerMask")] [SerializeField] [EnumToggleButtons] private LayerMask _grounderLayerMask;
         [BoxGroup("Grounder/NearGroundPreview")] [SerializeField] private Vector3 _nearGroundGrounderPosition;
         [BoxGroup("Grounder/NearGroundPreview")] [SerializeField] private Vector2 _nearGroundGrounderSizes;
+        
+        [BoxGroup("WallJump")] [SerializeField] private Vector2 _wallJumpBoxOffsetRight;
+        [BoxGroup("WallJump")] [SerializeField] private Vector2 _wallJumpBoxOffsetLeft;
+        [BoxGroup("WallJump")] [SerializeField] private Vector2 _wallJumpBoxSizes;
+        [BoxGroup("WallJump")] [SerializeField] private LayerMask _wallJumpLayers;
+        [BoxGroup("WallJump")] [SerializeField] private float _wallJumpBoxAngle = 0;
+        [BoxGroup("WallJump")] [SerializeField] private float _wallPressFallingVelocity;
+        [BoxGroup("WallJump")] [SerializeField] private Vector2 _wallJumpForce;
+        [BoxGroup("WallJump")] [SerializeField] private float _wallJumpMoverTimeOff = 0.1f;
+
 
         [BoxGroup("Attack")] [SerializeField] private float _timeBetweenAttacks = 0.5f;
         [BoxGroup("Attack")] [SerializeField] private LayerMask _attackLayers;
@@ -41,6 +51,7 @@ namespace RefatoramentoDoTioTepe
         [BoxGroup("Attack/StrongAttack")]
         [BoxGroup("Attack/StrongAttack/Ground")] [SerializeField] private Vector2 _strongAttackCenter;
         [BoxGroup("Attack/StrongAttack/Ground")] [SerializeField] private float _strongAttackRadius;
+        
 
         public Vector3 GrounderPosition => _grounderPosition;
         public float MovementSpeed => _movementSpeed;
@@ -80,5 +91,21 @@ namespace RefatoramentoDoTioTepe
         
         public AttackParameter StrongAttackGroundRight => new AttackParameter(_strongAttackCenter, _strongAttackRadius);
         public AttackParameter StrongAttackGroundLeft => new AttackParameter(GetLeftAttackCenter(_strongAttackCenter), _strongAttackRadius);
+
+        public Vector2 WallJumpBoxOffsetRight => _wallJumpBoxOffsetRight;
+        public Vector2 WallJumpBoxOffsetLeft => _wallJumpBoxOffsetLeft;
+        public Vector2 WallJumpBoxSizes => _wallJumpBoxSizes;
+
+        public LayerMask WallJumpLayers => _wallJumpLayers;
+
+        public float WallJumpBoxAngle => _wallJumpBoxAngle;
+        public float WallPressFallingVelocity => _wallPressFallingVelocity;
+        public Vector2 WallJumpForce => _wallJumpForce;
+
+        public float WallJumpMoverTimeOff
+        {
+            get => _wallJumpMoverTimeOff;
+            set => _wallJumpMoverTimeOff = value;
+        }
     }
 }

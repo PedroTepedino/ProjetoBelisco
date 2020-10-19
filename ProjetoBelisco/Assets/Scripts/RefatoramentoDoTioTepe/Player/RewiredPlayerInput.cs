@@ -20,6 +20,8 @@ namespace RefatoramentoDoTioTepe
         public bool StrongAttack => _rewiredPlayer.GetButtonDown("StrongAttack");
         public bool RangedAttack => _rewiredPlayer.GetButtonDown("RangedAttack");
         public bool Dash => _rewiredPlayer.GetButtonDown("Dash");
+        public bool MovingRight => Horizontal >= 0.1f;
+        public bool MovingLeft => Horizontal <= -0.1f;
 
         private void Awake()
         {

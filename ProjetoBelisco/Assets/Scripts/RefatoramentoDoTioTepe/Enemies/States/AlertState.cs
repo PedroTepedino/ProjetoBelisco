@@ -20,6 +20,7 @@ namespace RefatoramentoDoTioTepe
 
         public void OnEnter()
         {
+            timer = 0f;
             alertAnimationTime = ownerController.EnemyParameters.AlertAnimationTime;
         }
 
@@ -31,7 +32,6 @@ namespace RefatoramentoDoTioTepe
         public void Tick()
         {
             timer += Time.deltaTime;
-        
         }
 
         public bool TimeEnded()

@@ -207,7 +207,7 @@ namespace RefatoramentoDoTioTepe
 
         private void RangedAttack()
         {
-            Pooler.Instance.SpawnFromPool(_rangeAttackProjectileTag, (Vector2)(this.transform.position) + _rangeAttackCenter, this.transform.rotation);
+            Pooler.Instance.SpawnFromPool(_rangeAttackProjectileTag, (Vector2)(this.transform.position) + _rangeAttackCenter, this.transform.rotation * Quaternion.Euler(0, 0, -90f));
         }
 
         private IEnumerator DashAttack()

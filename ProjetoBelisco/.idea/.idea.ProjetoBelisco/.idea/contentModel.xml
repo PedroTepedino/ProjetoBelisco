@@ -313,6 +313,7 @@
             <e p="Enemies" t="Include">
               <e p="AnimationController.cs" t="Include" />
               <e p="Attack.cs" t="Include" />
+              <e p="EnemyAttackEventEmitter.cs" t="Include" />
               <e p="EnemyParameters.cs" t="Include" />
               <e p="GolemRanged" t="Include">
                 <e p="GolemRanged.cs" t="Include" />
@@ -374,6 +375,7 @@
               <e p="Mover.cs" t="Include" />
               <e p="Player.cs" t="Include" />
               <e p="PlayerAnimatorController.cs" t="Include" />
+              <e p="PlayerKeysManager.cs" t="Include" />
               <e p="PlayerLocker.cs" t="Include" />
               <e p="PlayerParameters.cs" t="Include" />
               <e p="RangedAttacker.cs" t="Include" />
@@ -403,6 +405,8 @@
               <e p="BreakableWall.cs" t="Include" />
               <e p="FallingPlatform.cs" t="Include" />
               <e p="HelperFunctions.cs" t="Include" />
+              <e p="Key.cs" t="Include" />
+              <e p="KeyDoor.cs" t="Include" />
               <e p="MovingPlatform.cs" t="Include" />
               <e p="MovingPlatformController.cs" t="Include" />
               <e p="Spikes.cs" t="Include" />
