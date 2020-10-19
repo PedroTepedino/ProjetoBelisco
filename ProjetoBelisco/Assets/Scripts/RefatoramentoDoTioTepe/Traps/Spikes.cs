@@ -1,4 +1,5 @@
-﻿using Sirenix.OdinInspector;
+﻿using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
@@ -23,6 +24,4 @@ namespace RefatoramentoDoTioTepe
         private static bool IsValuePositive(int value) => value > 0;
     #endif //UNITY_EDITOR
     }
-    
-    
 }
