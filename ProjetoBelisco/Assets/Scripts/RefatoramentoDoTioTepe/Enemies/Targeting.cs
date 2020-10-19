@@ -51,7 +51,7 @@ namespace RefatoramentoDoTioTepe
             // }
             if (hasTarget)
             {
-                attack.isInRange = ((Vector2.Distance(this.transform.position, target.position) > attack.attackRange) ? false : true);
+                attack.isInRange = !(Vector2.Distance(this.transform.position, target.position) > attack.attackRange);
             }
         }
 

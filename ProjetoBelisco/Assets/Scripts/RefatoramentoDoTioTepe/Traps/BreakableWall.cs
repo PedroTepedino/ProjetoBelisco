@@ -21,7 +21,7 @@ namespace RefatoramentoDoTioTepe
         {
             _currentHitsCount = 0;
             
-            _disappearAnimation = this.transform.DOScale(0f, 0.2f).From(new Vector3(1f, 3f, 1f)).SetEase(Ease.InBack);
+            _disappearAnimation = this.transform.DOScale(0f, 0.2f).From(new Vector3(1f, 1f, 1f)).SetEase(Ease.InBack);
             _disappearAnimation.Rewind();
             _disappearAnimation.onComplete += () => this.gameObject.SetActive(false);
             

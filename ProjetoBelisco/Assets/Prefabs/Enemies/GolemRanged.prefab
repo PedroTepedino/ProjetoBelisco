@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 640654556326733726}
   - component: {fileID: 478754372547255578}
   - component: {fileID: 478754372547255577}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GolemRanged
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,8 +54,8 @@ MonoBehaviour:
   collisionLayerMask:
     serializedVersion: 2
     m_Bits: 0
-  attackRange: 1
-  attackSpeed: 1
+  attackRange: 5
+  attackSpeed: 1.5
   meleeAttack: 0
   explosionAttack: 0
   rangedAttack: 1
@@ -70,7 +70,7 @@ MonoBehaviour:
   explosionAttackRadius: 1
   explosionAttackDamage: 1
   rangedAtttackChance: 1
-  _rangeAttackCenter: {x: 0.9, y: 0.35}
+  _rangeAttackCenter: {x: 0.9, y: 0}
   rangeAttackDamage: 1
   _rangeAttackProjectileTag: EnemyProjectile
   dashAtttackChance: 0
@@ -195,7 +195,8 @@ GameObject:
   - component: {fileID: 6530299738562293068}
   - component: {fileID: 1482975113495573674}
   - component: {fileID: 2883275828484231535}
-  m_Layer: 0
+  - component: {fileID: 661738864170837302}
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,3 +287,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &661738864170837302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8091859748093661410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf72265d113798443b9c5b9a19b1d7d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: {fileID: 2187692884673618219}

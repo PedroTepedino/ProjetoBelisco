@@ -52,6 +52,7 @@ namespace RefatoramentoDoTioTepe
                     if (!HasWallBetween(collider.transform.position))
                     {
                         hittable.Hit(_attackDamage);
+                        Debug.Log($"Hit {collider.gameObject}", collider.transform);
                     }
                     else if (hittable is Switch)
                     {
