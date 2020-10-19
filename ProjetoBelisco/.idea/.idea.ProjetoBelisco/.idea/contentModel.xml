@@ -313,6 +313,7 @@
             <e p="Enemies" t="Include">
               <e p="AnimationController.cs" t="Include" />
               <e p="Attack.cs" t="Include" />
+              <e p="EnemyAttackEventEmitter.cs" t="Include" />
               <e p="EnemyParameters.cs" t="Include" />
               <e p="GolemRanged" t="Include">
                 <e p="GolemRanged.cs" t="Include" />

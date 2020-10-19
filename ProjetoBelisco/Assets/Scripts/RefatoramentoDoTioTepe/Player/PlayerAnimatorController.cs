@@ -81,6 +81,11 @@ namespace RefatoramentoDoTioTepe
             SetBool("Gliding", glide);
         }
 
+        public void HoldWall(bool holdWall)
+        {
+            SetBool("TouchingWall", holdWall);
+        }
+
         private void LookDirection(bool lookRight)
         {
             _spriteRendererRight.enabled = lookRight;
