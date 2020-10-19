@@ -74,3 +74,8 @@ MonoBehaviour:
     tag: Arrow
     size: 0
     fixSize: 0
+  - prefab: {fileID: 6201884887330514931, guid: 35230f69c3c607e4599f6e48002c2565,
+      type: 3}
+    tag: EnemyProjectile
+    size: 5
+    fixSize: 0
