@@ -70,9 +70,9 @@ MonoBehaviour:
   explosionAttackRadius: 1
   explosionAttackDamage: 1
   rangedAtttackChance: 1
-  _rangeAttackCenter: {x: 0, y: 0}
+  _rangeAttackCenter: {x: 0.9, y: 0.35}
   rangeAttackDamage: 1
-  _rangeAttackProjectileTag: 
+  _rangeAttackProjectileTag: EnemyProjectile
   dashAtttackChance: 0
   _dashAttackCenter: {x: 0, y: 0}
   dashAttackRadius: 1

@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
 {
-    [RequireComponent(typeof(Collider2D))]
-    [RequireComponent(typeof(Rigidbody2D))]
+    // [RequireComponent(typeof(Collider2D))]
+    // [RequireComponent(typeof(Rigidbody2D))]
     public class Arrow : MonoBehaviour, IPooledObject
     {
         [SerializeField] private Rigidbody2D _rigidbody;
@@ -21,13 +21,12 @@ namespace RefatoramentoDoTioTepe
             {
                 hittable.Hit(_damage);
             }
-            
+
             _rigidbody.velocity = Vector2.zero;
-            
+
             _animation.SmoothRewind();
         }
-       
-        
+
         public void OnObjectSpawn()
         {
             _animation = this.transform.DOScale(1f, 0.2f).From(0f).SetAutoKill(false).SetEase(Ease.InOutBack);
@@ -38,7 +37,7 @@ namespace RefatoramentoDoTioTepe
 
         private void OnValidate()
         {
-            this.GetComponent<Collider2D>().isTrigger = true;
+            //this.GetComponent<Collider2D>().isTrigger = true;
             if (_rigidbody == null)
             {
                 _rigidbody = this.GetComponent<Rigidbody2D>();

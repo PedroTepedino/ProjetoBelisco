@@ -11,45 +11,44 @@ namespace RefatoramentoDoTioTepe
 {
     public class Attack : MonoBehaviour
     {
-        [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask collisionLayerMask;
-        [FoldoutGroup("Parameters")] [SerializeField] public float attackRange = 1f;
-        [FoldoutGroup("Parameters")] [SerializeField] public float attackSpeed = 1f;
+        [FoldoutGroup("Parameters")][SerializeField][EnumToggleButtons] private LayerMask collisionLayerMask;
+        [FoldoutGroup("Parameters")][SerializeField] public float attackRange = 1f;
+        [FoldoutGroup("Parameters")][SerializeField] public float attackSpeed = 1f;
 
-        [FoldoutGroup("Attacks Parameters")] [SerializeField] private bool meleeAttack = false;
-        [FoldoutGroup("Attacks Parameters")] [SerializeField] private bool explosionAttack = false;
-        [FoldoutGroup("Attacks Parameters")] [SerializeField] private bool rangedAttack = false;
-        [FoldoutGroup("Attacks Parameters")] [SerializeField] private bool dashAttack = false;
-        [FoldoutGroup("Attacks Parameters")] [SerializeField] private bool shootAndExplosionAttack = false;
+        [FoldoutGroup("Attacks Parameters")][SerializeField] private bool meleeAttack = false;
+        [FoldoutGroup("Attacks Parameters")][SerializeField] private bool explosionAttack = false;
+        [FoldoutGroup("Attacks Parameters")][SerializeField] private bool rangedAttack = false;
+        [FoldoutGroup("Attacks Parameters")][SerializeField] private bool dashAttack = false;
+        [FoldoutGroup("Attacks Parameters")][SerializeField] private bool shootAndExplosionAttack = false;
 
-        [FoldoutGroup("Attacks Parameters/Melee Attack Parameters")] [SerializeField] [Range(1, 100)] private int meleeAtttackChance = 0;
-        [FoldoutGroup("Attacks Parameters/Melee Attack Parameters")] [SerializeField] private Vector2 _meleeAttackCenter;
-        [FoldoutGroup("Attacks Parameters/Melee Attack Parameters")] [SerializeField] private float meleeAttackRadius = 1f;
-        [FoldoutGroup("Attacks Parameters/Melee Attack Parameters")] [SerializeField] private int meleeAttackDamage = 1;
-    
+        [FoldoutGroup("Attacks Parameters/Melee Attack Parameters")][SerializeField][Range(1, 100)] private int meleeAtttackChance = 0;
+        [FoldoutGroup("Attacks Parameters/Melee Attack Parameters")][SerializeField] private Vector2 _meleeAttackCenter;
+        [FoldoutGroup("Attacks Parameters/Melee Attack Parameters")][SerializeField] private float meleeAttackRadius = 1f;
+        [FoldoutGroup("Attacks Parameters/Melee Attack Parameters")][SerializeField] private int meleeAttackDamage = 1;
 
-        [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")] [SerializeField] [Range(1, 100)] private int explosionAtttackChance = 0;
-        [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")] [SerializeField] private Vector2 _explosionAttackCenter;
-        [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")] [SerializeField] private float explosionAttackRadius = 1f;
-        [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")] [SerializeField] private int explosionAttackDamage = 1;
+        [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")][SerializeField][Range(1, 100)] private int explosionAtttackChance = 0;
+        [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")][SerializeField] private Vector2 _explosionAttackCenter;
+        [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")][SerializeField] private float explosionAttackRadius = 1f;
+        [FoldoutGroup("Attacks Parameters/Explosion Attack Parameters")][SerializeField] private int explosionAttackDamage = 1;
 
-        [FoldoutGroup("Attacks Parameters/Range Attack Parameters")] [SerializeField] [Range(1, 100)] private int rangedAtttackChance = 0;
-        [FoldoutGroup("Attacks Parameters/Range Attack Parameters")] [SerializeField] private Vector2 _rangeAttackCenter;
-        [FoldoutGroup("Attacks Parameters/Range Attack Parameters")] [SerializeField] private int rangeAttackDamage = 1;
-        [FoldoutGroup("Attacks Parameters/Range Attack Parameters")] [SerializeField] private string _rangeAttackProjectileTag;
+        [FoldoutGroup("Attacks Parameters/Range Attack Parameters")][SerializeField][Range(1, 100)] private int rangedAtttackChance = 0;
+        [FoldoutGroup("Attacks Parameters/Range Attack Parameters")][SerializeField] private Vector2 _rangeAttackCenter;
+        [FoldoutGroup("Attacks Parameters/Range Attack Parameters")][SerializeField] private int rangeAttackDamage = 1;
+        [FoldoutGroup("Attacks Parameters/Range Attack Parameters")][SerializeField] private string _rangeAttackProjectileTag;
 
-        [FoldoutGroup("Attacks Parameters/Dash Attack Parameters")] [SerializeField] [Range(1, 100)] private int dashAtttackChance = 0;
-        [FoldoutGroup("Attacks Parameters/Dash Attack Parameters")] [SerializeField] private Vector2 _dashAttackCenter;
-        [FoldoutGroup("Attacks Parameters/Dash Attack Parameters")] [SerializeField] private float dashAttackRadius = 1f;
-        [FoldoutGroup("Attacks Parameters/Dash Attack Parameters")] [SerializeField] private int dashAttackDamage = 1;
-        [FoldoutGroup("Attacks Parameters/Dash Attack Parameters")] [SerializeField] private float dashSpeed;
+        [FoldoutGroup("Attacks Parameters/Dash Attack Parameters")][SerializeField][Range(1, 100)] private int dashAtttackChance = 0;
+        [FoldoutGroup("Attacks Parameters/Dash Attack Parameters")][SerializeField] private Vector2 _dashAttackCenter;
+        [FoldoutGroup("Attacks Parameters/Dash Attack Parameters")][SerializeField] private float dashAttackRadius = 1f;
+        [FoldoutGroup("Attacks Parameters/Dash Attack Parameters")][SerializeField] private int dashAttackDamage = 1;
+        [FoldoutGroup("Attacks Parameters/Dash Attack Parameters")][SerializeField] private float dashSpeed;
 
-        [FoldoutGroup("Attacks Parameters/Shoot and Explosion Attack Parameters")] [SerializeField] [Range(1, 100)] private int shootAndExplosionAtttackChance = 0;
-        [FoldoutGroup("Attacks Parameters/Shoot and Explosion Attack Parameters")] [SerializeField] private Vector2 shootAndExplosionAttackExplosionCenter;
-        [FoldoutGroup("Attacks Parameters/Shoot and Explosion Attack Parameters")] [SerializeField] private float shootAndExplosionAttackExplosionRadius = 1f;
-        [FoldoutGroup("Attacks Parameters/Shoot and Explosion Attack Parameters")] [SerializeField] private int shootAndExplosionAttackExplosionDamage = 1;
-        [FoldoutGroup("Attacks Parameters/Shoot and Explosion Attack Parameters")] [SerializeField] private Vector2 shootAndExplosionAttackRangedCenter;
-        [FoldoutGroup("Attacks Parameters/Shoot and Explosion Attack Parameters")] [SerializeField] private int shootAndExplosionAttackRangedDamage = 1;
-        [FoldoutGroup("Attacks Parameters/Shoot and Explosion Attack Parameters")] [SerializeField] private string shootAndExplosionAttackProjectileTag;
+        [FoldoutGroup("Attacks Parameters/Shoot and Explosion Attack Parameters")][SerializeField][Range(1, 100)] private int shootAndExplosionAtttackChance = 0;
+        [FoldoutGroup("Attacks Parameters/Shoot and Explosion Attack Parameters")][SerializeField] private Vector2 shootAndExplosionAttackExplosionCenter;
+        [FoldoutGroup("Attacks Parameters/Shoot and Explosion Attack Parameters")][SerializeField] private float shootAndExplosionAttackExplosionRadius = 1f;
+        [FoldoutGroup("Attacks Parameters/Shoot and Explosion Attack Parameters")][SerializeField] private int shootAndExplosionAttackExplosionDamage = 1;
+        [FoldoutGroup("Attacks Parameters/Shoot and Explosion Attack Parameters")][SerializeField] private Vector2 shootAndExplosionAttackRangedCenter;
+        [FoldoutGroup("Attacks Parameters/Shoot and Explosion Attack Parameters")][SerializeField] private int shootAndExplosionAttackRangedDamage = 1;
+        [FoldoutGroup("Attacks Parameters/Shoot and Explosion Attack Parameters")][SerializeField] private string shootAndExplosionAttackProjectileTag;
 
         private List<int> attacksChances = new List<int>();
 
@@ -75,35 +74,35 @@ namespace RefatoramentoDoTioTepe
         {
             if (meleeAttack)
             {
-                for (int i = 0; i < meleeAtttackChance ; i++)
+                for (int i = 0; i < meleeAtttackChance; i++)
                 {
                     attacksChances.Add(0);
                 }
             }
             if (explosionAttack)
             {
-                for (int i = 0; i < explosionAtttackChance ; i++)
+                for (int i = 0; i < explosionAtttackChance; i++)
                 {
                     attacksChances.Add(1);
                 }
             }
             if (rangedAttack)
             {
-                for (int i = 0; i < rangedAtttackChance ; i++)
+                for (int i = 0; i < rangedAtttackChance; i++)
                 {
                     attacksChances.Add(2);
                 }
             }
             if (dashAttack)
             {
-                for (int i = 0; i < dashAtttackChance ; i++)
+                for (int i = 0; i < dashAtttackChance; i++)
                 {
                     attacksChances.Add(3);
                 }
             }
             if (shootAndExplosionAttack)
             {
-                for (int i = 0; i < shootAndExplosionAtttackChance ; i++)
+                for (int i = 0; i < shootAndExplosionAtttackChance; i++)
                 {
                     attacksChances.Add(4);
                 }
@@ -151,7 +150,7 @@ namespace RefatoramentoDoTioTepe
             }
         }
 
-        private void ListenAttackFinished(int index)
+        public void ListenAttackFinished(int index)
         {
             if (index == 0)
             {
@@ -167,7 +166,7 @@ namespace RefatoramentoDoTioTepe
             }
             else if (index == 3)
             {
-               StartCoroutine(DashAttack());
+                StartCoroutine(DashAttack());
             }
             else if (index == 4)
             {
@@ -186,7 +185,7 @@ namespace RefatoramentoDoTioTepe
 
         private void MeleeAttack()
         {
-            Collider2D[] rayHits = Physics2D.OverlapCircleAll((Vector2)(this.transform.position) + (_controller.movingRight ? _meleeAttackCenter : -_meleeAttackCenter), meleeAttackRadius, collisionLayerMask);
+            Collider2D[ ] rayHits = Physics2D.OverlapCircleAll((Vector2)(this.transform.position) + (_controller.movingRight ? _meleeAttackCenter : -_meleeAttackCenter), meleeAttackRadius, collisionLayerMask);
             Collider2D hit = CheckHit(rayHits);
             if (hit != null)
             {
@@ -197,7 +196,7 @@ namespace RefatoramentoDoTioTepe
 
         private void ExplosionAttack()
         {
-            Collider2D[] rayHits = Physics2D.OverlapCircleAll((Vector2)this.transform.position + (_controller.movingRight? _explosionAttackCenter:-_explosionAttackCenter), explosionAttackRadius, collisionLayerMask);
+            Collider2D[ ] rayHits = Physics2D.OverlapCircleAll((Vector2)this.transform.position + (_controller.movingRight? _explosionAttackCenter: -_explosionAttackCenter), explosionAttackRadius, collisionLayerMask);
             Collider2D hit = CheckHit(rayHits);
             if (hit != null)
             {
@@ -216,14 +215,14 @@ namespace RefatoramentoDoTioTepe
             Collider2D hit = null;
             while (grounder.isGrounded && !wallCheck.wallAhead && hit == null)
             {
-                Collider2D[] rayHits = Physics2D.OverlapCircleAll((Vector2)this.transform.position + (_controller.movingRight ? _dashAttackCenter : -_dashAttackCenter), dashAttackRadius, collisionLayerMask);
+                Collider2D[ ] rayHits = Physics2D.OverlapCircleAll((Vector2)this.transform.position + (_controller.movingRight ? _dashAttackCenter : -_dashAttackCenter), dashAttackRadius, collisionLayerMask);
                 hit = CheckHit(rayHits);
                 movement.Set(_controller.movingRight ? dashSpeed : -dashSpeed, ownerRigidbody.velocity.y);
                 ownerRigidbody.velocity = movement;
                 if (hit != null)
                 {
                     Debug.Log("dash");
-                    
+
                     Damage(dashAttackDamage, hit);
                 }
                 yield return null;
@@ -234,7 +233,7 @@ namespace RefatoramentoDoTioTepe
         {
             Pooler.Instance.SpawnFromPool(shootAndExplosionAttackProjectileTag, (Vector2)(this.transform.position) + shootAndExplosionAttackRangedCenter, this.transform.rotation);
 
-            Collider2D[] rayHits = Physics2D.OverlapCircleAll((Vector2)this.transform.position + (_controller.movingRight ? shootAndExplosionAttackExplosionCenter : -shootAndExplosionAttackExplosionCenter), shootAndExplosionAttackExplosionRadius, collisionLayerMask);
+            Collider2D[ ] rayHits = Physics2D.OverlapCircleAll((Vector2)this.transform.position + (_controller.movingRight ? shootAndExplosionAttackExplosionCenter : -shootAndExplosionAttackExplosionCenter), shootAndExplosionAttackExplosionRadius, collisionLayerMask);
             Collider2D hit = CheckHit(rayHits);
             if (hit != null)
             {
@@ -243,7 +242,7 @@ namespace RefatoramentoDoTioTepe
             }
         }
 
-        private Collider2D CheckHit(Collider2D[] hits)
+        private Collider2D CheckHit(Collider2D[ ] hits)
         {
             foreach (Collider2D hit in hits)
             {
@@ -268,7 +267,7 @@ namespace RefatoramentoDoTioTepe
             Gizmos.color = Color.blue;
             if (meleeAttack)
             {
-                Gizmos.DrawWireSphere(this.transform.position+new Vector3(_meleeAttackCenter.x, _meleeAttackCenter.y, 0), meleeAttackRadius);
+                Gizmos.DrawWireSphere(this.transform.position + new Vector3(_meleeAttackCenter.x, _meleeAttackCenter.y, 0), meleeAttackRadius);
             }
             if (explosionAttack)
             {
@@ -283,17 +282,17 @@ namespace RefatoramentoDoTioTepe
 
             if (dashAttack)
             {
-                Gizmos.DrawWireSphere(this.transform.position+new Vector3(_dashAttackCenter.x, _dashAttackCenter.y, 0), dashAttackRadius);
+                Gizmos.DrawWireSphere(this.transform.position + new Vector3(_dashAttackCenter.x, _dashAttackCenter.y, 0), dashAttackRadius);
             }
 
-             if (shootAndExplosionAttack)
+            if (shootAndExplosionAttack)
             {
                 Gizmos.DrawWireSphere((Vector2)this.transform.position + shootAndExplosionAttackExplosionCenter, shootAndExplosionAttackExplosionRadius);
 
                 Gizmos.DrawLine((Vector2)this.transform.position + shootAndExplosionAttackRangedCenter - new Vector2(0.2f, 0.2f), (Vector2)this.transform.position + shootAndExplosionAttackRangedCenter + new Vector2(0.2f, 0.2f));
                 Gizmos.DrawLine((Vector2)this.transform.position + shootAndExplosionAttackRangedCenter - new Vector2(-0.2f, 0.2f), (Vector2)this.transform.position + shootAndExplosionAttackRangedCenter + new Vector2(-0.2f, 0.2f));
             }
-        
+
             Gizmos.color = Color.green;
             Gizmos.DrawLine(this.transform.position - new Vector3(attackRange, 0, 0), this.transform.position + new Vector3(attackRange, 0, 0));
         }
