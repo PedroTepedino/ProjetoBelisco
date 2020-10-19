@@ -1,4 +1,6 @@
-﻿using Sirenix.OdinInspector;
+﻿using System;
+using Rewired;
+using Sirenix.OdinInspector;
 using UnityEditor.U2D;
 using UnityEngine;
 
