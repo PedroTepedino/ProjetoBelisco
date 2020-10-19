@@ -402,17 +402,17 @@ MonoBehaviour:
     - tagName: eyeShineAntecipation
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: rightBladeAntecipation
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: leftBladeAntecipation
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: iddleFullBody
       useDefaultSampleRate: 1
@@ -422,27 +422,27 @@ MonoBehaviour:
     - tagName: AntecipationFullBody
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: damageFullBody
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: damageEye
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: damageRightBlade
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: damageLeftBlade
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: iddleEye
       useDefaultSampleRate: 1
@@ -462,17 +462,17 @@ MonoBehaviour:
     - tagName: deathFullBody
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: deathPiecesSeparated
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: Explosion
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
   - spritesheetPath: Assets/Arts/Sprites/golemRanged.png
     animationInfo: Assets/Arts/Sprites/golemRanged.json

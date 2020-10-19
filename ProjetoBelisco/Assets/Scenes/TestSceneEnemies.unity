@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2289,6 +2289,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1279599081
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4988829711102835443, guid: 35230f69c3c607e4599f6e48002c2565,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.064
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988829711102835443, guid: 35230f69c3c607e4599f6e48002c2565,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.565
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988829711102835443, guid: 35230f69c3c607e4599f6e48002c2565,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.8213696
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988829711102835443, guid: 35230f69c3c607e4599f6e48002c2565,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988829711102835443, guid: 35230f69c3c607e4599f6e48002c2565,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988829711102835443, guid: 35230f69c3c607e4599f6e48002c2565,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988829711102835443, guid: 35230f69c3c607e4599f6e48002c2565,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988829711102835443, guid: 35230f69c3c607e4599f6e48002c2565,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988829711102835443, guid: 35230f69c3c607e4599f6e48002c2565,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988829711102835443, guid: 35230f69c3c607e4599f6e48002c2565,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988829711102835443, guid: 35230f69c3c607e4599f6e48002c2565,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201884887330514931, guid: 35230f69c3c607e4599f6e48002c2565,
+        type: 3}
+      propertyPath: m_Name
+      value: GolemRangedProjectile
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 35230f69c3c607e4599f6e48002c2565, type: 3}
 --- !u!1 &1327213677
 GameObject:
   m_ObjectHideFlags: 0
@@ -3787,7 +3856,7 @@ PrefabInstance:
     - target: {fileID: 5311663050116025348, guid: 1a19528a79e24a647aa30f6ac323a770,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.46000096
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 5311663050116025348, guid: 1a19528a79e24a647aa30f6ac323a770,
         type: 3}
