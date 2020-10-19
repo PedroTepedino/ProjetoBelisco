@@ -1,4 +1,5 @@
 ﻿using System;
+using DG.Tweening;
 using GameScripts.PoolingSystem;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -301,4 +302,6 @@ namespace RefatoramentoDoTioTepe
         }
 #endif //UNITY_EDITOR
     }
+
+   
 }
