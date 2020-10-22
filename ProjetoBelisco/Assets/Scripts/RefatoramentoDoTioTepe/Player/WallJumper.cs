@@ -58,8 +58,9 @@ namespace RefatoramentoDoTioTepe
             
             if (IsTouchingWallRight && RewiredPlayerInput.Instance.MovingRight
                 || IsTouchingWallLeft && RewiredPlayerInput.Instance.MovingLeft)
-            { 
-                _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _fallingVelocity);
+            {
+                var velocity = _rigidbody.velocity;
+                _rigidbody.velocity = new Vector2(velocity.x, Mathf.Clamp(velocity.y, -_fallingVelocity, float.MaxValue));
                 HoldingWall = true;
             }
             else

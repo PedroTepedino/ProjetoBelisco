@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using GameScripts.Collectables;
 using GameScripts.PoolingSystem;
 using Sirenix.OdinInspector;
+using TMPro;
+using UnityEditor.U2D;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -65,7 +69,7 @@ namespace RefatoramentoDoTioTepe
             
             _grounder = new Grounder(this);
             _lifeSystem = new LifeSystem(this);
-            _mover = new Mover(this);
+            _mover = new NewMover(this);
             _jumper = new Jumper(this);
             _playerLocker = new PlayerLocker(this);
             _glider = new Glider(this);
@@ -80,7 +84,7 @@ namespace RefatoramentoDoTioTepe
         private void OnEnable()
         {
             _grounder = new Grounder(this);
-            _mover = new Mover(this);
+            _mover = new NewMover(this);
             _jumper = new Jumper(this);
             _playerLocker = new PlayerLocker(this);
             _glider = new Glider(this);
@@ -141,7 +145,7 @@ namespace RefatoramentoDoTioTepe
 
         public void EndDash()
         {
-            _mover = new Mover(this);
+            _mover = new NewMover(this);
         }
 
         //public void CallAttack<T>() where T : IAttacker
@@ -223,7 +227,7 @@ namespace RefatoramentoDoTioTepe
                 _playerAnimatorController = this.GetComponent<PlayerAnimatorController>();
         }
 
-        public void OnObjectSpawn()
+        public void OnObjectSpawn(object[] parameters = null)
         {
             if (!_lifeSystem.StillAlive)
                 this._lifeSystem = new LifeSystem(this);
@@ -309,7 +313,6 @@ namespace RefatoramentoDoTioTepe
             WallChecker = 1 << 5,
         }
 #endif //UNITY_EDITOR
+        
     }
-    
-    
 }

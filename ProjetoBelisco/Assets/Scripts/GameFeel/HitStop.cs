@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using GameScripts.Player;
 using UnityEngine;
 
 namespace GameScripts.GameFeel
@@ -12,12 +11,14 @@ namespace GameScripts.GameFeel
 
         private void Awake()
         {
-            AttackSystem.OnDamage += Stop;
+            //TODO: Implementar na nova classe
+            //AttackSystem.OnDamage += Stop;
         }
 
         private void OnDestroy()
         {
-            AttackSystem.OnDamage -= Stop;
+            //TODO: Implementar na nova classe
+            //AttackSystem.OnDamage -= Stop;
         }
 
         public void Stop()

@@ -16,5 +16,6 @@ namespace RefatoramentoDoTioTepe
         bool Dash { get; }
         bool MovingRight { get; }
         bool MovingLeft { get; }
+        int HorizontalInt { get; }
     }
 }

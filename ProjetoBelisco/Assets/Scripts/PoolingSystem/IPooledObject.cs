@@ -1,6 +1,9 @@
 ﻿/* Interface: IPooledObject
  * Interface to manage the spawning of objects.
  */
+
+using System.Collections.Generic;
+
 namespace GameScripts.PoolingSystem
 {
     public interface IPooledObject
@@ -8,6 +11,6 @@ namespace GameScripts.PoolingSystem
         /* Function: OnObjectSpawn
      * What to do when spawn an object.
      */
-        void OnObjectSpawn();
+        void OnObjectSpawn(object[] parameters = null);
     }
 }

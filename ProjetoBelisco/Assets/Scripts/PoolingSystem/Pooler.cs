@@ -2,6 +2,7 @@
 using RefatoramentoDoTioTepe;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Object = System.Object;
 
 namespace GameScripts.PoolingSystem
 {
@@ -131,7 +132,7 @@ namespace GameScripts.PoolingSystem
             }
         }
 
-        public GameObject SpawnFromPool(string tag)
+        public GameObject SpawnFromPool(string tag, object[] parameters = null)
         {
             if (!KeyExists(tag))
             {
@@ -144,7 +145,7 @@ namespace GameScripts.PoolingSystem
 
             if (pooledObj != null)
             {
-                pooledObj.OnObjectSpawn();
+                pooledObj.OnObjectSpawn(parameters);
             }
             else
             {
@@ -156,7 +157,7 @@ namespace GameScripts.PoolingSystem
             return objectToSpawn;
         }
 
-        public GameObject SpawnFromPool(string tag, Vector3 position, Quaternion rotation)
+        public GameObject SpawnFromPool(string tag, Vector3 position, Quaternion rotation, object[] parameters = null)
         {
             if(!KeyExists(tag))
             {
@@ -172,7 +173,7 @@ namespace GameScripts.PoolingSystem
 
             if (pooledObj != null)
             {
-                pooledObj.OnObjectSpawn();
+                pooledObj.OnObjectSpawn(parameters);
             }
             else
             {
@@ -184,7 +185,7 @@ namespace GameScripts.PoolingSystem
             return objectToSpawn;
         }
 
-        public GameObject SpawnFromPool(string tag, Transform trans, bool parent = false)
+        public GameObject SpawnFromPool(string tag, Transform trans, bool parent = false, object[] parameters = null)
         {
             if(!KeyExists(tag))
             {
@@ -205,7 +206,7 @@ namespace GameScripts.PoolingSystem
 
             if (pooledObj != null)
             {
-                pooledObj.OnObjectSpawn();
+                pooledObj.OnObjectSpawn(parameters);
             }
             else
             {

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections;
-using GameScripts.Player;
+﻿using System.Collections;
 using GameScripts.PoolingSystem;
-using GameScripts.SceneManager;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace RefatoramentoDoTioTepe

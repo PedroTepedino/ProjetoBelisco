@@ -1,0 +1,2576 @@
+fileFormatVersion: 2
+guid: fcc2d682f53b93d45b494e51a5862e8e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8760923598640377382
+    second: golemBossLightMap_0
+  - first:
+      213: 6033723624559110376
+    second: golemBossLightMap_1
+  - first:
+      213: -6401596678202541882
+    second: golemBossLightMap_2
+  - first:
+      213: -5328403501112352114
+    second: golemBossLightMap_3
+  - first:
+      213: -1666047286237174463
+    second: golemBossLightMap_4
+  - first:
+      213: 6328781252043802150
+    second: golemBossLightMap_5
+  - first:
+      213: -3586663863038212893
+    second: golemBossLightMap_6
+  - first:
+      213: -8618733887840728237
+    second: golemBossLightMap_7
+  - first:
+      213: -2738540354622978672
+    second: golemBossLightMap_8
+  - first:
+      213: -4631368391222597860
+    second: golemBossLightMap_9
+  - first:
+      213: -4736395374693435466
+    second: golemBossLightMap_10
+  - first:
+      213: -2522221952981190705
+    second: golemBossLightMap_11
+  - first:
+      213: -4068522945301007303
+    second: golemBossLightMap_12
+  - first:
+      213: 1876328526589798555
+    second: golemBossLightMap_13
+  - first:
+      213: 803148249985419576
+    second: golemBossLightMap_14
+  - first:
+      213: 1072154181671381460
+    second: golemBossLightMap_15
+  - first:
+      213: -909524404945760633
+    second: golemBossLightMap_16
+  - first:
+      213: 6532525281849222680
+    second: golemBossLightMap_17
+  - first:
+      213: -4188929440793701490
+    second: golemBossLightMap_18
+  - first:
+      213: -6584178985102885022
+    second: golemBossLightMap_19
+  - first:
+      213: 5676539010781672584
+    second: golemBossLightMap_20
+  - first:
+      213: 6153847968495976432
+    second: golemBossLightMap_21
+  - first:
+      213: -1312600216120053301
+    second: golemBossLightMap_22
+  - first:
+      213: -6331818857005478118
+    second: golemBossLightMap_23
+  - first:
+      213: -2822129985590477701
+    second: golemBossLightMap_24
+  - first:
+      213: 3034138850546662260
+    second: golemBossLightMap_25
+  - first:
+      213: 8659199762471064824
+    second: golemBossLightMap_26
+  - first:
+      213: -3147310225166764507
+    second: golemBossLightMap_27
+  - first:
+      213: -399601274997807853
+    second: golemBossLightMap_28
+  - first:
+      213: -7350941478476746176
+    second: golemBossLightMap_29
+  - first:
+      213: 2393647398149945177
+    second: golemBossLightMap_30
+  - first:
+      213: -4645457151217202889
+    second: golemBossLightMap_31
+  - first:
+      213: -6611438646605035829
+    second: golemBossLightMap_32
+  - first:
+      213: -1634086415911205200
+    second: golemBossLightMap_33
+  - first:
+      213: -8399631842615243034
+    second: golemBossLightMap_34
+  - first:
+      213: -1849531552878158252
+    second: golemBossLightMap_35
+  - first:
+      213: 6116196202140837473
+    second: golemBossLightMap_36
+  - first:
+      213: -1250039886624069799
+    second: golemBossLightMap_37
+  - first:
+      213: 8291060504812195906
+    second: golemBossLightMap_38
+  - first:
+      213: 9218305326180171053
+    second: golemBossLightMap_39
+  - first:
+      213: -3301511052739573619
+    second: golemBossLightMap_40
+  - first:
+      213: -7686783874530101531
+    second: golemBossLightMap_41
+  - first:
+      213: -2084695900042190757
+    second: golemBossLightMap_42
+  - first:
+      213: 8977091359494603873
+    second: golemBossLightMap_43
+  - first:
+      213: -8754040860208181866
+    second: golemBossLightMap_44
+  - first:
+      213: -3267787788635632508
+    second: golemBossLightMap_45
+  - first:
+      213: -3311743100134384003
+    second: golemBossLightMap_46
+  - first:
+      213: -7551105240135595605
+    second: golemBossLightMap_47
+  - first:
+      213: -7415621688678769545
+    second: golemBossLightMap_48
+  - first:
+      213: -595656452172010982
+    second: golemBossLightMap_49
+  - first:
+      213: -4519598904492965401
+    second: golemBossLightMap_50
+  - first:
+      213: 7900342749859196177
+    second: golemBossLightMap_51
+  - first:
+      213: 6648893623669063243
+    second: golemBossLightMap_52
+  - first:
+      213: 1046720949640157878
+    second: golemBossLightMap_53
+  - first:
+      213: -189444416305893295
+    second: golemBossLightMap_54
+  - first:
+      213: 7307174837352855674
+    second: golemBossLightMap_55
+  - first:
+      213: -2843225582386439316
+    second: golemBossLightMap_56
+  - first:
+      213: 4387479832386247602
+    second: golemBossLightMap_57
+  - first:
+      213: 6423471847907293955
+    second: golemBossLightMap_58
+  - first:
+      213: -3884465332527924927
+    second: golemBossLightMap_59
+  - first:
+      213: 7810532351061468681
+    second: golemBossLightMap_60
+  - first:
+      213: 5802769929599203009
+    second: golemBossLightMap_61
+  - first:
+      213: -3686745351110652693
+    second: golemBossLightMap_62
+  - first:
+      213: 1798964427888032954
+    second: golemBossLightMap_63
+  - first:
+      213: -3173670129716918000
+    second: golemBossLightMap_64
+  - first:
+      213: 7052484416811494626
+    second: golemBossLightMap_65
+  - first:
+      213: 4717328478132537225
+    second: golemBossLightMap_66
+  - first:
+      213: -8151703268181892705
+    second: golemBossLightMap_67
+  - first:
+      213: 5002195173224781577
+    second: golemBossLightMap_68
+  - first:
+      213: -7218812972487262779
+    second: golemBossLightMap_69
+  - first:
+      213: 1770504867060005768
+    second: golemBossLightMap_70
+  - first:
+      213: -8753748802978859856
+    second: golemBossLightMap_71
+  - first:
+      213: -1499854476845787327
+    second: golemBossLightMap_72
+  - first:
+      213: 8540676382639936573
+    second: golemBossLightMap_73
+  - first:
+      213: 4144148450213012740
+    second: golemBossLightMap_74
+  - first:
+      213: -3414063447749184940
+    second: golemBossLightMap_75
+  - first:
+      213: 5971427878835775532
+    second: golemBossLightMap_76
+  - first:
+      213: 7198641252597055878
+    second: golemBossLightMap_77
+  - first:
+      213: 6554287565401849266
+    second: golemBossLightMap_78
+  - first:
+      213: -2597967299113055776
+    second: golemBossLightMap_79
+  - first:
+      213: 5110743014410751588
+    second: golemBossLightMap_80
+  - first:
+      213: 4587609316804947232
+    second: golemBossLightMap_81
+  - first:
+      213: 4756165722616791684
+    second: golemBossLightMap_82
+  - first:
+      213: -1405367529363068304
+    second: golemBossLightMap_83
+  - first:
+      213: 6304765075587161008
+    second: golemBossLightMap_84
+  - first:
+      213: 5025859673404841066
+    second: golemBossLightMap_85
+  - first:
+      213: 7676097944068646195
+    second: golemBossLightMap_86
+  - first:
+      213: -7389075222499643658
+    second: golemBossLightMap_87
+  - first:
+      213: 2204458534329480794
+    second: golemBossLightMap_88
+  - first:
+      213: -6139000382726019630
+    second: golemBossLightMap_89
+  - first:
+      213: -4314601716798023522
+    second: golemBossLightMap_90
+  - first:
+      213: 6733251430654752591
+    second: golemBossLightMap_91
+  - first:
+      213: -7610863075165591704
+    second: golemBossLightMap_92
+  - first:
+      213: -6107015747185857790
+    second: golemBossLightMap_93
+  - first:
+      213: -1694146468395454741
+    second: golemBossLightMap_94
+  - first:
+      213: -6590316117103480416
+    second: golemBossLightMap_95
+  - first:
+      213: -5542340642714694263
+    second: golemBossLightMap_96
+  - first:
+      213: -8185908929926513367
+    second: golemBossLightMap_97
+  - first:
+      213: 5674156236729774262
+    second: golemBossLightMap_98
+  - first:
+      213: -7971681078254115042
+    second: golemBossLightMap_99
+  - first:
+      213: 2758847842309770137
+    second: golemBossLightMap_100
+  - first:
+      213: -7249518376155003103
+    second: golemBossLightMap_101
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: golemBossLightMap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad114b68762fa6680800000000000000
+      internalID: -8760923598640377382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e86ab22ba71cb350800000000000000
+      internalID: 6033723624559110376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8ba600db5f827a0800000000000000
+      internalID: -6401596678202541882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_3
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8220403f35bd06b0800000000000000
+      internalID: -5328403501112352114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_4
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14564dcf1d201e8e0800000000000000
+      internalID: -1666047286237174463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_5
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6260935740954d750800000000000000
+      internalID: 6328781252043802150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_6
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e480e2383c993ec0800000000000000
+      internalID: -3586663863038212893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_7
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35bc1a9613b146880800000000000000
+      internalID: -8618733887840728237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_8
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09500af8e00cef9d0800000000000000
+      internalID: -2738540354622978672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_9
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1764397cf21abfb0800000000000000
+      internalID: -4631368391222597860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7389f4081f44eb0800000000000000
+      internalID: -4736395374693435466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_11
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc73ddf3f744ffcd0800000000000000
+      internalID: -2522221952981190705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_12
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934beccefe3b987c0800000000000000
+      internalID: -4068522945301007303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_13
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98215d8ade0a0a10800000000000000
+      internalID: 1876328526589798555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_14
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8398b5ef31b552b00800000000000000
+      internalID: 803148249985419576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_15
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9e8f63c8e01ee00800000000000000
+      internalID: 1072154181671381460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_16
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ec8a06f58b063f0800000000000000
+      internalID: -909524404945760633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_17
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816a1ee022138aa50800000000000000
+      internalID: 6532525281849222680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_18
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83d0541edeedd5c0800000000000000
+      internalID: -4188929440793701490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_19
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fb957f81c40a4a0800000000000000
+      internalID: -6584178985102885022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884f94b972e17ce40800000000000000
+      internalID: 5676539010781672584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_21
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff36f37f1cd66550800000000000000
+      internalID: 6153847968495976432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_22
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc13012de05b8cde0800000000000000
+      internalID: -1312600216120053301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_23
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f81160c4cd028a0800000000000000
+      internalID: -6331818857005478118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_24
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cb6eafab7c5d8d0800000000000000
+      internalID: -2822129985590477701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_25
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47bbb02853d6b1a20800000000000000
+      internalID: 3034138850546662260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_26
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f41c393e48ab2870800000000000000
+      internalID: 8659199762471064824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_27
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526fafe76028254d0800000000000000
+      internalID: -3147310225166764507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_28
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31566ffe1c4547af0800000000000000
+      internalID: -399601274997807853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_29
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04275ba1ca53cf990800000000000000
+      internalID: -7350941478476746176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957f34460a1f73120800000000000000
+      internalID: 2393647398149945177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_31
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739866a6555088fb0800000000000000
+      internalID: -4645457151217202889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_32
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc641de64937f34a0800000000000000
+      internalID: -6611438646605035829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_33
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6425fff0f8259e0800000000000000
+      internalID: -1634086415911205200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_34
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eecbd0a7538e6b80800000000000000
+      internalID: -8399631842615243034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_35
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e12d51ad42556e0800000000000000
+      internalID: -1849531552878158252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_36
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166a2357a0811e450800000000000000
+      internalID: 6116196202140837473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_37
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957e3ba9857f6aee0800000000000000
+      internalID: -1250039886624069799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_38
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2401a98e993cf0370800000000000000
+      internalID: 8291060504812195906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_39
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d7f0e7adffdef70800000000000000
+      internalID: 9218305326180171053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 912
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d888e6f803dae22d0800000000000000
+      internalID: -3301511052739573619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_41
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 912
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6be6ddace035590800000000000000
+      internalID: -7686783874530101531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_42
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 912
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50a545cf1ca113e0800000000000000
+      internalID: -2084695900042190757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_43
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 912
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16487ee5709059c70800000000000000
+      internalID: 8977091359494603873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_44
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 912
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d4902f736638680800000000000000
+      internalID: -8754040860208181866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_45
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 912
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c8309d15c76a2d0800000000000000
+      internalID: -3267787788635632508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_46
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 912
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e932162335a02d0800000000000000
+      internalID: -3311743100134384003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_47
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 912
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba98024aac5153790800000000000000
+      internalID: -7551105240135595605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_48
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 912
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c9e912d5b661990800000000000000
+      internalID: -7415621688678769545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_49
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 912
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a2e18dc9dcbb7f0800000000000000
+      internalID: -595656452172010982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 760
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1c3720eb82741c0800000000000000
+      internalID: -4519598904492965401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_51
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 760
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11da0398fd7a3ad60800000000000000
+      internalID: 7900342749859196177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_52
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 760
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e772cf58d954c50800000000000000
+      internalID: 6648893623669063243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_53
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 760
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bad24e6823b68e00800000000000000
+      internalID: 1046720949640157878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_54
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 760
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150f76d9e45fe5df0800000000000000
+      internalID: -189444416305893295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_55
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 760
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78f61caccc486560800000000000000
+      internalID: 7307174837352855674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_56
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 760
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b9d899565da88d0800000000000000
+      internalID: -2843225582386439316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_57
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 760
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb929469a573ec30800000000000000
+      internalID: 4387479832386247602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_58
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 760
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b7c37dc91c42950800000000000000
+      internalID: 6423471847907293955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_59
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 760
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1497a506c5b971ac0800000000000000
+      internalID: -3884465332527924927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90627b39ac5946c60800000000000000
+      internalID: 7810532351061468681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_61
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 608
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6341fa184978050800000000000000
+      internalID: 5802769929599203009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_62
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 608
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec0ab9e2ac06dcc0800000000000000
+      internalID: -3686745351110652693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_63
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 608
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc74d7ad9437f810800000000000000
+      internalID: 1798964427888032954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_64
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 608
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01984f3f4dbd4f3d0800000000000000
+      internalID: -3173670129716918000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_65
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 608
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ece60026357fd160800000000000000
+      internalID: 7052484416811494626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_66
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 608
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9878ce3e141577140800000000000000
+      internalID: 4717328478132537225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_67
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 608
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91a0a131155fde80800000000000000
+      internalID: -8151703268181892705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_68
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 608
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9079c3dd10e5b6540800000000000000
+      internalID: 5002195173224781577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_69
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 608
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd3ae239df91db90800000000000000
+      internalID: -7218812972487262779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 456
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b363acbc8129810800000000000000
+      internalID: 1770504867060005768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_71
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 456
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4b171d7df648680800000000000000
+      internalID: -8753748802978859856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_72
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 456
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147d3d4cc427f2be0800000000000000
+      internalID: -1499854476845787327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_73
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 456
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3452d86be3968670800000000000000
+      internalID: 8540676382639936573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_74
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 456
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405ae6f0f09f28930800000000000000
+      internalID: 4144148450213012740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_75
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 456
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452b34cf16fce90d0800000000000000
+      internalID: -3414063447749184940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_76
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 456
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28eedf8406ced250800000000000000
+      internalID: 5971427878835775532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_77
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 456
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68145864416b6e360800000000000000
+      internalID: 7198641252597055878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_78
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 456
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd798b80d185fa50800000000000000
+      internalID: 6554287565401849266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_79
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 456
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9094e818a22fbd0800000000000000
+      internalID: -2597967299113055776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e034891b10de640800000000000000
+      internalID: 5110743014410751588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_81
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 304
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d6e601e567aaf30800000000000000
+      internalID: 4587609316804947232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_82
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 304
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4828675868b410240800000000000000
+      internalID: 4756165722616791684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_83
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 304
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a22719da12f7ce0800000000000000
+      internalID: -1405367529363068304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_84
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 304
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb59a2ae660f7750800000000000000
+      internalID: 6304765075587161008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_85
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 304
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c914caeb07fb540800000000000000
+      internalID: 5025859673404841066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_86
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 304
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3356151196af68a60800000000000000
+      internalID: 7676097944068646195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_87
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 304
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fea440fb3bb47990800000000000000
+      internalID: -7389075222499643658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_88
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 304
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5679c47b5fc79e10800000000000000
+      internalID: 2204458534329480794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_89
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 304
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5e0af7da3edcaa0800000000000000
+      internalID: -6139000382726019630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9896fa29947f14c0800000000000000
+      internalID: -4314601716798023522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_91
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 152
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47319b7080517d50800000000000000
+      internalID: 6733251430654752591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_92
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 152
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8672e927b58c06690800000000000000
+      internalID: -7610863075165591704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_93
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 152
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b2547c8858f3ba0800000000000000
+      internalID: -6107015747185857790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_94
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 152
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee6ec153ce2d78e0800000000000000
+      internalID: -1694146468395454741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_95
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 152
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1f382986e7a84a0800000000000000
+      internalID: -6590316117103480416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_96
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 152
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98dc7cecc86a513b0800000000000000
+      internalID: -5542340642714694263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_97
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 152
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d3804f23fc56e80800000000000000
+      internalID: -8185908929926513367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_98
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 152
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0785ac807aebe40800000000000000
+      internalID: 5674156236729774262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_99
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 152
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17e5fb8b46ee5190800000000000000
+      internalID: -7971681078254115042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b0a3ede75694620800000000000000
+      internalID: 2758847842309770137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLightMap_101
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 216
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1274d9c4279846b90800000000000000
+      internalID: -7249518376155003103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

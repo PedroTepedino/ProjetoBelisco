@@ -37,7 +37,7 @@ namespace GameScripts.Tools.Editor
             _createNewSceneEssentials = new CreateNewSceneEssentials();
 
             tree.Add("Create New Scene Type", _createNewSceneEssentials);
-            tree.AddAllAssetsAtPath("Scene Essentials", "Assets/Resources/Tools/SceneEssentials", typeof(SceneEssentialObjects));
+            tree.AddAllAssetsAtPath("Scene Essentials", "Assets/Editor/Tools/SceneEssentials", typeof(SceneEssentialObjects));
         
             return tree;
         }

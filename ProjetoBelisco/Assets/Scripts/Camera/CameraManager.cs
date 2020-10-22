@@ -1,5 +1,4 @@
 ﻿using Cinemachine;
-using GameScripts.Player;
 using UnityEngine;
 
 namespace RefatoramentoDoTioTepe

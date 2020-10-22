@@ -27,7 +27,7 @@ namespace RefatoramentoDoTioTepe
             _animation.SmoothRewind();
         }
 
-        public void OnObjectSpawn()
+        public void OnObjectSpawn(object[] parameters = null)
         {
             _animation = this.transform.DOScale(1f, 0.2f).From(0f).SetAutoKill(false).SetEase(Ease.InOutBack);
             _animation.onRewind += () => _animation.Kill();

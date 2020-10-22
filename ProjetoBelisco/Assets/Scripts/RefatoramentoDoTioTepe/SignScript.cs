@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Rewired.Utils.Attributes;
 using UnityEngine;
 using TMPro;
 

@@ -1,6 +1,4 @@
-﻿using System.Resources;
-using DG.Tweening;
-using GameScripts.Player;
+﻿using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;

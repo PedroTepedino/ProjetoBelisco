@@ -10,7 +10,7 @@ namespace GameScripts.Enemies
         [SerializeField] private List<SpriteRenderer> _parts;
         [SerializeField] private List<DOTweenAnimation> _animations;
     
-        public void OnObjectSpawn()
+        public void OnObjectSpawn(object[] parameters = null)
         {
             foreach (var part in _parts)
             {

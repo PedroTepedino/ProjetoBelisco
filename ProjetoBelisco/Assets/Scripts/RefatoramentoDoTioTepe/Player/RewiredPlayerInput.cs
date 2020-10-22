@@ -6,8 +6,8 @@ namespace RefatoramentoDoTioTepe
     {
         private Rewired.Player _rewiredPlayer;
 
-        public static IPlayerInput Instance { get; set; } 
-        
+        public static IPlayerInput Instance { get; set; }
+
         public float Horizontal => _rewiredPlayer.GetAxis("MoveHorizontal");
         public float Vertical => _rewiredPlayer.GetAxis("MoveVertical");
 
@@ -22,8 +22,16 @@ namespace RefatoramentoDoTioTepe
         public bool Dash => _rewiredPlayer.GetButtonDown("Dash");
         public bool MovingRight => Horizontal >= 0.1f;
         public bool MovingLeft => Horizontal <= -0.1f;
+        public int HorizontalInt 
+        {
+            get
+            {
+                var value = _rewiredPlayer.GetAxisRaw("MoveHorizontal");
+                return value > 0.2f ? 1 : value < -0.2f ? -1 : 0;
+            }
+        }
 
-        private void Awake()
+    private void Awake()
         {
             if (Instance == null)
             {

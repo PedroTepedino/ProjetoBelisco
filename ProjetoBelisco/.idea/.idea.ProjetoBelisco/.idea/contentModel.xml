@@ -245,7 +245,6 @@
           </e>
           <e p="Collectables" t="Include">
             <e p="BaseObject.cs" t="Include" />
-            <e p="Paw.cs" t="Include" />
             <e p="Spawner.cs" t="Include" />
           </e>
           <e p="DevAuxCode" t="Include">
@@ -262,7 +261,6 @@
             <e p="GolemBoss.cs" t="Include" />
             <e p="HitParticleEmitter.cs" t="Include" />
             <e p="Life.cs" t="Include" />
-            <e p="Projectile.cs" t="Include" />
             <e p="SignalAttackAnimation.cs" t="Include" />
             <e p="SpawnDeadCourpse.cs" t="Include" />
           </e>
@@ -282,26 +280,6 @@
           <e p="Navmesh" t="Include">
             <e p="Navmesh.cs" t="Include" />
             <e p="NavmeshBaker.cs" t="Include" />
-          </e>
-          <e p="Player" t="Include">
-            <e p="AnimationController.cs" t="Include" />
-            <e p="AttackAnimationFinishSignal.cs" t="Include" />
-            <e p="AttackSystem.cs" t="Include" />
-            <e p="ColletableInteractions.cs" t="Include" />
-            <e p="ComboManager.cs" t="Include" />
-            <e p="DamageParticle.cs" t="Include" />
-            <e p="FrictionController.cs" t="Include" />
-            <e p="GravityManager.cs" t="Include" />
-            <e p="Grounder.cs" t="Include" />
-            <e p="InputManager.cs" t="Include" />
-            <e p="Jump.cs" t="Include" />
-            <e p="Life.cs" t="Include" />
-            <e p="Movement.cs" t="Include" />
-            <e p="PawStorage.cs" t="Include" />
-            <e p="PlatformDown.cs" t="Include" />
-            <e p="PlayDashParticles.cs" t="Include" />
-            <e p="PlayParticle.cs" t="Include" />
-            <e p="PoolableObject.cs" t="Include" />
           </e>
           <e p="PoolingSystem" t="Include">
             <e p="IPooledObject.cs" t="Include" />
@@ -363,6 +341,10 @@
               <e p="AttackerTimer.cs" t="Include" />
               <e p="AttackEventsEmitter.cs" t="Include" />
               <e p="BasicAttacker.cs" t="Include" />
+              <e p="FX" t="Include">
+                <e p="Ghost.cs" t="Include" />
+                <e p="GhostSpawner.cs" t="Include" />
+              </e>
               <e p="Glider.cs" t="Include" />
               <e p="Grounder.cs" t="Include" />
               <e p="IAttacker.cs" t="Include" />
@@ -373,11 +355,13 @@
               <e p="Jumper.cs" t="Include" />
               <e p="LifeSystem.cs" t="Include" />
               <e p="Mover.cs" t="Include" />
+              <e p="PlayDashParticles.cs" t="Include" />
               <e p="Player.cs" t="Include" />
               <e p="PlayerAnimatorController.cs" t="Include" />
               <e p="PlayerKeysManager.cs" t="Include" />
               <e p="PlayerLocker.cs" t="Include" />
               <e p="PlayerParameters.cs" t="Include" />
+              <e p="PlayParticle.cs" t="Include" />
               <e p="RangedAttacker.cs" t="Include" />
               <e p="RewiredPlayerInput.cs" t="Include" />
               <e p="StrongAttacker.cs" t="Include" />
@@ -455,10 +439,8 @@
           </e>
           <e p="Ui" t="Include">
             <e p="LifeBarController.cs" t="Include" />
-            <e p="PawCounterUi.cs" t="Include" />
             <e p="PixelPerfectCanvasScale.cs" t="Include" />
             <e p="PlayerUiManager.cs" t="Include" />
-            <e p="RespawnerUi.cs" t="Include" />
           </e>
         </e>
         <e p="SpriteAnimationImporter" t="Include">
