@@ -187,7 +187,7 @@ MonoBehaviour:
   _explosionAttackCenter: {x: 0, y: 0}
   explosionAttackRadius: 1
   explosionAttackDamage: 1
-  rangedAtttackChance: 0
+  rangedAtttackChance: 1
   _rangeAttackCenter: {x: 0, y: 0}
   rangeAttackDamage: 1
   _rangeAttackProjectileTag: 

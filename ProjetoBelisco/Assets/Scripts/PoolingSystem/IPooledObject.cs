@@ -2,9 +2,7 @@
  * Interface to manage the spawning of objects.
  */
 
-using System.Collections.Generic;
-
-namespace GameScripts.PoolingSystem
+namespace Belisco
 {
     public interface IPooledObject
     {

@@ -1,59 +1,88 @@
-﻿// using UnityEngine;
+﻿using UnityEngine;
 
-// namespace GameScripts.Enemies
-// {
-//     public class AnimationController : MonoBehaviour
-//     {
-//         private Animator _animator;
-//         private StateMachine.StateMachine _stateMachine;
-//         private Rigidbody2D _rigidBody;
-//         private Attack _attack;
-//         private Life _life;
+namespace Belisco
+{
+    public class AnimationController : MonoBehaviour
+    {
+        private Animator animator;
+        private IEnemyStateMachine controller;
 
-//         [SerializeField] private bool _useVelocity = true;
-//         [SerializeField] private bool _useAttackMode = true;
+        private IState currentState;
+        private StateMachine stateMachine;
 
-//         private void Awake()
-//         {
-//             _animator = this.GetComponentInChildren<Animator>();
-//             _stateMachine = this.GetComponent<StateMachine.StateMachine>();
-//             _rigidBody = this.GetComponent<Rigidbody2D>();
-//             _attack = this.GetComponent<Attack>();
-//             _life = this.GetComponent<Life>();
+        private void Awake()
+        {
+            animator = GetComponentInChildren<Animator>();
+            controller = GetComponent<IEnemyStateMachine>();
+            stateMachine = controller.stateMachine;
 
-//             _attack.OnAttack += ListenAttack;
-//             _life.OnEnemyDamage += ListenDamage;
-//         }
+            // _attack.OnAttack += ListenAttack;
+            // _life.OnEnemyDamage += ListenDamage;
+        }
 
-//         private void OnDestroy()
-//         {
-//             _attack.OnAttack -= ListenAttack;
-//             _life.OnEnemyDamage -= ListenDamage;
-//         }
+        private void Update()
+        {
+            currentState = stateMachine.CurrentState;
 
-//         private void Update()
-//         {
-//             if (_useVelocity)
-//             {
-//                 _animator.SetFloat("Velocity", Mathf.Abs(_rigidBody.velocity.x));
-//             }
+            if (currentState is ChaseState)
+            {
+                animator.SetBool("Chase", true);
+            }
+            else
+            {
+                animator.SetBool("Chase", false);
+            }
 
-//             if (_useAttackMode)
-//             {
-//                 _animator.SetBool("AttackModeOn", _attack.IsInRange);
-//             }
-//             Debug.Log(_attack.IsInRange);
-//         }
-    
-//         private void ListenAttack(int index)
-//         {
-//             _animator.SetInteger("AttackIndex", index);
-//             _animator.SetTrigger("Attack");
-//         }
+            if (currentState is AlertState)
+            {
+                animator.SetBool("Alert", true);
+            }
+            else
+            {
+                animator.SetBool("Alert", false);
+            }
 
-//         private void ListenDamage(int damage, int maxHealth)
-//         {
-//             _animator.SetTrigger("Hit");
-//         }
-//     }
-// }
+            if (controller.alive)
+            {
+                animator.SetBool("Dead", false);
+            }
+            else
+            {
+                animator.SetBool("Dead", true);
+                animator.SetBool("Alert", false);
+                animator.SetBool("Chase", false);
+            }
+        }
+
+        private void OnDestroy()
+        {
+            // _attack.OnAttack -= ListenAttack;
+            // _life.OnEnemyDamage -= ListenDamage;
+        }
+
+        public void TriggerAnimationAttack()
+        {
+            animator.SetTrigger("Attack");
+        }
+
+        public void TriggerAnimationHit()
+        {
+            animator.SetTrigger("Hit");
+        }
+
+        // private void ListenAttack(int index)
+        // {
+        //     _animator.SetInteger("AttackIndex", index);
+        //     _animator.SetTrigger("Attack");
+        // }
+
+        // private void ListenDamage(int damage, int maxHealth)
+        // {
+        //     _animator.SetTrigger("Hit");
+        // }
+
+        public void Interfacinha()
+        {
+        }
+    }
+}

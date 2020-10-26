@@ -268,31 +268,53 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AbstractLockable.cs" t="Include" />
+          <e p="Bootstrapper.cs" t="Include" />
           <e p="Camera" t="Include">
             <e p="CameraManager.cs" t="Include" />
-            <e p="CameraObjectVisibilityField.cs" t="Include" />
-            <e p="ChangeToSpecialCam.cs" t="Include" />
-          </e>
-          <e p="Collectables" t="Include">
-            <e p="BaseObject.cs" t="Include" />
-            <e p="Spawner.cs" t="Include" />
-          </e>
-          <e p="DevAuxCode" t="Include">
-            <e p="AttackDummy.cs" t="Include" />
-            <e p="AttackDummyLifeBar.cs" t="Include" />
-            <e p="AuxRespawner.cs" t="Include" />
           </e>
           <e p="Enemies" t="Include">
             <e p="AnimationController.cs" t="Include" />
-            <e p="Basic.cs" t="Include" />
-            <e p="Controller.cs" t="Include" />
-            <e p="DeadCourpse.cs" t="Include" />
-            <e p="DeathLootSpawn.cs" t="Include" />
-            <e p="GolemBoss.cs" t="Include" />
-            <e p="HitParticleEmitter.cs" t="Include" />
-            <e p="Life.cs" t="Include" />
-            <e p="SignalAttackAnimation.cs" t="Include" />
-            <e p="SpawnDeadCourpse.cs" t="Include" />
+            <e p="Attack.cs" t="Include" />
+            <e p="EnemyAttackEventEmitter.cs" t="Include" />
+            <e p="EnemyParameters.cs" t="Include" />
+            <e p="GolemRanged" t="Include">
+              <e p="GolemRanged.cs" t="Include" />
+              <e p="GolemRangedAnimation.cs" t="Include" />
+              <e p="GolemRangedParameters.cs" t="Include" />
+            </e>
+            <e p="GolemSimple" t="Include">
+              <e p="GolemSimple.cs" t="Include" />
+              <e p="GolemSimpleAnimation.cs" t="Include" />
+              <e p="GolemSimpleParameters.cs" t="Include" />
+            </e>
+            <e p="GolemSword" t="Include">
+              <e p="GolemSword.cs" t="Include" />
+              <e p="GolemSwordAnimation.cs" t="Include" />
+              <e p="GolemSwordParameters.cs" t="Include" />
+            </e>
+            <e p="GolemTriple" t="Include">
+              <e p="GolemTripeParameters.cs" t="Include" />
+              <e p="GolemTriple.cs" t="Include" />
+              <e p="GolemTripleAnimation.cs" t="Include" />
+            </e>
+            <e p="GrounderEnemy.cs" t="Include" />
+            <e p="HitDummie.cs" t="Include" />
+            <e p="IAnimationController.cs" t="Include" />
+            <e p="Slime" t="Include">
+              <e p="Slime.cs" t="Include" />
+              <e p="SlimeAnimation.cs" t="Include" />
+              <e p="SlimeParameters.cs" t="Include" />
+            </e>
+            <e p="States" t="Include">
+              <e p="AlertState.cs" t="Include" />
+              <e p="AttackState.cs" t="Include" />
+              <e p="ChaseState.cs" t="Include" />
+              <e p="IddleState.cs" t="Include" />
+              <e p="MoveState.cs" t="Include" />
+            </e>
+            <e p="Targeting.cs" t="Include" />
+            <e p="WallChecker.cs" t="Include" />
           </e>
           <e p="Environment" t="Include">
             <e p="Checkpoint.cs" t="Include" />
@@ -300,178 +322,99 @@
             <e p="PlayerRespawner.cs" t="Include" />
             <e p="VoidHole.cs" t="Include" />
           </e>
-          <e p="GameFeel" t="Include">
-            <e p="HitStop.cs" t="Include" />
+          <e p="FadeInOutSceneTransition.cs" t="Include" />
+          <e p="FallingGround.cs" t="Include" />
+          <e p="ParticlePooledObject.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="AttackerTimer.cs" t="Include" />
+            <e p="AttackEventsEmitter.cs" t="Include" />
+            <e p="BasicAttacker.cs" t="Include" />
+            <e p="FX" t="Include">
+              <e p="Ghost.cs" t="Include" />
+              <e p="PlayerGhostSpawner.cs" t="Include" />
+            </e>
+            <e p="Glider.cs" t="Include" />
+            <e p="Grounder.cs" t="Include" />
+            <e p="IAttacker.cs" t="Include" />
+            <e p="IHittable.cs" t="Include" />
+            <e p="IJumper.cs" t="Include" />
+            <e p="IMover.cs" t="Include" />
+            <e p="IPlayerInput.cs" t="Include" />
+            <e p="Jumper.cs" t="Include" />
+            <e p="LifeSystem.cs" t="Include" />
+            <e p="Mover.cs" t="Include" />
+            <e p="PlayDashParticles.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="PlayerAnimatorController.cs" t="Include" />
+            <e p="PlayerKeysManager.cs" t="Include" />
+            <e p="PlayerLocker.cs" t="Include" />
+            <e p="PlayerParameters.cs" t="Include" />
+            <e p="PlayParticle.cs" t="Include" />
+            <e p="RangedAttacker.cs" t="Include" />
+            <e p="RewiredPlayerInput.cs" t="Include" />
+            <e p="StrongAttacker.cs" t="Include" />
+            <e p="WallJumper.cs" t="Include" />
           </e>
-          <e p="LivingBeingSystems" t="Include">
-            <e p="BaseAttackSystem.cs" t="Include" />
-            <e p="BaseLifeSystem.cs" t="Include" />
-          </e>
-          <e p="Navmesh" t="Include">
-            <e p="Navmesh.cs" t="Include" />
-            <e p="NavmeshBaker.cs" t="Include" />
-          </e>
+          <e p="PlayParticlesGeneral.cs" t="Include" />
           <e p="PoolingSystem" t="Include">
             <e p="IPooledObject.cs" t="Include" />
             <e p="Pooler.cs" t="Include" />
           </e>
-          <e p="RefatoramentoDoTioTepe" t="Include">
-            <e p="AbstractLockable.cs" t="Include" />
-            <e p="Bootstrapper.cs" t="Include" />
-            <e p="Enemies" t="Include">
-              <e p="AnimationController.cs" t="Include" />
-              <e p="Attack.cs" t="Include" />
-              <e p="EnemyAttackEventEmitter.cs" t="Include" />
-              <e p="EnemyParameters.cs" t="Include" />
-              <e p="GolemRanged" t="Include">
-                <e p="GolemRanged.cs" t="Include" />
-                <e p="GolemRangedAnimation.cs" t="Include" />
-                <e p="GolemRangedParameters.cs" t="Include" />
-              </e>
-              <e p="GolemSimple" t="Include">
-                <e p="GolemSimple.cs" t="Include" />
-                <e p="GolemSimpleAnimation.cs" t="Include" />
-                <e p="GolemSimpleParameters.cs" t="Include" />
-              </e>
-              <e p="GolemSword" t="Include">
-                <e p="GolemSword.cs" t="Include" />
-                <e p="GolemSwordAnimation.cs" t="Include" />
-                <e p="GolemSwordParameters.cs" t="Include" />
-              </e>
-              <e p="GolemTriple" t="Include">
-                <e p="GolemTripeParameters.cs" t="Include" />
-                <e p="GolemTriple.cs" t="Include" />
-                <e p="GolemTripleAnimation.cs" t="Include" />
-              </e>
-              <e p="GrounderEnemy.cs" t="Include" />
-              <e p="HitDummie.cs" t="Include" />
-              <e p="IAnimationController.cs" t="Include" />
-              <e p="Slime" t="Include">
-                <e p="Slime.cs" t="Include" />
-                <e p="SlimeAnimation.cs" t="Include" />
-                <e p="SlimeParameters.cs" t="Include" />
-              </e>
-              <e p="States" t="Include">
-                <e p="AlertState.cs" t="Include" />
-                <e p="AttackState.cs" t="Include" />
-                <e p="ChaseState.cs" t="Include" />
-                <e p="IddleState.cs" t="Include" />
-                <e p="MoveState.cs" t="Include" />
-              </e>
-              <e p="Targeting.cs" t="Include" />
-              <e p="WallChecker.cs" t="Include" />
-            </e>
-            <e p="FadeInOutSceneTransition.cs" t="Include" />
-            <e p="FallingGround.cs" t="Include" />
-            <e p="Inventory" t="Include">
-              <e p="Paw.cs" t="Include" />
-              <e p="PawInventory.cs" t="Include" />
-            </e>
-            <e p="ParticlePooledObject.cs" t="Include" />
-            <e p="Player" t="Include">
-              <e p="AttackerTimer.cs" t="Include" />
-              <e p="AttackEventsEmitter.cs" t="Include" />
-              <e p="BasicAttacker.cs" t="Include" />
-              <e p="FX" t="Include">
-                <e p="Ghost.cs" t="Include" />
-                <e p="PlayerGhostSpawner.cs" t="Include" />
-              </e>
-              <e p="Glider.cs" t="Include" />
-              <e p="Grounder.cs" t="Include" />
-              <e p="IAttacker.cs" t="Include" />
-              <e p="IHittable.cs" t="Include" />
-              <e p="IJumper.cs" t="Include" />
-              <e p="IMover.cs" t="Include" />
-              <e p="IPlayerInput.cs" t="Include" />
-              <e p="Jumper.cs" t="Include" />
-              <e p="LifeSystem.cs" t="Include" />
-              <e p="Mover.cs" t="Include" />
-              <e p="PlayDashParticles.cs" t="Include" />
-              <e p="Player.cs" t="Include" />
-              <e p="PlayerAnimatorController.cs" t="Include" />
-              <e p="PlayerKeysManager.cs" t="Include" />
-              <e p="PlayerLocker.cs" t="Include" />
-              <e p="PlayerParameters.cs" t="Include" />
-              <e p="PlayParticle.cs" t="Include" />
-              <e p="RangedAttacker.cs" t="Include" />
-              <e p="RewiredPlayerInput.cs" t="Include" />
-              <e p="StrongAttacker.cs" t="Include" />
-              <e p="WallJumper.cs" t="Include" />
-            </e>
-            <e p="PlayParticlesGeneral.cs" t="Include" />
-            <e p="RoomTransition.cs" t="Include" />
-            <e p="SignScript.cs" t="Include" />
-            <e p="StateMachine" t="Include">
-              <e p="EnemyStateMachine.cs" t="Include" />
-              <e p="GameStateMachine.cs" t="Include" />
-              <e p="IEnemyStateMachine.cs" t="Include" />
-              <e p="IState.cs" t="Include" />
-              <e p="StateMachine.cs" t="Include" />
-              <e p="StateTransition.cs" t="Include" />
-            </e>
-            <e p="Switch.cs" t="Include" />
-            <e p="Tools" t="Include">
-              <e p="ObjectTileRotator.cs" t="Include" />
-              <e p="SpriteRandomizer.cs" t="Include" />
-            </e>
-            <e p="Traps" t="Include">
-              <e p="Arrow.cs" t="Include" />
-              <e p="ArrowShooter.cs" t="Include" />
-              <e p="BreakableWall.cs" t="Include" />
-              <e p="FallingPlatform.cs" t="Include" />
-              <e p="HelperFunctions.cs" t="Include" />
-              <e p="Key.cs" t="Include" />
-              <e p="KeyDoor.cs" t="Include" />
-              <e p="MovingPlatform.cs" t="Include" />
-              <e p="MovingPlatformController.cs" t="Include" />
-              <e p="Spikes.cs" t="Include" />
-              <e p="UnLockerLever.cs" t="Include" />
-            </e>
-            <e p="Ui" t="Include">
-              <e p="AbstractButton.cs" t="Include" />
-              <e p="AbstractPanel.cs" t="Include" />
-              <e p="GamePlayTimescalePause.cs" t="Include" />
-              <e p="LoadMenu.cs" t="Include" />
-              <e p="MainMenuPanel.cs" t="Include" />
-              <e p="OptionsButton.cs" t="Include" />
-              <e p="OptionsPanel.cs" t="Include" />
-              <e p="OptionsParameter.cs" t="Include" />
-              <e p="PauseButton.cs" t="Include" />
-              <e p="PausePanel.cs" t="Include" />
-              <e p="PlayButton.cs" t="Include" />
-              <e p="QuitButton.cs" t="Include" />
-              <e p="RestartButton.cs" t="Include" />
-              <e p="SaveOptions.cs" t="Include" />
-              <e p="ToggleFullScreen.cs" t="Include" />
-              <e p="TurnOfUiOnLoad.cs" t="Include" />
-              <e p="WinArea.cs" t="Include" />
-              <e p="WinPanel.cs" t="Include" />
-            </e>
-          </e>
-          <e p="SceneManager" t="Include">
-            <e p="ScenesEnums.cs" t="Include" />
-            <e p="UiScenesLoader.cs" t="Include" />
-          </e>
+          <e p="RoomTransition.cs" t="Include" />
+          <e p="SignScript.cs" t="Include" />
           <e p="StateMachine" t="Include">
+            <e p="EnemyStateMachine.cs" t="Include" />
+            <e p="GameStateMachine.cs" t="Include" />
+            <e p="IEnemyStateMachine.cs" t="Include" />
             <e p="IState.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
+            <e p="StateTransition.cs" t="Include" />
           </e>
+          <e p="Switch.cs" t="Include" />
           <e p="Tools" t="Include">
             <e p="Editor" t="Include">
               <e p="CheckFirstSpawner.cs" t="Include" />
-              <e p="CollectableSpawnerEditor.cs" t="Include" />
               <e p="CollectableSpawnerPlacer.cs" t="Include" />
               <e p="PlayerSpawnerEditor.cs" t="Include" />
               <e p="SceneEssentials.cs" t="Include" />
-              <e p="Vector2AttributeSliderDrawer.cs" t="Include" />
             </e>
+            <e p="ObjectTileRotator.cs" t="Include" />
             <e p="SceneEssentialObjects.cs" t="Include" />
-            <e p="Vector2SliderAtribute.cs" t="Include" />
+            <e p="SpriteRandomizer.cs" t="Include" />
+          </e>
+          <e p="Traps" t="Include">
+            <e p="Arrow.cs" t="Include" />
+            <e p="ArrowShooter.cs" t="Include" />
+            <e p="BreakableWall.cs" t="Include" />
+            <e p="FallingPlatform.cs" t="Include" />
+            <e p="HelperFunctions.cs" t="Include" />
+            <e p="Key.cs" t="Include" />
+            <e p="KeyDoor.cs" t="Include" />
+            <e p="MovingPlatform.cs" t="Include" />
+            <e p="MovingPlatformController.cs" t="Include" />
+            <e p="Spikes.cs" t="Include" />
+            <e p="UnLockerLever.cs" t="Include" />
           </e>
           <e p="Ui" t="Include">
+            <e p="AbstractButton.cs" t="Include" />
+            <e p="AbstractPanel.cs" t="Include" />
+            <e p="GamePlayTimescalePause.cs" t="Include" />
             <e p="LifeBarController.cs" t="Include" />
-            <e p="PixelPerfectCanvasScale.cs" t="Include" />
-            <e p="PlayerUiManager.cs" t="Include" />
+            <e p="LoadMenu.cs" t="Include" />
+            <e p="MainMenuPanel.cs" t="Include" />
+            <e p="OptionsButton.cs" t="Include" />
+            <e p="OptionsPanel.cs" t="Include" />
+            <e p="OptionsParameter.cs" t="Include" />
+            <e p="PauseButton.cs" t="Include" />
+            <e p="PausePanel.cs" t="Include" />
+            <e p="PlayButton.cs" t="Include" />
+            <e p="QuitButton.cs" t="Include" />
+            <e p="RestartButton.cs" t="Include" />
+            <e p="SaveOptions.cs" t="Include" />
+            <e p="ToggleFullScreen.cs" t="Include" />
+            <e p="TurnOfUiOnLoad.cs" t="Include" />
+            <e p="WinArea.cs" t="Include" />
+            <e p="WinPanel.cs" t="Include" />
           </e>
         </e>
         <e p="SpriteAnimationImporter" t="Include">
