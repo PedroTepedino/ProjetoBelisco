@@ -26,16 +26,14 @@ MonoBehaviour:
   grounderLayerMask:
     serializedVersion: 2
     m_Bits: 256
-  wallCheckerTop: {x: 0.8, y: -0.25, z: 0}
-  wallCheckerCenter: {x: 0.8, y: -0.7, z: 0}
-  wallCheckerBottom: {x: 0.8, y: -0.9, z: 0}
+  wallCheckerCenter: {x: 0.8, y: -0.7}
   wallCheckerDistance: 0.2
   wallCheckerLayerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1280
   targetingLayerMask:
     serializedVersion: 2
     m_Bits: 0
-  targetingCenter: {x: 0.6, y: -0.4, z: 0}
-  bossZoneCornerA: {x: 0, y: 0, z: 0}
-  bossZoneCornerB: {x: 0, y: 0, z: 0}
+  targetingCenter: {x: 0.6, y: -0.4}
+  bossZoneCornerA: {x: 0, y: 0}
+  bossZoneCornerB: {x: 0, y: 0}

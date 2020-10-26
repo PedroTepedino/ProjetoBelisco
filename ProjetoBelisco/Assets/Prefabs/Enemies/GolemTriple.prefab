@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2620021826765718941}
   - component: {fileID: 1058461819382233137}
   - component: {fileID: 1058461819382233138}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 8509667045643112271}
   - component: {fileID: 8671828878897509877}
   - component: {fileID: 3974130279652490447}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GolemTriple
   m_TagString: Untagged
   m_Icon: {fileID: 0}

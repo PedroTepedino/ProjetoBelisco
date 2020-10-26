@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 991283959512797599}
   - component: {fileID: 252572107396000548}
   - component: {fileID: 252572107396000549}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GolemSword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 8460504478586316513}
   - component: {fileID: 8460504478586316514}
   - component: {fileID: 670489872377374916}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
