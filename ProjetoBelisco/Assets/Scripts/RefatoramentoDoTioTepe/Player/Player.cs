@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using GameScripts.Collectables;
+using System.Collections;
+using Cinemachine;
 using GameScripts.PoolingSystem;
 using Sirenix.OdinInspector;
-using TMPro;
-using UnityEditor.U2D;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 namespace RefatoramentoDoTioTepe
 {
@@ -43,8 +40,10 @@ namespace RefatoramentoDoTioTepe
         private bool _lastFrameJumpState = false;
         private bool _justTouchedGround = false;
         private bool _attacking = false;
+        private bool _canDash = true;
 
         public bool CanMove = true;
+        public bool IsDashing => _mover is Dasher;
 
         public event Action OnJump;
         public event Action OnTouchedGround;
@@ -62,10 +61,13 @@ namespace RefatoramentoDoTioTepe
         
         public static event Action<int, int> OnPlayerHeal;
 
-
+        [SerializeField] private PlayerGhostSpawner _ghostSpawner;
+        private WaitForSeconds _waitForSecondsDash;
+        
         private void Awake()
         {
             AttackerTimer.SetTimer(_playerParameters.TimeBetweenAttacks);
+            _waitForSecondsDash = new WaitForSeconds(_playerParameters.TimeBetweenDashes);
             
             _grounder = new Grounder(this);
             _lifeSystem = new LifeSystem(this);
@@ -85,10 +87,18 @@ namespace RefatoramentoDoTioTepe
         {
             _grounder = new Grounder(this);
             _mover = new NewMover(this);
-            _jumper = new Jumper(this);
+            _jumper = new NewJumper(this);
             _playerLocker = new PlayerLocker(this);
             _glider = new Glider(this);
             _attacker = new BasicAttacker(this);
+            
+            _grounder.Tick();
+            
+            var camera = UnityEngine.Object.FindObjectOfType<CinemachineVirtualCamera>();
+            
+            if (camera == null ) return;
+
+            camera.Follow = this.transform;
         }
 
         public void Hit(int damage)
@@ -101,6 +111,8 @@ namespace RefatoramentoDoTioTepe
         private void Update()
         {
             AttackerTimer.SubtractTimer();
+            
+            _grounder.Tick();
             
             if (!_attacking && CanMove)
             { 
@@ -131,8 +143,13 @@ namespace RefatoramentoDoTioTepe
 
         private void StartDash()
         {
-            _mover = new Dasher(this);
-            _playerAnimatorController.Dash();
+            if (_canDash)
+            {
+                _mover = new Dasher(this);
+                _playerAnimatorController.Dash();
+                _ghostSpawner.StartSpawning();
+                _canDash = false;
+            }
         }
 
         public void StopDashing()
@@ -146,6 +163,13 @@ namespace RefatoramentoDoTioTepe
         public void EndDash()
         {
             _mover = new NewMover(this);
+            StartCoroutine(DashTimer());
+        }
+
+        private IEnumerator DashTimer()
+        {
+            yield return _waitForSecondsDash;
+            _canDash = true;
         }
 
         //public void CallAttack<T>() where T : IAttacker
@@ -225,6 +249,9 @@ namespace RefatoramentoDoTioTepe
 
             if (AnimatorController == null)
                 _playerAnimatorController = this.GetComponent<PlayerAnimatorController>();
+
+            if (_ghostSpawner == null)
+                _ghostSpawner = this.GetComponent<PlayerGhostSpawner>();
         }
 
         public void OnObjectSpawn(object[] parameters = null)

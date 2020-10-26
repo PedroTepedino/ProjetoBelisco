@@ -62,5 +62,15 @@ MonoBehaviour:
   - prefab: {fileID: 8588909763028274931, guid: efdf5ac5bf3cf964b9b7e8cf8f990bc6,
       type: 3}
     tag: Ghost
-    size: 10
+    size: 3
+    fixSize: 1
+  - prefab: {fileID: 7318840116845801735, guid: 2ad2f69e43d66ef4ea22a4a1b3a13ecb,
+      type: 3}
+    tag: AirJump
+    size: 0
+    fixSize: 0
+  - prefab: {fileID: 2628312115988943141, guid: dc4a25d12575a834aae0e28acee1f93b,
+      type: 3}
+    tag: GroundJump
+    size: 1
     fixSize: 0

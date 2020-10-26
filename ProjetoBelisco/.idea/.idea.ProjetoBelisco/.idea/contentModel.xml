@@ -7,6 +7,36 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AllIn1SpriteShader" t="Include">
+          <e p="Demo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="All1ShaderDemoController.cs" t="Include" />
+              <e p="Demo2AutoScroll.cs" t="Include" />
+              <e p="DemoCamera.cs" t="Include" />
+              <e p="DemoCircleExpositor.cs" t="Include" />
+              <e p="DemoItem.cs" t="Include" />
+              <e p="DemoRandomColorSwap.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Editor" t="Include">
+            <e p="AllIn1ShaderScriptEditor.cs" t="Include" />
+            <e p="AllIn1SpriteShader.cs" t="Include" />
+            <e p="AllIn1SpriteShaderStencil.cs" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="AllIn1OneShaderFunctions.cginc" t="Include" />
+            <e p="AllIn1SpriteShader.shader" t="Include" />
+            <e p="AllIn1SpriteShaderScrollView.shader" t="Include" />
+            <e p="AllIn1SpriteShaderUnscaledTime.shader" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="AllIn1Shader.cs" t="Include" />
+            <e p="AllIn1ShaderWindow.cs" t="Include" />
+            <e p="RandomSeed.cs" t="Include" />
+            <e p="SetAtlasUvs.cs" t="Include" />
+            <e p="SetGlobalTime.cs" t="Include" />
+          </e>
+        </e>
         <e p="Arts" t="Include">
           <e p="Fonts" t="Include">
             <e p="license.txt" t="Include" />
@@ -337,13 +367,14 @@
               <e p="Paw.cs" t="Include" />
               <e p="PawInventory.cs" t="Include" />
             </e>
+            <e p="ParticlePooledObject.cs" t="Include" />
             <e p="Player" t="Include">
               <e p="AttackerTimer.cs" t="Include" />
               <e p="AttackEventsEmitter.cs" t="Include" />
               <e p="BasicAttacker.cs" t="Include" />
               <e p="FX" t="Include">
                 <e p="Ghost.cs" t="Include" />
-                <e p="GhostSpawner.cs" t="Include" />
+                <e p="PlayerGhostSpawner.cs" t="Include" />
               </e>
               <e p="Glider.cs" t="Include" />
               <e p="Grounder.cs" t="Include" />

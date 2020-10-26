@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: DefaultPlayerParameters
   m_EditorClassIdentifier: 
   _maxHealth: 10
-  _movementSpeed: 5.5
+  _movementSpeed: 6
   _walkAcceleration: 10
   _dashVelocity: 20
   _dashMaxTimer: 0
+  _timeBetweenDashes: 0.2
   _jumpVelocity: 15
   _maxJumpButtonHoldTime: 0.5
   _gravityFallMultiplayer: 2
+  _lowGravityFallMultiplayer: 8
   _velocityWhenTerminateJump: 1
   _glideFallVelocity: -1.5
   _grounderPosition: {x: 0, y: 0, z: 0}
@@ -29,6 +31,7 @@ MonoBehaviour:
     m_Bits: 256
   _nearGroundGrounderPosition: {x: 0, y: -0.2, z: 0}
   _nearGroundGrounderSizes: {x: 0.3, y: 0.4}
+  _permitedArialTime: 0.1
   _wallJumpBoxOffsetRight: {x: 0.22, y: 0.53}
   _wallJumpBoxOffsetLeft: {x: -0.27, y: 0.53}
   _wallJumpBoxSizes: {x: 0.12, y: 0.8}

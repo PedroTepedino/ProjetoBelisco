@@ -193,7 +193,7 @@ namespace GameScripts.Tools.Editor
             [Button("Save", ButtonSizes.Large)]
             private void CreateNewSceneType()
             {
-                AssetDatabase.CreateAsset(EssentialObjects, "Assets/Resources/Tools/SceneEssentials/" + EssentialsName + ".asset");
+                AssetDatabase.CreateAsset(EssentialObjects, "Assets/Editor/Tools/SceneEssentials/" + EssentialsName + ".asset");
                 AssetDatabase.SaveAssets();
 
                 // Create new Instance of the Scriptable Object

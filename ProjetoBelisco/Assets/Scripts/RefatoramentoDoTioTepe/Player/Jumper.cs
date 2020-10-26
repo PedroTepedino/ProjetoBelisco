@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using GameScripts.PoolingSystem;
+using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
 {
@@ -73,6 +75,79 @@ namespace RefatoramentoDoTioTepe
             }
             
             _rigidbody.velocity = velocity;
+        }
+    }
+
+    public class NewJumper : IJumper
+    {
+        private readonly Player _player;
+        private Rigidbody2D _rigidbody;
+        private readonly Grounder _playerGrounder;
+        private float _jumpVelocity;
+        private float _jumpTimer;
+        private float _gravityFallMultiplayer;
+        private float _lowGravityFallMultiplayer;
+        private float _permitedArialTime;
+        
+        private bool _canJumpAgain = true;
+
+        public bool Jumping { get; }
+
+        private bool _jumpAction = false;
+        
+        public NewJumper(Player player)
+        {
+            _player = player;
+            _rigidbody = player.gameObject.GetComponent<Rigidbody2D>();
+            _playerGrounder = player.Grounder;
+            _jumpVelocity = player.PlayerParameters.JumpVelocity;
+            _gravityFallMultiplayer = player.PlayerParameters.GravityFallMultiplayer;
+            _lowGravityFallMultiplayer = player.PlayerParameters.LowGravityFallMultiplayer;
+            _permitedArialTime = player.PlayerParameters.PermitedArialTime;
+        }
+
+        public void Tick()
+        {
+            _jumpVelocity = _player.PlayerParameters.JumpVelocity;
+            _gravityFallMultiplayer = _player.PlayerParameters.GravityFallMultiplayer;
+            _permitedArialTime = _player.PlayerParameters.PermitedArialTime;
+
+            if (RewiredPlayerInput.Instance.InitiateJump && (_playerGrounder.IsGrounded || _playerGrounder.NearGround || _playerGrounder.CoyoteGround ) && !_jumpAction)
+            {
+                JumpAction(Vector2.up);
+            }
+
+            if (_rigidbody.velocity.y < 0)
+            {
+                _rigidbody.velocity +=
+                    Vector2.up * (Physics2D.gravity.y * (_gravityFallMultiplayer - 1) * Time.deltaTime);
+            }
+            else if (_rigidbody.velocity.y > 0 && !RewiredPlayerInput.Instance.Jump)
+            {
+                _rigidbody.velocity +=
+                    Vector2.up * (Physics2D.gravity.y * (_lowGravityFallMultiplayer - 1) * Time.deltaTime);
+            }
+        }
+
+        private void JumpAction(Vector2 jumpDirection)
+        {
+            var velocity = _rigidbody.velocity;
+            velocity = new Vector2(velocity.x, 0f);
+            velocity += jumpDirection * _jumpVelocity;
+            _rigidbody.velocity = velocity;
+
+            Pooler.Instance.SpawnFromPool(_playerGrounder.CoyoteGround ? "AirJump" : "GroundJump",
+                _player.transform.position, Quaternion.identity);
+
+            _jumpAction = true;
+            _player.StartCoroutine(FinishJumpAction());
+        }
+
+        private IEnumerator FinishJumpAction()
+        {
+            yield return new WaitForSeconds(0.2f);
+            yield return new WaitUntil(()=> _playerGrounder.IsGrounded || _playerGrounder.NearGround || RewiredPlayerInput.Instance.TerminateJump || !RewiredPlayerInput.Instance.Jump);
+            _jumpAction = false;
         }
     }
 }

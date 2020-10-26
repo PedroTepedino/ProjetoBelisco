@@ -40,8 +40,6 @@ namespace RefatoramentoDoTioTepe
 
         public void Attack()
         {
-            Debug.Log($"Attack {_attackDirection}");
-
             Collider2D[] collisions = GetCollisions(_attackParameters[_attackDirection]);
 
             foreach (var collider in collisions)

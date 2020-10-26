@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 namespace RefatoramentoDoTioTepe
 {
-    public class Grounder 
+    public class Grounder
     {
+        private readonly Player _player;
         private readonly Transform _playerTransform;
 
         private readonly Vector3 _grounderPosition;
@@ -14,9 +16,16 @@ namespace RefatoramentoDoTioTepe
         private readonly Vector3 _nearGroundPosition;
         private readonly Vector2 _nearGroundSizes;
 
-        public bool IsGrounded => Physics2D.OverlapBox(_playerTransform.position + _grounderPosition, _grounderSizes, 0f, _layerMask);
+        private float _permitedArialTime;
+        private readonly Rigidbody2D _rigidbody;
 
-        public bool NearGround => Physics2D.OverlapBox(_playerTransform.position + _nearGroundPosition, _nearGroundSizes, 0f, _layerMask);
+        private Coroutine _coyoteRoutine;
+
+        public bool IsGrounded { get; private set; }
+
+        public bool NearGround { get; private set; } 
+        
+        public bool CoyoteGround { get; private set; }
         
         public Grounder(Player player)
         {
@@ -27,8 +36,50 @@ namespace RefatoramentoDoTioTepe
 
             _playerCollider = player.GetComponent<Collider2D>();
 
-            _nearGroundPosition = player.PlayerParameters.NearGroundGrounderPosition;
+            _nearGroundPosition = player.PlayerParameters.NearGroundGrounderPosition; 
             _nearGroundSizes = player.PlayerParameters.NearGroundGrounderSizes;
+
+            _permitedArialTime = player.PlayerParameters.PermitedArialTime;
+
+            _rigidbody = player.GetComponent<Rigidbody2D>();
+
+            _player = player;
+        }
+        
+        public void Tick()
+        {
+            _permitedArialTime = _player.PlayerParameters.PermitedArialTime;
+            var lastFrameGround = IsGrounded;
+            
+            UpdateGroundedValues();
+            
+            if (lastFrameGround && !IsGrounded)
+            {
+                _coyoteRoutine = _player.StartCoroutine(ArialTimeCounter());
+            }
+
+            if ((_coyoteRoutine != null || CoyoteGround) && IsGrounded)
+            {
+                CoyoteGround = false;
+                _player.StopCoroutine(_coyoteRoutine);
+            }
+        }
+
+        private void UpdateGroundedValues()
+        {
+            var position = _playerTransform.position;
+            IsGrounded = Physics2D.OverlapBox(position + _grounderPosition, _grounderSizes, 0f, _layerMask);
+            NearGround = _rigidbody.velocity.y <= 0f && Physics2D.OverlapBox(position + _nearGroundPosition, _nearGroundSizes, 0f, _layerMask);
+        }
+
+
+        private IEnumerator ArialTimeCounter()
+        {
+            CoyoteGround = true;
+
+            yield return new WaitForSeconds(_permitedArialTime);
+
+            CoyoteGround = false;
         }
     }
 }

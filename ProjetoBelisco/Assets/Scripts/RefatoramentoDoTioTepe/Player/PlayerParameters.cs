@@ -11,12 +11,14 @@ namespace RefatoramentoDoTioTepe
         [BoxGroup("Movement")] [SerializeField] private float _movementSpeed = 5f;
         [BoxGroup("Movement")] [SerializeField] private float _walkAcceleration = 5.5f;
         
-        [BoxGroup("Dash")] [SerializeField]private float _dashVelocity = 10f;
-        [BoxGroup("Dash")] [SerializeField]private float _dashMaxTimer = 0.5f;
+        [BoxGroup("Dash")] [SerializeField] private float _dashVelocity = 10f;
+        [BoxGroup("Dash")] [SerializeField] private float _dashMaxTimer = 0.5f;
+        [BoxGroup("Dash")] [SerializeField] private float _timeBetweenDashes;
         
         [BoxGroup("Jump")] [SerializeField] private float _jumpVelocity = 5f;
         [BoxGroup("Jump")] [SerializeField] private float _maxJumpButtonHoldTime = 1f;
-        [BoxGroup("Jump")] [SerializeField] private float _gravityFallMultiplayer = 2f;
+        [BoxGroup("Jump")] [SerializeField] private float _gravityFallMultiplayer = 3f;
+        [BoxGroup("Jump")] [SerializeField] private float _lowGravityFallMultiplayer = 8f;
         [BoxGroup("Jump")] [SerializeField] private float _velocityWhenTerminateJump = 3f;
         
         [BoxGroup("Glide")] [SerializeField] private float _glideFallVelocity = 0.5f;
@@ -27,6 +29,7 @@ namespace RefatoramentoDoTioTepe
         [BoxGroup("Grounder/LayerMask")] [SerializeField] [EnumToggleButtons] private LayerMask _grounderLayerMask;
         [BoxGroup("Grounder/NearGroundPreview")] [SerializeField] private Vector3 _nearGroundGrounderPosition;
         [BoxGroup("Grounder/NearGroundPreview")] [SerializeField] private Vector2 _nearGroundGrounderSizes;
+        [BoxGroup("Grounder/ArialTime")] [SerializeField] private float _permitedArialTime;
         
         [BoxGroup("WallJump")] [SerializeField] private Vector2 _wallJumpBoxOffsetRight;
         [BoxGroup("WallJump")] [SerializeField] private Vector2 _wallJumpBoxOffsetLeft;
@@ -54,6 +57,7 @@ namespace RefatoramentoDoTioTepe
         [BoxGroup("Attack/StrongAttack/Ground")] [SerializeField] private float _strongAttackRadius;
         
 
+
         public Vector3 GrounderPosition => _grounderPosition;
         public float MovementSpeed => _movementSpeed;
         public float WalkAcceleration => _walkAcceleration;
@@ -67,6 +71,7 @@ namespace RefatoramentoDoTioTepe
         public float GravityFallMultiplayer => _gravityFallMultiplayer;
         public float DashVelocity => _dashVelocity;
         public float DashMaxTimer => _dashMaxTimer;
+        public float TimeBetweenDashes => _timeBetweenDashes;
         public float VelocityWhenTerminateJump => _velocityWhenTerminateJump;
         public Vector3 NearGroundGrounderPosition => _nearGroundGrounderPosition;
         public Vector2 NearGroundGrounderSizes => _nearGroundGrounderSizes;
@@ -110,6 +115,7 @@ namespace RefatoramentoDoTioTepe
             set => _wallJumpMoverTimeOff = value;
         }
 
-        
+        public float LowGravityFallMultiplayer => _lowGravityFallMultiplayer;
+        public float PermitedArialTime => _permitedArialTime;
     }
 }

@@ -1,5 +1,8 @@
-﻿using UnityEngine;
+﻿using System.Management.Instrumentation;
+using Cinemachine;
+using UnityEngine;
 using UnityEngine.AddressableAssets;
+using Object = System.Object;
 
 namespace RefatoramentoDoTioTepe
 {

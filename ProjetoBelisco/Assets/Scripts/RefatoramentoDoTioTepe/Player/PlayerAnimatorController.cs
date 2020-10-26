@@ -41,6 +41,8 @@ namespace RefatoramentoDoTioTepe
                 _isLookingRight = false;
             }
             
+            ExitDashAnimation(!_player.IsDashing && Mathf.Abs(RewiredPlayerInput.Instance.Horizontal) > 0.1f);
+
             LookDirection(lookRight: _isLookingRight);
             
             SetFloat("HorizontalVelocity", Mathf.Abs(horizontalVelocity));
@@ -84,6 +86,11 @@ namespace RefatoramentoDoTioTepe
         public void HoldWall(bool holdWall)
         {
             SetBool("TouchingWall", holdWall);
+        }
+
+        public void ExitDashAnimation(bool endDash)
+        {
+            SetBool("ExitDash", endDash);
         }
 
         private void LookDirection(bool lookRight)
