@@ -10,7 +10,7 @@ Material:
   m_Name: EnemyPixelMAT
   m_Shader: {fileID: -6465566751694194690, guid: 3af51efc3d1433842acd1e7b4c8abe6e,
     type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0

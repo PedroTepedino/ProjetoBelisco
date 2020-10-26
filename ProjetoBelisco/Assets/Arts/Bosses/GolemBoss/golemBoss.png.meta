@@ -1,0 +1,2888 @@
+fileFormatVersion: 2
+guid: 6a01629d0fa34394b851778631e090db
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7233305297962239969
+    second: golemBoss_0
+  - first:
+      213: -1082723257552273606
+    second: golemBoss_1
+  - first:
+      213: 6687897189676617950
+    second: golemBoss_2
+  - first:
+      213: -2890374902992982318
+    second: golemBoss_3
+  - first:
+      213: 840758275296355430
+    second: golemBoss_4
+  - first:
+      213: -6728324112038897829
+    second: golemBoss_5
+  - first:
+      213: 4388893118707236260
+    second: golemBoss_6
+  - first:
+      213: -3648080535944477033
+    second: golemBoss_7
+  - first:
+      213: -5527695792102396707
+    second: golemBoss_8
+  - first:
+      213: 816002736966791472
+    second: golemBoss_9
+  - first:
+      213: 423778594995790422
+    second: golemBoss_10
+  - first:
+      213: 2856503365413510112
+    second: golemBoss_11
+  - first:
+      213: 5561503837876651821
+    second: golemBoss_12
+  - first:
+      213: 3186314258706203826
+    second: golemBoss_13
+  - first:
+      213: -7121685881775216873
+    second: golemBoss_14
+  - first:
+      213: 4464972118263241187
+    second: golemBoss_15
+  - first:
+      213: -7662096132388455653
+    second: golemBoss_16
+  - first:
+      213: 2813799479061957034
+    second: golemBoss_17
+  - first:
+      213: 2100396950596889803
+    second: golemBoss_18
+  - first:
+      213: 3331186645297223102
+    second: golemBoss_19
+  - first:
+      213: -140778007685992353
+    second: golemBoss_20
+  - first:
+      213: -2111502342837705626
+    second: golemBoss_21
+  - first:
+      213: -6073832644460959313
+    second: golemBoss_22
+  - first:
+      213: 6222291915798240178
+    second: golemBoss_23
+  - first:
+      213: 6810246193736739711
+    second: golemBoss_24
+  - first:
+      213: 3914024916226601212
+    second: golemBoss_25
+  - first:
+      213: -7583563464693380420
+    second: golemBoss_26
+  - first:
+      213: -5164194635839722328
+    second: golemBoss_27
+  - first:
+      213: -8479442396666237751
+    second: golemBoss_28
+  - first:
+      213: -6615012502528071098
+    second: golemBoss_29
+  - first:
+      213: 7421974130353177043
+    second: golemBoss_30
+  - first:
+      213: -6194534957497483559
+    second: golemBoss_31
+  - first:
+      213: 2167849090177658058
+    second: golemBoss_32
+  - first:
+      213: -7470416965329470903
+    second: golemBoss_33
+  - first:
+      213: -4887332946035435053
+    second: golemBoss_34
+  - first:
+      213: 4105930634163939300
+    second: golemBoss_35
+  - first:
+      213: 60367589516697778
+    second: golemBoss_36
+  - first:
+      213: 962314928831153958
+    second: golemBoss_37
+  - first:
+      213: 179331735409132657
+    second: golemBoss_38
+  - first:
+      213: 3538419934202517998
+    second: golemBoss_39
+  - first:
+      213: 6938459905193925626
+    second: golemBoss_40
+  - first:
+      213: -3572843137905360450
+    second: golemBoss_41
+  - first:
+      213: 4242736395778244450
+    second: golemBoss_42
+  - first:
+      213: 2008425993087962204
+    second: golemBoss_43
+  - first:
+      213: -7298329823905814555
+    second: golemBoss_44
+  - first:
+      213: 7943231947940015318
+    second: golemBoss_45
+  - first:
+      213: 7571374184789467456
+    second: golemBoss_46
+  - first:
+      213: -5357924500725791637
+    second: golemBoss_47
+  - first:
+      213: -3065617467838587014
+    second: golemBoss_48
+  - first:
+      213: -4446585506124134517
+    second: golemBoss_49
+  - first:
+      213: -5124064387102613736
+    second: golemBoss_50
+  - first:
+      213: -413922302984784372
+    second: golemBoss_51
+  - first:
+      213: 9209800257858194922
+    second: golemBoss_52
+  - first:
+      213: 7957345640711012293
+    second: golemBoss_53
+  - first:
+      213: -2019707215660880631
+    second: golemBoss_54
+  - first:
+      213: 1160791346030310632
+    second: golemBoss_55
+  - first:
+      213: -9154010711403879891
+    second: golemBoss_56
+  - first:
+      213: -5585424468598670004
+    second: golemBoss_57
+  - first:
+      213: 2274521979553024829
+    second: golemBoss_58
+  - first:
+      213: 2594863983132350463
+    second: golemBoss_59
+  - first:
+      213: 6992360639502703310
+    second: golemBoss_60
+  - first:
+      213: -8210503516678178790
+    second: golemBoss_61
+  - first:
+      213: -6950031066871902241
+    second: golemBoss_62
+  - first:
+      213: -8225397600473771207
+    second: golemBoss_63
+  - first:
+      213: -8867573415371425231
+    second: golemBoss_64
+  - first:
+      213: -5248285789071706264
+    second: golemBoss_65
+  - first:
+      213: -4208196167865007230
+    second: golemBoss_66
+  - first:
+      213: -2605262616632521594
+    second: golemBoss_67
+  - first:
+      213: -4414465922955231643
+    second: golemBoss_68
+  - first:
+      213: 4845315109960496586
+    second: golemBoss_69
+  - first:
+      213: 6326990210254238721
+    second: golemBoss_70
+  - first:
+      213: 7497833635952080091
+    second: golemBoss_71
+  - first:
+      213: -8291848269730388501
+    second: golemBoss_72
+  - first:
+      213: 2318833998656128301
+    second: golemBoss_73
+  - first:
+      213: 4798363901982029406
+    second: golemBoss_74
+  - first:
+      213: -3004852603468527083
+    second: golemBoss_75
+  - first:
+      213: 6032781025102006169
+    second: golemBoss_76
+  - first:
+      213: -7206873590939917767
+    second: golemBoss_77
+  - first:
+      213: 6115087247952128969
+    second: golemBoss_78
+  - first:
+      213: -8224285058872839016
+    second: golemBoss_79
+  - first:
+      213: -6979264645804434233
+    second: golemBoss_80
+  - first:
+      213: 4924606141918867517
+    second: golemBoss_81
+  - first:
+      213: 3554527004542316086
+    second: golemBoss_82
+  - first:
+      213: 5452626277542586152
+    second: golemBoss_83
+  - first:
+      213: 7799698302376597024
+    second: golemBoss_84
+  - first:
+      213: -7570701103649097835
+    second: golemBoss_85
+  - first:
+      213: 5330374732113850269
+    second: golemBoss_86
+  - first:
+      213: 4986118471499605720
+    second: golemBoss_87
+  - first:
+      213: -3208202762000598984
+    second: golemBoss_88
+  - first:
+      213: -3869379488879199797
+    second: golemBoss_89
+  - first:
+      213: -3859577843408085193
+    second: golemBoss_90
+  - first:
+      213: -9078123259286963784
+    second: golemBoss_91
+  - first:
+      213: 5148898720583250457
+    second: golemBoss_92
+  - first:
+      213: 1635859836605065272
+    second: golemBoss_93
+  - first:
+      213: 6454816321640785865
+    second: golemBoss_94
+  - first:
+      213: -1447484631174194750
+    second: golemBoss_95
+  - first:
+      213: 6715328027313685360
+    second: golemBoss_96
+  - first:
+      213: 4583436466132005264
+    second: golemBoss_97
+  - first:
+      213: -183633673143887112
+    second: golemBoss_98
+  - first:
+      213: -5442297731162709278
+    second: golemBoss_99
+  - first:
+      213: -8840581686779973176
+    second: golemBoss_100
+  - first:
+      213: 3378575089395126046
+    second: golemBoss_101
+  - first:
+      213: -6889640332270265396
+    second: golemBoss_102
+  - first:
+      213: 3829721321329455497
+    second: golemBoss_103
+  - first:
+      213: 5167691662937062729
+    second: golemBossEyeShineAntecipation_0
+  - first:
+      213: 946229023387222491
+    second: golemBossEyeShineAntecipation_1
+  - first:
+      213: -2797225000850461184
+    second: golemBossEyeShineAntecipation_2
+  - first:
+      213: 3434503935345035820
+    second: golemBossEyeShineAntecipation_3
+  - first:
+      213: 7894493988295508586
+    second: golemBossEyeShineAntecipation_4
+  - first:
+      213: 9187523840703392537
+    second: golemBossEyeShineAntecipation_5
+  - first:
+      213: 8437762736632920400
+    second: golemBossEyeShineAntecipation_6
+  - first:
+      213: 6442619492093222048
+    second: golemBossRightBladeAntecipation_0
+  - first:
+      213: 5035167912890304518
+    second: golemBossRightBladeAntecipation_1
+  - first:
+      213: 6517240491838709782
+    second: golemBossRightBladeAntecipation_2
+  - first:
+      213: -970375508757176858
+    second: golemBossRightBladeAntecipation_3
+  - first:
+      213: -8103993042873588416
+    second: golemBossRightBladeAntecipation_4
+  - first:
+      213: -3804349776953001593
+    second: golemBossRightBladeAntecipation_5
+  - first:
+      213: 4404309093651201591
+    second: golemBossRightBladeAntecipation_6
+  - first:
+      213: -2184503451639413937
+    second: golemBossLeftBladeAntecipation_0
+  - first:
+      213: 89399111154987055
+    second: golemBossLeftBladeAntecipation_1
+  - first:
+      213: -2885039547596502579
+    second: golemBossLeftBladeAntecipation_2
+  - first:
+      213: 7922300484922849099
+    second: golemBossLeftBladeAntecipation_3
+  - first:
+      213: -6576838183001664051
+    second: golemBossLeftBladeAntecipation_4
+  - first:
+      213: 1901486243484877499
+    second: golemBossLeftBladeAntecipation_5
+  - first:
+      213: -4031438980469320483
+    second: golemBossLeftBladeAntecipation_6
+  - first:
+      213: 7449415948267404170
+    second: golemBossIddleFullBody_0
+  - first:
+      213: -2175862145634008906
+    second: golemBossIddleFullBody_1
+  - first:
+      213: -5152833429921384281
+    second: golemBossIddleFullBody_2
+  - first:
+      213: 2973309886094408055
+    second: golemBossIddleFullBody_3
+  - first:
+      213: 6120168899596710017
+    second: golemBossIddleFullBody_4
+  - first:
+      213: 4356723264869661027
+    second: golemBossIddleFullBody_5
+  - first:
+      213: 7826149391024263692
+    second: golemBossIddleFullBody_6
+  - first:
+      213: -6635082447633414117
+    second: golemBossIddleFullBody_7
+  - first:
+      213: -1440746689286178377
+    second: golemBossIddleFullBody_8
+  - first:
+      213: 6458990038398960549
+    second: golemBossIddleFullBody_9
+  - first:
+      213: -4572623613557691661
+    second: golemBossAntecipationFullBody_0
+  - first:
+      213: -3408448542789180575
+    second: golemBossAntecipationFullBody_1
+  - first:
+      213: 8013551533634699318
+    second: golemBossAntecipationFullBody_2
+  - first:
+      213: 7548991874177455252
+    second: golemBossAntecipationFullBody_3
+  - first:
+      213: -5172222654090235824
+    second: golemBossAntecipationFullBody_4
+  - first:
+      213: 5105554851506298984
+    second: golemBossAntecipationFullBody_5
+  - first:
+      213: 5131008937013237861
+    second: golemBossAntecipationFullBody_6
+  - first:
+      213: 297381753289129855
+    second: golemBossDamageFullBody_0
+  - first:
+      213: -8633861402589854242
+    second: golemBossDamageEye_0
+  - first:
+      213: -3450068860470119698
+    second: golemBossDamageRightBlade_0
+  - first:
+      213: -6356570394462724844
+    second: golemBossDamageLeftBlade_0
+  - first:
+      213: -1114139869891964795
+    second: golemBossIddleEye_0
+  - first:
+      213: 5792878453148461932
+    second: golemBossIddleEye_1
+  - first:
+      213: 1378735592392589751
+    second: golemBossIddleEye_2
+  - first:
+      213: 4919535013962468929
+    second: golemBossIddleEye_3
+  - first:
+      213: -96128333087530363
+    second: golemBossIddleEye_4
+  - first:
+      213: -7770413922750973157
+    second: golemBossIddleEye_5
+  - first:
+      213: 8677118026277794951
+    second: golemBossIddleEye_6
+  - first:
+      213: 1382523047023839375
+    second: golemBossIddleEye_7
+  - first:
+      213: 6683630789844740962
+    second: golemBossIddleEye_8
+  - first:
+      213: 6909952330832378092
+    second: golemBossIddleEye_9
+  - first:
+      213: -3793356865530877277
+    second: golemBossIddleLeftBlade_0
+  - first:
+      213: 8536011250661883738
+    second: golemBossIddleLeftBlade_1
+  - first:
+      213: 2681921690840712055
+    second: golemBossIddleLeftBlade_2
+  - first:
+      213: -3993605400973910652
+    second: golemBossIddleLeftBlade_3
+  - first:
+      213: -6218117428435066255
+    second: golemBossIddleLeftBlade_4
+  - first:
+      213: 2912709707194692767
+    second: golemBossIddleLeftBlade_5
+  - first:
+      213: -3436582653597069159
+    second: golemBossIddleLeftBlade_6
+  - first:
+      213: -278197701106651578
+    second: golemBossIddleLeftBlade_7
+  - first:
+      213: -3969586296120012055
+    second: golemBossIddleLeftBlade_8
+  - first:
+      213: 2110373152376714543
+    second: golemBossIddleLeftBlade_9
+  - first:
+      213: -9151275161185162660
+    second: golemBossIddleRightBlade_0
+  - first:
+      213: -6295020585815881068
+    second: golemBossIddleRightBlade_1
+  - first:
+      213: -4407282479484187223
+    second: golemBossIddleRightBlade_2
+  - first:
+      213: 6753036162925976877
+    second: golemBossIddleRightBlade_3
+  - first:
+      213: -5780566815918272561
+    second: golemBossIddleRightBlade_4
+  - first:
+      213: 6532655363889575173
+    second: golemBossIddleRightBlade_5
+  - first:
+      213: -3322477281985312401
+    second: golemBossIddleRightBlade_6
+  - first:
+      213: 6844079883670639509
+    second: golemBossIddleRightBlade_7
+  - first:
+      213: -1496874845540457904
+    second: golemBossIddleRightBlade_8
+  - first:
+      213: -2182724026477001862
+    second: golemBossIddleRightBlade_9
+  - first:
+      213: 4506818412576458112
+    second: golemBossDeathFullBody_0
+  - first:
+      213: 4789958367808218621
+    second: golemBossDeathFullBody_1
+  - first:
+      213: 8270793417693184079
+    second: golemBossDeathPiecesSeparated_0
+  - first:
+      213: -5571106442674331639
+    second: golemBossDeathPiecesSeparated_1
+  - first:
+      213: 3129869980083494141
+    second: golemBossDeathPiecesSeparated_2
+  - first:
+      213: -6985068319048454230
+    second: golemBossDeathPiecesSeparated_3
+  - first:
+      213: 4743290126264096917
+    second: golemBossDeathPiecesSeparated_4
+  - first:
+      213: 9177332600932766218
+    second: golemBossDeathPiecesSeparated_5
+  - first:
+      213: -8483160692370175609
+    second: golemBossDeathPiecesSeparated_6
+  - first:
+      213: 1510635388718090303
+    second: golemBossDeathPiecesSeparated_7
+  - first:
+      213: 5401780060968257382
+    second: golemBossDeathPiecesSeparated_8
+  - first:
+      213: -8846399508095335214
+    second: golemBossDeathPiecesSeparated_9
+  - first:
+      213: -6307704721473472623
+    second: golemBossDeathPiecesSeparated_10
+  - first:
+      213: 3295603877100946747
+    second: golemBossDeathPiecesSeparated_11
+  - first:
+      213: -1711522364096786249
+    second: golemBossDeathPiecesSeparated_12
+  - first:
+      213: 2817112640466050429
+    second: golemBossDeathPiecesSeparated_13
+  - first:
+      213: 8948050049609290573
+    second: golemBossDeathPiecesSeparated_14
+  - first:
+      213: 598165026805260794
+    second: golemBossExplosion_0
+  - first:
+      213: 8759033360543670566
+    second: golemBossExplosion_1
+  - first:
+      213: 1343692721668022936
+    second: golemBossExplosion_2
+  - first:
+      213: -1280420940798148411
+    second: golemBossExplosion_3
+  - first:
+      213: -501305788120112882
+    second: golemBossExplosion_4
+  - first:
+      213: -8462877108919474553
+    second: golemBossExplosion_5
+  - first:
+      213: 638989578944181954
+    second: golemBossExplosion_6
+  - first:
+      213: 2291884626731015308
+    second: golemBossExplosion_7
+  - first:
+      213: 1810054398537531225
+    second: golemBossExplosion_8
+  - first:
+      213: 797219362617396955
+    second: golemBossExplosion_9
+  - first:
+      213: -2117800291998788413
+    second: golemBossExplosion_10
+  - first:
+      213: -2139202929794787386
+    second: golemBossExplosion_11
+  - first:
+      213: 8815495999465497014
+    second: golemBossExplosion_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: golemBossEyeShineAntecipation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d7c16103457b740800000000000000
+      internalID: 5167691662937062729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossEyeShineAntecipation_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1092f884ea12d00800000000000000
+      internalID: 946229023387222491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossEyeShineAntecipation_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00e677b9ea24e29d0800000000000000
+      internalID: -2797225000850461184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossEyeShineAntecipation_3
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a0ce5e12fc9af20800000000000000
+      internalID: 3434503935345035820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossEyeShineAntecipation_4
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a628fcd9470ee8d60800000000000000
+      internalID: 7894493988295508586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossEyeShineAntecipation_5
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91bee8a6144a08f70800000000000000
+      internalID: 9187523840703392537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossEyeShineAntecipation_6
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0597808f084f81570800000000000000
+      internalID: 8437762736632920400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossRightBladeAntecipation_0
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac59392b48c86950800000000000000
+      internalID: 6442619492093222048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossRightBladeAntecipation_1
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60885401a8280e540800000000000000
+      internalID: 5035167912890304518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossRightBladeAntecipation_2
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 1520
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610a6df82b3e17a50800000000000000
+      internalID: 6517240491838709782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossRightBladeAntecipation_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed1ac5bd988882f0800000000000000
+      internalID: -970375508757176858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossRightBladeAntecipation_4
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0456849a345d88f80800000000000000
+      internalID: -8103993042873588416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossRightBladeAntecipation_5
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789316fb80c343bc0800000000000000
+      internalID: -3804349776953001593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossRightBladeAntecipation_6
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e3a1029cf3f1d30800000000000000
+      internalID: 4404309093651201591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLeftBladeAntecipation_0
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f430b6a4fa51fa1e0800000000000000
+      internalID: -2184503451639413937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLeftBladeAntecipation_1
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f20f0a7940c9d3100800000000000000
+      internalID: 89399111154987055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLeftBladeAntecipation_2
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc98e8a21d746f7d0800000000000000
+      internalID: -2885039547596502579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLeftBladeAntecipation_3
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b473bbf115aa1fd60800000000000000
+      internalID: 7922300484922849099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLeftBladeAntecipation_4
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc5d5f4a4806ab4a0800000000000000
+      internalID: -6576838183001664051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLeftBladeAntecipation_5
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 1368
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb24538f9af636a10800000000000000
+      internalID: 1901486243484877499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossLeftBladeAntecipation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd496735b937d08c0800000000000000
+      internalID: -4031438980469320483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleFullBody_0
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8bbb941654a16760800000000000000
+      internalID: 7449415948267404170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleFullBody_1
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0044128e8cdc1e0800000000000000
+      internalID: -2175862145634008906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleFullBody_2
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a837cedb457d78b0800000000000000
+      internalID: -5152833429921384281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleFullBody_3
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77970df8691534920800000000000000
+      internalID: 2973309886094408055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleFullBody_4
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 180fad920353fe450800000000000000
+      internalID: 6120168899596710017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleFullBody_5
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3697c3bf9b0367c30800000000000000
+      internalID: 4356723264869661027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleFullBody_6
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02142b08611c9c60800000000000000
+      internalID: 7826149391024263692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleFullBody_7
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1881650ba37be3a0800000000000000
+      internalID: -6635082447633414117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleFullBody_8
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 1216
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9f6cdf480710ce0800000000000000
+      internalID: -1440746689286178377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleFullBody_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a38e8ef731f2a950800000000000000
+      internalID: 6458990038398960549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossAntecipationFullBody_0
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3faa45edc07ca80c0800000000000000
+      internalID: -4572623613557691661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossAntecipationFullBody_1
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1636adbeb12c2b0d0800000000000000
+      internalID: -3408448542789180575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossAntecipationFullBody_2
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 630459789aad53f60800000000000000
+      internalID: 8013551533634699318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossAntecipationFullBody_3
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49458a00d1863c860800000000000000
+      internalID: 7548991874177455252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossAntecipationFullBody_4
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05039b356e29838b0800000000000000
+      internalID: -5172222654090235824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossAntecipationFullBody_5
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8602e4946139ad640800000000000000
+      internalID: 5105554851506298984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossAntecipationFullBody_6
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56857066171053740800000000000000
+      internalID: 5131008937013237861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDamageFullBody_0
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f3b770123802400800000000000000
+      internalID: 297381753289129855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDamageEye_0
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 1064
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed50daa6ccc5e2880800000000000000
+      internalID: -8633861402589854242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDamageRightBlade_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 912
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2ba0196a4ee10d0800000000000000
+      internalID: -3450068860470119698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDamageLeftBlade_0
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 912
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41dd840a7ece8c7a0800000000000000
+      internalID: -6356570394462724844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleEye_0
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 912
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5805df8f0b7c980f0800000000000000
+      internalID: -1114139869891964795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleEye_1
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 912
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6badead240746050800000000000000
+      internalID: 5792878453148461932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleEye_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 912
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b18fb767b0422310800000000000000
+      internalID: 1378735592392589751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleEye_3
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 912
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e4457c703b54440800000000000000
+      internalID: 4919535013962468929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleEye_4
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 912
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582a7755acb7aaef0800000000000000
+      internalID: -96128333087530363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleEye_5
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 912
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1bbda8e4b1f92490800000000000000
+      internalID: -7770413922750973157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleEye_6
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 912
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7843d6e1fd05b6870800000000000000
+      internalID: 8677118026277794951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleEye_7
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 912
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8885a7e265bf2310800000000000000
+      internalID: 1382523047023839375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleEye_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 760
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b2f8ebac601cc50800000000000000
+      internalID: 6683630789844740962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleEye_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 760
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8752ec80515ef50800000000000000
+      internalID: 6909952330832378092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleLeftBlade_0
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 760
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa2eb3670a4b5bc0800000000000000
+      internalID: -3793356865530877277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleLeftBlade_1
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 760
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f707ab101067670800000000000000
+      internalID: 8536011250661883738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleLeftBlade_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 760
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773c9f18199183520800000000000000
+      internalID: 2681921690840712055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleLeftBlade_3
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 760
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d5eddfb0dd398c0800000000000000
+      internalID: -3993605400973910652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleLeftBlade_4
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 760
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1726672d42fc4b9a0800000000000000
+      internalID: -6218117428435066255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleLeftBlade_5
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 760
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f94fb27eb060c6820800000000000000
+      internalID: 2912709707194692767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleLeftBlade_6
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 760
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990d31bc84ece40d0800000000000000
+      internalID: -3436582653597069159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleLeftBlade_7
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 760
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e25303aa4a32cf0800000000000000
+      internalID: -278197701106651578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleLeftBlade_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e21282ab4239e8c0800000000000000
+      internalID: -3969586296120012055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleLeftBlade_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 608
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f257fea633d894d10800000000000000
+      internalID: 2110373152376714543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleRightBlade_0
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 608
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ae3b7f9b3200180800000000000000
+      internalID: -9151275161185162660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleRightBlade_1
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 608
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a4ca0312893a8a0800000000000000
+      internalID: -6295020585815881068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleRightBlade_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 608
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9adca898fef26d2c0800000000000000
+      internalID: -4407282479484187223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleRightBlade_3
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 608
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2dd19e6c9a97bd50800000000000000
+      internalID: 6753036162925976877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleRightBlade_4
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 608
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcfc7c09b1d47cfa0800000000000000
+      internalID: -5780566815918272561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleRightBlade_5
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 608
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50530b42177a8aa50800000000000000
+      internalID: 6532655363889575173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleRightBlade_6
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 608
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69c5f8e38034e1d0800000000000000
+      internalID: -3322477281985312401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleRightBlade_7
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 608
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 593d598846e0bfe50800000000000000
+      internalID: 6844079883670639509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleRightBlade_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 456
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052e75e32480a3be0800000000000000
+      internalID: -1496874845540457904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossIddleRightBlade_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 456
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73c02fff0865b1e0800000000000000
+      internalID: -2182724026477001862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathFullBody_0
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 456
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0854fc4d77f6b8e30800000000000000
+      internalID: 4506818412576458112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathFullBody_1
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 456
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df56e1ad1c9597240800000000000000
+      internalID: 4789958367808218621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_0
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 456
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40cd38fac2c7c270800000000000000
+      internalID: 8270793417693184079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_1
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 456
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900a18615347fa2b0800000000000000
+      internalID: -5571106442674331639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_2
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 456
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc19040a288f6b20800000000000000
+      internalID: 3129869980083494141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_3
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 456
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf284f4f5d001f90800000000000000
+      internalID: -6985068319048454230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_4
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 456
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598d6922d3d83d140800000000000000
+      internalID: 4743290126264096917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_5
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 456
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a029530806f6c5f70800000000000000
+      internalID: 9177332600932766218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78908b6cb42c54a80800000000000000
+      internalID: -8483160692370175609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_7
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 304
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f380da1e1ead6f410800000000000000
+      internalID: 1510635388718090303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_8
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 304
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6670dc8785af6fa40800000000000000
+      internalID: 5401780060968257382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_9
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 304
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d489c284864b3580800000000000000
+      internalID: -8846399508095335214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_10
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 304
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197f488b9f78678a0800000000000000
+      internalID: -6307704721473472623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_11
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 304
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35800fe3465cbd20800000000000000
+      internalID: 3295603877100946747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_12
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 304
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0dfd65a737f38e0800000000000000
+      internalID: -1711522364096786249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_13
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 304
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ddd335505681720800000000000000
+      internalID: 2817112640466050429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossDeathPiecesSeparated_14
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 304
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43d06f7c1cdd2c70800000000000000
+      internalID: 8948050049609290573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossExplosion_0
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 304
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af12ac33ceb1d4800800000000000000
+      internalID: 598165026805260794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossExplosion_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621600f1f665e8970800000000000000
+      internalID: 8759033360543670566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossExplosion_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 152
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 892ec424961c5a210800000000000000
+      internalID: 1343692721668022936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossExplosion_3
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 152
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c041c430f70b3ee0800000000000000
+      internalID: -1280420940798148411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossExplosion_4
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 152
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01e04faa010b09f0800000000000000
+      internalID: -501305788120112882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossExplosion_5
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 152
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786e1119b12dd8a80800000000000000
+      internalID: -8462877108919474553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossExplosion_6
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 152
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6f424f2a52ed800800000000000000
+      internalID: 638989578944181954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossExplosion_7
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 152
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c1b72dce86ecf10800000000000000
+      internalID: 2291884626731015308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossExplosion_8
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 152
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f76f8a2ea9e1910800000000000000
+      internalID: 1810054398537531225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossExplosion_9
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 152
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bde8fd459ca401b00800000000000000
+      internalID: 797219362617396955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossExplosion_10
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 152
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c49132eadf0c92e0800000000000000
+      internalID: -2117800291998788413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossExplosion_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c75b13f4460052e0800000000000000
+      internalID: -2139202929794787386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golemBossExplosion_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 216
+        height: 152
+      alignment: 9
+      pivot: {x: 0.4351852, y: 0.49342105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1a40fa7eee65a70800000000000000
+      internalID: 8815495999465497014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

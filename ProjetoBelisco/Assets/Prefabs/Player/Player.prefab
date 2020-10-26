@@ -270,9 +270,11 @@ GameObject:
   - component: {fileID: 5366140802195632291}
   - component: {fileID: 5366140802195632316}
   - component: {fileID: 5366140802195632317}
+  - component: {fileID: 6465650197360426809}
   - component: {fileID: 5366140802195632290}
   - component: {fileID: 100794437}
   - component: {fileID: 3088296500651024279}
+  - component: {fileID: 438927499}
   m_Layer: 12
   m_Name: Player
   m_TagString: Player
@@ -312,7 +314,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -333,9 +335,25 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02453661, y: 0.56586146}
-  m_Size: {x: 0.3903981, y: 1.1317229}
+  m_Offset: {x: -0.02453661, y: 0.5650251}
+  m_Size: {x: 0.3903981, y: 1.1333957}
   m_Direction: 0
+--- !u!70 &6465650197360426809
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5366140802195632289}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: efcfc53ae5ea62340a2fb4a4663e25d3, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.02453661, y: 0.09637889}
+  m_Size: {x: 0.3, y: 0.195199}
+  m_Direction: 1
 --- !u!114 &5366140802195632290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,7 +370,8 @@ MonoBehaviour:
   _playerParameters: {fileID: 11400000, guid: 3bf0776cec540054f881fe73e8470327, type: 2}
   _playerAnimatorController: {fileID: 100794437}
   CanMove: 1
-  _gizmosToShow: 33
+  _ghostSpawner: {fileID: 438927499}
+  _gizmosToShow: 35
 --- !u!114 &100794437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,6 +400,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed90cf564e924d8e9acd0e8c57c52c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &438927499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5366140802195632289}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87045862e7084547a8d1e3c03f35e8b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rightSpriteRenderer: {fileID: 1418781181}
+  _leftSpriteRenderer: {fileID: 495487756}
+  _player: {fileID: 5366140802195632290}
+  _timeBetweenSpawns: 0.05
+  _ghostsToSpawn: 3
 --- !u!1001 &126441437137522548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -388,6 +424,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5366140802195632291}
     m_Modifications:
+    - target: {fileID: 3661874636889543288, guid: 4b2f15a3e071b044a91032e08d8d98c6,
+        type: 3}
+      propertyPath: m_Name
+      value: Flash
+      objectReference: {fileID: 0}
+    - target: {fileID: 4007714452709344278, guid: 4b2f15a3e071b044a91032e08d8d98c6,
+        type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: -0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 4144741965067167887, guid: 4b2f15a3e071b044a91032e08d8d98c6,
         type: 3}
       propertyPath: m_Name
@@ -446,6 +492,11 @@ PrefabInstance:
     - target: {fileID: 4581004409822133575, guid: 4b2f15a3e071b044a91032e08d8d98c6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604371560575273997, guid: 4b2f15a3e071b044a91032e08d8d98c6,
+        type: 3}
+      propertyPath: ShapeModule.m_Position.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -660,6 +711,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RunSmokeBelisco
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467010910947378299, guid: 66417716cd21cb94784d02f8b4c81622,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2467010910947378300, guid: 66417716cd21cb94784d02f8b4c81622,
         type: 3}

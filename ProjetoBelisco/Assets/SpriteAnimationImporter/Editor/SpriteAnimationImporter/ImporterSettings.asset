@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ImporterSettings
   m_EditorClassIdentifier: 
   spritesheets:
-  - spritesheetPath: Assets/Arts/Sprites/beliscoLow.png
-    animationInfo: Assets/Arts/Sprites/beliscoLow.json
+  - spritesheetPath: Assets/Arts/Aseprites/beliscoLow.png
+    animationInfo: Assets/Arts/Aseprites/beliscoLow.json
     importerType: Aseprite
     trimWidth: 0
     trimHeight: 0
@@ -25,17 +25,17 @@ MonoBehaviour:
     prefixClipsWithAtlasName: 1
     defaultSampleRate: 60
     saveClipsToCustomDirectory: 0
-    clipSaveDirectory: Assets/Resources/Animations
+    clipSaveDirectory: 
     animSettings:
     - tagName: afterAtackBlue
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: afterAtackYellow
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: keepSwordBlue
       useDefaultSampleRate: 1
@@ -90,22 +90,22 @@ MonoBehaviour:
     - tagName: hitFloorBlue
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: hitFloorYellow
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: hitAirBlue
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: hitAirYellow
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: jumpAntecipationBlue
       useDefaultSampleRate: 1
@@ -267,22 +267,12 @@ MonoBehaviour:
       sampleRate: 60
       loop: 0
       generateClip: 1
-    - tagName: WallContactBlue
-      useDefaultSampleRate: 1
-      sampleRate: 60
-      loop: 0
-      generateClip: 1
     - tagName: WallJumpBlue
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 0
       generateClip: 1
     - tagName: WallContactYellow
-      useDefaultSampleRate: 1
-      sampleRate: 60
-      loop: 0
-      generateClip: 1
-    - tagName: WallJumpYellow
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 0
@@ -307,6 +297,21 @@ MonoBehaviour:
       sampleRate: 60
       loop: 0
       generateClip: 1
+    - tagName: DashNoSwordBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: DashNoSwordYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
   - spritesheetPath: Assets/Arts/Sprites/golem1.png
     animationInfo: Assets/Arts/Sprites/golem1.json
     importerType: Aseprite
@@ -557,3 +562,92 @@ MonoBehaviour:
       sampleRate: 60
       loop: 1
       generateClip: 0
+  - spritesheetPath: Assets/Arts/Aseprites/golemBoss.png
+    animationInfo: Assets/Arts/Aseprites/golemBoss.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.4351852, y: 0.49342105}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 1
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 0
+    clipSaveDirectory: 
+    animSettings:
+    - tagName: eyeShineAntecipation
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: rightBladeAntecipation
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: leftBladeAntecipation
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: iddleFullBody
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: AntecipationFullBody
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: damageFullBody
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: damageEye
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: damageRightBlade
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: damageLeftBlade
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: iddleEye
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: iddleLeftBlade
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: iddleRightBlade
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: deathFullBody
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 0
+    - tagName: deathPiecesSeparated
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 0
+    - tagName: Explosion
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1

@@ -1,16 +1,16 @@
-﻿using System.Collections.Generic;
-using RefatoramentoDoTioTepe;
+﻿using System;
+using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace GameScripts.PoolingSystem
+namespace Belisco
 {
     /* Class: Pool
  * Class that descriobes a type of objects to be stored in a pool.
  * About::
  * Every parameter in the class is public, to facilitate access.
  */
-    [System.Serializable]
+    [Serializable]
     public class Pool
     {
         /* Variables: 
@@ -19,20 +19,16 @@ namespace GameScripts.PoolingSystem
      * size - The initial size this pool should have.
      * fixSize - Bool indication whether or not this pool should expand or not.
      */
-        [HorizontalGroup("Non-Listed", width: 80)]
-        [PreviewField(80, ObjectFieldAlignment.Left), HideLabel, AssetsOnly] 
+        [HorizontalGroup("Non-Listed", 80)] [PreviewField(80, ObjectFieldAlignment.Left)] [HideLabel] [AssetsOnly]
         public GameObject prefab;
 
-        [HorizontalGroup("Non-Listed")]
-        [BoxGroup("Non-Listed/Properties", false)]
+        [HorizontalGroup("Non-Listed")] [BoxGroup("Non-Listed/Properties", false)]
         public string tag;
 
-        [HorizontalGroup("Non-Listed")]
-        [BoxGroup("Non-Listed/Properties", false)]
+        [HorizontalGroup("Non-Listed")] [BoxGroup("Non-Listed/Properties", false)]
         public int size;
 
-        [HorizontalGroup("Non-Listed")]
-        [BoxGroup("Non-Listed/Properties", false)]
+        [HorizontalGroup("Non-Listed")] [BoxGroup("Non-Listed/Properties", false)]
         public bool fixSize;
     }
 
@@ -41,6 +37,11 @@ namespace GameScripts.PoolingSystem
  */
     public class Pooler : MonoBehaviour
     {
+        /* Variable: Instance
+    * The instance of the Singleton.
+    */
+        public static Pooler Instance;
+
         /* Variables: 
      * pools - List of Existing Pools.
      * poolDictionary - Dictionary of Queues and tags, ot spawn the gameObjscts.
@@ -51,12 +52,7 @@ namespace GameScripts.PoolingSystem
         public Dictionary<string, Queue<GameObject>> poolDictionary;
         public Dictionary<string, GameObject> prefabDictionary;
         public Dictionary<string, bool> sizeDictionary;
-        
-        /* Variable: Instance
-    * The instance of the Singleton.
-    */
-        public static Pooler Instance = null;
-    
+
         /* Function: Awake
      * Sets the singleton to be the one and only game object existing in a scene.
      */
@@ -65,38 +61,15 @@ namespace GameScripts.PoolingSystem
             if (Instance == null)
             {
                 Instance = this;
-                if (this.transform.parent != null)
-                {
-                    this.transform.parent = null;
-                }
-                DontDestroyOnLoad(this.gameObject);
+                if (transform.parent != null) transform.parent = null;
+                DontDestroyOnLoad(gameObject);
             }
             else
             {
-                Destroy(this.gameObject);
+                Destroy(gameObject);
             }
-            
+
             GameStateMachine.OnGameStateChanged += HandleStateChanged;
-        }
-
-
-        private void OnDestroy()
-        {
-            GameStateMachine.OnGameStateChanged -= HandleStateChanged;
-        }
-        
-        private void HandleStateChanged(IState state)
-        {
-            if (state is Menu || state is LoadLevel)
-            {
-                foreach (var keyValuePair in poolDictionary)
-                {
-                    foreach (var gameObject in keyValuePair.Value)
-                    {
-                        gameObject.SetActive(false);
-                    }
-                }
-            }
         }
 
         /* Function: Start
@@ -112,9 +85,9 @@ namespace GameScripts.PoolingSystem
 
                 foreach (Pool pool in pools)
                 {
-                    Queue<GameObject> objectPool = new Queue<GameObject>();
+                    var objectPool = new Queue<GameObject>();
 
-                    for (int i = 0; i < pool.size; i++)
+                    for (var i = 0; i < pool.size; i++)
                     {
                         GameObject obj = Instantiate(pool.prefab);
                         obj.SetActive(false);
@@ -131,37 +104,41 @@ namespace GameScripts.PoolingSystem
             }
         }
 
-        public GameObject SpawnFromPool(string tag)
+
+        private void OnDestroy()
         {
-            if (!KeyExists(tag))
-            {
-                return null;
-            }
+            GameStateMachine.OnGameStateChanged -= HandleStateChanged;
+        }
+
+        private void HandleStateChanged(IState state)
+        {
+            if (state is Menu || state is LoadLevel)
+                foreach (var keyValuePair in poolDictionary)
+                foreach (GameObject gameObject in keyValuePair.Value)
+                    gameObject.SetActive(false);
+        }
+
+        public GameObject SpawnFromPool(string tag, object[] parameters = null)
+        {
+            if (!KeyExists(tag)) return null;
 
             GameObject objectToSpawn = Spawn(tag);
 
             IPooledObject pooledObj = objectToSpawn.GetComponent<IPooledObject>();
 
             if (pooledObj != null)
-            {
-                pooledObj.OnObjectSpawn();
-            }
+                pooledObj.OnObjectSpawn(parameters);
             else
-            {
                 Debug.LogError("Object does not contain Interface - " + tag, objectToSpawn);
-            }
 
             poolDictionary[tag].Enqueue(objectToSpawn);
 
             return objectToSpawn;
         }
 
-        public GameObject SpawnFromPool(string tag, Vector3 position, Quaternion rotation)
+        public GameObject SpawnFromPool(string tag, Vector3 position, Quaternion rotation, object[] parameters = null)
         {
-            if(!KeyExists(tag))
-            {
-                return null;
-            }
+            if (!KeyExists(tag)) return null;
 
             GameObject objectToSpawn = Spawn(tag);
 
@@ -171,46 +148,32 @@ namespace GameScripts.PoolingSystem
             IPooledObject pooledObj = objectToSpawn.GetComponent<IPooledObject>();
 
             if (pooledObj != null)
-            {
-                pooledObj.OnObjectSpawn();
-            }
+                pooledObj.OnObjectSpawn(parameters);
             else
-            {
                 Debug.LogError("Object does not contain Interface - " + tag, objectToSpawn);
-            }
 
             poolDictionary[tag].Enqueue(objectToSpawn);
 
             return objectToSpawn;
         }
 
-        public GameObject SpawnFromPool(string tag, Transform trans, bool parent = false)
+        public GameObject SpawnFromPool(string tag, Transform trans, bool parent = false, object[] parameters = null)
         {
-            if(!KeyExists(tag))
-            {
-                return null;
-            }
+            if (!KeyExists(tag)) return null;
 
             GameObject objectToSpawn = Spawn(tag);
 
             objectToSpawn.transform.position = trans.position;
             objectToSpawn.transform.rotation = trans.rotation;
 
-            if (parent)
-            {
-                objectToSpawn.transform.parent = trans;
-            }
+            if (parent) objectToSpawn.transform.parent = trans;
 
             IPooledObject pooledObj = objectToSpawn.GetComponent<IPooledObject>();
 
             if (pooledObj != null)
-            {
-                pooledObj.OnObjectSpawn();
-            }
+                pooledObj.OnObjectSpawn(parameters);
             else
-            {
                 Debug.LogError("Object does not contain Interface - " + tag, objectToSpawn);
-            }
 
             poolDictionary[tag].Enqueue(objectToSpawn);
 
@@ -219,10 +182,7 @@ namespace GameScripts.PoolingSystem
 
         public GameObject MoveObjectToPoint(string tag, Transform trans, bool parent = false)
         {
-            if(!KeyExists(tag))
-            {
-                return null;
-            }
+            if (!KeyExists(tag)) return null;
 
             GameObject obejctToMove = GetNextObject(tag);
 
@@ -236,20 +196,19 @@ namespace GameScripts.PoolingSystem
         {
             if (!poolDictionary.ContainsKey(tag))
             {
-                Debug.LogError("Object pooler does not contain tag! - " + tag , this.gameObject);
+                Debug.LogError("Object pooler does not contain tag! - " + tag, gameObject);
                 return false;
             }
-            else
-            {
-                return true;
-            }
+
+            return true;
         }
 
         private GameObject Spawn(string tag)
         {
             GameObject aux;
-        
-            if ((poolDictionary[tag].Count == 0 || poolDictionary[tag].Peek().activeInHierarchy) && !sizeDictionary[tag]) 
+
+            if ((poolDictionary[tag].Count == 0 || poolDictionary[tag].Peek().activeInHierarchy) &&
+                !sizeDictionary[tag])
             {
                 if (prefabDictionary.ContainsKey(tag))
                 {
@@ -259,7 +218,7 @@ namespace GameScripts.PoolingSystem
                 else
                 {
                     aux = null;
-                    Debug.LogError("Prefab Dictionary does not contain tag! - " + tag, this.gameObject);
+                    Debug.LogError("Prefab Dictionary does not contain tag! - " + tag, gameObject);
                 }
             }
             else
@@ -267,15 +226,16 @@ namespace GameScripts.PoolingSystem
                 aux = poolDictionary[tag].Dequeue();
                 aux.SetActive(true);
             }
-        
+
             return aux;
         }
 
         private GameObject GetNextObject(string tag)
         {
             GameObject aux;
-        
-            if ((poolDictionary[tag].Count == 0 || poolDictionary[tag].Peek().activeInHierarchy) && !sizeDictionary[tag]) 
+
+            if ((poolDictionary[tag].Count == 0 || poolDictionary[tag].Peek().activeInHierarchy) &&
+                !sizeDictionary[tag])
             {
                 if (prefabDictionary.ContainsKey(tag))
                 {
@@ -285,7 +245,7 @@ namespace GameScripts.PoolingSystem
                 else
                 {
                     aux = null;
-                    Debug.LogError("Prefab Dictionary does not contain tag! - " + tag, this.gameObject);
+                    Debug.LogError("Prefab Dictionary does not contain tag! - " + tag, gameObject);
                 }
             }
             else
@@ -298,30 +258,20 @@ namespace GameScripts.PoolingSystem
 
         public int CountInstaces(string tag)
         {
-            if (!KeyExists(tag))
-            {
-                return -1;
-            }
+            if (!KeyExists(tag)) return -1;
 
             return poolDictionary[tag].Count;
         }
 
         public int CountSpawnedInstances(string tag)
         {
-            if (!KeyExists(tag))
-            {
-                return -1;
-            }
+            if (!KeyExists(tag)) return -1;
 
-            int aux = 0;
+            var aux = 0;
 
-            foreach(GameObject obj in poolDictionary[tag])
-            {
+            foreach (GameObject obj in poolDictionary[tag])
                 if (obj.activeInHierarchy)
-                {
                     aux++;
-                }
-            }
 
             return aux;
         }

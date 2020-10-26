@@ -1,0 +1,7826 @@
+fileFormatVersion: 2
+guid: ff49d321a02e1404daa1d9c6c72db77a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8893161535412964697
+    second: beliscoLow_0
+  - first:
+      213: 5512979815062260736
+    second: beliscoLow_1
+  - first:
+      213: -1393267595684964499
+    second: beliscoLow_2
+  - first:
+      213: 8365748277872091709
+    second: beliscoLow_3
+  - first:
+      213: 2052022522983564741
+    second: beliscoLow_4
+  - first:
+      213: 8819890684359216604
+    second: beliscoLow_5
+  - first:
+      213: -4390802903012912828
+    second: beliscoLow_6
+  - first:
+      213: -2604354920407056278
+    second: beliscoLow_7
+  - first:
+      213: 2225232977291560805
+    second: beliscoLow_8
+  - first:
+      213: 8958197770289555864
+    second: beliscoLow_9
+  - first:
+      213: -6139649539041274605
+    second: beliscoLow_10
+  - first:
+      213: -316554412624282088
+    second: beliscoLow_11
+  - first:
+      213: 8139585733074178177
+    second: beliscoLow_12
+  - first:
+      213: 8471514589795694530
+    second: beliscoLow_13
+  - first:
+      213: 1497339798266170363
+    second: beliscoLow_14
+  - first:
+      213: 3047081830883341479
+    second: beliscoLow_15
+  - first:
+      213: 8256325047778055536
+    second: beliscoLow_16
+  - first:
+      213: -4421491909485717860
+    second: beliscoLow_17
+  - first:
+      213: 2963030741897105745
+    second: beliscoLow_18
+  - first:
+      213: -8960546558362416751
+    second: beliscoLow_19
+  - first:
+      213: 158537255402645037
+    second: beliscoLow_20
+  - first:
+      213: 7962433072722637884
+    second: beliscoLow_21
+  - first:
+      213: 2843142928010243656
+    second: beliscoLow_22
+  - first:
+      213: -3200313310068728812
+    second: beliscoLow_23
+  - first:
+      213: -8340675774375537172
+    second: beliscoLow_24
+  - first:
+      213: -4127582279552183628
+    second: beliscoLow_25
+  - first:
+      213: -1544333278685285407
+    second: beliscoLow_26
+  - first:
+      213: -2262195954141639540
+    second: beliscoLow_27
+  - first:
+      213: 2063601881314502175
+    second: beliscoLow_28
+  - first:
+      213: 1524916944937445726
+    second: beliscoLow_29
+  - first:
+      213: -7292600513984625984
+    second: beliscoLow_30
+  - first:
+      213: 6609167007232029560
+    second: beliscoLow_31
+  - first:
+      213: 4787324960128093057
+    second: beliscoLow_32
+  - first:
+      213: -6124309612358326078
+    second: beliscoLow_33
+  - first:
+      213: -3344200169564656917
+    second: beliscoLow_34
+  - first:
+      213: 8078786583073801869
+    second: beliscoLow_35
+  - first:
+      213: 7190875132708480156
+    second: beliscoLow_36
+  - first:
+      213: 3284619312310694786
+    second: beliscoLow_37
+  - first:
+      213: -2867091212787786514
+    second: beliscoLow_38
+  - first:
+      213: -4677296180273841717
+    second: beliscoLow_39
+  - first:
+      213: 2117678982341392451
+    second: beliscoLow_40
+  - first:
+      213: -5508472834236900312
+    second: beliscoLow_41
+  - first:
+      213: 8981002065183843582
+    second: beliscoLow_42
+  - first:
+      213: -5754155419158418292
+    second: beliscoLow_43
+  - first:
+      213: 8911930035203606726
+    second: beliscoLow_44
+  - first:
+      213: 5593285611400420671
+    second: beliscoLow_45
+  - first:
+      213: -8283377938163159189
+    second: beliscoLow_46
+  - first:
+      213: -4525242112466282430
+    second: beliscoLow_47
+  - first:
+      213: 3105390373016711980
+    second: beliscoLow_48
+  - first:
+      213: -4025982551577812088
+    second: beliscoLow_49
+  - first:
+      213: 5702459389555547012
+    second: beliscoLow_50
+  - first:
+      213: -1705621062675680119
+    second: beliscoLow_51
+  - first:
+      213: 7534599420697605336
+    second: beliscoLow_52
+  - first:
+      213: 3560363818231115545
+    second: beliscoLow_53
+  - first:
+      213: -4862174359746964479
+    second: beliscoLow_54
+  - first:
+      213: -3730631319189942063
+    second: beliscoLow_55
+  - first:
+      213: 695778815301593290
+    second: beliscoLow_56
+  - first:
+      213: 5247708740491371361
+    second: beliscoLow_57
+  - first:
+      213: -4012260539681079082
+    second: beliscoLow_58
+  - first:
+      213: 1015585585306255963
+    second: beliscoLow_59
+  - first:
+      213: 3581261760854509885
+    second: beliscoLow_60
+  - first:
+      213: 1652197552437204083
+    second: beliscoLow_61
+  - first:
+      213: 4700329864474752419
+    second: beliscoLow_62
+  - first:
+      213: 1879292228678608484
+    second: beliscoLow_63
+  - first:
+      213: 1913408850254239545
+    second: beliscoLow_64
+  - first:
+      213: 6941968709593677961
+    second: beliscoLow_65
+  - first:
+      213: -1297129654727458208
+    second: beliscoLow_66
+  - first:
+      213: -4066811896625093950
+    second: beliscoLow_67
+  - first:
+      213: 7266430052536135617
+    second: beliscoLow_68
+  - first:
+      213: 3634179081320007992
+    second: beliscoLow_69
+  - first:
+      213: 6760340521524409873
+    second: beliscoLow_70
+  - first:
+      213: 897351830126248565
+    second: beliscoLow_71
+  - first:
+      213: -5908457679325208828
+    second: beliscoLow_72
+  - first:
+      213: -4886680041889162629
+    second: beliscoLow_73
+  - first:
+      213: -3849760655441287437
+    second: beliscoLow_74
+  - first:
+      213: 3235620599166755946
+    second: beliscoLow_75
+  - first:
+      213: -2397741987840269486
+    second: beliscoLow_76
+  - first:
+      213: 8231773538240642722
+    second: beliscoLow_77
+  - first:
+      213: 8079831672200845367
+    second: beliscoLow_78
+  - first:
+      213: 6882035113857060954
+    second: beliscoLow_79
+  - first:
+      213: 8600516248784093180
+    second: beliscoLow_80
+  - first:
+      213: -455591089216341257
+    second: beliscoLow_81
+  - first:
+      213: 1322043402989570791
+    second: beliscoLow_82
+  - first:
+      213: -4226752729236434813
+    second: beliscoLow_83
+  - first:
+      213: 7810359085700651058
+    second: beliscoLow_84
+  - first:
+      213: 6981298113463186274
+    second: beliscoLow_85
+  - first:
+      213: 391766320109272432
+    second: beliscoLow_86
+  - first:
+      213: -6904863365789913968
+    second: beliscoLow_87
+  - first:
+      213: -3901554620205729416
+    second: beliscoLow_88
+  - first:
+      213: -3172252854194537115
+    second: beliscoLow_89
+  - first:
+      213: -884472133246202997
+    second: beliscoLow_90
+  - first:
+      213: -4006847882045414715
+    second: beliscoLow_91
+  - first:
+      213: 1583365905320604514
+    second: beliscoLow_92
+  - first:
+      213: -8152166008093070129
+    second: beliscoLow_93
+  - first:
+      213: 7107181081561211003
+    second: beliscoLow_94
+  - first:
+      213: 5850919935049355209
+    second: beliscoLow_95
+  - first:
+      213: -8679567614777235406
+    second: beliscoLow_96
+  - first:
+      213: 7054825988742929955
+    second: beliscoLow_97
+  - first:
+      213: -7901282833043777897
+    second: beliscoLow_98
+  - first:
+      213: -2903287646028219507
+    second: beliscoLow_99
+  - first:
+      213: -1545104591539043170
+    second: beliscoLow_100
+  - first:
+      213: 5760202125443368585
+    second: beliscoLow_101
+  - first:
+      213: -5391985503938160881
+    second: beliscoLow_102
+  - first:
+      213: 2577293097359762795
+    second: beliscoLow_103
+  - first:
+      213: -2770061554701508478
+    second: beliscoLow_104
+  - first:
+      213: 8348345017337426864
+    second: beliscoLow_105
+  - first:
+      213: -2737720610562663014
+    second: beliscoLow_106
+  - first:
+      213: 6793245659337392245
+    second: beliscoLow_107
+  - first:
+      213: -2937880130056500557
+    second: beliscoLow_108
+  - first:
+      213: -8124772916018525202
+    second: beliscoLow_109
+  - first:
+      213: 2591542707190502024
+    second: beliscoLow_110
+  - first:
+      213: 678857950114948183
+    second: beliscoLow_111
+  - first:
+      213: 1000547359915403978
+    second: beliscoLow_112
+  - first:
+      213: 5901913259759516499
+    second: beliscoLow_113
+  - first:
+      213: -5709619631758316267
+    second: beliscoLow_114
+  - first:
+      213: 8004792859618539805
+    second: beliscoLow_115
+  - first:
+      213: 379761790075544601
+    second: beliscoLow_116
+  - first:
+      213: -4794945231555417482
+    second: beliscoLow_117
+  - first:
+      213: 1085224774717172383
+    second: beliscoLow_118
+  - first:
+      213: 5455780089584586975
+    second: beliscoLow_119
+  - first:
+      213: 808052555102884041
+    second: beliscoLow_120
+  - first:
+      213: 1786327919638120127
+    second: beliscoLow_121
+  - first:
+      213: 1329858345521486739
+    second: beliscoLow_122
+  - first:
+      213: 1238833510980616229
+    second: beliscoLow_123
+  - first:
+      213: 5642274625758106537
+    second: beliscoLow_124
+  - first:
+      213: 6192613472226890674
+    second: beliscoLow_125
+  - first:
+      213: 7893118457669905206
+    second: beliscoLow_126
+  - first:
+      213: -2836369401865450155
+    second: beliscoLow_127
+  - first:
+      213: 9010108569619369136
+    second: beliscoLow_128
+  - first:
+      213: 5175873874262938400
+    second: beliscoLow_129
+  - first:
+      213: -7012422877605435323
+    second: beliscoLow_130
+  - first:
+      213: -4745457395305365378
+    second: beliscoLow_131
+  - first:
+      213: 2107086229836113145
+    second: beliscoLow_132
+  - first:
+      213: -1584849114878768635
+    second: beliscoLow_133
+  - first:
+      213: -9007508371785685530
+    second: beliscoLow_134
+  - first:
+      213: 3731697921164194686
+    second: beliscoLow_135
+  - first:
+      213: 7895664055414997324
+    second: beliscoLow_136
+  - first:
+      213: 590869082035535535
+    second: beliscoLow_137
+  - first:
+      213: -732768878496026443
+    second: beliscoLow_138
+  - first:
+      213: -743899241700779063
+    second: beliscoLow_139
+  - first:
+      213: 2096340078232873699
+    second: beliscoLow_140
+  - first:
+      213: 5129414306544437923
+    second: beliscoLow_141
+  - first:
+      213: 4777185271814357828
+    second: beliscoLow_142
+  - first:
+      213: -7370201093226534394
+    second: beliscoLow_143
+  - first:
+      213: 5528549189110270516
+    second: beliscoLow_144
+  - first:
+      213: 7537606786814060296
+    second: beliscoLow_145
+  - first:
+      213: -8756241641427012723
+    second: beliscoLow_146
+  - first:
+      213: -75893080424667456
+    second: beliscoLow_147
+  - first:
+      213: 7544030699286500097
+    second: beliscoLow_148
+  - first:
+      213: 273116405976062620
+    second: beliscoLow_149
+  - first:
+      213: 7322448155566211774
+    second: beliscoLow_150
+  - first:
+      213: -387513379077667185
+    second: beliscoLow_151
+  - first:
+      213: -1270172838698949891
+    second: beliscoLow_152
+  - first:
+      213: 2245931119631638579
+    second: beliscoLow_153
+  - first:
+      213: -8363146518139571211
+    second: beliscoLow_154
+  - first:
+      213: 1421830316178977890
+    second: beliscoLow_155
+  - first:
+      213: 3999301363446133682
+    second: beliscoLow_156
+  - first:
+      213: -8642844732728779876
+    second: beliscoLow_157
+  - first:
+      213: -3843555632893195844
+    second: beliscoLow_158
+  - first:
+      213: 5665697429558062293
+    second: beliscoLow_159
+  - first:
+      213: -1788232997212320173
+    second: beliscoLow_160
+  - first:
+      213: 5333699017311135015
+    second: beliscoLow_161
+  - first:
+      213: 245891276011435264
+    second: beliscoLow_162
+  - first:
+      213: -375277966383310187
+    second: beliscoLow_163
+  - first:
+      213: 4417826851595556178
+    second: beliscoLow_164
+  - first:
+      213: -3744048908648738632
+    second: beliscoLow_165
+  - first:
+      213: -4659958902489953902
+    second: beliscoLow_166
+  - first:
+      213: 6760229483912915669
+    second: beliscoLow_167
+  - first:
+      213: 7227340430646449690
+    second: beliscoLow_168
+  - first:
+      213: 8373987172961894798
+    second: beliscoLow_169
+  - first:
+      213: 2686056019521902720
+    second: beliscoLow_170
+  - first:
+      213: 292301767329848502
+    second: beliscoLow_171
+  - first:
+      213: -5721977003021453119
+    second: beliscoLow_172
+  - first:
+      213: -6722137299881263286
+    second: beliscoLow_173
+  - first:
+      213: -7832571309133391386
+    second: beliscoLow_174
+  - first:
+      213: -3467294479713549831
+    second: beliscoLow_175
+  - first:
+      213: 3825349657466310517
+    second: beliscoLow_176
+  - first:
+      213: 3938070216843202333
+    second: beliscoLow_177
+  - first:
+      213: -1567248722724408988
+    second: beliscoLow_178
+  - first:
+      213: -4899863795894130369
+    second: beliscoLow_179
+  - first:
+      213: 7342062909824036957
+    second: beliscoLow_180
+  - first:
+      213: 3920182882254645065
+    second: beliscoLow_181
+  - first:
+      213: -287858988706621721
+    second: beliscoLow_182
+  - first:
+      213: -7212484392265469568
+    second: beliscoLow_183
+  - first:
+      213: 3331640480340688914
+    second: beliscoLow_184
+  - first:
+      213: -8261999461461250239
+    second: beliscoLow_185
+  - first:
+      213: 5917809288086402022
+    second: beliscoLow_186
+  - first:
+      213: 275585470016043347
+    second: beliscoLow_187
+  - first:
+      213: -2299857478386542338
+    second: beliscoLow_188
+  - first:
+      213: -1335233289862083297
+    second: beliscoLow_189
+  - first:
+      213: -2340740071374463586
+    second: beliscoLow_190
+  - first:
+      213: -2671134073477006480
+    second: beliscoLow_191
+  - first:
+      213: 880404479888264418
+    second: beliscoLow_192
+  - first:
+      213: -5763605697683977024
+    second: beliscoLow_193
+  - first:
+      213: 8781795189425171766
+    second: beliscoLow_194
+  - first:
+      213: 8634244284404054328
+    second: beliscoLow_195
+  - first:
+      213: -4379707893117767149
+    second: beliscoLow_196
+  - first:
+      213: 4659422207575233448
+    second: beliscoLow_197
+  - first:
+      213: 1249492857139606200
+    second: beliscoLow_198
+  - first:
+      213: 3442286026592953732
+    second: beliscoLow_199
+  - first:
+      213: 3821169997682669567
+    second: beliscoLow_200
+  - first:
+      213: -4381221771631594506
+    second: beliscoLow_201
+  - first:
+      213: -4828385611133659378
+    second: beliscoLow_202
+  - first:
+      213: -1504286040310943742
+    second: beliscoLow_203
+  - first:
+      213: -1564301876888906468
+    second: beliscoLow_204
+  - first:
+      213: -9004000665070450603
+    second: beliscoLow_205
+  - first:
+      213: 815575466686825443
+    second: beliscoLow_206
+  - first:
+      213: -4634683050779087157
+    second: beliscoLow_207
+  - first:
+      213: 9166743891027664063
+    second: beliscoLow_208
+  - first:
+      213: 6610671707029595510
+    second: beliscoLow_209
+  - first:
+      213: 6462418959466703606
+    second: beliscoLow_210
+  - first:
+      213: 8561229944533669156
+    second: beliscoLow_211
+  - first:
+      213: 8449154538860592734
+    second: beliscoLow_212
+  - first:
+      213: 4440042922848736041
+    second: beliscoLow_213
+  - first:
+      213: -8291206601125714314
+    second: beliscoLow_214
+  - first:
+      213: -9189483333781721225
+    second: beliscoLow_215
+  - first:
+      213: 8963832363083385495
+    second: beliscoLow_216
+  - first:
+      213: -6322792985855828347
+    second: beliscoLow_217
+  - first:
+      213: 1827104510774126109
+    second: beliscoLow_218
+  - first:
+      213: -6803531036182164562
+    second: beliscoLow_219
+  - first:
+      213: -3222817713947049427
+    second: beliscoLow_220
+  - first:
+      213: 6854071454015359808
+    second: beliscoLow_221
+  - first:
+      213: 2011372322850568320
+    second: beliscoLow_222
+  - first:
+      213: 8910992390132542538
+    second: beliscoLow_223
+  - first:
+      213: 7258167055092065662
+    second: beliscoLow_224
+  - first:
+      213: 352526231188705667
+    second: beliscoLow_225
+  - first:
+      213: 5220093559078212178
+    second: beliscoLow_226
+  - first:
+      213: 1307397227929999697
+    second: beliscoLow_227
+  - first:
+      213: 2794940557203617577
+    second: beliscoLow_228
+  - first:
+      213: -1431126591539666994
+    second: beliscoLow_229
+  - first:
+      213: -8969975596258355143
+    second: beliscoLow_230
+  - first:
+      213: 3006358113270618190
+    second: beliscoLow_231
+  - first:
+      213: -2969435683555568669
+    second: beliscoLow_232
+  - first:
+      213: -2212985134782005227
+    second: beliscoLow_233
+  - first:
+      213: 1932347267788500070
+    second: beliscoLow_234
+  - first:
+      213: -8540132684124528497
+    second: beliscoLow_235
+  - first:
+      213: 2796200145044049520
+    second: beliscoLow_236
+  - first:
+      213: 3237626278391958662
+    second: beliscoLow_237
+  - first:
+      213: 193523052264531336
+    second: beliscoLow_238
+  - first:
+      213: -8693555610024067316
+    second: beliscoLow_239
+  - first:
+      213: -3794187376543570444
+    second: beliscoLow_240
+  - first:
+      213: 2836142166549997810
+    second: beliscoLow_241
+  - first:
+      213: -5167629887251267547
+    second: beliscoLow_242
+  - first:
+      213: 1900625700943872834
+    second: beliscoLow_243
+  - first:
+      213: 6352211576097638261
+    second: beliscoLow_244
+  - first:
+      213: -1488289626570076534
+    second: beliscoLow_245
+  - first:
+      213: -8475054578284453725
+    second: beliscoLow_246
+  - first:
+      213: 2686100540425618601
+    second: beliscoLow_247
+  - first:
+      213: 3054950183298964234
+    second: beliscoLow_248
+  - first:
+      213: 4456444303313581015
+    second: beliscoLow_249
+  - first:
+      213: -6512778523769417250
+    second: beliscoLow_250
+  - first:
+      213: 7038658225396430172
+    second: beliscoLow_251
+  - first:
+      213: -1009052625631330242
+    second: beliscoLow_252
+  - first:
+      213: 8070334931367323490
+    second: beliscoLow_253
+  - first:
+      213: 3605512449167119374
+    second: beliscoLow_254
+  - first:
+      213: 6525228573927132360
+    second: beliscoLow_255
+  - first:
+      213: -7365528175267930416
+    second: beliscoLow_256
+  - first:
+      213: -3032733916811210813
+    second: beliscoLow_257
+  - first:
+      213: -8266601312792366539
+    second: beliscoLow_258
+  - first:
+      213: -5318283322892042376
+    second: beliscoLow_259
+  - first:
+      213: -381761732342776549
+    second: beliscoLow_260
+  - first:
+      213: -4182730423828862133
+    second: beliscoLow_261
+  - first:
+      213: 8242362384268243049
+    second: beliscoLow_262
+  - first:
+      213: 4259156184853312670
+    second: beliscoLow_263
+  - first:
+      213: 1047068211647944170
+    second: beliscoLow_264
+  - first:
+      213: 5144514852118976716
+    second: beliscoLow_265
+  - first:
+      213: 7090715444598317526
+    second: beliscoLow_266
+  - first:
+      213: 2896702693715721721
+    second: beliscoLow_267
+  - first:
+      213: 4977875170537151695
+    second: beliscoLow_268
+  - first:
+      213: -1962131472734510429
+    second: beliscoLow_269
+  - first:
+      213: -4303596265648841034
+    second: beliscoLow_270
+  - first:
+      213: 1858399761221384219
+    second: beliscoLow_271
+  - first:
+      213: -8625039919399593373
+    second: beliscoLow_272
+  - first:
+      213: 7075115145615880857
+    second: beliscoLow_273
+  - first:
+      213: 2605690933623720348
+    second: beliscoLow_274
+  - first:
+      213: 2027370571802476639
+    second: beliscoLow_275
+  - first:
+      213: -7044431189814092385
+    second: beliscoLow_276
+  - first:
+      213: -3009400539174596034
+    second: beliscoLow_277
+  - first:
+      213: -3564700961738173630
+    second: beliscoLow_278
+  - first:
+      213: 7070816999428776464
+    second: beliscoLow_279
+  - first:
+      213: 3438068073843811040
+    second: beliscoLow_280
+  - first:
+      213: -8566408738953912576
+    second: beliscoLow_281
+  - first:
+      213: -29296755646493626
+    second: beliscoLow_282
+  - first:
+      213: -887475180765779788
+    second: beliscoLow_283
+  - first:
+      213: 6148661130171982668
+    second: beliscoLow_284
+  - first:
+      213: 7174942446469627057
+    second: beliscoLow_285
+  - first:
+      213: -574868093296796555
+    second: beliscoLow_286
+  - first:
+      213: 8768179844548173271
+    second: beliscoLow_287
+  - first:
+      213: -2047301482211485315
+    second: beliscoLow_288
+  - first:
+      213: -7078670575756876404
+    second: beliscoLow_289
+  - first:
+      213: 5046446631764525624
+    second: beliscoLow_290
+  - first:
+      213: 2038684673072214078
+    second: beliscoLow_291
+  - first:
+      213: 355511036287989529
+    second: beliscoLow_292
+  - first:
+      213: -1258329187044495804
+    second: beliscoLow_293
+  - first:
+      213: 4506772522017170953
+    second: beliscoLow_294
+  - first:
+      213: -8265704831865899222
+    second: beliscoLow_295
+  - first:
+      213: 935395230338635804
+    second: beliscoLow_296
+  - first:
+      213: 7048416366303451980
+    second: beliscoLow_297
+  - first:
+      213: 4295874011188818146
+    second: beliscoLow_298
+  - first:
+      213: 2549299927312444947
+    second: beliscoLow_299
+  - first:
+      213: -1248358828981851695
+    second: beliscoLow_300
+  - first:
+      213: 3590157953847423187
+    second: beliscoLow_301
+  - first:
+      213: -8482134341474262299
+    second: beliscoLow_302
+  - first:
+      213: -6159051334834817899
+    second: beliscoLow_303
+  - first:
+      213: -3058789371126933065
+    second: beliscoLow_304
+  - first:
+      213: -4418213563044561421
+    second: beliscoLow_305
+  - first:
+      213: -2892067598057504820
+    second: beliscoLow_306
+  - first:
+      213: -2544231263829643479
+    second: beliscoLow_307
+  - first:
+      213: 790558336642685693
+    second: beliscoLow_308
+  - first:
+      213: 2867882522874640548
+    second: beliscoLow_309
+  - first:
+      213: 4670607944278870883
+    second: beliscoLow_310
+  - first:
+      213: 1392225067338724225
+    second: beliscoLow_311
+  - first:
+      213: -777118186954177002
+    second: beliscoLow_312
+  - first:
+      213: -4516500231031760808
+    second: beliscoLow_313
+  - first:
+      213: 2894299744709948283
+    second: beliscoLow_314
+  - first:
+      213: -719387970791369783
+    second: beliscoLow_315
+  - first:
+      213: -7580155448539205366
+    second: beliscoLow_316
+  - first:
+      213: -8745133531207328727
+    second: beliscoLow_317
+  - first:
+      213: 6901071552334566072
+    second: beliscoLow_318
+  - first:
+      213: -4175735709061937787
+    second: beliscoLow_319
+  - first:
+      213: 4329295326672672179
+    second: beliscoLow_320
+  - first:
+      213: -208624066202611518
+    second: beliscoLow_321
+  - first:
+      213: -1067390140294367980
+    second: beliscoLow_322
+  - first:
+      213: -5639364509780242040
+    second: beliscoLow_323
+  - first:
+      213: -5710994345979656760
+    second: beliscoLow_324
+  - first:
+      213: 990050693784562015
+    second: beliscoLow_325
+  - first:
+      213: 6867483632530821367
+    second: beliscoLow_326
+  - first:
+      213: 630521789383088317
+    second: beliscoLow_327
+  - first:
+      213: -1151780432620912822
+    second: beliscoLow_328
+  - first:
+      213: -3151527761038249476
+    second: beliscoLow_329
+  - first:
+      213: -528094362817152206
+    second: beliscoLow_330
+  - first:
+      213: 7586021139000371412
+    second: beliscoLow_331
+  - first:
+      213: -2008419554366366110
+    second: beliscoLow_332
+  - first:
+      213: 1230676104879511545
+    second: beliscoLow_333
+  - first:
+      213: -7503326662977081487
+    second: beliscoLow_334
+  - first:
+      213: -7468707800014620991
+    second: beliscoLow_335
+  - first:
+      213: 5146013340711150567
+    second: beliscoLow_336
+  - first:
+      213: 2128075245065911644
+    second: beliscoLow_337
+  - first:
+      213: -1153191496785425168
+    second: beliscoLow_338
+  - first:
+      213: 1084391994860073950
+    second: beliscoLow_339
+  - first:
+      213: -8657240018607843025
+    second: beliscoLow_340
+  - first:
+      213: 8245309586218878024
+    second: beliscoLow_341
+  - first:
+      213: 4346008460721161171
+    second: beliscoLow_342
+  - first:
+      213: -2284778633620989539
+    second: beliscoLow_343
+  - first:
+      213: 5462320133034183353
+    second: beliscoLow_344
+  - first:
+      213: -9006870997912973615
+    second: beliscoLow_345
+  - first:
+      213: 4131105990428556014
+    second: beliscoLow_346
+  - first:
+      213: 770367888047182179
+    second: beliscoLow_347
+  - first:
+      213: 6143129721871127198
+    second: beliscoLow_348
+  - first:
+      213: 285107095759541565
+    second: beliscoLow_349
+  - first:
+      213: -4196474334809956284
+    second: beliscoLow_350
+  - first:
+      213: 1882898645663422274
+    second: beliscoLow_351
+  - first:
+      213: -7142289049732447062
+    second: beliscoLow_352
+  - first:
+      213: 7533346272384080713
+    second: beliscoLow_353
+  - first:
+      213: -5956373526980227990
+    second: beliscoLow_354
+  - first:
+      213: -6562600495190524362
+    second: beliscoLow_355
+  - first:
+      213: -109187201457637305
+    second: beliscoLow_356
+  - first:
+      213: -2925919958184112556
+    second: beliscoLow_357
+  - first:
+      213: 7825280282291274378
+    second: beliscoLow_358
+  - first:
+      213: -8713029570933675010
+    second: beliscoLow_359
+  - first:
+      213: -938165858171342454
+    second: beliscoLow_360
+  - first:
+      213: -8324787866041286014
+    second: beliscoLow_361
+  - first:
+      213: 8275115715394610995
+    second: beliscoLow_362
+  - first:
+      213: -1880213407055183278
+    second: beliscoLow_363
+  - first:
+      213: -4032136978320899797
+    second: beliscoLow_364
+  - first:
+      213: -7419040534277727940
+    second: beliscoLow_365
+  - first:
+      213: 3788509912801860399
+    second: beliscoLow_366
+  - first:
+      213: -3726541334091665185
+    second: beliscoLow_367
+  - first:
+      213: -5971672940158591394
+    second: beliscoLow_368
+  - first:
+      213: -2129555487698792865
+    second: beliscoLow_369
+  - first:
+      213: -5046720703556002589
+    second: beliscoLow_370
+  - first:
+      213: -3944171090588885580
+    second: beliscoLow_371
+  - first:
+      213: 2013519212270534046
+    second: beliscoLow_372
+  - first:
+      213: -469497622309121862
+    second: beliscoLow_373
+  - first:
+      213: 8144613127170304430
+    second: beliscoLow_374
+  - first:
+      213: 4146430345162825120
+    second: beliscoLow_375
+  - first:
+      213: 7170701828521869417
+    second: beliscoLow_376
+  - first:
+      213: -2604363073666347716
+    second: beliscoLow_377
+  - first:
+      213: 1537641299255613025
+    second: beliscoLow_378
+  - first:
+      213: 5576366598958357661
+    second: beliscoLow_379
+  - first:
+      213: 7418685729069344847
+    second: beliscoLow_380
+  - first:
+      213: 5213651488725813017
+    second: beliscoLow_381
+  - first:
+      213: 6848813760565248667
+    second: beliscoLowAfterAtackBlue_0
+  - first:
+      213: -8866888158424203378
+    second: beliscoLowAfterAtackBlue_1
+  - first:
+      213: 6655360441708026215
+    second: beliscoLowAfterAtackBlue_2
+  - first:
+      213: -7235165896128832511
+    second: beliscoLowAfterAtackBlue_3
+  - first:
+      213: -3911249666183321907
+    second: beliscoLowAfterAtackBlue_4
+  - first:
+      213: -1990916730283026798
+    second: beliscoLowAfterAtackBlue_5
+  - first:
+      213: -3716180343374127348
+    second: beliscoLowAfterAtackYellow_0
+  - first:
+      213: -2437127928376463028
+    second: beliscoLowAfterAtackYellow_1
+  - first:
+      213: 1969339442463991992
+    second: beliscoLowAfterAtackYellow_2
+  - first:
+      213: -1186415837276680386
+    second: beliscoLowAfterAtackYellow_3
+  - first:
+      213: 4740604238691760791
+    second: beliscoLowAfterAtackYellow_4
+  - first:
+      213: 7422763652863620320
+    second: beliscoLowAfterAtackYellow_5
+  - first:
+      213: 6735665692219000177
+    second: beliscoLowKeepSwordBlue_0
+  - first:
+      213: 4251559417881139928
+    second: beliscoLowKeepSwordBlue_1
+  - first:
+      213: 4490230742636497734
+    second: beliscoLowKeepSwordBlue_2
+  - first:
+      213: 402176479962176000
+    second: beliscoLowKeepSwordBlue_3
+  - first:
+      213: -8071022010827003031
+    second: beliscoLowKeepSwordBlue_4
+  - first:
+      213: -2607042540739058278
+    second: beliscoLowKeepSwordBlue_5
+  - first:
+      213: -4438920844820670466
+    second: beliscoLowKeepSwordYellow_0
+  - first:
+      213: -6705968183431432856
+    second: beliscoLowKeepSwordYellow_1
+  - first:
+      213: 4821419296183522267
+    second: beliscoLowKeepSwordYellow_2
+  - first:
+      213: 2993292429253430421
+    second: beliscoLowKeepSwordYellow_3
+  - first:
+      213: 1526460032916657666
+    second: beliscoLowKeepSwordYellow_4
+  - first:
+      213: -7431219118224342061
+    second: beliscoLowKeepSwordYellow_5
+  - first:
+      213: 432281828955106208
+    second: beliscoLowIddleBlue_0
+  - first:
+      213: -3959206239641255476
+    second: beliscoLowIddleBlue_1
+  - first:
+      213: -5526398137639841309
+    second: beliscoLowIddleBlue_2
+  - first:
+      213: -2085707810128587608
+    second: beliscoLowIddleBlue_3
+  - first:
+      213: -3024857051204969819
+    second: beliscoLowIddleBlue_4
+  - first:
+      213: -6918493902464959093
+    second: beliscoLowIddleBlue_5
+  - first:
+      213: 6926984231093216809
+    second: beliscoLowIddleYellow_0
+  - first:
+      213: -8906204397568998420
+    second: beliscoLowIddleYellow_1
+  - first:
+      213: 516975713036333079
+    second: beliscoLowIddleYellow_2
+  - first:
+      213: -7909099356023531117
+    second: beliscoLowIddleYellow_3
+  - first:
+      213: -8228470096719822050
+    second: beliscoLowIddleYellow_4
+  - first:
+      213: 4318249245807453440
+    second: beliscoLowIddleYellow_5
+  - first:
+      213: -2314710448769732528
+    second: beliscoLowRunCycleBlue_0
+  - first:
+      213: -3075863661479964881
+    second: beliscoLowRunCycleBlue_1
+  - first:
+      213: -3303614007405951638
+    second: beliscoLowRunCycleBlue_2
+  - first:
+      213: -815333108876429267
+    second: beliscoLowRunCycleBlue_3
+  - first:
+      213: 1730670246066732198
+    second: beliscoLowRunCycleBlue_4
+  - first:
+      213: 95396724125300307
+    second: beliscoLowRunCycleBlue_5
+  - first:
+      213: -2684091591139045456
+    second: beliscoLowRunCycleBlue_6
+  - first:
+      213: -8588055405380859596
+    second: beliscoLowRunCycleBlue_7
+  - first:
+      213: 5797511451578861299
+    second: beliscoLowRunCycleYellow_0
+  - first:
+      213: 1452212672779945044
+    second: beliscoLowRunCycleYellow_1
+  - first:
+      213: -3925023606581485965
+    second: beliscoLowRunCycleYellow_2
+  - first:
+      213: 8846431812885320230
+    second: beliscoLowRunCycleYellow_3
+  - first:
+      213: -2898719720641044866
+    second: beliscoLowRunCycleYellow_4
+  - first:
+      213: 4394357707100036038
+    second: beliscoLowRunCycleYellow_5
+  - first:
+      213: -4610711684469928734
+    second: beliscoLowRunCycleYellow_6
+  - first:
+      213: 5294412809045866930
+    second: beliscoLowRunCycleYellow_7
+  - first:
+      213: 5331974256522310063
+    second: beliscoLowAtack1Blue_0
+  - first:
+      213: 7677617677993576279
+    second: beliscoLowAtack1Blue_1
+  - first:
+      213: 2827905106805191525
+    second: beliscoLowAtack1Blue_2
+  - first:
+      213: 2245473298058236646
+    second: beliscoLowAtack1Blue_3
+  - first:
+      213: -4960835509413050385
+    second: beliscoLowAtack1Blue_4
+  - first:
+      213: -7935673573209098627
+    second: beliscoLowAtack1Blue_5
+  - first:
+      213: -4620331899514525933
+    second: beliscoLowAtack1Yellow_0
+  - first:
+      213: -3040521171715491399
+    second: beliscoLowAtack1Yellow_1
+  - first:
+      213: -9202178486917907928
+    second: beliscoLowAtack1Yellow_2
+  - first:
+      213: 7041548337108931412
+    second: beliscoLowAtack1Yellow_3
+  - first:
+      213: 151058056721905548
+    second: beliscoLowAtack1Yellow_4
+  - first:
+      213: -8600614964386857389
+    second: beliscoLowAtack1Yellow_5
+  - first:
+      213: -4671136348579293740
+    second: beliscoLowAtack2Blue_0
+  - first:
+      213: 5189801679362178365
+    second: beliscoLowAtack2Blue_1
+  - first:
+      213: -5040943787726613057
+    second: beliscoLowAtack2Blue_2
+  - first:
+      213: 3090965916690579571
+    second: beliscoLowAtack2Blue_3
+  - first:
+      213: -6034074523319732870
+    second: beliscoLowAtack2Blue_4
+  - first:
+      213: 8029040943492832573
+    second: beliscoLowAtack2Blue_5
+  - first:
+      213: 4680285486401424501
+    second: beliscoLowAtack2Yellow_0
+  - first:
+      213: 4885089622938005649
+    second: beliscoLowAtack2Yellow_1
+  - first:
+      213: -3329998900911613103
+    second: beliscoLowAtack2Yellow_2
+  - first:
+      213: -3345281217940763368
+    second: beliscoLowAtack2Yellow_3
+  - first:
+      213: -9203765481322719216
+    second: beliscoLowAtack2Yellow_4
+  - first:
+      213: -4853047919440670166
+    second: beliscoLowAtack2Yellow_5
+  - first:
+      213: -8849717563704279808
+    second: beliscoLowHitFloorBlue_0
+  - first:
+      213: -8134611510575853091
+    second: beliscoLowHitFloorYellow_0
+  - first:
+      213: -491767538000641232
+    second: beliscoLowHitAirBlue_0
+  - first:
+      213: 5432792324130523594
+    second: beliscoLowHitAirYellow_0
+  - first:
+      213: 5621006505539024000
+    second: beliscoLowJumpAntecipationBlue_0
+  - first:
+      213: 7197871448937153018
+    second: beliscoLowJumpAntecipationBlue_1
+  - first:
+      213: -5316030799185139926
+    second: beliscoLowJumpUpLoopB_0
+  - first:
+      213: -5500192903096020571
+    second: beliscoLowJumpUpLoopB_1
+  - first:
+      213: -5793836994315074233
+    second: beliscoLowJumpUpLoopB_2
+  - first:
+      213: 3116161300755843913
+    second: beliscoLowJumpUpLoopB_3
+  - first:
+      213: -9202179489764898898
+    second: beliscoLowJumpTransitionBlue_0
+  - first:
+      213: -6810161992395714968
+    second: beliscoLowJumpTransitionBlue_1
+  - first:
+      213: 7546559607145858472
+    second: beliscoLowJumpFallLoopB_0
+  - first:
+      213: 183473443041165733
+    second: beliscoLowJumpFallLoopB_1
+  - first:
+      213: 8877107772194824239
+    second: beliscoLowJumpFallLoopB_2
+  - first:
+      213: 8813323710995128049
+    second: beliscoLowJumpFallLoopB_3
+  - first:
+      213: -5455841569287767762
+    second: beliscoLowJumpContactBlue_0
+  - first:
+      213: 485427163242667163
+    second: beliscoLowJumpContactBlue_1
+  - first:
+      213: -4717054121636519077
+    second: beliscoLowJumpContactBlue_2
+  - first:
+      213: 600791402685281176
+    second: beliscoLowJumpAntecipationYellow_0
+  - first:
+      213: -5157684034627870514
+    second: beliscoLowJumpAntecipationYellow_1
+  - first:
+      213: 2667305059511324658
+    second: beliscoLowJumpUpLoopY_0
+  - first:
+      213: -5698734809807585942
+    second: beliscoLowJumpUpLoopY_1
+  - first:
+      213: 8290207264248954969
+    second: beliscoLowJumpUpLoopY_2
+  - first:
+      213: -7116382937435054442
+    second: beliscoLowJumpUpLoopY_3
+  - first:
+      213: 217739873484633861
+    second: beliscoLowJumpTransitionYellow_0
+  - first:
+      213: 8395513170901828881
+    second: beliscoLowJumpTransitionYellow_1
+  - first:
+      213: 1670924819208857389
+    second: beliscoLowJumpFallLoopY_0
+  - first:
+      213: 4854284509982952706
+    second: beliscoLowJumpFallLoopY_1
+  - first:
+      213: 5593821457594642519
+    second: beliscoLowJumpFallLoopY_2
+  - first:
+      213: -5192970517981864742
+    second: beliscoLowJumpFallLoopY_3
+  - first:
+      213: -6212461543383713480
+    second: beliscoLowJumpContactYellow_0
+  - first:
+      213: 3315336769024445239
+    second: beliscoLowJumpContactYellow_1
+  - first:
+      213: 6067807229779646171
+    second: beliscoLowJumpContactYellow_2
+  - first:
+      213: 201904173823798286
+    second: beliscoLowGlydeAntecipationB_0
+  - first:
+      213: -7097413419895410399
+    second: beliscoLowGlydeAntecipationB_1
+  - first:
+      213: 8257559173957452272
+    second: beliscoLowGlydeLoopB_0
+  - first:
+      213: -5745030946138701556
+    second: beliscoLowGlydeLoopB_1
+  - first:
+      213: -684371616317527383
+    second: beliscoLowGlydeLoopB_2
+  - first:
+      213: 6849749600998029468
+    second: beliscoLowGlydeLoopB_3
+  - first:
+      213: 7997202391044669787
+    second: beliscoLowGlydeAntecipationY_0
+  - first:
+      213: -2649011985729188175
+    second: beliscoLowGlydeAntecipationY_1
+  - first:
+      213: -8836332341032749801
+    second: beliscoLowGlydeLoopY_0
+  - first:
+      213: 8761998330189120299
+    second: beliscoLowGlydeLoopY_1
+  - first:
+      213: 2301823342137931286
+    second: beliscoLowGlydeLoopY_2
+  - first:
+      213: -2569921915501231617
+    second: beliscoLowGlydeLoopY_3
+  - first:
+      213: -8734399393305304594
+    second: beliscoLowAtackJumpSideBlue_0
+  - first:
+      213: 2900987216630255972
+    second: beliscoLowAtackJumpSideBlue_1
+  - first:
+      213: -2237182486281205516
+    second: beliscoLowAtackJumpSideBlue_2
+  - first:
+      213: 8498383789026937627
+    second: beliscoLowAtackJumpSideBlue_3
+  - first:
+      213: 4924038790551886358
+    second: beliscoLowAtackJumpSideYellow_0
+  - first:
+      213: 1211222103281596303
+    second: beliscoLowAtackJumpSideYellow_1
+  - first:
+      213: 5316023474704173582
+    second: beliscoLowAtackJumpSideYellow_2
+  - first:
+      213: 4299299550343770753
+    second: beliscoLowAtackJumpSideYellow_3
+  - first:
+      213: 6670662365242327704
+    second: beliscoLowAtackUpBlue_0
+  - first:
+      213: 113158291725739580
+    second: beliscoLowAtackUpBlue_1
+  - first:
+      213: -552359269376725973
+    second: beliscoLowAtackUpBlue_2
+  - first:
+      213: 5570221185036389045
+    second: beliscoLowAtackUpBlue_3
+  - first:
+      213: 4266742421450307819
+    second: beliscoLowAtackUpBlue_4
+  - first:
+      213: -4413152950059558715
+    second: beliscoLowAtackUpBlue_5
+  - first:
+      213: 8389415975924788892
+    second: beliscoLowAtackUpYellow_0
+  - first:
+      213: 596069578376884033
+    second: beliscoLowAtackUpYellow_1
+  - first:
+      213: -5005647971707732286
+    second: beliscoLowAtackUpYellow_2
+  - first:
+      213: -8465396174169276719
+    second: beliscoLowAtackUpYellow_3
+  - first:
+      213: -3114487046753661917
+    second: beliscoLowAtackUpYellow_4
+  - first:
+      213: -6862105522973150998
+    second: beliscoLowAtackUpYellow_5
+  - first:
+      213: -1112739850245447252
+    second: beliscoLowAtackJumpUpBlue_0
+  - first:
+      213: 7208446481735364207
+    second: beliscoLowAtackJumpUpBlue_1
+  - first:
+      213: 2615159107082038268
+    second: beliscoLowAtackJumpUpBlue_2
+  - first:
+      213: 8352940371696543061
+    second: beliscoLowAtackJumpUpBlue_3
+  - first:
+      213: 6698939537692324965
+    second: beliscoLowAtackJumpUpYellow_0
+  - first:
+      213: 7301647508069531902
+    second: beliscoLowAtackJumpUpYellow_1
+  - first:
+      213: 2322347530434725138
+    second: beliscoLowAtackJumpUpYellow_2
+  - first:
+      213: 3876805814090584711
+    second: beliscoLowAtackJumpUpYellow_3
+  - first:
+      213: -3849426697235016358
+    second: beliscoLowAtackDown1_0
+  - first:
+      213: -4960322404982268582
+    second: beliscoLowAtackDown1_1
+  - first:
+      213: 8159800015864448750
+    second: beliscoLowAtackDown1_2
+  - first:
+      213: 1305378820993814288
+    second: beliscoLowAtackDown1_3
+  - first:
+      213: -2141289940210291979
+    second: beliscoLowAtackDown2_0
+  - first:
+      213: -706573759354003264
+    second: beliscoLowAtackDown2_1
+  - first:
+      213: 4894059561027537524
+    second: beliscoLowAtackDown2_2
+  - first:
+      213: 1437390976482126413
+    second: beliscoLowAtackDown2_3
+  - first:
+      213: 6622780974388892780
+    second: beliscoLowDeathBlue_0
+  - first:
+      213: -6436566035138653803
+    second: beliscoLowDeathBlue_1
+  - first:
+      213: 282142655680187302
+    second: beliscoLowDeathBlue_2
+  - first:
+      213: 127332418923081854
+    second: beliscoLowDeathBlue_3
+  - first:
+      213: 4478522630105699406
+    second: beliscoLowDeathBlue_4
+  - first:
+      213: -6787514346140493391
+    second: beliscoLowDeathBlue_5
+  - first:
+      213: 9202657509424484698
+    second: beliscoLowDeathBlue_6
+  - first:
+      213: -6301945490913036210
+    second: beliscoLowDeathBlue_7
+  - first:
+      213: 7743499945846750612
+    second: beliscoLowDeathYellow_0
+  - first:
+      213: -1220989808125901895
+    second: beliscoLowDeathYellow_1
+  - first:
+      213: 8165590290126983400
+    second: beliscoLowDeathYellow_2
+  - first:
+      213: 3200248006891549570
+    second: beliscoLowDeathYellow_3
+  - first:
+      213: 1086885401538681428
+    second: beliscoLowDeathYellow_4
+  - first:
+      213: -3237936841313186830
+    second: beliscoLowDeathYellow_5
+  - first:
+      213: -2164566852419962099
+    second: beliscoLowDeathYellow_6
+  - first:
+      213: 1652543049047725839
+    second: beliscoLowDeathYellow_7
+  - first:
+      213: -8121046091529034263
+    second: beliscoLowDashSideBlue_0
+  - first:
+      213: -5906788967592161772
+    second: beliscoLowDashSideBlue_1
+  - first:
+      213: 7428065751755143481
+    second: beliscoLowDashSideBlue_2
+  - first:
+      213: 7637696388615445160
+    second: beliscoLowDashSideBlue_3
+  - first:
+      213: -6745253009840160973
+    second: beliscoLowDashSideBlue_4
+  - first:
+      213: -418137573740500574
+    second: beliscoLowDashSideYellow_0
+  - first:
+      213: 3383213137249927019
+    second: beliscoLowDashSideYellow_1
+  - first:
+      213: 5785501111782165322
+    second: beliscoLowDashSideYellow_2
+  - first:
+      213: -4176454351779591096
+    second: beliscoLowDashSideYellow_3
+  - first:
+      213: -5269407893462697999
+    second: beliscoLowDashSideYellow_4
+  - first:
+      213: 7691458833524170722
+    second: beliscoLowDashUpBlue_0
+  - first:
+      213: -6305870674805388226
+    second: beliscoLowDashUpBlue_1
+  - first:
+      213: 5461790075533781677
+    second: beliscoLowDashUpBlue_2
+  - first:
+      213: 2418824619612758914
+    second: beliscoLowDashUpBlue_3
+  - first:
+      213: 783130403441183935
+    second: beliscoLowDashUpBlue_4
+  - first:
+      213: -4680669721738149709
+    second: beliscoLowDashUpBlue_5
+  - first:
+      213: 3691613428468827653
+    second: beliscoLowDashUpYellow_0
+  - first:
+      213: -2936451541826728180
+    second: beliscoLowDashUpYellow_1
+  - first:
+      213: 8190178224508343557
+    second: beliscoLowDashUpYellow_2
+  - first:
+      213: 8823158109322437040
+    second: beliscoLowDashUpYellow_3
+  - first:
+      213: 2044674932531878141
+    second: beliscoLowDashUpYellow_4
+  - first:
+      213: -6938992071022521789
+    second: beliscoLowDashUpYellow_5
+  - first:
+      213: -622347973282963215
+    second: beliscoLowRangedAtackBlue_0
+  - first:
+      213: -3376822321137210823
+    second: beliscoLowRangedAtackBlue_1
+  - first:
+      213: 3439601687265250379
+    second: beliscoLowRangedAtackBlue_2
+  - first:
+      213: 6649473788244896678
+    second: beliscoLowRangedAtackBlue_3
+  - first:
+      213: 6232805010116063122
+    second: beliscoLowRangedAtackBlue_4
+  - first:
+      213: 868777581816235452
+    second: beliscoLowRangedAtackBlue_5
+  - first:
+      213: 341164804372630895
+    second: beliscoLowRangedAtackBlue_6
+  - first:
+      213: -1629840338935997723
+    second: beliscoLowRangedAtackRangedYellow_0
+  - first:
+      213: 3423685873206157609
+    second: beliscoLowRangedAtackRangedYellow_1
+  - first:
+      213: -5629757305916877473
+    second: beliscoLowRangedAtackRangedYellow_2
+  - first:
+      213: -6226612128057694810
+    second: beliscoLowRangedAtackRangedYellow_3
+  - first:
+      213: 1088337758546650410
+    second: beliscoLowRangedAtackRangedYellow_4
+  - first:
+      213: 3834486345232453801
+    second: beliscoLowRangedAtackRangedYellow_5
+  - first:
+      213: -3247794692221128737
+    second: beliscoLowRangedAtackRangedYellow_6
+  - first:
+      213: 4962089909272792035
+    second: beliscoLowRangedAtackJumpBlue_0
+  - first:
+      213: -2086142984854581167
+    second: beliscoLowRangedAtackJumpBlue_1
+  - first:
+      213: 2637651291611275057
+    second: beliscoLowRangedAtackJumpBlue_2
+  - first:
+      213: 4703402412297094612
+    second: beliscoLowRangedAtackJumpBlue_3
+  - first:
+      213: 7208644792411243376
+    second: beliscoLowRangedAtackJumpBlue_4
+  - first:
+      213: 8422152298978495936
+    second: beliscoLowRangedAtackJumpBlue_5
+  - first:
+      213: -6917250366189915315
+    second: beliscoLowRangedAtackJumpBlue_6
+  - first:
+      213: -801151835590759689
+    second: beliscoLowRangedAtackRangedJumpYellow_0
+  - first:
+      213: 6368384444711239446
+    second: beliscoLowRangedAtackRangedJumpYellow_1
+  - first:
+      213: 6229344014682831772
+    second: beliscoLowRangedAtackRangedJumpYellow_2
+  - first:
+      213: -1260861198949945941
+    second: beliscoLowRangedAtackRangedJumpYellow_3
+  - first:
+      213: 5052087636013409250
+    second: beliscoLowRangedAtackRangedJumpYellow_4
+  - first:
+      213: -1382501077777789319
+    second: beliscoLowRangedAtackRangedJumpYellow_5
+  - first:
+      213: 672183468470661955
+    second: beliscoLowRangedAtackRangedJumpYellow_6
+  - first:
+      213: 3509355997034233489
+    second: beliscoLowWallJumpBlue_0
+  - first:
+      213: 7104440078484189163
+    second: beliscoLowWallJumpBlue_1
+  - first:
+      213: -9098277347516964398
+    second: beliscoLowOthers_0
+  - first:
+      213: 1883179004904729358
+    second: beliscoLowOthers_1
+  - first:
+      213: 4996240195629035151
+    second: beliscoLowWallContactYellow_0
+  - first:
+      213: 6395527199619263730
+    second: beliscoLowWallContactYellow_1
+  - first:
+      213: -3679542105663565772
+    second: beliscoLowOthers_2
+  - first:
+      213: 528527802988686053
+    second: beliscoLowOthers_3
+  - first:
+      213: -2528217736204951098
+    second: beliscoLowStrongAtackBlue_0
+  - first:
+      213: -7850332835676777951
+    second: beliscoLowStrongAtackBlue_1
+  - first:
+      213: -3666109239500032480
+    second: beliscoLowStrongAtackBlue_2
+  - first:
+      213: -4240820832101098060
+    second: beliscoLowStrongAtackBlue_3
+  - first:
+      213: 3050413376920558844
+    second: beliscoLowStrongAtackBlue_4
+  - first:
+      213: 7233151604988169815
+    second: beliscoLowStrongAtackBlue_5
+  - first:
+      213: 7163932785565628553
+    second: beliscoLowStrongAtackBlue_6
+  - first:
+      213: 7060963446910539610
+    second: beliscoLowStrongAtackYellow_0
+  - first:
+      213: 2185509012747393101
+    second: beliscoLowStrongAtackYellow_1
+  - first:
+      213: -2857445160702992106
+    second: beliscoLowStrongAtackYellow_2
+  - first:
+      213: 5217305831459151539
+    second: beliscoLowStrongAtackYellow_3
+  - first:
+      213: 6520600487753295714
+    second: beliscoLowStrongAtackYellow_4
+  - first:
+      213: -879597472016727799
+    second: beliscoLowStrongAtackYellow_5
+  - first:
+      213: 4387822534251593405
+    second: beliscoLowStrongAtackYellow_6
+  - first:
+      213: 1856904422119004016
+    second: beliscoLowStrongAtackJumpBlue_0
+  - first:
+      213: 3880093003084164462
+    second: beliscoLowStrongAtackJumpBlue_1
+  - first:
+      213: 548381743881682480
+    second: beliscoLowStrongAtackJumpBlue_2
+  - first:
+      213: 6055155017749954113
+    second: beliscoLowStrongAtackJumpBlue_3
+  - first:
+      213: 8076452883344146753
+    second: beliscoLowStrongAtackJumpBlue_4
+  - first:
+      213: 1032121894223941391
+    second: beliscoLowStrongAtackJumpBlue_5
+  - first:
+      213: 534247673360027813
+    second: beliscoLowStrongAtackJumpBlue_6
+  - first:
+      213: -2076114388318841995
+    second: beliscoLowStrongAtackJumpYellow_0
+  - first:
+      213: -3378040999639443941
+    second: beliscoLowStrongAtackJumpYellow_1
+  - first:
+      213: -1045487574983890787
+    second: beliscoLowStrongAtackJumpYellow_2
+  - first:
+      213: 1760269443585944
+    second: beliscoLowStrongAtackJumpYellow_3
+  - first:
+      213: -2301323082334321100
+    second: beliscoLowStrongAtackJumpYellow_4
+  - first:
+      213: -6431439561942353821
+    second: beliscoLowStrongAtackJumpYellow_5
+  - first:
+      213: -1291573353280132160
+    second: beliscoLowStrongAtackJumpYellow_6
+  - first:
+      213: -6124225595549056924
+    second: beliscoLowDashNoSwordBlue_0
+  - first:
+      213: -919650538204881468
+    second: beliscoLowDashNoSwordBlue_1
+  - first:
+      213: -4437851205029272447
+    second: beliscoLowDashNoSwordBlue_2
+  - first:
+      213: 315904436716863364
+    second: beliscoLowDashNoSwordBlue_3
+  - first:
+      213: 9185460290557660756
+    second: beliscoLowDashNoSwordBlue_4
+  - first:
+      213: 4003361024192553515
+    second: beliscoLowDashNoSwordBlue_5
+  - first:
+      213: -2321156090116416083
+    second: beliscoLowDashNoSwordBlue_6
+  - first:
+      213: -6736525981926312799
+    second: beliscoLowDashNoSwordYellow_0
+  - first:
+      213: 8490925487066150303
+    second: beliscoLowDashNoSwordYellow_1
+  - first:
+      213: -1674456244134867668
+    second: beliscoLowDashNoSwordYellow_2
+  - first:
+      213: 8125648406434782541
+    second: beliscoLowDashNoSwordYellow_3
+  - first:
+      213: 3843140921814414062
+    second: beliscoLowDashNoSwordYellow_4
+  - first:
+      213: -7466392634072910340
+    second: beliscoLowDashNoSwordYellow_5
+  - first:
+      213: -2166755834953041987
+    second: beliscoLowDashNoSwordYellow_6
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: beliscoLowAfterAtackBlue_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b928c4324dfdb0f50800000000000000
+      internalID: 6848813760565248667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAfterAtackBlue_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ff10ed23c72f480800000000000000
+      internalID: -8866888158424203378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAfterAtackBlue_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76991346f079c5c50800000000000000
+      internalID: 6655360441708026215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAfterAtackBlue_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c583673f6879b90800000000000000
+      internalID: -7235165896128832511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAfterAtackBlue_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6274bb62378b9c0800000000000000
+      internalID: -3911249666183321907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAfterAtackBlue_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296191a38c7de54e0800000000000000
+      internalID: -1990916730283026798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAfterAtackYellow_0
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f55e7baa97d6cc0800000000000000
+      internalID: -3716180343374127348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAfterAtackYellow_1
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41ffe4cf059d2ed0800000000000000
+      internalID: -2437127928376463028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAfterAtackYellow_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b86b36f9cf745b10800000000000000
+      internalID: 1969339442463991992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAfterAtackYellow_3
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3fc937f411098fe0800000000000000
+      internalID: -1186415837276680386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAfterAtackYellow_4
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79afee330720ac140800000000000000
+      internalID: 4740604238691760791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAfterAtackYellow_5
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4fd9cf634f20760800000000000000
+      internalID: 7422763652863620320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowKeepSwordBlue_0
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175cf7e8244e97d50800000000000000
+      internalID: 6735665692219000177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowKeepSwordBlue_1
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da954cc3c2900b30800000000000000
+      internalID: 4251559417881139928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowKeepSwordBlue_2
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b0366f111805e30800000000000000
+      internalID: 4490230742636497734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowKeepSwordBlue_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1632
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a9921b061d49500800000000000000
+      internalID: 402176479962176000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowKeepSwordBlue_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b2c464e38fdff80800000000000000
+      internalID: -8071022010827003031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowKeepSwordBlue_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95aae43f9ce1dbd0800000000000000
+      internalID: -2607042540739058278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowKeepSwordYellow_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef713629209c562c0800000000000000
+      internalID: -4438920844820670466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowKeepSwordYellow_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8657f77877d9fe2a0800000000000000
+      internalID: -6705968183431432856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowKeepSwordYellow_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd39b3e0e4f19e240800000000000000
+      internalID: 4821419296183522267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowKeepSwordYellow_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c4482fa9f4a8920800000000000000
+      internalID: 2993292429253430421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowKeepSwordYellow_4
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20614d9ff431f2510800000000000000
+      internalID: 1526460032916657666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowKeepSwordYellow_5
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3852295910fd890800000000000000
+      internalID: -7431219118224342061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowIddleBlue_0
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aba9b97806cff500800000000000000
+      internalID: 432281828955106208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowIddleBlue_1
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc14cadd6e21e09c0800000000000000
+      internalID: -3959206239641255476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowIddleBlue_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1d8968c2a4e43b0800000000000000
+      internalID: -5526398137639841309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowIddleBlue_3
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a417081cc31e03e0800000000000000
+      internalID: -2085707810128587608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowIddleBlue_4
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aa979ec98c8506d0800000000000000
+      internalID: -3024857051204969819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowIddleBlue_5
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8dbed293729cff90800000000000000
+      internalID: -6918493902464959093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowIddleYellow_0
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9262b0b1577912060800000000000000
+      internalID: 6926984231093216809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowIddleYellow_1
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1536
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3c0e9994ec66480800000000000000
+      internalID: -8906204397568998420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowIddleYellow_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 710f8050caaac2700800000000000000
+      internalID: 516975713036333079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowIddleYellow_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39952f63a0c3d3290800000000000000
+      internalID: -7909099356023531117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowIddleYellow_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1347181b0a9ecd80800000000000000
+      internalID: -8228470096719822050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowIddleYellow_5
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 005a3fb5fc08deb30800000000000000
+      internalID: 4318249245807453440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleBlue_0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050f1375c1f70efd0800000000000000
+      internalID: -2314710448769732528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleBlue_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f44f7eb465055d0800000000000000
+      internalID: -3075863661479964881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleBlue_2
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65409540943722d0800000000000000
+      internalID: -3303614007405951638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleBlue_3
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d283ec77bda5fa4f0800000000000000
+      internalID: -815333108876429267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleBlue_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac35285b63940810800000000000000
+      internalID: 1730670246066732198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleBlue_5
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356793ea0dae25100800000000000000
+      internalID: 95396724125300307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleBlue_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf4b853be030cad0800000000000000
+      internalID: -2684091591139045456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleBlue_7
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43986ea3c1911d880800000000000000
+      internalID: -8588055405380859596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleYellow_0
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f60e9cd2f5e47050800000000000000
+      internalID: 5797511451578861299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleYellow_1
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4548e535bbb472410800000000000000
+      internalID: 1452212672779945044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleYellow_2
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e10b253d38789c0800000000000000
+      internalID: -3925023606581485965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleYellow_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1440
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6229eb80dd6d4ca70800000000000000
+      internalID: 8846431812885320230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleYellow_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e55cba5cda5c7d0800000000000000
+      internalID: -2898719720641044866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleYellow_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb92b36d05ebfc30800000000000000
+      internalID: 4394357707100036038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleYellow_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec4d6dc6267300c0800000000000000
+      internalID: -4610711684469928734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRunCycleYellow_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9f4791668897940800000000000000
+      internalID: 5294412809045866930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack1Blue_0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa13a87165afef940800000000000000
+      internalID: 5331974256522310063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack1Blue_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7570112b9906c8a60800000000000000
+      internalID: 7677617677993576279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack1Blue_2
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563f2a536bcbe3720800000000000000
+      internalID: 2827905106805191525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack1Blue_3
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2d26b4116892f10800000000000000
+      internalID: 2245473298058236646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack1Blue_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe78a484362972bb0800000000000000
+      internalID: -4960835509413050385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack1Blue_5
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76ba6f1ee2ded190800000000000000
+      internalID: -7935673573209098627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack1Yellow_0
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317e701fd9841efb0800000000000000
+      internalID: -4620331899514525933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack1Yellow_1
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9f7db8a16edc5d0800000000000000
+      internalID: -3040521171715491399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack1Yellow_2
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a348fdb6b4b4080800000000000000
+      internalID: -9202178486917907928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack1Yellow_3
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453de16a7ea98b160800000000000000
+      internalID: 7041548337108931412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack1Yellow_4
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87be53908aa81200800000000000000
+      internalID: 151058056721905548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack1Yellow_5
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1344
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35effc5024a74a880800000000000000
+      internalID: -8600614964386857389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack2Blue_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5148d5d3acc2fb0800000000000000
+      internalID: -4671136348579293740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack2Blue_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3dbb117121e50840800000000000000
+      internalID: 5189801679362178365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack2Blue_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb5d7d74558fa0ab0800000000000000
+      internalID: -5040943787726613057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack2Blue_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3708e25ef1155ea20800000000000000
+      internalID: 3090965916690579571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack2Blue_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75fa41e039a24ca0800000000000000
+      internalID: -6034074523319732870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack2Blue_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d15fbc232ec6f60800000000000000
+      internalID: 8029040943492832573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack2Yellow_0
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c8f584ad6b3f040800000000000000
+      internalID: 4680285486401424501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack2Yellow_1
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190ba2731235bc340800000000000000
+      internalID: 4885089622938005649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack2Yellow_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15bd8b884a779c1d0800000000000000
+      internalID: -3329998900911613103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack2Yellow_3
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81dcad2d47c2391d0800000000000000
+      internalID: -3345281217940763368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack2Yellow_4
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018d1c1fe08a54080800000000000000
+      internalID: -9203765481322719216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtack2Yellow_5
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a225acb31a286acb0800000000000000
+      internalID: -4853047919440670166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowHitFloorBlue_0
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00dfedc73cc7f2580800000000000000
+      internalID: -8849717563704279808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowHitFloorYellow_0
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1925e1eed0c1f80800000000000000
+      internalID: -8134611510575853091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowHitAirBlue_0
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03347699704ec29f0800000000000000
+      internalID: -491767538000641232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowHitAirYellow_0
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1248
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac9c44aa5d7256b40800000000000000
+      internalID: 5432792324130523594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpAntecipationBlue_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08430daa2a3d10e40800000000000000
+      internalID: 5621006505539024000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpAntecipationBlue_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af143d462f9f3e360800000000000000
+      internalID: 7197871448937153018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpUpLoopB_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27a887572aa936b0800000000000000
+      internalID: -5316030799185139926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpUpLoopB_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a156d622b36ba3b0800000000000000
+      internalID: -5500192903096020571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpUpLoopB_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 745455363f7289fa0800000000000000
+      internalID: -5793836994315074233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpUpLoopB_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b0f526134de3b20800000000000000
+      internalID: 3116161300755843913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpTransitionBlue_0
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea78d21628a4b4080800000000000000
+      internalID: -9202179489764898898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpTransitionBlue_1
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86e036cefb17d71a0800000000000000
+      internalID: -6810161992395714968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpFallLoopB_0
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a58d34baf3cab860800000000000000
+      internalID: 7546559607145858472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpFallLoopB_1
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1cf26df14db8200800000000000000
+      internalID: 183473443041165733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpFallLoopB_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2028826c72d13b70800000000000000
+      internalID: 8877107772194824239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpFallLoopB_3
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe546c58373f4a70800000000000000
+      internalID: 8813323710995128049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpContactBlue_0
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29facfbff4f844b0800000000000000
+      internalID: -5455841569287767762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpContactBlue_1
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9c976dde659cb600800000000000000
+      internalID: 485427163242667163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpContactBlue_2
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b532095b448a98eb0800000000000000
+      internalID: -4717054121636519077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpAntecipationYellow_0
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8933a2df890765800800000000000000
+      internalID: 600791402685281176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpAntecipationYellow_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec06d4472b93c68b0800000000000000
+      internalID: -5157684034627870514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpUpLoopY_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff46c3d1db240520800000000000000
+      internalID: 2667305059511324658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpUpLoopY_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6df34832e60ae0b0800000000000000
+      internalID: -5698734809807585942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpUpLoopY_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9500ceb559bbc0370800000000000000
+      internalID: 8290207264248954969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpUpLoopY_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e58803c678d3d90800000000000000
+      internalID: -7116382937435054442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpTransitionYellow_0
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5077d74e241950300800000000000000
+      internalID: 217739873484633861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpTransitionYellow_1
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11587b26fbad28470800000000000000
+      internalID: 8395513170901828881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpFallLoopY_0
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27e3572541503710800000000000000
+      internalID: 1670924819208857389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpFallLoopY_1
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d0730fa02ed5340800000000000000
+      internalID: 4854284509982952706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpFallLoopY_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750f2e47afe31ad40800000000000000
+      internalID: 5593821457594642519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpFallLoopY_3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc5d92d3dcdee7b0800000000000000
+      internalID: -5192970517981864742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpContactYellow_0
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 839b6dd2427e8c9a0800000000000000
+      internalID: -6212461543383713480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpContactYellow_1
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b4e7cd931720e20800000000000000
+      internalID: 3315336769024445239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowJumpContactYellow_2
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd61090e68e253450800000000000000
+      internalID: 6067807229779646171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowGlydeAntecipationB_0
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1152
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0caf6fb6ce4dc200800000000000000
+      internalID: 201904173823798286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowGlydeAntecipationB_1
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1213b0b291ce08d90800000000000000
+      internalID: -7097413419895410399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowGlydeLoopB_0
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1056
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f1808b715eb89270800000000000000
+      internalID: 8257559173957452272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowGlydeLoopB_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01c6cffacc8540b0800000000000000
+      internalID: -5745030946138701556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowGlydeLoopB_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aaa80314af9086f0800000000000000
+      internalID: -684371616317527383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowGlydeLoopB_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c987cd778f23f0f50800000000000000
+      internalID: 6849749600998029468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowGlydeAntecipationY_0
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b514f132435cbfe60800000000000000
+      internalID: 7997202391044669787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowGlydeAntecipationY_1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be0cd052a1dc3bd0800000000000000
+      internalID: -2649011985729188175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowGlydeLoopY_0
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715727f7d8a0f5580800000000000000
+      internalID: -8836332341032749801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowGlydeLoopY_1
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b230d79ee0fd89970800000000000000
+      internalID: 8761998330189120299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowGlydeLoopY_2
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61675d35228b1ff10800000000000000
+      internalID: 2301823342137931286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowGlydeLoopY_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1ce0642adc55cd0800000000000000
+      internalID: -2569921915501231617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpSideBlue_0
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee166a3570e29c680800000000000000
+      internalID: -8734399393305304594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpSideBlue_1
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4611231e080624820800000000000000
+      internalID: 2900987216630255972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpSideBlue_2
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f8cb7fb16ee3f0e0800000000000000
+      internalID: -2237182486281205516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpSideBlue_3
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b83ed970350f570800000000000000
+      internalID: 8498383789026937627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpSideYellow_0
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ad61bf033b55440800000000000000
+      internalID: 4924038790551886358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpSideYellow_1
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87733ae5102fc010800000000000000
+      internalID: 1211222103281596303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpSideYellow_2
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 960
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a416b4f2f46c940800000000000000
+      internalID: 5316023474704173582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpSideYellow_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182bc31992e2aab30800000000000000
+      internalID: 4299299550343770753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackUpBlue_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89206d81414f29c50800000000000000
+      internalID: 6670662365242327704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackUpBlue_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c36e3b5edd4029100800000000000000
+      internalID: 113158291725739580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackUpBlue_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ce768cb20a558f0800000000000000
+      internalID: -552359269376725973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackUpBlue_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba037ec7a66d4d40800000000000000
+      internalID: 5570221185036389045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackUpBlue_4
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be8b2aa40a3863b30800000000000000
+      internalID: 4266742421450307819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackUpBlue_5
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c89b3816c451c2c0800000000000000
+      internalID: -4413152950059558715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackUpYellow_0
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9eebfd81613d6470800000000000000
+      internalID: 8389415975924788892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackUpYellow_1
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f22989f1aa54800800000000000000
+      internalID: 596069578376884033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackUpYellow_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ceb4b7d0bd588ab0800000000000000
+      internalID: -5005647971707732286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackUpYellow_3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de70bbf70fd48a80800000000000000
+      internalID: -8465396174169276719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackUpYellow_4
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c41b0488e17c4d0800000000000000
+      internalID: -3114487046753661917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackUpYellow_5
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae070f34267e4c0a0800000000000000
+      internalID: -6862105522973150998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpUpBlue_0
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1e2b27001ce80f0800000000000000
+      internalID: -1112739850245447252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpUpBlue_1
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e204612eb890460800000000000000
+      internalID: 7208446481735364207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpUpBlue_2
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 864
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfba0c82a59ea4420800000000000000
+      internalID: 2615159107082038268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpUpBlue_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555edf4230b9be370800000000000000
+      internalID: 8352940371696543061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpUpYellow_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56478fb540a67fc50800000000000000
+      internalID: 6698939537692324965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpUpYellow_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0c99909b9a45560800000000000000
+      internalID: 7301647508069531902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpUpYellow_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215419c46c2aa3020800000000000000
+      internalID: 2322347530434725138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackJumpUpYellow_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782d904095e2dc530800000000000000
+      internalID: 3876805814090584711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackDown1_0
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55d66260d6149ac0800000000000000
+      internalID: -3849426697235016358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackDown1_1
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5dde97bd05692bb0800000000000000
+      internalID: -4960322404982268582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackDown1_2
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6c3d7c1ee6d3170800000000000000
+      internalID: 8159800015864448750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackDown1_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f87aa1f13ad1210800000000000000
+      internalID: 1305378820993814288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackDown2_0
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fae5a8f42c9842e0800000000000000
+      internalID: -2141289940210291979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackDown2_1
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0a712d8eeb136f0800000000000000
+      internalID: -706573759354003264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackDown2_2
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a86acad313be340800000000000000
+      internalID: 4894059561027537524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowAtackDown2_3
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4aa19c3a73a2f310800000000000000
+      internalID: 1437390976482126413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathBlue_0
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c645aab0538d8eb50800000000000000
+      internalID: 6622780974388892780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathBlue_1
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591573e1b49bca6a0800000000000000
+      internalID: -6436566035138653803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathBlue_2
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 768
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab8dcf104f5ae300800000000000000
+      internalID: 282142655680187302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathBlue_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e703d4e092064c100800000000000000
+      internalID: 127332418923081854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathBlue_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e449ff59a98e62e30800000000000000
+      internalID: 4478522630105699406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathBlue_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b99d6af9a7edc1a0800000000000000
+      internalID: -6787514346140493391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathBlue_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a51d3de3f3866bf70800000000000000
+      internalID: 9202657509424484698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathBlue_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48f04417fdfa88a0800000000000000
+      internalID: -6301945490913036210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathYellow_0
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49db3768c20767b60800000000000000
+      internalID: 7743499945846750612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathYellow_1
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b388441d3c2e0fe0800000000000000
+      internalID: -1220989808125901895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathYellow_2
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0d5601b11025170800000000000000
+      internalID: 8165590290126983400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathYellow_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2833ceb4b90996c20800000000000000
+      internalID: 3200248006891549570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathYellow_4
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a554e9384651f00800000000000000
+      internalID: 1086885401538681428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathYellow_5
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb806029998013d0800000000000000
+      internalID: -3237936841313186830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathYellow_6
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b3ce48ae9e5f1e0800000000000000
+      internalID: -2164566852419962099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDeathYellow_7
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f07d786c5230fe610800000000000000
+      internalID: 1652543049047725839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashSideBlue_0
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e566dd5b9f3c4f80800000000000000
+      internalID: -8121046091529034263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashSideBlue_1
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e097fbabed60ea0800000000000000
+      internalID: -5906788967592161772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashSideBlue_2
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 672
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9393c95127ac51760800000000000000
+      internalID: 7428065751755143481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashSideBlue_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa15b1366c8ef960800000000000000
+      internalID: 7637696388615445160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashSideBlue_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fb75c102c0462a0800000000000000
+      internalID: -6745253009840160973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashSideYellow_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a924f1971a723af0800000000000000
+      internalID: -418137573740500574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashSideYellow_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f773d5c6693fe20800000000000000
+      internalID: 3383213137249927019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashSideYellow_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b4767bb9a3a4050800000000000000
+      internalID: 5785501111782165322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashSideYellow_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c0b8515e04a06c0800000000000000
+      internalID: -4176454351779591096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashSideYellow_4
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7348d707d4fd6b0800000000000000
+      internalID: -5269407893462697999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashUpBlue_0
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef9fb8de0d8dba60800000000000000
+      internalID: 7691458833524170722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashUpBlue_1
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c0cacf70c0d78a0800000000000000
+      internalID: -6305870674805388226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashUpBlue_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daae1f9c22d2ccb40800000000000000
+      internalID: 5461790075533781677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashUpBlue_3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283ecf11d24619120800000000000000
+      internalID: 2418824619612758914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashUpBlue_4
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc8be5e3fc3eda00800000000000000
+      internalID: 783130403441183935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashUpBlue_5
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b00fd4ffabea0fb0800000000000000
+      internalID: -4680669721738149709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashUpYellow_0
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50642fbaade3b3330800000000000000
+      internalID: 3691613428468827653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashUpYellow_1
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f054571e0af37d0800000000000000
+      internalID: -2936451541826728180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashUpYellow_2
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 576
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50595f6a3bb59a170800000000000000
+      internalID: 8190178224508343557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashUpYellow_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b16547ad87227a70800000000000000
+      internalID: 8823158109322437040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashUpYellow_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df855ba9405206c10800000000000000
+      internalID: 2044674932531878141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashUpYellow_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342537bc97fb3bf90800000000000000
+      internalID: -6938992071022521789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackBlue_0
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0e8cdc0d9fc57f0800000000000000
+      internalID: -622347973282963215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackBlue_1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93aa1077dfd1321d0800000000000000
+      internalID: -3376822321137210823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackBlue_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c8742c28bebbf20800000000000000
+      internalID: 3439601687265250379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackBlue_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6abab931e2da74c50800000000000000
+      internalID: 6649473788244896678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackBlue_4
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f2e36422f5f7650800000000000000
+      internalID: 6232805010116063122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackBlue_5
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb5caf09b948e0c00800000000000000
+      internalID: 868777581816235452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackBlue_6
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d0f7ef49f0cb400800000000000000
+      internalID: 341164804372630895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackRangedYellow_0
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea1e15d8d4a169e0800000000000000
+      internalID: -1629840338935997723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackRangedYellow_1
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921e9f68920638f20800000000000000
+      internalID: 3423685873206157609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackRangedYellow_2
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f551a29de851fd1b0800000000000000
+      internalID: -5629757305916877473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackRangedYellow_3
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a56bf07241a699a0800000000000000
+      internalID: -6226612128057694810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackRangedYellow_4
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2561d5dc6d8a1f00800000000000000
+      internalID: 1088337758546650410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackRangedYellow_5
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 480
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a09aa7d305d63530800000000000000
+      internalID: 3834486345232453801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackRangedYellow_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdfa2ca5fe38de2d0800000000000000
+      internalID: -3247794692221128737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackJumpBlue_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb41c17b72ecd440800000000000000
+      internalID: 4962089909272792035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackJumpBlue_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150d11512088c03e0800000000000000
+      internalID: -2086142984854581167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackJumpBlue_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f17d5ffd1da9420800000000000000
+      internalID: 2637651291611275057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackJumpBlue_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d50fa40397d54140800000000000000
+      internalID: 4703402412297094612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackJumpBlue_4
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07344a3ee304a0460800000000000000
+      internalID: 7208644792411243376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackJumpBlue_5
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd4ad8b4ee71e470800000000000000
+      internalID: 8422152298978495936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackJumpBlue_6
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d433fcce07df000a0800000000000000
+      internalID: -6917250366189915315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackRangedJumpYellow_0
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fae57476acb1e4f0800000000000000
+      internalID: -801151835590759689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackRangedJumpYellow_1
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ff22c49eb016850800000000000000
+      internalID: 6368384444711239446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackRangedJumpYellow_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b30ea7063137650800000000000000
+      internalID: 6229344014682831772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackRangedJumpYellow_3
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bade38d7b65808ee0800000000000000
+      internalID: -1260861198949945941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackRangedJumpYellow_4
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3e8b610fe9c1640800000000000000
+      internalID: 5052087636013409250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackRangedJumpYellow_5
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ec575389e50dce0800000000000000
+      internalID: -1382501077777789319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowRangedAtackRangedJumpYellow_6
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343751e9d43145900800000000000000
+      internalID: 672183468470661955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowWallJumpBlue_0
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 384
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ebc999facb3b030800000000000000
+      internalID: 3509355997034233489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowWallJumpBlue_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef29164c9a089260800000000000000
+      internalID: 7104440078484189163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowOthers_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1a44905fc6cb180800000000000000
+      internalID: -9098277347516964398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowOthers_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0be1d3d355622a10800000000000000
+      internalID: 1883179004904729358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowWallContactYellow_0
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e2ff89cf5365540800000000000000
+      internalID: 4996240195629035151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowWallContactYellow_1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fca7a46a1a71c850800000000000000
+      internalID: 6395527199619263730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowOthers_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43094df23f3afecc0800000000000000
+      internalID: -3679542105663565772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowOthers_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eaee0f8c35b55700800000000000000
+      internalID: 528527802988686053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackBlue_0
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c169ae2d57f9ecd0800000000000000
+      internalID: -2528217736204951098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackBlue_1
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12296e8f0e30e0390800000000000000
+      internalID: -7850332835676777951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackBlue_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 026b2df021d5f1dc0800000000000000
+      internalID: -3666109239500032480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackBlue_3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd998a0ce39525c0800000000000000
+      internalID: -4240820832101098060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackBlue_4
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc1375fdce355a20800000000000000
+      internalID: 3050413376920558844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackBlue_5
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ecdd5df01516460800000000000000
+      internalID: 7233151604988169815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackBlue_6
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988f96e89e66b6360800000000000000
+      internalID: 7163932785565628553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackYellow_0
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57de1928d49df160800000000000000
+      internalID: 7060963446910539610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackYellow_1
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 288
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4819362edc745e10800000000000000
+      internalID: 2185509012747393101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackYellow_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611a32704c05858d0800000000000000
+      internalID: -2857445160702992106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackYellow_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be52b0e208976840800000000000000
+      internalID: 5217305831459151539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackYellow_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26726c29893dd7a50800000000000000
+      internalID: 6520600487753295714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackYellow_5
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9018c1f62ca0bc3f0800000000000000
+      internalID: -879597472016727799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackYellow_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe3583e85da4ec30800000000000000
+      internalID: 4387822534251593405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackJumpBlue_0
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 077514ecbbc05c910800000000000000
+      internalID: 1856904422119004016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackJumpBlue_1
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d6f48570cd8d530800000000000000
+      internalID: 3880093003084164462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackJumpBlue_2
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e70656a4e3c9700800000000000000
+      internalID: 548381743881682480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackJumpBlue_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ef8e4386b380450800000000000000
+      internalID: 6055155017749954113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackJumpBlue_4
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14148e44b13551070800000000000000
+      internalID: 8076452883344146753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackJumpBlue_5
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f0f16f465d25e00800000000000000
+      internalID: 1032121894223941391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackJumpBlue_6
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a014b8ad670a6700800000000000000
+      internalID: 534247673360027813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackJumpYellow_0
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5739d2ba6f82033e0800000000000000
+      internalID: -2076114388318841995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackJumpYellow_1
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1619c3cb99ce11d0800000000000000
+      internalID: -3378040999639443941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackJumpYellow_2
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d98200cf69ead71f0800000000000000
+      internalID: -1045487574983890787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackJumpYellow_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 192
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 897d4eaa4f0460000800000000000000
+      internalID: 1760269443585944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackJumpYellow_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4364e0c79de0010e0800000000000000
+      internalID: -2301323082334321100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackJumpYellow_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368380c2bcfeeb6a0800000000000000
+      internalID: -6431439561942353821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowStrongAtackJumpYellow_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cba064d0e8631ee0800000000000000
+      internalID: -1291573353280132160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashNoSwordBlue_0
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46081f4b441620ba0800000000000000
+      internalID: -6124225595549056924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashNoSwordBlue_1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd1dc045bebc33f0800000000000000
+      internalID: -919650538204881468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashNoSwordBlue_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184e03e77d59962c0800000000000000
+      internalID: -4437851205029272447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashNoSwordBlue_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f7a755961526400800000000000000
+      internalID: 315904436716863364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashNoSwordBlue_4
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45e4525b77f497f70800000000000000
+      internalID: 9185460290557660756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashNoSwordBlue_5
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2224aa04abce8730800000000000000
+      internalID: 4003361024192553515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashNoSwordBlue_6
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad506485d899cfd0800000000000000
+      internalID: -2321156090116416083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashNoSwordYellow_0
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a4b713af4d0382a0800000000000000
+      internalID: -6736525981926312799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashNoSwordYellow_1
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9573ee5eb3d5d570800000000000000
+      internalID: 8490925487066150303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashNoSwordYellow_2
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d0868eae223c8e0800000000000000
+      internalID: -1674456244134867668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashNoSwordYellow_3
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d93439c2a14c070800000000000000
+      internalID: 8125648406434782541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashNoSwordYellow_4
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2f38a7e44955530800000000000000
+      internalID: 3843140921814414062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashNoSwordYellow_5
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 96
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5bd7c357b026890800000000000000
+      internalID: -7466392634072910340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beliscoLowDashNoSwordYellow_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db77e9e4c032ee1e0800000000000000
+      internalID: -2166755834953041987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

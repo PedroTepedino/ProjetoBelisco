@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5413079094971185035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5413079094971185037}
+  - component: {fileID: 5413079094971185034}
+  m_Layer: 0
+  m_Name: ObjectPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5413079094971185037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5413079094971185035}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5413079094971185034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5413079094971185035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29fc1c00e8f3384488048c17188fda2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - prefab: {fileID: 5366140802195632289, guid: 50bda1634a0ac974eb4d3135fbe1013e,
+      type: 3}
+    tag: Player
+    size: 1
+    fixSize: 1
+  - prefab: {fileID: 1918368214204772663, guid: 3331af553c8a9834eb105be3246a6408,
+      type: 3}
+    tag: Arrow
+    size: 0
+    fixSize: 0
+  - prefab: {fileID: 6201884887330514931, guid: 35230f69c3c607e4599f6e48002c2565,
+      type: 3}
+    tag: EnemyProjectile
+    size: 5
+    fixSize: 0
+  - prefab: {fileID: 8588909763028274931, guid: efdf5ac5bf3cf964b9b7e8cf8f990bc6,
+      type: 3}
+    tag: Ghost
+    size: 3
+    fixSize: 1
+  - prefab: {fileID: 7318840116845801735, guid: 2ad2f69e43d66ef4ea22a4a1b3a13ecb,
+      type: 3}
+    tag: AirJump
+    size: 0
+    fixSize: 0
+  - prefab: {fileID: 2628312115988943141, guid: dc4a25d12575a834aae0e28acee1f93b,
+      type: 3}
+    tag: GroundJump
+    size: 1
+    fixSize: 0

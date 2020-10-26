@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace RefatoramentoDoTioTepe
+namespace Belisco
 {
     [RequireComponent(typeof(Collider2D))]
     public class VoidHole : MonoBehaviour
@@ -19,11 +19,8 @@ namespace RefatoramentoDoTioTepe
         {
             if (!collision.gameObject.activeInHierarchy) return;
 
-            var player = collision.gameObject.GetComponent<Player>();
-            if (player)
-            {
-                player.Hit(10000);
-            }
+            Player player = collision.gameObject.GetComponent<Player>();
+            if (player) player.Hit(10000);
         }
     }
 }

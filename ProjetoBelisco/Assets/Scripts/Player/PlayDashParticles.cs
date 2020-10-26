@@ -1,36 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayDashParticles : MonoBehaviour
+namespace Belisco
 {
-    [SerializeField] private GameObject particlesGameObj;
-    private ParticleSystem[] dashParticleSystem;
-
-
-
-    private void Awake()
+    public class PlayDashParticles : MonoBehaviour
     {
-        dashParticleSystem = particlesGameObj.GetComponentsInChildren<ParticleSystem>();
-    }
+        [SerializeField] private GameObject particlesGameObj;
+        private ParticleSystem[] dashParticleSystem;
 
-
-
-    public void EmitDashParticle()
-    {
-        for(int i = 0; i < dashParticleSystem.Length; i++ )
+        private void Awake()
         {
-            dashParticleSystem[i].Play();
+            dashParticleSystem = particlesGameObj.GetComponentsInChildren<ParticleSystem>();
         }
-    }
 
-
-
-    public void StopDashParticles()
-    {
-        for(int i = 0; i < dashParticleSystem.Length; i++)
+        public void EmitDashParticle()
         {
-            dashParticleSystem[i].Stop();
+            for (var i = 0; i < dashParticleSystem.Length; i++) dashParticleSystem[i].Play();
+        }
+
+        public void StopDashParticles()
+        {
+            for (var i = 0; i < dashParticleSystem.Length; i++) dashParticleSystem[i].Stop();
         }
     }
 }

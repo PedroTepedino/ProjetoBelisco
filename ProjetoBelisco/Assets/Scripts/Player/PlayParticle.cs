@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace RefatoramentoDoTioTepe
+namespace Belisco
 {
     public class PlayParticle : MonoBehaviour
     {
@@ -10,7 +10,7 @@ namespace RefatoramentoDoTioTepe
 
         private void Awake()
         {
-            _player = this.GetComponentInParent<Player>();
+            _player = GetComponentInParent<Player>();
         }
 
         private void OnEnable()

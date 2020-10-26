@@ -1,16 +1,15 @@
 ﻿using Cinemachine;
-using GameScripts.Player;
 using UnityEngine;
 
-namespace RefatoramentoDoTioTepe
+namespace Belisco
 {
     public class CameraManager : MonoBehaviour
     {
-        CinemachineVirtualCamera cam;
+        private CinemachineVirtualCamera cam;
 
         private void Awake()
         {
-            cam = this.GetComponent<CinemachineVirtualCamera>();
+            cam = GetComponent<CinemachineVirtualCamera>();
             Player.OnPlayerSpawn += SetCameraToPlayer;
         }
 
