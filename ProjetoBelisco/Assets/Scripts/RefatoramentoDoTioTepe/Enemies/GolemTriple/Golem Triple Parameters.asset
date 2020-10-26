@@ -14,28 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: GameAssemblyDefinition:RefatoramentoDoTioTepe:GolemTripleParameters
   isBoss: 0
   lookingRange: 5
-  maxHealthPoints: 1
+  maxHealthPoints: 4
   alertAnimationTime: 1
-  movingSpeed: 3
+  movingSpeed: 2
   minTimeBetweenIddles: 1
   maxTimeBetweenIddles: 2
-  minIddleTime: 4
-  maxIddleTime: 6
-  grounderCenter: {x: 1.25, y: -0.75}
-  grounderDistance: 1
+  minIddleTime: 5
+  maxIddleTime: 7
+  grounderCenter: {x: 1.2, y: -0.9}
+  grounderDistance: 0.5
   grounderLayerMask:
     serializedVersion: 2
     m_Bits: 256
-  wallCheckerTop: {x: 1.25, y: 0.75, z: 0}
-  wallCheckerCenter: {x: 1.25, y: 0, z: 0}
-  wallCheckerBottom: {x: 1.25, y: -0.75, z: 0}
-  wallCheckerDistance: 0.3
+  wallCheckerCenter: {x: 1.2, y: -0.3}
+  wallCheckerDistance: 1
   wallCheckerLayerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1280
   targetingLayerMask:
     serializedVersion: 2
     m_Bits: 4352
-  targetingCenter: {x: 1.25, y: -0.3, z: 0}
-  bossZoneCornerA: {x: 0, y: 0, z: 0}
-  bossZoneCornerB: {x: 0, y: 0, z: 0}
+  targetingCenter: {x: 1.2, y: -0.3}
+  bossZoneCornerA: {x: 0, y: 0}
+  bossZoneCornerB: {x: 0, y: 0}

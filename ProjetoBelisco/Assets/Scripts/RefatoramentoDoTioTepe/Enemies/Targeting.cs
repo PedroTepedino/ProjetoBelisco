@@ -6,11 +6,10 @@ namespace RefatoramentoDoTioTepe
     public class Targeting : MonoBehaviour
     {
 
-        private Vector3 targetingCenter;
-        private Vector3 bossZoneCornerA;
-        private Vector3 bossZoneCornerB;
+        private Vector2 targetingCenter;
+        private Vector2 bossZoneCornerA;
+        private Vector2 bossZoneCornerB;
         private LayerMask targetingLayerMask;
-        
 
         private IEnemyStateMachine controller;
         private Attack attack;
@@ -19,7 +18,6 @@ namespace RefatoramentoDoTioTepe
 
         public Transform target { get; private set; } = null;
         public bool hasTarget { get; private set; } = false;
-        
 
         void Start()
         {
@@ -39,10 +37,10 @@ namespace RefatoramentoDoTioTepe
 
         void Update()
         {
-            
+
             // if (!bossEnemy)
             // {
-                hasTarget = TargetingAction();
+            hasTarget = TargetingAction();
             // }
             // else if(target == null)
             // {
@@ -55,7 +53,8 @@ namespace RefatoramentoDoTioTepe
             }
         }
 
-        private bool TargetingAction(){
+        private bool TargetingAction()
+        {
             if (bossEnemy)
             {
                 var hitObjects = Physics2D.OverlapAreaAll(bossZoneCornerA, bossZoneCornerB, targetingLayerMask);
@@ -64,13 +63,13 @@ namespace RefatoramentoDoTioTepe
             }
             else
             {
-                var hitObject = Physics2D.Raycast(this.transform.position + targetingCenter, controller.movingRight ? Vector2.right : Vector2.left, lookingRange, targetingLayerMask);
+                var hitObject = Physics2D.Raycast(this.transform.position + new Vector3(targetingCenter.x, targetingCenter.y, 0), controller.movingRight ? Vector2.right : Vector2.left, lookingRange, targetingLayerMask);
                 target = CheckHit(hitObject);
                 return (target != null);
             }
         }
 
-        private Transform CheckHit(Collider2D[] hits)
+        private Transform CheckHit(Collider2D[ ] hits)
         {
             foreach (Collider2D hit in hits)
             {
@@ -84,7 +83,7 @@ namespace RefatoramentoDoTioTepe
 
         private Transform CheckHit(RaycastHit2D hit)
         {
-            if(hit.transform != null)
+            if (hit.transform != null)
             {
                 if (hit.transform.gameObject.GetComponent<Player>() != null)
                 {
@@ -94,22 +93,23 @@ namespace RefatoramentoDoTioTepe
             return null;
         }
 
-        protected void OnDrawGizmos() {
+        protected void OnDrawGizmos()
+        {
             // Guard sentence
             if (controller == null)
                 return;
-        
+
             Gizmos.color = Color.yellow;
-            
+
             if (controller.movingRight)
             {
-                Gizmos.DrawLine(this.transform.position, this.transform.position + new Vector3(lookingRange,0 , 0));
-                Gizmos.DrawLine(this.transform.position+ new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(attack.attackRange, 0.5f, 0));            
+                Gizmos.DrawLine(this.transform.position, this.transform.position + new Vector3(lookingRange, 0, 0));
+                Gizmos.DrawLine(this.transform.position + new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(attack.attackRange, 0.5f, 0));
             }
             else
             {
-                Gizmos.DrawLine(this.transform.position, this.transform.position + new Vector3(-lookingRange,0 , 0));
-                Gizmos.DrawLine(this.transform.position+ new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(-attack.attackRange, 0.5f, 0));
+                Gizmos.DrawLine(this.transform.position, this.transform.position + new Vector3(-lookingRange, 0, 0));
+                Gizmos.DrawLine(this.transform.position + new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(-attack.attackRange, 0.5f, 0));
             }
         }
     }
