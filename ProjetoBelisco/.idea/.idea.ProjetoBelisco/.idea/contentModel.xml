@@ -391,6 +391,10 @@
             <e p="VoidHole.cs" t="Include" />
           </e>
           <e p="MapSetup" t="Include">
+            <e p="CameraPriorityTrigger.cs" t="Include" />
+            <e p="RoomManager.cs" t="Include" />
+            <e p="RoomParameters.cs" t="Include" />
+            <e p="RoomSceneManager.cs" t="Include" />
             <e p="SceneNameObserver.cs" t="Include" />
           </e>
           <e p="Player" t="Include">

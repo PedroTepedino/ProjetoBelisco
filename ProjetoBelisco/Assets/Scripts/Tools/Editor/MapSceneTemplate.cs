@@ -6,7 +6,6 @@ using Sirenix.OdinInspector.Editor;
 using Sirenix.Utilities;
 using Sirenix.Utilities.Editor;
 using UnityEditor;
-using UnityEditor.Experimental;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -18,7 +17,14 @@ namespace Belisco
     {
         private string[] _biomeNames;
         private List<BiomeType> _biomes;
-        
+
+        [SerializeField] [EnumToggleButtons] [HideLabel] private Interction _interction = Interction.load;
+        private enum Interction
+        {
+            load,
+            create,
+        }
+
         [MenuItem("Window/Room Scenes Manager", priority = -1000)]
         private static void OpenWindow()
         {
@@ -77,6 +83,11 @@ namespace Belisco
             AssetDatabase.SaveAssets();
             
             UpdateBiomesList();
+
+            if (createFirstRoom)
+            {
+                CreateRoom(_biomes.Find(biome => biome.Name == biomeName));
+            }
         }
 
         protected override void OnBeginDrawEditors()
@@ -110,7 +121,15 @@ namespace Belisco
                             {
                                 if (GUILayout.Button(_biomes[(i * 3) + j].Name, style))
                                 {
-                                    CreateMap(_biomes[(i * 3) + j]);
+                                    switch (_interction)
+                                    {
+                                        case Interction.create:
+                                            CreateRoom(_biomes[(i * 3) + j]);
+                                            break;
+                                        case Interction.load:
+                                            LoadAllScenes(_biomes[(i * 3) + j]);
+                                            break;
+                                    }
                                 }
                             }
                         }
@@ -119,31 +138,87 @@ namespace Belisco
             }
         }
 
-        private void CreateMap(BiomeType biomeType)
+        private void LoadAllScenes(BiomeType biome)
+        {
+            var scenes = AssetDatabase.FindAssets("t:Scene", new[] {"Assets/Scenes/Maps/" + biome.Name});
+
+            for (int i = 0; i < EditorSceneManager.sceneCount; i++)
+            {
+                if (EditorSceneManager.GetSceneAt(i).name != "MapSetup" && !EditorSceneManager.GetSceneAt(i).name.Contains(biome.Name))
+                {
+                    EditorSceneManager.UnloadSceneAsync(EditorSceneManager.GetSceneAt(i),
+                        UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+                }
+            }
+
+            foreach (var scene in scenes)
+            {
+                EditorSceneManager.OpenScene(AssetDatabase.GUIDToAssetPath(scene), OpenSceneMode.Additive);
+            }
+
+            if (EditorSceneManager.GetActiveScene().name != "MapSetup" && !EditorSceneManager.GetActiveScene().name.Contains(biome.Name))
+            {
+                EditorSceneManager.UnloadSceneAsync(EditorSceneManager.GetActiveScene(),
+                    UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+            }
+
+            if (!EditorSceneManager.GetSceneByName("MapSetup").IsValid())
+            {
+                EditorSceneManager.OpenScene("Assets/Scenes/GamplaySetup/MapSetup.unity", OpenSceneMode.Additive);
+            }
+        }
+
+        private void CreateRoom(BiomeType biomeType)
         {
             var path = GetScenePath(biomeType.Name);
 
             Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Additive);
 
-            var sceneName = path.Replace("Assets/Scenes/Maps/" + biomeType.Name, "");
+            var sceneName = path.Replace("Assets/Scenes/Maps/" + biomeType.Name + "/", "");
             sceneName = sceneName.Replace(".unity", "");
             scene.name = sceneName;
-            
-            var gridGameObject = new GameObject("Grid");
-            gridGameObject.AddComponent<Grid>();
-            
-            var tilemap = new GameObject(sceneName);
-            tilemap.transform.parent = gridGameObject.transform;
-            tilemap.AddComponent<Tilemap>();
-            tilemap.AddComponent<TilemapRenderer>();
-            tilemap.AddComponent<SceneNameObserver>();
 
-            var playerCam = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/GameplaySetup/PlayerCam.prefab")) as GameObject;
-            playerCam.transform.position = new Vector3(0,0,-10);
+            CreateObjects(sceneName);
 
             EditorSceneManager.SaveScene(scene, path);
         }
-        
+
+        private void CreateObjects(string sceneName)
+        {
+            // var gridGameObject = new GameObject("Grid");
+            // gridGameObject.layer = LayerMask.NameToLayer("Ground");
+            // gridGameObject.AddComponent<Grid>();
+            //
+            // var tilemap = new GameObject(sceneName);
+            // tilemap.layer = LayerMask.NameToLayer("Ground");
+            // tilemap.transform.parent = gridGameObject.transform;
+            //
+            // tilemap.AddComponent<Tilemap>();
+            // tilemap.AddComponent<TilemapRenderer>();
+            // tilemap.AddComponent<SceneNameObserver>();
+            //
+            // var tilemapCollider2D = tilemap.AddComponent<TilemapCollider2D>();
+            // tilemapCollider2D.usedByComposite = true;
+            //
+            // var rigidBody2D = tilemap.AddComponent<Rigidbody2D>();
+            // rigidBody2D.bodyType = RigidbodyType2D.Static;
+            //
+            // var compositeCollider2D = tilemap.AddComponent<CompositeCollider2D>();
+            // compositeCollider2D.sharedMaterial =
+            //     AssetDatabase.LoadAssetAtPath<PhysicsMaterial2D>("Assets/PhysicsMaterial/Ground.physicsMaterial2D");
+            
+            var grid = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/GameplaySetup/Grid.prefab")) as GameObject;
+            grid.transform.position = new Vector3(0,0,0);
+
+            var playerCam = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/GameplaySetup/PlayerCam.prefab")) as GameObject;
+            playerCam.transform.position = new Vector3(0,0,-10);
+            
+            var roomManager = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/GameplaySetup/[RoomManager].prefab")) as GameObject;
+            roomManager.transform.position = new Vector3(0,0,0);
+
+            RoomManagerFactory.CreateRoomParameter(sceneName);
+        }
+
         private static string GetScenePath(string biome)
         {
             var scenes = AssetDatabase.FindAssets("t:Scene", new[] {"Assets/Scenes/Maps/" + biome});
@@ -177,51 +252,6 @@ namespace Belisco
             }
         }
 
-        //[MenuItem("Assets/Create/Map Scene", priority = 200)]
-        public static void CreateMapScene()
-        {
-            GetScenePath();
-
-            Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Additive);
-            var path = GetScenePath();
-            
-            var sceneName = path;
-            sceneName = scene.name.Replace("Assets/Scenes/Maps/", "");
-            sceneName = scene.name.Replace(".unity", "");
-
-            scene.name = sceneName;
-            
-            var gameObj = new GameObject("Grid");
-            
-            EditorSceneManager.SaveScene(scene, path );
-        }
-        
-
-        private static string GetScenePath()
-        {
-            var scenes = AssetDatabase.FindAssets("t:Scene", new[] {"Assets/Scenes/Maps"});
-
-            for (int i = 0; i < scenes.Length; i++)
-            {
-                scenes[i] = AssetDatabase.GUIDToAssetPath(scenes[i]);
-            }
-
-            for (int i = 0; i < scenes.Length; i++)
-            {
-                if (!scenes.Contains($"Assets/Scenes/Maps/Room_{i + 1}.unity"))
-                {
-                    return $"Assets/Scenes/Maps/Room_{i + 1}.unity";
-                }
-            }
-
-            if (AssetDatabase.FindAssets($"Assets/Scenes/Maps/Room_{scenes.Length + 1}.unity").Length > 0)
-            {
-                return AssetDatabase.GenerateUniqueAssetPath($"Assets/Scenes/Maps/Room_{scenes.Length + 1}.unity");
-            }
-            
-            return $"Assets/Scenes/Maps/Room_{scenes.Length + 1}.unity";
-        }
-        
         [System.Serializable]
         public class BiomeType
         {
