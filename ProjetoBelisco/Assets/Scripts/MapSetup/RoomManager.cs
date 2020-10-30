@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
 using UnityEditor;
@@ -11,35 +13,40 @@ namespace Belisco
     {
         [SerializeField] [InlineEditor(InlineEditorObjectFieldModes.Boxed)] private RoomParameters _roomParameters;
 
-        private void OnTriggerEnter2D(Collider2D other)
+        private IEnumerator OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
             {
-                UnloadConnections();
+                yield return UnloadConnections();
                 
-                LoadConnections();
+                yield return LoadConnections();
             }
         }
 
-        private void LoadConnections()
+        private IEnumerator LoadConnections()
         {
+            List<AsyncOperation> operations = new List<AsyncOperation>();
             foreach (var connections in _roomParameters.SceneConnections)
             {
-                connections.TryLoadScene();
+                operations.Add(connections.TryLoadScene());
             }
+            yield return new WaitUntil(()=>operations.All(op => op.isDone));
         }
-
-        private void UnloadConnections()
+        
+        private IEnumerator UnloadConnections()
         {
+            List<AsyncOperation> operations = new List<AsyncOperation>();
             for (int i = 0; i < SceneManager.sceneCount; i++)
             {
                 var scene = SceneManager.GetSceneAt(i);
                 if (_roomParameters.SceneConnections.All(scn => scn.ThisSceneAsset.name != scene.name) 
-                    && scene.name != "MapSetup")
+                    && scene.name != "MapSetup" && scene.name != _roomParameters.ThisSceneAsset.name)
                 {
-                    SceneManager.UnloadSceneAsync(scene, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+                    operations.Add(SceneManager.UnloadSceneAsync(scene, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects));
                 }
             }
+            
+            yield return new WaitUntil(()=>operations.All(op => op.isDone));
         }
 
         private void OnValidate()
