@@ -118,12 +118,6 @@ namespace Belisco
             _attacker = new BasicAttacker(this);
 
             Grounder.Tick();
-
-            CinemachineVirtualCamera camera = FindObjectOfType<CinemachineVirtualCamera>();
-
-            if (camera == null) return;
-
-            camera.Follow = transform;
         }
 
         private void OnValidate()

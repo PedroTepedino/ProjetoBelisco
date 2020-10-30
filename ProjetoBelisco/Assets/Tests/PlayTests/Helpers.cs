@@ -16,11 +16,11 @@ namespace a_player
             return player;
         }
 
-        public static PawInventory GetPawInventory()
-        {
-            PawInventory inventory = GameObject.FindObjectOfType<PawInventory>();
-            return inventory;
-        }
+        // public static PawInventory GetPawInventory()
+        // {
+        //     PawInventory inventory = GameObject.FindObjectOfType<PawInventory>();
+        //     return inventory;
+        // }
 
         public static IEnumerator LoadPlayerScene()
         {
@@ -48,9 +48,9 @@ namespace a_player
             RewiredPlayerInput.Instance = Substitute.For<IPlayerInput>();
         }
 
-        public static Paw GetPaw()
-        {
-            return GameObject.FindObjectOfType<Paw>();
-        }
+        // public static Paw GetPaw()
+        // {
+        //     return GameObject.FindObjectOfType<Paw>();
+        // }
     }
 }
