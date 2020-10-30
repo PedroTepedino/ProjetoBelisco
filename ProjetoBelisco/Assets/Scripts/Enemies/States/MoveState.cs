@@ -13,17 +13,17 @@ namespace Belisco
         private Vector2 movement;
         private readonly float movingSpeed;
 
-        private readonly IEnemyStateMachine ownerController;
+        private readonly EnemyStateMachine ownerController;
         // Group: Private Variables
 
         /* Variables:
-     * ownerGameObject - GameObject of the enemy controling this state.
-     * controllerOwner - <EnemyController> or a function that inherits of the enemy controling this state.
-     * movingRight - Boolean controlling the direction of the movement.
-     * groundCheck - Boolean that check if has ground ahead.
-     * wallCheck - Boolean that check if has an obtacle ahead.
-     * movement - Vector2 that controls the magnitude of the movement
-     */
+         * ownerGameObject - GameObject of the enemy controling this state.
+         * controllerOwner - <EnemyController> or a function that inherits of the enemy controling this state.
+         * movingRight - Boolean controlling the direction of the movement.
+         * groundCheck - Boolean that check if has ground ahead.
+         * wallCheck - Boolean that check if has an obtacle ahead.
+         * movement - Vector2 that controls the magnitude of the movement
+         */
         private readonly GameObject ownerGameObject;
         private readonly Rigidbody2D ownerRigidbody;
         private float timer;
@@ -33,16 +33,16 @@ namespace Belisco
         // Group: Functions
 
         /* Constructor: MoveState
-     * Initialize this state.
-     * Parameters:
-     * owner - GameObject of the enemy controling this state.
-     * controller - <EnemyController> or a function that inherits of the enemy controling this state.
-     */
+         * Initialize this state.
+         * Parameters:
+         * owner - GameObject of the enemy controling this state.
+         * controller - <EnemyController> or a function that inherits of the enemy controling this state.
+         */
 
         public MoveState(GameObject gameObject)
         {
             ownerGameObject = gameObject;
-            ownerController = gameObject.GetComponent<IEnemyStateMachine>();
+            ownerController = gameObject.GetComponent<EnemyStateMachine>();
             ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
             grounder = ownerGameObject.GetComponent<GrounderEnemy>();
             wallCheck = ownerGameObject.GetComponent<WallChecker>();
@@ -52,8 +52,8 @@ namespace Belisco
         }
 
         /*Function: EnterState
-     * Commands executed when enter the state.
-     */
+         * Commands executed when enter the state.
+         */
         public void OnEnter()
         {
             timerToIddle = Random.Range(minTimeBetweenIddles, maxTimeBetweenIddles);
@@ -61,15 +61,14 @@ namespace Belisco
         }
 
         /*Function: ExitState
-     * Commands executed before exit the state.
-     */
+         * Commands executed before exit the state.
+         */
         public void OnExit()
-        {
-        }
+        { }
 
         /*Function: RunState
-     * Moves the owner to the same direction until he finds an obstacle or the floor ends, when one of those happen he start to go the opposite direction.
-     */
+         * Moves the owner to the same direction until he finds an obstacle or the floor ends, when one of those happen he start to go the opposite direction.
+         */
         public void Tick()
         {
             timer += Time.deltaTime;
@@ -79,7 +78,6 @@ namespace Belisco
             else
                 Flip();
         }
-
 
         private void Move()
         {
@@ -100,6 +98,6 @@ namespace Belisco
         }
 
         /* See Also:
-     */
+         */
     }
 }

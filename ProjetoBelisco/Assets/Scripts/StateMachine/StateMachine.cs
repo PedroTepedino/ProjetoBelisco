@@ -41,7 +41,7 @@ namespace Belisco
 
             LastState = CurrentState;
             CurrentState = state;
-            Debug.Log($"Change to {state}");
+            //Debug.Log($"Change to {state}");
             CurrentState.OnEnter();
 
             OnStateChanged?.Invoke(CurrentState);
@@ -51,7 +51,7 @@ namespace Belisco
         {
             StateTransition transition = CheckForTransition();
 
-            if (transition != null) SetState(transition.To);
+            if (transition != null)SetState(transition.To);
 
             CurrentState.Tick();
         }

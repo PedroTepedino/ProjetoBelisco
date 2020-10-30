@@ -9,7 +9,7 @@ namespace Belisco
         private Vector2 bossZoneCornerA;
         private Vector2 bossZoneCornerB;
 
-        private IEnemyStateMachine controller;
+        private EnemyStateMachine controller;
         private float lookingRange;
 
         private Vector2 targetingCenter;
@@ -18,10 +18,14 @@ namespace Belisco
         public Transform target { get; private set; }
         public bool hasTarget { get; private set; }
 
+        private void Awake()
+        {
+            controller = GetComponent<EnemyStateMachine>();
+            attack = GetComponent<Attack>();
+        }
+
         private void Start()
         {
-            controller = GetComponent<IEnemyStateMachine>();
-            attack = GetComponent<Attack>();
             bossEnemy = controller.EnemyParameters.IsBoss;
             lookingRange = controller.EnemyParameters.LookingRange;
             targetingCenter = controller.EnemyParameters.TargetingCenter;
@@ -87,7 +91,7 @@ namespace Belisco
             return target != null;
         }
 
-        private Transform CheckHit(Collider2D[] hits)
+        private Transform CheckHit(Collider2D[ ] hits)
         {
             foreach (Collider2D hit in hits)
                 if (hit.gameObject.layer == LayerMask.GetMask("Player"))

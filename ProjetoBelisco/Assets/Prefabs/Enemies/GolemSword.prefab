@@ -212,6 +212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42786b728fd5f2e479d89360ac5f502b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movingRight: 1
+  alive: 1
   _enemyParameters: {fileID: 11400000, guid: 887d79b2b3f843147b91204a11b86459, type: 2}
 --- !u!1 &8460504478586316515
 GameObject:

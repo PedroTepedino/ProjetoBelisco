@@ -7,7 +7,7 @@ namespace Belisco
         private float iddleTime;
         private readonly float maxIddleTime;
         private float minIddleTime;
-        private readonly IEnemyStateMachine ownerController;
+        private readonly EnemyStateMachine ownerController;
         private readonly GameObject ownerGameObject;
         private readonly Rigidbody2D ownerRigidbody;
         private float timer;
@@ -16,7 +16,7 @@ namespace Belisco
         {
             ownerGameObject = owner;
             ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
-            ownerController = owner.GetComponent<IEnemyStateMachine>();
+            ownerController = owner.GetComponent<EnemyStateMachine>();
             maxIddleTime = ownerController.EnemyParameters.MaxIddleTime;
             maxIddleTime = ownerController.EnemyParameters.MinIddleTime;
         }
@@ -29,8 +29,7 @@ namespace Belisco
         }
 
         public void OnExit()
-        {
-        }
+        { }
 
         public void Tick()
         {
