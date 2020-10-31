@@ -83,7 +83,7 @@ namespace Belisco
             AttackerTimer.SubtractTimer();
 
             Grounder.Tick();
-
+            
             if (!_attacking && CanMove)
             {
                 _mover.Tick();
@@ -101,10 +101,9 @@ namespace Belisco
             //_attackerList.ForEach(attacker => attacker.Tick());
 
             CheckJumping();
-
+            
             var isGrounded = Grounder.IsGrounded;
             AnimatorController.UpdateParameters(isGrounded);
-
             JustTouchedGround(isGrounded);
         }
 

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -5061,6 +5061,11 @@ PrefabInstance:
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[15].y
       value: -7
       objectReference: {fileID: 0}
+    - target: {fileID: 269886123063542309, guid: 8bdfd9c768164da4d9f7feffee9a6110,
+        type: 3}
+      propertyPath: m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 269886123063542310, guid: 8bdfd9c768164da4d9f7feffee9a6110,
         type: 3}
       propertyPath: m_Name
@@ -5135,6 +5140,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1728318755032860986, guid: 81562a6a9c4990641b1611a99cbff31b,
+        type: 3}
+      propertyPath: _priority
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3155033172491451465, guid: 81562a6a9c4990641b1611a99cbff31b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5200,6 +5210,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[ROOM_MANAGER_TESTESTEPE_ROOM_1]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926173518309870864, guid: 81562a6a9c4990641b1611a99cbff31b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926173518309870864, guid: 81562a6a9c4990641b1611a99cbff31b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926173518309870864, guid: 81562a6a9c4990641b1611a99cbff31b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028087447563933072, guid: 81562a6a9c4990641b1611a99cbff31b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[SPAWNER_TESTESTEPE_ROOM_1]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81562a6a9c4990641b1611a99cbff31b, type: 3}

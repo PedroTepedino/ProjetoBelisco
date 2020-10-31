@@ -1,9 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEditor;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,6 +17,8 @@ namespace Belisco
     {
         [SerializeField] [InlineEditor(InlineEditorObjectFieldModes.Boxed)] private RoomParameters _roomParameters;
 
+        [SerializeField] private RoomSpawner _initialCheckpoint;
+        
         private IEnumerator OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
@@ -28,7 +34,9 @@ namespace Belisco
             List<AsyncOperation> operations = new List<AsyncOperation>();
             foreach (var connections in _roomParameters.SceneConnections)
             {
-                operations.Add(connections.TryLoadScene());
+                var con = connections.TryLoadScene();
+                if (con != null)
+                    operations.Add(con);
             }
             yield return new WaitUntil(()=>operations.All(op => op.isDone));
         }
@@ -63,7 +71,19 @@ namespace Belisco
             {
                 _roomParameters.Init(AssetDatabase.LoadAssetAtPath<SceneAsset>(this.gameObject.scene.path));
             }
+
+            if (_initialCheckpoint == null)
+            {
+                var roomSpawner = this.GetComponentInChildren<RoomSpawner>();
+                
+                if (roomSpawner != null)
+                    _initialCheckpoint = roomSpawner;
+                else
+                {
+                    _initialCheckpoint = RoomSpawner.CreateSpawner();
+                    _initialCheckpoint.transform.parent = this.transform;
+                }
+            }
         }
-        
     }
 }

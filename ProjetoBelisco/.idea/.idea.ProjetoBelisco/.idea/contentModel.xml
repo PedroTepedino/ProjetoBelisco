@@ -395,6 +395,7 @@
             <e p="RoomManager.cs" t="Include" />
             <e p="RoomParameters.cs" t="Include" />
             <e p="RoomSceneManager.cs" t="Include" />
+            <e p="RoomSpawner.cs" t="Include" />
             <e p="SceneNameObserver.cs" t="Include" />
           </e>
           <e p="Player" t="Include">

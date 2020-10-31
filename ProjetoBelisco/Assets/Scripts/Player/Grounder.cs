@@ -16,9 +16,10 @@ namespace Belisco
         private readonly Transform _playerTransform;
         private readonly Rigidbody2D _rigidbody;
 
-        private Coroutine _coyoteRoutine;
+        private Coroutine _coyoteRoutine = null;
 
         private float _permitedArialTime;
+        private bool _isGrounded;
 
         public Grounder(Player player)
         {
@@ -39,7 +40,7 @@ namespace Belisco
             _player = player;
         }
 
-        public bool IsGrounded { get; private set; }
+        public bool IsGrounded => _isGrounded;
 
         public bool NearGround { get; private set; }
 
@@ -53,18 +54,19 @@ namespace Belisco
             UpdateGroundedValues();
 
             if (lastFrameGround && !IsGrounded) _coyoteRoutine = _player.StartCoroutine(ArialTimeCounter());
-
+            
             if ((_coyoteRoutine != null || CoyoteGround) && IsGrounded)
             {
                 CoyoteGround = false;
                 _player.StopCoroutine(_coyoteRoutine);
+                _coyoteRoutine = null;
             }
         }
 
         private void UpdateGroundedValues()
         {
             Vector3 position = _playerTransform.position;
-            IsGrounded = Physics2D.OverlapBox(position + _grounderPosition, _grounderSizes, 0f, _layerMask);
+            _isGrounded = Physics2D.OverlapBox(position + _grounderPosition, _grounderSizes, 0f, _layerMask);
             NearGround = _rigidbody.velocity.y <= 0f &&
                          Physics2D.OverlapBox(position + _nearGroundPosition, _nearGroundSizes, 0f, _layerMask);
         }

@@ -1,4 +1,6 @@
 ﻿#if UNITY_EDITOR
+using System;
+using Sirenix.OdinInspector.Editor;
 using UnityEditor;
 using UnityEngine;
 
@@ -19,6 +21,21 @@ namespace Belisco
             if (spawn.IsFirstSpawner) gizmo = "PlayerSpawner.png";
 
             Gizmos.DrawIcon(spawn.transform.position, gizmo, true, color);
+        }
+    }
+
+    [InitializeOnLoad]
+    public class RoomSpawnerEditor : MonoBehaviour
+    {
+        [DrawGizmo(GizmoType.NonSelected | GizmoType.Selected | GizmoType.Pickable)]
+        public static void OnDrawSceneGizmos(RoomSpawner spawner, GizmoType gizmoType)
+        {
+            Color color = Color.white;
+            if ((gizmoType & GizmoType.Selected) != 0) color = Color.yellow;
+            
+            var gizmo = "Spawner.png";
+            
+            Gizmos.DrawIcon(spawner.transform.position, gizmo, true, color);
         }
     }
 }
