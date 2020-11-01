@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Dynamic;
 using System.Linq;
+using Cinemachine;
 using Sirenix.OdinInspector;
 using Sirenix.Utilities;
-using Unity.Collections.LowLevel.Unsafe;
 using UnityEditor;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,14 +16,53 @@ namespace Belisco
         [SerializeField] [InlineEditor(InlineEditorObjectFieldModes.Boxed)] private RoomParameters _roomParameters;
 
         [SerializeField] private RoomSpawner _initialCheckpoint;
-        
+
+        //[SerializeField] private List<RoomTransitionSpawner> _roomTransitions;
+
+        private static CinemachineBrain _mainCam = null;
+
+        private void Awake()
+        {
+            if (_mainCam == null)
+            {
+                _mainCam = FindObjectOfType<CinemachineBrain>();
+            }
+        }
+
         private IEnumerator OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
             {
+                var player = other.GetComponent<Player>();
+                
                 yield return UnloadConnections();
                 
                 yield return LoadConnections();
+
+                Time.timeScale = 0;
+
+                // Tween moveAnimation = null;
+                // if (player.CurrentRoomManager != null)
+                // {
+                //     var spawner = this._roomTransitions.Find(room =>
+                //         room.PreviousRoom == player.CurrentRoomManager._roomParameters);
+                //     if (spawner != null)
+                //     {
+                //         Debug.Log($"{spawner} { _mainCam.ActiveBlend}");
+                //         moveAnimation = player.transform.DOMove(spawner.transform.position, _mainCam.ActiveBlend?.Duration ?? 0.1f)
+                //             .SetEase(Ease.Linear).SetAutoKill(true).SetRecyclable(true).SetUpdate(UpdateType.Normal, true);
+                //         moveAnimation.Play();
+                //         //player.transform.position = spawner.transform.position;
+                //     }
+                // }
+
+                yield return new WaitWhile(()=>_mainCam.IsBlending);
+
+                //moveAnimation?.Kill();
+
+                Time.timeScale = 1;
+
+                player.CurrentRoomManager = this;
             }
         }
 
@@ -66,12 +103,19 @@ namespace Belisco
                _roomParameters = AssetDatabase.LoadAssetAtPath<RoomParameters>(
                     $"Assets/ParametersObjects/MAPS/ROOM_MANAGER_{this.gameObject.scene.name}.asset");
             }
-            
-            if (_roomParameters != null && (_roomParameters.ThisSceneAsset == null || _roomParameters.ThisSceneAsset.SafeIsUnityNull()))
+            else
             {
-                _roomParameters.Init(AssetDatabase.LoadAssetAtPath<SceneAsset>(this.gameObject.scene.path));
-            }
+                if (_roomParameters.ThisSceneAsset == null || _roomParameters.ThisSceneAsset.SafeIsUnityNull())
+                {
+                    _roomParameters.Init(AssetDatabase.LoadAssetAtPath<SceneAsset>(this.gameObject.scene.path));
+                }
 
+                // if (_roomTransitions != null && _roomTransitions.Count > 0)
+                // {
+                //     _roomTransitions.RemoveAll(room => room == null);
+                // }
+            }
+            
             if (_initialCheckpoint == null)
             {
                 var roomSpawner = this.GetComponentInChildren<RoomSpawner>();

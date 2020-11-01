@@ -133,4 +133,11 @@ namespace Belisco
             }
         }
     }
+
+    public class AutoMover : IMover
+    {
+        public void Tick()
+        {
+        }
+    }
 }

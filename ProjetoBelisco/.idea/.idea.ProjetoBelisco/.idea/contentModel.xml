@@ -392,10 +392,12 @@
           </e>
           <e p="MapSetup" t="Include">
             <e p="CameraPriorityTrigger.cs" t="Include" />
+            <e p="MainCamBlend.cs" t="Include" />
             <e p="RoomManager.cs" t="Include" />
             <e p="RoomParameters.cs" t="Include" />
             <e p="RoomSceneManager.cs" t="Include" />
             <e p="RoomSpawner.cs" t="Include" />
+            <e p="RoomTransitionSpawner.cs" t="Include" />
             <e p="SceneNameObserver.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
@@ -450,6 +452,8 @@
               <e p="CollectableSpawnerPlacer.cs" t="Include" />
               <e p="MapSceneTemplate.cs" t="Include" />
               <e p="PlayerSpawnerEditor.cs" t="Include" />
+              <e p="RoomSpawnerEditor.cs" t="Include" />
+              <e p="RoomTransitionSpawnerEditor.cs" t="Include" />
               <e p="SceneEssentials.cs" t="Include" />
             </e>
             <e p="ObjectTileRotator.cs" t="Include" />

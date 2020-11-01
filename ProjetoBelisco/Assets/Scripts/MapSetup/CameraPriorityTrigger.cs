@@ -11,13 +11,19 @@ namespace Belisco
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
+            {
                 _camera.Priority = 10;
+                _camera.Follow = other.transform;
+            }
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
+            {
                 _camera.Priority = 0;
+                _camera.Follow = null;
+            }
         }
 
         private void OnValidate()

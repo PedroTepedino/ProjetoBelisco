@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using Cinemachine;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -29,6 +28,8 @@ namespace Belisco
         private PlayerParameters _playerParameters;
 
         [SerializeField] private PlayerAnimatorController _playerAnimatorController;
+
+        public RoomManager CurrentRoomManager = null;
 
         public bool CanMove = true;
 
@@ -230,10 +231,7 @@ namespace Belisco
             return direction;
         }
 
-        public Directions GetDirectionHorizontal()
-        {
-            return _playerAnimatorController.IsLookingRight ? Directions.Right : Directions.Left;
-        }
+        public Directions GetDirectionHorizontal() => _playerAnimatorController.IsLookingRight ? Directions.Right : Directions.Left;
 
         private void CheckJumping()
         {
@@ -249,21 +247,9 @@ namespace Belisco
             _justTouchedGround = isGrounded;
         }
 
-        public void Died()
-        {
-            OnPlayerDeath?.Invoke();
-        }
-
-        public void DamageDealt(int currentLife, int maxLife)
-        {
-            OnPlayerDamage?.Invoke(currentLife, maxLife);
-        }
-
-        [Button]
-        public void Damage()
-        {
-            Hit(1);
-        }
+        public void Died() => OnPlayerDeath?.Invoke();
+        public void DamageDealt(int currentLife, int maxLife) => OnPlayerDamage?.Invoke(currentLife, maxLife);
+        [Button] public void Damage() => Hit(1);
 
 #if UNITY_EDITOR
         [SerializeField] [EnumToggleButtons] private GizmosType _gizmosToShow = 0;

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2677,14 +2677,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3155033172491451478, guid: 81562a6a9c4990641b1611a99cbff31b,
         type: 3}
+      propertyPath: _roomTransitions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155033172491451478, guid: 81562a6a9c4990641b1611a99cbff31b,
+        type: 3}
       propertyPath: _roomParameters
       value: 
       objectReference: {fileID: 11400000, guid: 30db646a5baad7f46b917d7979684d0d,
         type: 2}
+    - target: {fileID: 3155033172491451478, guid: 81562a6a9c4990641b1611a99cbff31b,
+        type: 3}
+      propertyPath: _roomTransitions.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3155033172491451479, guid: 81562a6a9c4990641b1611a99cbff31b,
         type: 3}
       propertyPath: m_Name
       value: '[ROOM_MANAGER_TESTESTEPE_ROOM_4]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028087447563933072, guid: 81562a6a9c4990641b1611a99cbff31b,
+        type: 3}
+      propertyPath: m_Name
+      value: '[SPAWNER_TESTESTEPE_ROOM_4]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81562a6a9c4990641b1611a99cbff31b, type: 3}
