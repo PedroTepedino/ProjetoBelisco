@@ -4028,6 +4028,11 @@ PrefabInstance:
       propertyPath: m_IgnoreTimeScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7235162236346397977, guid: 1a19528a79e24a647aa30f6ac323a770,
+        type: 3}
+      propertyPath: m_UpdateMethod
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a19528a79e24a647aa30f6ac323a770, type: 3}
 --- !u!1 &1030108046

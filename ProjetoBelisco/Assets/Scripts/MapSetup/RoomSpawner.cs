@@ -6,7 +6,6 @@ namespace Belisco
     public class RoomSpawner : MonoBehaviour
     {
         public static RoomSpawner CreateSpawner() => new GameObject("[RoomSpawner]").AddComponent<RoomSpawner>();
-
         
         private static RoomSpawner _currentSpawner = null;
         public static RoomSpawner CurrentSpawner
