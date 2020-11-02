@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d1b6086ff2940399140e557643791bc, type: 3}
   m_Name: ROOM_MANAGER_TUTORIAL_ROOM_5
   m_EditorClassIdentifier: 
-  _sceneConnections: []
-  _thisSceneAsset: {fileID: 0}
+  _sceneConnections:
+  - {fileID: 11400000, guid: ae07dae77edcff94aa7091cf6fcd5f44, type: 2}
+  - {fileID: 11400000, guid: 31af4c65e81541d40bf5f00e11687e22, type: 2}
+  _thisSceneAsset: {fileID: 102900000, guid: 3b33b5d6110d6664fab5d95e98c0cf43, type: 3}

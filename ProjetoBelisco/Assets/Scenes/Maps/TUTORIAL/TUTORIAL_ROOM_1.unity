@@ -136,7 +136,7 @@ PrefabInstance:
     - target: {fileID: 3155033172491451465, guid: 81562a6a9c4990641b1611a99cbff31b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3155033172491451465, guid: 81562a6a9c4990641b1611a99cbff31b,
         type: 3}
@@ -188,6 +188,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3155033172491451478, guid: 81562a6a9c4990641b1611a99cbff31b,
+        type: 3}
+      propertyPath: _roomParameters
+      value: 
+      objectReference: {fileID: 11400000, guid: c40ba3049415c0d4c81523d4a8ad7fad,
+        type: 2}
     - target: {fileID: 3155033172491451479, guid: 81562a6a9c4990641b1611a99cbff31b,
         type: 3}
       propertyPath: m_Name
