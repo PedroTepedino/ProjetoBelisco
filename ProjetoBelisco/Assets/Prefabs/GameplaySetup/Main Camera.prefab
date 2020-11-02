@@ -54,15 +54,15 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.085753806
+    x: 0
     y: 0
-    width: 0.8284924
+    width: 1
     height: 1
   near clip plane: 0.07917048
   far clip plane: 15834.097
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 7
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -131,9 +131,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ShowDebugText: 0
   m_ShowCameraFrustum: 0
-  m_IgnoreTimeScale: 0
+  m_IgnoreTimeScale: 1
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
+  m_UpdateMethod: 0
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
@@ -164,8 +164,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AssetsPPU: 16
-  m_RefResolutionX: 384
-  m_RefResolutionY: 192
+  m_RefResolutionX: 432
+  m_RefResolutionY: 216
   m_UpscaleRT: 1
   m_PixelSnapping: 0
   m_CropFrameX: 1
