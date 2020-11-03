@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ImporterSettings
   m_EditorClassIdentifier: 
   spritesheets:
-  - spritesheetPath: Assets/Arts/Aseprites/beliscoLow.png
-    animationInfo: Assets/Arts/Aseprites/beliscoLow.json
+  - spritesheetPath: Assets/Arts/Belisco/beliscoLow.png
+    animationInfo: Assets/Arts/Belisco/beliscoLow.json
     importerType: Aseprite
     trimWidth: 0
     trimHeight: 0
@@ -24,8 +24,8 @@ MonoBehaviour:
     useTagNames: 1
     prefixClipsWithAtlasName: 1
     defaultSampleRate: 60
-    saveClipsToCustomDirectory: 0
-    clipSaveDirectory: 
+    saveClipsToCustomDirectory: 1
+    clipSaveDirectory: Assets/Arts/Belisco/Animations
     animSettings:
     - tagName: afterAtackBlue
       useDefaultSampleRate: 1
@@ -120,7 +120,7 @@ MonoBehaviour:
     - tagName: jumpTransitionBlue
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: jumpFallLoopB
       useDefaultSampleRate: 1
@@ -145,7 +145,7 @@ MonoBehaviour:
     - tagName: jumpTransitionYellow
       useDefaultSampleRate: 1
       sampleRate: 60
-      loop: 1
+      loop: 0
       generateClip: 1
     - tagName: jumpFallLoopY
       useDefaultSampleRate: 1
