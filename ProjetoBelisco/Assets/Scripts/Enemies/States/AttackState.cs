@@ -4,7 +4,6 @@ namespace Belisco
 {
     public class AttackState : IState
     {
-        private readonly EnemyAnimationController animationController;
         private readonly Attack attack;
         private readonly GameObject ownerGameObject;
         private Transform target;
@@ -16,7 +15,6 @@ namespace Belisco
             ownerGameObject = owner;
             attack = ownerGameObject.GetComponent<Attack>();
             targeting = ownerGameObject.GetComponent<Targeting>();
-            animationController = ownerGameObject.GetComponent<EnemyAnimationController>();
         }
 
         public void OnEnter()
@@ -25,8 +23,7 @@ namespace Belisco
             timer = attack.attackSpeed;
         }
 
-        public void OnExit()
-        { }
+        public void OnExit() { }
 
         public void Tick()
         {
@@ -37,7 +34,6 @@ namespace Belisco
                 if (timer >= attack.attackSpeed)
                 {
                     attack.AttackAction(target);
-                    animationController.TriggerAnimationAttack();
                     timer = 0f;
                 }
         }

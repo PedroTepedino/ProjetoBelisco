@@ -6,6 +6,11 @@ namespace Belisco
     {
         [SerializeField] private Attack attack;
 
+        public void AttackFinished()
+        {
+            attack.ListenAttackFinished(0);
+        }
+
         public void MeleeAttack()
         {
             attack.ListenAttackFinished(0);

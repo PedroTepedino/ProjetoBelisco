@@ -23,9 +23,9 @@ namespace Belisco
 
         protected abstract void Update();
 
-        public void TriggerAnimationAttack()
+        public void TriggerAnimationAttack(string animationName)
         {
-            animator.SetTrigger("Attack");
+            animator.SetTrigger(animationName);
         }
 
         public void TriggerAnimationHit()

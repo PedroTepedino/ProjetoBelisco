@@ -112,6 +112,7 @@ namespace Belisco
         private EnemyStateMachine _controller;
 
         private readonly List<int> attacksChances = new List<int>();
+        private EnemyAnimationController animationController;
         private GrounderEnemy grounder;
         private Vector2 movement;
 
@@ -125,6 +126,7 @@ namespace Belisco
             grounder = GetComponent<GrounderEnemy>();
             wallCheck = GetComponent<WallChecker>();
             ownerRigidbody = GetComponent<Rigidbody2D>();
+            animationController = GetComponent<EnemyAnimationController>();
         }
 
         private void Start()
@@ -148,6 +150,7 @@ namespace Belisco
 
         public void AttackAction(Transform target)
         {
+            animationController.TriggerAnimationAttack("Attack");
             if (target != null)
             {
                 var choice = Random.Range(0, attacksChances.Count);
