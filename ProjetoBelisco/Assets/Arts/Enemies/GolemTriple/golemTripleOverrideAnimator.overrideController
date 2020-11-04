@@ -6,7 +6,7 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: golem2Override
+  m_Name: golemTripleOverrideAnimator
   m_Controller: {fileID: 9100000, guid: 3931adeae7c582046a5328e7313ea7b8, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: bd04f3618fc266842b021de5855a20b9, type: 2}

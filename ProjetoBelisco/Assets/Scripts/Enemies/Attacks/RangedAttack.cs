@@ -7,7 +7,7 @@ namespace Belisco
     [CreateAssetMenu(fileName = "RangedAttack", menuName = "EnemyAttacks/RangedAttack")]
     public class RangedAttack : BaseAttack
     {
-        protected string attackProjectileTag;
+        [SerializeField] protected string attackProjectileTag;
 
         public override void AttackAction(Transform transform, LayerMask layerMask, EnemyStateMachine enemyStateMachine)
         {

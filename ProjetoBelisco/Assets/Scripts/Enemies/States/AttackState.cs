@@ -33,7 +33,7 @@ namespace Belisco
             if (target != null)
                 if (timer >= attack.attackSpeed)
                 {
-                    attack.AttackAction(target);
+                    attack.SelectAttack();
                     timer = 0f;
                 }
         }

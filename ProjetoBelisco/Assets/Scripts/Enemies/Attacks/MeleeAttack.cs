@@ -7,7 +7,7 @@ namespace Belisco
     [CreateAssetMenu(fileName = "MeleeAttack", menuName = "EnemyAttacks/MeleeAttack")]
     public class MeleeAttack : BaseAttack
     {
-        protected float attackRadius;
+        [SerializeField] protected float attackRadius;
 
         public override void AttackAction(Transform transform, LayerMask layerMask, EnemyStateMachine enemyStateMachine)
         {
