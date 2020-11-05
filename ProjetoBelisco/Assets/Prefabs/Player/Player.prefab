@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495487753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.28, y: 0.875, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5366140802195632291}
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3716180343374127348, guid: 6f94737a09bcfa644acf2d993f68edd7,
+  m_Sprite: {fileID: -3716180343374127348, guid: ff49d321a02e1404daa1d9c6c72db77a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -131,7 +131,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418781179}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.26, y: 0.875, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5366140802195632291}
@@ -176,7 +176,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6848813760565248667, guid: 6f94737a09bcfa644acf2d993f68edd7,
+  m_Sprite: {fileID: 6848813760565248667, guid: ff49d321a02e1404daa1d9c6c72db77a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -369,9 +369,10 @@ MonoBehaviour:
   _hurtParticles: {fileID: 564034187}
   _playerParameters: {fileID: 11400000, guid: 3bf0776cec540054f881fe73e8470327, type: 2}
   _playerAnimatorController: {fileID: 100794437}
+  CurrentRoomManager: {fileID: 0}
   CanMove: 1
   _ghostSpawner: {fileID: 438927499}
-  _gizmosToShow: 35
+  _gizmosToShow: 33
 --- !u!114 &100794437
 MonoBehaviour:
   m_ObjectHideFlags: 0

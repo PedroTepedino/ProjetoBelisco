@@ -5651,11 +5651,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5366140802195632290, guid: 50bda1634a0ac974eb4d3135fbe1013e,
-        type: 3}
-      propertyPath: _gizmosToShow
-      value: 33
-      objectReference: {fileID: 0}
     - target: {fileID: 5366140802195632291, guid: 50bda1634a0ac974eb4d3135fbe1013e,
         type: 3}
       propertyPath: m_LocalPosition.x
