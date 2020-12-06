@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Pedro\AppData\local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Pedro\AppData\local\JetBrains\Rider2020.2\resharper-host\local\Transient\Rider\v202\SolutionCaches\_ProjetoBelisco.-1485978191.00" t="ExcludeRecursive" />
-    <e p="D:\Repos\ProjetoBelisco\ProjetoBelisco" t="IncludeRecursive">
-      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+    <e p="C:\Users\Pedro\AppData\local\JetBrains\Rider2020.2\resharper-host\local\Transient\Rider\v202\SolutionCaches\_ProjetoBelisco.-855519566.00" t="ExcludeRecursive" />
+    <e p="E:\Repos\ProjetoBelisco\ProjetoBelisco" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
-      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="AllIn1SpriteShader" t="Include">
@@ -119,73 +117,7 @@
           <e p="readme.txt" t="Include" />
         </e>
         <e p="Plugins" t="Include">
-          <e p="RainbowAssets" t="Include">
-            <e p="!Core" t="Include">
-              <e p="NOTICES.txt" t="Include" />
-            </e>
-          </e>
           <e p="Sirenix" t="Include">
-            <e p="Assemblies" t="Include">
-              <e p="AOT" t="Include">
-                <e p="link.xml" t="Include" />
-              </e>
-              <e p="link.xml" t="Include" />
-              <e p="Sirenix.OdinInspector.Attributes.xml" t="Include" />
-              <e p="Sirenix.OdinInspector.Editor.xml" t="Include" />
-              <e p="Sirenix.Serialization.Config.xml" t="Include" />
-              <e p="Sirenix.Utilities.Editor.xml" t="Include" />
-              <e p="Sirenix.Utilities.xml" t="Include" />
-            </e>
-            <e p="Demos" t="Include">
-              <e p="Editor Windows" t="Include">
-                <e p="Scripts" t="Include">
-                  <e p="Editor" t="Include">
-                    <e p="BasicOdinEditorExampleWindow.cs" t="Include" />
-                    <e p="OdinMenuEditorWindowExample.cs" t="Include" />
-                    <e p="OdinMenuStyleExample.cs" t="Include" />
-                    <e p="OverrideGetTargetsExampleWindow.cs" t="Include" />
-                    <e p="QuicklyInspectObjects.cs" t="Include" />
-                    <e p="SomeData.cs" t="Include" />
-                    <e p="SomeTextureToolWindow.cs" t="Include" />
-                  </e>
-                </e>
-              </e>
-              <e p="Sample - RPG Editor" t="Include">
-                <e p="Icons" t="Include">
-                  <e p="icons_by_ravenmore.txt" t="Include" />
-                </e>
-                <e p="Scripts" t="Include">
-                  <e p="Character" t="Include">
-                    <e p="Character.cs" t="Include" />
-                    <e p="CharacterAlignment.cs" t="Include" />
-                    <e p="CharacterEquipment.cs" t="Include" />
-                    <e p="CharacterOverview.cs" t="Include" />
-                    <e p="CharacterStats.cs" t="Include" />
-                  </e>
-                  <e p="Editor" t="Include">
-                    <e p="CharacterTable.cs" t="Include" />
-                    <e p="ItemDrawer.cs" t="Include" />
-                    <e p="ItemSlotCellDrawer.cs" t="Include" />
-                    <e p="RPGEditorWindow.cs" t="Include" />
-                    <e p="ScriptableObjectCreator.cs" t="Include" />
-                  </e>
-                  <e p="Items" t="Include">
-                    <e p="Armor.cs" t="Include" />
-                    <e p="ConsumableItem.cs" t="Include" />
-                    <e p="EquipableItem.cs" t="Include" />
-                    <e p="Item.cs" t="Include" />
-                    <e p="ItemTypes.cs" t="Include" />
-                    <e p="WeaponItem.cs" t="Include" />
-                  </e>
-                  <e p="Misc" t="Include">
-                    <e p="ItemSlot.cs" t="Include" />
-                    <e p="StatList.cs" t="Include" />
-                    <e p="StatType.cs" t="Include" />
-                    <e p="StatValue.cs" t="Include" />
-                  </e>
-                </e>
-              </e>
-            </e>
             <e p="Odin Inspector" t="Include">
               <e p="Scripts" t="Include">
                 <e p="Editor" t="Include">
@@ -203,7 +135,6 @@
                 <e p="VectorIntFormatters.cs" t="Include" />
               </e>
             </e>
-            <e p="readme.txt" t="Include" />
           </e>
         </e>
         <e p="Rewired" t="Include">
@@ -392,9 +323,12 @@
           </e>
           <e p="MapSetup" t="Include">
             <e p="CameraPriorityTrigger.cs" t="Include" />
+            <e p="MainCamBlend.cs" t="Include" />
             <e p="RoomManager.cs" t="Include" />
             <e p="RoomParameters.cs" t="Include" />
             <e p="RoomSceneManager.cs" t="Include" />
+            <e p="RoomSpawner.cs" t="Include" />
+            <e p="RoomTransitionSpawner.cs" t="Include" />
             <e p="SceneNameObserver.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
@@ -449,6 +383,8 @@
               <e p="CollectableSpawnerPlacer.cs" t="Include" />
               <e p="MapSceneTemplate.cs" t="Include" />
               <e p="PlayerSpawnerEditor.cs" t="Include" />
+              <e p="RoomSpawnerEditor.cs" t="Include" />
+              <e p="RoomTransitionSpawnerEditor.cs" t="Include" />
               <e p="SceneEssentials.cs" t="Include" />
             </e>
             <e p="ObjectTileRotator.cs" t="Include" />

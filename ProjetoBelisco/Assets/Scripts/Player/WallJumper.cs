@@ -10,7 +10,6 @@ namespace Belisco
         private readonly Vector2 _boxOffsetRight;
         private readonly Vector2 _boxSizes;
         private readonly float _fallingVelocity;
-        private readonly Grounder _grounder;
         private readonly Vector2 _jumpForce;
         private readonly LayerMask _layers;
         private readonly float _moverTimeOff;
@@ -32,9 +31,8 @@ namespace Belisco
             _boxAngle = player.PlayerParameters.WallJumpBoxAngle;
             _fallingVelocity = player.PlayerParameters.WallPressFallingVelocity;
             _jumpForce = player.PlayerParameters.WallJumpForce;
-            _rigidbody = _player.GetComponent<Rigidbody2D>();
-            _grounder = _player.Grounder;
-            _playerAnimator = _player.AnimatorController;
+            _rigidbody = player.GetComponent<Rigidbody2D>();
+            _playerAnimator = player.AnimatorController;
         }
 
         public bool HoldingWall { get; private set; }
@@ -53,7 +51,7 @@ namespace Belisco
 
         public void Tick()
         {
-            if (_grounder.IsGrounded) return;
+            if (_player.Grounder.IsGrounded) return;
 
             IsTouchingWallRight = IsTouchingWallRightTest;
             IsTouchingWallLeft = IsTouchingWallLeftTest;

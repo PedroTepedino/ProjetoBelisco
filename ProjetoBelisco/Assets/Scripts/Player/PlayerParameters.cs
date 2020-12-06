@@ -9,6 +9,9 @@ namespace Belisco
         [BoxGroup("Life System")] [SerializeField]
         private int _maxHealth = 10;
 
+        [BoxGroup("Life System")] [SerializeField]
+        private float _invincibilityTime = 1f;
+
         [BoxGroup("Movement")] [SerializeField]
         private float _movementSpeed = 5f;
 
@@ -162,6 +165,8 @@ namespace Belisco
 
         public float LowGravityFallMultiplayer => _lowGravityFallMultiplayer;
         public float PermitedArialTime => _permitedArialTime;
+
+        public float InvincibilityTime => _invincibilityTime;
 
         private Vector2 GetLeftAttackCenter(Vector2 center)
         {

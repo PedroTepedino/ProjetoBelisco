@@ -1970,6 +1970,45 @@ TextureImporter:
   - first:
       213: -2166755834953041987
     second: beliscoLowDashNoSwordYellow_6
+  - first:
+      213: -5595491469405562729
+    second: beliscoLow_382
+  - first:
+      213: 7773856588228665526
+    second: beliscoLow_383
+  - first:
+      213: -6992190110415545249
+    second: beliscoLow_384
+  - first:
+      213: 5610171080158687967
+    second: beliscoLow_385
+  - first:
+      213: 8976938610589753469
+    second: beliscoLow_386
+  - first:
+      213: -7640963929504336778
+    second: beliscoLow_387
+  - first:
+      213: 7405786281399692256
+    second: beliscoLow_388
+  - first:
+      213: -3975989417094184251
+    second: beliscoLow_389
+  - first:
+      213: -9144507889335480160
+    second: beliscoLow_390
+  - first:
+      213: 6196675301730877623
+    second: beliscoLow_391
+  - first:
+      213: -6693684721362543230
+    second: beliscoLow_392
+  - first:
+      213: -208739336027842711
+    second: beliscoLow_393
+  - first:
+      213: -6271804410175418841
+    second: beliscoLow_394
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2063,7 +2102,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2084,7 +2123,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2105,7 +2144,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2126,7 +2165,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2147,7 +2186,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2168,7 +2207,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2189,7 +2228,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2210,7 +2249,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2231,7 +2270,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2252,7 +2291,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2273,7 +2312,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2294,7 +2333,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2315,7 +2354,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2336,7 +2375,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2357,7 +2396,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2378,7 +2417,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2399,7 +2438,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2420,7 +2459,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2441,7 +2480,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2462,7 +2501,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2483,7 +2522,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2504,7 +2543,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2525,7 +2564,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2546,7 +2585,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2567,7 +2606,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2588,7 +2627,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2609,7 +2648,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2630,7 +2669,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2651,7 +2690,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2672,7 +2711,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2693,7 +2732,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2714,7 +2753,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2735,7 +2774,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2756,7 +2795,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2777,7 +2816,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2798,7 +2837,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2819,7 +2858,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2840,7 +2879,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2861,7 +2900,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2882,7 +2921,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2903,7 +2942,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2924,7 +2963,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2945,7 +2984,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2966,7 +3005,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2987,7 +3026,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3008,7 +3047,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3029,7 +3068,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3050,7 +3089,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3071,7 +3110,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3092,7 +3131,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3113,7 +3152,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3134,7 +3173,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3155,7 +3194,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3176,7 +3215,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3197,7 +3236,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3218,7 +3257,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3239,7 +3278,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3260,7 +3299,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3281,7 +3320,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3302,7 +3341,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3323,7 +3362,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3344,7 +3383,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3365,7 +3404,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3386,7 +3425,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3407,7 +3446,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3428,7 +3467,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3449,7 +3488,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3470,7 +3509,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3491,7 +3530,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3512,7 +3551,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3533,7 +3572,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3554,7 +3593,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3575,7 +3614,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3596,7 +3635,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3617,7 +3656,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3638,7 +3677,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3659,7 +3698,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3680,7 +3719,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3701,7 +3740,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3722,7 +3761,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3743,7 +3782,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3764,7 +3803,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3785,7 +3824,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3806,7 +3845,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3827,7 +3866,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3848,7 +3887,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3869,7 +3908,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3890,7 +3929,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3911,7 +3950,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3932,7 +3971,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3953,7 +3992,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3974,7 +4013,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3995,7 +4034,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4016,7 +4055,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4037,7 +4076,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4058,7 +4097,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4079,7 +4118,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4100,7 +4139,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4121,7 +4160,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4142,7 +4181,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4163,7 +4202,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4184,7 +4223,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4205,7 +4244,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4226,7 +4265,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4247,7 +4286,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4268,7 +4307,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4289,7 +4328,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4310,7 +4349,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4331,7 +4370,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4352,7 +4391,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4368,12 +4407,12 @@ TextureImporter:
       name: beliscoLowGlydeAntecipationB_0
       rect:
         serializedVersion: 2
-        x: 576
-        y: 1152
+        x: 1344
+        y: 1056
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4389,12 +4428,12 @@ TextureImporter:
       name: beliscoLowGlydeAntecipationB_1
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1440
         y: 1056
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4410,12 +4449,12 @@ TextureImporter:
       name: beliscoLowGlydeLoopB_0
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 1056
+        x: 0
+        y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4431,12 +4470,12 @@ TextureImporter:
       name: beliscoLowGlydeLoopB_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4452,12 +4491,12 @@ TextureImporter:
       name: beliscoLowGlydeLoopB_2
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4473,12 +4512,12 @@ TextureImporter:
       name: beliscoLowGlydeLoopB_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4494,12 +4533,12 @@ TextureImporter:
       name: beliscoLowGlydeAntecipationY_0
       rect:
         serializedVersion: 2
-        x: 288
+        x: 384
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4515,12 +4554,12 @@ TextureImporter:
       name: beliscoLowGlydeAntecipationY_1
       rect:
         serializedVersion: 2
-        x: 384
+        x: 480
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4536,12 +4575,12 @@ TextureImporter:
       name: beliscoLowGlydeLoopY_0
       rect:
         serializedVersion: 2
-        x: 480
+        x: 576
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4557,12 +4596,12 @@ TextureImporter:
       name: beliscoLowGlydeLoopY_1
       rect:
         serializedVersion: 2
-        x: 576
+        x: 672
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4578,12 +4617,12 @@ TextureImporter:
       name: beliscoLowGlydeLoopY_2
       rect:
         serializedVersion: 2
-        x: 672
+        x: 768
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4599,12 +4638,12 @@ TextureImporter:
       name: beliscoLowGlydeLoopY_3
       rect:
         serializedVersion: 2
-        x: 768
+        x: 864
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4620,12 +4659,12 @@ TextureImporter:
       name: beliscoLowAtackJumpSideBlue_0
       rect:
         serializedVersion: 2
-        x: 864
+        x: 960
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4641,12 +4680,12 @@ TextureImporter:
       name: beliscoLowAtackJumpSideBlue_1
       rect:
         serializedVersion: 2
-        x: 960
+        x: 1056
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4662,12 +4701,12 @@ TextureImporter:
       name: beliscoLowAtackJumpSideBlue_2
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1152
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4683,12 +4722,12 @@ TextureImporter:
       name: beliscoLowAtackJumpSideBlue_3
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1248
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4704,12 +4743,12 @@ TextureImporter:
       name: beliscoLowAtackJumpSideYellow_0
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1344
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4725,12 +4764,12 @@ TextureImporter:
       name: beliscoLowAtackJumpSideYellow_1
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1440
         y: 960
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4746,12 +4785,12 @@ TextureImporter:
       name: beliscoLowAtackJumpSideYellow_2
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 960
+        x: 0
+        y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4767,12 +4806,12 @@ TextureImporter:
       name: beliscoLowAtackJumpSideYellow_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4788,12 +4827,12 @@ TextureImporter:
       name: beliscoLowAtackUpBlue_0
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4809,12 +4848,12 @@ TextureImporter:
       name: beliscoLowAtackUpBlue_1
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4830,12 +4869,12 @@ TextureImporter:
       name: beliscoLowAtackUpBlue_2
       rect:
         serializedVersion: 2
-        x: 288
+        x: 384
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4851,12 +4890,12 @@ TextureImporter:
       name: beliscoLowAtackUpBlue_3
       rect:
         serializedVersion: 2
-        x: 384
+        x: 480
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4872,12 +4911,12 @@ TextureImporter:
       name: beliscoLowAtackUpBlue_4
       rect:
         serializedVersion: 2
-        x: 480
+        x: 576
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4893,12 +4932,12 @@ TextureImporter:
       name: beliscoLowAtackUpBlue_5
       rect:
         serializedVersion: 2
-        x: 576
+        x: 672
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4914,12 +4953,12 @@ TextureImporter:
       name: beliscoLowAtackUpYellow_0
       rect:
         serializedVersion: 2
-        x: 672
+        x: 768
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4935,12 +4974,12 @@ TextureImporter:
       name: beliscoLowAtackUpYellow_1
       rect:
         serializedVersion: 2
-        x: 768
+        x: 864
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4956,12 +4995,12 @@ TextureImporter:
       name: beliscoLowAtackUpYellow_2
       rect:
         serializedVersion: 2
-        x: 864
+        x: 960
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4977,12 +5016,12 @@ TextureImporter:
       name: beliscoLowAtackUpYellow_3
       rect:
         serializedVersion: 2
-        x: 960
+        x: 1056
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4998,12 +5037,12 @@ TextureImporter:
       name: beliscoLowAtackUpYellow_4
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1152
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5019,12 +5058,12 @@ TextureImporter:
       name: beliscoLowAtackUpYellow_5
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1248
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5040,12 +5079,12 @@ TextureImporter:
       name: beliscoLowAtackJumpUpBlue_0
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1344
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5061,12 +5100,12 @@ TextureImporter:
       name: beliscoLowAtackJumpUpBlue_1
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1440
         y: 864
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5082,12 +5121,12 @@ TextureImporter:
       name: beliscoLowAtackJumpUpBlue_2
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 864
+        x: 0
+        y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5103,12 +5142,12 @@ TextureImporter:
       name: beliscoLowAtackJumpUpBlue_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5124,12 +5163,12 @@ TextureImporter:
       name: beliscoLowAtackJumpUpYellow_0
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5145,12 +5184,12 @@ TextureImporter:
       name: beliscoLowAtackJumpUpYellow_1
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5166,12 +5205,12 @@ TextureImporter:
       name: beliscoLowAtackJumpUpYellow_2
       rect:
         serializedVersion: 2
-        x: 288
+        x: 384
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5187,12 +5226,12 @@ TextureImporter:
       name: beliscoLowAtackJumpUpYellow_3
       rect:
         serializedVersion: 2
-        x: 384
+        x: 480
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5208,12 +5247,12 @@ TextureImporter:
       name: beliscoLowAtackDown1_0
       rect:
         serializedVersion: 2
-        x: 480
+        x: 576
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5229,12 +5268,12 @@ TextureImporter:
       name: beliscoLowAtackDown1_1
       rect:
         serializedVersion: 2
-        x: 576
+        x: 672
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5250,12 +5289,12 @@ TextureImporter:
       name: beliscoLowAtackDown1_2
       rect:
         serializedVersion: 2
-        x: 672
+        x: 768
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5271,12 +5310,12 @@ TextureImporter:
       name: beliscoLowAtackDown1_3
       rect:
         serializedVersion: 2
-        x: 768
+        x: 864
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5292,12 +5331,12 @@ TextureImporter:
       name: beliscoLowAtackDown2_0
       rect:
         serializedVersion: 2
-        x: 864
+        x: 960
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5313,12 +5352,12 @@ TextureImporter:
       name: beliscoLowAtackDown2_1
       rect:
         serializedVersion: 2
-        x: 960
+        x: 1056
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5334,12 +5373,12 @@ TextureImporter:
       name: beliscoLowAtackDown2_2
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1152
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5355,12 +5394,12 @@ TextureImporter:
       name: beliscoLowAtackDown2_3
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1248
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5376,12 +5415,12 @@ TextureImporter:
       name: beliscoLowDeathBlue_0
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1344
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5397,12 +5436,12 @@ TextureImporter:
       name: beliscoLowDeathBlue_1
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1440
         y: 768
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5418,12 +5457,12 @@ TextureImporter:
       name: beliscoLowDeathBlue_2
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 768
+        x: 0
+        y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5439,12 +5478,12 @@ TextureImporter:
       name: beliscoLowDeathBlue_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5460,12 +5499,12 @@ TextureImporter:
       name: beliscoLowDeathBlue_4
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5481,12 +5520,12 @@ TextureImporter:
       name: beliscoLowDeathBlue_5
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5502,12 +5541,12 @@ TextureImporter:
       name: beliscoLowDeathBlue_6
       rect:
         serializedVersion: 2
-        x: 288
+        x: 384
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5523,12 +5562,12 @@ TextureImporter:
       name: beliscoLowDeathBlue_7
       rect:
         serializedVersion: 2
-        x: 384
+        x: 480
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5544,12 +5583,12 @@ TextureImporter:
       name: beliscoLowDeathYellow_0
       rect:
         serializedVersion: 2
-        x: 480
+        x: 576
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5565,12 +5604,12 @@ TextureImporter:
       name: beliscoLowDeathYellow_1
       rect:
         serializedVersion: 2
-        x: 576
+        x: 672
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5586,12 +5625,12 @@ TextureImporter:
       name: beliscoLowDeathYellow_2
       rect:
         serializedVersion: 2
-        x: 672
+        x: 768
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5607,12 +5646,12 @@ TextureImporter:
       name: beliscoLowDeathYellow_3
       rect:
         serializedVersion: 2
-        x: 768
+        x: 864
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5628,12 +5667,12 @@ TextureImporter:
       name: beliscoLowDeathYellow_4
       rect:
         serializedVersion: 2
-        x: 864
+        x: 960
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5649,12 +5688,12 @@ TextureImporter:
       name: beliscoLowDeathYellow_5
       rect:
         serializedVersion: 2
-        x: 960
+        x: 1056
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5670,12 +5709,12 @@ TextureImporter:
       name: beliscoLowDeathYellow_6
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1152
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5691,12 +5730,12 @@ TextureImporter:
       name: beliscoLowDeathYellow_7
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1248
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5712,12 +5751,12 @@ TextureImporter:
       name: beliscoLowDashSideBlue_0
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1344
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5733,12 +5772,12 @@ TextureImporter:
       name: beliscoLowDashSideBlue_1
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1440
         y: 672
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5754,12 +5793,12 @@ TextureImporter:
       name: beliscoLowDashSideBlue_2
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 672
+        x: 0
+        y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5775,12 +5814,12 @@ TextureImporter:
       name: beliscoLowDashSideBlue_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5796,12 +5835,12 @@ TextureImporter:
       name: beliscoLowDashSideBlue_4
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5817,12 +5856,12 @@ TextureImporter:
       name: beliscoLowDashSideYellow_0
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5838,12 +5877,12 @@ TextureImporter:
       name: beliscoLowDashSideYellow_1
       rect:
         serializedVersion: 2
-        x: 288
+        x: 384
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5859,12 +5898,12 @@ TextureImporter:
       name: beliscoLowDashSideYellow_2
       rect:
         serializedVersion: 2
-        x: 384
+        x: 480
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5880,12 +5919,12 @@ TextureImporter:
       name: beliscoLowDashSideYellow_3
       rect:
         serializedVersion: 2
-        x: 480
+        x: 576
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5901,12 +5940,12 @@ TextureImporter:
       name: beliscoLowDashSideYellow_4
       rect:
         serializedVersion: 2
-        x: 576
+        x: 672
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5922,12 +5961,12 @@ TextureImporter:
       name: beliscoLowDashUpBlue_0
       rect:
         serializedVersion: 2
-        x: 672
+        x: 768
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5943,12 +5982,12 @@ TextureImporter:
       name: beliscoLowDashUpBlue_1
       rect:
         serializedVersion: 2
-        x: 768
+        x: 864
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5964,12 +6003,12 @@ TextureImporter:
       name: beliscoLowDashUpBlue_2
       rect:
         serializedVersion: 2
-        x: 864
+        x: 960
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5985,12 +6024,12 @@ TextureImporter:
       name: beliscoLowDashUpBlue_3
       rect:
         serializedVersion: 2
-        x: 960
+        x: 1056
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6006,12 +6045,12 @@ TextureImporter:
       name: beliscoLowDashUpBlue_4
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1152
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6027,12 +6066,12 @@ TextureImporter:
       name: beliscoLowDashUpBlue_5
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1248
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6048,12 +6087,12 @@ TextureImporter:
       name: beliscoLowDashUpYellow_0
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1344
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6069,12 +6108,12 @@ TextureImporter:
       name: beliscoLowDashUpYellow_1
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1440
         y: 576
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6090,12 +6129,12 @@ TextureImporter:
       name: beliscoLowDashUpYellow_2
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 576
+        x: 0
+        y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6111,12 +6150,12 @@ TextureImporter:
       name: beliscoLowDashUpYellow_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6132,12 +6171,12 @@ TextureImporter:
       name: beliscoLowDashUpYellow_4
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6153,12 +6192,12 @@ TextureImporter:
       name: beliscoLowDashUpYellow_5
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6174,12 +6213,12 @@ TextureImporter:
       name: beliscoLowRangedAtackBlue_0
       rect:
         serializedVersion: 2
-        x: 288
+        x: 384
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6195,12 +6234,12 @@ TextureImporter:
       name: beliscoLowRangedAtackBlue_1
       rect:
         serializedVersion: 2
-        x: 384
+        x: 480
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6216,12 +6255,12 @@ TextureImporter:
       name: beliscoLowRangedAtackBlue_2
       rect:
         serializedVersion: 2
-        x: 480
+        x: 576
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6237,12 +6276,12 @@ TextureImporter:
       name: beliscoLowRangedAtackBlue_3
       rect:
         serializedVersion: 2
-        x: 576
+        x: 672
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6258,12 +6297,12 @@ TextureImporter:
       name: beliscoLowRangedAtackBlue_4
       rect:
         serializedVersion: 2
-        x: 672
+        x: 768
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6279,12 +6318,12 @@ TextureImporter:
       name: beliscoLowRangedAtackBlue_5
       rect:
         serializedVersion: 2
-        x: 768
+        x: 864
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6300,12 +6339,12 @@ TextureImporter:
       name: beliscoLowRangedAtackBlue_6
       rect:
         serializedVersion: 2
-        x: 864
+        x: 960
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6321,12 +6360,12 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedYellow_0
       rect:
         serializedVersion: 2
-        x: 960
+        x: 1056
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6342,12 +6381,12 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedYellow_1
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1152
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6363,12 +6402,12 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedYellow_2
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1248
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6384,12 +6423,12 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedYellow_3
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1344
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6405,12 +6444,12 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedYellow_4
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1440
         y: 480
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6426,12 +6465,12 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedYellow_5
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 480
+        x: 0
+        y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6447,12 +6486,12 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedYellow_6
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6468,12 +6507,12 @@ TextureImporter:
       name: beliscoLowRangedAtackJumpBlue_0
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6489,12 +6528,12 @@ TextureImporter:
       name: beliscoLowRangedAtackJumpBlue_1
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6510,12 +6549,12 @@ TextureImporter:
       name: beliscoLowRangedAtackJumpBlue_2
       rect:
         serializedVersion: 2
-        x: 288
+        x: 384
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6531,12 +6570,12 @@ TextureImporter:
       name: beliscoLowRangedAtackJumpBlue_3
       rect:
         serializedVersion: 2
-        x: 384
+        x: 480
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6552,12 +6591,12 @@ TextureImporter:
       name: beliscoLowRangedAtackJumpBlue_4
       rect:
         serializedVersion: 2
-        x: 480
+        x: 576
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6573,12 +6612,12 @@ TextureImporter:
       name: beliscoLowRangedAtackJumpBlue_5
       rect:
         serializedVersion: 2
-        x: 576
+        x: 672
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6594,12 +6633,12 @@ TextureImporter:
       name: beliscoLowRangedAtackJumpBlue_6
       rect:
         serializedVersion: 2
-        x: 672
+        x: 768
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6615,12 +6654,12 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedJumpYellow_0
       rect:
         serializedVersion: 2
-        x: 768
+        x: 864
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6636,12 +6675,12 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedJumpYellow_1
       rect:
         serializedVersion: 2
-        x: 864
+        x: 960
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6657,12 +6696,12 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedJumpYellow_2
       rect:
         serializedVersion: 2
-        x: 960
+        x: 1056
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6678,12 +6717,12 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedJumpYellow_3
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1152
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6699,12 +6738,12 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedJumpYellow_4
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1248
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6720,12 +6759,12 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedJumpYellow_5
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1344
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6741,12 +6780,12 @@ TextureImporter:
       name: beliscoLowRangedAtackRangedJumpYellow_6
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1440
         y: 384
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6762,12 +6801,12 @@ TextureImporter:
       name: beliscoLowWallJumpBlue_0
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 384
+        x: 0
+        y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6783,12 +6822,12 @@ TextureImporter:
       name: beliscoLowWallJumpBlue_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6804,12 +6843,12 @@ TextureImporter:
       name: beliscoLowOthers_0
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6825,12 +6864,12 @@ TextureImporter:
       name: beliscoLowOthers_1
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6846,12 +6885,12 @@ TextureImporter:
       name: beliscoLowWallContactYellow_0
       rect:
         serializedVersion: 2
-        x: 288
+        x: 384
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6867,12 +6906,12 @@ TextureImporter:
       name: beliscoLowWallContactYellow_1
       rect:
         serializedVersion: 2
-        x: 384
+        x: 480
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6888,12 +6927,12 @@ TextureImporter:
       name: beliscoLowOthers_2
       rect:
         serializedVersion: 2
-        x: 480
+        x: 576
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6909,12 +6948,12 @@ TextureImporter:
       name: beliscoLowOthers_3
       rect:
         serializedVersion: 2
-        x: 576
+        x: 672
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6930,12 +6969,12 @@ TextureImporter:
       name: beliscoLowStrongAtackBlue_0
       rect:
         serializedVersion: 2
-        x: 672
+        x: 768
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6951,12 +6990,12 @@ TextureImporter:
       name: beliscoLowStrongAtackBlue_1
       rect:
         serializedVersion: 2
-        x: 768
+        x: 864
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6972,12 +7011,12 @@ TextureImporter:
       name: beliscoLowStrongAtackBlue_2
       rect:
         serializedVersion: 2
-        x: 864
+        x: 960
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6993,12 +7032,12 @@ TextureImporter:
       name: beliscoLowStrongAtackBlue_3
       rect:
         serializedVersion: 2
-        x: 960
+        x: 1056
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7014,12 +7053,12 @@ TextureImporter:
       name: beliscoLowStrongAtackBlue_4
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1152
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7035,12 +7074,12 @@ TextureImporter:
       name: beliscoLowStrongAtackBlue_5
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1248
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7056,12 +7095,12 @@ TextureImporter:
       name: beliscoLowStrongAtackBlue_6
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1344
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7077,12 +7116,12 @@ TextureImporter:
       name: beliscoLowStrongAtackYellow_0
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1440
         y: 288
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7098,12 +7137,12 @@ TextureImporter:
       name: beliscoLowStrongAtackYellow_1
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 288
+        x: 0
+        y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7119,12 +7158,12 @@ TextureImporter:
       name: beliscoLowStrongAtackYellow_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7140,12 +7179,12 @@ TextureImporter:
       name: beliscoLowStrongAtackYellow_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7161,12 +7200,12 @@ TextureImporter:
       name: beliscoLowStrongAtackYellow_4
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7182,12 +7221,12 @@ TextureImporter:
       name: beliscoLowStrongAtackYellow_5
       rect:
         serializedVersion: 2
-        x: 288
+        x: 384
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7203,12 +7242,12 @@ TextureImporter:
       name: beliscoLowStrongAtackYellow_6
       rect:
         serializedVersion: 2
-        x: 384
+        x: 480
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7224,12 +7263,12 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpBlue_0
       rect:
         serializedVersion: 2
-        x: 480
+        x: 576
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7245,12 +7284,12 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpBlue_1
       rect:
         serializedVersion: 2
-        x: 576
+        x: 672
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7266,12 +7305,12 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpBlue_2
       rect:
         serializedVersion: 2
-        x: 672
+        x: 768
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7287,12 +7326,12 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpBlue_3
       rect:
         serializedVersion: 2
-        x: 768
+        x: 864
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7308,12 +7347,12 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpBlue_4
       rect:
         serializedVersion: 2
-        x: 864
+        x: 960
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7329,12 +7368,12 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpBlue_5
       rect:
         serializedVersion: 2
-        x: 960
+        x: 1056
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7350,12 +7389,12 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpBlue_6
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1152
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7371,12 +7410,12 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpYellow_0
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1248
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7392,12 +7431,12 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpYellow_1
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1344
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7413,12 +7452,12 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpYellow_2
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1440
         y: 192
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7434,12 +7473,12 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpYellow_3
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 192
+        x: 0
+        y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7455,12 +7494,12 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpYellow_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7476,12 +7515,12 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpYellow_5
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7497,12 +7536,12 @@ TextureImporter:
       name: beliscoLowStrongAtackJumpYellow_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 288
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7518,12 +7557,12 @@ TextureImporter:
       name: beliscoLowDashNoSwordBlue_0
       rect:
         serializedVersion: 2
-        x: 288
+        x: 384
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7539,12 +7578,12 @@ TextureImporter:
       name: beliscoLowDashNoSwordBlue_1
       rect:
         serializedVersion: 2
-        x: 384
+        x: 480
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7560,12 +7599,12 @@ TextureImporter:
       name: beliscoLowDashNoSwordBlue_2
       rect:
         serializedVersion: 2
-        x: 480
+        x: 576
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7581,12 +7620,12 @@ TextureImporter:
       name: beliscoLowDashNoSwordBlue_3
       rect:
         serializedVersion: 2
-        x: 576
+        x: 672
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7602,12 +7641,12 @@ TextureImporter:
       name: beliscoLowDashNoSwordBlue_4
       rect:
         serializedVersion: 2
-        x: 672
+        x: 768
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7623,12 +7662,12 @@ TextureImporter:
       name: beliscoLowDashNoSwordBlue_5
       rect:
         serializedVersion: 2
-        x: 768
+        x: 864
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7644,12 +7683,12 @@ TextureImporter:
       name: beliscoLowDashNoSwordBlue_6
       rect:
         serializedVersion: 2
-        x: 864
+        x: 960
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7665,12 +7704,12 @@ TextureImporter:
       name: beliscoLowDashNoSwordYellow_0
       rect:
         serializedVersion: 2
-        x: 960
+        x: 1056
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7686,12 +7725,12 @@ TextureImporter:
       name: beliscoLowDashNoSwordYellow_1
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1152
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7707,12 +7746,12 @@ TextureImporter:
       name: beliscoLowDashNoSwordYellow_2
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1248
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7728,12 +7767,12 @@ TextureImporter:
       name: beliscoLowDashNoSwordYellow_3
       rect:
         serializedVersion: 2
-        x: 1248
+        x: 1344
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7749,12 +7788,12 @@ TextureImporter:
       name: beliscoLowDashNoSwordYellow_4
       rect:
         serializedVersion: 2
-        x: 1344
+        x: 1440
         y: 96
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7770,12 +7809,12 @@ TextureImporter:
       name: beliscoLowDashNoSwordYellow_5
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 96
+        x: 0
+        y: 0
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -7791,12 +7830,12 @@ TextureImporter:
       name: beliscoLowDashNoSwordYellow_6
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
         width: 96
         height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.3333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

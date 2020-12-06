@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,13 +23,22 @@ namespace Belisco
             {
                 Destroy(this.gameObject);
             }
-
-            LoadFirstScene();
         }
 
-        private void LoadFirstScene()
+        private IEnumerator Start()
         {
-            SceneManager.LoadScene("TESTESTEPE_ROOM_1",LoadSceneMode.Additive);
+            yield return new WaitForEndOfFrame();
+            SpawnPlayer();
+        }
+
+        private void OnEnable()
+        {
+            //SpawnPlayer();
+        }
+
+        private void SpawnPlayer()
+        {
+            Pooler.Instance.SpawnFromPool("Player", RoomSpawner.CurrentSpawner.transform.position, Quaternion.identity);
         }
     }
 }

@@ -11,7 +11,8 @@ namespace Belisco
         //TODO : Generalizar com um animator
         [SerializeField] private Sprite _activeSprite;
 
-        public void Hit(int damage)
+        // TODO: add knockback if necessary
+        public void Hit(int damage, Transform attacker)
         {
             _lockable.Unlock();
             GetComponent<SpriteRenderer>().sprite = _activeSprite;

@@ -11,7 +11,7 @@ namespace Belisco
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            other.GetComponent<IHittable>()?.Hit(_damage);
+            other.GetComponent<IHittable>()?.Hit(_damage, this.transform);
         }
 
         private void OnValidate()

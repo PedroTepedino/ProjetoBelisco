@@ -24,7 +24,7 @@ MonoBehaviour:
   _lowGravityFallMultiplayer: 8
   _velocityWhenTerminateJump: 1
   _glideFallVelocity: -1.5
-  _grounderPosition: {x: 0, y: 0, z: 0}
+  _grounderPosition: {x: -0.02, y: 0, z: 0}
   _grounderSizes: {x: 0.3, y: 0.1}
   _grounderLayerMask:
     serializedVersion: 2

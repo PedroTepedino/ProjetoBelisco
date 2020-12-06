@@ -209,9 +209,9 @@ namespace Belisco
             
             var grid = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/GameplaySetup/Grid.prefab")) as GameObject;
             grid.transform.position = new Vector3(0,0,0);
-
-            var playerCam = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/GameplaySetup/PlayerCam.prefab")) as GameObject;
-            playerCam.transform.position = new Vector3(0,0,-10);
+            
+            // var playerCam = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/GameplaySetup/PlayerCam.prefab")) as GameObject;
+            // playerCam.transform.position = new Vector3(0,0,-10);
             
             var roomManager = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/GameplaySetup/[RoomManager].prefab")) as GameObject;
             roomManager.transform.position = new Vector3(0,0,0);

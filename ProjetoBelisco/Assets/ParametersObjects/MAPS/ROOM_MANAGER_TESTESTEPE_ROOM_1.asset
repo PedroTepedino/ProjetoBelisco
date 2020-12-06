@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ROOM_MANAGER_TESTESTEPE_ROOM_1
   m_EditorClassIdentifier: 
   _sceneConnections:
-  - {fileID: 11400000, guid: f539f62e8d02048498983ff880101f10, type: 2}
+  - {fileID: 11400000, guid: 328f8a68e21d78045ae5074cff3dd215, type: 2}
   _thisSceneAsset: {fileID: 102900000, guid: 85a868ab395c4e94695bda9d20622190, type: 3}

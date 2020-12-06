@@ -4,21 +4,27 @@
     <attachedFolders />
     <explicitIncludes>
       <Path>Library/PackageCache/com.unity.2d.tilemap.extras@c051b95afa</Path>
+      <Path>Library/PackageCache/com.unity.addressables@1.16.10</Path>
       <Path>Library/PackageCache/com.unity.addressables@1.8.5</Path>
       <Path>Library/PackageCache/com.unity.cinemachine@2.6.3</Path>
       <Path>Library/PackageCache/com.unity.collab-proxy@1.2.16</Path>
       <Path>Library/PackageCache/com.unity.ext.nunit@1.0.0</Path>
+      <Path>Library/PackageCache/com.unity.ext.nunit@1.0.5</Path>
       <Path>Library/PackageCache/com.unity.ide.rider@2.0.5</Path>
       <Path>Library/PackageCache/com.unity.ide.vscode@1.2.0</Path>
       <Path>Library/PackageCache/com.unity.ide.vscode@1.2.1</Path>
+      <Path>Library/PackageCache/com.unity.ide.vscode@1.2.3</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.core@7.3.1</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.universal@7.3.1</Path>
+      <Path>Library/PackageCache/com.unity.scriptablebuildpipeline@1.14.1</Path>
       <Path>Library/PackageCache/com.unity.scriptablebuildpipeline@1.7.3</Path>
       <Path>Library/PackageCache/com.unity.shadergraph@7.3.1</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.14</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.16</Path>
+      <Path>Library/PackageCache/com.unity.test-framework@1.1.19</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@2.0.1</Path>
       <Path>Library/PackageCache/com.unity.timeline@1.2.10</Path>
+      <Path>Library/PackageCache/com.unity.vectorgraphics@2.0.0-preview.13</Path>
       <Path>Packages</Path>
       <Path>ProjectSettings</Path>
     </explicitIncludes>

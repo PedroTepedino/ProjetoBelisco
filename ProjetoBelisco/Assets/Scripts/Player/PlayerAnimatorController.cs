@@ -1,4 +1,7 @@
-﻿using Sirenix.OdinInspector;
+﻿using System;
+using DG.Tweening;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using UnityEngine;
 
 namespace Belisco
@@ -16,6 +19,9 @@ namespace Belisco
 
         private Rigidbody2D _rigidbody;
 
+        private Sequence _invincibilityTween;
+        [SerializeField] private AnimationCurve _curve;
+
         public bool IsLookingRight { get; private set; } = true;
 
         private void Awake()
@@ -24,6 +30,24 @@ namespace Belisco
             _spriteRendererRight.enabled = true;
             _spriteRendererLeft.enabled = false;
             _player = GetComponent<Player>();
+
+            _invincibilityTween = DOTween.Sequence();
+            _invincibilityTween.Append(_spriteRendererRight.DOFade(0, 0.4f).From(1).SetEase(_curve).SetAutoKill(false));
+            _invincibilityTween.Join(_spriteRendererLeft.DOFade(0, 0.4f).From(1).SetEase(_curve).SetAutoKill(false));
+            _invincibilityTween.SetAutoKill(false);
+            _invincibilityTween.SetLoops(-1);
+            _invincibilityTween.Rewind();
+        }
+
+        private void OnEnable()
+        {
+            Player.OnPlayerInvincibilityChange += ListenOnPlayerInvincibilityChange;
+            _invincibilityTween.Rewind();
+        }
+
+        private void OnDisable()
+        {
+            Player.OnPlayerInvincibilityChange -= ListenOnPlayerInvincibilityChange;
         }
 
         public void UpdateParameters(bool touchingGround)
@@ -112,6 +136,19 @@ namespace Belisco
         public void Hurt()
         {
             SetTrigger("Hit");
+        }
+
+        public void ListenOnPlayerInvincibilityChange(bool isInvincible)
+        {
+            if (isInvincible)
+            {
+                _invincibilityTween.Restart();
+            }
+            else
+            {
+                _invincibilityTween.Pause();
+                _invincibilityTween.Rewind();
+            }
         }
     }
 }

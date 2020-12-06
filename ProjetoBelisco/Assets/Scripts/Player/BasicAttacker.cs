@@ -49,12 +49,12 @@ namespace Belisco
                 {
                     if (!HasWallBetween(collider.transform.position))
                     {
-                        hittable.Hit(_attackDamage);
+                        hittable.Hit(_attackDamage, _player.transform);
                         Debug.Log($"Hit {collider.gameObject}", collider.transform);
                     }
                     else if (hittable is Switch)
                     {
-                        hittable.Hit(_attackDamage);
+                        hittable.Hit(_attackDamage, _player.transform);
                     }
                 }
             }

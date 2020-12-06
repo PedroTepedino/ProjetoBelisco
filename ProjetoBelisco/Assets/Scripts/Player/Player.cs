@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections;
-using Cinemachine;
+using System.Runtime.InteropServices;
 using Sirenix.OdinInspector;
+using UnityEditor;
 using UnityEngine;
 
 namespace Belisco
@@ -29,6 +30,8 @@ namespace Belisco
         private PlayerParameters _playerParameters;
 
         [SerializeField] private PlayerAnimatorController _playerAnimatorController;
+
+        public RoomManager CurrentRoomManager = null;
 
         public bool CanMove = true;
 
@@ -59,6 +62,8 @@ namespace Belisco
         public bool Gliding => _glider.Gliding;
         public PlayerAnimatorController AnimatorController => _playerAnimatorController;
 
+        private Coroutine _invincibilityCoroutine = null;
+
         private void Awake()
         {
             AttackerTimer.SetTimer(_playerParameters.TimeBetweenAttacks);
@@ -83,7 +88,7 @@ namespace Belisco
             AttackerTimer.SubtractTimer();
 
             Grounder.Tick();
-
+            
             if (!_attacking && CanMove)
             {
                 _mover.Tick();
@@ -101,10 +106,9 @@ namespace Belisco
             //_attackerList.ForEach(attacker => attacker.Tick());
 
             CheckJumping();
-
+            
             var isGrounded = Grounder.IsGrounded;
             AnimatorController.UpdateParameters(isGrounded);
-
             JustTouchedGround(isGrounded);
         }
 
@@ -132,7 +136,7 @@ namespace Belisco
                 _ghostSpawner = GetComponent<PlayerGhostSpawner>();
         }
 
-        public void Hit(int damage)
+        public void Hit(int damage, Transform attacker)
         {
             _hurtParticles.EmitParticle();
             _playerAnimatorController.Hurt();
@@ -158,6 +162,8 @@ namespace Belisco
         public static event Action<int, int> OnPlayerDamage;
 
         public static event Action<int, int> OnPlayerHeal;
+
+        public static event Action<bool> OnPlayerInvincibilityChange;
 
         private void StartDash()
         {
@@ -231,10 +237,7 @@ namespace Belisco
             return direction;
         }
 
-        public Directions GetDirectionHorizontal()
-        {
-            return _playerAnimatorController.IsLookingRight ? Directions.Right : Directions.Left;
-        }
+        public Directions GetDirectionHorizontal() => _playerAnimatorController.IsLookingRight ? Directions.Right : Directions.Left;
 
         private void CheckJumping()
         {
@@ -250,20 +253,31 @@ namespace Belisco
             _justTouchedGround = isGrounded;
         }
 
-        public void Died()
-        {
-            OnPlayerDeath?.Invoke();
-        }
+        public void Died() => OnPlayerDeath?.Invoke();
 
         public void DamageDealt(int currentLife, int maxLife)
         {
             OnPlayerDamage?.Invoke(currentLife, maxLife);
+            
+            if (_invincibilityCoroutine != null)
+            {
+                StopCoroutine(_invincibilityCoroutine);
+            }
+
+            StartCoroutine(InvincibilityTime(LifeSystem.InvincibilityTime));
         }
 
-        [Button]
-        public void Damage()
+        [Button] public void Damage() => Hit(1, null);
+
+        private IEnumerator InvincibilityTime(float invincibleTime)
         {
-            Hit(1);
+            LifeSystem.SetInvincible(true);
+            OnPlayerInvincibilityChange?.Invoke(true);
+            
+            yield return new WaitForSeconds(invincibleTime);
+            
+            LifeSystem.SetInvincible(false);
+            OnPlayerInvincibilityChange?.Invoke(false);
         }
 
 #if UNITY_EDITOR

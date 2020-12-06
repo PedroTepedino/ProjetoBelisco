@@ -20,7 +20,7 @@ namespace Belisco
             if (!collision.gameObject.activeInHierarchy) return;
 
             Player player = collision.gameObject.GetComponent<Player>();
-            if (player) player.Hit(10000);
+            if (player) player.Hit(10000, this.transform);
         }
     }
 }
