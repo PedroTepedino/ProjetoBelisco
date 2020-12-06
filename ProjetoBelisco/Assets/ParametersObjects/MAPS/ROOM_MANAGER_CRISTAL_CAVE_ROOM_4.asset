@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d1b6086ff2940399140e557643791bc, type: 3}
-  m_Name: ROOM_MANAGER_TUTORIAL_ROOM_7
+  m_Name: ROOM_MANAGER_CRISTAL_CAVE_ROOM_4
   m_EditorClassIdentifier: 
   _sceneConnections:
-  - {fileID: 11400000, guid: 31af4c65e81541d40bf5f00e11687e22, type: 2}
-  - {fileID: 11400000, guid: 2263335c57cb4554b86f564a26a57159, type: 2}
-  _thisSceneAsset: {fileID: 102900000, guid: b8f26d75306ceab428cf14c1e32a3f14, type: 3}
+  - {fileID: 11400000, guid: 108e6f0ad9ddfc146b54ae1e485f9560, type: 2}
+  _thisSceneAsset: {fileID: 102900000, guid: d28514237664d064fa5eefeac914ee75, type: 3}
