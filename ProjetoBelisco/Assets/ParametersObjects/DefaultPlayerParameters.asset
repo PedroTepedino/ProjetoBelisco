@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: DefaultPlayerParameters
   m_EditorClassIdentifier: 
   _maxHealth: 10
+  _invincibilityTime: 1
   _movementSpeed: 6
   _walkAcceleration: 10
+  _baseDrag: 1
+  _minPushVelocity: 6
+  _knockBackForce: 50
+  _knockBackDrag: 15
   _dashVelocity: 20
   _dashMaxTimer: 0
   _timeBetweenDashes: 0.2

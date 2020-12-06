@@ -64,6 +64,8 @@ namespace Belisco
 
         private Coroutine _invincibilityCoroutine = null;
 
+        public Rigidbody2D Rigidbody { get; private set; }
+
         private void Awake()
         {
             AttackerTimer.SetTimer(_playerParameters.TimeBetweenAttacks);
@@ -78,6 +80,8 @@ namespace Belisco
             _attacker = new BasicAttacker(this);
             _wallJumper = new WallJumper(this);
 
+            Rigidbody = this.GetComponent<Rigidbody2D>();
+
             // _attackerList = new List<IAttacker>();
             // _attackerList.Add(new BasicAttacker(this));
             // _attackerList.Add(new StrongAttacker(this));
@@ -88,18 +92,25 @@ namespace Belisco
             AttackerTimer.SubtractTimer();
 
             Grounder.Tick();
-            
-            if (!_attacking && CanMove)
+
+            if (!(_mover is ForceMover))
+            {
+                if (!_attacking && CanMove)
+                {
+                    _mover.Tick();
+
+                    if (!(_mover is Dasher))
+                    {
+                        _jumper.Tick();
+                        _wallJumper.Tick();
+                    }
+
+                    if (Dasher.CheckDashInput()) StartDash();
+                }
+            }
+            else
             {
                 _mover.Tick();
-
-                if (!(_mover is Dasher))
-                {
-                    _jumper.Tick();
-                    _wallJumper.Tick();
-                }
-
-                if (Dasher.CheckDashInput()) StartDash();
             }
 
             _attacker.Tick();
@@ -144,8 +155,25 @@ namespace Belisco
 
             if (attacker != null)
             {
-                
+                var forceAux = (this.transform.position - attacker.position).normalized;
+                if (forceAux.y < 0.2f)
+                {
+                    forceAux += (Vector3.up * 1f);
+                }
+
+                forceAux = forceAux.normalized * _playerParameters.KnockBackForce;
+                PushPlayer(forceAux);
             }
+        }
+        
+        public void PushPlayer(Vector3 force)
+        {
+            _mover = new ForceMover(this, force);
+        }
+        
+        public void ReturnToBaseMover()
+        {
+            _mover = new NewMover(this);
         }
 
         public void OnObjectSpawn(object[] parameters = null)
@@ -284,6 +312,8 @@ namespace Belisco
             LifeSystem.SetInvincible(false);
             OnPlayerInvincibilityChange?.Invoke(false);
         }
+        
+        
 
 #if UNITY_EDITOR
         [SerializeField] [EnumToggleButtons] private GizmosType _gizmosToShow = 0;
@@ -346,5 +376,6 @@ namespace Belisco
             WallChecker = 1 << 5
         }
 #endif //UNITY_EDITOR
+        
     }
 }

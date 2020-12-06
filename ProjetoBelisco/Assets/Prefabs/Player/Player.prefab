@@ -530,6 +530,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8604371560575273997, guid: 4b2f15a3e071b044a91032e08d8d98c6,
         type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604371560575273997, guid: 4b2f15a3e071b044a91032e08d8d98c6,
+        type: 3}
       propertyPath: ShapeModule.m_Position.x
       value: 0
       objectReference: {fileID: 0}
