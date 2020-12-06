@@ -227,7 +227,7 @@ namespace Belisco
         private void Damage(int value, Collider2D hit)
         {
             IHittable hitable = hit.gameObject.GetComponent<IHittable>();
-            if (hitable != null) hitable.Hit(value);
+            if (hitable != null) hitable.Hit(value, this.transform);
         }
 
         private void MeleeAttack()

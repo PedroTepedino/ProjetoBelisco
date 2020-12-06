@@ -12,7 +12,8 @@ namespace Belisco
             if (_tween == null) _tween = GetComponent<DOTweenAnimation>();
         }
 
-        public void Hit(int damage)
+        // TODO: add knockback if necessary
+        public void Hit(int damage, Transform attacker)
         {
             _tween.DORestart();
         }

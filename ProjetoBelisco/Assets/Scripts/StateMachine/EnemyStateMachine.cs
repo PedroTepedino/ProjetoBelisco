@@ -65,7 +65,8 @@ namespace Belisco
         {
         }
 
-        public void Hit(int damage)
+        // TODO: add knockback if necessary
+        public void Hit(int damage, Transform attacker)
         {
             if (healthPoints <= 0)
             {

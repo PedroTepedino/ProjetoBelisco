@@ -1,7 +1,9 @@
-﻿namespace Belisco
+﻿using UnityEngine;
+
+namespace Belisco
 {
     public interface IHittable
     {
-        void Hit(int damage);
+        void Hit(int damage, Transform attacker);
     }
 }

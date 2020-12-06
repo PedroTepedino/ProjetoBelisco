@@ -1,4 +1,5 @@
 ﻿using DG.Tweening;
+using Rewired;
 using UnityEngine;
 
 namespace Belisco
@@ -16,7 +17,7 @@ namespace Belisco
         private void OnTriggerEnter2D(Collider2D other)
         {
             IHittable hittable = other.GetComponent<IHittable>();
-            if (hittable != null) hittable.Hit(_damage);
+            if (hittable != null) hittable.Hit(_damage, this.transform);
 
             _rigidbody.velocity = Vector2.zero;
 

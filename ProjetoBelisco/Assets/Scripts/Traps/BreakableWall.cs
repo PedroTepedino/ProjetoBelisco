@@ -33,7 +33,8 @@ namespace Belisco
             _hitAnimation.Rewind();
         }
 
-        public void Hit(int damage)
+        // TODO: add knockback if necessary
+        public void Hit(int damage, Transform attacker)
         {
             _currentHitsCount++;
             _hitAnimation.Restart();

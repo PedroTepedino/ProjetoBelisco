@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Cinemachine;
@@ -84,7 +83,7 @@ namespace Belisco
             for (int i = 0; i < SceneManager.sceneCount; i++)
             {
                 var scene = SceneManager.GetSceneAt(i);
-                if (_roomParameters.SceneConnections.All(scn => scn.ThisSceneAsset.name != scene.name) 
+                if (_roomParameters.SceneConnections.All(scn => scn.ThisSceneAsset != null && scn.ThisSceneAsset.name != scene.name) 
                     && scene.name != "MapSetup" && scene.name != _roomParameters.ThisSceneAsset.name)
                 {
                     operations.Add(SceneManager.UnloadSceneAsync(scene, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects));

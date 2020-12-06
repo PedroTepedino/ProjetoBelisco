@@ -41,7 +41,7 @@ namespace Belisco
 
             LastState = CurrentState;
             CurrentState = state;
-            Debug.Log($"Change to {state}");
+            //Debug.Log($"Change to {state}");
             CurrentState.OnEnter();
 
             OnStateChanged?.Invoke(CurrentState);

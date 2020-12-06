@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
+using System.Runtime.InteropServices;
 using Sirenix.OdinInspector;
+using UnityEditor;
 using UnityEngine;
 
 namespace Belisco
@@ -59,6 +61,8 @@ namespace Belisco
         public bool Jumping => _jumper.Jumping;
         public bool Gliding => _glider.Gliding;
         public PlayerAnimatorController AnimatorController => _playerAnimatorController;
+
+        private Coroutine _invincibilityCoroutine = null;
 
         private void Awake()
         {
@@ -132,7 +136,7 @@ namespace Belisco
                 _ghostSpawner = GetComponent<PlayerGhostSpawner>();
         }
 
-        public void Hit(int damage)
+        public void Hit(int damage, Transform attacker)
         {
             _hurtParticles.EmitParticle();
             _playerAnimatorController.Hurt();
@@ -158,6 +162,8 @@ namespace Belisco
         public static event Action<int, int> OnPlayerDamage;
 
         public static event Action<int, int> OnPlayerHeal;
+
+        public static event Action<bool> OnPlayerInvincibilityChange;
 
         private void StartDash()
         {
@@ -248,8 +254,31 @@ namespace Belisco
         }
 
         public void Died() => OnPlayerDeath?.Invoke();
-        public void DamageDealt(int currentLife, int maxLife) => OnPlayerDamage?.Invoke(currentLife, maxLife);
-        [Button] public void Damage() => Hit(1);
+
+        public void DamageDealt(int currentLife, int maxLife)
+        {
+            OnPlayerDamage?.Invoke(currentLife, maxLife);
+            
+            if (_invincibilityCoroutine != null)
+            {
+                StopCoroutine(_invincibilityCoroutine);
+            }
+
+            StartCoroutine(InvincibilityTime(LifeSystem.InvincibilityTime));
+        }
+
+        [Button] public void Damage() => Hit(1, null);
+
+        private IEnumerator InvincibilityTime(float invincibleTime)
+        {
+            LifeSystem.SetInvincible(true);
+            OnPlayerInvincibilityChange?.Invoke(true);
+            
+            yield return new WaitForSeconds(invincibleTime);
+            
+            LifeSystem.SetInvincible(false);
+            OnPlayerInvincibilityChange?.Invoke(false);
+        }
 
 #if UNITY_EDITOR
         [SerializeField] [EnumToggleButtons] private GizmosType _gizmosToShow = 0;

@@ -53,7 +53,7 @@ namespace Belisco
             Player player = hit.gameObject.GetComponent<Player>();
             if (player != null)
             {
-                player.Hit(1);
+                player.Hit(1, this.transform);
                 ownerRigidbody.velocity = Vector2.zero;
             }
         }
@@ -67,7 +67,8 @@ namespace Belisco
         {
         }
 
-        public void Hit(int damage)
+        // TODO: add knockback if necessary
+        public void Hit(int damage, Transform attacker)
         {
             healthPoints -= damage;
 

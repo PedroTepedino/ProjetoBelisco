@@ -27,7 +27,8 @@ namespace Belisco
             _activated = false;
         }
 
-        public void Hit(int damage)
+        // TODO: add knockback if necessary
+        public void Hit(int damage, Transform attacker)
         {
             ActivateSwitch();
         }
