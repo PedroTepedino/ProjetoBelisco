@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -370,7 +370,7 @@ Transform:
   m_Children:
   - {fileID: 735169955}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &125550816
 PrefabInstance:
@@ -794,7 +794,7 @@ PrefabInstance:
     - target: {fileID: 8625607796725553759, guid: d22c1108cb54abd4aa44d3c8b8130f36,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8625607796725553759, guid: d22c1108cb54abd4aa44d3c8b8130f36,
         type: 3}
@@ -1955,7 +1955,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 17
+      m_TileSpriteIndex: 20
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2144,7 +2144,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3021,9 +3021,8 @@ Tilemap:
   - m_RefCount: 15
     m_Data: {fileID: -843080356849903563, guid: 989b9b80cf49c794bb5f4ff5f3368d54,
       type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -2174969395224741768, guid: 989b9b80cf49c794bb5f4ff5f3368d54,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 12
     m_Data: {fileID: -5154197472394216889, guid: 989b9b80cf49c794bb5f4ff5f3368d54,
       type: 3}
@@ -3048,7 +3047,7 @@ Tilemap:
     m_Data: {fileID: -7664747167418239247, guid: 989b9b80cf49c794bb5f4ff5f3368d54,
       type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -6770923392358782313, guid: 989b9b80cf49c794bb5f4ff5f3368d54,
+    m_Data: {fileID: -2174969395224741768, guid: 989b9b80cf49c794bb5f4ff5f3368d54,
       type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 5808587064573956244, guid: 989b9b80cf49c794bb5f4ff5f3368d54,
@@ -3056,8 +3055,9 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -1099143551338457719, guid: 989b9b80cf49c794bb5f4ff5f3368d54,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -6770923392358782313, guid: 989b9b80cf49c794bb5f4ff5f3368d54,
+      type: 3}
   m_TileMatrixArray:
   - m_RefCount: 117
     m_Data:
@@ -8200,6 +8200,11 @@ PrefabInstance:
       propertyPath: m_DeadZoneWidth
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5972397520568045042, guid: a9372b43693717e40bb478d45d716b3e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7584742237181065985, guid: a9372b43693717e40bb478d45d716b3e,
         type: 3}
       propertyPath: m_Name
@@ -8430,7 +8435,7 @@ Transform:
   - {fileID: 1974044647}
   - {fileID: 1756047015}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1500446661
 GameObject:
@@ -14273,7 +14278,7 @@ PrefabInstance:
     - target: {fileID: 6426316988314383116, guid: 222644854171f69459e1c2bf5ad9fb1e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6426316988314383116, guid: 222644854171f69459e1c2bf5ad9fb1e,
         type: 3}
