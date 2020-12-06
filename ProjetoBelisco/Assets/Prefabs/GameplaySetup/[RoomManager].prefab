@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e35152e6c469d3a41862cb52c02d73b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _roomParameters: {fileID: 11400000, guid: 7fd78a7b0d4f2e54693abee9f8e256f9, type: 2}
+  _roomParameters: {fileID: 0}
   _initialCheckpoint: {fileID: 1728318755032860986}
 --- !u!66 &1106213866352638223
 CompositeCollider2D:

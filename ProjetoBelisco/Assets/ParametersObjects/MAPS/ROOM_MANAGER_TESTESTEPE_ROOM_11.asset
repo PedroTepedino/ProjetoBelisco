@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d1b6086ff2940399140e557643791bc, type: 3}
-  m_Name: ROOM_MANAGER_TESTESTEPE_ROOM_1
+  m_Name: ROOM_MANAGER_TESTESTEPE_ROOM_11
   m_EditorClassIdentifier: 
-  _sceneConnections:
-  - {fileID: 11400000, guid: f539f62e8d02048498983ff880101f10, type: 2}
-  _thisSceneAsset: {fileID: 102900000, guid: 85a868ab395c4e94695bda9d20622190, type: 3}
+  _sceneConnections: []
+  _thisSceneAsset: {fileID: 0}

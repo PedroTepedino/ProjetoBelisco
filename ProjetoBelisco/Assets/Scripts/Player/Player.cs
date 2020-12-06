@@ -141,6 +141,11 @@ namespace Belisco
             _hurtParticles.EmitParticle();
             _playerAnimatorController.Hurt();
             LifeSystem.Damage(damage);
+
+            if (attacker != null)
+            {
+                
+            }
         }
 
         public void OnObjectSpawn(object[] parameters = null)

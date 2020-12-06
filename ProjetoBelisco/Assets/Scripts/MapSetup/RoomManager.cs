@@ -97,23 +97,26 @@ namespace Belisco
         {
             this.name = $"[ROOM_MANAGER_{this.gameObject.scene.name}]";
 
-            if (_roomParameters == null)
-            {
-               _roomParameters = AssetDatabase.LoadAssetAtPath<RoomParameters>(
-                    $"Assets/ParametersObjects/MAPS/ROOM_MANAGER_{this.gameObject.scene.name}.asset");
-            }
-            else
-            {
-                if (_roomParameters.ThisSceneAsset == null || _roomParameters.ThisSceneAsset.SafeIsUnityNull())
-                {
-                    _roomParameters.Init(AssetDatabase.LoadAssetAtPath<SceneAsset>(this.gameObject.scene.path));
-                }
+            _roomParameters = AssetDatabase.LoadAssetAtPath<RoomParameters>(
+                $"Assets/ParametersObjects/MAPS/ROOM_MANAGER_{this.gameObject.scene.name}.asset");
 
-                // if (_roomTransitions != null && _roomTransitions.Count > 0)
-                // {
-                //     _roomTransitions.RemoveAll(room => room == null);
-                // }
+            if (_roomParameters != null)
+            {
+                _roomParameters.Init(AssetDatabase.LoadAssetAtPath<SceneAsset>(this.gameObject.scene.path));
             }
+            
+            // if (_roomParameters != null)
+            // {
+            //     if (_roomParameters.ThisSceneAsset == null || _roomParameters.ThisSceneAsset.SafeIsUnityNull())
+            //     {
+            //        
+            //     }
+            //
+            //     // if (_roomTransitions != null && _roomTransitions.Count > 0)
+            //     // {
+            //     //     _roomTransitions.RemoveAll(room => room == null);
+            //     // }
+            // }
             
             if (_initialCheckpoint == null)
             {

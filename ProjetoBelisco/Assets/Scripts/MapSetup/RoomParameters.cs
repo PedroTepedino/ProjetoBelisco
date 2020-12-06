@@ -43,12 +43,14 @@ namespace Belisco
 #if UNITY_EDITOR
     public static class RoomManagerFactory
     {
-        public static void CreateRoomParameter(string name)
+        public static RoomParameters CreateRoomParameter(string name)
         {
             RoomParameters asset = ScriptableObject.CreateInstance<RoomParameters>();
             
             AssetDatabase.CreateAsset(asset, $"Assets/ParametersObjects/MAPS/ROOM_MANAGER_{name}.asset");
             AssetDatabase.SaveAssets();
+
+            return asset;
         }
     }
 #endif

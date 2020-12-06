@@ -216,7 +216,8 @@ namespace Belisco
             var roomManager = PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/GameplaySetup/[RoomManager].prefab")) as GameObject;
             roomManager.transform.position = new Vector3(0,0,0);
 
-            RoomManagerFactory.CreateRoomParameter(sceneName);
+            var parametersAux = RoomManagerFactory.CreateRoomParameter(sceneName);
+            
         }
 
         private static string GetScenePath(string biome)
