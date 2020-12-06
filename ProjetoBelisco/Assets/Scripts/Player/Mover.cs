@@ -140,4 +140,32 @@ namespace Belisco
         {
         }
     }
+
+    public class ForceMover : IMover
+    {
+        private readonly Player _player;
+        private Rigidbody2D _rigidbody;
+        private readonly float _minVelocity;
+        private readonly float _baseDrag;
+
+        public ForceMover(Player player, Vector3 force)
+        {
+            _player = player;
+            _rigidbody = _player.Rigidbody;
+            _minVelocity = _player.PlayerParameters.MinPushVelocity;
+            _baseDrag = _player.PlayerParameters.BaseDrag;
+
+            _rigidbody.AddForce(force, ForceMode2D.Impulse);
+            _rigidbody.drag = _player.PlayerParameters.KnockBackDrag;
+        }
+        
+        public void Tick()
+        {
+            if (_rigidbody.velocity.magnitude <= _minVelocity)
+            {
+                _rigidbody.drag = _baseDrag;
+                _player.ReturnToBaseMover();
+            }
+        }
+    }
 }

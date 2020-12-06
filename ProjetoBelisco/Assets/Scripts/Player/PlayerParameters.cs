@@ -6,17 +6,15 @@ namespace Belisco
     [CreateAssetMenu(menuName = "Player Parameters")]
     public class PlayerParameters : ScriptableObject
     {
-        [BoxGroup("Life System")] [SerializeField]
-        private int _maxHealth = 10;
+        [BoxGroup("Life System")] [SerializeField] private int _maxHealth = 10;
+        [BoxGroup("Life System")] [SerializeField] private float _invincibilityTime = 1f;
 
-        [BoxGroup("Life System")] [SerializeField]
-        private float _invincibilityTime = 1f;
-
-        [BoxGroup("Movement")] [SerializeField]
-        private float _movementSpeed = 5f;
-
-        [BoxGroup("Movement")] [SerializeField]
-        private float _walkAcceleration = 5.5f;
+        [BoxGroup("Movement")] [SerializeField] private float _movementSpeed = 5f;
+        [BoxGroup("Movement")] [SerializeField] private float _walkAcceleration = 5.5f;
+        [BoxGroup("Movement")] [SerializeField] private float _baseDrag = 1f;
+        [BoxGroup("Movement")] [SerializeField] private float _minPushVelocity = 4.5f;
+        [BoxGroup("Movement")] [SerializeField] private float _knockBackForce = 10f;
+        [BoxGroup("Movement")] [SerializeField] private float _knockBackDrag = 5f;
 
         [BoxGroup("Dash")] [SerializeField] private float _dashVelocity = 10f;
         [BoxGroup("Dash")] [SerializeField] private float _dashMaxTimer = 0.5f;
@@ -167,6 +165,14 @@ namespace Belisco
         public float PermitedArialTime => _permitedArialTime;
 
         public float InvincibilityTime => _invincibilityTime;
+
+        public float MinPushVelocity => _minPushVelocity;
+
+        public float KnockBackForce => _knockBackForce;
+
+        public float BaseDrag => _baseDrag;
+
+        public float KnockBackDrag => _knockBackDrag;
 
         private Vector2 GetLeftAttackCenter(Vector2 center)
         {
