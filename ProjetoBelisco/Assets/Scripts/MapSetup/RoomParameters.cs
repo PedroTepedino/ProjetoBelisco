@@ -23,7 +23,7 @@ namespace Belisco
         {
             if (SceneManager.GetSceneByName(_thisSceneAsset.name).isLoaded) return null;
 
-            return SceneManager.LoadSceneAsync(_thisScenePath, LoadSceneMode.Additive);
+            return SceneManager.LoadSceneAsync(_thisSceneAsset.name, LoadSceneMode.Additive);
         }
         
 
