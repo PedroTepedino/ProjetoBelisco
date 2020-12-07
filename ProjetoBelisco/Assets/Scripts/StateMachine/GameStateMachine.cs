@@ -7,7 +7,10 @@ namespace Belisco
 {
     public class GameStateMachine : MonoBehaviour
     {
+        #if UNITY_EDITOR
         [SerializeField] private bool _testingOptions = false;
+        #endif
+        
         private static GameStateMachine _instance;
 
         private StateMachine _stateMachine;
@@ -34,6 +37,7 @@ namespace Belisco
             Quit quit = new Quit();
             WinState win = new WinState();
 
+        #if UNITY_EDITOR
             if (!_testingOptions)
             {
                 _stateMachine.SetState(menu);
@@ -42,6 +46,9 @@ namespace Belisco
             {
                 _stateMachine.SetState(play);
             }
+        #else
+            _stateMachine.SetState(menu);
+        #endif
 
             _stateMachine.AddTransition(menu, loading, () => LoadLevel.LevelToLoad != null);
 
