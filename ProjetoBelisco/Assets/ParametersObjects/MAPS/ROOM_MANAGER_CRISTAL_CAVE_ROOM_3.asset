@@ -16,4 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 328f8a68e21d78045ae5074cff3dd215, type: 2}
   - {fileID: 11400000, guid: c6b72a969ce7e5a449d5a896b61b2662, type: 2}
   - {fileID: 11400000, guid: 6c6cea2eb0da0b548925e3a86368b3b1, type: 2}
-  _thisSceneAsset: {fileID: 102900000, guid: 0842df8f8b8340a478ec38f7ad2e6ced, type: 3}
+  _thisSceneName: CRISTAL_CAVE_ROOM_3
+  _thisScenePath: 

@@ -18,7 +18,7 @@ namespace Belisco
         {
             if (Player.CurrentRoomManager != null)
             {
-                LoadLevel.LevelToLoad = Player.CurrentRoomManager.RoomParameters.ThisSceneAsset.name;
+                LoadLevel.LevelToLoad = Player.CurrentRoomManager.RoomParameters.ThisSceneName;
             }
         }
     }

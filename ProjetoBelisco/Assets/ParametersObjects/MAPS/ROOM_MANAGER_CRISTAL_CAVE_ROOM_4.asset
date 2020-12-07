@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneConnections:
   - {fileID: 11400000, guid: 108e6f0ad9ddfc146b54ae1e485f9560, type: 2}
-  _thisSceneAsset: {fileID: 102900000, guid: d28514237664d064fa5eefeac914ee75, type: 3}
+  _thisSceneName: CRISTAL_CAVE_ROOM_4
+  _thisScenePath: 

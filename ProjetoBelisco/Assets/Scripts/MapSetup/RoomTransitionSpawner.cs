@@ -22,7 +22,7 @@ namespace Belisco
 
         public void FixName()
         {
-            var roomName = _previousRoom != null ? PreviousRoom.ThisSceneAsset.name : "**NULL_ROOM**";
+            var roomName = _previousRoom != null ? PreviousRoom.ThisSceneName : "**NULL_ROOM**";
             this.name = $"[TRANSITION][{roomName}]->[{this.gameObject.scene.name}]";
         }
     }

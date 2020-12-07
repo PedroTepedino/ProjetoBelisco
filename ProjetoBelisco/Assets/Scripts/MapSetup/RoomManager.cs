@@ -100,8 +100,8 @@ namespace Belisco
             for (int i = 0; i < SceneManager.sceneCount; i++)
             {
                 var scene = SceneManager.GetSceneAt(i);
-                if (_roomParameters.SceneConnections.All(scn => scn.ThisSceneAsset != null && scn.ThisSceneAsset.name != scene.name) 
-                    && scene.name != "MapSetup" && scene.name != "UI" && scene.name != _roomParameters.ThisSceneAsset.name)
+                if (_roomParameters.SceneConnections.All(scn => scn.ThisSceneName != null && scn.ThisSceneName != scene.name) 
+                    && scene.name != "MapSetup" && scene.name != "UI" && scene.name != _roomParameters.ThisSceneName)
                 {
                     operations.Add(SceneManager.UnloadSceneAsync(scene, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects));
                 }
@@ -110,17 +110,19 @@ namespace Belisco
             yield return new WaitUntil(()=>operations.All(op => op.isDone));
         }
 
+        #if UNITY_EDITOR
         private void OnValidate()
         {
             this.name = $"[ROOM_MANAGER_{this.gameObject.scene.name}]";
-
+            
             _roomParameters = AssetDatabase.LoadAssetAtPath<RoomParameters>(
                 $"Assets/ParametersObjects/MAPS/ROOM_MANAGER_{this.gameObject.scene.name}.asset");
 
-            if (_roomParameters != null)
-            {
-                _roomParameters.InitAtPath(this.gameObject.scene.path);
-            }
+            // if (_roomParameters != null)
+            // {
+            //     if (!_roomParameters.IsInitiated())
+            //         _roomParameters.InitAtPath(this.gameObject.scene.path);
+            // }
             
             // if (_roomParameters != null)
             // {
@@ -148,5 +150,6 @@ namespace Belisco
                 }
             }
         }
+        #endif
     }
 }

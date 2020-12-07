@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneConnections:
   - {fileID: 11400000, guid: 3549583500abc024d9fa2b02df6ff889, type: 2}
-  _thisSceneAsset: {fileID: 102900000, guid: cba318102b0e19345af7f6bcadbfe197, type: 3}
+  _thisSceneName: TUTORIAL_ROOM_1
+  _thisScenePath: 
