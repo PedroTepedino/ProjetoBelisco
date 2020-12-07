@@ -2,26 +2,9 @@
 
 namespace Belisco
 {
-    public class GolemTripleAnimation : MonoBehaviour, IAnimationController
+    public class GolemTripleAnimation : EnemyAnimationController
     {
-        private Animator animator;
-        private IEnemyStateMachine controller;
-
-        private IState currentState;
-        private StateMachine stateMachine;
-
-        private void Awake()
-        {
-            animator = GetComponentInChildren<Animator>();
-            controller = GetComponent<IEnemyStateMachine>();
-        }
-
-        private void Start()
-        {
-            stateMachine = controller.stateMachine;
-        }
-
-        private void Update()
+        protected override void Update()
         {
             currentState = stateMachine.CurrentState;
 
@@ -45,19 +28,6 @@ namespace Belisco
                 animator.SetBool("Alert", false);
                 animator.SetBool("Chase", false);
             }
-        }
-
-        public void TriggerAnimationHit()
-        {
-            animator.SetTrigger("Hit");
-        }
-
-        public void Interfacinha()
-        {
-        }
-
-        public void TriggerAnimationAttack()
-        {
         }
     }
 }

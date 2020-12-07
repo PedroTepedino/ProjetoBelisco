@@ -7,7 +7,7 @@ namespace Belisco
         private readonly GrounderEnemy grounder;
         private Vector2 movement;
         private readonly float movingSpeed;
-        private readonly IEnemyStateMachine ownerController;
+        private readonly EnemyStateMachine ownerController;
         private readonly GameObject ownerGameObject;
         private readonly Rigidbody2D ownerRigidbody;
         private Transform target;
@@ -17,7 +17,7 @@ namespace Belisco
         public ChaseState(GameObject owner)
         {
             ownerGameObject = owner;
-            ownerController = owner.GetComponent<IEnemyStateMachine>();
+            ownerController = owner.GetComponent<EnemyStateMachine>();
             ownerRigidbody = ownerGameObject.GetComponent<Rigidbody2D>();
             grounder = ownerGameObject.GetComponent<GrounderEnemy>();
             wallCheck = ownerGameObject.GetComponent<WallChecker>();
@@ -43,8 +43,7 @@ namespace Belisco
         }
 
         public void OnExit()
-        {
-        }
+        { }
 
         private void Move(Vector2 direction)
         {

@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8625607796725553759}
-  - component: {fileID: 2187692884673618219}
   - component: {fileID: 2993860809724134003}
   - component: {fileID: 2395422921958826805}
   - component: {fileID: 9059961775444274833}
@@ -17,6 +16,7 @@ GameObject:
   - component: {fileID: 640654556326733726}
   - component: {fileID: 478754372547255578}
   - component: {fileID: 478754372547255577}
+  - component: {fileID: 3313501368421542588}
   m_Layer: 10
   m_Name: GolemRanged
   m_TagString: Untagged
@@ -39,53 +39,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2187692884673618219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478754372547255591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1af54d0fd437a7947a31869b5bbfbd08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionLayerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  attackRange: 5
-  attackSpeed: 1.5
-  meleeAttack: 0
-  explosionAttack: 0
-  rangedAttack: 1
-  dashAttack: 0
-  shootAndExplosionAttack: 0
-  meleeAtttackChance: 1
-  _meleeAttackCenter: {x: 0, y: 0}
-  meleeAttackRadius: 1
-  meleeAttackDamage: 1
-  explosionAtttackChance: 0
-  _explosionAttackCenter: {x: 0, y: 0}
-  explosionAttackRadius: 1
-  explosionAttackDamage: 1
-  rangedAtttackChance: 1
-  _rangeAttackCenter: {x: 0.9, y: 0}
-  rangeAttackDamage: 1
-  _rangeAttackProjectileTag: EnemyProjectile
-  dashAtttackChance: 0
-  _dashAttackCenter: {x: 0, y: 0}
-  dashAttackRadius: 1
-  dashAttackDamage: 1
-  dashSpeed: 0
-  shootAndExplosionAtttackChance: 0
-  shootAndExplosionAttackExplosionCenter: {x: 0, y: 0}
-  shootAndExplosionAttackExplosionRadius: 1
-  shootAndExplosionAttackExplosionDamage: 1
-  shootAndExplosionAttackRangedCenter: {x: 0, y: 0}
-  shootAndExplosionAttackRangedDamage: 1
-  shootAndExplosionAttackProjectileTag: 
-  isInRange: 0
 --- !u!114 &2993860809724134003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49a20ce0a1abcf14abe10e64e9159840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movingRight: 1
+  alive: 1
   _enemyParameters: {fileID: 11400000, guid: ecfc24d773bde46448fa81f5bc0b961b, type: 2}
 --- !u!114 &478754372547255577
 MonoBehaviour:
@@ -184,6 +139,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e8d42fd8f24b748aac7b990ed841a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3313501368421542588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478754372547255591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af54d0fd437a7947a31869b5bbfbd08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4352
+  attackRange: 5
+  attackSpeed: 2
+  avalibleAttacks:
+  - {fileID: 11400000, guid: 6297f601527655448b9da102bc758cac, type: 2}
+  isInRange: 0
 --- !u!1 &8091859748093661410
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,4 +274,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf72265d113798443b9c5b9a19b1d7d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attack: {fileID: 2187692884673618219}
+  attack: {fileID: 0}
