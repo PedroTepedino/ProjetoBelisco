@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.Remoting;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Belisco
 {
@@ -11,6 +9,7 @@ namespace Belisco
         [SerializeField] private float _delay = 1f;
         private float _timer = 0;
         private bool _setOff = false;
+        [SerializeField] private int _damage = 5;
 
         private void OnEnable()
         {
@@ -57,7 +56,7 @@ namespace Belisco
             {
                 if (objectsArray[i].gameObject.CompareTag("Player"))
                 {
-                    objectsArray[i].GetComponent<Player>().PushPlayer((objectsArray[i].transform.position - this.transform.position).normalized * _force);
+                    objectsArray[i].GetComponent<Player>().PushPlayer(((objectsArray[i].transform.position - this.transform.position ).normalized + Vector3.up).normalized * _force);
                 }
                 else
                 {
@@ -67,6 +66,8 @@ namespace Belisco
                         rigid.AddForce((rigid.transform.position - this.transform.position).normalized * _force);
                     }
                 }
+
+                objectsArray[i].GetComponent<IHittable>()?.Hit(_damage);
             }
 
             this.gameObject.SetActive(false);

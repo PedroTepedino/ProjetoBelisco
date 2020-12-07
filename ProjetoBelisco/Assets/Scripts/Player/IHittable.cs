@@ -4,6 +4,6 @@ namespace Belisco
 {
     public interface IHittable
     {
-        void Hit(int damage, Transform attacker);
+        void Hit(int damage, Transform attacker = null);
     }
 }
