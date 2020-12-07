@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -29733,7 +29733,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -30268,9 +30268,8 @@ Tilemap:
   - m_RefCount: 92
     m_Data: {fileID: 7564294147097065331, guid: fe4e4bcb94abbdb4a99dc90cd8de4f53,
       type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -7039107408322840425, guid: fe4e4bcb94abbdb4a99dc90cd8de4f53,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 17
     m_Data: {fileID: -4928554951907451874, guid: fe4e4bcb94abbdb4a99dc90cd8de4f53,
       type: 3}
@@ -30283,8 +30282,9 @@ Tilemap:
   - m_RefCount: 5
     m_Data: {fileID: -8686690511601841950, guid: fe4e4bcb94abbdb4a99dc90cd8de4f53,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -7039107408322840425, guid: fe4e4bcb94abbdb4a99dc90cd8de4f53,
+      type: 3}
   - m_RefCount: 9
     m_Data: {fileID: -2554788071611531096, guid: fe4e4bcb94abbdb4a99dc90cd8de4f53,
       type: 3}
@@ -30632,7 +30632,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -989486243
   m_SortingLayer: -2
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 5b0896357c029ee4aba41f0f7d5d1324, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
