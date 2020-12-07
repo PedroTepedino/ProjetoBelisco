@@ -16,6 +16,7 @@ namespace Belisco
 
         private void ListenOnPlayerDeath()
         {
+            Debug.Log(Player.CurrentRoomManager);
             if (Player.CurrentRoomManager != null)
             {
                 LoadLevel.LevelToLoad = Player.CurrentRoomManager.RoomParameters.ThisSceneAsset.name;

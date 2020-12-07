@@ -18,8 +18,41 @@ EditorBuildSettings:
     path: Assets/Scenes/UI/Menu.unity
     guid: f9222ec8f0cec2a4385d67de82c48c50
   - enabled: 1
+    path: Assets/Scenes/GamePlay/BossRoom.unity
+    guid: 3f135ece52f9e0044b6d793024564200
+  - enabled: 1
+    path: Assets/Scenes/GamePlay/Room01.unity
+    guid: 011a50ca5e9825b4bb4e0ad5e02f430a
+  - enabled: 1
+    path: Assets/Scenes/GamePlay/Room02.unity
+    guid: 6a5c32f8d58d0b04893beab8dd22f388
+  - enabled: 1
+    path: Assets/Scenes/GamePlay/Room03.unity
+    guid: 2f888619cd941164d8194b1df21f8629
+  - enabled: 1
+    path: Assets/Scenes/GamePlay/Tutorial.unity
+    guid: 25368d71308f97245afae62a4ec34208
+  - enabled: 1
     path: Assets/Scenes/GamplaySetup/MapSetup.unity
     guid: de3d1c9b849e7db4d88d87df7bf2af97
+  - enabled: 1
+    path: Assets/Scenes/Maps/TESTESTEPE/TESTESTEPE_ROOM_1.unity
+    guid: 85a868ab395c4e94695bda9d20622190
+  - enabled: 1
+    path: Assets/Scenes/Maps/TESTESTEPE/TESTESTEPE_ROOM_2.unity
+    guid: 2706f3ba29922eb42a724f2ea5071e82
+  - enabled: 1
+    path: Assets/Scenes/Maps/TESTESTEPE/TESTESTEPE_ROOM_3.unity
+    guid: 66ad92639f8a96d4a85b2f3e39877fc4
+  - enabled: 1
+    path: Assets/Scenes/Maps/TESTESTEPE/TESTESTEPE_ROOM_4.unity
+    guid: 8f68a3b3f0840b5429bcd4ab6a94e4c3
+  - enabled: 1
+    path: Assets/Scenes/Maps/TESTESTEPE/TESTESTEPE_ROOM_5.unity
+    guid: b6d5f348fa803af4b88b8381825d6d39
+  - enabled: 1
+    path: Assets/Scenes/Maps/TESTESTEPE/TESTESTEPE_ROOM_6.unity
+    guid: 39f6942b48e8e314fa1cbb6fa153b71b
   - enabled: 1
     path: Assets/Scenes/Maps/TUTORIAL/TUTORIAL_ROOM_1.unity
     guid: cba318102b0e19345af7f6bcadbfe197

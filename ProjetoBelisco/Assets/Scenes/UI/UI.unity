@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -769,7 +769,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 87.975006, y: -48.59375}
+  m_AnchoredPosition: {x: 87.975006, y: -48.6}
   m_SizeDelta: {x: 54.65, y: 97.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &439801907
@@ -1664,7 +1664,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 148.625, y: -48.59375}
+  m_AnchoredPosition: {x: 148.625, y: -48.6}
   m_SizeDelta: {x: 54.65, y: 97.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &931006160
@@ -2408,7 +2408,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 27.325, y: -48.59375}
+  m_AnchoredPosition: {x: 27.325, y: -48.6}
   m_SizeDelta: {x: 54.65, y: 97.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1785979363
@@ -3035,18 +3035,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4931765219974923762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4931765219974923760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45b3fbd28f3f4aa4fbf67b7ca0b2c0a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &4931765219974923763
