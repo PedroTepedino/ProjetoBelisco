@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: golemTripleOverrideAnimator
+  m_Controller: {fileID: 9100000, guid: 3931adeae7c582046a5328e7313ea7b8, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: bd04f3618fc266842b021de5855a20b9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b42095a797ee92347bd6ca25ad48c8c2, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 419dfefb6a066ea418d151cca163f263, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e6250a97e22b21844b14804bbae7f431, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 751d52c2a39004940a13daaed491ffac, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 873296c717ab9d846946bb07c241e9c7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c4150fcdcc8cb554f973c785985905de, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: cb1673ce646ff82429b290d675076516, type: 2}

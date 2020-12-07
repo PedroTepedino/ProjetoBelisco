@@ -171,38 +171,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4352
   attackRange: 1
   attackSpeed: 1
-  meleeAttack: 0
-  explosionAttack: 0
-  rangedAttack: 0
-  dashAttack: 0
-  shootAndExplosionAttack: 0
-  meleeAtttackChance: 1
-  _meleeAttackCenter: {x: 0, y: 0}
-  meleeAttackRadius: 1
-  meleeAttackDamage: 1
-  explosionAtttackChance: 0
-  _explosionAttackCenter: {x: 0, y: 0}
-  explosionAttackRadius: 1
-  explosionAttackDamage: 1
-  rangedAtttackChance: 1
-  _rangeAttackCenter: {x: 0, y: 0}
-  rangeAttackDamage: 1
-  _rangeAttackProjectileTag: 
-  dashAtttackChance: 0
-  _dashAttackCenter: {x: 0, y: 0}
-  dashAttackRadius: 1
-  dashAttackDamage: 1
-  dashSpeed: 0
-  shootAndExplosionAtttackChance: 0
-  shootAndExplosionAttackExplosionCenter: {x: 0, y: 0}
-  shootAndExplosionAttackExplosionRadius: 1
-  shootAndExplosionAttackExplosionDamage: 1
-  shootAndExplosionAttackRangedCenter: {x: 0, y: 0}
-  shootAndExplosionAttackRangedDamage: 1
-  shootAndExplosionAttackProjectileTag: 
+  avalibleAttacks: []
   isInRange: 0
 --- !u!114 &4811434388575257801
 MonoBehaviour:
@@ -289,6 +261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad78e475263044c4d94745103a6ad678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movingRight: 1
+  alive: 1
   _enemyParameters: {fileID: 11400000, guid: 2a0b8a02300ce7f40af7b63be04df3ae, type: 2}
 --- !u!58 &7921007172965276572
 CircleCollider2D:

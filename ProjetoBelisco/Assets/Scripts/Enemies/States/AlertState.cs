@@ -5,7 +5,7 @@ namespace Belisco
     public class AlertState : IState
     {
         private float alertAnimationTime;
-        private readonly IEnemyStateMachine ownerController;
+        private readonly EnemyStateMachine ownerController;
 
         private GameObject ownerGameObject;
         private Transform target;
@@ -14,7 +14,7 @@ namespace Belisco
         public AlertState(GameObject owner)
         {
             ownerGameObject = owner;
-            ownerController = owner.GetComponent<IEnemyStateMachine>();
+            ownerController = owner.GetComponent<EnemyStateMachine>();
         }
 
         public void OnEnter()
@@ -24,8 +24,7 @@ namespace Belisco
         }
 
         public void OnExit()
-        {
-        }
+        { }
 
         public void Tick()
         {
