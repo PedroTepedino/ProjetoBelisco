@@ -15,4 +15,5 @@ MonoBehaviour:
   _sceneConnections:
   - {fileID: 11400000, guid: 1d1a170c0ba714a4bb03f6ae00afed33, type: 2}
   - {fileID: 11400000, guid: 0a1d7d51ae794ff42b09736c7089baa4, type: 2}
-  _thisSceneAsset: {fileID: 102900000, guid: bfefe079a0029814e8d925c06f99fc66, type: 3}
+  _thisSceneName: CRISTAL_CAVE_ROOM_13
+  _thisScenePath: 

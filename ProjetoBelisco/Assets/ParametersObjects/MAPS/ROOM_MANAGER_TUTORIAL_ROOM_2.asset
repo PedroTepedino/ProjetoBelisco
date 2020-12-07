@@ -15,4 +15,5 @@ MonoBehaviour:
   _sceneConnections:
   - {fileID: 11400000, guid: c40ba3049415c0d4c81523d4a8ad7fad, type: 2}
   - {fileID: 11400000, guid: e40aea7b576e69e4e8599fdcc8b2e6fd, type: 2}
-  _thisSceneAsset: {fileID: 102900000, guid: fa744235249c4364aabb0a111de3c11a, type: 3}
+  _thisSceneName: TUTORIAL_ROOM_2
+  _thisScenePath: 

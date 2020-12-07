@@ -8,46 +8,57 @@ namespace Belisco
     [CreateAssetMenu(menuName = "Room Parameter", fileName = "NewRoomParameter")]
     public class RoomParameters : ScriptableObject
     {
-        [SerializeField] [AssetSelector] [AssetsOnly] private RoomParameters[] _sceneConnections;
+        [SerializeField] [AssetSelector] [AssetsOnly]
+        private RoomParameters[] _sceneConnections;
 
-        [SerializeField] private SceneAsset _thisSceneAsset;
+        [SerializeField] private string _thisSceneName;
         [SerializeField] private string _thisScenePath;
 
-        public SceneAsset ThisSceneAsset => _thisSceneAsset;
+        public string ThisSceneName => _thisSceneName;
+
         public string ThisScenePath => _thisScenePath;
 
         public RoomParameters[] SceneConnections => _sceneConnections;
-        
+
 
         public AsyncOperation TryLoadScene()
         {
-            if (SceneManager.GetSceneByName(_thisSceneAsset.name).isLoaded) return null;
+            if (SceneManager.GetSceneByName(_thisSceneName).isLoaded) return null;
 
-            return SceneManager.LoadSceneAsync(_thisSceneAsset.name, LoadSceneMode.Additive);
+            Debug.Log(_thisSceneName + " " + this.name);
+
+            return SceneManager.LoadSceneAsync(_thisSceneName, LoadSceneMode.Additive);
         }
-        
+
 
         public void UnloadScene()
         {
-            var scene = SceneManager.GetSceneByName(ThisSceneAsset.name);
+            var scene = SceneManager.GetSceneByName(ThisSceneName);
             if (scene.isLoaded)
             {
                 SceneManager.UnloadSceneAsync(scene, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
             }
         }
 
+#if UNITY_EDITOR
         private void Init(SceneAsset scene)
         {
-            _thisSceneAsset = scene;
+            _thisSceneName = scene.name;
         }
+
 
         public void InitAtPath(string scenePath)
         {
             Init(AssetDatabase.LoadAssetAtPath<SceneAsset>(scenePath));
             _thisScenePath = scenePath;
         }
+
+        public bool IsInitiated()
+        {
+            return _thisScenePath != null && _thisSceneName != null;
+        }
+#endif
     }
-    
 #if UNITY_EDITOR
     public static class RoomManagerFactory
     {

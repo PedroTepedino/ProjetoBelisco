@@ -9,17 +9,30 @@ namespace Belisco
 
         private void Awake()
         {
-            dashParticleSystem = particlesGameObj.GetComponentsInChildren<ParticleSystem>();
+            if (dashParticleSystem != null)
+            {
+                dashParticleSystem = particlesGameObj.GetComponentsInChildren<ParticleSystem>();
+            }
+            else
+            {
+                dashParticleSystem = null;
+            }
         }
 
         public void EmitDashParticle()
         {
-            for (var i = 0; i < dashParticleSystem.Length; i++) dashParticleSystem[i].Play();
+            if (dashParticleSystem == null) return;
+            
+            for (var i = 0; i < dashParticleSystem.Length; i++) 
+                dashParticleSystem[i]?.Play();
         }
 
         public void StopDashParticles()
         {
-            for (var i = 0; i < dashParticleSystem.Length; i++) dashParticleSystem[i].Stop();
+            if (dashParticleSystem == null) return;
+            
+            for (var i = 0; i < dashParticleSystem.Length; i++) 
+                dashParticleSystem[i]?.Stop();
         }
     }
 }
