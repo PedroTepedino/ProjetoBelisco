@@ -17795,6 +17795,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[ROOM_MANAGER_CRISTAL_CAVE_ROOM_4]'
       objectReference: {fileID: 0}
+    - target: {fileID: 4926173518309870864, guid: 81562a6a9c4990641b1611a99cbff31b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.53
+      objectReference: {fileID: 0}
     - target: {fileID: 6028087447563933072, guid: 81562a6a9c4990641b1611a99cbff31b,
         type: 3}
       propertyPath: m_Name
