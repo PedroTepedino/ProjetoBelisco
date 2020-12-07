@@ -51,7 +51,7 @@ namespace Belisco
         {
             StateTransition transition = CheckForTransition();
 
-            if (transition != null) SetState(transition.To);
+            if (transition != null)SetState(transition.To);
 
             CurrentState.Tick();
         }

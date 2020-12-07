@@ -7,7 +7,7 @@ namespace Belisco
         private Vector2 checkerCenter;
 
         private float checkerDistance;
-        private IEnemyStateMachine controller;
+        private EnemyStateMachine controller;
 
         private Vector2 wallCheckerCenter = Vector2.zero;
         private LayerMask wallLayerMask;
@@ -16,7 +16,11 @@ namespace Belisco
 
         private void Awake()
         {
-            controller = GetComponent<IEnemyStateMachine>();
+            controller = GetComponent<EnemyStateMachine>();
+        }
+
+        private void Start()
+        {
             checkerDistance = controller.EnemyParameters.WallCheckerDistance;
             wallLayerMask = controller.EnemyParameters.WallCheckerLayerMask;
             wallCheckerCenter = controller.EnemyParameters.WallCheckerCenter;
@@ -47,8 +51,8 @@ namespace Belisco
         {
             RaycastHit2D raycastHit2D;
             checkerCenter = transform.position +
-                            new Vector3(controller.movingRight ? wallCheckerCenter.x : -wallCheckerCenter.x,
-                                wallCheckerCenter.y, 0);
+                new Vector3(controller.movingRight ? wallCheckerCenter.x : -wallCheckerCenter.x,
+                    wallCheckerCenter.y, 0);
             raycastHit2D = Physics2D.Raycast(checkerCenter, controller.movingRight ? Vector2.right : Vector2.left,
                 checkerDistance, wallLayerMask);
             wallAhead = raycastHit2D.collider != null ? true : false;

@@ -6,29 +6,34 @@ namespace Belisco
     {
         [SerializeField] private Attack attack;
 
-        public void MeleeAttack()
+        public void AttackFinished()
         {
-            attack.ListenAttackFinished(0);
+            attack.ListenAttackFinished();
         }
 
-        public void ExplosionAttack()
-        {
-            attack.ListenAttackFinished(1);
-        }
+        // public void MeleeAttack()
+        // {
+        //     attack.ListenAttackFinished(0);
+        // }
 
-        public void RangedAttack()
-        {
-            attack.ListenAttackFinished(2);
-        }
+        // public void ExplosionAttack()
+        // {
+        //     attack.ListenAttackFinished(1);
+        // }
 
-        public void DashAttack()
-        {
-            attack.ListenAttackFinished(3);
-        }
+        // public void RangedAttack()
+        // {
+        //     attack.ListenAttackFinished(2);
+        // }
 
-        public void ShootAndExplosion()
-        {
-            attack.ListenAttackFinished(4);
-        }
+        // public void DashAttack()
+        // {
+        //     attack.ListenAttackFinished(3);
+        // }
+
+        // public void ShootAndExplosion()
+        // {
+        //     attack.ListenAttackFinished(4);
+        // }
     }
 }
