@@ -32,25 +32,23 @@ namespace Belisco
             bossZoneCornerA = controller.EnemyParameters.BossZoneCornerA;
             bossZoneCornerB = controller.EnemyParameters.BossZoneCornerB;
             targetingLayerMask = controller.EnemyParameters.TargetingLayerMask;
-            // if (bossEnemy){
-            //     hasTarget = true;
-            //     target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-            // }
         }
 
         private void Update()
         {
-            // if (!bossEnemy)
-            // {
             hasTarget = TargetingAction();
-            // }
-            // else if(target == null)
-            // {
-            //     hasTarget = true;
-            //     target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-            // }
+
             if (hasTarget)
-                attack.isInRange = !(Vector2.Distance(transform.position, target.position) > attack.attackRange);
+            {
+                if (bossEnemy)
+                {
+                    attack.isInRange = true;
+                }
+                else
+                {
+                    attack.isInRange = !(Vector2.Distance(transform.position, target.position) > attack.attackRange);
+                }
+            }
         }
 
         protected void OnDrawGizmos()

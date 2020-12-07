@@ -37,7 +37,7 @@ namespace Belisco
         protected void Damage(int value, Collider2D hit)
         {
             IHittable hitable = hit.gameObject.GetComponent<IHittable>();
-            if (hitable != null)hitable.Hit(value);
+            if (hitable != null)hitable.Hit(value, ownerTransform);
         }
     }
 }

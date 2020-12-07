@@ -33,7 +33,7 @@ namespace Belisco
             stateMachine.Tick();
         }
 
-        public virtual void Hit(int damage)
+        public virtual void Hit(int damage, Transform attacker)
         {
             if (healthPoints <= 0)
             {
@@ -51,7 +51,7 @@ namespace Belisco
             Player player = hit.gameObject.GetComponent<Player>();
             if (player != null)
             {
-                player.Hit(1);
+                player.Hit(1, this.transform);
                 enemyRigidbody.velocity = Vector2.zero;
             }
         }
