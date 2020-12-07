@@ -65,6 +65,7 @@ namespace Belisco
             SetFloat("HorizontalVelocity", Mathf.Abs(horizontalVelocity));
             SetFloat("VerticalVelocity", _rigidbody.velocity.y);
             SetBool("TouchingGround", touchingGround);
+            SetBool("IsAttacking", _player.IsAttacking);
         }
 
         private void SetFloat(string floatName, float value)

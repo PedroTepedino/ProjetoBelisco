@@ -158,7 +158,18 @@ namespace Belisco
             _rigidbody.AddForce(force, ForceMode2D.Impulse);
             _rigidbody.drag = _player.PlayerParameters.KnockBackDrag;
         }
-        
+
+        public ForceMover(Player player, Vector3 force, float customDrag)
+        {
+            _player = player;
+            _rigidbody = _player.Rigidbody;
+            _minVelocity = _player.PlayerParameters.MinPushVelocity;
+            _baseDrag = _player.PlayerParameters.BaseDrag;
+
+            _rigidbody.AddForce(force, ForceMode2D.Impulse);
+            _rigidbody.drag = customDrag;
+        }
+
         public void Tick()
         {
             if (_rigidbody.velocity.magnitude <= _minVelocity)

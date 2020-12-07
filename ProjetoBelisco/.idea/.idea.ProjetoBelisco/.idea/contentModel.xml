@@ -396,6 +396,7 @@
             <e p="Arrow.cs" t="Include" />
             <e p="ArrowShooter.cs" t="Include" />
             <e p="BreakableWall.cs" t="Include" />
+            <e p="ExplodingCristal.cs" t="Include" />
             <e p="FallingGround.cs" t="Include" />
             <e p="FallingPlatform.cs" t="Include" />
             <e p="HelperFunctions.cs" t="Include" />

@@ -65,6 +65,7 @@ namespace Belisco
         private Coroutine _invincibilityCoroutine = null;
 
         public Rigidbody2D Rigidbody { get; private set; }
+        public bool IsAttacking => _attacking;
 
         private void Awake()
         {
@@ -170,6 +171,11 @@ namespace Belisco
         {
             _mover = new ForceMover(this, force);
         }
+
+        public void PushPlayer(Vector3 force, float drag)
+        {
+            _mover = new ForceMover(this, force, drag);
+        }
         
         public void ReturnToBaseMover()
         {
@@ -236,13 +242,13 @@ namespace Belisco
         public void StartAttack()
         {
             _attacking = true;
-            _playerLocker.LockPlayer();
+            //_playerLocker.LockPlayer();
         }
 
         public void EndAttack()
         {
             _attacking = false;
-            _playerLocker.UnlockPlayer();
+            //_playerLocker.UnlockPlayer();
             AttackerTimer.ResetTimer();
         }
 
