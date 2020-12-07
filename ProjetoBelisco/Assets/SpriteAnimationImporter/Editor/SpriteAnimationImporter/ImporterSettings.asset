@@ -675,3 +675,41 @@ MonoBehaviour:
       sampleRate: 60
       loop: 1
       generateClip: 1
+  - spritesheetPath: Assets/Arts/Interactables/TiroCristalSimple.png
+    animationInfo: Assets/Arts/Interactables/TiroCristalSimple.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.5, y: 0.5}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 1
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 0
+    clipSaveDirectory: 
+    animSettings:
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+  - spritesheetPath: Assets/Arts/Interactables/TiroCristalLightmap.png
+    animationInfo: Assets/Arts/Interactables/TiroCristalLightmap.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.5, y: 0.5}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 1
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 0
+    clipSaveDirectory: 
+    animSettings:
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
