@@ -1,7 +1,6 @@
-﻿using GameScripts.LivingBeingSystems;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace GameScripts.Environment
+namespace Belisco
 {
     [RequireComponent(typeof(Collider2D))]
     public class VoidHole : MonoBehaviour
@@ -19,16 +18,9 @@ namespace GameScripts.Environment
         private void Kill(Collider2D collision)
         {
             if (!collision.gameObject.activeInHierarchy) return;
-        
-            BaseLifeSystem lifeSystem = collision.gameObject.GetComponentInChildren<BaseLifeSystem>();
 
-            if (lifeSystem != null)
-            {
-                if (lifeSystem.CurentHealth > 0)
-                {
-                    lifeSystem.Damage(lifeSystem.CurentHealth);
-                }
-            }
+            Player player = collision.gameObject.GetComponent<Player>();
+            if (player) player.Hit(10000, this.transform);
         }
     }
 }

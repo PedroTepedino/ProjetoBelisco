@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 
-namespace GameScripts.Environment
+namespace Belisco
 {
     [RequireComponent(typeof(Collider2D))]
     public class Checkpoint : PlayerRespawner
     {
-        private bool _hasBeenChecked = false;
+        private bool _hasBeenChecked;
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (_hasBeenChecked) return;
-        
-            base.SetToCurrentRespawner();
+
+            SetToCurrentRespawner();
             _hasBeenChecked = true;
         }
     }

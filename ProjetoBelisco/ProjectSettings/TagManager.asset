@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Slime
+  - MovingGround
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - Collectables
   - Courpses
   - Projectiles
-  - 
+  - PlayerInteractables
   - 
   - 
   - 

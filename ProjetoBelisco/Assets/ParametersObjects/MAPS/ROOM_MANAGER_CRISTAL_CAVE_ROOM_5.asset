@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d1b6086ff2940399140e557643791bc, type: 3}
+  m_Name: ROOM_MANAGER_CRISTAL_CAVE_ROOM_5
+  m_EditorClassIdentifier: 
+  _sceneConnections:
+  - {fileID: 11400000, guid: 108e6f0ad9ddfc146b54ae1e485f9560, type: 2}
+  - {fileID: 11400000, guid: 8d81eb5bc7d578045832634872ef22a4, type: 2}
+  _thisSceneName: CRISTAL_CAVE_ROOM_5
+  _thisScenePath: 

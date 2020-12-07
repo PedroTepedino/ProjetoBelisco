@@ -1,134 +1,84 @@
-﻿using Sirenix.OdinInspector;
+﻿using System.Collections;
 using UnityEngine;
 
-/* Class: PlayerGrounder
- *  Manages if the player is touching the ground or not
- *  
- * About: GroundCheck
- *  Sends a Signal and have a Propertie to indicate if the player is touching the ground or not.
- */
-namespace GameScripts.Player
+namespace Belisco
 {
-    public class Grounder : MonoBehaviour
+    public class Grounder
     {
-        /* Variables: 
-     * _grounderCenter - Vector3 that describes the Center of the Grounder Check, relative to the center of the player
-     * _grounderSizes - Vector2 that describes the Sizes of the grounder Box.
-     * _grounderLayerMask - Layers that the grounder can interact, aka the ground.
-     */
-        [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _grounderCenter = Vector3.zero;
-        [FoldoutGroup("Parameters")] [SerializeField] private Vector2 _grounderSizes;
-        [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask _grounderLayerMask;
-        [FoldoutGroup("Parameters")] [SerializeField] private float _permitedArialTime = 0.005f;
+        private readonly Vector3 _grounderPosition;
+        private readonly Vector2 _grounderSizes;
+        private readonly LayerMask _layerMask;
 
-        /* Variable: OnGrounded
-     * Signal that sends info to the subscribed functions. 
-     */
-        public System.Action<bool> OnGrounded;
-        public static System.Action OnTouchGround;
+        private readonly Vector3 _nearGroundPosition;
+        private readonly Vector2 _nearGroundSizes;
+        private readonly Player _player;
+        private readonly Collider2D _playerCollider;
+        private readonly Transform _playerTransform;
+        private readonly Rigidbody2D _rigidbody;
 
-        /* Variables: Properties
-     * IsGrounded - Propertie, that returns if the player is grounded or not.
-     * ArialTime - Propertie that stores the time is seconds, that the player is not grounded.
-     */
-        public static bool IsGrounded { get; private set; } = false;
-        public static float TotalArialTime { get; private set; } = 0f;
-        public static bool IsTouchingGround { get; private set; } = false;
-        public static bool IsWithinPermitedArialTime { get; private set; } = false;
+        private Coroutine _coyoteRoutine = null;
 
-        private void Awake()
+        private float _permitedArialTime;
+        private bool _isGrounded;
+
+        public Grounder(Player player)
         {
-            Life.OnPlayerSpawn += ResetParameters;
+            _layerMask = player.PlayerParameters.GrounderLayerMask;
+            _playerTransform = player.transform;
+            _grounderPosition = player.PlayerParameters.GrounderPosition;
+            _grounderSizes = player.PlayerParameters.GrounderSizes;
+
+            _playerCollider = player.GetComponent<Collider2D>();
+
+            _nearGroundPosition = player.PlayerParameters.NearGroundGrounderPosition;
+            _nearGroundSizes = player.PlayerParameters.NearGroundGrounderSizes;
+
+            _permitedArialTime = player.PlayerParameters.PermitedArialTime;
+
+            _rigidbody = player.GetComponent<Rigidbody2D>();
+
+            _player = player;
         }
 
-        private void OnDestroy()
+        public bool IsGrounded => _isGrounded;
+
+        public bool NearGround { get; private set; }
+
+        public bool CoyoteGround { get; private set; }
+
+        public void Tick()
         {
-            Life.OnPlayerSpawn -= ResetParameters;
-        }
+            _permitedArialTime = _player.PlayerParameters.PermitedArialTime;
+            var lastFrameGround = IsGrounded;
 
+            UpdateGroundedValues();
 
-        /* Function: Update
-     * Unity update function, runs every frame, verifing if the player is touching the ground or not.
-     */
-        private void Update()
-        {
-            bool lastFrameIsTouchingGround = IsTouchingGround;
-            IsTouchingGround = GroundCheck();
-            JustTouchGround(lastFrameIsTouchingGround, IsTouchingGround);
-
-            ArialTimeCalculation();
-            IsGroundedVerification();
-        }
-
-        private void ResetParameters(GameObject obj)
-        {
-            IsGrounded = false;
-            TotalArialTime = 0f;
-            IsTouchingGround = false;
-            IsWithinPermitedArialTime = false;
-        }
-
-        /* Function: IsGroundedVerification
-     * Calls the logic of the Ground check every frame.
-     */
-        private void IsGroundedVerification()
-        {
-            IsWithinPermitedArialTime = ArialTimeCheck();
-
-            if ((IsTouchingGround || IsWithinPermitedArialTime) == IsGrounded) return;
-        
-            IsGrounded = IsTouchingGround;
-            OnGrounded?.Invoke(IsGrounded);
-        }
-
-        /* Function: ArialTimeCalculation
-     * Calculates the Arial Time of the player every Frame.
-     */
-        private void ArialTimeCalculation()
-        {
-            if (IsTouchingGround)
+            if (lastFrameGround && !IsGrounded) _coyoteRoutine = _player.StartCoroutine(ArialTimeCounter());
+            
+            if ((_coyoteRoutine != null || CoyoteGround) && IsGrounded)
             {
-                TotalArialTime = 0f;
-            }
-            else
-            {
-                TotalArialTime += Time.deltaTime;
+                CoyoteGround = false;
+                _player.StopCoroutine(_coyoteRoutine);
+                _coyoteRoutine = null;
             }
         }
 
-        /* Function: GroundCheck
-     *  Checks if the player is touching the ground or not.
-     * Returns:
-     *  True if the player is touching the ground.
-     */
-        private bool GroundCheck()
+        private void UpdateGroundedValues()
         {
-            if (PlatformDown.IsFallingThrough) return false;
-
-            return Physics2D.OverlapBox(this.transform.position + _grounderCenter, _grounderSizes, 0f, _grounderLayerMask) != null ? true : false;
+            Vector3 position = _playerTransform.position;
+            _isGrounded = Physics2D.OverlapBox(position + _grounderPosition, _grounderSizes, 0f, _layerMask);
+            NearGround = _rigidbody.velocity.y <= 0f &&
+                         Physics2D.OverlapBox(position + _nearGroundPosition, _nearGroundSizes, 0f, _layerMask);
         }
 
-        private void JustTouchGround(bool lastFrame, bool thisFrame)
-        {
-            if (thisFrame && !lastFrame)
-            {
-                OnTouchGround?.Invoke();
-            }
 
-        }
-
-        private bool ArialTimeCheck()
+        private IEnumerator ArialTimeCounter()
         {
-            return TotalArialTime < _permitedArialTime;
-        }
+            CoyoteGround = true;
 
-        /* Function: OnDrawGizmos
-     * Unity function, that draws the gizmos on the Editor screen, to better visualize the grounder.
-     */
-        protected void OnDrawGizmos()
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireCube(this.transform.position + _grounderCenter, _grounderSizes);
+            yield return new WaitForSeconds(_permitedArialTime);
+
+            CoyoteGround = false;
         }
     }
 }

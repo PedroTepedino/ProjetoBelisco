@@ -1,20 +1,16 @@
-﻿using System.Collections;
-using GameScripts.Player;
-using GameScripts.PoolingSystem;
-using GameScripts.SceneManager;
-using Sirenix.OdinInspector;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
-namespace GameScripts.Environment
+namespace Belisco
 {
     public class PlayerRespawner : MonoBehaviour
     {
-        public static PlayerRespawner CurrentSpawner = null;
-        [SerializeField] private float _timeToSpawn = 3f;
-        [SerializeField] [EnumToggleButtons] private UiScenes _respawnUi = UiScenes.RespawnUi;
-        [SerializeField] bool _firstSpawner = false;
+        public static PlayerRespawner CurrentSpawner;
 
-        public static System.Action<PlayerRespawner> OnStartTimer;
+        public static Action<PlayerRespawner> OnStartTimer;
+        [SerializeField] private float _timeToSpawn = 3f;
+        [SerializeField] private bool _firstSpawner;
 
         public float TotalTimeSpam { get; private set; }
         public float RemainigTime => _timeToSpawn - TotalTimeSpam;
@@ -30,30 +26,27 @@ namespace GameScripts.Environment
         private void Awake()
         {
             if (CurrentSpawner == null)
-            {
                 CurrentSpawner = this;
-            }
-            else if (_firstSpawner)
-            {
-                CurrentSpawner = this;
-            }
+            else if (_firstSpawner) CurrentSpawner = this;
 
-            Life.OnPlayerDie += ListenPlayerDeath;
-        }
-
-        private void OnDestroy()
-        {
-            Life.OnPlayerDie -= ListenPlayerDeath;
+            Player.OnPlayerDeath += ListenPlayerDeath;
         }
 
         private void Start()
         {
-            if (Pooler.Instance.CountSpawnedInstances("Player") < 1 && _firstSpawner)
-            {
-                RespawnPlayer();
-            }
+            if (Pooler.Instance.CountSpawnedInstances("Player") < 1 && _firstSpawner) RespawnPlayer();
         }
-    
+
+        private void OnEnable()
+        {
+            if (_firstSpawner) CurrentSpawner = this;
+        }
+
+        private void OnDestroy()
+        {
+            Player.OnPlayerDeath -= ListenPlayerDeath;
+        }
+
         public void StartPlayerRespawnProcess()
         {
             StartCoroutine(TimeToSpawnPlayer());
@@ -75,24 +68,22 @@ namespace GameScripts.Environment
 
         private void RespawnPlayer()
         {
-            Pooler.Instance.MoveObjectToPoint("Player", this.transform);
+            Pooler.Instance.MoveObjectToPoint("Player", transform);
             StartCoroutine(Teste());
         }
 
         private IEnumerator Teste()
         {
             yield return new WaitForEndOfFrame();
-            Pooler.Instance.SpawnFromPool("Player", this.transform);
+            Pooler.Instance.SpawnFromPool("Player", transform);
         }
-    
+
 
         private void ListenPlayerDeath()
         {
-            if (this.gameObject == CurrentSpawner.gameObject)
-            {
+            if (gameObject == CurrentSpawner.gameObject)
                 RespawnPlayer();
-                //UiScenesLoader.LoadScene(_respawnUi);
-            }
+            //UiScenesLoader.LoadScene(_respawnUi);
         }
 
         public void SetToCurrentRespawner()

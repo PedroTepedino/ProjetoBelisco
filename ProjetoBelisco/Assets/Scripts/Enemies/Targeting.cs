@@ -1,109 +1,108 @@
-﻿using Sirenix.OdinInspector;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace GameScripts.Enemies
+namespace Belisco
 {
     public class Targeting : MonoBehaviour
     {
-        [FoldoutGroup("Parameters")] [SerializeField] private Vector3 _targetingCenter;
-        [FoldoutGroup("Parameters")] [SerializeField] private Vector3 bossZoneCornerA;
-        [FoldoutGroup("Parameters")] [SerializeField] private Vector3 bossZoneCornerB;
-        [FoldoutGroup("Parameters")] [SerializeField] [EnumToggleButtons] private LayerMask _targetingLayerMask;
-        
-
-        private Controller controller;
-        private Attack _attack;
-        private Vector3 _checkerCenter;
+        private Attack attack;
         private bool bossEnemy;
+        private Vector2 bossZoneCornerA;
+        private Vector2 bossZoneCornerB;
 
-        public Transform target { get; private set; } = null;
-        public bool hasTarget { get; private set; } = false;
+        private EnemyStateMachine controller;
+        private float lookingRange;
 
-        void Start()
+        private Vector2 targetingCenter;
+        private LayerMask targetingLayerMask;
+
+        public Transform target { get; private set; }
+        public bool hasTarget { get; private set; }
+
+        private void Awake()
         {
-            controller = GetComponent<Controller>();
-            _attack = GetComponent<Attack>();
-            bossEnemy = controller.bossEnemy;
-            // if (bossEnemy){
-            //     hasTarget = true;
-            //     target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-            // }
+            controller = GetComponent<EnemyStateMachine>();
+            attack = GetComponent<Attack>();
         }
 
-        void Update()
+        private void Start()
         {
-            
-            // if (!bossEnemy)
-            // {
-                hasTarget = TargetingAction();
-            // }
-            // else if(target == null)
-            // {
-            //     hasTarget = true;
-            //     target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-            // }
+            bossEnemy = controller.EnemyParameters.IsBoss;
+            lookingRange = controller.EnemyParameters.LookingRange;
+            targetingCenter = controller.EnemyParameters.TargetingCenter;
+            bossZoneCornerA = controller.EnemyParameters.BossZoneCornerA;
+            bossZoneCornerB = controller.EnemyParameters.BossZoneCornerB;
+            targetingLayerMask = controller.EnemyParameters.TargetingLayerMask;
         }
 
-        private bool TargetingAction(){
-            if (bossEnemy)
+        private void Update()
+        {
+            hasTarget = TargetingAction();
+
+            if (hasTarget)
             {
-                var hitObjects = Physics2D.OverlapAreaAll(bossZoneCornerA, bossZoneCornerB, _targetingLayerMask);
-                target = ((CheckHit(hitObjects) != null) ? CheckHit(hitObjects).transform : null);
-                return (target != null)/* ? true : false*/;
-            }
-            else
-            {
-                var hitObject = Physics2D.Raycast(this.transform.position, controller.movingRight ? Vector2.right : Vector2.left, controller.lookingRange, _targetingLayerMask);
-                if (hitObject.collider != null)
+                if (bossEnemy)
                 {
-                    if (hitObject.transform.gameObject.GetComponent<Player.Life>() != null)
-                    {
-                        target = hitObject.transform;
-                        return true;
-                    }
-                    else
-                    {
-                        target = null;
-                        return false;
-                    }
+                    attack.isInRange = true;
                 }
                 else
                 {
-                    target = null;
-                    return false;
+                    attack.isInRange = !(Vector2.Distance(transform.position, target.position) > attack.attackRange);
                 }
             }
         }
 
-        private Collider2D CheckHit(Collider2D[] hits)
+        protected void OnDrawGizmos()
         {
-            foreach (Collider2D hit in hits)
-            {
-                if (hit.CompareTag("Player"))
-                {
-                    return hit;
-                }
-            }
-            return null;
-        }
-
-        protected void OnDrawGizmos() {
             // Guard sentence
             if (controller == null)
                 return;
-        
+
             Gizmos.color = Color.yellow;
-            
+
             if (controller.movingRight)
             {
-                Gizmos.DrawLine(this.transform.position, this.transform.position + new Vector3(controller.lookingRange,0 , 0));
-                Gizmos.DrawLine(this.transform.position+ new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(_attack.attackRange, 0.5f, 0));            
+                Gizmos.DrawLine(transform.position, transform.position + new Vector3(lookingRange, 0, 0));
+                Gizmos.DrawLine(transform.position + new Vector3(0, 0.5f, 0),
+                    transform.position + new Vector3(attack.attackRange, 0.5f, 0));
             }
             else
             {
-                Gizmos.DrawLine(this.transform.position, this.transform.position + new Vector3(-controller.lookingRange,0 , 0));
-                Gizmos.DrawLine(this.transform.position+ new Vector3(0, 0.5f, 0), this.transform.position + new Vector3(-_attack.attackRange, 0.5f, 0));
+                Gizmos.DrawLine(transform.position, transform.position + new Vector3(-lookingRange, 0, 0));
+                Gizmos.DrawLine(transform.position + new Vector3(0, 0.5f, 0),
+                    transform.position + new Vector3(-attack.attackRange, 0.5f, 0));
             }
+        }
+
+        private bool TargetingAction()
+        {
+            if (bossEnemy)
+            {
+                var hitObjects = Physics2D.OverlapAreaAll(bossZoneCornerA, bossZoneCornerB, targetingLayerMask);
+                target = CheckHit(hitObjects);
+                return target != null;
+            }
+
+            RaycastHit2D hitObject =
+                Physics2D.Raycast(transform.position + new Vector3(targetingCenter.x, targetingCenter.y, 0),
+                    controller.movingRight ? Vector2.right : Vector2.left, lookingRange, targetingLayerMask);
+            target = CheckHit(hitObject);
+            return target != null;
+        }
+
+        private Transform CheckHit(Collider2D[ ] hits)
+        {
+            foreach (Collider2D hit in hits)
+                if (hit.gameObject.layer == LayerMask.GetMask("Player"))
+                    return hit.transform;
+            return null;
+        }
+
+        private Transform CheckHit(RaycastHit2D hit)
+        {
+            if (hit.transform != null)
+                if (hit.transform.gameObject.GetComponent<Player>() != null)
+                    return hit.transform;
+            return null;
         }
     }
 }

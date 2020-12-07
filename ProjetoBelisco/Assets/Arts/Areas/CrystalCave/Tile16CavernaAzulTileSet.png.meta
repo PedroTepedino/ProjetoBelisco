@@ -1,0 +1,2405 @@
+fileFormatVersion: 2
+guid: fe4e4bcb94abbdb4a99dc90cd8de4f53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4919885870323888416
+    second: Tile16CavernaAzulTileSet_0
+  - first:
+      213: -7277963429982338618
+    second: Tile16CavernaAzulTileSet_1
+  - first:
+      213: -474467457799448590
+    second: Tile16CavernaAzulTileSet_2
+  - first:
+      213: 5428876397642700934
+    second: Tile16CavernaAzulTileSet_3
+  - first:
+      213: 5515727040210598935
+    second: Tile16CavernaAzulTileSet_4
+  - first:
+      213: -2174430650347578252
+    second: Tile16CavernaAzulTileSet_5
+  - first:
+      213: -6562666492596851479
+    second: Tile16CavernaAzulTileSet_6
+  - first:
+      213: 8389182076267982419
+    second: Tile16CavernaAzulTileSet_7
+  - first:
+      213: -346233657942408064
+    second: Tile16CavernaAzulTileSet_8
+  - first:
+      213: -755254858908934606
+    second: Tile16CavernaAzulTileSet_9
+  - first:
+      213: 6868005966135382287
+    second: Tile16CavernaAzulTileSet_10
+  - first:
+      213: -2405619050540531614
+    second: Tile16CavernaAzulTileSet_11
+  - first:
+      213: 5429551491909739993
+    second: Tile16CavernaAzulTileSet_12
+  - first:
+      213: -8692523959750919971
+    second: Tile16CavernaAzulTileSet_13
+  - first:
+      213: -5602500079178610314
+    second: Tile16CavernaAzulTileSet_14
+  - first:
+      213: -2517843639753359266
+    second: Tile16CavernaAzulTileSet_15
+  - first:
+      213: 422213667290086386
+    second: Tile16CavernaAzulTileSet_16
+  - first:
+      213: 338435531407762575
+    second: Tile16CavernaAzulTileSet_17
+  - first:
+      213: 986356966651296953
+    second: Tile16CavernaAzulTileSet_18
+  - first:
+      213: -3211455746723839324
+    second: Tile16CavernaAzulTileSet_19
+  - first:
+      213: -3476648721653993056
+    second: Tile16CavernaAzulTileSet_20
+  - first:
+      213: -460719259135102350
+    second: Tile16CavernaAzulTileSet_21
+  - first:
+      213: 8976448442025273446
+    second: Tile16CavernaAzulTileSet_22
+  - first:
+      213: 6008490819132903323
+    second: Tile16CavernaAzulTileSet_23
+  - first:
+      213: -4078801781956303752
+    second: Tile16CavernaAzulTileSet_24
+  - first:
+      213: 3713159125483141636
+    second: Tile16CavernaAzulTileSet_25
+  - first:
+      213: -5362131079960425532
+    second: Tile16CavernaAzulTileSet_26
+  - first:
+      213: 4446662805285360406
+    second: Tile16CavernaAzulTileSet_27
+  - first:
+      213: 6713574644362506294
+    second: Tile16CavernaAzulTileSet_28
+  - first:
+      213: 183206448783152862
+    second: Tile16CavernaAzulTileSet_29
+  - first:
+      213: -5021644705378202101
+    second: Tile16CavernaAzulTileSet_30
+  - first:
+      213: -2549128554119709901
+    second: Tile16CavernaAzulTileSet_31
+  - first:
+      213: -4143422718847445351
+    second: Tile16CavernaAzulTileSet_32
+  - first:
+      213: -6064264193731032732
+    second: Tile16CavernaAzulTileSet_33
+  - first:
+      213: -5733910975741265822
+    second: Tile16CavernaAzulTileSet_34
+  - first:
+      213: 7250280947259398790
+    second: Tile16CavernaAzulTileSet_35
+  - first:
+      213: 4853286021139828977
+    second: Tile16CavernaAzulTileSet_36
+  - first:
+      213: 5644629371769765706
+    second: Tile16CavernaAzulTileSet_37
+  - first:
+      213: -8124028370038777223
+    second: Tile16CavernaAzulTileSet_38
+  - first:
+      213: 489203098671707406
+    second: Tile16CavernaAzulTileSet_39
+  - first:
+      213: 6564890136650753306
+    second: Tile16CavernaAzulTileSet_40
+  - first:
+      213: 6533600021305984407
+    second: Tile16CavernaAzulTileSet_41
+  - first:
+      213: 7066502392167127364
+    second: Tile16CavernaAzulTileSet_42
+  - first:
+      213: -6744795470655137304
+    second: Tile16CavernaAzulTileSet_43
+  - first:
+      213: -5172674944758137005
+    second: Tile16CavernaAzulTileSet_44
+  - first:
+      213: -307736265604310271
+    second: Tile16CavernaAzulTileSet_45
+  - first:
+      213: 6575846586880609794
+    second: Tile16CavernaAzulTileSet_46
+  - first:
+      213: 6271643267959146407
+    second: Tile16CavernaAzulTileSet_47
+  - first:
+      213: 3143618269222095166
+    second: Tile16CavernaAzulTileSet_48
+  - first:
+      213: -2836338096261748584
+    second: Tile16CavernaAzulTileSet_49
+  - first:
+      213: -9085015562506481544
+    second: Tile16CavernaAzulTileSet_50
+  - first:
+      213: 6491348010851611817
+    second: Tile16CavernaAzulTileSet_51
+  - first:
+      213: 6777113083462184798
+    second: Tile16CavernaAzulTileSet_52
+  - first:
+      213: 6978103950877710803
+    second: Tile16CavernaAzulTileSet_53
+  - first:
+      213: -5268251781517401996
+    second: Tile16CavernaAzulTileSet_54
+  - first:
+      213: -2431797081853406012
+    second: Tile16CavernaAzulTileSet_55
+  - first:
+      213: 5939954247136702857
+    second: Tile16CavernaAzulTileSet_56
+  - first:
+      213: 8550082031952922543
+    second: Tile16CavernaAzulTileSet_57
+  - first:
+      213: -2111194404904490462
+    second: Tile16CavernaAzulTileSet_58
+  - first:
+      213: -6691848597915432429
+    second: Tile16CavernaAzulTileSet_59
+  - first:
+      213: 8514291755800437217
+    second: Tile16CavernaAzulTileSet_60
+  - first:
+      213: -3982334543919066943
+    second: Tile16CavernaAzulTileSet_61
+  - first:
+      213: 3739368424291979588
+    second: Tile16CavernaAzulTileSet_62
+  - first:
+      213: 1389990721459327895
+    second: Tile16CavernaAzulTileSet_63
+  - first:
+      213: -5936353236342987743
+    second: Tile16CavernaAzulTileSet_64
+  - first:
+      213: -2143407793753387848
+    second: Tile16CavernaAzulTileSet_65
+  - first:
+      213: -566610007670916574
+    second: Tile16CavernaAzulTileSet_66
+  - first:
+      213: -8570192684587419578
+    second: Tile16CavernaAzulTileSet_67
+  - first:
+      213: -70238306551523883
+    second: Tile16CavernaAzulTileSet_68
+  - first:
+      213: -2031777922510160963
+    second: Tile16CavernaAzulTileSet_69
+  - first:
+      213: -8218276503496339673
+    second: Tile16CavernaAzulTileSet_70
+  - first:
+      213: -641126849360244547
+    second: Tile16CavernaAzulTileSet_71
+  - first:
+      213: -5823191718750738746
+    second: Tile16CavernaAzulTileSet_0
+  - first:
+      213: 8584884075649793868
+    second: Tile16CavernaAzulTileSet_1
+  - first:
+      213: 8277262232656511415
+    second: Tile16CavernaAzulTileSet_2
+  - first:
+      213: 8802011700071202845
+    second: Tile16CavernaAzulTileSet_3
+  - first:
+      213: 6966928054753001322
+    second: Tile16CavernaAzulTileSet_4
+  - first:
+      213: 3988514786635562338
+    second: Tile16CavernaAzulTileSet_5
+  - first:
+      213: 1398161635633492298
+    second: Tile16CavernaAzulTileSet_6
+  - first:
+      213: -8920232043319839680
+    second: Tile16CavernaAzulTileSet_7
+  - first:
+      213: 5580053365616091781
+    second: Tile16CavernaAzulTileSet_8
+  - first:
+      213: -6433709677321307596
+    second: Tile16CavernaAzulTileSet_9
+  - first:
+      213: 7965183624744508240
+    second: Tile16CavernaAzulTileSet_10
+  - first:
+      213: 8760436533021569479
+    second: Tile16CavernaAzulTileSet_11
+  - first:
+      213: -6595934393879957545
+    second: Tile16CavernaAzulTileSet_12
+  - first:
+      213: 991286651420630366
+    second: Tile16CavernaAzulTileSet_13
+  - first:
+      213: -221020348521925133
+    second: Tile16CavernaAzulTileSet_14
+  - first:
+      213: -5445309818552259559
+    second: Tile16CavernaAzulTileSet_15
+  - first:
+      213: -9058160318840029195
+    second: Tile16CavernaAzulTileSet_16
+  - first:
+      213: 1515184048471100047
+    second: Tile16CavernaAzulTileSet_17
+  - first:
+      213: -2641458285860803354
+    second: Tile16CavernaAzulTileSet_18
+  - first:
+      213: 5183030841329813824
+    second: Tile16CavernaAzulTileSet_19
+  - first:
+      213: 2507295174516439839
+    second: Tile16CavernaAzulTileSet_20
+  - first:
+      213: -7521193777968974854
+    second: Tile16CavernaAzulTileSet_21
+  - first:
+      213: -2072508115859859115
+    second: Tile16CavernaAzulTileSet_22
+  - first:
+      213: 3417766873150558763
+    second: Tile16CavernaAzulTileSet_23
+  - first:
+      213: -2507885173636337849
+    second: Tile16CavernaAzulTileSet_24
+  - first:
+      213: 7934660686278044506
+    second: Tile16CavernaAzulTileSet_25
+  - first:
+      213: -1525573888015022567
+    second: Tile16CavernaAzulTileSet_26
+  - first:
+      213: -5847208346036859010
+    second: Tile16CavernaAzulTileSet_27
+  - first:
+      213: 392668135824719032
+    second: Tile16CavernaAzulTileSet_28
+  - first:
+      213: 5677339936257236986
+    second: Tile16CavernaAzulTileSet_29
+  - first:
+      213: 6780003401079596570
+    second: Tile16CavernaAzulTileSet_30
+  - first:
+      213: -6309580327109366051
+    second: Tile16CavernaAzulTileSet_31
+  - first:
+      213: 6111080104440469841
+    second: Tile16CavernaAzulTileSet_32
+  - first:
+      213: 4525656437637960252
+    second: Tile16CavernaAzulTileSet_33
+  - first:
+      213: -3504782030142959150
+    second: Tile16CavernaAzulTileSet_34
+  - first:
+      213: -7039723164694614287
+    second: Tile16CavernaAzulTileSet_35
+  - first:
+      213: -6840980654101550485
+    second: Tile16CavernaAzulTileSet_36
+  - first:
+      213: 8304119168784194044
+    second: Tile16CavernaAzulTileSet_37
+  - first:
+      213: -8461286508924154732
+    second: Tile16CavernaAzulTileSet_38
+  - first:
+      213: -3062469396671186123
+    second: Tile16CavernaAzulTileSet_39
+  - first:
+      213: -640175353878814105
+    second: Tile16CavernaAzulTileSet_40
+  - first:
+      213: 5765987620989677483
+    second: Tile16CavernaAzulTileSet_41
+  - first:
+      213: -4287803660986102854
+    second: Tile16CavernaAzulTileSet_42
+  - first:
+      213: 721925030212338201
+    second: Tile16CavernaAzulTileSet_43
+  - first:
+      213: 7152838124383600434
+    second: Tile16CavernaAzulTileSet_44
+  - first:
+      213: 9116726993716121939
+    second: Tile16CavernaAzulTileSet_45
+  - first:
+      213: -5442458475596805318
+    second: Tile16CavernaAzulTileSet_46
+  - first:
+      213: -6475811072861469756
+    second: Tile16CavernaAzulTileSet_47
+  - first:
+      213: 1882894581055494257
+    second: Tile16CavernaAzulTileSet_48
+  - first:
+      213: -8323562997725465141
+    second: Tile16CavernaAzulTileSet_49
+  - first:
+      213: 517425152120625873
+    second: Tile16CavernaAzulTileSet_50
+  - first:
+      213: -5090775365303742271
+    second: Tile16CavernaAzulTileSet_51
+  - first:
+      213: 7356331324146477579
+    second: Tile16CavernaAzulTileSet_52
+  - first:
+      213: -779056038828618945
+    second: Tile16CavernaAzulTileSet_53
+  - first:
+      213: 7000210034176913785
+    second: Tile16CavernaAzulTileSet_54
+  - first:
+      213: -4929259646558762890
+    second: Tile16CavernaAzulTileSet_55
+  - first:
+      213: 2828735391416625767
+    second: Tile16CavernaAzulTileSet_56
+  - first:
+      213: -550801651255273862
+    second: Tile16CavernaAzulTileSet_57
+  - first:
+      213: -8430877229959148936
+    second: Tile16CavernaAzulTileSet_58
+  - first:
+      213: 2823375428617646761
+    second: Tile16CavernaAzulTileSet_59
+  - first:
+      213: -5067402492135053530
+    second: Tile16CavernaAzulTileSet_60
+  - first:
+      213: -1046170596680515877
+    second: Tile16CavernaAzulTileSet_61
+  - first:
+      213: 376988724036596573
+    second: Tile16CavernaAzulTileSet_62
+  - first:
+      213: 1568505134939185995
+    second: Tile16CavernaAzulTileSet_63
+  - first:
+      213: 3525662797438613521
+    second: Tile16CavernaAzulTileSet_64
+  - first:
+      213: -8831346929284928889
+    second: Tile16CavernaAzulTileSet_65
+  - first:
+      213: -6349197379686267507
+    second: Tile16CavernaAzulTileSet_66
+  - first:
+      213: 4386048138304392104
+    second: Tile16CavernaAzulTileSet_67
+  - first:
+      213: -759630295796154073
+    second: Tile16CavernaAzulTileSet_68
+  - first:
+      213: -899898556419102172
+    second: Tile16CavernaAzulTileSet_69
+  - first:
+      213: 1954893991520276792
+    second: Tile16CavernaAzulTileSet_70
+  - first:
+      213: -9100444734633548270
+    second: Tile16CavernaAzulTileSet_72
+  - first:
+      213: 3000755395917539479
+    second: Tile16CavernaAzulTileSet_73
+  - first:
+      213: -7088279628489972562
+    second: Tile16CavernaAzulTileSet_74
+  - first:
+      213: -9217084208681780666
+    second: Tile16CavernaAzulTileSet_75
+  - first:
+      213: -4928554951907451874
+    second: Tile16CavernaAzulTileSet_76
+  - first:
+      213: -2172924782757349073
+    second: Tile16CavernaAzulTileSet_77
+  - first:
+      213: 1600801867561927927
+    second: Tile16CavernaAzulTileSet_78
+  - first:
+      213: -8337750144116426541
+    second: Tile16CavernaAzulTileSet_79
+  - first:
+      213: -8686690511601841950
+    second: Tile16CavernaAzulTileSet_80
+  - first:
+      213: -3019238106733865623
+    second: Tile16CavernaAzulTileSet_81
+  - first:
+      213: 7564294147097065331
+    second: Tile16CavernaAzulTileSet_82
+  - first:
+      213: -7039107408322840425
+    second: Tile16CavernaAzulTileSet_83
+  - first:
+      213: -1899048042309609072
+    second: Tile16CavernaAzulTileSet_84
+  - first:
+      213: -2554788071611531096
+    second: Tile16CavernaAzulTileSet_85
+  - first:
+      213: 7875469292377484667
+    second: Tile16CavernaAzulTileSet_86
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_71
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0daeff6824a17f0800000000000000
+      internalID: -641126849360244547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_72
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216e716eab9b4b180800000000000000
+      internalID: -9100444734633548270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79860874223d4a920800000000000000
+      internalID: 3000755395917539479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_74
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4a733bb3f51ad90800000000000000
+      internalID: -7088279628489972562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_75
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64af8a41fb6561080800000000000000
+      internalID: -9217084208681780666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c509342614a9bb0800000000000000
+      internalID: -4928554951907451874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_77
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29fa183c6838d1e0800000000000000
+      internalID: -2172924782757349073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_78
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f48fcf21d0373610800000000000000
+      internalID: 1600801867561927927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d87af15b6c5a4c80800000000000000
+      internalID: -8337750144116426541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_80
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e84736f00da27780800000000000000
+      internalID: -8686690511601841950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_81
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9651ec340f28916d0800000000000000
+      internalID: -3019238106733865623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_82
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377794e0375c9f860800000000000000
+      internalID: 7564294147097065331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_83
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798b81f5b11105e90800000000000000
+      internalID: -7039107408322840425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_84
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0991cbafdd935a5e0800000000000000
+      internalID: -1899048042309609072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee81eb1edd09bbb0800000000000000
+      internalID: -4919885870323888416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c18e9b12da7ffa90800000000000000
+      internalID: -7277963429982338618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 464
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f791686c5a5a69f0800000000000000
+      internalID: -474467457799448590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688defaf15e375b40800000000000000
+      internalID: 5428876397642700934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 448
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cf4cdf48ccb8c40800000000000000
+      internalID: 5515727040210598935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c9f4918ded2d1e0800000000000000
+      internalID: -2174430650347578252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ece7617899bce4a0800000000000000
+      internalID: -6562666492596851479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ee60c86ac5c6470800000000000000
+      internalID: 8389182076267982419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0840f01925ee13bf0800000000000000
+      internalID: -346233657942408064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e58d315bbc485f0800000000000000
+      internalID: -755254858908934606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0153c6b90f005f50800000000000000
+      internalID: 6868005966135382287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2608e9318368d9ed0800000000000000
+      internalID: -2405619050540531614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5e8fc9054a95b40800000000000000
+      internalID: 5429551491909739993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd879797383fd5780800000000000000
+      internalID: -8692523959750919971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679067e7cdbef32b0800000000000000
+      internalID: -5602500079178610314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50468cbc82de0dd0800000000000000
+      internalID: -2517843639753359266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_16
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbf32ae7110cd500800000000000000
+      internalID: 422213667290086386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f842eec925d52b400800000000000000
+      internalID: 338435531407762575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc7bfa6f6e30bd00800000000000000
+      internalID: 986356966651296953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a283ac630e9e63d0800000000000000
+      internalID: -3211455746723839324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a17ff0686670cfc0800000000000000
+      internalID: -3476648721653993056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272321a56423b99f0800000000000000
+      internalID: -460719259135102350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_22
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668668b7c40c29c70800000000000000
+      internalID: 8976448442025273446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fcc9ec092726350800000000000000
+      internalID: 6008490819132903323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874a345c36f2567c0800000000000000
+      internalID: -4078801781956303752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a3cec2d8ac78330800000000000000
+      internalID: 3713159125483141636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb80eb4132e595b0800000000000000
+      internalID: -5362131079960425532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613d9f01348b5bd30800000000000000
+      internalID: 4446662805285360406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630fb4aa1986b2d50800000000000000
+      internalID: 6713574644362506294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6d7446b41ea8200800000000000000
+      internalID: 183206448783152862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e06bb0fb88f4ab0800000000000000
+      internalID: -5021644705378202101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_31
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33bb3ecf51daf9cd0800000000000000
+      internalID: -2549128554119709901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99690d07dfa9f76c0800000000000000
+      internalID: -4143422718847445351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4698a8c78d767dba0800000000000000
+      internalID: -6064264193731032732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_34
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2687a3dd85e0d60b0800000000000000
+      internalID: -5733910975741265822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_35
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68add2f9b1c2e9460800000000000000
+      internalID: 7250280947259398790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f098632ce55a5340800000000000000
+      internalID: 4853286021139828977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_37
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fb211d180c55e40800000000000000
+      internalID: 5644629371769765706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a94aa8d37a14f80800000000000000
+      internalID: -8124028370038777223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05f85750aff9c600800000000000000
+      internalID: 489203098671707406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_40
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15a8880ccc2b1b50800000000000000
+      internalID: 6564890136650753306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7958d665a920caa50800000000000000
+      internalID: 6533600021305984407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449d1995c72411260800000000000000
+      internalID: 7066502392167127364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_43
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9dfe0414ca562a0800000000000000
+      internalID: -6744795470655137304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fb0233b87f638b0800000000000000
+      internalID: -5172674944758137005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b56243f73babbf0800000000000000
+      internalID: -307736265604310271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_46
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ecb7461a9124b50800000000000000
+      internalID: 6575846586880609794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_47
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7cca8d25a590750800000000000000
+      internalID: 6271643267959146407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e394966092060ab20800000000000000
+      internalID: 3143618269222095166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_49
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898296d678d43a8d0800000000000000
+      internalID: -2836338096261748584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870d7e9fa7a8be180800000000000000
+      internalID: -9085015562506481544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4bf3c8f96e51a50800000000000000
+      internalID: 6491348010851611817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_52
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f6a6651742d0e50800000000000000
+      internalID: 6777113083462184798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_53
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9d0dd529437d060800000000000000
+      internalID: 6978103950877710803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4702657cae863e6b0800000000000000
+      internalID: -5268251781517401996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_55
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4db423075804ed0800000000000000
+      internalID: -2431797081853406012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_56
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981f7a2aae4fe6250800000000000000
+      internalID: 5939954247136702857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7010bce4ef7a670800000000000000
+      internalID: 8550082031952922543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_58
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a20e3dfd783b2e0800000000000000
+      internalID: -2111194404904490462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_59
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a0e86b727c123a0800000000000000
+      internalID: -6691848597915432429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1a582cd37d82670800000000000000
+      internalID: 8514291755800437217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_61
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0dfe4e4d7ebb8c0800000000000000
+      internalID: -3982334543919066943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4415c3615c7e4e330800000000000000
+      internalID: 3739368424291979588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7931ca9523d3a4310800000000000000
+      internalID: 1389990721459327895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_64
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12429860f26dd9da0800000000000000
+      internalID: -5936353236342987743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc8684c7f51142e0800000000000000
+      internalID: -2143407793753387848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22af796333ff228f0800000000000000
+      internalID: -566610007670916574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_67
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648f382092f801980800000000000000
+      internalID: -8570192684587419578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_68
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d51f50e1a6760ff0800000000000000
+      internalID: -70238306551523883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbfc4a8ebcadc3e0800000000000000
+      internalID: -2031777922510160963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_70
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f4927ff01d2fd80800000000000000
+      internalID: -8218276503496339673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a08033e8c19b8cd0800000000000000
+      internalID: -2554788071611531096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile16CavernaAzulTileSet_86
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d28ab68994b4d60800000000000000
+      internalID: 7875469292377484667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,34 +1,27 @@
-﻿using GameScripts.Environment;
+﻿#if UNITY_EDITOR
+using System;
+using Sirenix.OdinInspector.Editor;
 using UnityEditor;
 using UnityEngine;
 
-namespace GameScripts.Tools.Editor
+namespace Belisco
 {
-    [InitializeOnLoad()]
-
+    [InitializeOnLoad]
     public class PlayerSpawnerEditor : MonoBehaviour
     {
         [DrawGizmo(GizmoType.NonSelected | GizmoType.Selected | GizmoType.Pickable)]
         public static void OnDrawSceneGizmos(PlayerRespawner spawn, GizmoType gizmoType)
         {
             Color color = Color.white;
-            if ((gizmoType & GizmoType.Selected) != 0)
-            {
-                color = Color.yellow;
-            }
+            if ((gizmoType & GizmoType.Selected) != 0) color = Color.yellow;
 
-            if (PlayerRespawner.CurrentSpawner == spawn)
-            {
-                color = Color.red;
-            }
+            if (PlayerRespawner.CurrentSpawner == spawn) color = Color.red;
 
-            string gizmo = "CheckPoint.png";
-            if (spawn.IsFirstSpawner)
-            {
-                gizmo = "PlayerSpawner.png";
-            }
+            var gizmo = "CheckPoint.png";
+            if (spawn.IsFirstSpawner) gizmo = "PlayerSpawner.png";
 
             Gizmos.DrawIcon(spawn.transform.position, gizmo, true, color);
         }
     }
 }
+#endif

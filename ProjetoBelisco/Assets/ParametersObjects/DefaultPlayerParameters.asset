@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b1f67f922b41a194c03178ec5b292a, type: 3}
+  m_Name: DefaultPlayerParameters
+  m_EditorClassIdentifier: 
+  _maxHealth: 10
+  _invincibilityTime: 1
+  _movementSpeed: 6
+  _walkAcceleration: 10
+  _baseDrag: 1
+  _minPushVelocity: 6
+  _knockBackForce: 50
+  _knockBackDrag: 15
+  _dashVelocity: 20
+  _dashMaxTimer: 0
+  _timeBetweenDashes: 0.2
+  _jumpVelocity: 15
+  _maxJumpButtonHoldTime: 0.5
+  _gravityFallMultiplayer: 2
+  _lowGravityFallMultiplayer: 8
+  _velocityWhenTerminateJump: 1
+  _glideFallVelocity: -1.5
+  _grounderPosition: {x: -0.02, y: 0, z: 0}
+  _grounderSizes: {x: 0.3, y: 0.1}
+  _grounderLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  _nearGroundGrounderPosition: {x: 0, y: -0.2, z: 0}
+  _nearGroundGrounderSizes: {x: 0.3, y: 0.4}
+  _permitedArialTime: 0.1
+  _wallJumpBoxOffsetRight: {x: 0.22, y: 0.53}
+  _wallJumpBoxOffsetLeft: {x: -0.27, y: 0.53}
+  _wallJumpBoxSizes: {x: 0.12, y: 0.8}
+  _wallJumpLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  _wallJumpBoxAngle: 0
+  _wallPressFallingVelocity: 1
+  _wallJumpForce: {x: -10, y: 12}
+  _wallJumpMoverTimeOff: 0.2
+  _timeBetweenAttacks: 0.5
+  _attackLayers:
+    serializedVersion: 2
+    m_Bits: 132352
+  _basicAttackDamage: 1
+  _basicAttackCenter: {x: 0.8, y: 0.81}
+  _basicAttackRadius: 1.25
+  _basicUpAttackCenter: {x: 0, y: 2.04}
+  _basicUpAttackRadius: 1.48
+  _basicDownAttackCenter: {x: 0, y: 0}
+  _basicDownAttackRadius: 1.37
+  _strongAttackCenter: {x: 0.34, y: 0.76}
+  _strongAttackRadius: 2.5

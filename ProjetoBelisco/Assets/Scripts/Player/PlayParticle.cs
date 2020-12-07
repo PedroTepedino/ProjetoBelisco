@@ -1,21 +1,26 @@
 ﻿using UnityEngine;
 
-namespace GameScripts.Player
+namespace Belisco
 {
     public class PlayParticle : MonoBehaviour
     {
         [SerializeField] private ParticleSystem _particleSystem;
 
-
+        private Player _player;
 
         private void Awake()
         {
-            Grounder.OnTouchGround += EmitParticle;
+            _player = GetComponentInParent<Player>();
         }
 
-        private void OnDestroy()
+        private void OnEnable()
         {
-            Grounder.OnTouchGround -= EmitParticle;
+            _player.OnTouchedGround += EmitParticle;
+        }
+
+        private void OnDisable()
+        {
+            _player.OnTouchedGround -= EmitParticle;
         }
 
         public void EmitParticle()

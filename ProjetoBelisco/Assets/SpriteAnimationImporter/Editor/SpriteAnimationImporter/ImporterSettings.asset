@@ -1,0 +1,715 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b817b391f411b4095adfdaffa81730, type: 3}
+  m_Name: ImporterSettings
+  m_EditorClassIdentifier: 
+  spritesheets:
+  - spritesheetPath: Assets/Arts/Belisco/beliscoLow.png
+    animationInfo: Assets/Arts/Belisco/beliscoLow.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.5, y: 0.5}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 1
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 1
+    clipSaveDirectory: Assets/Arts/Belisco/Animations
+    animSettings:
+    - tagName: afterAtackBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: afterAtackYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: keepSwordBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: keepSwordYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: iddleBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: iddleYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: runCycleBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: runCycleYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: atack1Blue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: atack1Yellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: atack2Blue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: atack2Yellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: hitFloorBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: hitFloorYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: hitAirBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: hitAirYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: jumpAntecipationBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: jumpUpLoopB
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: jumpTransitionBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: jumpFallLoopB
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: jumpContactBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: jumpAntecipationYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: jumpUpLoopY
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: jumpTransitionYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: jumpFallLoopY
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: jumpContactYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: glydeAntecipationB
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: glydeLoopB
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: glydeAntecipationY
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: glydeLoopY
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: atackJumpSideBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: atackJumpSideYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: atackUpBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: atackUpYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: atackJumpUpBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: atackJumpUpYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: atackDown1
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: atackDown2
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: deathBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: deathYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: dashSideBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: dashSideYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: dashUpBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: dashUpYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: RangedAtackBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: RangedAtackRangedYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: RangedAtackJumpBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: RangedAtackRangedJumpYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: WallJumpBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: WallContactYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: StrongAtackBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: StrongAtackYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: StrongAtackJumpBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: StrongAtackJumpYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: DashNoSwordBlue
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: DashNoSwordYellow
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
+  - spritesheetPath: Assets/Arts/Sprites/golem1.png
+    animationInfo: Assets/Arts/Sprites/golem1.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.5, y: 0.5}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 1
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 0
+    clipSaveDirectory: 
+    animSettings:
+    - tagName: iddle
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: atack
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: damage
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: death
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+  - spritesheetPath: Assets/Arts/Sprites/golem2.png
+    animationInfo: Assets/Arts/Sprites/golem2.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.5, y: 0.5}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 1
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 0
+    clipSaveDirectory: 
+    animSettings:
+    - tagName: iddle
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: atack
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: damage
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: death
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: particles
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
+  - spritesheetPath: Assets/Arts/Sprites/golemBoss.png
+    animationInfo: Assets/Arts/Sprites/golemBoss.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.5, y: 0.5}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 1
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 0
+    clipSaveDirectory: 
+    animSettings:
+    - tagName: eyeShineAntecipation
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: rightBladeAntecipation
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: leftBladeAntecipation
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: iddleFullBody
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: AntecipationFullBody
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: damageFullBody
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: damageEye
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: damageRightBlade
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: damageLeftBlade
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: iddleEye
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: iddleLeftBlade
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: iddleRightBlade
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: deathFullBody
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: deathPiecesSeparated
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: Explosion
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+  - spritesheetPath: Assets/Arts/Sprites/golemRanged.png
+    animationInfo: Assets/Arts/Sprites/golemRanged.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.5, y: 0.5}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 1
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 0
+    clipSaveDirectory: 
+    animSettings:
+    - tagName: iddle
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: atack1
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: damage
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: StrongExplosion
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: particles
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
+  - spritesheetPath: Assets/Arts/Sprites/golemSword.png
+    animationInfo: Assets/Arts/Sprites/golemSword.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.5, y: 0.5}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 1
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 0
+    clipSaveDirectory: 
+    animSettings:
+    - tagName: atack
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: iddle
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: damage
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: StrongExplosion
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: eyeParticles
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
+  - spritesheetPath: Assets/Arts/Aseprites/golemBoss.png
+    animationInfo: Assets/Arts/Aseprites/golemBoss.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.4351852, y: 0.49342105}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 1
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 0
+    clipSaveDirectory: 
+    animSettings:
+    - tagName: eyeShineAntecipation
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: rightBladeAntecipation
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: leftBladeAntecipation
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: iddleFullBody
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: AntecipationFullBody
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: damageFullBody
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: damageEye
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: damageRightBlade
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: damageLeftBlade
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+    - tagName: iddleEye
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: iddleLeftBlade
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: iddleRightBlade
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: deathFullBody
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 0
+    - tagName: deathPiecesSeparated
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 0
+    - tagName: Explosion
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 0
+      generateClip: 1
+  - spritesheetPath: Assets/Arts/Interactables/Beliskey.png
+    animationInfo: Assets/Arts/Interactables/Beliskey.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.5, y: 0.5}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 1
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 0
+    clipSaveDirectory: 
+    animSettings:
+    - tagName: Shine
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: KeyShine
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+  - spritesheetPath: Assets/Arts/Interactables/TiroCristalSimple.png
+    animationInfo: Assets/Arts/Interactables/TiroCristalSimple.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.5, y: 0.5}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 1
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 0
+    clipSaveDirectory: 
+    animSettings:
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+  - spritesheetPath: Assets/Arts/Interactables/TiroCristalLightmap.png
+    animationInfo: Assets/Arts/Interactables/TiroCristalLightmap.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.5, y: 0.5}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 1
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 0
+    clipSaveDirectory: 
+    animSettings:
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1

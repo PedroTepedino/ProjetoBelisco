@@ -1,89 +1,73 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
-/*Class: StateMachine
- * Class that describes the behavior of a state machine and handle states
-*/
-namespace GameScripts.StateMachine
+namespace Belisco
 {
-    public class StateMachine : MonoBehaviour
+    public class StateMachine
     {
-        // Group: Private Variables
+        private readonly List<StateTransition> _anyStateTransitions = new List<StateTransition>();
 
-        /* Variables: States
-     * currentState - Hold the current in execution state
-     * previousState - Hold the previous executed state
-     */
-        private IState currentState;
-        private IState previousState;
+        private readonly Dictionary<IState, List<StateTransition>> _stateTransitions =
+            new Dictionary<IState, List<StateTransition>>();
 
-        // Group: Signals
-    
-        /* Variable: OnChangeState
-     *    Sends a signal when the state machine state changes. 
-     */
-        public Action<IState> OnChangeState;
+        public IState LastState { get; private set; }
 
-        // Group: State Management Logic
+        public IState CurrentState { get; private set; }
 
-        /* Function: ChangeState
-     * Change the current state to a new state and save the previous state.
-     * Parameters:
-     * newState - A state that implents <IState>, which will be the new current state.
-     */
-        public void ChangeState(IState newState)
+        public event Action<IState> OnStateChanged;
+
+        public void AddAnyTransition(IState to, Func<bool> condition)
         {
-            if (this.currentState != null)
-            {
-                this.currentState.ExitState();
-            }
-            this.previousState = currentState;
-            this.currentState = newState;
-            this.currentState.EnterState();
-            OnChangeState?.Invoke(this.currentState);
-            Debug.Log(currentState);
+            StateTransition stateTransition = new StateTransition(null, to, condition);
+            _anyStateTransitions.Add(stateTransition);
         }
 
-        /* Function: GetCurrentState
-     * Returns the current running state of the state machine.
-     */
-        public IState GetCurrentState()
+        public void AddTransition(IState from, IState to, Func<bool> condition)
         {
-            return currentState;
+            if (_stateTransitions.ContainsKey(from) == false)
+                _stateTransitions[from] = new List<StateTransition>();
+
+            StateTransition stateTransition = new StateTransition(from, to, condition);
+            _stateTransitions[from].Add(stateTransition);
         }
 
-        /* Function: GetCurrentState
-     * Returns the state executed before the current state of the state machine.
-     */
-        public IState GetPreviousState()
+        public void SetState(IState state)
         {
-            return currentState;
-        }
-    
-        /* Function: SwitchToPreviousState
-     * Switch back to the state executed before the current state.
-     */
-        public void SwitchToPreviousState()
-        {
-            if (previousState != null)
-            {
-                ChangeState(previousState);
-            }
+            if (CurrentState == state)
+                return;
+
+            CurrentState?.OnExit();
+
+            LastState = CurrentState;
+            CurrentState = state;
+            //Debug.Log($"Change to {state}");
+            CurrentState.OnEnter();
+
+            OnStateChanged?.Invoke(CurrentState);
         }
 
-        // Group: State Execution Logic
-
-        /* Function: RunStateUpdate
-     * Execute Update Time commands for the current state. 
-     * 
-     * *Must be in the Update function.*
-     */
-        public void RunStateUpdate()
+        public void Tick()
         {
-            if (currentState != null)
-            {
-                this.currentState.RunState();
-            }
+            StateTransition transition = CheckForTransition();
+
+            if (transition != null)SetState(transition.To);
+
+            CurrentState.Tick();
+        }
+
+        private StateTransition CheckForTransition()
+        {
+            foreach (StateTransition transition in _anyStateTransitions)
+                if (transition.Condition())
+                    return transition;
+
+            if (_stateTransitions.ContainsKey(CurrentState))
+                foreach (StateTransition transition in _stateTransitions[CurrentState])
+                    if (transition.From == CurrentState && transition.Condition())
+                        return transition;
+
+            return null;
         }
     }
 }

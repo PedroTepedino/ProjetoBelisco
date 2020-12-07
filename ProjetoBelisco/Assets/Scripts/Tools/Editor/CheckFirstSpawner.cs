@@ -1,39 +1,45 @@
-﻿using System.Collections.Generic;
+﻿#if UNITY_EDITOR
+
+using System.Collections.Generic;
 using System.Linq;
-using GameScripts.Environment;
 using Sirenix.OdinInspector;
 using Sirenix.OdinInspector.Editor;
 using Sirenix.Utilities.Editor;
 using UnityEditor;
 using UnityEngine;
 
-namespace GameScripts.Tools.Editor
+namespace Belisco
 {
     public class CheckFirstSpawner : OdinEditorWindow
     {
-        [ShowInInspector] [PropertyOrder(10)] private int _totalSpawnerCount = -1;
-        [ShowInInspector] [PropertyOrder(11)] private int _playerSpawnerCount = -1;
+        public enum RemoveType
+        {
+            all,
+            leaveOne
+        }
 
-        [ShowInInspector] 
-        [ListDrawerSettings(Expanded = true,HideAddButton = true,IsReadOnly = true, ShowIndexLabels = true,ShowItemCount = true, DraggableItems = false)]
-        [ReadOnly]
-        [PropertyOrder(12)]
-        private List<PlayerRespawner> _playerSpawners;
-    
-        [ShowInInspector] 
-        [ListDrawerSettings(Expanded = true,HideAddButton = true,IsReadOnly = true, ShowIndexLabels = true,ShowItemCount = true, DraggableItems = false)]
+        [SerializeField] [PropertyOrder(9)] private GameObject _checkpointPrefab;
+
+        [SerializeField] [PropertyOrder(9)] private GameObject _playerSpawnerPrefab;
+
+        [ShowInInspector]
+        [ListDrawerSettings(Expanded = true, HideAddButton = true, IsReadOnly = true, ShowIndexLabels = true,
+            ShowItemCount = true, DraggableItems = false)]
         [ReadOnly]
         [PropertyOrder(13)]
         private List<PlayerRespawner> _checkPoints;
 
-        [SerializeField]
-        [PropertyOrder(9)]
-        private GameObject _checkpointPrefab;
-    
-        [SerializeField]
-        [PropertyOrder(9)]
-        private GameObject _playerSpawnerPrefab;
-    
+        [ShowInInspector] [PropertyOrder(11)] private int _playerSpawnerCount = -1;
+
+        [ShowInInspector]
+        [ListDrawerSettings(Expanded = true, HideAddButton = true, IsReadOnly = true, ShowIndexLabels = true,
+            ShowItemCount = true, DraggableItems = false)]
+        [ReadOnly]
+        [PropertyOrder(12)]
+        private List<PlayerRespawner> _playerSpawners;
+
+        [ShowInInspector] [PropertyOrder(10)] private int _totalSpawnerCount = -1;
+
         private bool ToFewPlayerSpawners => _playerSpawnerCount < 1;
         private bool ToManyPlayerSpawners => _playerSpawnerCount > 1;
         private bool ToFewCheckpoints => _totalSpawnerCount < 1;
@@ -43,9 +49,9 @@ namespace GameScripts.Tools.Editor
         {
             GetWindow<CheckFirstSpawner>().Show();
         }
-    
+
         protected override void Initialize()
-        {    
+        {
             _checkpointPrefab = Resources.Load("Prefabs/Player/Checkpoint") as GameObject;
             _playerSpawnerPrefab = Resources.Load("Prefabs/Player/PlayerSpawner") as GameObject;
             Check();
@@ -60,28 +66,25 @@ namespace GameScripts.Tools.Editor
             else
             {
                 if (_playerSpawnerCount <= 0)
-                {
                     SirenixEditorGUI.ErrorMessageBox("Need at Least one player first spawner on the scene");
-                }
                 else if (_playerSpawnerCount > 1)
-                {
                     SirenixEditorGUI.ErrorMessageBox("Cannot Have more than one player First Spawner per scene!!");
-                }   
-            }   
+            }
         }
-    
-        [Button(ButtonSizes.Large)] 
+
+        [Button(ButtonSizes.Large)]
         [PropertyOrder(0)]
         public void Check()
         {
             _playerSpawners = new List<PlayerRespawner>();
             _checkPoints = new List<PlayerRespawner>(FindObjectsOfType<PlayerRespawner>());
             _checkPoints.Reverse();
-        
+
             _totalSpawnerCount = _checkPoints.Count;
-        
+
             _playerSpawnerCount = 0;
-            foreach (PlayerRespawner playerSpawner in _checkPoints?.Where(playerSpawner => playerSpawner.IsFirstSpawner))
+            foreach (PlayerRespawner playerSpawner in _checkPoints?.Where(playerSpawner => playerSpawner.IsFirstSpawner)
+            )
             {
                 _playerSpawnerCount++;
                 _playerSpawners.Add(playerSpawner);
@@ -92,14 +95,11 @@ namespace GameScripts.Tools.Editor
         public void SelectAllSpawners()
         {
             if (_playerSpawnerCount < 1) return;
-        
-            List<Object> aux = new List<Object>();
-        
-            foreach (PlayerRespawner VARIABLE in _playerSpawners)
-            {
-                aux.Add(VARIABLE.gameObject);
-            }
-        
+
+            var aux = new List<Object>();
+
+            foreach (PlayerRespawner VARIABLE in _playerSpawners) aux.Add(VARIABLE.gameObject);
+
             Selection.objects = aux.ToArray();
         }
 
@@ -107,14 +107,10 @@ namespace GameScripts.Tools.Editor
         public void SelectAllCheckpoints()
         {
             if (_totalSpawnerCount < 1) return;
-        
-            List<Object> aux = new List<Object>();
-        
-            foreach (var VARIABLE in _checkPoints)
-            {
-                aux.Add(VARIABLE.gameObject);
-            
-            }
+
+            var aux = new List<Object>();
+
+            foreach (PlayerRespawner VARIABLE in _checkPoints) aux.Add(VARIABLE.gameObject);
 
             Selection.objects = aux.ToArray();
         }
@@ -123,35 +119,22 @@ namespace GameScripts.Tools.Editor
         [Button(ButtonSizes.Large)]
         public void AddPlayerSpawnerFromExisting()
         {
-            if (ToFewCheckpoints)
-            {
-                CreatePlayerSpawner();
-            }
-        
+            if (ToFewCheckpoints) CreatePlayerSpawner();
+
             Check();
         }
-    
-        public enum RemoveType { all,  leaveOne}
 
         [ShowIf("ToManyPlayerSpawners")]
         [Button(ButtonSizes.Large, Expanded = true, Style = ButtonStyle.CompactBox, Name = "Remove Player Spawners")]
-        public void RemovePlayerSpawnersFromExisting([EnumToggleButtons]RemoveType type = RemoveType.all)
+        public void RemovePlayerSpawnersFromExisting([EnumToggleButtons] RemoveType type = RemoveType.all)
         {
             if (type == RemoveType.all)
-            {
-                foreach (var VARIABLE in _playerSpawners)
-                {
+                foreach (PlayerRespawner VARIABLE in _playerSpawners)
                     VARIABLE.IsFirstSpawner = false;
-                }
-            }
             else
-            {
-                for (int i = 1; i < _playerSpawners.Count; i++)
-                {
+                for (var i = 1; i < _playerSpawners.Count; i++)
                     _playerSpawners[i].IsFirstSpawner = false;
-                }
-            }
-        
+
             Check();
         }
 
@@ -160,12 +143,8 @@ namespace GameScripts.Tools.Editor
         public void DeleteExtraSpawners()
         {
             foreach (PlayerRespawner t in _playerSpawners)
-            {
-                if (t.IsFirstSpawner == true)
-                {
+                if (t.IsFirstSpawner)
                     DestroyImmediate(t);
-                }
-            }
             Check();
         }
 
@@ -187,3 +166,5 @@ namespace GameScripts.Tools.Editor
         }
     }
 }
+
+#endif
