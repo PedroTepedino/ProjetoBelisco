@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4284696222797075647}
   - component: {fileID: 6947704948601746882}
   - component: {fileID: 1169299974811954293}
+  - component: {fileID: 3799071407561895512}
   m_Layer: 0
   m_Name: golemBossIddleRightBlade_0
   m_TagString: Untagged
@@ -151,6 +152,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3799071407561895512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048971716512464781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 070b97839cbd255498981f61e5d706f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: {fileID: 4395640385025301338}
 --- !u!1 &1822339461441221352
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,6 +178,7 @@ GameObject:
   - component: {fileID: 4916534680698417785}
   - component: {fileID: 197912258327855777}
   - component: {fileID: 7108190597198578360}
+  - component: {fileID: 3768630547962653827}
   m_Layer: 0
   m_Name: golemBossIddleLeftBlade_0
   m_TagString: Untagged
@@ -302,6 +317,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3768630547962653827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822339461441221352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 070b97839cbd255498981f61e5d706f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: {fileID: 4395640385025301338}
 --- !u!1 &5165614972458337641
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,6 +506,8 @@ GameObject:
   - component: {fileID: 8983853706465995286}
   - component: {fileID: 4721497806596038676}
   - component: {fileID: 5022202694458481607}
+  - component: {fileID: 6925753910592728833}
+  - component: {fileID: 5650032766717790643}
   m_Layer: 0
   m_Name: golemBossIddleEye_0
   m_TagString: Untagged
@@ -571,3 +601,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6925753910592728833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646555254639986343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf72265d113798443b9c5b9a19b1d7d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: {fileID: 0}
+--- !u!114 &5650032766717790643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646555254639986343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 070b97839cbd255498981f61e5d706f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: {fileID: 4395640385025301338}

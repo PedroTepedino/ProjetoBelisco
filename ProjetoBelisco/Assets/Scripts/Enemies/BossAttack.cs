@@ -55,12 +55,10 @@ namespace Belisco
                 {
                     if (avalibleAttacks[i].attackAnimationName == "AttackLeft")
                     {
-                        animationController.TriggerAnimationAttack("Attack");
                         animationController.TriggerAnimationLeftAttack("Attack");
                     }
                     else if (avalibleAttacks[i].attackAnimationName == "AttackRight")
                     {
-                        animationController.TriggerAnimationAttack("Attack");
                         animationController.TriggerAnimationRightAttack("Attack");
                     }
                     else
