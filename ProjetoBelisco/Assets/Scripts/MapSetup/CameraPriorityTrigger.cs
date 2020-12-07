@@ -21,7 +21,7 @@ namespace Belisco
         {
             if (other.CompareTag("Player"))
             {
-                _camera.Priority = 0;
+                _camera.Priority = 1;
                 _camera.Follow = null;
             }
         }

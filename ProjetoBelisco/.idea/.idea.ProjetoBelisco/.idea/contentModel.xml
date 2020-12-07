@@ -324,6 +324,7 @@
           <e p="MapSetup" t="Include">
             <e p="CameraPriorityTrigger.cs" t="Include" />
             <e p="MainCamBlend.cs" t="Include" />
+            <e p="PlayerRespawnManager.cs" t="Include" />
             <e p="RoomManager.cs" t="Include" />
             <e p="RoomParameters.cs" t="Include" />
             <e p="RoomSceneManager.cs" t="Include" />

@@ -16,15 +16,15 @@ MonoBehaviour:
   m_AdvancedMode: 0
   threshold:
     m_OverrideState: 1
-    m_Value: 0.95
+    m_Value: 0.6
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 1
     min: 0
   scatter:
-    m_OverrideState: 0
-    m_Value: 0.658
+    m_OverrideState: 1
+    m_Value: 0.479
     min: 0
     max: 1
   clamp:
@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: BloomEffect Profile
+  m_Name: GeneralPostProcessing
   m_EditorClassIdentifier: 
   components:
   - {fileID: -8050029679520595562}

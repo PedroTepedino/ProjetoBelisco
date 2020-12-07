@@ -217,7 +217,6 @@ namespace Belisco
             roomManager.transform.position = new Vector3(0,0,0);
 
             var parametersAux = RoomManagerFactory.CreateRoomParameter(sceneName);
-            
         }
 
         private static string GetScenePath(string biome)
