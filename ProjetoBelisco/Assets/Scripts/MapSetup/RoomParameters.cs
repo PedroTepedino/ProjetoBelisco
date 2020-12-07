@@ -11,17 +11,19 @@ namespace Belisco
         [SerializeField] [AssetSelector] [AssetsOnly] private RoomParameters[] _sceneConnections;
 
         [SerializeField] private SceneAsset _thisSceneAsset;
+        [SerializeField] private string _thisScenePath;
 
         public SceneAsset ThisSceneAsset => _thisSceneAsset;
+        public string ThisScenePath => _thisScenePath;
 
         public RoomParameters[] SceneConnections => _sceneConnections;
-
+        
 
         public AsyncOperation TryLoadScene()
         {
             if (SceneManager.GetSceneByName(_thisSceneAsset.name).isLoaded) return null;
-            
-            return SceneManager.LoadSceneAsync(ThisSceneAsset.name, LoadSceneMode.Additive);
+
+            return SceneManager.LoadSceneAsync(_thisScenePath, LoadSceneMode.Additive);
         }
         
 
@@ -34,9 +36,15 @@ namespace Belisco
             }
         }
 
-        public void Init(SceneAsset scene)
+        private void Init(SceneAsset scene)
         {
             _thisSceneAsset = scene;
+        }
+
+        public void InitAtPath(string scenePath)
+        {
+            Init(AssetDatabase.LoadAssetAtPath<SceneAsset>(scenePath));
+            _thisScenePath = scenePath;
         }
     }
     

@@ -272,10 +272,26 @@
             <e p="CameraManager.cs" t="Include" />
           </e>
           <e p="Enemies" t="Include">
-            <e p="AnimationController.cs" t="Include" />
             <e p="Attack.cs" t="Include" />
+            <e p="Attacks" t="Include">
+              <e p="BaseAttack.cs" t="Include" />
+              <e p="BossBlades.cs" t="Include" />
+              <e p="BossStabAttack.cs" t="Include" />
+              <e p="ExplosionAttack.cs" t="Include" />
+              <e p="MeleeAttack.cs" t="Include" />
+              <e p="RadialShootAttack.cs" t="Include" />
+              <e p="RangedAttack.cs" t="Include" />
+            </e>
+            <e p="BossAttack.cs" t="Include" />
+            <e p="EnemyAnimationController.cs" t="Include" />
             <e p="EnemyAttackEventEmitter.cs" t="Include" />
+            <e p="EnemyBossAttackEventEmitter.cs" t="Include" />
             <e p="EnemyParameters.cs" t="Include" />
+            <e p="GolemBoss" t="Include">
+              <e p="GolemBoss.cs" t="Include" />
+              <e p="GolemBossAnimation.cs" t="Include" />
+              <e p="GolemBossParameters.cs" t="Include" />
+            </e>
             <e p="GolemRanged" t="Include">
               <e p="GolemRanged.cs" t="Include" />
               <e p="GolemRangedAnimation.cs" t="Include" />
@@ -292,13 +308,12 @@
               <e p="GolemSwordParameters.cs" t="Include" />
             </e>
             <e p="GolemTriple" t="Include">
-              <e p="GolemTripeParameters.cs" t="Include" />
               <e p="GolemTriple.cs" t="Include" />
               <e p="GolemTripleAnimation.cs" t="Include" />
+              <e p="GolemTripleParameters.cs" t="Include" />
             </e>
             <e p="GrounderEnemy.cs" t="Include" />
             <e p="HitDummie.cs" t="Include" />
-            <e p="IAnimationController.cs" t="Include" />
             <e p="Slime" t="Include">
               <e p="Slime.cs" t="Include" />
               <e p="SlimeAnimation.cs" t="Include" />
@@ -324,6 +339,7 @@
           <e p="MapSetup" t="Include">
             <e p="CameraPriorityTrigger.cs" t="Include" />
             <e p="MainCamBlend.cs" t="Include" />
+            <e p="PlayerRespawnManager.cs" t="Include" />
             <e p="RoomManager.cs" t="Include" />
             <e p="RoomParameters.cs" t="Include" />
             <e p="RoomSceneManager.cs" t="Include" />
@@ -372,7 +388,6 @@
           <e p="StateMachine" t="Include">
             <e p="EnemyStateMachine.cs" t="Include" />
             <e p="GameStateMachine.cs" t="Include" />
-            <e p="IEnemyStateMachine.cs" t="Include" />
             <e p="IState.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
             <e p="StateTransition.cs" t="Include" />

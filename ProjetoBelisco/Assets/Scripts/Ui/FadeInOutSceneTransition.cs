@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Belisco
 {
@@ -12,6 +13,7 @@ namespace Belisco
         [SerializeField] private float _fadeInOutTime = 1.0f;
         [SerializeField] private Ease _ease;
         [SerializeField] private Volume _volume;
+        [SerializeField] private Image _panel;
 
         private Tween FadeAnimation;
         public bool FadeInCompleted { get; private set; }
@@ -30,8 +32,9 @@ namespace Belisco
 
         private void Start()
         {
-            FadeAnimation = DOTween.To(() => _volume.weight, value => _volume.weight = value, 1f, _fadeInOutTime)
-                .SetAutoKill(false).SetEase(_ease).From(0f);
+            // FadeAnimation = DOTween.To(() => _volume.weight, value => _volume.weight = value, 1f, _fadeInOutTime)
+            //     .SetAutoKill(false).SetEase(_ease).From(0f);
+            FadeAnimation = _panel.DOFade(1f, _fadeInOutTime).SetAutoKill(false).SetEase(_ease).From(0f);
             FadeAnimation.Rewind();
             FadeAnimation.onComplete += () => FadeInCompleted = true;
         }

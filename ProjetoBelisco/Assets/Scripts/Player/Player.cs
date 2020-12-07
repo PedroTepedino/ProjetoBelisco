@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.Runtime.InteropServices;
 using Sirenix.OdinInspector;
-using UnityEditor;
 using UnityEngine;
 
 namespace Belisco
@@ -31,7 +29,7 @@ namespace Belisco
 
         [SerializeField] private PlayerAnimatorController _playerAnimatorController;
 
-        public RoomManager CurrentRoomManager = null;
+        public static RoomManager CurrentRoomManager = null;
 
         public bool CanMove = true;
 
@@ -132,7 +130,10 @@ namespace Belisco
             _playerLocker = new PlayerLocker(this);
             _glider = new Glider(this);
             _attacker = new BasicAttacker(this);
-
+            
+            Rigidbody.drag = PlayerParameters.BaseDrag;
+            _canDash = true;
+            
             Grounder.Tick();
         }
 

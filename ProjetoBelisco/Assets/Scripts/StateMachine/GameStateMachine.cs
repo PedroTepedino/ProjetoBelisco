@@ -7,6 +7,7 @@ namespace Belisco
 {
     public class GameStateMachine : MonoBehaviour
     {
+        [SerializeField] private bool _testingOptions = false;
         private static GameStateMachine _instance;
 
         private StateMachine _stateMachine;
@@ -33,7 +34,14 @@ namespace Belisco
             Quit quit = new Quit();
             WinState win = new WinState();
 
-            _stateMachine.SetState(menu);
+            if (!_testingOptions)
+            {
+                _stateMachine.SetState(menu);
+            }
+            else
+            {
+                _stateMachine.SetState(play);
+            }
 
             _stateMachine.AddTransition(menu, loading, () => LoadLevel.LevelToLoad != null);
 
@@ -139,8 +147,11 @@ namespace Belisco
         public void OnEnter()
         {
             FadeInOutSceneTransition.Instance.FadeIn();
+            
             _operations.Add(SceneManager.LoadSceneAsync(LevelToLoad));
             _operations.Add(SceneManager.LoadSceneAsync("UI", LoadSceneMode.Additive));
+            _operations.Add(SceneManager.LoadSceneAsync("MapSetup", LoadSceneMode.Additive));
+ 
             _operations.ForEach(t => t.allowSceneActivation = false);
         }
 

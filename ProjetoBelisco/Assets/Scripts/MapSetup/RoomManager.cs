@@ -1,9 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Cinemachine;
 using Sirenix.OdinInspector;
-using Sirenix.Utilities;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,11 +14,13 @@ namespace Belisco
     {
         [SerializeField] [InlineEditor(InlineEditorObjectFieldModes.Boxed)] private RoomParameters _roomParameters;
 
+        public RoomParameters RoomParameters => _roomParameters;
+
         [SerializeField] private RoomSpawner _initialCheckpoint;
 
-        //[SerializeField] private List<RoomTransitionSpawner> _roomTransitions;
-
         private static CinemachineBrain _mainCam = null;
+
+        private Coroutine _loadingCoroutine = null;
 
         private void Awake()
         {
@@ -28,41 +30,56 @@ namespace Belisco
             }
         }
 
-        private IEnumerator OnTriggerEnter2D(Collider2D other)
+        private void OnEnable()
+        {
+            _loadingCoroutine = null;
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
             {
-                var player = other.GetComponent<Player>();
-                
-                yield return UnloadConnections();
-                
-                yield return LoadConnections();
-
-                Time.timeScale = 0;
-
-                // Tween moveAnimation = null;
-                // if (player.CurrentRoomManager != null)
-                // {
-                //     var spawner = this._roomTransitions.Find(room =>
-                //         room.PreviousRoom == player.CurrentRoomManager._roomParameters);
-                //     if (spawner != null)
-                //     {
-                //         Debug.Log($"{spawner} { _mainCam.ActiveBlend}");
-                //         moveAnimation = player.transform.DOMove(spawner.transform.position, _mainCam.ActiveBlend?.Duration ?? 0.1f)
-                //             .SetEase(Ease.Linear).SetAutoKill(true).SetRecyclable(true).SetUpdate(UpdateType.Normal, true);
-                //         moveAnimation.Play();
-                //         //player.transform.position = spawner.transform.position;
-                //     }
-                // }
-
-                yield return new WaitWhile(()=>_mainCam.IsBlending);
-
-                //moveAnimation?.Kill();
-
-                Time.timeScale = 1;
-
-                player.CurrentRoomManager = this;
+                if (_loadingCoroutine == null)
+                {
+                    _loadingCoroutine = StartCoroutine(LoadOperations(other));
+                }
             }
+        }
+
+        private IEnumerator LoadOperations(Collider2D other)
+        {
+            var player = other.GetComponent<Player>();
+
+            yield return UnloadConnections();
+
+            yield return LoadConnections();
+
+            Time.timeScale = 0;
+
+            // Tween moveAnimation = null;
+            // if (player.CurrentRoomManager != null)
+            // {
+            //     var spawner = this._roomTransitions.Find(room =>
+            //         room.PreviousRoom == player.CurrentRoomManager._roomParameters);
+            //     if (spawner != null)
+            //     {
+            //         Debug.Log($"{spawner} { _mainCam.ActiveBlend}");
+            //         moveAnimation = player.transform.DOMove(spawner.transform.position, _mainCam.ActiveBlend?.Duration ?? 0.1f)
+            //             .SetEase(Ease.Linear).SetAutoKill(true).SetRecyclable(true).SetUpdate(UpdateType.Normal, true);
+            //         moveAnimation.Play();
+            //         //player.transform.position = spawner.transform.position;
+            //     }
+            // }
+
+            yield return new WaitWhile(() => _mainCam.IsBlending);
+
+            //moveAnimation?.Kill();
+
+            Time.timeScale = 1;
+
+            Player.CurrentRoomManager = this;
+
+            _loadingCoroutine = null;
         }
 
         private IEnumerator LoadConnections()
@@ -84,7 +101,7 @@ namespace Belisco
             {
                 var scene = SceneManager.GetSceneAt(i);
                 if (_roomParameters.SceneConnections.All(scn => scn.ThisSceneAsset != null && scn.ThisSceneAsset.name != scene.name) 
-                    && scene.name != "MapSetup" && scene.name != _roomParameters.ThisSceneAsset.name)
+                    && scene.name != "MapSetup" && scene.name != "UI" && scene.name != _roomParameters.ThisSceneAsset.name)
                 {
                     operations.Add(SceneManager.UnloadSceneAsync(scene, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects));
                 }
@@ -102,7 +119,7 @@ namespace Belisco
 
             if (_roomParameters != null)
             {
-                _roomParameters.Init(AssetDatabase.LoadAssetAtPath<SceneAsset>(this.gameObject.scene.path));
+                _roomParameters.InitAtPath(this.gameObject.scene.path);
             }
             
             // if (_roomParameters != null)
